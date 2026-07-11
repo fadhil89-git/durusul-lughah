@@ -35,6 +35,7 @@ const copy = {
     languageLabel: "English",
     book: "Buku",
     wordsInChapter: "Kalimah dalam bab ini",
+    backToTop: "Atas",
     examples: ["بيت", "rumah", "بيوت", "مسجد"],
   },
   en: {
@@ -58,6 +59,7 @@ const copy = {
     languageLabel: "Bahasa Melayu",
     book: "Book",
     wordsInChapter: "Words in this chapter",
+    backToTop: "Top",
     examples: ["بيت", "house", "بيوت", "mosque"],
   },
 } as const;
@@ -73,6 +75,7 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
   const [showSuggest, setShowSuggest] = useState(false);
   const [activeIdx, setActiveIdx] = useState(-1);
   const [focusedEntryId, setFocusedEntryId] = useState("");
+  const [showBackTop, setShowBackTop] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const boxRef = useRef<HTMLDivElement>(null);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -103,6 +106,13 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
     document.documentElement.lang = language;
     document.title = language === "ms" ? "Kamus Durusul Lughah" : "Durusul Lughah Dictionary";
   }, [language]);
+
+  useEffect(() => {
+    const onScroll = () => setShowBackTop(window.scrollY > 480);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   useEffect(() => {
     if (timer.current) clearTimeout(timer.current);
@@ -152,8 +162,17 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
   }, [shown, scrollToEntry]);
 
   const selectEntry = useCallback((entry: DictionaryEntry) => {
+    setBabKey("");
     setQuery(entry.arabic); setDebounced(entry.arabic); setShowSuggest(false); setActiveIdx(-1);
   }, []);
+
+  const searchFor = (value: string) => {
+    setQuery(value);
+    setShowSuggest(Boolean(value.trim()));
+    setActiveIdx(-1);
+    setFocusedEntryId("");
+    if (value.trim()) setBabKey("");
+  };
 
   const chooseBook = (book: string) => {
     setActiveBook(book);
@@ -189,6 +208,17 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
   };
 
   const clearSearch = () => { setQuery(""); setDebounced(""); setShowSuggest(false); inputRef.current?.focus(); };
+  const goHome = () => {
+    setQuery("");
+    setDebounced("");
+    setBabKey("");
+    setActiveBook(books[0] ?? "Buku 1");
+    setVisible(INITIAL_LIMIT);
+    setFocusedEntryId("");
+    window.history.replaceState(null, "", window.location.pathname);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
   const hasQuery = Boolean(debounced.trim());
   const babSelected = Boolean(babKey);
 
@@ -198,7 +228,11 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
         <div className="mx-auto w-full max-w-3xl px-4 py-6">
           <div className="flex items-start justify-between gap-4">
             <div>
-              <h1 className="text-2xl font-semibold text-ink sm:text-3xl">{t.title}</h1>
+              <h1 className="text-2xl font-semibold text-ink sm:text-3xl">
+                <a href="/" onClick={(event) => { event.preventDefault(); goHome(); }} className="transition hover:text-accent focus:outline-none focus-visible:rounded focus-visible:outline-accent">
+                  {t.title}
+                </a>
+              </h1>
               <p className="mt-1 max-w-xl text-sm leading-relaxed text-muted">{t.subtitle}</p>
             </div>
             <div className="flex shrink-0 flex-col items-end gap-3">
@@ -218,7 +252,8 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
 
       <main className="py-8">
         <div className="mx-auto w-full max-w-3xl px-4">
-          <div ref={boxRef} className="relative">
+          <div ref={boxRef} className="sticky top-0 z-30 -mx-4 bg-paper/95 px-4 py-3 backdrop-blur sm:top-0">
+            <div className="relative">
             <label htmlFor="carian" className="sr-only">{t.placeholder}</label>
             <div className="flex items-center gap-3 rounded-2xl border border-line bg-panel px-4 py-3 shadow-sm focus-within:border-accent">
               <SearchIcon />
@@ -228,7 +263,7 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
                 className="w-full bg-transparent text-lg text-ink placeholder:text-muted focus:outline-none"
                 placeholder={t.placeholder}
                 value={query}
-                onChange={(e) => { setQuery(e.target.value); setShowSuggest(true); setActiveIdx(-1); }}
+                onChange={(e) => searchFor(e.target.value)}
                 onFocus={() => setShowSuggest(true)}
                 onKeyDown={onKeyDown}
                 role="combobox"
@@ -240,7 +275,7 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
               {query && <button type="button" onClick={clearSearch} aria-label="Clear search" className="rounded-full p-1 text-muted hover:bg-accent-soft hover:text-accent"><XIcon /></button>}
             </div>
             {openSuggest && (
-              <ul id="suggest-list" role="listbox" className="suggest-scroll absolute z-20 mt-2 max-h-[60vh] w-full overflow-auto rounded-xl border border-line bg-panel py-1 shadow-lg">
+              <ul id="suggest-list" role="listbox" className="suggest-scroll absolute z-40 mt-2 max-h-[60vh] w-full overflow-auto rounded-xl border border-line bg-panel py-1 shadow-lg">
                 {suggestions.map((entry, i) => (
                   <li key={entry.id} role="option" aria-selected={i === activeIdx} onMouseEnter={() => setActiveIdx(i)} onMouseDown={(e) => { e.preventDefault(); selectEntry(entry); }} className={`flex cursor-pointer items-center justify-between gap-3 px-4 py-2 ${i === activeIdx ? "bg-accent-soft" : ""}`}>
                     <div className="min-w-0">
@@ -252,9 +287,9 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
                 ))}
               </ul>
             )}
+            </div>
+            <p className="mt-2 px-1 text-xs text-muted">{t.searchHint}</p>
           </div>
-
-          <p className="mt-2 px-1 text-xs text-muted">{t.searchHint}</p>
 
           <div className="mt-4 flex flex-wrap items-center gap-2 px-1">
             <label htmlFor="bab" className="text-sm text-muted">{t.chapter}</label>
@@ -340,7 +375,7 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
                 <p className="text-ink">{t.emptyTitle}</p>
                 <p className="mt-1 text-sm text-muted">{t.emptyText}</p>
                 <div className="mt-4 flex flex-wrap justify-center gap-2">
-                  {t.examples.map((example) => <button key={example} type="button" onClick={() => setQuery(example)} className="rounded-full border border-line bg-panel px-3 py-1.5 text-sm text-ink hover:border-accent hover:text-accent">{example}</button>)}
+                  {t.examples.map((example) => <button key={example} type="button" onClick={() => searchFor(example)} className="rounded-full border border-line bg-panel px-3 py-1.5 text-sm text-ink hover:border-accent hover:text-accent">{example}</button>)}
                 </div>
               </div>
             ) : (
@@ -369,6 +404,16 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
           </div>
         </div>
       </main>
+
+      {showBackTop && (
+        <button
+          type="button"
+          onClick={scrollToTop}
+          className="fixed bottom-4 right-4 z-40 rounded-full border border-line bg-panel px-4 py-2 text-sm font-semibold text-accent shadow-lg transition hover:bg-accent-soft"
+        >
+          ↑ {t.backToTop}
+        </button>
+      )}
 
       <footer className="mt-10 border-t border-line py-6">
         <p className="mx-auto max-w-3xl px-4 text-center text-xs text-muted">{entryCount.toLocaleString(language === "ms" ? "ms-MY" : "en-US")} {t.footer} · {chapters.length} {language === "ms" ? "bab" : "chapters"} · {t.local}</p>
