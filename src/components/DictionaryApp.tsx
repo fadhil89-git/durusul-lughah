@@ -33,6 +33,8 @@ const copy = {
     footer: "kalimah",
     local: "Berjalan sepenuhnya secara lokal.",
     languageLabel: "English",
+    book: "Buku",
+    wordsInChapter: "Kalimah dalam bab ini",
     examples: ["بيت", "rumah", "بيوت", "مسجد"],
   },
   en: {
@@ -54,6 +56,8 @@ const copy = {
     footer: "words",
     local: "Runs entirely locally.",
     languageLabel: "Bahasa Melayu",
+    book: "Book",
+    wordsInChapter: "Words in this chapter",
     examples: ["بيت", "house", "بيوت", "mosque"],
   },
 } as const;
@@ -64,13 +68,20 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
   const [query, setQuery] = useState("");
   const [debounced, setDebounced] = useState("");
   const [babKey, setBabKey] = useState("");
+  const [activeBook, setActiveBook] = useState(() => chapters[0]?.buku ?? "Buku 1");
   const [visible, setVisible] = useState(INITIAL_LIMIT);
   const [showSuggest, setShowSuggest] = useState(false);
   const [activeIdx, setActiveIdx] = useState(-1);
+  const [focusedEntryId, setFocusedEntryId] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
   const boxRef = useRef<HTMLDivElement>(null);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const pendingScrollId = useRef<string | null>(null);
   const t = copy[language];
+  const books = useMemo(() => Array.from(new Set(chapters.map((chapter) => chapter.buku))), [chapters]);
+  const chaptersForActiveBook = useMemo(() => chapters.filter((chapter) => chapter.buku === activeBook), [chapters, activeBook]);
+  const selectedChapter = useMemo(() => chapters.find((chapter) => chapter.babKey === babKey) ?? null, [chapters, babKey]);
+  const chapterEntries = useMemo(() => babKey ? entries.filter((entry) => entry.babKey === babKey) : [], [entries, babKey]);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -81,6 +92,12 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
     if (q) { setQuery(q); setDebounced(q); }
     if (bab) setBabKey(bab);
   }, []);
+
+  useEffect(() => {
+    if (!babKey) return;
+    const chapter = chapters.find((item) => item.babKey === babKey);
+    if (chapter) setActiveBook(chapter.buku);
+  }, [babKey, chapters]);
 
   useEffect(() => {
     document.documentElement.lang = language;
@@ -119,9 +136,49 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
     return () => document.removeEventListener("mousedown", close);
   }, []);
 
+  const scrollToEntry = useCallback((id: string) => {
+    const element = document.getElementById(`entry-${id}`);
+    if (!element) return false;
+    pendingScrollId.current = null;
+    element.scrollIntoView({ behavior: "smooth", block: "start" });
+    setFocusedEntryId(id);
+    window.setTimeout(() => setFocusedEntryId((current) => current === id ? "" : current), 1800);
+    return true;
+  }, []);
+
+  useEffect(() => {
+    const id = pendingScrollId.current;
+    if (id) scrollToEntry(id);
+  }, [shown, scrollToEntry]);
+
   const selectEntry = useCallback((entry: DictionaryEntry) => {
     setQuery(entry.arabic); setDebounced(entry.arabic); setShowSuggest(false); setActiveIdx(-1);
   }, []);
+
+  const chooseBook = (book: string) => {
+    setActiveBook(book);
+    setBabKey("");
+    setVisible(INITIAL_LIMIT);
+    setFocusedEntryId("");
+  };
+
+  const chooseChapter = (key: string) => {
+    setBabKey(key);
+    setQuery("");
+    setDebounced("");
+    setVisible(INITIAL_LIMIT);
+    setFocusedEntryId("");
+  };
+
+  const jumpToEntry = (entry: DictionaryEntry, index: number) => {
+    setBabKey(entry.babKey);
+    setQuery("");
+    setDebounced("");
+    setShowSuggest(false);
+    setVisible(Math.max(INITIAL_LIMIT, index + 1));
+    pendingScrollId.current = entry.id;
+    window.setTimeout(() => scrollToEntry(entry.id), 0);
+  };
 
   const onKeyDown = (event: ReactKeyboardEvent<HTMLInputElement>) => {
     if (!openSuggest) return;
@@ -201,11 +258,80 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
 
           <div className="mt-4 flex flex-wrap items-center gap-2 px-1">
             <label htmlFor="bab" className="text-sm text-muted">{t.chapter}</label>
-            <select id="bab" value={babKey} onChange={(e) => { setBabKey(e.target.value); setVisible(INITIAL_LIMIT); }} className="rounded-lg border border-line bg-panel px-3 py-2 text-sm text-ink focus:border-accent focus:outline-none">
+            <select id="bab" value={babKey} onChange={(e) => { chooseChapter(e.target.value); }} className="rounded-lg border border-line bg-panel px-3 py-2 text-sm text-ink focus:border-accent focus:outline-none">
               <option value="">{t.allChapters}</option>
               {chapters.map((chapter) => <option key={chapter.babKey} value={chapter.babKey}>{chapter.label} ({chapter.count})</option>)}
             </select>
             {babSelected && <button type="button" onClick={() => setBabKey("")} className="text-sm text-accent hover:underline">{t.clearFilter}</button>}
+          </div>
+
+          <div className="mt-5 space-y-4 rounded-2xl border border-line bg-panel p-4 shadow-sm">
+            <div>
+              <div className="mb-2 text-xs font-semibold uppercase tracking-[0.08em] text-muted">{t.book}</div>
+              <div className="flex flex-wrap gap-2">
+                {books.map((book) => {
+                  const active = book === activeBook;
+                  return (
+                    <button
+                      key={book}
+                      type="button"
+                      onClick={() => chooseBook(book)}
+                      className={`rounded-full border px-4 py-2 text-sm font-semibold transition ${active ? "border-accent bg-accent text-white" : "border-line bg-paper text-accent hover:bg-accent-soft"}`}
+                    >
+                      {book}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            {chaptersForActiveBook.length > 0 && (
+              <div>
+                <div className="mb-2 text-xs font-semibold uppercase tracking-[0.08em] text-muted">{t.chapter}</div>
+                <div className="scroll-cue rounded-xl bg-paper/60">
+                  <div className="flex max-h-32 flex-wrap gap-2 overflow-auto p-2 pr-3 suggest-scroll">
+                  {chaptersForActiveBook.map((chapter) => {
+                    const active = chapter.babKey === babKey;
+                    return (
+                      <button
+                        key={chapter.babKey}
+                        type="button"
+                        onClick={() => chooseChapter(chapter.babKey)}
+                        className={`rounded-full border px-3 py-1.5 text-sm transition ${active ? "border-accent bg-accent-soft font-semibold text-accent" : "border-line bg-paper text-ink hover:border-accent hover:text-accent"}`}
+                      >
+                        {chapter.label.replace(`${chapter.buku} · `, "")} ({chapter.count})
+                      </button>
+                    );
+                  })}
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {selectedChapter && chapterEntries.length > 0 && (
+              <div>
+                <div className="mb-2 flex items-center justify-between gap-3">
+                  <div className="text-xs font-semibold uppercase tracking-[0.08em] text-muted">{t.wordsInChapter}</div>
+                  <div className="text-xs text-muted">{selectedChapter.label}</div>
+                </div>
+                <div className="scroll-cue rounded-xl bg-paper/70">
+                  <div className="suggest-scroll flex max-h-40 flex-wrap gap-2 overflow-auto p-2 pr-3">
+                  {chapterEntries.map((entry, index) => (
+                    <button
+                      key={entry.id}
+                      type="button"
+                      onClick={() => jumpToEntry(entry, index)}
+                      className="arabic rounded-full border border-line bg-panel px-3 py-1.5 text-base leading-relaxed text-ink transition hover:border-accent hover:bg-accent-soft hover:text-accent"
+                      title={language === "ms" ? entry.malay : entry.english}
+                      dir="rtl"
+                    >
+                      {entry.arabic}
+                    </button>
+                  ))}
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
 
           <div className="mt-7">
@@ -225,7 +351,17 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
                 {fullResults.length === 0 ? (
                   <div className="rounded-xl border border-line bg-panel p-6 text-center text-sm text-muted">{t.noMatch}</div>
                 ) : (
-                  <div className="space-y-4">{shown.map((entry) => <DictionaryCard key={entry.id} entry={entry} language={language} />)}</div>
+                  <div className="space-y-4">
+                    {shown.map((entry) => (
+                      <div
+                        key={entry.id}
+                        id={`entry-${entry.id}`}
+                        className={`scroll-mt-4 rounded-2xl transition ${focusedEntryId === entry.id ? "ring-2 ring-accent ring-offset-2 ring-offset-paper" : ""}`}
+                      >
+                        <DictionaryCard entry={entry} language={language} />
+                      </div>
+                    ))}
+                  </div>
                 )}
                 {visible < fullResults.length && <div className="mt-6 flex justify-center"><button type="button" onClick={() => setVisible((v) => v + PAGE)} className="rounded-lg border border-line bg-panel px-5 py-2 text-sm font-medium text-accent hover:bg-accent-soft">{t.more} ({fullResults.length - visible} {t.remaining})</button></div>}
               </>
