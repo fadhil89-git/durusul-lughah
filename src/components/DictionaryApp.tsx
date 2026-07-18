@@ -241,12 +241,19 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
     <div>
       <header className="border-b border-line bg-panel">
         <div className="mx-auto w-full max-w-3xl px-4 py-6">
+          <nav className="mb-5 flex flex-wrap items-center justify-between gap-2">
+            <a href="/" className="text-lg font-semibold text-ink hover:text-accent">Tuwailib</a>
+            <div className="flex items-center gap-2">
+              <a href="/" className="rounded-full border border-line bg-paper px-3 py-2 text-sm font-semibold text-accent hover:bg-accent-soft">Home</a>
+              <a href="/durusul-lughah" className="rounded-full border border-line bg-paper px-3 py-2 text-sm font-semibold text-accent hover:bg-accent-soft">Syarah</a>
+            </div>
+          </nav>
           <div className="flex items-start justify-between gap-4">
             <div>
               <h1 className="text-2xl font-semibold text-ink sm:text-3xl">
-                <a href="/" onClick={(event) => { event.preventDefault(); goHome(); }} className="transition hover:text-accent focus:outline-none focus-visible:rounded focus-visible:outline-accent">
+                <button type="button" onClick={goHome} className="text-start transition hover:text-accent focus:outline-none focus-visible:rounded focus-visible:outline-accent">
                   {t.title}
-                </a>
+                </button>
               </h1>
               <p className="mt-1 max-w-xl text-sm leading-relaxed text-muted">{t.subtitle}</p>
             </div>

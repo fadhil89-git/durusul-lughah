@@ -1,7 +1,8 @@
 ---
 import "../../../../styles/global.css";
+import LessonArticleNav from "../../../../components/LessonArticleNav.tsx";
 import { hasArabicLesson } from "../../../../data/lessonLocales.ts";
-import { getAdjacentLesson, lessonChapters } from "../../../../data/lessons.ts";
+import { getAdjacentLesson, lessonChapters, lessonSearchItems } from "../../../../data/lessons.ts";
 
 export function getStaticPaths() {
   return lessonChapters.map((chapter) => ({
@@ -16,8 +17,14 @@ export function getStaticPaths() {
 const { chapter } = Astro.props;
 const previous = getAdjacentLesson(chapter, -1);
 const next = getAdjacentLesson(chapter, 1);
-const bookChapters = lessonChapters.filter((item) => item.bookNumber === chapter.bookNumber);
 const hasArabic = hasArabicLesson(chapter.bookNumber, chapter.chapter);
+const chapterJumpItems = lessonChapters.map((item) => ({
+  book: item.book,
+  bookNumber: item.bookNumber,
+  chapter: item.chapter,
+  title: item.titleMalay || item.titleArabic,
+  url: `/durusul-lughah/buku-${item.bookNumber}/bab-${item.chapter}`,
+}));
 ---
 <!doctype html>
 <html lang="ms">
@@ -27,33 +34,26 @@ const hasArabic = hasArabicLesson(chapter.bookNumber, chapter.chapter);
     <meta name="description" content={`Syarah ${chapter.book} Bab ${chapter.chapter}: ${chapter.title}`} />
     <title>{chapter.book} Bab {chapter.chapter} | Tuwailib</title>
   </head>
-  <body class="min-h-screen bg-paper text-ink">
+  <body id="top" class="min-h-screen bg-paper text-ink">
     <header class="border-b border-line bg-panel">
       <div class="mx-auto flex w-full max-w-4xl items-center justify-between gap-4 px-4 py-4">
         <a href="/" class="text-lg font-semibold text-ink hover:text-accent">Tuwailib</a>
         <div class="flex items-center gap-2">
+          <a href="/" class="rounded-full border border-line bg-paper px-3 py-2 text-sm font-semibold text-accent hover:bg-accent-soft">Home</a>
           <a href="/durusul-lughah" class="rounded-full border border-line bg-paper px-3 py-2 text-sm font-semibold text-accent hover:bg-accent-soft">Semua Bab</a>
           <a href="/kamus" class="rounded-full border border-line bg-paper px-3 py-2 text-sm font-semibold text-accent hover:bg-accent-soft">Kamus</a>
         </div>
       </div>
     </header>
 
-    <div class="sticky top-0 z-40 border-b border-line bg-paper/95 backdrop-blur">
-      <div class="mx-auto flex w-full max-w-4xl flex-wrap items-center gap-3 px-4 py-3">
-        <label for="chapter-jump" class="text-sm font-semibold text-muted">{chapter.book} · Bab {chapter.chapter}</label>
-        <select
-          id="chapter-jump"
-          class="min-w-0 flex-1 rounded-lg border border-line bg-panel px-3 py-2 text-sm text-ink focus:border-accent focus:outline-none"
-          onchange="if (this.value) window.location.href = this.value"
-        >
-          {bookChapters.map((item) => (
-            <option value={`/durusul-lughah/buku-${item.bookNumber}/bab-${item.chapter}`} selected={item.chapter === chapter.chapter}>
-              Bab {item.chapter} — {item.titleMalay || item.titleArabic}
-            </option>
-          ))}
-        </select>
-      </div>
-    </div>
+    <LessonArticleNav
+      client:load
+      chapters={chapterJumpItems}
+      currentBook={chapter.bookNumber}
+      currentChapter={chapter.chapter}
+      searchItems={lessonSearchItems}
+      language="ms"
+    />
 
     <main class="mx-auto w-full max-w-4xl px-4 py-8">
       <nav class="mb-6 flex flex-wrap items-center justify-between gap-3 text-sm">
@@ -72,8 +72,27 @@ const hasArabic = hasArabicLesson(chapter.bookNumber, chapter.chapter);
           )}
         </div>
         <p class="text-sm font-semibold uppercase tracking-[0.08em] text-muted">{chapter.book} · Bab {chapter.chapter}</p>
-        <h1 class="mt-3 text-3xl font-semibold leading-tight text-accent sm:text-4xl">{chapter.titleMalay || chapter.titleArabic}</h1>
-        {chapter.titleMalay && <p class="arabic mt-2 text-2xl font-semibold text-ink sm:text-3xl" dir="rtl">{chapter.titleArabic}</p>}
+        <h1 class="arabic mt-3 text-4xl font-semibold leading-tight text-accent sm:text-5xl" dir="rtl">{chapter.titleArabic}</h1>
+        {chapter.titleMalay && <p class="mt-3 text-xl font-semibold leading-snug text-ink sm:text-2xl">{chapter.titleMalay}</p>}
+
+        {chapter.toc.length > 0 && (
+          <nav class="lesson-index mt-8" aria-label="Index topik bab">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.12em] text-muted">Index Bab</p>
+              <h2 class="mt-1 text-2xl font-semibold text-ink">Topik Dalam Bab Ini</h2>
+            </div>
+            <ol>
+              {chapter.toc.map((item) => (
+                <li class={item.level === 3 ? "is-subtopic" : ""}>
+                  <a href={`#${item.id}`}>
+                    <span class="lesson-index-title">{item.title}</span>
+                    {item.hint && <span class="lesson-index-hint">{item.hint}</span>}
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </nav>
+        )}
 
         <div class="lesson-prose mt-8" set:html={chapter.html} />
       </article>
@@ -88,5 +107,6 @@ const hasArabic = hasArabicLesson(chapter.bookNumber, chapter.chapter);
         </div>
       </nav>
     </main>
+    <a href="#top" class="back-to-top" aria-label="Naik atas">↑</a>
   </body>
 </html>

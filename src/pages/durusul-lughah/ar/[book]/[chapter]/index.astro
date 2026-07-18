@@ -1,7 +1,8 @@
 ---
 import "../../../../../styles/global.css";
+import LessonArticleNav from "../../../../../components/LessonArticleNav.tsx";
 import { arabicLessons, hasArabicLesson } from "../../../../../data/lessonLocales.ts";
-import { findLessonChapter, getAdjacentLesson, lessonChapters } from "../../../../../data/lessons.ts";
+import { findLessonChapter, getAdjacentLesson, lessonChapters, lessonSearchItems } from "../../../../../data/lessons.ts";
 
 export function getStaticPaths() {
   return arabicLessons.map((lesson) => ({
@@ -17,11 +18,21 @@ const { lesson } = Astro.props;
 const sourceChapter = findLessonChapter(`buku-${lesson.bookNumber}`, `bab-${lesson.chapter}`);
 const previous = sourceChapter ? getAdjacentLesson(sourceChapter, -1) : undefined;
 const next = sourceChapter ? getAdjacentLesson(sourceChapter, 1) : undefined;
-const bookChapters = lessonChapters.filter((item) => item.bookNumber === lesson.bookNumber);
 const localizedPath = (bookNumber: number, chapter: number) =>
   hasArabicLesson(bookNumber, chapter)
     ? `/durusul-lughah/ar/buku-${bookNumber}/bab-${chapter}`
     : `/durusul-lughah/buku-${bookNumber}/bab-${chapter}`;
+const chapterJumpItems = lessonChapters.map((item) => ({
+  book: item.book,
+  bookNumber: item.bookNumber,
+  chapter: item.chapter,
+  title: item.titleMalay || item.titleArabic,
+  url: localizedPath(item.bookNumber, item.chapter),
+}));
+const localizedSearchItems = lessonSearchItems.map((item) => ({
+  ...item,
+  url: localizedPath(item.bookNumber, item.chapter),
+}));
 ---
 <!doctype html>
 <html lang="ar" dir="rtl">
@@ -31,33 +42,26 @@ const localizedPath = (bookNumber: number, chapter: number) =>
     <meta name="description" content={`شرح عربي: كتاب ${lesson.bookNumber}، باب ${lesson.chapter}`} />
     <title>كتاب {lesson.bookNumber} باب {lesson.chapter} | Tuwailib</title>
   </head>
-  <body class="min-h-screen bg-paper text-ink">
+  <body id="top" class="min-h-screen bg-paper text-ink">
     <header class="border-b border-line bg-panel">
       <div class="mx-auto flex w-full max-w-4xl items-center justify-between gap-4 px-4 py-4">
         <a href="/" class="text-lg font-semibold text-ink hover:text-accent">Tuwailib</a>
         <div class="flex items-center gap-2">
+          <a href="/" class="rounded-full border border-line bg-paper px-3 py-2 text-sm font-semibold text-accent hover:bg-accent-soft">الرئيسية</a>
           <a href="/durusul-lughah" class="rounded-full border border-line bg-paper px-3 py-2 text-sm font-semibold text-accent hover:bg-accent-soft">كل الدروس</a>
           <a href="/kamus" class="rounded-full border border-line bg-paper px-3 py-2 text-sm font-semibold text-accent hover:bg-accent-soft">القاموس</a>
         </div>
       </div>
     </header>
 
-    <div class="sticky top-0 z-40 border-b border-line bg-paper/95 backdrop-blur">
-      <div class="mx-auto flex w-full max-w-4xl flex-wrap items-center gap-3 px-4 py-3">
-        <label for="chapter-jump" class="text-sm font-semibold text-muted">كتاب {lesson.bookNumber} · باب {lesson.chapter}</label>
-        <select
-          id="chapter-jump"
-          class="min-w-0 flex-1 rounded-lg border border-line bg-panel px-3 py-2 text-sm text-ink focus:border-accent focus:outline-none"
-          onchange="if (this.value) window.location.href = this.value"
-        >
-          {bookChapters.map((item) => (
-            <option value={localizedPath(item.bookNumber, item.chapter)} selected={item.chapter === lesson.chapter}>
-              باب {item.chapter} — {item.titleMalay || item.titleArabic}
-            </option>
-          ))}
-        </select>
-      </div>
-    </div>
+    <LessonArticleNav
+      client:load
+      chapters={chapterJumpItems}
+      currentBook={lesson.bookNumber}
+      currentChapter={lesson.chapter}
+      searchItems={localizedSearchItems}
+      language="ar"
+    />
 
     <main class="mx-auto w-full max-w-4xl px-4 py-8">
       <nav class="mb-6 flex flex-wrap items-center justify-between gap-3 text-sm" dir="ltr">
@@ -73,8 +77,26 @@ const localizedPath = (bookNumber: number, chapter: number) =>
         </div>
         <p class="text-sm font-semibold uppercase tracking-[0.08em] text-muted">كتاب {lesson.bookNumber} · باب {lesson.chapter}</p>
         <h1 class="arabic mt-3 text-4xl font-semibold leading-tight text-accent sm:text-5xl" dir="rtl">{lesson.title}</h1>
+
+        {lesson.toc.length > 0 && (
+          <nav class="lesson-index lesson-index-ar mt-8" aria-label="فهرس الدرس">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.12em] text-muted">الفهرس</p>
+              <h2 class="arabic mt-1 text-2xl font-semibold text-ink" dir="rtl">موضوعات الدرس</h2>
+            </div>
+            <ol>
+              {lesson.toc.map((item) => (
+                <li class={item.level === 3 ? "is-subtopic" : ""}>
+                  <a href={`#${item.id}`}>{item.title}</a>
+                </li>
+              ))}
+            </ol>
+          </nav>
+        )}
+
         <div class="lesson-prose lesson-prose-ar mt-8" set:html={lesson.html} />
       </article>
     </main>
+    <a href="#top" class="back-to-top" aria-label="الرجوع إلى الأعلى">↑</a>
   </body>
 </html>

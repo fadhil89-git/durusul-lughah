@@ -1462,9 +1462,16 @@ Dalam bab ini, anda mempelajari:
 
 ---
 
-## 1. اسْمُ الْفَاعِلِ (*ism al-fā‘il*) — Isim yang Menunjukkan Pelaku
+## 1. اسْمُ الْفَاعِلِ (*ism al-fā‘il*) — Isim Fa'il, Isim yang Menunjukkan Pelaku
 
-Ism al-fā‘il ialah isim mushtaq (**اسْمٌ مُشْتَقٌّ**) yang menunjukkan orang atau benda yang melakukan perbuatan.
+Ism al-fā‘il (اِسْمُ الْفَاعِلِ) ialah kata nama yang dibentuk daripada kata kerja. Ia digunakan untuk menunjukkan orang atau sesuatu yang melakukan perbuatan tersebut.
+
+Contohnya:
+
+- كَتَبَ — dia telah menulis
+- كَاتِبٌ — orang yang menulis / penulis
+
+Perkataan كَاتِبٌ dinamakan isim musytaq (اِسْمٌ مُشْتَقٌّ) kerana ia dibentuk daripada kata kerja كَتَبَ.
 
 ### Wazan bagi Fi‘il Thulāthī Mujarrad
 
@@ -1492,6 +1499,30 @@ Ism al-fā‘il ialah isim mushtaq (**اسْمٌ مُشْتَقٌّ**) yang menu
 
 ## 2. اسْمُ الْفَاعِلِ مِنَ الْمَهْمُوزِ وَالْمُضَعَّفِ (*ism al-fā‘il min al-mahmūz wa-al-muḍa‘‘af*) — Bentuk Hamzah dan Huruf Berganda
 
+Dalam bahagian ini, kita akan mempelajari cara membentuk **ism al-fā‘il (اِسْمُ الْفَاعِلِ)** daripada dua jenis fi‘il:
+
+- **Fi‘il mahmūz (الْفِعْلُ الْمَهْمُوزُ)**  
+  Fi‘il yang salah satu huruf asalnya ialah hamzah **ء**.
+
+- **Fi‘il muḍa‘‘af (الْفِعْلُ الْمُضَعَّفُ)**  
+  Fi‘il yang mempunyai dua huruf asal yang sama, lalu digabungkan dengan tanda syaddah.
+
+### Contoh Fi‘il Mahmūz
+
+**أَكَلَ**  
+→ dia telah makan
+
+**آكِلٌ**  
+→ orang yang makan
+
+### Contoh Fi‘il Muḍa‘‘af
+
+**رَدَّ**  
+→ dia telah mengembalikan
+
+**رَادٌّ**  
+→ orang yang mengembalikan
+
 ### Fi‘il Mahmūz
 
 | Fi‘il | Ism al-fā‘il |
@@ -1513,8 +1544,17 @@ Dua huruf yang sama diidghamkan.
 
 ## 3. اسْمُ الْمَفْعُولِ (*ism al-maf‘ūl*) — Isim yang Menunjukkan Sesuatu yang Dikenakan Perbuatan
 
-Ism al-maf‘ūl ialah isim mushtaq yang menunjukkan orang atau benda yang menerima perbuatan.
+**Ism al-maf‘ūl (اِسْمُ الْمَفْعُولِ)** ialah kata nama yang dibentuk daripada kata kerja. Ia menunjukkan orang atau benda yang dikenakan atau menerima sesuatu perbuatan.
 
+### Contoh
+
+**كَتَبَ**  
+→ dia telah menulis
+
+**مَكْتُوبٌ**  
+→ sesuatu yang ditulis / yang tertulis
+
+Perkataan **مَكْتُوبٌ** dinamakan **ism al-maf‘ūl** kerana ia menunjukkan sesuatu yang menerima perbuatan menulis.
 ### Wazan bagi Fi‘il Thulāthī Mujarrad
 
 > مَفْعُولٌ
@@ -1540,6 +1580,21 @@ Ism al-maf‘ūl ialah isim mushtaq yang menunjukkan orang atau benda yang mener
 ---
 
 ## 4. الْفَرْقُ بَيْنَ اسْمِ الْفَاعِلِ وَاسْمِ الْمَفْعُولِ (*al-farqu bayna ism al-fā‘il wa-ism al-maf‘ūl*) — Perbezaan Pelaku dan Penerima Perbuatan
+
+**Ism al-fā‘il (اِسْمُ الْفَاعِلِ)** menunjukkan orang atau benda yang melakukan sesuatu perbuatan
+
+Manakala **ism al-maf‘ūl (اِسْمُ الْمَفْعُولِ)** menunjukkan orang atau benda yang dikenakan atau menerima perbuatan tersebut.
+
+### Contoh
+
+**كَتَبَ**  
+→ dia telah menulis
+
+**كَاتِبٌ**  
+→ orang yang menulis *(ism al-fā‘il)*
+
+**مَكْتُوبٌ**  
+→ sesuatu yang ditulis *(ism al-maf‘ūl)*
 
 | Fi‘il | Ism al-fā‘il | Ism al-maf‘ūl |
 |---|---|---|

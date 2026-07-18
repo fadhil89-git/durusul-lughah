@@ -1,12 +1,15 @@
 import buku1Arabic from "./lessons-ar/buku-1.md?raw";
 import buku2Arabic from "./lessons-ar/buku-2.md?raw";
-import { markdownToHtml } from "../lib/markdownToHtml.ts";
+import buku3Arabic from "./lessons-ar/buku-3.md?raw";
+import { cleanTopicTitle, headingToId, markdownToHtml } from "../lib/markdownToHtml.ts";
+import type { LessonTocItem } from "../lib/parseLessons.ts";
 
 export type LocalizedLesson = {
   bookNumber: number;
   chapter: number;
   language: "ar";
   title: string;
+  toc: LessonTocItem[];
   html: string;
   url: string;
 };
@@ -73,6 +76,8 @@ const buku2ChapterGroups = [
   [31],
 ];
 
+const buku3ChapterGroups = Array.from({ length: 34 }, (_, index) => [index + 1]);
+
 function splitArabicBook(markdown: string, chapterGroups: number[][]): ArabicSection[] {
   const cleaned = markdown.replace(/<!--[\s\S]*?-->/g, "").trim();
   const matches = [...cleaned.matchAll(/^#{1,2}\s+((?:الد[\u064b-\u065f]*ر[\u064b-\u065f]*س|الدرس).+)$/gm)];
@@ -93,6 +98,50 @@ function splitArabicBook(markdown: string, chapterGroups: number[][]): ArabicSec
     .filter((section) => section.body.length > 0);
 }
 
+function plainInline(value: string): string {
+  return value
+    .replace(/\[\[([^\]]+)\]\]/g, "$1")
+    .replace(/\(\(([^)]+)\)\)/g, "$1")
+    .replace(/\*\*/g, "")
+    .replace(/\*/g, "")
+    .trim();
+}
+
+function isUsefulTocTitle(title: string): boolean {
+  const plainTitle = plainInline(title).toLowerCase();
+  return ![
+    "أمثلة",
+    "الأمثلة",
+    "مثال",
+    "تدريب",
+    "التدريب",
+    "تمرين",
+    "التمرين",
+    "تنبيه",
+    "ملاحظة",
+  ].includes(plainTitle);
+}
+
+function extractToc(markdown: string): LessonTocItem[] {
+  const seen = new Set<string>();
+  return Array.from(markdown.matchAll(/^(##|###)\s+(.+)$/gm))
+    .filter((match) => match[1] === "##" || match[2].includes("[["))
+    .map((match) => {
+      const rawTitle = plainInline(match[2]);
+      return {
+        id: headingToId(rawTitle),
+        title: cleanTopicTitle(rawTitle),
+        level: 2 as const,
+      };
+    })
+    .filter((item) => {
+      if (!isUsefulTocTitle(item.title)) return false;
+      if (seen.has(item.id)) return false;
+      seen.add(item.id);
+      return true;
+    });
+}
+
 function parseArabicBook(markdown: string, bookNumber: number, chapterGroups: number[][]): LocalizedLesson[] {
   return splitArabicBook(markdown, chapterGroups).flatMap((section) =>
     section.chapters.map((chapter) => ({
@@ -100,6 +149,7 @@ function parseArabicBook(markdown: string, bookNumber: number, chapterGroups: nu
       chapter,
       language: "ar" as const,
       title: section.title,
+      toc: extractToc(section.body),
       html: markdownToHtml(section.body),
       url: `/durusul-lughah/ar/buku-${bookNumber}/bab-${chapter}`,
     }))
@@ -109,6 +159,7 @@ function parseArabicBook(markdown: string, bookNumber: number, chapterGroups: nu
 export const arabicLessons: LocalizedLesson[] = [
   ...parseArabicBook(buku1Arabic, 1, buku1ChapterGroups),
   ...parseArabicBook(buku2Arabic, 2, buku2ChapterGroups),
+  ...parseArabicBook(buku3Arabic, 3, buku3ChapterGroups),
 ];
 
 export function findArabicLesson(bookNumber: number, chapter: number): LocalizedLesson | undefined {

@@ -1,4 +1,4 @@
-import { headingToId, markdownToHtml } from "./markdownToHtml.ts";
+import { cleanTopicTitle, headingToId, markdownToHtml, topicTitleHint } from "./markdownToHtml.ts";
 import { normalizeArabic } from "./normalizeArabic.ts";
 import { normalizeLatin } from "./normalizeLatin.ts";
 import { arabicToTransliterationKeys } from "./transliterateArabic.ts";
@@ -12,8 +12,16 @@ export type LessonChapter = {
   titleMalay: string;
   title: string;
   summary: string[];
+  toc: LessonTocItem[];
   rawBody: string;
   html: string;
+};
+
+export type LessonTocItem = {
+  id: string;
+  title: string;
+  hint?: string;
+  level: 2 | 3;
 };
 
 export type LessonBook = {
@@ -43,14 +51,19 @@ function stripComments(markdown: string): string {
 }
 
 function plainInline(value: string): string {
-  return value.replace(/\*\*/g, "").replace(/\*/g, "").trim();
+  return value
+    .replace(/\[\[([^\]]+)\]\]/g, "$1")
+    .replace(/\(\(([^)]+)\)\)/g, "$1")
+    .replace(/\*\*/g, "")
+    .replace(/\*/g, "")
+    .trim();
 }
 
 function splitTitle(value: string): { titleArabic: string; titleMalay: string } {
   const clean = plainInline(value);
   const parts = clean.split(/\s+—\s+/);
   return {
-    titleArabic: parts[0]?.trim() ?? clean,
+    titleArabic: cleanTopicTitle(parts[0]?.trim() ?? clean),
     titleMalay: parts.slice(1).join(" — ").trim(),
   };
 }
@@ -66,6 +79,65 @@ function extractSummary(markdown: string): string[] {
     .map((line) => line.trim())
     .filter((line) => line.startsWith("- "))
     .map((line) => plainInline(line.slice(2)));
+}
+
+function stripLearningOverview(markdown: string): string {
+  const marker = "## Apa yang Dipelajari dalam Bab Ini";
+  const start = markdown.indexOf(marker);
+  if (start < 0) return markdown;
+
+  const nextHeading = markdown.indexOf("\n## ", start + marker.length);
+  const before = markdown.slice(0, start).trimEnd();
+  const after = nextHeading > -1 ? markdown.slice(nextHeading).trimStart() : "";
+  return [before, after].filter(Boolean).join("\n\n").trim();
+}
+
+function isUsefulTocTitle(title: string): boolean {
+  const plainTitle = title
+    .replace(/\*\*/g, "")
+    .replace(/\*/g, "")
+    .trim()
+    .replace(/^\d+\.\s*/, "")
+    .toLowerCase();
+  if (
+    plainTitle.startsWith("i‘rab") ||
+    plainTitle.startsWith("i’rab") ||
+    plainTitle.startsWith("tidak digunakan")
+  ) {
+    return false;
+  }
+
+  return ![
+    "apa yang dipelajari dalam bab ini",
+    "penerangan",
+    "contoh",
+    "nota",
+    "latihan",
+    "betul",
+    "salah",
+    "mengapa salah",
+    "jawapan",
+  ].includes(plainTitle);
+}
+
+function extractToc(markdown: string): LessonTocItem[] {
+  const seen = new Set<string>();
+  return Array.from(markdown.matchAll(/^##\s+(.+)$/gm))
+    .map((match) => {
+      const rawTitle = plainInline(match[1]);
+      return {
+        id: headingToId(rawTitle),
+        title: cleanTopicTitle(rawTitle),
+        hint: topicTitleHint(rawTitle),
+        level: 2 as const,
+      };
+    })
+    .filter((item) => {
+      if (!isUsefulTocTitle(item.title)) return false;
+      if (seen.has(item.id)) return false;
+      seen.add(item.id);
+      return true;
+    });
 }
 
 function stripRepeatedChapterHeading(markdown: string): string {
@@ -132,15 +204,16 @@ export function buildLessonSearchItems(books: LessonBook[]): LessonSearchItem[] 
       if (chapter.summary.length) {
         items.push(makeSearchItem(
           chapter,
-          "Apa yang Dipelajari dalam Bab Ini",
+          "Index Bab",
           chapter.summary.slice(0, 4).join("; "),
-          headingToId("Apa yang Dipelajari dalam Bab Ini"),
+          "",
         ));
       }
 
       const headingMatches = Array.from(chapter.rawBody.matchAll(/^(##|###)\s+(.+)$/gm));
       for (const match of headingMatches) {
         const section = match[2];
+        const displaySection = match[1] === "##" ? cleanTopicTitle(section) : plainInline(section);
         const start = (match.index ?? 0) + match[0].length;
         const next = chapter.rawBody.slice(start).match(/\n(?:##|###)\s+/);
         const block = chapter.rawBody.slice(start, next?.index ? start + next.index : undefined);
@@ -149,7 +222,7 @@ export function buildLessonSearchItems(books: LessonBook[]): LessonSearchItem[] 
           .map((line) => line.trim())
           .find((line) => line && !line.startsWith("|") && !line.startsWith("---")) ?? section;
 
-        items.push(makeSearchItem(chapter, section, excerpt.replace(/^- /, ""), headingToId(section)));
+        items.push(makeSearchItem(chapter, displaySection, excerpt.replace(/^- /, ""), headingToId(section)));
       }
     }
   }
@@ -180,6 +253,7 @@ export function parseLessonBook(markdown: string, bookNumber: number): LessonBoo
     const body = stripRepeatedChapterHeading(
       rawChapter.replace(/^# Bab\s+\d+\s+—\s+.+\n+/, "").trim(),
     );
+    const bodyWithoutOverview = stripLearningOverview(body);
 
     return {
       book: `Buku ${bookNumber}`,
@@ -190,8 +264,9 @@ export function parseLessonBook(markdown: string, bookNumber: number): LessonBoo
       titleMalay: titleParts.titleMalay,
       title: titleParts.titleMalay ? `${titleParts.titleArabic} — ${titleParts.titleMalay}` : titleParts.titleArabic,
       summary: extractSummary(rawChapter),
-      rawBody: body,
-      html: markdownToHtml(body),
+      toc: extractToc(bodyWithoutOverview),
+      rawBody: bodyWithoutOverview,
+      html: markdownToHtml(bodyWithoutOverview, { showTopicHints: true }),
     };
   });
 
