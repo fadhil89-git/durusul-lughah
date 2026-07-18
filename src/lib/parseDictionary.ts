@@ -76,12 +76,20 @@ export function parseCsv(text: string): string[][] {
 }
 
 function normalizeBukuLabel(raw: string): string {
-  const m = raw.trim().match(/BUKU\s*(\d+)/i);
-  return m ? `Buku ${m[1]}` : raw.trim();
+  const value = cleanText(raw);
+  const m = value.match(/BUKU\s*(\d+)/i);
+  return m ? `Buku ${m[1]}` : value;
 }
 
 function headerKey(value: string): string {
-  return value.trim().replace(/\s+/g, " ").toLocaleLowerCase("ms");
+  return cleanText(value).replace(/\s+/g, " ").toLocaleLowerCase("ms");
+}
+
+function cleanText(value: string): string {
+  return value
+    .replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/g, "")
+    .replace(/\r\n?/g, "\n")
+    .trim();
 }
 
 export function parseDictionary(csvText: string): ParseResult {
@@ -105,14 +113,14 @@ export function parseDictionary(csvText: string): ParseResult {
 
   const get = (row: string[], label: string, fallback = -1) => {
     const index = columns.get(headerKey(label)) ?? fallback;
-    return index >= 0 ? (row[index] ?? "").trim() : "";
+    return index >= 0 ? cleanText(row[index] ?? "") : "";
   };
 
   rows.forEach((row, idx) => {
     const lineNo = idx + 1;
-    const first = (row[0] ?? "").trim();
+    const first = cleanText(row[0] ?? "");
 
-    if (row.every((x) => (x ?? "").trim() === "")) {
+    if (row.every((x) => cleanText(x ?? "") === "")) {
       report.emptyRows.push(lineNo);
       return;
     }
@@ -126,7 +134,7 @@ export function parseDictionary(csvText: string): ParseResult {
       report.headerRows.push(lineNo);
       return;
     }
-    if (row.every((x) => (x ?? "").trim() === "---")) {
+    if (row.every((x) => cleanText(x ?? "") === "---")) {
       report.separatorRows.push(lineNo);
       return;
     }

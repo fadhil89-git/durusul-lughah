@@ -24,8 +24,8 @@ export default {
           "sans-serif",
         ],
         arabic: [
-          "Noto Naskh Arabic",
           "Amiri",
+          "Noto Naskh Arabic",
           "Scheherazade New",
           "Traditional Arabic",
           "Al Bayan",

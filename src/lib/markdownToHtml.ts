@@ -28,6 +28,13 @@ function renderInline(value: string): string {
     .join("");
 }
 
+function renderCode(value: string): string {
+  return escapeHtml(value)
+    .replace(/\[\[([^\]]+)\]\]/g, '<span class="lesson-term">$1</span>')
+    .replace(/\(\(([^)]+)\)\)/g, '<span class="lesson-focus">$1</span>')
+    .replace(/(?:├──|└──)\s*([^:\n]+)(:)/g, '<span class="diagram-marker">•</span> <span class="lesson-term">$1</span>$2');
+}
+
 export function headingToId(value: string): string {
   const plain = value
     .replace(/\*\*/g, "")
@@ -105,7 +112,7 @@ export function markdownToHtml(markdown: string): string {
         i++;
       }
       if (i < lines.length) i++;
-      chunks.push(`<pre class="lesson-diagram"><code>${escapeHtml(code.join("\n"))}</code></pre>`);
+      chunks.push(`<pre class="lesson-diagram"><code>${renderCode(code.join("\n"))}</code></pre>`);
       continue;
     }
 
@@ -146,6 +153,16 @@ export function markdownToHtml(markdown: string): string {
       continue;
     }
 
+    if (/^\d+\.\s+/.test(trimmed)) {
+      const items: string[] = [];
+      while (i < lines.length && /^\d+\.\s+/.test(lines[i].trim())) {
+        items.push(`<li>${renderInline(lines[i].trim().replace(/^\d+\.\s+/, ""))}</li>`);
+        i++;
+      }
+      chunks.push(`<ol>${items.join("")}</ol>`);
+      continue;
+    }
+
     if (trimmed.startsWith("✅") || trimmed.startsWith("✓")) {
       chunks.push(`<p class="example-correct">${renderInline(trimmed)}</p>`);
       i++;
@@ -175,6 +192,7 @@ export function markdownToHtml(markdown: string): string {
       lines[i].trim() &&
       !/^(#{1,4})\s+/.test(lines[i].trim()) &&
       !/^- /.test(lines[i].trim()) &&
+      !/^\d+\.\s+/.test(lines[i].trim()) &&
       !/^> /.test(lines[i].trim()) &&
       !/^\s*\|/.test(lines[i]) &&
       !isAllowedHtmlLine(lines[i].trim())

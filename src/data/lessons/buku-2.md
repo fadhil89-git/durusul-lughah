@@ -1030,7 +1030,7 @@ Dalam bab ini, anda mempelajari:
 
 ---
 
-## 1. تَأْنِيثُ الْفَاعِلِ (*ta’nīth al-fā‘il*) — Menunjukkan Fā‘il Mu’annath
+## 1. تَأْنِيثُ الْفَاعِلِ (*ta’nīth al-fā‘il*) — Menjadikan Fā‘il Sebagai Mu’annath
 
 ### Penerangan
 

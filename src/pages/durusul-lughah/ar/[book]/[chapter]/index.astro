@@ -1,6 +1,6 @@
 ---
 import "../../../../../styles/global.css";
-import { arabicLessons } from "../../../../../data/lessonLocales.ts";
+import { arabicLessons, hasArabicLesson } from "../../../../../data/lessonLocales.ts";
 import { findLessonChapter, getAdjacentLesson, lessonChapters } from "../../../../../data/lessons.ts";
 
 export function getStaticPaths() {
@@ -18,6 +18,10 @@ const sourceChapter = findLessonChapter(`buku-${lesson.bookNumber}`, `bab-${less
 const previous = sourceChapter ? getAdjacentLesson(sourceChapter, -1) : undefined;
 const next = sourceChapter ? getAdjacentLesson(sourceChapter, 1) : undefined;
 const bookChapters = lessonChapters.filter((item) => item.bookNumber === lesson.bookNumber);
+const localizedPath = (bookNumber: number, chapter: number) =>
+  hasArabicLesson(bookNumber, chapter)
+    ? `/durusul-lughah/ar/buku-${bookNumber}/bab-${chapter}`
+    : `/durusul-lughah/buku-${bookNumber}/bab-${chapter}`;
 ---
 <!doctype html>
 <html lang="ar" dir="rtl">
@@ -47,7 +51,7 @@ const bookChapters = lessonChapters.filter((item) => item.bookNumber === lesson.
           onchange="if (this.value) window.location.href = this.value"
         >
           {bookChapters.map((item) => (
-            <option value={`/durusul-lughah/buku-${item.bookNumber}/bab-${item.chapter}`} selected={item.chapter === lesson.chapter}>
+            <option value={localizedPath(item.bookNumber, item.chapter)} selected={item.chapter === lesson.chapter}>
               باب {item.chapter} — {item.titleMalay || item.titleArabic}
             </option>
           ))}
@@ -57,8 +61,8 @@ const bookChapters = lessonChapters.filter((item) => item.bookNumber === lesson.
 
     <main class="mx-auto w-full max-w-4xl px-4 py-8">
       <nav class="mb-6 flex flex-wrap items-center justify-between gap-3 text-sm" dir="ltr">
-        {previous ? <a href={`/durusul-lughah/buku-${previous.bookNumber}/bab-${previous.chapter}`} class="rounded-full border border-line bg-panel px-4 py-2 font-semibold text-accent hover:bg-accent-soft">← Previous</a> : <span></span>}
-        {next ? <a href={`/durusul-lughah/buku-${next.bookNumber}/bab-${next.chapter}`} class="rounded-full border border-line bg-panel px-4 py-2 font-semibold text-accent hover:bg-accent-soft">Next →</a> : <span></span>}
+        {previous ? <a href={localizedPath(previous.bookNumber, previous.chapter)} class="rounded-full border border-line bg-panel px-4 py-2 font-semibold text-accent hover:bg-accent-soft">← Previous</a> : <span></span>}
+        {next ? <a href={localizedPath(next.bookNumber, next.chapter)} class="rounded-full border border-line bg-panel px-4 py-2 font-semibold text-accent hover:bg-accent-soft">Next →</a> : <span></span>}
       </nav>
 
       <article class="rounded-2xl border border-line bg-panel p-5 shadow-sm sm:p-8">
