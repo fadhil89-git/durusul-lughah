@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 @config "../../tailwind.config.mjs";
 
@@ -9,6 +10,7 @@ html,
 body {
   background-color: theme("colors.paper");
   color: theme("colors.ink");
+  font-synthesis-weight: none;
 }
 
 /* Teks Arab: besar, jelas, ruang baris cukup supaya harakat tidak terpotong. */
