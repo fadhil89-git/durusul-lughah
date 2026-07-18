@@ -1,0 +1,59 @@
+---
+import "../../styles/global.css";
+import LessonSearch from "../../components/LessonSearch.tsx";
+import { lessonBooks, lessonSearchItems } from "../../data/lessons.ts";
+---
+<!doctype html>
+<html lang="ms">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Syarah Durusul Lughah al-Arabiyyah mengikut buku dan bab." />
+    <title>Syarah Durusul Lughah | Tuwailib</title>
+  </head>
+  <body class="min-h-screen bg-paper text-ink">
+    <header class="border-b border-line bg-panel">
+      <div class="mx-auto flex w-full max-w-4xl items-center justify-between gap-4 px-4 py-5">
+        <a href="/" class="text-lg font-semibold text-ink hover:text-accent">Tuwailib</a>
+        <a href="/kamus" class="rounded-full border border-line bg-paper px-4 py-2 text-sm font-semibold text-accent hover:bg-accent-soft">Kamus</a>
+      </div>
+    </header>
+
+    <main class="mx-auto w-full max-w-4xl px-4 py-8">
+      <div class="mb-8">
+        <p class="arabic text-2xl text-accent" dir="rtl">دروس اللغة العربية</p>
+        <h1 class="mt-2 text-3xl font-semibold text-ink sm:text-4xl">Syarah Durusul Lughah</h1>
+        <p class="mt-3 max-w-2xl text-sm leading-relaxed text-muted">
+          Pilih buku dan terus lompat ke bab yang mahu dibaca. Setiap bab disusun dengan ringkasan, penerangan, contoh dan kesalahan biasa.
+        </p>
+      </div>
+
+      <div class="space-y-6">
+        <LessonSearch client:load items={lessonSearchItems} />
+
+        {lessonBooks.map((book) => (
+          <section class="rounded-2xl border border-line bg-panel p-5 shadow-sm">
+            <div class="mb-4 flex flex-wrap items-end justify-between gap-3">
+              <div>
+                <p class="text-sm font-semibold uppercase tracking-[0.08em] text-muted">{book.book}</p>
+                <h2 class="mt-1 text-2xl font-semibold text-ink">{book.title}</h2>
+              </div>
+              <span class="text-sm text-muted">{book.chapters.length} bab</span>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              {book.chapters.map((chapter) => (
+                <a
+                  href={`/durusul-lughah/buku-${chapter.bookNumber}/bab-${chapter.chapter}`}
+                  class="rounded-full border border-line bg-paper px-3 py-2 text-sm font-semibold text-ink transition hover:border-accent hover:bg-accent-soft hover:text-accent"
+                >
+                  Bab {chapter.chapter}
+                </a>
+              ))}
+            </div>
+          </section>
+        ))}
+
+      </div>
+    </main>
+  </body>
+</html>

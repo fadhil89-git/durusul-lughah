@@ -1,0 +1,92 @@
+---
+import "../../../../styles/global.css";
+import { hasArabicLesson } from "../../../../data/lessonLocales.ts";
+import { getAdjacentLesson, lessonChapters } from "../../../../data/lessons.ts";
+
+export function getStaticPaths() {
+  return lessonChapters.map((chapter) => ({
+    params: {
+      book: `buku-${chapter.bookNumber}`,
+      chapter: `bab-${chapter.chapter}`,
+    },
+    props: { chapter },
+  }));
+}
+
+const { chapter } = Astro.props;
+const previous = getAdjacentLesson(chapter, -1);
+const next = getAdjacentLesson(chapter, 1);
+const bookChapters = lessonChapters.filter((item) => item.bookNumber === chapter.bookNumber);
+const hasArabic = hasArabicLesson(chapter.bookNumber, chapter.chapter);
+---
+<!doctype html>
+<html lang="ms">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={`Syarah ${chapter.book} Bab ${chapter.chapter}: ${chapter.title}`} />
+    <title>{chapter.book} Bab {chapter.chapter} | Tuwailib</title>
+  </head>
+  <body class="min-h-screen bg-paper text-ink">
+    <header class="border-b border-line bg-panel">
+      <div class="mx-auto flex w-full max-w-4xl items-center justify-between gap-4 px-4 py-4">
+        <a href="/" class="text-lg font-semibold text-ink hover:text-accent">Tuwailib</a>
+        <div class="flex items-center gap-2">
+          <a href="/durusul-lughah" class="rounded-full border border-line bg-paper px-3 py-2 text-sm font-semibold text-accent hover:bg-accent-soft">Semua Bab</a>
+          <a href="/kamus" class="rounded-full border border-line bg-paper px-3 py-2 text-sm font-semibold text-accent hover:bg-accent-soft">Kamus</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="sticky top-0 z-40 border-b border-line bg-paper/95 backdrop-blur">
+      <div class="mx-auto flex w-full max-w-4xl flex-wrap items-center gap-3 px-4 py-3">
+        <label for="chapter-jump" class="text-sm font-semibold text-muted">{chapter.book} · Bab {chapter.chapter}</label>
+        <select
+          id="chapter-jump"
+          class="min-w-0 flex-1 rounded-lg border border-line bg-panel px-3 py-2 text-sm text-ink focus:border-accent focus:outline-none"
+          onchange="if (this.value) window.location.href = this.value"
+        >
+          {bookChapters.map((item) => (
+            <option value={`/durusul-lughah/buku-${item.bookNumber}/bab-${item.chapter}`} selected={item.chapter === chapter.chapter}>
+              Bab {item.chapter} — {item.titleMalay || item.titleArabic}
+            </option>
+          ))}
+        </select>
+      </div>
+    </div>
+
+    <main class="mx-auto w-full max-w-4xl px-4 py-8">
+      <nav class="mb-6 flex flex-wrap items-center justify-between gap-3 text-sm">
+        {previous ? <a href={`/durusul-lughah/buku-${previous.bookNumber}/bab-${previous.chapter}`} class="rounded-full border border-line bg-panel px-4 py-2 font-semibold text-accent hover:bg-accent-soft">← Bab sebelum</a> : <span></span>}
+        {next ? <a href={`/durusul-lughah/buku-${next.bookNumber}/bab-${next.chapter}`} class="rounded-full border border-line bg-panel px-4 py-2 font-semibold text-accent hover:bg-accent-soft">Bab seterusnya →</a> : <span></span>}
+      </nav>
+
+      <article class="rounded-2xl border border-line bg-panel p-5 shadow-sm sm:p-8">
+        <div class="mb-6 flex flex-wrap items-center gap-2">
+          <span class="rounded-full border border-accent bg-accent px-3 py-1.5 text-sm font-semibold text-white">BM</span>
+          <span class="rounded-full border border-line bg-paper px-3 py-1.5 text-sm font-semibold text-muted">English</span>
+          {hasArabic ? (
+            <a href={`/durusul-lughah/ar/buku-${chapter.bookNumber}/bab-${chapter.chapter}`} class="rounded-full border border-line bg-paper px-3 py-1.5 text-sm font-semibold text-accent hover:bg-accent-soft">العربية</a>
+          ) : (
+            <span class="rounded-full border border-line bg-paper px-3 py-1.5 text-sm font-semibold text-muted">العربية</span>
+          )}
+        </div>
+        <p class="text-sm font-semibold uppercase tracking-[0.08em] text-muted">{chapter.book} · Bab {chapter.chapter}</p>
+        <h1 class="mt-3 text-3xl font-semibold leading-tight text-accent sm:text-4xl">{chapter.titleMalay || chapter.titleArabic}</h1>
+        {chapter.titleMalay && <p class="arabic mt-2 text-2xl font-semibold text-ink sm:text-3xl" dir="rtl">{chapter.titleArabic}</p>}
+
+        <div class="lesson-prose mt-8" set:html={chapter.html} />
+      </article>
+
+      <nav class="mt-6 grid gap-3 sm:grid-cols-3">
+        <div>
+          {previous && <a href={`/durusul-lughah/buku-${previous.bookNumber}/bab-${previous.chapter}`} class="block rounded-xl border border-line bg-panel p-4 text-sm font-semibold text-accent hover:bg-accent-soft">← {previous.book} Bab {previous.chapter}</a>}
+        </div>
+        <a href="/durusul-lughah" class="block rounded-xl border border-line bg-panel p-4 text-center text-sm font-semibold text-accent hover:bg-accent-soft">Semua Bab</a>
+        <div>
+          {next && <a href={`/durusul-lughah/buku-${next.bookNumber}/bab-${next.chapter}`} class="block rounded-xl border border-line bg-panel p-4 text-right text-sm font-semibold text-accent hover:bg-accent-soft">{next.book} Bab {next.chapter} →</a>}
+        </div>
+      </nav>
+    </main>
+  </body>
+</html>

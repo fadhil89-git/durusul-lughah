@@ -1,0 +1,76 @@
+---
+import "../../../../../styles/global.css";
+import { arabicLessons } from "../../../../../data/lessonLocales.ts";
+import { findLessonChapter, getAdjacentLesson, lessonChapters } from "../../../../../data/lessons.ts";
+
+export function getStaticPaths() {
+  return arabicLessons.map((lesson) => ({
+    params: {
+      book: `buku-${lesson.bookNumber}`,
+      chapter: `bab-${lesson.chapter}`,
+    },
+    props: { lesson },
+  }));
+}
+
+const { lesson } = Astro.props;
+const sourceChapter = findLessonChapter(`buku-${lesson.bookNumber}`, `bab-${lesson.chapter}`);
+const previous = sourceChapter ? getAdjacentLesson(sourceChapter, -1) : undefined;
+const next = sourceChapter ? getAdjacentLesson(sourceChapter, 1) : undefined;
+const bookChapters = lessonChapters.filter((item) => item.bookNumber === lesson.bookNumber);
+---
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={`شرح عربي: كتاب ${lesson.bookNumber}، باب ${lesson.chapter}`} />
+    <title>كتاب {lesson.bookNumber} باب {lesson.chapter} | Tuwailib</title>
+  </head>
+  <body class="min-h-screen bg-paper text-ink">
+    <header class="border-b border-line bg-panel">
+      <div class="mx-auto flex w-full max-w-4xl items-center justify-between gap-4 px-4 py-4">
+        <a href="/" class="text-lg font-semibold text-ink hover:text-accent">Tuwailib</a>
+        <div class="flex items-center gap-2">
+          <a href="/durusul-lughah" class="rounded-full border border-line bg-paper px-3 py-2 text-sm font-semibold text-accent hover:bg-accent-soft">كل الدروس</a>
+          <a href="/kamus" class="rounded-full border border-line bg-paper px-3 py-2 text-sm font-semibold text-accent hover:bg-accent-soft">القاموس</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="sticky top-0 z-40 border-b border-line bg-paper/95 backdrop-blur">
+      <div class="mx-auto flex w-full max-w-4xl flex-wrap items-center gap-3 px-4 py-3">
+        <label for="chapter-jump" class="text-sm font-semibold text-muted">كتاب {lesson.bookNumber} · باب {lesson.chapter}</label>
+        <select
+          id="chapter-jump"
+          class="min-w-0 flex-1 rounded-lg border border-line bg-panel px-3 py-2 text-sm text-ink focus:border-accent focus:outline-none"
+          onchange="if (this.value) window.location.href = this.value"
+        >
+          {bookChapters.map((item) => (
+            <option value={`/durusul-lughah/buku-${item.bookNumber}/bab-${item.chapter}`} selected={item.chapter === lesson.chapter}>
+              باب {item.chapter} — {item.titleMalay || item.titleArabic}
+            </option>
+          ))}
+        </select>
+      </div>
+    </div>
+
+    <main class="mx-auto w-full max-w-4xl px-4 py-8">
+      <nav class="mb-6 flex flex-wrap items-center justify-between gap-3 text-sm" dir="ltr">
+        {previous ? <a href={`/durusul-lughah/buku-${previous.bookNumber}/bab-${previous.chapter}`} class="rounded-full border border-line bg-panel px-4 py-2 font-semibold text-accent hover:bg-accent-soft">← Previous</a> : <span></span>}
+        {next ? <a href={`/durusul-lughah/buku-${next.bookNumber}/bab-${next.chapter}`} class="rounded-full border border-line bg-panel px-4 py-2 font-semibold text-accent hover:bg-accent-soft">Next →</a> : <span></span>}
+      </nav>
+
+      <article class="rounded-2xl border border-line bg-panel p-5 shadow-sm sm:p-8">
+        <div class="mb-6 flex flex-wrap items-center gap-2" dir="ltr">
+          <a href={`/durusul-lughah/buku-${lesson.bookNumber}/bab-${lesson.chapter}`} class="rounded-full border border-line bg-paper px-3 py-1.5 text-sm font-semibold text-accent hover:bg-accent-soft">BM</a>
+          <span class="rounded-full border border-line bg-paper px-3 py-1.5 text-sm font-semibold text-muted">English</span>
+          <span class="rounded-full border border-accent bg-accent px-3 py-1.5 text-sm font-semibold text-white">العربية</span>
+        </div>
+        <p class="text-sm font-semibold uppercase tracking-[0.08em] text-muted">كتاب {lesson.bookNumber} · باب {lesson.chapter}</p>
+        <h1 class="arabic mt-3 text-4xl font-semibold leading-tight text-accent sm:text-5xl" dir="rtl">{lesson.title}</h1>
+        <div class="lesson-prose lesson-prose-ar mt-8" set:html={lesson.html} />
+      </article>
+    </main>
+  </body>
+</html>

@@ -71,3 +71,254 @@ body {
   width: 2.25rem;
   z-index: 1;
 }
+
+.lesson-prose {
+  color: theme("colors.ink");
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.lesson-prose h2 {
+  border-top: 1px solid theme("colors.line");
+  color: theme("colors.ink");
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+}
+
+.lesson-prose h3 {
+  color: theme("colors.accent");
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+
+.lesson-prose h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 1.25rem;
+}
+
+.lesson-prose p,
+.lesson-prose ul,
+.lesson-prose blockquote,
+.lesson-prose .lesson-table-wrap {
+  margin-top: 1rem;
+}
+
+.lesson-prose hr {
+  display: none;
+}
+
+.lesson-prose ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+
+.lesson-prose li + li {
+  margin-top: 0.35rem;
+}
+
+.lesson-prose li::first-letter {
+  text-transform: uppercase;
+}
+
+.lesson-prose strong {
+  color: theme("colors.ink");
+  font-weight: 700;
+}
+
+.lesson-prose .arabic-inline {
+  direction: rtl;
+  display: inline;
+  font-family: theme("fontFamily.arabic");
+  font-feature-settings: "calt" 1, "liga" 1;
+  font-size: 1.28em;
+  line-height: 1.85;
+}
+
+.lesson-prose blockquote {
+  background: theme("colors.paper");
+  border-inline-start: 4px solid theme("colors.accent");
+  border-radius: 0.75rem;
+  font-size: 1.45rem;
+  padding: 1rem;
+}
+
+.lesson-prose .arabic-example {
+  direction: rtl;
+  font-family: theme("fontFamily.arabic");
+  font-feature-settings: "calt" 1, "liga" 1;
+  font-size: 1.65em;
+  line-height: 1.9;
+  text-align: right;
+}
+
+.lesson-prose .arabic-example .arabic-inline {
+  font-size: 1em;
+}
+
+.lesson-prose blockquote .arabic-inline {
+  font-size: 1.5em;
+}
+
+.lesson-prose td .arabic-inline {
+  font-size: 1.35em;
+}
+
+.lesson-prose blockquote:has(.wrong) {
+  background: #fff5f5;
+  border-color: #d92d20;
+}
+
+.lesson-prose .wrong {
+  color: #d92d20;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.18em;
+}
+
+.lesson-table-wrap {
+  border: 1px solid theme("colors.line");
+  border-radius: 0.75rem;
+  overflow-x: auto;
+}
+
+.lesson-prose table {
+  border-collapse: collapse;
+  min-width: 100%;
+}
+
+.lesson-prose th,
+.lesson-prose td {
+  border-bottom: 1px solid theme("colors.line");
+  padding: 0.85rem;
+  text-align: start;
+  vertical-align: top;
+}
+
+.lesson-prose th {
+  background: theme("colors.paper");
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.lesson-prose tr:last-child td {
+  border-bottom: 0;
+}
+
+.lesson-prose-ar {
+  direction: rtl;
+  font-family: theme("fontFamily.arabic");
+  font-size: 1.35rem;
+  text-align: right;
+}
+
+.lesson-prose-ar h2 {
+  font-size: 2.1rem;
+}
+
+.lesson-prose-ar h3 {
+  font-size: 1.65rem;
+}
+
+.lesson-prose-ar ul {
+  padding-left: 0;
+  padding-right: 1.25rem;
+}
+
+.lesson-prose-ar .lesson-page {
+  direction: rtl;
+}
+
+.lesson-prose-ar .lesson-header {
+  border-bottom: 1px solid theme("colors.line");
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.lesson-prose-ar .lesson-meta {
+  color: theme("colors.muted");
+  font-family: theme("fontFamily.sans");
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-top: 0;
+}
+
+.lesson-prose-ar .lesson-section {
+  border-top: 1px solid theme("colors.line");
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+}
+
+.lesson-prose-ar .lesson-card {
+  background: theme("colors.paper");
+  border: 1px solid theme("colors.line");
+  border-radius: 0.75rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.lesson-prose-ar .lesson-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 720px) {
+  .lesson-prose-ar .lesson-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.lesson-prose-ar .lesson-term,
+.lesson-prose-ar .lesson-focus {
+  color: #b42318;
+  direction: rtl;
+  display: inline;
+  font-weight: 700;
+}
+
+.lesson-prose-ar .example-list {
+  list-style: none;
+  padding-right: 0;
+}
+
+.lesson-prose-ar .example-list li {
+  border-radius: 0.65rem;
+  padding: 0.55rem 0.7rem;
+}
+
+.lesson-prose-ar .example-correct,
+.lesson-prose-ar p.example-correct,
+.lesson-prose-ar li.example-correct {
+  background: #edf7f2;
+  border-inline-start: 4px solid theme("colors.accent");
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+}
+
+.lesson-prose-ar .example-wrong,
+.lesson-prose-ar p.example-wrong,
+.lesson-prose-ar li.example-wrong {
+  background: #fff1f0;
+  border-inline-start: 4px solid #d92d20;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+}
+
+.lesson-prose-ar .lesson-diagram {
+  background: theme("colors.paper");
+  border: 1px solid theme("colors.line");
+  border-radius: 0.75rem;
+  direction: rtl;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-top: 1rem;
+  overflow-x: auto;
+  padding: 1rem;
+  text-align: right;
+}

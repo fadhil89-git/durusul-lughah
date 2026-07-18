@@ -1,0 +1,18 @@
+---
+import "../../styles/global.css";
+import DictionaryApp from "../../components/DictionaryApp.tsx";
+import { entries, chapters, report } from "../../data/dictionary.ts";
+console.log(`[kamus] ${report.entryCount} entri dimuat — ${report.perBuku.map((b) => `${b.buku}: ${b.entries}`).join(", ")}`);
+---
+<!doctype html>
+<html lang="ms">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Kamus Durusul Lughah dwibahasa dengan carian Arab, Melayu dan Inggeris serta nota nahu dan sarf." />
+    <title>Kamus Durusul Lughah | Tuwailib</title>
+  </head>
+  <body class="min-h-screen bg-paper">
+    <DictionaryApp client:load entries={entries} chapters={chapters} entryCount={report.entryCount} />
+  </body>
+</html>

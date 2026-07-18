@@ -1,4 +1,5 @@
 import { normalizeArabic } from "./normalizeArabic.ts";
+import { arabicToTransliterationKeys } from "./transliterateArabic.ts";
 
 export type DictionaryEntry = {
   id: string;
@@ -9,6 +10,7 @@ export type DictionaryEntry = {
   changeNote: string;
   arabic: string;
   arabicNormalized: string;
+  arabicTranslit: string;
   pluralOrSingular: string;
   pluralOrSingularNormalized: string;
   malay: string;
@@ -158,6 +160,7 @@ export function parseDictionary(csvText: string): ParseResult {
       changeNote,
       arabic,
       arabicNormalized: normalizeArabic(arabic),
+      arabicTranslit: arabicToTransliterationKeys([arabic, pluralOrSingular].join(" ")),
       pluralOrSingular,
       pluralOrSingularNormalized: normalizeArabic(pluralOrSingular),
       malay,

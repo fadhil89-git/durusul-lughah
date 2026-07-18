@@ -1,6 +1,7 @@
 import type { DictionaryEntry } from "./parseDictionary.ts";
 import { normalizeArabic, hasArabic } from "./normalizeArabic.ts";
 import { normalizeLatin } from "./normalizeLatin.ts";
+import { normalizeTransliterationInput } from "./transliterateArabic.ts";
 
 export type SearchResult = { entry: DictionaryEntry; tier: number };
 export const TIER = {
@@ -10,8 +11,10 @@ export const TIER = {
   MALAY_EXACT: 3,
   ENGLISH_EXACT: 4,
   PLURAL_MATCH: 5,
-  PARTIAL: 6,
-  FUZZY: 7,
+  TRANSLIT_EXACT: 6,
+  TRANSLIT_PARTIAL: 7,
+  PARTIAL: 8,
+  FUZZY: 9,
 } as const;
 
 export type FuseLike = { search: (q: string) => { item: DictionaryEntry }[] };
@@ -30,6 +33,7 @@ export function buildSearchIndex(
         keys: [
           { name: "arabicNormalized", weight: 1 },
           { name: "pluralOrSingularNormalized", weight: 0.65 },
+          { name: "arabicTranslit", weight: 0.75 },
           { name: "malay", weight: 0.85 },
           { name: "english", weight: 0.85 },
           { name: "searchTextLatin", weight: 0.3 },
@@ -65,6 +69,9 @@ export function deterministicSearch(query: string, entries: DictionaryEntry[]): 
       const enTokens = en.split(" ");
       if (bm === qNormLatin || bmTokens.includes(qNormLatin)) consider(entry.id, TIER.MALAY_EXACT);
       if (en === qNormLatin || enTokens.includes(qNormLatin)) consider(entry.id, TIER.ENGLISH_EXACT);
+      const qTranslit = normalizeTransliterationInput(query);
+      if (qTranslit && entry.arabicTranslit.split(" ").includes(qTranslit)) consider(entry.id, TIER.TRANSLIT_EXACT);
+      else if (qTranslit.length >= 3 && entry.arabicTranslit.includes(qTranslit)) consider(entry.id, TIER.TRANSLIT_PARTIAL);
       if (normalizeLatin(entry.searchTextLatin).includes(qNormLatin)) consider(entry.id, TIER.PARTIAL);
       if (normalizeLatin(entry.babLabel).includes(qNormLatin)) consider(entry.id, TIER.PARTIAL);
     }
@@ -82,7 +89,7 @@ export function searchDictionary(
   const best = q ? deterministicSearch(q, index.entries) : new Map<string, number>();
 
   if (q && index.fuse && q.length >= 2) {
-    const fuseQuery = hasArabic(q) ? normalizeArabic(q) : normalizeLatin(q);
+    const fuseQuery = hasArabic(q) ? normalizeArabic(q) : `${normalizeLatin(q)} ${normalizeTransliterationInput(q)}`;
     for (const result of index.fuse.search(fuseQuery)) {
       if (!best.has(result.item.id)) best.set(result.item.id, TIER.FUZZY);
     }

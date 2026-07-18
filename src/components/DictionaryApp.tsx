@@ -174,6 +174,16 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
     if (value.trim()) setBabKey("");
   };
 
+  const submitSearch = () => {
+    const clean = query.trim();
+    setDebounced(clean);
+    setQuery(clean);
+    setBabKey("");
+    setShowSuggest(false);
+    setActiveIdx(-1);
+    setVisible(INITIAL_LIMIT);
+  };
+
   const chooseBook = (book: string) => {
     setActiveBook(book);
     setBabKey("");
@@ -200,10 +210,15 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
   };
 
   const onKeyDown = (event: ReactKeyboardEvent<HTMLInputElement>) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      if (openSuggest && activeIdx >= 0) selectEntry(suggestions[activeIdx]);
+      else submitSearch();
+      return;
+    }
     if (!openSuggest) return;
     if (event.key === "ArrowDown") { event.preventDefault(); setActiveIdx((i) => (i + 1) % suggestions.length); }
     else if (event.key === "ArrowUp") { event.preventDefault(); setActiveIdx((i) => i <= 0 ? suggestions.length - 1 : i - 1); }
-    else if (event.key === "Enter" && activeIdx >= 0) { event.preventDefault(); selectEntry(suggestions[activeIdx]); }
     else if (event.key === "Escape") { setShowSuggest(false); setActiveIdx(-1); }
   };
 
@@ -256,7 +271,7 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
             <div className="relative">
             <label htmlFor="carian" className="sr-only">{t.placeholder}</label>
             <div className="flex items-center gap-3 rounded-2xl border border-line bg-panel px-4 py-3 shadow-sm focus-within:border-accent">
-              <SearchIcon />
+              <button type="button" onClick={() => submitSearch()} className="shrink-0 rounded-full p-1 text-muted transition hover:bg-accent-soft hover:text-accent" aria-label="Search"><SearchIcon /></button>
               <input
                 id="carian"
                 ref={inputRef}
