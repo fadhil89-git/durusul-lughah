@@ -238,8 +238,7 @@ export function buildLessonSearchItems(books: LessonBook[]): LessonSearchItem[] 
 
 export function parseLessonBook(markdown: string, bookNumber: number): LessonBook {
   const cleaned = stripComments(markdown);
-  const titleMatch = cleaned.match(/^#\s+(.+)$/m);
-  const title = titleMatch ? plainInline(titleMatch[1]) : `Durusul Lughah Buku ${bookNumber}`;
+  const title = `Buku Bahasa Arab Madinah — Buku ${bookNumber}`;
   const chapterRegex = /^# Bab\s+(\d+)\s+—\s+(.+)$/gm;
   const matches = Array.from(cleaned.matchAll(chapterRegex));
 

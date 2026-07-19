@@ -15,8 +15,8 @@ const DEBOUNCE_MS = 180;
 
 const copy = {
   ms: {
-    title: "Kamus Durusul Lughah",
-    subtitle: "Cari kalimah Arab, maksud Melayu, bentuk jamak, serta nota nahu dan sarf.",
+    title: "Kamus Buku Bahasa Arab Madinah",
+    subtitle: "Cari kalimah Arab daripada Buku Bahasa Arab Madinah, maksud Melayu, bentuk jamak, serta nota nahu dan saraf.",
     placeholder: "Cari Arab atau Bahasa Melayu…",
     searchHint: "Carian menyokong tulisan Arab dengan atau tanpa harakat.",
     chapter: "Bab",
@@ -39,8 +39,8 @@ const copy = {
     examples: ["بيت", "rumah", "بيوت", "مسجد"],
   },
   en: {
-    title: "Durusul Lughah Dictionary",
-    subtitle: "Search Arabic words, English meanings, plural forms, and grammar or morphology notes.",
+    title: "Madinah Arabic Book Dictionary",
+    subtitle: "Search Arabic words from the Madinah Arabic Book, English meanings, plural forms, and grammar or morphology notes.",
     placeholder: "Search Arabic or English…",
     searchHint: "Arabic search works with or without diacritics.",
     chapter: "Chapter",
@@ -104,7 +104,7 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
 
   useEffect(() => {
     document.documentElement.lang = language;
-    document.title = language === "ms" ? "Kamus Durusul Lughah" : "Durusul Lughah Dictionary";
+    document.title = language === "ms" ? "Kamus Buku Bahasa Arab Madinah" : "Madinah Arabic Book Dictionary";
   }, [language]);
 
   useEffect(() => {
@@ -258,7 +258,7 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
               <p className="mt-1 max-w-xl text-sm leading-relaxed text-muted">{t.subtitle}</p>
             </div>
             <div className="flex shrink-0 flex-col items-end gap-3">
-              <span className="arabic text-lg text-accent" dir="rtl">دروس اللغة</span>
+              <span className="arabic text-lg text-accent" dir="rtl">دروس اللغة العربية لغير الناطقين بها</span>
               <button
                 type="button"
                 onClick={() => setLanguage((lang) => lang === "ms" ? "en" : "ms")}

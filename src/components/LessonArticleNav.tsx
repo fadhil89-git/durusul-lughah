@@ -99,9 +99,9 @@ export default function LessonArticleNav({ chapters, currentBook, currentChapter
       };
 
   return (
-    <div ref={wrapperRef} className="sticky top-0 z-40 border-b border-line bg-paper/95 backdrop-blur">
-      <div className="mx-auto grid w-full max-w-4xl gap-3 px-4 py-3 md:grid-cols-[minmax(0,1fr)_minmax(18rem,0.75fr)]">
-        <div className="relative">
+    <div ref={wrapperRef} className="sticky top-0 z-40 overflow-x-hidden border-b border-line bg-paper/95 backdrop-blur">
+      <div className="mx-auto grid w-full max-w-4xl min-w-0 gap-3 px-4 py-3 md:grid-cols-[minmax(0,1fr)_minmax(18rem,0.75fr)]">
+        <div className="relative min-w-0">
           <label htmlFor="lesson-quick-search" className="sr-only">{labels.search}</label>
           <div className="flex items-center gap-2 rounded-xl border border-line bg-panel px-3 py-2 focus-within:border-accent">
             <span className="text-muted" aria-hidden="true">⌕</span>
@@ -127,7 +127,7 @@ export default function LessonArticleNav({ chapters, currentBook, currentChapter
           </div>
 
           {clean.length >= 2 && (
-            <div className="suggest-scroll absolute z-50 mt-2 max-h-72 w-full overflow-auto rounded-xl border border-line bg-panel py-2 shadow-lg">
+            <div className="suggest-scroll absolute left-0 right-0 z-50 mt-2 max-h-72 w-full max-w-full overflow-auto rounded-xl border border-line bg-panel py-2 shadow-lg">
               {results.length === 0 ? (
                 <p className="px-4 py-3 text-sm text-muted">{labels.noResults}</p>
               ) : (
@@ -142,8 +142,8 @@ export default function LessonArticleNav({ chapters, currentBook, currentChapter
                       <span>·</span>
                       <span>{labels.chapter} {item.chapter}</span>
                     </div>
-                    <div className="mt-1 text-sm font-semibold text-accent">{item.section}</div>
-                    <p className="arabic mt-1 line-clamp-1 text-base text-ink" dir="rtl">{item.arabicTitle}</p>
+                    <div className="mt-1 break-words text-sm font-semibold text-accent">{item.section}</div>
+                    <p className="arabic mt-1 line-clamp-2 break-words text-base text-ink" dir="rtl">{item.arabicTitle}</p>
                   </a>
                 ))
               )}
@@ -151,25 +151,24 @@ export default function LessonArticleNav({ chapters, currentBook, currentChapter
           )}
         </div>
 
-        <div className="relative">
+        <div className="relative min-w-0">
           <button
             type="button"
             onClick={() => setChapterOpen((open) => !open)}
-            className="flex w-full items-center justify-between gap-3 rounded-xl border border-line bg-panel px-3 py-2 text-start text-sm text-ink hover:border-accent"
+            className="flex w-full min-w-0 items-center justify-between gap-3 rounded-xl border border-line bg-panel px-3 py-2 text-start text-sm text-ink hover:border-accent"
             aria-expanded={chapterOpen}
           >
-            <span className="min-w-0 truncate">
-              <span className="font-semibold text-muted">
+            <span className="min-w-0 flex-1 overflow-hidden leading-snug">
+              <span className="block font-semibold text-muted">
                 {isArabic ? `كتاب ${currentBook} · باب ${currentChapter}` : `${current?.book ?? `Buku ${currentBook}`} · Bab ${currentChapter}`}
               </span>
-              <span className="mx-2 text-muted">—</span>
-              <span>{current?.title}</span>
+              <span className="block break-words text-ink">{current?.title}</span>
             </span>
             <span className="shrink-0 text-muted" aria-hidden="true">⌄</span>
           </button>
 
           {chapterOpen && (
-            <div className="absolute z-50 mt-2 w-full rounded-xl border border-line bg-panel p-3 shadow-lg">
+            <div className="absolute left-0 right-0 z-50 mt-2 w-full max-w-full overflow-hidden rounded-xl border border-line bg-panel p-3 shadow-lg">
               <div className="mb-3 flex flex-wrap gap-2">
                 {books.map((book) => {
                   const active = book.bookNumber === activeBook;
@@ -196,13 +195,12 @@ export default function LessonArticleNav({ chapters, currentBook, currentChapter
                       <a
                         key={`${chapter.bookNumber}-${chapter.chapter}`}
                         href={chapter.url}
-                        className={`rounded-lg border px-3 py-2 text-sm transition ${
+                        className={`block rounded-lg border px-3 py-2 text-sm transition ${
                           active ? "border-accent bg-accent-soft text-accent" : "border-line bg-paper text-ink hover:border-accent hover:text-accent"
                         }`}
                       >
-                        <span className="font-semibold">{labels.chapter} {chapter.chapter}</span>
-                        <span className="mx-2 text-muted">—</span>
-                        <span>{chapter.title}</span>
+                        <span className="block font-semibold">{labels.chapter} {chapter.chapter}</span>
+                        <span className="block break-words leading-snug">{chapter.title}</span>
                       </a>
                     );
                   })}

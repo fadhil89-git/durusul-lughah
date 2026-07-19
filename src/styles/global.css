@@ -11,6 +11,8 @@ body {
   background-color: theme("colors.paper");
   color: theme("colors.ink");
   font-synthesis-weight: none;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 html {
@@ -43,6 +45,30 @@ html {
 .suggest-scroll {
   scrollbar-width: thin;
   scrollbar-color: theme("colors.line") transparent;
+}
+
+.home-lang-btn {
+  border: 1px solid theme("colors.line");
+  border-radius: 999px;
+  background: theme("colors.panel");
+  color: theme("colors.accent");
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 0.55rem 0.9rem;
+  transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease;
+}
+
+.home-lang-btn:hover,
+.home-lang-btn.is-active {
+  background: theme("colors.accent");
+  border-color: theme("colors.accent");
+  color: white;
+}
+
+html:not([lang="ar"]) [data-i18n].arabic {
+  direction: ltr;
+  font-family: theme("fontFamily.sans");
+  line-height: 1.25;
 }
 
 .scroll-cue {

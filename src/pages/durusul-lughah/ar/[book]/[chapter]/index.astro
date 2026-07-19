@@ -26,7 +26,7 @@ const chapterJumpItems = lessonChapters.map((item) => ({
   book: item.book,
   bookNumber: item.bookNumber,
   chapter: item.chapter,
-  title: item.titleMalay || item.titleArabic,
+  title: item.titleArabic || item.titleMalay,
   url: localizedPath(item.bookNumber, item.chapter),
 }));
 const localizedSearchItems = lessonSearchItems.map((item) => ({
@@ -49,7 +49,7 @@ const localizedSearchItems = lessonSearchItems.map((item) => ({
         <div class="flex items-center gap-2">
           <a href="/" class="rounded-full border border-line bg-paper px-3 py-2 text-sm font-semibold text-accent hover:bg-accent-soft">الرئيسية</a>
           <a href="/durusul-lughah" class="rounded-full border border-line bg-paper px-3 py-2 text-sm font-semibold text-accent hover:bg-accent-soft">كل الدروس</a>
-          <a href="/kamus" class="rounded-full border border-line bg-paper px-3 py-2 text-sm font-semibold text-accent hover:bg-accent-soft">القاموس</a>
+          <a href="/kamus" class="rounded-full border border-line bg-paper px-3 py-2 text-sm font-semibold text-accent hover:bg-accent-soft">المعجم</a>
         </div>
       </div>
     </header>
