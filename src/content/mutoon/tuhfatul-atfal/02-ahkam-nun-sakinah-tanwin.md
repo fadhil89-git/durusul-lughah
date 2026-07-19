@@ -116,7 +116,7 @@ verses:
             meaning: "Dengan dengung"
             root: "غ ن ن"
             type: "keyword"
-          - word: "يَنْمُو"
+          - word: "بِيَنْمُو"
             meaning: "Himpunan huruf idgham dengan ghunnah: ي ن م و"
             type: "letters"
 
@@ -136,7 +136,7 @@ verses:
           - word: "تُدْغِمْ"
             meaning: "Kamu melakukan idgham"
             root: "د غ م"
-          - word: "دُنْيَا"
+          - word: "كَدُنْيَا"
             meaning: "Contoh nun sakinah bertemu ya dalam satu perkataan"
             type: "example"
           - word: "صِنْوَانٍ"

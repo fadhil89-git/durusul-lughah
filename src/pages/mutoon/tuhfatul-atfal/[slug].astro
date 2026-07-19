@@ -19,8 +19,6 @@ export async function getStaticPaths() {
 
 const { entry, previous, next, entries } = Astro.props;
 const { Content } = await render(entry);
-const allUrl = entries.length === 1 ? `/mutoon/tuhfatul-atfal/${entry.data.slug}` : "/mutoon/tuhfatul-atfal";
-
 function escapeHtml(value: string) {
   return value
     .replaceAll("&", "&amp;")
@@ -106,13 +104,22 @@ function renderLine(text: string, words: { word: string; meaning: string; root?:
       <nav class="matan-top-controls">
         <div class="matan-nav-buttons">
           {previous ? (
-            <a href={`/mutoon/tuhfatul-atfal/${previous.data.slug}`} class="rounded-full border border-line bg-panel px-4 py-2 font-semibold text-accent hover:bg-accent-soft">← Sebelum</a>
+            <a href={`/mutoon/tuhfatul-atfal/${previous.data.slug}`} class="matan-step-link matan-step-prev">← Sebelum</a>
           ) : <span></span>}
-          <a href={allUrl} class="rounded-full border border-line bg-panel px-4 py-2 font-semibold text-accent hover:bg-accent-soft">Lihat Semua</a>
           {next ? (
-            <a href={`/mutoon/tuhfatul-atfal/${next.data.slug}`} class="rounded-full border border-line bg-panel px-4 py-2 font-semibold text-accent hover:bg-accent-soft">Seterusnya →</a>
+            <a href={`/mutoon/tuhfatul-atfal/${next.data.slug}`} class="matan-step-link matan-step-next">Seterusnya →</a>
           ) : <span></span>}
         </div>
+        <label class="matan-jump">
+          <span>Pilih Bahagian</span>
+          <select aria-label="Pilih bahagian Tuhfatul Atfal" data-matan-jump>
+            {entries.map((item) => (
+              <option value={`/mutoon/tuhfatul-atfal/${item.data.slug}`} selected={item.data.slug === entry.data.slug}>
+                {item.data.order}. {item.data.titleMalay}
+              </option>
+            ))}
+          </select>
+        </label>
         <div class="matan-size-control" aria-label="Kawalan saiz teks">
           <button type="button" class="matan-size-btn" data-size-action="smaller" aria-label="Kecilkan teks">−</button>
           <span class="px-2 text-sm font-semibold text-muted">Teks</span>
@@ -165,13 +172,12 @@ function renderLine(text: string, words: { word: string; meaning: string; root?:
         </article>
       </details>
 
-      <nav class="mt-8 flex flex-wrap items-center justify-between gap-3">
+      <nav class="matan-bottom-nav">
         {previous ? (
-          <a href={`/mutoon/tuhfatul-atfal/${previous.data.slug}`} class="rounded-full border border-line bg-panel px-4 py-2 font-semibold text-accent hover:bg-accent-soft">← Sebelum</a>
+          <a href={`/mutoon/tuhfatul-atfal/${previous.data.slug}`} class="matan-step-link matan-step-prev">← Sebelum</a>
         ) : <span></span>}
-        <a href="/mutoon" class="rounded-full border border-line bg-panel px-4 py-2 font-semibold text-accent hover:bg-accent-soft">Senarai Mutun</a>
         {next ? (
-          <a href={`/mutoon/tuhfatul-atfal/${next.data.slug}`} class="rounded-full border border-line bg-panel px-4 py-2 font-semibold text-accent hover:bg-accent-soft">Seterusnya →</a>
+          <a href={`/mutoon/tuhfatul-atfal/${next.data.slug}`} class="matan-step-link matan-step-next">Seterusnya →</a>
         ) : <span></span>}
       </nav>
     </main>
@@ -223,6 +229,13 @@ function renderLine(text: string, words: { word: string; meaning: string; root?:
           const current = Number(localStorage.getItem(sizeKey) || "1");
           setScale(current + (button.dataset.sizeAction === "larger" ? 0.08 : -0.08));
         });
+      });
+
+      document.querySelector("[data-matan-jump]")?.addEventListener("change", (event) => {
+        const target = event.target;
+        if (target instanceof HTMLSelectElement && target.value) {
+          window.location.href = target.value;
+        }
       });
 
       function hidePopover() {
