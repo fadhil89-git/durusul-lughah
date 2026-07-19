@@ -1,0 +1,319 @@
+---
+import "../../../styles/global.css";
+import { getCollection, render } from "astro:content";
+
+export async function getStaticPaths() {
+  const entries = (await getCollection("mutoon"))
+    .sort((a, b) => a.data.order - b.data.order);
+
+  return entries.map((entry, index) => ({
+    params: { slug: entry.data.slug },
+    props: {
+      entry,
+      previous: entries[index - 1],
+      next: entries[index + 1],
+      entries,
+    },
+  }));
+}
+
+const { entry, previous, next, entries } = Astro.props;
+const { Content } = await render(entry);
+const allUrl = entries.length === 1 ? `/mutoon/tuhfatul-atfal/${entry.data.slug}` : "/mutoon/tuhfatul-atfal";
+
+function escapeHtml(value: string) {
+  return value
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+function escapeAttr(value: string) {
+  return escapeHtml(value).replaceAll("\n", " ");
+}
+
+function escapeRegExp(value: string) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function wordClass(type?: string) {
+  if (type === "keyword") return "matan-word matan-keyword";
+  if (type === "letters") return "matan-word matan-letters";
+  if (type === "rule") return "matan-word matan-rule";
+  if (type === "example") return "matan-word matan-example";
+  return "matan-word";
+}
+
+function renderLine(text: string, words: { word: string; meaning: string; root?: string; type?: string }[] = []) {
+  const wordItems = words
+    .filter((word) => word.word)
+    .sort((a, b) => b.word.length - a.word.length);
+
+  const matches: { start: number; end: number; item: { word: string; meaning: string; root?: string; type?: string } }[] = [];
+  for (const item of wordItems) {
+    const pattern = new RegExp(escapeRegExp(item.word), "g");
+    let match: RegExpExecArray | null;
+    while ((match = pattern.exec(text))) {
+      matches.push({ start: match.index, end: match.index + item.word.length, item });
+    }
+  }
+
+  const accepted: typeof matches = [];
+  for (const match of matches.sort((a, b) => a.start - b.start || (b.end - b.start) - (a.end - a.start))) {
+    if (accepted.some((current) => match.start < current.end && match.end > current.start)) continue;
+    accepted.push(match);
+  }
+
+  let html = "";
+  let cursor = 0;
+  for (const match of accepted.sort((a, b) => a.start - b.start)) {
+    html += escapeHtml(text.slice(cursor, match.start));
+    const label = escapeHtml(text.slice(match.start, match.end));
+    const root = match.item.root ? ` data-root="${escapeAttr(match.item.root)}"` : "";
+    const type = match.item.type ? ` data-type="${escapeAttr(match.item.type)}"` : "";
+    html += `<button type="button" class="${wordClass(match.item.type)}" data-word="${escapeAttr(match.item.word)}" data-meaning="${escapeAttr(match.item.meaning)}"${root}${type}>${label}</button>`;
+    cursor = match.end;
+  }
+  html += escapeHtml(text.slice(cursor));
+
+  return html;
+}
+---
+
+<!doctype html>
+<html lang="ms" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={`${entry.data.titleMalay} ${entry.data.titleArabic} daripada matan Tuhfatul Atfal.`} />
+    <title>{entry.data.titleMalay} | Tuhfatul Atfal | Tuwailib</title>
+  </head>
+  <body id="top" class="min-h-screen bg-paper text-ink">
+    <header class="border-b border-line bg-panel">
+      <div class="mx-auto flex w-full max-w-5xl items-center justify-between gap-4 px-4 py-4">
+        <a href="/" class="text-lg font-semibold text-ink hover:text-accent">Tuwailib</a>
+        <div class="flex items-center gap-2">
+          <a href="/" class="rounded-full border border-line bg-paper px-3 py-2 text-sm font-semibold text-accent hover:bg-accent-soft">Home</a>
+          <a href="/mutoon" class="rounded-full border border-line bg-paper px-3 py-2 text-sm font-semibold text-accent hover:bg-accent-soft">Mutun</a>
+          <a href="/kamus" class="rounded-full border border-line bg-paper px-3 py-2 text-sm font-semibold text-accent hover:bg-accent-soft">Kamus</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="mx-auto w-full max-w-5xl px-4 py-8">
+      <nav class="matan-top-controls">
+        <div class="matan-nav-buttons">
+          {previous ? (
+            <a href={`/mutoon/tuhfatul-atfal/${previous.data.slug}`} class="rounded-full border border-line bg-panel px-4 py-2 font-semibold text-accent hover:bg-accent-soft">← Sebelum</a>
+          ) : <span></span>}
+          <a href={allUrl} class="rounded-full border border-line bg-panel px-4 py-2 font-semibold text-accent hover:bg-accent-soft">Lihat Semua</a>
+          {next ? (
+            <a href={`/mutoon/tuhfatul-atfal/${next.data.slug}`} class="rounded-full border border-line bg-panel px-4 py-2 font-semibold text-accent hover:bg-accent-soft">Seterusnya →</a>
+          ) : <span></span>}
+        </div>
+        <div class="matan-size-control" aria-label="Kawalan saiz teks">
+          <button type="button" class="matan-size-btn" data-size-action="smaller" aria-label="Kecilkan teks">−</button>
+          <span class="px-2 text-sm font-semibold text-muted">Teks</span>
+          <button type="button" class="matan-size-btn" data-size-action="larger" aria-label="Besarkan teks">+</button>
+        </div>
+      </nav>
+
+      <section class="mb-6">
+        <p class="text-sm font-semibold uppercase tracking-[0.12em] text-muted">Tuhfatul Atfal</p>
+        <p class="mt-4 text-2xl font-semibold text-ink">{entry.data.titleMalay}</p>
+        <h1 class="arabic mt-2 text-4xl font-semibold text-accent sm:text-5xl" dir="rtl">{entry.data.titleArabic}</h1>
+      </section>
+
+      <section class="matan-reader">
+        {entry.data.verses.map((verse) => (
+          <article class={verse.type === "basmalah" ? "matan-verse matan-basmalah" : "matan-verse"}>
+            <div class="matan-verse-meta">
+              {verse.type !== "basmalah" && (
+                <button
+                  type="button"
+                  class="matan-verse-number translation-toggle"
+                  aria-expanded="false"
+                  aria-label={`Tunjuk terjemahan bait ${verse.number}`}
+                  data-translation={verse.lines.map((line) => line.translation).join("\n")}
+                >
+                  Bait {verse.number}
+                </button>
+              )}
+            </div>
+
+            <div class={verse.type === "basmalah" ? "matan-lines is-basmalah" : "matan-lines"}>
+              {verse.lines.map((line, lineIndex) => (
+                <div class="matan-line-card">
+                  <p
+                    class="matan-line arabic text-right font-semibold text-ink"
+                    dir="rtl"
+                    set:html={renderLine(line.text, line.words)}
+                  />
+                </div>
+              ))}
+            </div>
+          </article>
+        ))}
+      </section>
+
+      <details class="mt-10 rounded-2xl border border-line bg-panel p-5 shadow-sm sm:p-7">
+        <summary class="cursor-pointer text-lg font-semibold text-accent">Syarah Ringkas</summary>
+        <article class="lesson-prose mt-5">
+          <Content />
+        </article>
+      </details>
+
+      <nav class="mt-8 flex flex-wrap items-center justify-between gap-3">
+        {previous ? (
+          <a href={`/mutoon/tuhfatul-atfal/${previous.data.slug}`} class="rounded-full border border-line bg-panel px-4 py-2 font-semibold text-accent hover:bg-accent-soft">← Sebelum</a>
+        ) : <span></span>}
+        <a href="/mutoon" class="rounded-full border border-line bg-panel px-4 py-2 font-semibold text-accent hover:bg-accent-soft">Senarai Mutun</a>
+        {next ? (
+          <a href={`/mutoon/tuhfatul-atfal/${next.data.slug}`} class="rounded-full border border-line bg-panel px-4 py-2 font-semibold text-accent hover:bg-accent-soft">Seterusnya →</a>
+        ) : <span></span>}
+      </nav>
+    </main>
+
+    <div id="mufradat-popover" class="matan-popover hidden" role="status"></div>
+
+    <div class="repeat-counter" aria-label="Kiraan ulangan">
+      <button type="button" class="repeat-main" data-repeat-add="1">
+        <span aria-hidden="true" class="repeat-icon">↻</span>
+        <span class="repeat-label">Ulangan</span>
+        <span class="repeat-count" data-repeat-count>0</span>
+      </button>
+      <div class="repeat-actions">
+        <button type="button" data-repeat-add="1">+1</button>
+        <button type="button" data-repeat-reset>Reset</button>
+      </div>
+    </div>
+
+    <script>
+      const root = document.documentElement;
+      const sizeKey = "tuwailib:matan:text-scale";
+      const repeatKey = `tuwailib:matan:repeat:${location.pathname}`;
+      const popover = document.getElementById("mufradat-popover");
+      const repeatCount = document.querySelector("[data-repeat-count]");
+
+      function clamp(value, min, max) {
+        return Math.min(max, Math.max(min, value));
+      }
+
+      function setScale(value) {
+        const scale = clamp(value, 0.85, 1.35);
+        root.style.setProperty("--matan-scale", String(scale));
+        localStorage.setItem(sizeKey, String(scale));
+      }
+
+      function escapeClientHtml(value) {
+        return String(value)
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#039;");
+      }
+
+      setScale(Number(localStorage.getItem(sizeKey) || "1"));
+
+      document.querySelectorAll("[data-size-action]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const current = Number(localStorage.getItem(sizeKey) || "1");
+          setScale(current + (button.dataset.sizeAction === "larger" ? 0.08 : -0.08));
+        });
+      });
+
+      function hidePopover() {
+        clearTimeout(window.matanPopoverTimer);
+        popover?.classList.add("hidden");
+        if (popover) popover.dataset.activeKey = "";
+        document.querySelectorAll(".translation-toggle[aria-expanded='true']").forEach((button) => {
+          button.setAttribute("aria-expanded", "false");
+        });
+      }
+
+      function showPopover(anchor, key, html, options = {}) {
+        if (!popover) return;
+        if (popover.dataset.activeKey === key && !popover.classList.contains("hidden")) {
+          hidePopover();
+          return;
+        }
+
+        hidePopover();
+        popover.innerHTML = html;
+        const translationContainer = options.translation ? anchor.closest(".matan-verse") : null;
+        const rect = translationContainer
+          ? translationContainer.getBoundingClientRect()
+          : anchor.getBoundingClientRect();
+        const left = options.translation
+          ? Math.max(window.scrollX + 16, window.scrollX + rect.left + 24)
+          : window.scrollX + rect.left;
+        popover.style.top = `${window.scrollY + rect.bottom + (options.translation ? 14 : 8)}px`;
+        popover.style.left = `${Math.min(left, window.scrollX + window.innerWidth - 300)}px`;
+        popover.dataset.activeKey = key;
+        popover.classList.remove("hidden");
+        if (options.translation) anchor.setAttribute("aria-expanded", "true");
+        window.matanPopoverTimer = setTimeout(hidePopover, options.translation ? 15000 : 5000);
+      }
+
+      document.querySelectorAll(".translation-toggle").forEach((button) => {
+        button.addEventListener("click", (event) => {
+          event.stopPropagation();
+          const paragraphs = String(button.dataset.translation || "")
+            .split("\n")
+            .filter(Boolean)
+            .map((line) => `<p>${escapeClientHtml(line)}</p>`)
+            .join("");
+          showPopover(
+            button,
+            `translation:${button.dataset.translation}`,
+            `<div class="matan-popover-translation">${paragraphs}</div>`,
+            { translation: true },
+          );
+        });
+      });
+
+      document.querySelectorAll(".matan-word").forEach((button) => {
+        button.addEventListener("click", (event) => {
+          event.stopPropagation();
+          const rootText = button.dataset.root ? `<span class="matan-popover-root">Akar: ${button.dataset.root}</span>` : "";
+          showPopover(
+            button,
+            `word:${button.dataset.word}`,
+            `<strong class="arabic" dir="rtl">${button.dataset.word}</strong><span>${button.dataset.meaning}</span>${rootText}`,
+          );
+        });
+      });
+
+      document.addEventListener("click", (event) => {
+        if (!popover || popover.classList.contains("hidden")) return;
+        const target = event.target;
+        if (
+          target instanceof Element &&
+          (target.closest(".matan-word") || target.closest(".translation-toggle"))
+        ) {
+          return;
+        }
+        hidePopover();
+      }, true);
+
+      function setRepeat(value) {
+        const count = Math.max(0, value);
+        localStorage.setItem(repeatKey, String(count));
+        if (repeatCount) repeatCount.textContent = String(count);
+      }
+
+      setRepeat(Number(localStorage.getItem(repeatKey) || "0"));
+
+      document.querySelectorAll("[data-repeat-add]").forEach((button) => {
+        button.addEventListener("click", () => setRepeat(Number(localStorage.getItem(repeatKey) || "0") + 1));
+      });
+
+      document.querySelector("[data-repeat-reset]")?.addEventListener("click", () => {
+        if (confirm("Reset kiraan ulangan kepada 0?")) setRepeat(0);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+---
+import "../../styles/global.css";
+---
+<!doctype html>
+<html lang="ms" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Senarai mutun di Tuwailib." />
+    <title>Mutun | Tuwailib</title>
+  </head>
+  <body class="min-h-screen bg-paper text-ink">
+    <header class="border-b border-line bg-panel">
+      <div class="mx-auto flex w-full max-w-5xl items-center justify-between gap-4 px-4 py-4">
+        <a href="/" class="text-lg font-semibold text-ink hover:text-accent">Tuwailib</a>
+        <div class="flex items-center gap-2">
+          <a href="/" class="rounded-full border border-line bg-paper px-3 py-2 text-sm font-semibold text-accent hover:bg-accent-soft">Home</a>
+          <a href="/durusul-lughah" class="rounded-full border border-line bg-paper px-3 py-2 text-sm font-semibold text-accent hover:bg-accent-soft">Durusul Lughah</a>
+          <a href="/kamus" class="rounded-full border border-line bg-paper px-3 py-2 text-sm font-semibold text-accent hover:bg-accent-soft">Kamus</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="mx-auto w-full max-w-5xl px-4 py-10">
+      <section class="mb-8">
+        <p class="arabic text-2xl text-accent" dir="rtl">المتون</p>
+        <h1 class="mt-2 text-4xl font-semibold text-ink">Mutun</h1>
+        <p class="mt-3 max-w-2xl text-base leading-relaxed text-muted">
+          Ruang bacaan matan dengan terjemahan baris, mufradat, syarah ringkas dan kiraan ulangan.
+        </p>
+      </section>
+
+      <section class="grid gap-4 sm:grid-cols-2">
+        <a href="/mutoon/tuhfatul-atfal/muqaddimah" class="group rounded-2xl border border-line bg-panel p-5 shadow-sm transition hover:border-accent hover:bg-accent-soft">
+          <span class="text-sm font-semibold uppercase tracking-[0.08em] text-muted">1. Tajwid</span>
+          <span class="mt-3 block text-2xl font-semibold text-ink group-hover:text-accent">Tuhfat al-Aṭfāl</span>
+          <span class="arabic mt-2 block text-3xl font-semibold text-accent" dir="rtl">تُحْفَةُ الْأَطْفَالِ</span>
+          <span class="mt-3 block text-sm leading-relaxed text-muted">Matan asas tajwid oleh Sulaiman al-Jamzuri.</span>
+        </a>
+      </section>
+    </main>
+  </body>
+</html>
