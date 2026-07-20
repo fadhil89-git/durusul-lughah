@@ -1,11 +1,11 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { LessonSearchItem } from "../lib/parseLessons.ts";
 import { hasArabic, normalizeArabic } from "../lib/normalizeArabic.ts";
 import { normalizeLatin } from "../lib/normalizeLatin.ts";
 import { normalizeTransliterationInput } from "../lib/transliterateArabic.ts";
 
 type Props = {
-  items: LessonSearchItem[];
+  searchEndpoint?: string;
 };
 
 const RESULT_LIMIT = 8;
@@ -36,18 +36,46 @@ function scoreItem(item: LessonSearchItem, query: string): number {
   return score;
 }
 
-export default function LessonSearch({ items }: Props) {
+export default function LessonSearch({ searchEndpoint = "/lesson-search.json" }: Props) {
   const [query, setQuery] = useState("");
+  const [items, setItems] = useState<LessonSearchItem[]>([]);
+  const [searchStatus, setSearchStatus] = useState<"idle" | "loading" | "ready" | "error">("idle");
   const clean = query.trim();
 
+  useEffect(() => {
+    if (clean.length < 2 || searchStatus !== "idle") return;
+
+    let active = true;
+    setSearchStatus("loading");
+
+    fetch(searchEndpoint)
+      .then((response) => {
+        if (!response.ok) throw new Error("Search index failed to load.");
+        return response.json() as Promise<LessonSearchItem[]>;
+      })
+      .then((data) => {
+        if (!active) return;
+        setItems(data);
+        setSearchStatus("ready");
+      })
+      .catch(() => {
+        if (!active) return;
+        setSearchStatus("error");
+      });
+
+    return () => {
+      active = false;
+    };
+  }, [clean.length, searchEndpoint, searchStatus]);
+
   const results = useMemo(() => {
-    if (clean.length < 2) return [];
+    if (clean.length < 2 || searchStatus !== "ready") return [];
     return items
       .map((item) => ({ item, score: scoreItem(item, clean) }))
       .filter((result) => result.score > 0)
       .sort((a, b) => b.score - a.score || a.item.bookNumber - b.item.bookNumber || a.item.chapter - b.item.chapter)
       .slice(0, RESULT_LIMIT);
-  }, [clean, items]);
+  }, [clean, items, searchStatus]);
 
   return (
     <section className="rounded-2xl border border-line bg-panel p-5 shadow-sm">
@@ -83,7 +111,15 @@ export default function LessonSearch({ items }: Props) {
 
       {clean.length >= 2 && (
         <div className="mt-4">
-          {results.length === 0 ? (
+          {searchStatus === "loading" ? (
+            <p className="rounded-xl border border-dashed border-line bg-paper p-4 text-sm text-muted">
+              Memuat carian...
+            </p>
+          ) : searchStatus === "error" ? (
+            <p className="rounded-xl border border-dashed border-line bg-paper p-4 text-sm text-muted">
+              Carian belum dapat dimuat. Cuba refresh page ini.
+            </p>
+          ) : results.length === 0 ? (
             <p className="rounded-xl border border-dashed border-line bg-paper p-4 text-sm text-muted">
               Tiada topik ditemui. Cuba istilah lain seperti “nahu”, “sorof”, “mansub”, atau taip Arab tanpa baris.
             </p>

@@ -1,7 +1,7 @@
 ---
 import "../../styles/global.css";
 import LessonSearch from "../../components/LessonSearch.tsx";
-import { lessonBooks, lessonSearchItems } from "../../data/lessons.ts";
+import { lessonBooks } from "../../data/lessons.ts";
 ---
 <!doctype html>
 <html lang="ms">
@@ -32,7 +32,7 @@ import { lessonBooks, lessonSearchItems } from "../../data/lessons.ts";
       </div>
 
       <div class="space-y-6">
-        <LessonSearch client:load items={lessonSearchItems} />
+        <LessonSearch client:load />
 
         {lessonBooks.map((book) => (
           <section class="rounded-2xl border border-line bg-panel p-5 shadow-sm">

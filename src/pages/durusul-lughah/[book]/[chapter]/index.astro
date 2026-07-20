@@ -2,7 +2,7 @@
 import "../../../../styles/global.css";
 import LessonArticleNav from "../../../../components/LessonArticleNav.tsx";
 import { hasArabicLesson } from "../../../../data/lessonLocales.ts";
-import { getAdjacentLesson, lessonChapters, lessonSearchItems } from "../../../../data/lessons.ts";
+import { getAdjacentLesson, lessonChapters } from "../../../../data/lessons.ts";
 
 export function getStaticPaths() {
   return lessonChapters.map((chapter) => ({
@@ -51,7 +51,6 @@ const chapterJumpItems = lessonChapters.map((item) => ({
       chapters={chapterJumpItems}
       currentBook={chapter.bookNumber}
       currentChapter={chapter.chapter}
-      searchItems={lessonSearchItems}
       language="ms"
     />
 
