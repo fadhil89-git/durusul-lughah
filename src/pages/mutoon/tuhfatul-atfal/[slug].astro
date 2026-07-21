@@ -4,6 +4,7 @@ import { getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
   const entries = (await getCollection("mutoon"))
+    .filter((entry) => entry.filePath?.includes("/tuhfatul-atfal/"))
     .sort((a, b) => a.data.order - b.data.order);
 
   return entries.map((entry, index) => ({
@@ -19,6 +20,8 @@ export async function getStaticPaths() {
 
 const { entry, previous, next, entries } = Astro.props;
 const { Content } = await render(entry);
+const titleArabic = entry.data.titleArabic ?? entry.data.title ?? "";
+const titleMalay = entry.data.titleMalay ?? entry.data.titleMs ?? "";
 function escapeHtml(value: string) {
   return value
     .replaceAll("&", "&amp;")
@@ -85,8 +88,8 @@ function renderLine(text: string, words: { word: string; meaning: string; root?:
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content={`${entry.data.titleMalay} ${entry.data.titleArabic} daripada matan Tuhfatul Atfal.`} />
-    <title>{entry.data.titleMalay} | Tuhfatul Atfal | Tuwailib</title>
+    <meta name="description" content={`${titleMalay} ${titleArabic} daripada matan Tuhfatul Atfal.`} />
+    <title>{titleMalay} | Tuhfatul Atfal | Tuwailib</title>
   </head>
   <body id="top" class="min-h-screen bg-paper text-ink">
     <header class="border-b border-line bg-panel">
@@ -115,7 +118,7 @@ function renderLine(text: string, words: { word: string; meaning: string; root?:
           <select aria-label="Pilih bahagian Tuhfatul Atfal" data-matan-jump>
             {entries.map((item) => (
               <option value={`/mutoon/tuhfatul-atfal/${item.data.slug}`} selected={item.data.slug === entry.data.slug}>
-                {item.data.order}. {item.data.titleMalay}
+                {item.data.order}. {item.data.titleMalay ?? item.data.titleMs}
               </option>
             ))}
           </select>
@@ -129,12 +132,12 @@ function renderLine(text: string, words: { word: string; meaning: string; root?:
 
       <section class="mb-6">
         <p class="text-sm font-semibold uppercase tracking-[0.12em] text-muted">Tuhfatul Atfal</p>
-        <p class="mt-4 text-2xl font-semibold text-ink">{entry.data.titleMalay}</p>
-        <h1 class="arabic mt-2 text-4xl font-semibold text-accent sm:text-5xl" dir="rtl">{entry.data.titleArabic}</h1>
+        <p class="mt-4 text-2xl font-semibold text-ink">{titleMalay}</p>
+        <h1 class="arabic mt-2 text-4xl font-semibold text-accent sm:text-5xl" dir="rtl">{titleArabic}</h1>
       </section>
 
       <section class="matan-reader">
-        {entry.data.verses.map((verse) => (
+        {entry.data.verses?.map((verse) => (
           <article class={verse.type === "basmalah" ? "matan-verse matan-basmalah" : "matan-verse"}>
             <div class="matan-verse-meta">
               {verse.type !== "basmalah" && (

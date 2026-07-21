@@ -73,6 +73,7 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
   const [activeBook, setActiveBook] = useState(() => chapters[0]?.buku ?? "Buku 1");
   const [visible, setVisible] = useState(INITIAL_LIMIT);
   const [showSuggest, setShowSuggest] = useState(false);
+  const [chapterOpen, setChapterOpen] = useState(false);
   const [activeIdx, setActiveIdx] = useState(-1);
   const [focusedEntryId, setFocusedEntryId] = useState("");
   const [showBackTop, setShowBackTop] = useState(false);
@@ -141,7 +142,11 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
   const openSuggest = showSuggest && suggestions.length > 0;
 
   useEffect(() => {
-    const close = (e: MouseEvent) => { if (boxRef.current && !boxRef.current.contains(e.target as Node)) setShowSuggest(false); };
+    const close = (e: MouseEvent) => {
+      if (!boxRef.current || boxRef.current.contains(e.target as Node)) return;
+      setShowSuggest(false);
+      setChapterOpen(false);
+    };
     document.addEventListener("mousedown", close);
     return () => document.removeEventListener("mousedown", close);
   }, []);
@@ -195,6 +200,8 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
     setBabKey(key);
     setQuery("");
     setDebounced("");
+    setShowSuggest(false);
+    setChapterOpen(false);
     setVisible(INITIAL_LIMIT);
     setFocusedEntryId("");
   };
@@ -274,122 +281,147 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
 
       <main className="py-8">
         <div className="mx-auto w-full max-w-3xl px-4">
-          <div ref={boxRef} className="sticky top-0 z-30 -mx-4 bg-paper/95 px-4 py-3 backdrop-blur sm:top-0">
-            <div className="relative">
-            <label htmlFor="carian" className="sr-only">{t.placeholder}</label>
-            <div className="flex items-center gap-3 rounded-2xl border border-line bg-panel px-4 py-3 shadow-sm focus-within:border-accent">
-              <button type="button" onClick={() => submitSearch()} className="shrink-0 rounded-full p-1 text-muted transition hover:bg-accent-soft hover:text-accent" aria-label="Search"><SearchIcon /></button>
-              <input
-                id="carian"
-                ref={inputRef}
-                className="w-full bg-transparent text-lg text-ink placeholder:text-muted focus:outline-none"
-                placeholder={t.placeholder}
-                value={query}
-                onChange={(e) => searchFor(e.target.value)}
-                onFocus={() => setShowSuggest(true)}
-                onKeyDown={onKeyDown}
-                role="combobox"
-                aria-expanded={openSuggest}
-                aria-controls="suggest-list"
-                autoComplete="off"
-                spellCheck={false}
-              />
-              {query && <button type="button" onClick={clearSearch} aria-label="Clear search" className="rounded-full p-1 text-muted hover:bg-accent-soft hover:text-accent"><XIcon /></button>}
-            </div>
-            {openSuggest && (
-              <ul id="suggest-list" role="listbox" className="suggest-scroll absolute z-40 mt-2 max-h-[60vh] w-full overflow-auto rounded-xl border border-line bg-panel py-1 shadow-lg">
-                {suggestions.map((entry, i) => (
-                  <li key={entry.id} role="option" aria-selected={i === activeIdx} onMouseEnter={() => setActiveIdx(i)} onMouseDown={(e) => { e.preventDefault(); selectEntry(entry); }} className={`flex cursor-pointer items-center justify-between gap-3 px-4 py-2 ${i === activeIdx ? "bg-accent-soft" : ""}`}>
-                    <div className="min-w-0">
-                      <span className="arabic text-xl text-ink" dir="rtl">{entry.arabic}</span>
-                      <span className="block truncate text-sm text-muted">{language === "ms" ? entry.malay : entry.english}</span>
+          <div ref={boxRef} className="sticky top-0 z-[80] -mx-4 border-b border-line bg-paper/95 px-4 py-3 backdrop-blur">
+            <div className="grid gap-3 md:grid-cols-[minmax(0,1fr)_minmax(16rem,0.68fr)]">
+              <div className="relative z-[90] min-w-0">
+                <label htmlFor="carian" className="sr-only">{t.placeholder}</label>
+                <div className="flex items-center gap-3 rounded-xl border border-line bg-panel px-4 py-3 shadow-sm focus-within:border-accent">
+                  <button type="button" onClick={() => submitSearch()} className="shrink-0 rounded-full p-1 text-muted transition hover:bg-accent-soft hover:text-accent" aria-label="Search"><SearchIcon /></button>
+                  <input
+                    id="carian"
+                    ref={inputRef}
+                    className="w-full bg-transparent text-lg text-ink placeholder:text-muted focus:outline-none"
+                    placeholder={t.placeholder}
+                    value={query}
+                    onChange={(e) => {
+                      searchFor(e.target.value);
+                      setChapterOpen(false);
+                    }}
+                    onFocus={() => {
+                      setShowSuggest(true);
+                      setChapterOpen(false);
+                    }}
+                    onKeyDown={onKeyDown}
+                    role="combobox"
+                    aria-expanded={openSuggest}
+                    aria-controls="suggest-list"
+                    autoComplete="off"
+                    spellCheck={false}
+                  />
+                  {query && <button type="button" onClick={clearSearch} aria-label="Clear search" className="rounded-full p-1 text-muted hover:bg-accent-soft hover:text-accent"><XIcon /></button>}
+                </div>
+                {openSuggest && (
+                  <ul id="suggest-list" role="listbox" className="suggest-scroll absolute z-[100] mt-2 max-h-72 w-full overflow-auto rounded-xl border border-line bg-panel py-1 shadow-xl">
+                    {suggestions.map((entry, i) => (
+                      <li key={entry.id} role="option" aria-selected={i === activeIdx} onMouseEnter={() => setActiveIdx(i)} onMouseDown={(e) => { e.preventDefault(); selectEntry(entry); }} className={`flex cursor-pointer items-center justify-between gap-3 px-4 py-2 ${i === activeIdx ? "bg-accent-soft" : ""}`}>
+                        <div className="min-w-0">
+                          <span className="arabic text-xl text-ink" dir="rtl">{entry.arabic}</span>
+                          <span className="block truncate text-sm text-muted">{language === "ms" ? entry.malay : entry.english}</span>
+                        </div>
+                        <span className="shrink-0 text-[11px] text-muted">{entry.babLabel}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                <p className="mt-2 px-1 text-xs text-muted">{t.searchHint}</p>
+              </div>
+
+              <div className="relative z-[85] min-w-0">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setShowSuggest(false);
+                    setChapterOpen((open) => !open);
+                  }}
+                  className="flex w-full min-w-0 items-center justify-between gap-3 rounded-xl border border-line bg-panel px-4 py-3 text-start text-sm text-ink shadow-sm hover:border-accent"
+                  aria-expanded={chapterOpen}
+                >
+                  <span className="min-w-0 flex-1 overflow-hidden leading-snug">
+                    <span className="block font-semibold text-muted">{t.chapter}</span>
+                    <span className="block break-words text-ink">{selectedChapter?.label ?? t.allChapters}</span>
+                  </span>
+                  <span className="shrink-0 text-muted" aria-hidden="true">⌄</span>
+                </button>
+
+                {chapterOpen && (
+                  <div className="absolute left-0 right-0 z-[95] mt-2 w-full max-w-full overflow-hidden rounded-xl border border-line bg-panel p-3 shadow-xl">
+                    <div className="mb-3 flex flex-wrap gap-2">
+                      {books.map((book) => {
+                        const active = book === activeBook;
+                        return (
+                          <button
+                            key={book}
+                            type="button"
+                            onClick={() => chooseBook(book)}
+                            className={`rounded-full border px-3 py-1.5 text-xs font-semibold ${
+                              active ? "border-accent bg-accent text-white" : "border-line bg-paper text-accent hover:bg-accent-soft"
+                            }`}
+                          >
+                            {book}
+                          </button>
+                        );
+                      })}
                     </div>
-                    <span className="shrink-0 text-[11px] text-muted">{entry.babLabel}</span>
-                  </li>
+
+                    <div className="suggest-scroll max-h-72 overflow-auto pr-1">
+                      <div className="grid gap-2">
+                        <button
+                          type="button"
+                          onClick={() => chooseChapter("")}
+                          className={`rounded-lg border px-3 py-2 text-start text-sm transition ${
+                            !babKey ? "border-accent bg-accent-soft font-semibold text-accent" : "border-line bg-paper text-ink hover:border-accent hover:text-accent"
+                          }`}
+                        >
+                          {t.allChapters}
+                        </button>
+                        {chaptersForActiveBook.map((chapter) => {
+                          const active = chapter.babKey === babKey;
+                          return (
+                            <button
+                              key={chapter.babKey}
+                              type="button"
+                              onClick={() => chooseChapter(chapter.babKey)}
+                              className={`rounded-lg border px-3 py-2 text-start text-sm transition ${
+                                active ? "border-accent bg-accent-soft font-semibold text-accent" : "border-line bg-paper text-ink hover:border-accent hover:text-accent"
+                              }`}
+                            >
+                              <span className="block">{chapter.label.replace(`${chapter.buku} · `, "")}</span>
+                              <span className="block text-xs text-muted">{chapter.count} {t.footer}</span>
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+
+          {selectedChapter && chapterEntries.length > 0 && (
+            <div className="mt-5 rounded-2xl border border-line bg-panel p-4 shadow-sm">
+              <div className="mb-2 flex items-center justify-between gap-3">
+                <div className="text-xs font-semibold uppercase tracking-[0.08em] text-muted">{t.wordsInChapter}</div>
+                <div className="text-xs text-muted">{selectedChapter.label}</div>
+              </div>
+              <div className="scroll-cue rounded-xl bg-paper/70">
+                <div className="suggest-scroll flex max-h-40 flex-wrap gap-2 overflow-auto p-2 pr-3">
+                {chapterEntries.map((entry, index) => (
+                  <button
+                    key={entry.id}
+                    type="button"
+                    onClick={() => jumpToEntry(entry, index)}
+                    className="arabic rounded-full border border-line bg-panel px-3 py-1.5 text-base leading-relaxed text-ink transition hover:border-accent hover:bg-accent-soft hover:text-accent"
+                    title={language === "ms" ? entry.malay : entry.english}
+                    dir="rtl"
+                  >
+                    {entry.arabic}
+                  </button>
                 ))}
-              </ul>
-            )}
-            </div>
-            <p className="mt-2 px-1 text-xs text-muted">{t.searchHint}</p>
-          </div>
-
-          <div className="mt-4 flex flex-wrap items-center gap-2 px-1">
-            <label htmlFor="bab" className="text-sm text-muted">{t.chapter}</label>
-            <select id="bab" value={babKey} onChange={(e) => { chooseChapter(e.target.value); }} className="rounded-lg border border-line bg-panel px-3 py-2 text-sm text-ink focus:border-accent focus:outline-none">
-              <option value="">{t.allChapters}</option>
-              {chapters.map((chapter) => <option key={chapter.babKey} value={chapter.babKey}>{chapter.label} ({chapter.count})</option>)}
-            </select>
-            {babSelected && <button type="button" onClick={() => setBabKey("")} className="text-sm text-accent hover:underline">{t.clearFilter}</button>}
-          </div>
-
-          <div className="mt-5 space-y-4 rounded-2xl border border-line bg-panel p-4 shadow-sm">
-            <div>
-              <div className="mb-2 text-xs font-semibold uppercase tracking-[0.08em] text-muted">{t.book}</div>
-              <div className="flex flex-wrap gap-2">
-                {books.map((book) => {
-                  const active = book === activeBook;
-                  return (
-                    <button
-                      key={book}
-                      type="button"
-                      onClick={() => chooseBook(book)}
-                      className={`rounded-full border px-4 py-2 text-sm font-semibold transition ${active ? "border-accent bg-accent text-white" : "border-line bg-paper text-accent hover:bg-accent-soft"}`}
-                    >
-                      {book}
-                    </button>
-                  );
-                })}
+                </div>
               </div>
             </div>
-
-            {chaptersForActiveBook.length > 0 && (
-              <div>
-                <div className="mb-2 text-xs font-semibold uppercase tracking-[0.08em] text-muted">{t.chapter}</div>
-                <div className="scroll-cue rounded-xl bg-paper/60">
-                  <div className="flex max-h-32 flex-wrap gap-2 overflow-auto p-2 pr-3 suggest-scroll">
-                  {chaptersForActiveBook.map((chapter) => {
-                    const active = chapter.babKey === babKey;
-                    return (
-                      <button
-                        key={chapter.babKey}
-                        type="button"
-                        onClick={() => chooseChapter(chapter.babKey)}
-                        className={`rounded-full border px-3 py-1.5 text-sm transition ${active ? "border-accent bg-accent-soft font-semibold text-accent" : "border-line bg-paper text-ink hover:border-accent hover:text-accent"}`}
-                      >
-                        {chapter.label.replace(`${chapter.buku} · `, "")} ({chapter.count})
-                      </button>
-                    );
-                  })}
-                  </div>
-                </div>
-              </div>
-            )}
-
-            {selectedChapter && chapterEntries.length > 0 && (
-              <div>
-                <div className="mb-2 flex items-center justify-between gap-3">
-                  <div className="text-xs font-semibold uppercase tracking-[0.08em] text-muted">{t.wordsInChapter}</div>
-                  <div className="text-xs text-muted">{selectedChapter.label}</div>
-                </div>
-                <div className="scroll-cue rounded-xl bg-paper/70">
-                  <div className="suggest-scroll flex max-h-40 flex-wrap gap-2 overflow-auto p-2 pr-3">
-                  {chapterEntries.map((entry, index) => (
-                    <button
-                      key={entry.id}
-                      type="button"
-                      onClick={() => jumpToEntry(entry, index)}
-                      className="arabic rounded-full border border-line bg-panel px-3 py-1.5 text-base leading-relaxed text-ink transition hover:border-accent hover:bg-accent-soft hover:text-accent"
-                      title={language === "ms" ? entry.malay : entry.english}
-                      dir="rtl"
-                    >
-                      {entry.arabic}
-                    </button>
-                  ))}
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
+          )}
 
           <div className="mt-7">
             {!hasQuery && !babSelected ? (

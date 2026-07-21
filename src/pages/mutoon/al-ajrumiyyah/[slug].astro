@@ -1,0 +1,370 @@
+---
+import "../../../styles/global.css";
+import { getCollection, render } from "astro:content";
+
+export async function getStaticPaths() {
+  const entries = (await getCollection("mutoon"))
+    .filter((entry) => entry.filePath?.includes("/al-ajrumiyyah/"))
+    .sort((a, b) => a.data.order - b.data.order);
+
+  return entries.map((entry, index) => ({
+    params: { slug: entry.data.slug },
+    props: {
+      entry,
+      previous: entries[index - 1],
+      next: entries[index + 1],
+      entries,
+    },
+  }));
+}
+
+const { entry, previous, next, entries } = Astro.props;
+const { Content } = await render(entry);
+const sections = entry.data.proseSections ?? [];
+const titleArabic = entry.data.title ?? entry.data.titleArabic ?? "";
+const titleMalay = entry.data.titleMs ?? entry.data.titleMalay ?? "";
+const bookTitle = entry.data.bookTitle ?? "الْمُقَدِّمَةُ الْآجُرُّومِيَّةُ";
+
+type ProseWord = {
+  arabic: string;
+  transliteration?: string;
+  meaning: string;
+  root?: string;
+  type?: string;
+};
+
+function escapeHtml(value: string) {
+  return value
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+function escapeAttr(value: string) {
+  return escapeHtml(value).replaceAll("\n", " ");
+}
+
+function escapeRegExp(value: string) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function wordClass(type?: string) {
+  if (type === "keyword") return "matan-word matan-keyword";
+  if (type === "letters") return "matan-word matan-letters";
+  if (type === "rule") return "matan-word matan-rule";
+  if (type === "example") return "matan-word matan-example";
+  return "matan-word";
+}
+
+function renderInlineMarkdown(value: string) {
+  return escapeHtml(value).replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+}
+
+function renderArabic(text: string, words: ProseWord[] = []) {
+  const wordItems = words
+    .filter((word) => word.arabic)
+    .sort((a, b) => b.arabic.length - a.arabic.length);
+
+  const matches: { start: number; end: number; item: ProseWord }[] = [];
+  for (const item of wordItems) {
+    const pattern = new RegExp(escapeRegExp(item.arabic), "g");
+    let match: RegExpExecArray | null;
+    while ((match = pattern.exec(text))) {
+      matches.push({ start: match.index, end: match.index + item.arabic.length, item });
+    }
+  }
+
+  const accepted: typeof matches = [];
+  for (const match of matches.sort((a, b) => a.start - b.start || (b.end - b.start) - (a.end - a.start))) {
+    if (accepted.some((current) => match.start < current.end && match.end > current.start)) continue;
+    accepted.push(match);
+  }
+
+  let html = "";
+  let cursor = 0;
+  for (const match of accepted.sort((a, b) => a.start - b.start)) {
+    html += escapeHtml(text.slice(cursor, match.start));
+    const label = escapeHtml(text.slice(match.start, match.end));
+    const root = match.item.root ? ` data-root="${escapeAttr(match.item.root)}"` : "";
+    const type = match.item.type ? ` data-type="${escapeAttr(match.item.type)}"` : "";
+    html += `<button type="button" class="${wordClass(match.item.type)}" data-word="${escapeAttr(match.item.arabic)}" data-meaning="${escapeAttr(match.item.meaning)}"${root}${type}>${label}</button>`;
+    cursor = match.end;
+  }
+  html += escapeHtml(text.slice(cursor));
+
+  return html;
+}
+---
+
+<!doctype html>
+<html lang="ms" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={`${titleMalay} ${titleArabic} daripada matan Al-Ajrumiyyah.`} />
+    <title>{titleMalay} | Al-Ajrumiyyah | Tuwailib</title>
+  </head>
+  <body id="top" class="min-h-screen bg-paper text-ink">
+    <header class="border-b border-line bg-panel">
+      <div class="mx-auto flex w-full max-w-5xl items-center justify-between gap-4 px-4 py-4">
+        <a href="/" class="text-lg font-semibold text-ink hover:text-accent">Tuwailib</a>
+        <div class="flex items-center gap-2">
+          <a href="/" class="rounded-full border border-line bg-paper px-3 py-2 text-sm font-semibold text-accent hover:bg-accent-soft">Home</a>
+          <a href="/mutoon" class="rounded-full border border-line bg-paper px-3 py-2 text-sm font-semibold text-accent hover:bg-accent-soft">Mutun</a>
+          <a href="/kamus" class="rounded-full border border-line bg-paper px-3 py-2 text-sm font-semibold text-accent hover:bg-accent-soft">Kamus</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="mx-auto w-full max-w-5xl px-4 py-8">
+      <nav class="matan-top-controls">
+        <div class="matan-nav-buttons">
+          {previous ? (
+            <a href={`/mutoon/al-ajrumiyyah/${previous.data.slug}`} class="matan-step-link matan-step-prev">← Sebelum</a>
+          ) : <span></span>}
+          {next ? (
+            <a href={`/mutoon/al-ajrumiyyah/${next.data.slug}`} class="matan-step-link matan-step-next">Seterusnya →</a>
+          ) : <span></span>}
+        </div>
+        <label class="matan-jump">
+          <span>Pilih Bab</span>
+          <select aria-label="Pilih bab Al-Ajrumiyyah" data-matan-jump>
+            {entries.map((item) => (
+              <option value={`/mutoon/al-ajrumiyyah/${item.data.slug}`} selected={item.data.slug === entry.data.slug}>
+                {item.data.chapter ?? item.data.order}. {item.data.titleMs ?? item.data.titleMalay}
+              </option>
+            ))}
+          </select>
+        </label>
+      </nav>
+
+      <section class="mb-8">
+        <p class="arabic text-2xl font-semibold text-muted" dir="rtl">{bookTitle}</p>
+        <p class="mt-4 text-2xl font-semibold text-ink">{titleMalay}</p>
+        <h1 class="arabic mt-2 text-4xl font-semibold text-accent sm:text-5xl" dir="rtl">{titleArabic}</h1>
+      </section>
+
+      <div class="ajrumiyyah-reader-toolbar" aria-label="Kawalan saiz matan">
+        <div class="ajrumiyyah-matn-size" dir="ltr">
+          <button type="button" data-matn-size="smaller" aria-label="Kecilkan teks matan">−</button>
+          <span>Matan</span>
+          <button type="button" data-matn-size="larger" aria-label="Besarkan teks matan">+</button>
+        </div>
+      </div>
+
+      <section class="ajrumiyyah-reader">
+        <p class="arabic ajrumiyyah-basmalah" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+
+        {sections.map((section, index) => (
+          <article id={section.id} class="ajrumiyyah-section">
+            <div class="ajrumiyyah-section-body">
+              <div class="ajrumiyyah-matn-row" dir="rtl">
+                <span class="ajrumiyyah-section-number">{index + 1}.</span>
+                <p
+                  class="arabic ajrumiyyah-matn"
+                  dir="rtl"
+                  set:html={renderArabic(section.matn.arabic, section.matn.words)}
+                />
+              </div>
+
+              <div class="ajrumiyyah-action-row">
+                <button
+                  type="button"
+                  class="ajrumiyyah-translation-toggle"
+                  data-translation={section.matn.translation}
+                  aria-expanded="false"
+                >
+                  Terjemahan
+                </button>
+
+                <details class="ajrumiyyah-sharh" data-sharh>
+                  <summary class="ajrumiyyah-sharh-summary">{section.sharh.title ?? "Syarah"}</summary>
+                  <div class="ajrumiyyah-sharh-content">
+                    <div class="ajrumiyyah-sharh-head">
+                      <div class="ajrumiyyah-lang-tabs" role="tablist" aria-label="Bahasa syarah">
+                        <button type="button" class="is-active" data-sharh-lang="ar">🇸🇦 العربية</button>
+                        <button type="button" data-sharh-lang="ms">🇲🇾 Melayu</button>
+                      </div>
+                      <div class="ajrumiyyah-sharh-size" aria-label="Kawalan saiz syarah">
+                        <button type="button" data-sharh-size="smaller" aria-label="Kecilkan teks syarah">−</button>
+                        <span>Syarah</span>
+                        <button type="button" data-sharh-size="larger" aria-label="Besarkan teks syarah">+</button>
+                      </div>
+                    </div>
+                    <div class="arabic ajrumiyyah-sharh-panel" dir="rtl" data-sharh-panel="ar">
+                      {section.sharh.arabic.split("\n\n").map((paragraph) => (
+                        <p set:html={renderInlineMarkdown(paragraph)} />
+                      ))}
+                    </div>
+                    <div class="ajrumiyyah-sharh-panel hidden" data-sharh-panel="ms">
+                      {section.sharh.malay.split("\n\n").map((paragraph) => (
+                        <p set:html={renderInlineMarkdown(paragraph)} />
+                      ))}
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </article>
+        ))}
+      </section>
+
+      <details class="ajrumiyyah-source">
+        <summary>Sumber projek</summary>
+        <div class="ajrumiyyah-source-body">
+          {entry.data.sourceEdition && (
+            <ul>
+              <li><strong>Matan:</strong> {entry.data.sourceEdition.matn}</li>
+              {entry.data.sourceEdition.sharh && <li><strong>Syarah:</strong> {entry.data.sourceEdition.sharh}</li>}
+            </ul>
+          )}
+          <article class="lesson-prose mt-4">
+            <Content />
+          </article>
+        </div>
+      </details>
+
+      <nav class="matan-bottom-nav">
+        {previous ? (
+          <a href={`/mutoon/al-ajrumiyyah/${previous.data.slug}`} class="matan-step-link matan-step-prev">← Sebelum</a>
+        ) : <span></span>}
+        {next ? (
+          <a href={`/mutoon/al-ajrumiyyah/${next.data.slug}`} class="matan-step-link matan-step-next">Seterusnya →</a>
+        ) : <span></span>}
+      </nav>
+    </main>
+
+    <div id="ajrumiyyah-popover" class="matan-popover hidden" role="status"></div>
+
+    <script>
+      const popover = document.getElementById("ajrumiyyah-popover");
+      const root = document.documentElement;
+      const sharhSizeKey = "tuwailib:ajrumiyyah:sharh-scale";
+      const matnSizeKey = "tuwailib:ajrumiyyah:matn-scale";
+
+      function escapeClientHtml(value) {
+        return String(value)
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#039;");
+      }
+
+      function hidePopover() {
+        clearTimeout(window.ajrumiyyahPopoverTimer);
+        popover?.classList.add("hidden");
+        if (popover) popover.dataset.activeKey = "";
+        document.querySelectorAll("[aria-expanded='true']").forEach((button) => {
+          button.setAttribute("aria-expanded", "false");
+        });
+      }
+
+      function clamp(value, min, max) {
+        return Math.min(max, Math.max(min, value));
+      }
+
+      function setSharhScale(value) {
+        const scale = clamp(value, 0.85, 1.35);
+        root.style.setProperty("--ajrumiyyah-sharh-scale", String(scale));
+        localStorage.setItem(sharhSizeKey, String(scale));
+      }
+
+      function setMatnScale(value) {
+        const scale = clamp(value, 0.85, 1.35);
+        root.style.setProperty("--ajrumiyyah-matn-scale", String(scale));
+        localStorage.setItem(matnSizeKey, String(scale));
+      }
+
+      setSharhScale(Number(localStorage.getItem(sharhSizeKey) || "1"));
+      setMatnScale(Number(localStorage.getItem(matnSizeKey) || "1"));
+
+      function showPopover(anchor, key, html, timeout = 5000) {
+        if (!popover) return;
+        if (popover.dataset.activeKey === key && !popover.classList.contains("hidden")) {
+          hidePopover();
+          return;
+        }
+
+        hidePopover();
+        popover.innerHTML = html;
+        const rect = anchor.getBoundingClientRect();
+        const left = Math.min(window.scrollX + rect.left, window.scrollX + window.innerWidth - 320);
+        popover.style.top = `${window.scrollY + rect.bottom + 10}px`;
+        popover.style.left = `${Math.max(window.scrollX + 16, left)}px`;
+        popover.dataset.activeKey = key;
+        popover.classList.remove("hidden");
+        anchor.setAttribute("aria-expanded", "true");
+        window.ajrumiyyahPopoverTimer = setTimeout(hidePopover, timeout);
+      }
+
+      document.querySelector("[data-matan-jump]")?.addEventListener("change", (event) => {
+        const target = event.target;
+        if (target instanceof HTMLSelectElement && target.value) window.location.href = target.value;
+      });
+
+      document.querySelectorAll(".ajrumiyyah-translation-toggle").forEach((button) => {
+        button.addEventListener("click", (event) => {
+          event.stopPropagation();
+          showPopover(
+            button,
+            `translation:${button.dataset.translation}`,
+            `<div class="matan-popover-translation"><p>${escapeClientHtml(button.dataset.translation || "")}</p></div>`,
+            15000,
+          );
+        });
+      });
+
+      document.querySelectorAll(".matan-word").forEach((button) => {
+        button.addEventListener("click", (event) => {
+          event.stopPropagation();
+          const rootText = button.dataset.root ? `<span class="matan-popover-root">Akar: ${escapeClientHtml(button.dataset.root)}</span>` : "";
+          showPopover(
+            button,
+            `word:${button.dataset.word}`,
+            `<strong class="arabic" dir="rtl">${escapeClientHtml(button.dataset.word || "")}</strong><span>${escapeClientHtml(button.dataset.meaning || "")}</span>${rootText}`,
+          );
+        });
+      });
+
+      document.querySelectorAll("[data-sharh]").forEach((box) => {
+        box.querySelectorAll("[data-sharh-lang]").forEach((button) => {
+          button.addEventListener("click", () => {
+            const lang = button.dataset.sharhLang;
+            box.querySelectorAll("[data-sharh-lang]").forEach((tab) => tab.classList.toggle("is-active", tab === button));
+            box.querySelectorAll("[data-sharh-panel]").forEach((panel) => {
+              panel.classList.toggle("hidden", panel.dataset.sharhPanel !== lang);
+            });
+          });
+        });
+      });
+
+      document.querySelectorAll("[data-sharh-size]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const current = Number(localStorage.getItem(sharhSizeKey) || "1");
+          setSharhScale(current + (button.dataset.sharhSize === "larger" ? 0.08 : -0.08));
+        });
+      });
+
+      document.querySelectorAll("[data-matn-size]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const current = Number(localStorage.getItem(matnSizeKey) || "1");
+          setMatnScale(current + (button.dataset.matnSize === "larger" ? 0.08 : -0.08));
+        });
+      });
+
+      document.addEventListener("click", (event) => {
+        const target = event.target;
+        if (
+          target instanceof Element &&
+          (target.closest(".matan-word") || target.closest(".ajrumiyyah-translation-toggle"))
+        ) {
+          return;
+        }
+        hidePopover();
+      }, true);
+    </script>
+  </body>
+</html>

@@ -640,6 +640,318 @@ html:not([lang="ar"]) [data-i18n].arabic {
   }
 }
 
+.ajrumiyyah-reader {
+  border: 1px solid theme("colors.line");
+  border-radius: 1.25rem;
+  background: theme("colors.panel");
+  box-shadow: theme("boxShadow.sm");
+  overflow: hidden;
+}
+
+.ajrumiyyah-reader-toolbar {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  margin: -0.25rem 0 0.85rem;
+}
+
+.ajrumiyyah-basmalah {
+  border-bottom: 1px solid theme("colors.line");
+  color: theme("colors.ink");
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.9;
+  padding: 1.25rem 1.5rem;
+  text-align: center;
+}
+
+.ajrumiyyah-section {
+  padding: 1.5rem;
+}
+
+.ajrumiyyah-section + .ajrumiyyah-section {
+  border-top: 1px solid theme("colors.line");
+}
+
+.ajrumiyyah-section-number {
+  color: theme("colors.accent");
+  flex: 0 0 auto;
+  font-weight: 800;
+  font-size: 1.15rem;
+  line-height: 1;
+  margin-top: 1.6rem;
+  text-align: center;
+}
+
+.ajrumiyyah-section-body {
+  min-width: 0;
+}
+
+.ajrumiyyah-matn-row {
+  align-items: flex-start;
+  display: flex;
+  gap: 0.85rem;
+  justify-content: flex-start;
+}
+
+.ajrumiyyah-matn {
+  color: theme("colors.ink");
+  flex: 1 1 auto;
+  font-size: calc(2.35rem * var(--ajrumiyyah-matn-scale, 1));
+  font-weight: 700;
+  line-height: 2.05;
+  min-width: 0;
+  text-align: right;
+}
+
+.ajrumiyyah-matn-size {
+  align-items: center;
+  background: theme("colors.panel");
+  border: 1px solid theme("colors.line");
+  border-radius: 999px;
+  direction: ltr;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 0.25rem;
+  padding: 0.18rem;
+}
+
+.ajrumiyyah-matn-size button {
+  align-items: center;
+  background: theme("colors.paper");
+  border-radius: 999px;
+  color: theme("colors.accent");
+  display: inline-flex;
+  font-size: 0.95rem;
+  font-weight: 900;
+  height: 1.75rem;
+  justify-content: center;
+  width: 1.75rem;
+}
+
+.ajrumiyyah-matn-size span {
+  color: theme("colors.muted");
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.ajrumiyyah-translation-toggle {
+  background: theme("colors.accent");
+  border: 1px solid theme("colors.accent");
+  border-radius: 999px;
+  color: white;
+  font-size: 0.82rem;
+  font-weight: 800;
+  padding: 0.38rem 0.72rem;
+}
+
+.ajrumiyyah-translation-toggle:hover {
+  filter: brightness(0.96);
+}
+
+.ajrumiyyah-action-row {
+  align-items: flex-start;
+  direction: rtl;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: flex-start;
+  margin-top: 0.7rem;
+}
+
+.ajrumiyyah-root {
+  display: block;
+  font-size: 0.85rem;
+  margin-top: 0.15rem;
+}
+
+.ajrumiyyah-sharh {
+  direction: ltr;
+  margin-top: 0;
+}
+
+.ajrumiyyah-sharh-summary,
+.ajrumiyyah-source summary {
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  border-radius: 999px;
+  color: #9a3412;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 0.82rem;
+  font-weight: 800;
+  list-style: none;
+  padding: 0.38rem 0.72rem;
+  user-select: none;
+}
+
+.ajrumiyyah-sharh-summary::-webkit-details-marker,
+.ajrumiyyah-source summary::-webkit-details-marker {
+  display: none;
+}
+
+.ajrumiyyah-sharh-summary:hover,
+.ajrumiyyah-source summary:hover {
+  background: #ffedd5;
+}
+
+.ajrumiyyah-sharh[open] .ajrumiyyah-sharh-summary,
+.ajrumiyyah-source[open] summary {
+  background: #ea580c;
+  border-color: #ea580c;
+  color: white;
+}
+
+.ajrumiyyah-sharh[open] {
+  align-items: center;
+  background: theme("colors.accent-soft");
+  border: 1px solid color-mix(in srgb, theme("colors.accent") 18%, theme("colors.line"));
+  border-radius: 1rem;
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.35rem;
+  padding: 0.75rem;
+}
+
+.ajrumiyyah-sharh-content {
+  display: contents;
+}
+
+.ajrumiyyah-sharh-head {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.ajrumiyyah-lang-tabs {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.ajrumiyyah-lang-tabs button {
+  background: theme("colors.panel");
+  border: 1px solid theme("colors.line");
+  border-radius: 999px;
+  color: theme("colors.muted");
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 0.32rem 0.62rem;
+}
+
+.ajrumiyyah-lang-tabs button[data-sharh-lang="ar"].is-active {
+  background: theme("colors.accent");
+  border-color: theme("colors.accent");
+  color: white;
+}
+
+.ajrumiyyah-lang-tabs button[data-sharh-lang="ms"].is-active {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: white;
+}
+
+.ajrumiyyah-sharh-size {
+  align-items: center;
+  background: theme("colors.panel");
+  border: 1px solid theme("colors.line");
+  border-radius: 999px;
+  display: inline-flex;
+  gap: 0.35rem;
+  padding: 0.25rem;
+}
+
+.ajrumiyyah-sharh-size button {
+  align-items: center;
+  background: theme("colors.paper");
+  border-radius: 999px;
+  color: theme("colors.accent");
+  display: inline-flex;
+  font-size: 0.95rem;
+  font-weight: 900;
+  height: 1.75rem;
+  justify-content: center;
+  width: 1.75rem;
+}
+
+.ajrumiyyah-sharh-size span {
+  color: theme("colors.muted");
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.ajrumiyyah-sharh-panel {
+  flex-basis: 100%;
+  color: theme("colors.ink");
+  font-size: calc(1.05rem * var(--ajrumiyyah-sharh-scale, 1));
+  line-height: 1.85;
+  margin-top: 1rem;
+}
+
+.ajrumiyyah-sharh-panel.arabic {
+  font-size: calc(1.35rem * var(--ajrumiyyah-sharh-scale, 1));
+  line-height: 2.15;
+  text-align: right;
+}
+
+.ajrumiyyah-sharh-panel p + p {
+  margin-top: 0.85rem;
+}
+
+.ajrumiyyah-source {
+  margin-top: 1.5rem;
+}
+
+.ajrumiyyah-source summary {
+  width: max-content;
+}
+
+.ajrumiyyah-source-body {
+  background: theme("colors.panel");
+  border: 1px solid theme("colors.line");
+  border-radius: 1rem;
+  margin-top: 1rem;
+  padding: 1.25rem;
+}
+
+.ajrumiyyah-source ul {
+  color: theme("colors.muted");
+  line-height: 1.7;
+  margin-top: 0.75rem;
+}
+
+.ajrumiyyah-source li + li {
+  margin-top: 0.35rem;
+}
+
+@media (max-width: 640px) {
+  .ajrumiyyah-basmalah {
+    font-size: 1.75rem;
+    padding: 1rem;
+  }
+
+  .ajrumiyyah-section {
+    padding: 1rem;
+  }
+
+  .ajrumiyyah-section-number {
+    margin-top: 1.25rem;
+  }
+
+  .ajrumiyyah-matn {
+    font-size: calc(1.9rem * var(--ajrumiyyah-matn-scale, 1));
+    line-height: 2.05;
+  }
+
+  .ajrumiyyah-sharh-head {
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
 .matan-size-control {
   align-items: center;
   background: theme("colors.panel");
