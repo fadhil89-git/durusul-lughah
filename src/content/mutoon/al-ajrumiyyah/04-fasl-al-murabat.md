@@ -1,0 +1,454 @@
+---
+title: "فَصْلٌ فِي الْمُعْرَبَاتِ"
+titleMs: "Fasal Pembahagian Mu‘rab"
+slug: "fasl-al-murabat"
+book: "al-ajrumiyyah"
+bookTitle: "الْمُقَدِّمَةُ الْآجُرُّومِيَّةُ"
+order: 4
+chapter: 4
+layout: "prose"
+previous: "bab-marifat-alamat-al-irab"
+next: "bab-al-afal"
+translationDefault: false
+wordTranslationDefault: false
+sharhDefaultLanguage: "ar"
+sourceEdition:
+  matn: "الْمُقَدِّمَةُ الْآجُرُّومِيَّةُ — تحقيق الشيخ د. عبد المحسن القاسم"
+  sharh: "شَرْحُ مُخْتَصَرٍ جِدًّا عَلَى مَتْنِ الْآجُرُّومِيَّةِ — أَحْمَدُ زَيْنِي دَحْلَان"
+
+proseSections:
+  - id: "murabat-division"
+    matn:
+      id: "murabat-01"
+      arabic: "اَلْمُعْرَبَاتُ قِسْمَانِ: قِسْمٌ يُعْرَبُ بِالْحَرَكَاتِ، وَقِسْمٌ يُعْرَبُ بِالْحُرُوفِ."
+      translation: "Kalimah-kalimah mu‘rab terbahagi kepada dua: bahagian yang dii‘rabkan dengan baris dan bahagian yang dii‘rabkan dengan huruf."
+      words:
+        - arabic: "اَلْمُعْرَبَاتُ"
+          meaning: "kalimah-kalimah yang menerima perubahan i‘rab"
+          type: "keyword"
+        - arabic: "قِسْمَانِ"
+          meaning: "dua bahagian"
+        - arabic: "قِسْمٌ"
+          meaning: "satu bahagian"
+          type: "keyword"
+        - arabic: "يُعْرَبُ"
+          meaning: "dii‘rabkan"
+          type: "keyword"
+        - arabic: "بِالْحَرَكَاتِ"
+          meaning: "dengan baris"
+          type: "keyword"
+        - arabic: "وَقِسْمٌ"
+          meaning: "dan satu bahagian"
+        - arabic: "يُعْرَبُ بِالْحُرُوفِ"
+          meaning: "dii‘rabkan dengan huruf"
+          type: "keyword"
+    sharh:
+      title: "Syarah"
+      arabic: |
+        هَذَا الْفَصْلُ ذَكَرَ فِيهِ الْمُصَنِّفُ جَمِيعَ مَا تَقَدَّمَ فِي الْبَابِ السَّابِقِ عَلَى سَبِيلِ الْإِجْمَالِ، بَعْدَ أَنْ ذَكَرَهُ مُفَصَّلًا؛ تَمْرِينًا لِلْمُبْتَدِئِ وَتَثْبِيتًا لِمَا سَبَقَ.
+        
+        وَالْمُعْرَبُ هُوَ الَّذِي يَتَغَيَّرُ آخِرُهُ بِسَبَبِ اخْتِلَافِ الْعَوَامِلِ الدَّاخِلَةِ عَلَيْهِ.
+        
+        وَالْمُعْرَبَاتُ قِسْمَانِ:
+        
+        الْقِسْمُ الْأَوَّلُ: مَا يُعْرَبُ بِالْحَرَكَاتِ، وَهِيَ الضَّمَّةُ وَالْفَتْحَةُ وَالْكَسْرَةُ وَالسُّكُونُ.
+        
+        وَالْقِسْمُ الثَّانِي: مَا يُعْرَبُ بِالْحُرُوفِ، كَالْوَاوِ وَالْأَلِفِ وَالْيَاءِ وَالنُّونِ وَحَذْفِهَا.
+      malay: |
+        Fasal ini menghimpunkan secara ringkas perkara yang telah diterangkan secara terperinci dalam bab sebelumnya. Cara ini membantu pelajar mengulang dan mengukuhkan pembahagian tanda-tanda i‘rab.
+        
+        Mu‘rab ialah kalimah yang keadaan akhirnya berubah kerana perubahan amil yang masuk padanya.
+        
+        Kalimah mu‘rab terbahagi kepada dua:
+        
+        **Pertama:** kalimah yang dii‘rabkan dengan baris, iaitu dammah, fathah, kasrah dan sukun.
+        
+        **Kedua:** kalimah yang dii‘rabkan dengan huruf, seperti wāw, alif, yā’, kekalnya nūn atau pembuangan nūn.
+
+  - id: "murab-bil-harakat"
+    matn:
+      id: "murabat-02"
+      arabic: "فَالَّذِي يُعْرَبُ بِالْحَرَكَاتِ أَرْبَعَةُ أَنْوَاعٍ: الِاسْمُ الْمُفْرَدُ، وَجَمْعُ التَّكْسِيرِ، وَجَمْعُ الْمُؤَنَّثِ السَّالِمُ، وَالْفِعْلُ الْمُضَارِعُ الَّذِي لَمْ يَتَّصِلْ بِآخِرِهِ شَيْءٌ."
+      translation: "Kalimah yang dii‘rabkan dengan baris ada empat jenis: isim mufrad, jamak taksir, jamak mu’annath sālim dan fi‘il muḍāri‘ yang tidak bersambung sesuatu pada akhirnya."
+      words:
+        - arabic: "فَالَّذِي"
+          meaning: "maka yang"
+        - arabic: "يُعْرَبُ"
+          meaning: "dii‘rabkan"
+          type: "keyword"
+        - arabic: "بِالْحَرَكَاتِ"
+          meaning: "dengan baris"
+          type: "keyword"
+        - arabic: "أَرْبَعَةُ أَنْوَاعٍ"
+          meaning: "empat jenis"
+          type: "keyword"
+        - arabic: "الِاسْمُ الْمُفْرَدُ"
+          meaning: "isim mufrad"
+          type: "keyword"
+        - arabic: "وَجَمْعُ التَّكْسِيرِ"
+          meaning: "dan jamak taksir"
+          type: "keyword"
+        - arabic: "وَجَمْعُ الْمُؤَنَّثِ السَّالِمُ"
+          meaning: "dan jamak mu’annath sālim"
+          type: "keyword"
+        - arabic: "وَالْفِعْلُ الْمُضَارِعُ"
+          meaning: "dan fi‘il muḍāri‘"
+        - arabic: "الَّذِي لَمْ يَتَّصِلْ بِآخِرِهِ شَيْءٌ"
+          meaning: "yang tidak bersambung sesuatu pada akhirnya"
+          type: "keyword"
+    sharh:
+      title: "Syarah"
+      arabic: |
+        الَّذِي يُعْرَبُ بِالْحَرَكَاتِ أَرْبَعَةُ أَنْوَاعٍ:
+        
+        الْأَوَّلُ: الِاسْمُ الْمُفْرَدُ، نَحْوُ «زَيْدٌ» وَ«زَيْدًا» وَ«زَيْدٍ».
+        
+        الثَّانِي: جَمْعُ التَّكْسِيرِ، نَحْوُ «الرِّجَالُ» وَ«الرِّجَالَ» وَ«الرِّجَالِ».
+        
+        الثَّالِثُ: جَمْعُ الْمُؤَنَّثِ السَّالِمُ، نَحْوُ «الْمُسْلِمَاتُ» وَ«الْمُسْلِمَاتِ».
+        
+        الرَّابِعُ: الْفِعْلُ الْمُضَارِعُ الَّذِي لَمْ يَتَّصِلْ بِآخِرِهِ شَيْءٌ، نَحْوُ «يَضْرِبُ» وَ«لَنْ يَضْرِبَ» وَ«لَمْ يَضْرِبْ».
+        
+        وَالْمُرَادُ بِالْحَرَكَاتِ هُنَا الضَّمَّةُ وَالْفَتْحَةُ وَالْكَسْرَةُ، وَيُلْحَقُ بِهَا السُّكُونُ فِي بَابِ الْجَزْمِ.
+      malay: |
+        Empat jenis kalimah dii‘rabkan dengan baris:
+        
+        **Isim mufrad**, seperti «زَيْدٌ», «زَيْدًا» dan «زَيْدٍ».
+        
+        **Jamak taksir**, seperti «الرِّجَالُ», «الرِّجَالَ» dan «الرِّجَالِ».
+        
+        **Jamak mu’annath sālim**, seperti «الْمُسْلِمَاتُ» dan «الْمُسْلِمَاتِ».
+        
+        **Fi‘il muḍāri‘ yang tidak bersambung sesuatu pada akhirnya**, seperti «يَضْرِبُ», «لَنْ يَضْرِبَ» dan «لَمْ يَضْرِبْ».
+        
+        Baris yang dimaksudkan ialah dammah, fathah dan kasrah. Sukun turut dimasukkan dalam pembahagian ini sebagai tanda jazam.
+
+  - id: "harakat-rules"
+    matn:
+      id: "murabat-03"
+      arabic: "وَكُلُّهَا تُرْفَعُ بِالضَّمَّةِ، وَتُنْصَبُ بِالْفَتْحَةِ، وَتُخْفَضُ بِالْكَسْرَةِ، وَتُجْزَمُ بِالسُّكُونِ."
+      translation: "Kesemuanya dirafa‘kan dengan dammah, dinasabkan dengan fathah, dijarkan dengan kasrah dan dijazamkan dengan sukun."
+      words:
+        - arabic: "وَكُلُّهَا"
+          meaning: "dan kesemuanya"
+        - arabic: "تُرْفَعُ"
+          meaning: "dirafa‘kan"
+          type: "keyword"
+        - arabic: "بِالضَّمَّةِ"
+          meaning: "dengan dammah"
+          type: "keyword"
+        - arabic: "وَتُنْصَبُ"
+          meaning: "dan dinasabkan"
+          type: "keyword"
+        - arabic: "بِالْفَتْحَةِ"
+          meaning: "dengan fathah"
+          type: "keyword"
+        - arabic: "وَتُخْفَضُ"
+          meaning: "dan dijarkan"
+          type: "keyword"
+        - arabic: "بِالْكَسْرَةِ"
+          meaning: "dengan kasrah"
+          type: "keyword"
+        - arabic: "وَتُجْزَمُ"
+          meaning: "dan dijazamkan"
+          type: "keyword"
+        - arabic: "بِالسُّكُونِ"
+          meaning: "dengan sukun"
+          type: "keyword"
+    sharh:
+      title: "Syarah"
+      arabic: |
+        قَوْلُهُ: «وَكُلُّهَا» لَيْسَ عَلَى عُمُومِهِ؛ لِأَنَّ الْأَسْمَاءَ لَا تُجْزَمُ، وَالْأَفْعَالَ لَا تُخْفَضُ.
+        
+        وَالْمَعْنَى أَنَّ مَا يَقْبَلُ الرَّفْعَ مِنْ هَذِهِ الْأَنْوَاعِ فَأَصْلُ رَفْعِهِ الضَّمَّةُ، وَمَا يَقْبَلُ النَّصْبَ فَأَصْلُ نَصْبِهِ الْفَتْحَةُ، وَمَا يَقْبَلُ الْخَفْضَ فَأَصْلُ خَفْضِهِ الْكَسْرَةُ، وَمَا يَقْبَلُ الْجَزْمَ فَأَصْلُ جَزْمِهِ السُّكُونُ.
+        
+        فَالِاسْمُ الْمُفْرَدُ وَجَمْعُ التَّكْسِيرِ يُرْفَعَانِ بِالضَّمَّةِ، وَيُنْصَبَانِ بِالْفَتْحَةِ، وَيُخْفَضَانِ بِالْكَسْرَةِ.
+        
+        وَالْفِعْلُ الْمُضَارِعُ يُرْفَعُ بِالضَّمَّةِ، وَيُنْصَبُ بِالْفَتْحَةِ، وَيُجْزَمُ بِالسُّكُونِ.
+      malay: |
+        Ungkapan “kesemuanya” perlu difahami berdasarkan jenis kalimah masing-masing.
+        
+        Isim tidak menerima jazam, manakala fi‘il tidak menerima jar.
+        
+        Maksud matan ialah:
+        
+        - Bentuk asal rafa‘ ialah dammah.
+        - Bentuk asal nasab ialah fathah.
+        - Bentuk asal jar ialah kasrah.
+        - Bentuk asal jazam ialah sukun.
+        
+        Isim mufrad dan jamak taksir menerima rafa‘, nasab dan jar. Fi‘il muḍāri‘ pula menerima rafa‘, nasab dan jazam.
+
+  - id: "exceptions-harakat"
+    matn:
+      id: "murabat-04"
+      arabic: "وَخَرَجَ عَنْ ذَلِكَ ثَلَاثَةُ أَشْيَاءَ: جَمْعُ الْمُؤَنَّثِ السَّالِمُ يُنْصَبُ بِالْكَسْرَةِ، وَالِاسْمُ الَّذِي لَا يَنْصَرِفُ يُخْفَضُ بِالْفَتْحَةِ، وَالْفِعْلُ الْمُضَارِعُ الْمُعْتَلُّ الْآخِرِ يُجْزَمُ بِحَذْفِ آخِرِهِ."
+      translation: "Tiga perkara terkecuali daripada kaedah tersebut: jamak mu’annath sālim dinasabkan dengan kasrah, isim yang tidak menerima tanwin dijarkan dengan fathah, dan fi‘il muḍāri‘ yang mu‘tal akhirnya dijazamkan dengan membuang huruf akhirnya."
+      words:
+        - arabic: "وَخَرَجَ عَنْ ذَلِكَ"
+          meaning: "dan terkecuali daripada perkara itu"
+        - arabic: "ثَلَاثَةُ أَشْيَاءَ"
+          meaning: "tiga perkara"
+          type: "keyword"
+        - arabic: "جَمْعُ الْمُؤَنَّثِ السَّالِمُ"
+          meaning: "jamak mu’annath sālim"
+          type: "keyword"
+        - arabic: "يُنْصَبُ بِالْكَسْرَةِ"
+          meaning: "dinasabkan dengan kasrah"
+          type: "keyword"
+        - arabic: "الِاسْمُ الَّذِي لَا يَنْصَرِفُ"
+          meaning: "isim yang tidak menerima tanwin"
+          type: "keyword"
+        - arabic: "يُخْفَضُ بِالْفَتْحَةِ"
+          meaning: "dijarkan dengan fathah"
+          type: "keyword"
+        - arabic: "الْفِعْلُ الْمُضَارِعُ الْمُعْتَلُّ الْآخِرِ"
+          meaning: "fi‘il muḍāri‘ yang mu‘tal akhirnya"
+          type: "keyword"
+        - arabic: "يُجْزَمُ بِحَذْفِ آخِرِهِ"
+          meaning: "dijazamkan dengan membuang huruf akhirnya"
+          type: "keyword"
+    sharh:
+      title: "Syarah"
+      arabic: |
+        خَرَجَ عَنِ الْأُصُولِ الْمَذْكُورَةِ ثَلَاثَةُ أَشْيَاءَ:
+        
+        الْأَوَّلُ: جَمْعُ الْمُؤَنَّثِ السَّالِمُ؛ فَإِنَّهُ يُنْصَبُ بِالْكَسْرَةِ نِيَابَةً عَنِ الْفَتْحَةِ، نَحْوُ «رَأَيْتُ الْمُسْلِمَاتِ».
+        
+        الثَّانِي: الِاسْمُ الَّذِي لَا يَنْصَرِفُ؛ فَإِنَّهُ يُخْفَضُ بِالْفَتْحَةِ نِيَابَةً عَنِ الْكَسْرَةِ، نَحْوُ «مَرَرْتُ بِأَحْمَدَ».
+        
+        الثَّالِثُ: الْفِعْلُ الْمُضَارِعُ الْمُعْتَلُّ الْآخِرِ؛ فَإِنَّهُ يُجْزَمُ بِحَذْفِ حَرْفِ الْعِلَّةِ، نَحْوُ «لَمْ يَخْشَ»، وَ«لَمْ يَدْعُ»، وَ«لَمْ يَرْمِ».
+        
+        فَالْأَلِفُ مَحْذُوفَةٌ مِنْ «يَخْشَى»، وَالْوَاوُ مَحْذُوفَةٌ مِنْ «يَدْعُو»، وَالْيَاءُ مَحْذُوفَةٌ مِنْ «يَرْمِي».
+      malay: |
+        Terdapat tiga pengecualian daripada tanda-tanda asal.
+        
+        **Pertama:** jamak mu’annath sālim dinasabkan dengan kasrah sebagai ganti fathah, seperti «رَأَيْتُ الْمُسْلِمَاتِ».
+        
+        **Kedua:** isim yang tidak menerima tanwin dijarkan dengan fathah sebagai ganti kasrah, seperti «مَرَرْتُ بِأَحْمَدَ».
+        
+        **Ketiga:** fi‘il muḍāri‘ yang berakhir dengan huruf ‘illah dijazamkan dengan membuang huruf tersebut:
+        
+        - يَخْشَى menjadi لَمْ يَخْشَ
+        - يَدْعُو menjadi لَمْ يَدْعُ
+        - يَرْمِي menjadi لَمْ يَرْمِ
+
+  - id: "murab-bil-huruf"
+    matn:
+      id: "murabat-05"
+      arabic: "وَالَّذِي يُعْرَبُ بِالْحُرُوفِ أَرْبَعَةُ أَنْوَاعٍ: التَّثْنِيَةُ، وَجَمْعُ الْمُذَكَّرِ السَّالِمُ، وَالْأَسْمَاءُ الْخَمْسَةُ، وَالْأَفْعَالُ الْخَمْسَةُ."
+      translation: "Kalimah yang dii‘rabkan dengan huruf ada empat jenis: muthannā, jamak mudhakkar sālim, isim-isim yang lima dan af‘āl al-khamsah."
+      words:
+        - arabic: "وَالَّذِي"
+          meaning: "dan yang"
+        - arabic: "يُعْرَبُ بِالْحُرُوفِ"
+          meaning: "dii‘rabkan dengan huruf"
+          type: "keyword"
+        - arabic: "أَرْبَعَةُ أَنْوَاعٍ"
+          meaning: "empat jenis"
+          type: "keyword"
+        - arabic: "التَّثْنِيَةُ"
+          meaning: "muthannā"
+          type: "keyword"
+        - arabic: "وَجَمْعُ الْمُذَكَّرِ السَّالِمُ"
+          meaning: "dan jamak mudhakkar sālim"
+          type: "keyword"
+        - arabic: "وَالْأَسْمَاءُ الْخَمْسَةُ"
+          meaning: "dan isim-isim yang lima"
+          type: "keyword"
+        - arabic: "وَالْأَفْعَالُ الْخَمْسَةُ"
+          meaning: "dan af‘āl al-khamsah"
+          type: "keyword"
+    sharh:
+      title: "Syarah"
+      arabic: |
+        الَّذِي يُعْرَبُ بِالْحُرُوفِ أَرْبَعَةُ أَنْوَاعٍ:
+        
+        الْأَوَّلُ: الْمُثَنَّى، نَحْوُ «الزَّيْدَانِ» وَ«الزَّيْدَيْنِ».
+        
+        الثَّانِي: جَمْعُ الْمُذَكَّرِ السَّالِمُ، نَحْوُ «الزَّيْدُونَ» وَ«الزَّيْدِينَ».
+        
+        الثَّالِثُ: الْأَسْمَاءُ الْخَمْسَةُ، وَهِيَ «أَبُوكَ، وَأَخُوكَ، وَحَمُوكَ، وَفُوكَ، وَذُو مَالٍ».
+        
+        الرَّابِعُ: الْأَفْعَالُ الْخَمْسَةُ، وَهِيَ «يَفْعَلَانِ، وَتَفْعَلَانِ، وَيَفْعَلُونَ، وَتَفْعَلُونَ، وَتَفْعَلِينَ».
+      malay: |
+        Empat jenis kalimah dii‘rabkan menggunakan huruf:
+        
+        **Muthannā**, seperti «الزَّيْدَانِ» dan «الزَّيْدَيْنِ».
+        
+        **Jamak mudhakkar sālim**, seperti «الزَّيْدُونَ» dan «الزَّيْدِينَ».
+        
+        **Isim-isim yang lima**, seperti «أَبُوكَ», «أَخُوكَ» dan «ذُو مَالٍ».
+        
+        **Af‘āl al-khamsah**, iaitu:
+        
+        - يَفْعَلَانِ
+        - تَفْعَلَانِ
+        - يَفْعَلُونَ
+        - تَفْعَلُونَ
+        - تَفْعَلِينَ
+
+  - id: "tathniyah-irab"
+    matn:
+      id: "murabat-06"
+      arabic: "فَأَمَّا التَّثْنِيَةُ فَتُرْفَعُ بِالْأَلِفِ، وَتُنْصَبُ وَتُخْفَضُ بِالْيَاءِ."
+      translation: "Muthannā dirafa‘kan dengan alif serta dinasabkan dan dijarkan dengan yā’."
+      words:
+        - arabic: "فَأَمَّا التَّثْنِيَةُ"
+          meaning: "adapun muthannā"
+        - arabic: "فَتُرْفَعُ بِالْأَلِفِ"
+          meaning: "maka ia dirafa‘kan dengan alif"
+          type: "keyword"
+        - arabic: "وَتُنْصَبُ"
+          meaning: "dan dinasabkan"
+          type: "keyword"
+        - arabic: "وَتُخْفَضُ"
+          meaning: "dan dijarkan"
+          type: "keyword"
+        - arabic: "بِالْيَاءِ"
+          meaning: "dengan yā’"
+          type: "keyword"
+    sharh:
+      title: "Syarah"
+      arabic: |
+        يُرْفَعُ الْمُثَنَّى بِالْأَلِفِ، نَحْوُ «جَاءَ الزَّيْدَانِ». فَـ«الزَّيْدَانِ» فَاعِلٌ مَرْفُوعٌ، وَعَلَامَةُ رَفْعِهِ الْأَلِفُ نِيَابَةً عَنِ الضَّمَّةِ.
+        
+        وَيُنْصَبُ بِالْيَاءِ، نَحْوُ «رَأَيْتُ الزَّيْدَيْنِ». فَـ«الزَّيْدَيْنِ» مَفْعُولٌ بِهِ مَنْصُوبٌ، وَعَلَامَةُ نَصْبِهِ الْيَاءُ نِيَابَةً عَنِ الْفَتْحَةِ.
+        
+        وَيُخْفَضُ بِالْيَاءِ، نَحْوُ «مَرَرْتُ بِالزَّيْدَيْنِ». فَـ«الزَّيْدَيْنِ» اسْمٌ مَجْرُورٌ بِالْبَاءِ، وَعَلَامَةُ جَرِّهِ الْيَاءُ نِيَابَةً عَنِ الْكَسْرَةِ.
+      malay: |
+        Muthannā mempunyai tanda berikut:
+        
+        - Rafa‘ dengan alif: «جَاءَ الزَّيْدَانِ».
+        - Nasab dengan yā’: «رَأَيْتُ الزَّيْدَيْنِ».
+        - jar dengan yā’: «مَرَرْتُ بِالزَّيْدَيْنِ».
+
+  - id: "jam-mudhakkar-irab"
+    matn:
+      id: "murabat-07"
+      arabic: "وَأَمَّا جَمْعُ الْمُذَكَّرِ السَّالِمُ فَيُرْفَعُ بِالْوَاوِ، وَيُنْصَبُ وَيُخْفَضُ بِالْيَاءِ."
+      translation: "Jamak mudhakkar sālim dirafa‘kan dengan wāw serta dinasabkan dan dijarkan dengan yā’."
+      words:
+        - arabic: "وَأَمَّا جَمْعُ الْمُذَكَّرِ السَّالِمُ"
+          meaning: "adapun jamak mudhakkar sālim"
+        - arabic: "فَيُرْفَعُ بِالْوَاوِ"
+          meaning: "maka ia dirafa‘kan dengan wāw"
+          type: "keyword"
+        - arabic: "وَيُنْصَبُ"
+          meaning: "dan dinasabkan"
+          type: "keyword"
+        - arabic: "وَيُخْفَضُ"
+          meaning: "dan dijarkan"
+          type: "keyword"
+        - arabic: "بِالْيَاءِ"
+          meaning: "dengan yā’"
+          type: "keyword"
+    sharh:
+      title: "Syarah"
+      arabic: |
+        يُرْفَعُ جَمْعُ الْمُذَكَّرِ السَّالِمُ بِالْوَاوِ، نَحْوُ «جَاءَ الزَّيْدُونَ».
+        
+        وَيُنْصَبُ بِالْيَاءِ، نَحْوُ «رَأَيْتُ الزَّيْدِينَ».
+        
+        وَيُخْفَضُ بِالْيَاءِ، نَحْوُ «مَرَرْتُ بِالزَّيْدِينَ».
+        
+        فَالْوَاوُ نَائِبَةٌ عَنِ الضَّمَّةِ، وَالْيَاءُ فِي النَّصْبِ نَائِبَةٌ عَنِ الْفَتْحَةِ، وَفِي الْخَفْضِ نَائِبَةٌ عَنِ الْكَسْرَةِ.
+      malay: |
+        Jamak mudhakkar sālim:
+        
+        - Dirafa‘kan dengan wāw: «جَاءَ الزَّيْدُونَ».
+        - Dinasabkan dengan yā’: «رَأَيْتُ الزَّيْدِينَ».
+        - Dijarkan dengan yā’: «مَرَرْتُ بِالزَّيْدِينَ».
+
+  - id: "asma-khamsah-irab"
+    matn:
+      id: "murabat-08"
+      arabic: "وَأَمَّا الْأَسْمَاءُ الْخَمْسَةُ فَتُرْفَعُ بِالْوَاوِ، وَتُنْصَبُ بِالْأَلِفِ، وَتُخْفَضُ بِالْيَاءِ."
+      translation: "Isim-isim yang lima dirafa‘kan dengan wāw, dinasabkan dengan alif dan dijarkan dengan yā’."
+      words:
+        - arabic: "وَأَمَّا الْأَسْمَاءُ الْخَمْسَةُ"
+          meaning: "adapun isim-isim yang lima"
+        - arabic: "فَتُرْفَعُ بِالْوَاوِ"
+          meaning: "maka ia dirafa‘kan dengan wāw"
+          type: "keyword"
+        - arabic: "وَتُنْصَبُ بِالْأَلِفِ"
+          meaning: "dan dinasabkan dengan alif"
+          type: "keyword"
+        - arabic: "وَتُخْفَضُ بِالْيَاءِ"
+          meaning: "dan dijarkan dengan yā’"
+          type: "keyword"
+    sharh:
+      title: "Syarah"
+      arabic: |
+        تُرْفَعُ الْأَسْمَاءُ الْخَمْسَةُ بِالْوَاوِ، نَحْوُ «جَاءَ أَبُوكَ».
+        
+        وَتُنْصَبُ بِالْأَلِفِ، نَحْوُ «رَأَيْتُ أَبَاكَ».
+        
+        وَتُخْفَضُ بِالْيَاءِ، نَحْوُ «مَرَرْتُ بِأَبِيكَ».
+        
+        فَالْوَاوُ نَائِبَةٌ عَنِ الضَّمَّةِ، وَالْأَلِفُ نَائِبَةٌ عَنِ الْفَتْحَةِ، وَالْيَاءُ نَائِبَةٌ عَنِ الْكَسْرَةِ.
+      malay: |
+        Isim-isim yang lima:
+        
+        - Dirafa‘kan dengan wāw: «جَاءَ أَبُوكَ».
+        - Dinasabkan dengan alif: «رَأَيْتُ أَبَاكَ».
+        - Dijarkan dengan yā’: «مَرَرْتُ بِأَبِيكَ».
+
+  - id: "afal-khamsah-irab"
+    matn:
+      id: "murabat-09"
+      arabic: "وَأَمَّا الْأَفْعَالُ الْخَمْسَةُ فَتُرْفَعُ بِالنُّونِ، وَتُنْصَبُ وَتُجْزَمُ بِحَذْفِهَا."
+      translation: "Af‘āl al-khamsah dirafa‘kan dengan kekalnya nūn serta dinasabkan dan dijazamkan dengan membuang nūn tersebut."
+      words:
+        - arabic: "وَأَمَّا الْأَفْعَالُ الْخَمْسَةُ"
+          meaning: "adapun af‘āl al-khamsah"
+        - arabic: "فَتُرْفَعُ بِالنُّونِ"
+          meaning: "maka ia dirafa‘kan dengan kekalnya nūn"
+          type: "keyword"
+        - arabic: "وَتُنْصَبُ"
+          meaning: "dan dinasabkan"
+          type: "keyword"
+        - arabic: "وَتُجْزَمُ"
+          meaning: "dan dijazamkan"
+          type: "keyword"
+        - arabic: "بِحَذْفِهَا"
+          meaning: "dengan membuang nūn tersebut"
+          type: "keyword"
+    sharh:
+      title: "Syarah"
+      arabic: |
+        تُرْفَعُ الْأَفْعَالُ الْخَمْسَةُ بِثُبُوتِ النُّونِ، نَحْوُ «الزَّيْدَانِ يَضْرِبَانِ»، وَ«الزَّيْدُونَ يَضْرِبُونَ»، وَ«أَنْتِ تَضْرِبِينَ».
+        
+        وَتُنْصَبُ بِحَذْفِ النُّونِ، نَحْوُ «لَنْ يَضْرِبَا»، وَ«لَنْ يَضْرِبُوا»، وَ«لَنْ تَضْرِبِي».
+        
+        وَتُجْزَمُ بِحَذْفِ النُّونِ، نَحْوُ «لَمْ يَضْرِبَا»، وَ«لَمْ يَضْرِبُوا»، وَ«لَمْ تَضْرِبِي».
+        
+        فَثُبُوتُ النُّونِ نَائِبٌ عَنِ الضَّمَّةِ، وَحَذْفُهَا فِي النَّصْبِ نَائِبٌ عَنِ الْفَتْحَةِ، وَفِي الْجَزْمِ نَائِبٌ عَنِ السُّكُونِ.
+      malay: |
+        Af‘āl al-khamsah:
+        
+        **Dirafa‘kan dengan kekalnya nūn:**
+        
+        - يَضْرِبَانِ
+        - يَضْرِبُونَ
+        - تَضْرِبِينَ
+        
+        **Dinasabkan dengan pembuangan nūn:**
+        
+        - لَنْ يَضْرِبَا
+        - لَنْ يَضْرِبُوا
+        - لَنْ تَضْرِبِي
+        
+        **Dijazamkan dengan pembuangan nūn:**
+        
+        - لَمْ يَضْرِبَا
+        - لَمْ يَضْرِبُوا
+        - لَمْ تَضْرِبِي
+
+---
+
+## Sumber projek
+
+- **Matan:** *Al-Muqaddimah al-Ajurrumiyyah*, tahqiq Syeikh Dr. Abdul Muhsin al-Qasim.
+- **Syarah Arab:** *Sharh Mukhtasar Jiddan 'ala Matn al-Ajurrumiyyah* oleh Ahmad Zaini Dahlan.
+- **Penyediaan:** Tashkil tambahan, pemenggalan kandungan, terjemahan Melayu, terjemahan perkataan dan penandaan istilah disediakan untuk Projek Tuwailib.

@@ -24,6 +24,7 @@ const sections = entry.data.proseSections ?? [];
 const titleArabic = entry.data.title ?? entry.data.titleArabic ?? "";
 const titleMalay = entry.data.titleMs ?? entry.data.titleMalay ?? "";
 const bookTitle = entry.data.bookTitle ?? "الْمُقَدِّمَةُ الْآجُرُّومِيَّةُ";
+const showBasmalah = entry.data.order === 1;
 
 type ProseWord = {
   arabic: string;
@@ -119,7 +120,7 @@ function renderArabic(text: string, words: ProseWord[] = []) {
     </header>
 
     <main class="mx-auto w-full max-w-5xl px-4 py-8">
-      <nav class="matan-top-controls">
+      <nav class="matan-top-controls ajrumiyyah-top-controls">
         <div class="matan-nav-buttons">
           {previous ? (
             <a href={`/mutoon/al-ajrumiyyah/${previous.data.slug}`} class="matan-step-link matan-step-prev">← Sebelum</a>
@@ -155,13 +156,14 @@ function renderArabic(text: string, words: ProseWord[] = []) {
       </div>
 
       <section class="ajrumiyyah-reader">
-        <p class="arabic ajrumiyyah-basmalah" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+        {showBasmalah && (
+          <p class="arabic ajrumiyyah-basmalah" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+        )}
 
-        {sections.map((section, index) => (
+        {sections.map((section) => (
           <article id={section.id} class="ajrumiyyah-section">
             <div class="ajrumiyyah-section-body">
               <div class="ajrumiyyah-matn-row" dir="rtl">
-                <span class="ajrumiyyah-section-number">{index + 1}.</span>
                 <p
                   class="arabic ajrumiyyah-matn"
                   dir="rtl"
@@ -169,23 +171,35 @@ function renderArabic(text: string, words: ProseWord[] = []) {
                 />
               </div>
 
-              <div class="ajrumiyyah-action-row">
-                <button
-                  type="button"
-                  class="ajrumiyyah-translation-toggle"
-                  data-translation={section.matn.translation}
-                  aria-expanded="false"
-                >
-                  Terjemahan
-                </button>
+              <div class="ajrumiyyah-action-row" data-ajrumiyyah-panels>
+                <div class="ajrumiyyah-button-row">
+                  <button
+                    type="button"
+                    class="ajrumiyyah-translation-summary"
+                    data-panel-toggle="translation"
+                    aria-expanded="false"
+                  >
+                    Terjemahan
+                  </button>
+                  <button
+                    type="button"
+                    class="ajrumiyyah-sharh-summary"
+                    data-panel-toggle="sharh"
+                    aria-expanded="false"
+                  >
+                    Syarah
+                  </button>
+                </div>
 
-                <details class="ajrumiyyah-sharh" data-sharh>
-                  <summary class="ajrumiyyah-sharh-summary">{section.sharh.title ?? "Syarah"}</summary>
+                <div class="ajrumiyyah-translation-panel ajrumiyyah-panel hidden" data-panel="translation">
+                  <p>{section.matn.translation}</p>
+                </div>
+
+                <div class="ajrumiyyah-sharh-box ajrumiyyah-panel hidden" data-panel="sharh" data-sharh>
                   <div class="ajrumiyyah-sharh-content">
                     <div class="ajrumiyyah-sharh-head">
                       <div class="ajrumiyyah-lang-tabs" role="tablist" aria-label="Bahasa syarah">
                         <button type="button" class="is-active" data-sharh-lang="ar">🇸🇦 العربية</button>
-                        <button type="button" data-sharh-lang="ms">🇲🇾 Melayu</button>
                       </div>
                       <div class="ajrumiyyah-sharh-size" aria-label="Kawalan saiz syarah">
                         <button type="button" data-sharh-size="smaller" aria-label="Kecilkan teks syarah">−</button>
@@ -198,35 +212,32 @@ function renderArabic(text: string, words: ProseWord[] = []) {
                         <p set:html={renderInlineMarkdown(paragraph)} />
                       ))}
                     </div>
-                    <div class="ajrumiyyah-sharh-panel hidden" data-sharh-panel="ms">
-                      {section.sharh.malay.split("\n\n").map((paragraph) => (
-                        <p set:html={renderInlineMarkdown(paragraph)} />
-                      ))}
-                    </div>
                   </div>
-                </details>
+                </div>
               </div>
             </div>
           </article>
         ))}
       </section>
 
-      <details class="ajrumiyyah-source">
-        <summary>Sumber projek</summary>
-        <div class="ajrumiyyah-source-body">
-          {entry.data.sourceEdition && (
-            <ul>
-              <li><strong>Matan:</strong> {entry.data.sourceEdition.matn}</li>
-              {entry.data.sourceEdition.sharh && <li><strong>Syarah:</strong> {entry.data.sourceEdition.sharh}</li>}
-            </ul>
-          )}
-          <article class="lesson-prose mt-4">
-            <Content />
-          </article>
-        </div>
-      </details>
+      {showBasmalah && (
+        <details class="ajrumiyyah-source">
+          <summary>Sumber projek</summary>
+          <div class="ajrumiyyah-source-body">
+            {entry.data.sourceEdition && (
+              <ul>
+                <li><strong>Matan:</strong> {entry.data.sourceEdition.matn}</li>
+                {entry.data.sourceEdition.sharh && <li><strong>Syarah:</strong> {entry.data.sourceEdition.sharh}</li>}
+              </ul>
+            )}
+            <article class="lesson-prose mt-4">
+              <Content />
+            </article>
+          </div>
+        </details>
+      )}
 
-      <nav class="matan-bottom-nav">
+      <nav class="matan-bottom-nav ajrumiyyah-bottom-nav">
         {previous ? (
           <a href={`/mutoon/al-ajrumiyyah/${previous.data.slug}`} class="matan-step-link matan-step-prev">← Sebelum</a>
         ) : <span></span>}
@@ -305,18 +316,6 @@ function renderArabic(text: string, words: ProseWord[] = []) {
         if (target instanceof HTMLSelectElement && target.value) window.location.href = target.value;
       });
 
-      document.querySelectorAll(".ajrumiyyah-translation-toggle").forEach((button) => {
-        button.addEventListener("click", (event) => {
-          event.stopPropagation();
-          showPopover(
-            button,
-            `translation:${button.dataset.translation}`,
-            `<div class="matan-popover-translation"><p>${escapeClientHtml(button.dataset.translation || "")}</p></div>`,
-            15000,
-          );
-        });
-      });
-
       document.querySelectorAll(".matan-word").forEach((button) => {
         button.addEventListener("click", (event) => {
           event.stopPropagation();
@@ -341,6 +340,20 @@ function renderArabic(text: string, words: ProseWord[] = []) {
         });
       });
 
+      document.querySelectorAll("[data-panel-toggle]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const group = button.closest("[data-ajrumiyyah-panels]");
+          const panelName = button.dataset.panelToggle;
+          const panel = group?.querySelector(`[data-panel="${panelName}"]`);
+          if (!panel) return;
+
+          const shouldOpen = panel.classList.contains("hidden");
+          panel.classList.toggle("hidden", !shouldOpen);
+          button.classList.toggle("is-active", shouldOpen);
+          button.setAttribute("aria-expanded", String(shouldOpen));
+        });
+      });
+
       document.querySelectorAll("[data-sharh-size]").forEach((button) => {
         button.addEventListener("click", () => {
           const current = Number(localStorage.getItem(sharhSizeKey) || "1");
@@ -359,7 +372,7 @@ function renderArabic(text: string, words: ProseWord[] = []) {
         const target = event.target;
         if (
           target instanceof Element &&
-          (target.closest(".matan-word") || target.closest(".ajrumiyyah-translation-toggle"))
+          target.closest(".matan-word")
         ) {
           return;
         }

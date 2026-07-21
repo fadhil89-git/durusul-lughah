@@ -119,7 +119,7 @@ proseSections:
     matn:
       id: "kalam-03"
       arabic: "فَالِاسْمُ يُعْرَفُ بِالْخَفْضِ، وَالتَّنْوِينِ، وَدُخُولِ الْأَلِفِ وَاللَّامِ، وَحُرُوفِ الْخَفْضِ، وَهِيَ: مِنْ، وَإِلَى، وَعَنْ، وَعَلَى، وَفِي، وَرُبَّ، وَالْبَاءُ، وَالْكَافُ، وَاللَّامُ، وَحُرُوفُ الْقَسَمِ، وَهِيَ: الْوَاوُ، وَالْبَاءُ، وَالتَّاءُ."
-      translation: "Isim dikenali melalui khafad, tanwin, kemasukan alif dan lam, serta huruf-huruf khafad. Huruf-huruf itu ialah مِنْ، إِلَى، عَنْ، عَلَى، فِي، رُبَّ، bā’, kāf dan lām. Huruf-huruf sumpah pula ialah wāw, bā’ dan tā’."
+      translation: "Isim dikenali melalui huruf jarr (nama dalam matan ini: khafad), tanwin, boleh dimasuki alif dan lam, serta huruf-huruf jarr. Huruf-huruf itu ialah مِنْ، إِلَى، عَنْ، عَلَى، فِي، رُبَّ، bā’, kāf dan lām. Huruf-huruf sumpah pula ialah wāw, bā’ dan tā’."
       words:
         - arabic: "بِالْخَفْضِ"
           transliteration: "bil-khafḍi"
@@ -131,7 +131,7 @@ proseSections:
           type: "keyword"
         - arabic: "وَدُخُولِ الْأَلِفِ وَاللَّامِ"
           transliteration: "wa-dukhūli al-alifi wal-lāmi"
-          meaning: "dan kemasukan alif dan lam"
+          meaning: "dan boleh dimasuki alif dan lam"
           type: "keyword"
         - arabic: "وَحُرُوفِ الْخَفْضِ"
           transliteration: "wa-ḥurūfil-khafḍi"
@@ -154,7 +154,7 @@ proseSections:
       malay: |
         Isim boleh dikenal melalui beberapa tanda.
 
-        Pertama, isim menerima **khafad atau jar**, seperti «بِزَيْدٍ». Khafad boleh berlaku kerana kemasukan huruf jar atau kerana sesuatu isim menjadi muḍāf ilayh.
+        Pertama, isim menerima **khafad atau jar**, seperti «بِزَيْدٍ». Jar boleh berlaku kerana kemasukan huruf jar atau kerana sesuatu isim menjadi muḍāf ilayh.
 
         Kedua, isim menerima **tanwin**, seperti «زَيْدٌ» dan «رَجُلٌ». Tanwin ialah bunyi nun yang sukun pada akhir isim ketika disebut tetapi tidak ditulis sebagai huruf nun.
 
@@ -166,7 +166,7 @@ proseSections:
     matn:
       id: "kalam-04"
       arabic: "وَالْفِعْلُ يُعْرَفُ بِقَدْ، وَالسِّينِ، وَسَوْفَ، وَتَاءِ التَّأْنِيثِ السَّاكِنَةِ."
-      translation: "Fi‘il dikenali melalui kemasukan قَدْ, sīn, سَوْفَ dan tā’ ta’nīth yang berbaris sukun."
+      translation: "Fi‘il dikenali melalui kemasukan قَدْ, sīn, سَوْفَ dan tā’ ta’nīth yang berbaris sukun (contoh: ذَهَبَتْ)."
       words:
         - arabic: "بِقَدْ"
           transliteration: "bi-qad"
@@ -182,7 +182,7 @@ proseSections:
           type: "keyword"
         - arabic: "وَتَاءِ التَّأْنِيثِ السَّاكِنَةِ"
           transliteration: "wa-tā’it-ta’nīthis-sākinati"
-          meaning: "dan tā’ ta’nīth yang sukun"
+          meaning: "dan tā’ ta’nīth yang sukun (ذَهَبَتْ)"
           type: "keyword"
     sharh:
       title: "Syarah"
@@ -250,5 +250,3 @@ proseSections:
 - **Matan:** *Al-Muqaddimah al-Ajurrumiyyah*, tahqiq Syeikh Dr. Abdul Muhsin al-Qasim.
 - **Syarah Arab:** *Sharh Mukhtasar Jiddan 'ala Matn al-Ajurrumiyyah* oleh Ahmad Zaini Dahlan.
 - **Penyediaan:** Tashkil tambahan, pemenggalan kandungan, terjemahan Melayu, terjemahan perkataan dan penandaan istilah disediakan untuk Projek Tuwailib.
-- **Kaedah paparan:** Struktur kandungan mengikuti sistem Projek Tuhfatul Atfal, tetapi matan Ajrumiyyah disusun sebagai teks prosa biasa dan bukan sebagai bait syair.
-- **Kaedah highlight:** Huruf yang bersambung dengan kalimah sasaran, seperti بِـ، وَ dan فَـ, dimasukkan sekali dalam highlight supaya bentuk kalimah dan susunan teks tidak terganggu.

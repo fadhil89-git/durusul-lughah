@@ -673,16 +673,6 @@ html:not([lang="ar"]) [data-i18n].arabic {
   border-top: 1px solid theme("colors.line");
 }
 
-.ajrumiyyah-section-number {
-  color: theme("colors.accent");
-  flex: 0 0 auto;
-  font-weight: 800;
-  font-size: 1.15rem;
-  line-height: 1;
-  margin-top: 1.6rem;
-  text-align: center;
-}
-
 .ajrumiyyah-section-body {
   min-width: 0;
 }
@@ -735,27 +725,11 @@ html:not([lang="ar"]) [data-i18n].arabic {
   font-weight: 800;
 }
 
-.ajrumiyyah-translation-toggle {
-  background: theme("colors.accent");
-  border: 1px solid theme("colors.accent");
-  border-radius: 999px;
-  color: white;
-  font-size: 0.82rem;
-  font-weight: 800;
-  padding: 0.38rem 0.72rem;
-}
-
-.ajrumiyyah-translation-toggle:hover {
-  filter: brightness(0.96);
-}
-
 .ajrumiyyah-action-row {
-  align-items: flex-start;
   direction: rtl;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  justify-content: flex-start;
+  display: grid;
+  gap: 0.65rem;
+  justify-items: start;
   margin-top: 0.7rem;
 }
 
@@ -765,29 +739,48 @@ html:not([lang="ar"]) [data-i18n].arabic {
   margin-top: 0.15rem;
 }
 
-.ajrumiyyah-sharh {
-  direction: ltr;
-  margin-top: 0;
+.ajrumiyyah-button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.ajrumiyyah-translation-summary,
+.ajrumiyyah-sharh-summary,
+.ajrumiyyah-source summary {
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 0.82rem;
+  font-weight: 800;
+  list-style: none;
+  line-height: 1;
+  padding: 0.38rem 0.72rem;
+  user-select: none;
+  width: max-content;
+}
+
+.ajrumiyyah-translation-summary {
+  background: theme("colors.accent-soft");
+  border: 1px solid color-mix(in srgb, theme("colors.accent") 22%, theme("colors.line"));
+  color: theme("colors.accent");
 }
 
 .ajrumiyyah-sharh-summary,
 .ajrumiyyah-source summary {
   background: #fff7ed;
   border: 1px solid #fed7aa;
-  border-radius: 999px;
   color: #9a3412;
-  cursor: pointer;
-  display: inline-flex;
-  font-size: 0.82rem;
-  font-weight: 800;
-  list-style: none;
-  padding: 0.38rem 0.72rem;
-  user-select: none;
 }
 
-.ajrumiyyah-sharh-summary::-webkit-details-marker,
 .ajrumiyyah-source summary::-webkit-details-marker {
   display: none;
+}
+
+.ajrumiyyah-translation-summary:hover {
+  background: color-mix(in srgb, theme("colors.accent-soft") 78%, white);
 }
 
 .ajrumiyyah-sharh-summary:hover,
@@ -795,28 +788,48 @@ html:not([lang="ar"]) [data-i18n].arabic {
   background: #ffedd5;
 }
 
-.ajrumiyyah-sharh[open] .ajrumiyyah-sharh-summary,
+.ajrumiyyah-translation-summary.is-active {
+  background: theme("colors.accent");
+  border-color: theme("colors.accent");
+  color: white;
+}
+
+.ajrumiyyah-sharh-summary.is-active,
 .ajrumiyyah-source[open] summary {
   background: #ea580c;
   border-color: #ea580c;
   color: white;
 }
 
-.ajrumiyyah-sharh[open] {
-  align-items: center;
+.ajrumiyyah-panel {
+  border-radius: 1rem;
+  margin-top: 0.1rem;
+  padding: 0.85rem;
+  width: 100%;
+}
+
+.ajrumiyyah-translation-panel.ajrumiyyah-panel {
+  background: color-mix(in srgb, theme("colors.accent-soft") 72%, white);
+  border: 1px solid color-mix(in srgb, theme("colors.accent") 18%, theme("colors.line"));
+  direction: ltr;
+  font-size: 1.08rem;
+  font-weight: 650;
+  line-height: 1.75;
+  text-align: left;
+}
+
+.ajrumiyyah-sharh-box {
   background: theme("colors.accent-soft");
   border: 1px solid color-mix(in srgb, theme("colors.accent") 18%, theme("colors.line"));
-  border-radius: 1rem;
-  display: flex;
-  flex-basis: 100%;
-  flex-wrap: wrap;
-  gap: 0.55rem;
-  margin-top: 0.35rem;
-  padding: 0.75rem;
+}
+
+.ajrumiyyah-translation-panel p {
+  margin: 0;
 }
 
 .ajrumiyyah-sharh-content {
-  display: contents;
+  display: grid;
+  gap: 0.8rem;
 }
 
 .ajrumiyyah-sharh-head {
@@ -824,7 +837,7 @@ html:not([lang="ar"]) [data-i18n].arabic {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .ajrumiyyah-lang-tabs {
@@ -884,14 +897,16 @@ html:not([lang="ar"]) [data-i18n].arabic {
 }
 
 .ajrumiyyah-sharh-panel {
-  flex-basis: 100%;
   color: theme("colors.ink");
+  direction: ltr;
   font-size: calc(1.05rem * var(--ajrumiyyah-sharh-scale, 1));
   line-height: 1.85;
-  margin-top: 1rem;
+  margin-top: 0.25rem;
+  text-align: left;
 }
 
 .ajrumiyyah-sharh-panel.arabic {
+  direction: rtl;
   font-size: calc(1.35rem * var(--ajrumiyyah-sharh-scale, 1));
   line-height: 2.15;
   text-align: right;
@@ -935,10 +950,6 @@ html:not([lang="ar"]) [data-i18n].arabic {
 
   .ajrumiyyah-section {
     padding: 1rem;
-  }
-
-  .ajrumiyyah-section-number {
-    margin-top: 1.25rem;
   }
 
   .ajrumiyyah-matn {
@@ -1047,6 +1058,15 @@ html:not([lang="ar"]) [data-i18n].arabic {
   justify-content: flex-start;
 }
 
+.ajrumiyyah-top-controls .matan-nav-buttons {
+  flex-wrap: nowrap;
+}
+
+.ajrumiyyah-top-controls .matan-step-link {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
 .matan-step-link {
   border-radius: 999px;
   border: 1px solid theme("colors.line");
@@ -1082,6 +1102,15 @@ html:not([lang="ar"]) [data-i18n].arabic {
   gap: 0.75rem;
   justify-content: space-between;
   margin-top: 2rem;
+}
+
+.ajrumiyyah-bottom-nav {
+  flex-wrap: nowrap;
+}
+
+.ajrumiyyah-bottom-nav .matan-step-link {
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 .matan-reader {
@@ -1339,12 +1368,22 @@ html:not([lang="ar"]) [data-i18n].arabic {
     width: 100%;
   }
 
+  .ajrumiyyah-top-controls .matan-nav-buttons {
+    display: flex;
+    grid-template-columns: none;
+  }
+
   .matan-nav-buttons > span {
     display: none;
   }
 
   .matan-step-link {
     width: 100%;
+  }
+
+  .ajrumiyyah-top-controls .matan-step-link {
+    padding-inline: 0.75rem;
+    width: auto;
   }
 
   .matan-size-control {
@@ -1407,6 +1446,16 @@ html:not([lang="ar"]) [data-i18n].arabic {
     display: grid;
     grid-template-columns: 1fr;
     padding-bottom: 5rem;
+  }
+
+  .ajrumiyyah-bottom-nav {
+    display: flex;
+    grid-template-columns: none;
+  }
+
+  .ajrumiyyah-bottom-nav .matan-step-link {
+    padding-inline: 0.75rem;
+    width: auto;
   }
 
   .matan-bottom-nav > span {
