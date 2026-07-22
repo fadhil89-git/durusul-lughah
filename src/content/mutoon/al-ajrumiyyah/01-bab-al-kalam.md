@@ -306,5 +306,4 @@ proseSections:
 ## Sumber projek
 
 - **Matan:** *Al-Muqaddimah al-Ajurrumiyyah*, tahqiq Syeikh Dr. Abdul Muhsin al-Qasim.
-- **Syarah Arab:** *Sharh Mukhtasar Jiddan 'ala Matn al-Ajurrumiyyah* oleh Ahmad Zaini Dahlan.
 - **Penyediaan:** Tashkil tambahan, pemenggalan kandungan, terjemahan Melayu, terjemahan perkataan dan penandaan istilah disediakan untuk Projek Tuwailib.

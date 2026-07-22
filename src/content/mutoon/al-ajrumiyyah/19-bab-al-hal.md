@@ -18,9 +18,9 @@ sourceEdition:
 
 audio:
   src: "/audio/al-ajrumiyyah/0403AlAajurrumiyyah_AbdullahRowzy.mp3"
-  chapterStart: 906
-  matnStart: 908
-  chapterEnd: 929
+  chapterStart: 902
+  matnStart: 902
+  chapterEnd: 925
 
 proseSections:
   - id: "hal-definition"

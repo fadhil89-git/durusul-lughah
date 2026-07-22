@@ -18,9 +18,9 @@ sourceEdition:
 
 audio:
   src: "/audio/al-ajrumiyyah/0403AlAajurrumiyyah_AbdullahRowzy.mp3"
-  chapterStart: 1086
-  matnStart: 1088
-  chapterEnd: 1109
+  chapterStart: 1081
+  matnStart: 1081
+  chapterEnd: 1104
 
 proseSections:
   - id: "maful-maah-definition"

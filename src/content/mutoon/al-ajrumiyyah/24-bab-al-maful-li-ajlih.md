@@ -18,9 +18,9 @@ sourceEdition:
 
 audio:
   src: "/audio/al-ajrumiyyah/0403AlAajurrumiyyah_AbdullahRowzy.mp3"
-  chapterStart: 1073
-  matnStart: 1076
-  chapterEnd: 1086
+  chapterStart: 1069
+  matnStart: 1069
+  chapterEnd: 1081
 
 proseSections:
   - id: "maful-li-ajlih-definition"

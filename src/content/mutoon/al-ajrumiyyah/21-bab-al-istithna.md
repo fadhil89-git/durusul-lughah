@@ -18,9 +18,9 @@ sourceEdition:
 
 audio:
   src: "/audio/al-ajrumiyyah/0403AlAajurrumiyyah_AbdullahRowzy.mp3"
-  chapterStart: 957
-  matnStart: 958
-  chapterEnd: 1017
+  chapterStart: 952
+  matnStart: 952
+  chapterEnd: 1013
 
 proseSections:
   - id: "istithna-definition"

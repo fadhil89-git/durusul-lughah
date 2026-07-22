@@ -18,9 +18,9 @@ sourceEdition:
 
 audio:
   src: "/audio/al-ajrumiyyah/0403AlAajurrumiyyah_AbdullahRowzy.mp3"
-  chapterStart: 1109
-  matnStart: 1111
-  chapterEnd: 1153
+  chapterStart: 1103
+  matnStart: 1103
+  chapterEnd: 1150
 
 proseSections:
   - id: "majrurat-introduction"

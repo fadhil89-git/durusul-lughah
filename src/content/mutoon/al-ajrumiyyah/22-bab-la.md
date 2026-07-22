@@ -18,9 +18,9 @@ sourceEdition:
 
 audio:
   src: "/audio/al-ajrumiyyah/0403AlAajurrumiyyah_AbdullahRowzy.mp3"
-  chapterStart: 1017
-  matnStart: 1019
-  chapterEnd: 1046
+  chapterStart: 1012
+  matnStart: 1012
+  chapterEnd: 1041
 
 proseSections:
   - id: "la-introduction"

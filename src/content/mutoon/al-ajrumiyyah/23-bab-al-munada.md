@@ -18,9 +18,9 @@ sourceEdition:
 
 audio:
   src: "/audio/al-ajrumiyyah/0403AlAajurrumiyyah_AbdullahRowzy.mp3"
-  chapterStart: 1046
-  matnStart: 1047
-  chapterEnd: 1073
+  chapterStart: 1041
+  matnStart: 1041
+  chapterEnd: 1069
 
 proseSections:
   - id: "munada-definition"

@@ -18,9 +18,9 @@ sourceEdition:
 
 audio:
   src: "/audio/al-ajrumiyyah/0403AlAajurrumiyyah_AbdullahRowzy.mp3"
-  chapterStart: 929
-  matnStart: 931
-  chapterEnd: 957
+  chapterStart: 925
+  matnStart: 925
+  chapterEnd: 952
 
 proseSections:
   - id: "tamyiz-definition"
