@@ -1,5 +1,6 @@
 ---
 import "../../../styles/global.css";
+import AjrumiyyahAudioPlayer from "../../../components/AjrumiyyahAudioPlayer.astro";
 import { getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
@@ -25,6 +26,8 @@ const titleArabic = entry.data.title ?? entry.data.titleArabic ?? "";
 const titleMalay = entry.data.titleMs ?? entry.data.titleMalay ?? "";
 const bookTitle = entry.data.bookTitle ?? "الْمُقَدِّمَةُ الْآجُرُّومِيَّةُ";
 const showBasmalah = entry.data.order === 1;
+const chapterAudio = entry.data.audio;
+const chapterAudioLabel = `${titleMalay} — ${titleArabic}`;
 
 type ProseWord = {
   arabic: string;
@@ -155,6 +158,39 @@ function renderArabic(text: string, words: ProseWord[] = []) {
         </div>
       </div>
 
+      {chapterAudio && (
+        <div class="ajrumiyyah-chapter-audio" aria-label="Kawalan audio bab">
+          <button
+            type="button"
+            class="ajrumiyyah-audio-chip ajrumiyyah-audio-chip-primary"
+            data-audio-play
+            data-audio-mode="book"
+            data-audio-src={chapterAudio.src}
+            data-audio-start="31"
+            data-audio-label="Audio matan penuh Al-Ajrumiyyah"
+            aria-label="Mainkan audio matan penuh Al-Ajrumiyyah"
+          >
+            <span aria-hidden="true">▶</span>
+            <span>Audio Penuh</span>
+          </button>
+          <button
+            type="button"
+            class="ajrumiyyah-audio-chip"
+            data-audio-play
+            data-audio-mode="chapter"
+            data-audio-src={chapterAudio.src}
+            data-audio-start={chapterAudio.chapterStart}
+            data-audio-end={chapterAudio.chapterEnd}
+            data-audio-label={`Audio bab ini: ${chapterAudioLabel}`}
+            data-chapter-slug={entry.data.slug}
+            aria-label={`Mainkan bab ${titleMalay}`}
+          >
+            <span aria-hidden="true">▶</span>
+            <span>Audio Bab</span>
+          </button>
+        </div>
+      )}
+
       <section class="ajrumiyyah-reader">
         {showBasmalah && (
           <p class="arabic ajrumiyyah-basmalah" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
@@ -248,6 +284,7 @@ function renderArabic(text: string, words: ProseWord[] = []) {
     </main>
 
     <div id="ajrumiyyah-popover" class="matan-popover hidden" role="status"></div>
+    <AjrumiyyahAudioPlayer />
 
     <script>
       const popover = document.getElementById("ajrumiyyah-popover");

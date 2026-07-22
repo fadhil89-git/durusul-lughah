@@ -1462,3 +1462,252 @@ html:not([lang="ar"]) [data-i18n].arabic {
     display: none;
   }
 }
+
+.ajrumiyyah-chapter-audio,
+.ajrumiyyah-index-audio {
+  align-items: center;
+  background: color-mix(in srgb, theme("colors.accent-soft") 58%, white);
+  border: 1px solid color-mix(in srgb, theme("colors.accent") 16%, theme("colors.line"));
+  border-radius: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1rem 0 1.25rem auto;
+  max-width: 100%;
+  padding: 0.65rem;
+  width: max-content;
+}
+
+.ajrumiyyah-index-audio {
+  margin-bottom: 0;
+}
+
+.ajrumiyyah-chapter-audio button,
+.ajrumiyyah-index-audio button {
+  align-items: center;
+  background: theme("colors.panel");
+  border: 1px solid color-mix(in srgb, theme("colors.accent") 24%, theme("colors.line"));
+  border-radius: 999px;
+  color: theme("colors.accent");
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 0.82rem;
+  font-weight: 850;
+  justify-content: center;
+  line-height: 1;
+  min-height: 2.1rem;
+  padding: 0.55rem 0.85rem;
+}
+
+.ajrumiyyah-audio-chip {
+  gap: 0.45rem;
+}
+
+.ajrumiyyah-audio-chip > span:first-child {
+  align-items: center;
+  background: rgb(255 255 255 / 0.18);
+  border-radius: 999px;
+  color: white;
+  display: inline-flex;
+  font-size: 0.64rem;
+  height: 1.35rem;
+  justify-content: center;
+  line-height: 1;
+  width: 1.35rem;
+}
+
+.ajrumiyyah-audio-chip:not(.ajrumiyyah-audio-chip-primary) > span:first-child {
+  background: theme("colors.accent");
+}
+
+.ajrumiyyah-chapter-audio button:first-child,
+.ajrumiyyah-index-audio button:first-child {
+  background: theme("colors.accent");
+  border-color: theme("colors.accent");
+  color: white;
+}
+
+.ajrumiyyah-index-audio button {
+  background: theme("colors.panel");
+  border-color: color-mix(in srgb, theme("colors.accent") 24%, theme("colors.line"));
+  color: theme("colors.accent");
+}
+
+.ajrumiyyah-index-audio button:first-child {
+  background: theme("colors.accent");
+  border-color: theme("colors.accent");
+  color: white;
+}
+
+.ajrumiyyah-chapter-audio button:hover,
+.ajrumiyyah-index-audio button:hover,
+.ajrumiyyah-chapter-audio button.is-playing,
+.ajrumiyyah-index-audio button.is-playing {
+  background: #0f766e;
+  border-color: #0f766e;
+  color: white;
+  box-shadow: 0 0 0 3px color-mix(in srgb, #0f766e 20%, transparent);
+}
+
+.ajrumiyyah-audio-player {
+  background: rgb(255 255 255 / 0.96);
+  border: 1px solid theme("colors.line");
+  border-radius: 1rem 1rem 0 0;
+  bottom: 0;
+  box-shadow: 0 -0.75rem 2rem rgb(15 23 42 / 0.08);
+  display: grid;
+  gap: 0.5rem;
+  left: 50%;
+  max-width: 42rem;
+  padding: 0.6rem;
+  position: fixed;
+  transform: translateX(-50%);
+  width: min(calc(100% - 1rem), 42rem);
+  z-index: 60;
+}
+
+.ajrumiyyah-audio-main {
+  align-items: center;
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: auto minmax(0, 1fr);
+}
+
+.ajrumiyyah-audio-play {
+  align-items: center;
+  background: theme("colors.accent");
+  border-radius: 999px;
+  color: white;
+  display: inline-flex;
+  font-size: 0.85rem;
+  font-weight: 900;
+  height: 2.35rem;
+  justify-content: center;
+  width: 2.35rem;
+}
+
+.ajrumiyyah-audio-meta {
+  min-width: 0;
+}
+
+.ajrumiyyah-audio-label {
+  color: theme("colors.ink");
+  font-size: 0.85rem;
+  font-weight: 850;
+  line-height: 1.35;
+  margin: 0 0 0.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ajrumiyyah-audio-progress-row {
+  align-items: center;
+  color: theme("colors.muted");
+  display: grid;
+  font-size: 0.72rem;
+  font-weight: 750;
+  gap: 0.45rem;
+  grid-template-columns: 2.6rem minmax(0, 1fr) 2.6rem;
+}
+
+.ajrumiyyah-audio-progress-row input {
+  accent-color: theme("colors.accent");
+  width: 100%;
+}
+
+.ajrumiyyah-audio-controls {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: space-between;
+}
+
+.ajrumiyyah-audio-controls button,
+.ajrumiyyah-audio-controls select {
+  background: theme("colors.panel");
+  border: 1px solid theme("colors.line");
+  border-radius: 999px;
+  color: theme("colors.accent");
+  font-size: 0.76rem;
+  font-weight: 800;
+  min-height: 1.85rem;
+  padding: 0.3rem 0.55rem;
+}
+
+.ajrumiyyah-repeat-control {
+  align-items: center;
+  background: theme("colors.panel");
+  border: 1px solid theme("colors.line");
+  border-radius: 999px;
+  color: theme("colors.accent");
+  display: inline-flex;
+  font-size: 0.78rem;
+  font-weight: 900;
+  gap: 0.35rem;
+  min-height: 1.85rem;
+  padding: 0.3rem 0.6rem;
+}
+
+.ajrumiyyah-repeat-control > span {
+  font-size: 0.9rem;
+}
+
+.ajrumiyyah-repeat-control > span:last-child {
+  font-size: 0.78rem;
+  min-width: 1.15rem;
+  text-align: center;
+}
+
+.ajrumiyyah-audio-controls button.is-active,
+.ajrumiyyah-repeat-control.is-active {
+  background: theme("colors.accent");
+  border-color: theme("colors.accent");
+  color: white;
+}
+
+.ajrumiyyah-audio-controls label {
+  align-items: center;
+  color: theme("colors.muted");
+  display: inline-flex;
+  font-size: 0.76rem;
+  font-weight: 800;
+  gap: 0.35rem;
+}
+
+body:has(.ajrumiyyah-audio-player) {
+  padding-bottom: 7.5rem;
+}
+
+@media (max-width: 640px) {
+  .ajrumiyyah-chapter-audio {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.45rem;
+    width: 100%;
+  }
+
+  .ajrumiyyah-chapter-audio button {
+    font-size: 0.76rem;
+    padding-inline: 0.55rem;
+  }
+
+  .ajrumiyyah-audio-player {
+    border-radius: 0.9rem 0.9rem 0 0;
+    gap: 0.55rem;
+    padding: 0.65rem;
+  }
+
+  .ajrumiyyah-audio-controls {
+    justify-content: flex-start;
+  }
+
+  .ajrumiyyah-repeat-control {
+    max-width: 100%;
+  }
+
+  body:has(.ajrumiyyah-audio-player) {
+    padding-bottom: 10rem;
+  }
+}

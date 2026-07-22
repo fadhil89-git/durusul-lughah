@@ -16,36 +16,33 @@ sourceEdition:
   matn: "الْمُقَدِّمَةُ الْآجُرُّومِيَّةُ — تحقيق الشيخ د. عبد المحسن القاسم"
   sharh: "شَرْحُ مُخْتَصَرٍ جِدًّا عَلَى مَتْنِ الْآجُرُّومِيَّةِ — أَحْمَدُ زَيْنِي دَحْلَان"
 
+audio:
+  src: "/audio/al-ajrumiyyah/0403AlAajurrumiyyah_AbdullahRowzy.mp3"
+  chapterStart: 544
+  matnStart: 544
+  chapterEnd: 629
+
 proseSections:
   - id: "awamil-introduction"
     matn:
       id: "awamil-01"
-      arabic: "اَلْعَوَامِلُ الدَّاخِلَةُ عَلَى الْمُبْتَدَإِ وَالْخَبَرِ ثَلَاثَةُ أَشْيَاءَ: كَانَ وَأَخَوَاتُهَا، وَإِنَّ وَأَخَوَاتُهَا، وَظَنَنْتُ وَأَخَوَاتُهَا."
-      translation: "‘Āmil yang memasuki mubtada’ dan khabar terdiri daripada tiga kelompok: كان وأخواتها, إن وأخواتها, serta ظن وأخواتها."
+      arabic: "وَهِيَ ثَلَاثَةُ أَشْيَاءَ: كَانَ وَأَخَوَاتُهَا، وَإِنَّ وَأَخَوَاتُهَا، وَظَنَنْتُ وَأَخَوَاتُهَا."
+      translation: "Amil yang masuk ke atas mubtada’ dan khabar ada tiga: كان وأخواتها, إن وأخواتها dan ظن وأخواتها."
       words:
-        - arabic: "اَلْعَوَامِلُ"
-          meaning: "perkataan yang memberikan kesan terhadap hukum i‘rab kalimah lain"
-          type: "keyword"
-        - arabic: "الدَّاخِلَةُ"
-          meaning: "yang masuk ke dalam susunan ayat dan mengubah hukum asalnya"
-          type: "keyword"
-        - arabic: "عَلَى الْمُبْتَدَإِ"
-          meaning: "ke atas isim yang pada asalnya menjadi mubtada’ marfū‘"
-          type: "keyword"
-        - arabic: "وَالْخَبَرِ"
-          meaning: "dan bahagian yang pada asalnya menjadi khabar marfū‘"
+        - arabic: "وَهِيَ"
+          meaning: "dan amil-amil itu"
           type: "keyword"
         - arabic: "ثَلَاثَةُ أَشْيَاءَ"
-          meaning: "terbahagi kepada tiga kelompok ‘āmil utama"
+          meaning: "ada tiga"
           type: "keyword"
         - arabic: "كَانَ وَأَخَوَاتُهَا"
-          meaning: "fi‘il nāqiṣ yang merafa‘kan isim dan menasabkan khabar"
+          meaning: "كان وأخواتها"
           type: "keyword"
         - arabic: "وَإِنَّ وَأَخَوَاتُهَا"
-          meaning: "huruf nāsikh yang menasabkan isim dan merafa‘kan khabar"
+          meaning: "إن وأخواتها"
           type: "keyword"
         - arabic: "وَظَنَنْتُ وَأَخَوَاتُهَا"
-          meaning: "fi‘il hati yang menasabkan mubtada’ dan khabar, lalu menjadikan mubtada’ sebagai maf‘ul pertama dan khabar sebagai maf‘ul kedua"
+          meaning: "dan ظن وأخواتها"
           type: "keyword"
     sharh:
       title: "Syarah"
@@ -91,25 +88,83 @@ proseSections:
   - id: "kana-and-sisters-rule"
     matn:
       id: "awamil-02"
-      arabic: "فَأَمَّا كَانَ وَأَخَوَاتُهَا فَإِنَّهَا تَرْفَعُ الِاسْمَ، وَتَنْصِبُ الْخَبَرَ."
-      translation: "Adapun كان وأخواتها, semuanya merafa‘kan isim dan menasabkan khabar."
+      arabic: "فَأَمَّا كَانَ وَأَخَوَاتُهَا؛ فَإِنَّهَا تَرْفَعُ الِاسْمَ، وَتَنْصِبُ الْخَبَرَ، وَهِيَ: كَانَ، وَأَمْسَى، وَأَصْبَحَ، وَأَضْحَى، وَظَلَّ، وَبَاتَ، وَصَارَ، وَلَيْسَ، وَمَا زَالَ، وَمَا انْفَكَّ، وَمَا فَتِئَ، وَمَا بَرِحَ، وَمَا دَامَ، وَمَا تَصَرَّفَ مِنْهَا، نَحْوُ: كَانَ، وَيَكُونُ، وَكُنْ، وَأَصْبَحَ، وَيُصْبِحُ، وَأَصْبِحْ."
+      translation: "كان وأخواتها merafa‘kan isim dan menasabkan khabar. Anggotanya ialah كَانَ, أَمْسَى, أَصْبَحَ, أَضْحَى, ظَلَّ, بَاتَ, صَارَ, لَيْسَ, مَا زَالَ, مَا انْفَكَّ, مَا فَتِئَ, مَا بَرِحَ dan مَا دَامَ. Termasuk juga segala bentuk tasrif daripadanya, seperti كَانَ, يَكُونُ, كُنْ, أَصْبَحَ, يُصْبِحُ dan أَصْبِحْ."
       words:
-        - arabic: "فَأَمَّا"
-          meaning: "adapun; digunakan untuk memulakan penerangan kelompok pertama"
-        - arabic: "كَانَ"
-          meaning: "fi‘il nāqiṣ yang biasanya menunjukkan keadaan pada masa lalu"
+        - arabic: "فَأَمَّا كَانَ وَأَخَوَاتُهَا"
+          meaning: "adapun كان وأخواتها"
           type: "keyword"
-        - arabic: "وَأَخَوَاتُهَا"
-          meaning: "dan fi‘il-fi‘il lain yang mempunyai amalan nahu seperti kāna"
-          type: "keyword"
-        - arabic: "فَإِنَّهَا"
-          meaning: "maka sesungguhnya semua fi‘il dalam kelompok ini"
-          type: "keyword"
-        - arabic: "تَرْفَعُ الِاسْمَ"
-          meaning: "menjadikan mubtada’ asal sebagai isimnya dalam keadaan marfū‘"
+        - arabic: "فَإِنَّهَا تَرْفَعُ الِاسْمَ"
+          meaning: "maka ia merafa‘kan isim"
           type: "keyword"
         - arabic: "وَتَنْصِبُ الْخَبَرَ"
-          meaning: "menjadikan khabar asal sebagai khabarnya dalam keadaan mansub"
+          meaning: "dan menasabkan khabar"
+          type: "keyword"
+        - arabic: "وَهِيَ"
+          meaning: "iaitu"
+          type: "keyword"
+        - arabic: "كَانَ"
+          meaning: "telah berada"
+          type: "keyword"
+        - arabic: "وَأَمْسَى"
+          meaning: "berada pada waktu petang"
+          type: "keyword"
+        - arabic: "وَأَصْبَحَ"
+          meaning: "berada pada waktu pagi"
+          type: "keyword"
+        - arabic: "وَأَضْحَى"
+          meaning: "berada pada waktu duha"
+          type: "keyword"
+        - arabic: "وَظَلَّ"
+          meaning: "terus berada pada waktu siang"
+          type: "keyword"
+        - arabic: "وَبَاتَ"
+          meaning: "berada pada waktu malam"
+          type: "keyword"
+        - arabic: "وَصَارَ"
+          meaning: "telah menjadi"
+          type: "keyword"
+        - arabic: "وَلَيْسَ"
+          meaning: "bukan"
+          type: "keyword"
+        - arabic: "وَمَا زَالَ"
+          meaning: "masih berterusan"
+          type: "keyword"
+        - arabic: "وَمَا انْفَكَّ"
+          meaning: "tidak berhenti"
+          type: "keyword"
+        - arabic: "وَمَا فَتِئَ"
+          meaning: "sentiasa berterusan"
+          type: "keyword"
+        - arabic: "وَمَا بَرِحَ"
+          meaning: "tidak berhenti"
+          type: "keyword"
+        - arabic: "وَمَا دَامَ"
+          meaning: "selama masih"
+          type: "keyword"
+        - arabic: "وَمَا تَصَرَّفَ مِنْهَا"
+          meaning: "serta bentuk-bentuk tasrif daripadanya"
+          type: "keyword"
+        - arabic: "نَحْوُ"
+          meaning: "seperti"
+          type: "keyword"
+        - arabic: "كَانَ"
+          meaning: "telah berada"
+          type: "keyword"
+        - arabic: "وَيَكُونُ"
+          meaning: "sedang atau akan berada"
+          type: "keyword"
+        - arabic: "وَكُنْ"
+          meaning: "jadilah"
+          type: "keyword"
+        - arabic: "وَأَصْبَحَ"
+          meaning: "telah berada pada waktu pagi"
+          type: "keyword"
+        - arabic: "وَيُصْبِحُ"
+          meaning: "sedang berada pada waktu pagi"
+          type: "keyword"
+        - arabic: "وَأَصْبِحْ"
+          meaning: "beradalah pada waktu pagi"
           type: "keyword"
     sharh:
       title: "Syarah"
@@ -151,49 +206,20 @@ proseSections:
   - id: "kana-sisters-list"
     matn:
       id: "awamil-03"
-      arabic: "وَهِيَ: كَانَ، وَأَمْسَى، وَأَصْبَحَ، وَأَضْحَى، وَظَلَّ، وَبَاتَ، وَصَارَ، وَلَيْسَ، وَمَا زَالَ، وَمَا انْفَكَّ، وَمَا فَتِئَ، وَمَا بَرِحَ، وَمَا دَامَ."
-      translation: "Saudara-saudara kāna ialah: kāna, amsā, aṣbaḥa, aḍḥā, ẓalla, bāta, ṣāra, laysa, mā zāla, mā انفك, mā فتىء, mā bariḥa dan mā dāma."
+      arabic: "تَقُولُ: كَانَ زَيْدٌ قَائِمًا، وَلَيْسَ عَمْرٌو شَاخِصًا، وَمَا أَشْبَهَ ذَلِكَ."
+      translation: "Contohnya: “Zaid telah berada dalam keadaan berdiri”, “‘Amr bukan orang yang sedang berangkat” dan yang seumpamanya."
       words:
-        - arabic: "وَهِيَ"
-          meaning: "dan fi‘il-fi‘il yang termasuk dalam kelompok ini ialah"
-        - arabic: "كَانَ"
-          meaning: "menunjukkan keadaan atau kejadian pada masa lalu"
+        - arabic: "تَقُولُ"
+          meaning: "engkau berkata"
           type: "keyword"
-        - arabic: "وَأَمْسَى"
-          meaning: "memasuki waktu petang dalam sesuatu keadaan"
+        - arabic: "كَانَ زَيْدٌ قَائِمًا"
+          meaning: "Zaid telah berada dalam keadaan berdiri"
           type: "keyword"
-        - arabic: "وَأَصْبَحَ"
-          meaning: "memasuki waktu pagi atau berubah menjadi sesuatu keadaan"
+        - arabic: "وَلَيْسَ عَمْرٌو شَاخِصًا"
+          meaning: "dan ‘Amr tidak sedang berangkat"
           type: "keyword"
-        - arabic: "وَأَضْحَى"
-          meaning: "memasuki waktu ḍuḥā atau berada dalam sesuatu keadaan ketika itu"
-          type: "keyword"
-        - arabic: "وَظَلَّ"
-          meaning: "terus berada dalam sesuatu keadaan pada waktu siang"
-          type: "keyword"
-        - arabic: "وَبَاتَ"
-          meaning: "berada dalam sesuatu keadaan pada waktu malam"
-          type: "keyword"
-        - arabic: "وَصَارَ"
-          meaning: "berubah daripada satu keadaan kepada keadaan yang lain"
-          type: "keyword"
-        - arabic: "وَلَيْسَ"
-          meaning: "menafikan hubungan antara isim dengan khabarnya"
-          type: "keyword"
-        - arabic: "وَمَا زَالَ"
-          meaning: "masih dan terus berada dalam sesuatu keadaan"
-          type: "keyword"
-        - arabic: "وَمَا انْفَكَّ"
-          meaning: "tidak berhenti daripada terus berada dalam sesuatu keadaan"
-          type: "keyword"
-        - arabic: "وَمَا فَتِئَ"
-          meaning: "sentiasa dan tidak berhenti melakukan atau mengalami sesuatu"
-          type: "keyword"
-        - arabic: "وَمَا بَرِحَ"
-          meaning: "masih berterusan dalam sesuatu keadaan"
-          type: "keyword"
-        - arabic: "وَمَا دَامَ"
-          meaning: "selama sesuatu keadaan terus berlangsung"
+        - arabic: "وَمَا أَشْبَهَ ذَلِكَ"
+          meaning: "serta yang seumpamanya"
           type: "keyword"
     sharh:
       title: "Syarah"
@@ -242,30 +268,39 @@ proseSections:
   - id: "kana-examples"
     matn:
       id: "awamil-04"
-      arabic: "تَقُولُ: كَانَ زَيْدٌ قَائِمًا، وَلَيْسَ عَمْرٌو شَاخِصًا، وَمَا أَشْبَهَ ذَلِكَ."
-      translation: "Kamu berkata: “Zaid dahulu sedang berdiri,” “Amr tidak sedang berangkat,” dan contoh-contoh lain yang menyerupainya."
+      arabic: "وَأَمَّا إِنَّ وَأَخَوَاتُهَا؛ فَإِنَّهَا تَنْصِبُ الِاسْمَ، وَتَرْفَعُ الْخَبَرَ، وَهِيَ: إِنَّ، وَأَنَّ، وَلَكِنَّ، وَكَأَنَّ، وَلَيْتَ، وَلَعَلَّ."
+      translation: "إن وأخواتها menasabkan isim dan merafa‘kan khabar. Anggotanya ialah إِنَّ, أَنَّ, لَكِنَّ, كَأَنَّ, لَيْتَ dan لَعَلَّ."
       words:
-        - arabic: "تَقُولُ"
-          meaning: "kamu berkata; digunakan untuk memperkenalkan contoh penggunaan"
-        - arabic: "كَانَ"
-          meaning: "fi‘il māḍī nāqiṣ yang merafa‘kan isim dan menasabkan khabar"
+        - arabic: "وَأَمَّا إِنَّ وَأَخَوَاتُهَا"
+          meaning: "adapun إن وأخواتها"
           type: "keyword"
-        - arabic: "زَيْدٌ"
-          meaning: "isim kāna yang marfū‘ dengan dammah"
+        - arabic: "فَإِنَّهَا تَنْصِبُ الِاسْمَ"
+          meaning: "maka ia menasabkan isim"
           type: "keyword"
-        - arabic: "قَائِمًا"
-          meaning: "khabar kāna yang mansub dengan fathah"
+        - arabic: "وَتَرْفَعُ الْخَبَرَ"
+          meaning: "dan merafa‘kan khabar"
           type: "keyword"
-        - arabic: "وَلَيْسَ"
-          meaning: "dan bukan atau tidak; fi‘il nāqiṣ untuk menafikan keadaan"
-        - arabic: "عَمْرٌو"
-          meaning: "isim laysa yang marfū‘ dengan dammah"
+        - arabic: "وَهِيَ"
+          meaning: "iaitu"
           type: "keyword"
-        - arabic: "شَاخِصًا"
-          meaning: "sedang berangkat atau keluar; khabar laysa yang mansub"
+        - arabic: "إِنَّ"
+          meaning: "sesungguhnya"
           type: "keyword"
-        - arabic: "وَمَا أَشْبَهَ ذَلِكَ"
-          meaning: "dan semua contoh lain yang mengikuti hukum serta susunan yang sama"
+        - arabic: "وَأَنَّ"
+          meaning: "bahawa"
+          type: "keyword"
+        - arabic: "وَلَكِنَّ"
+          meaning: "akan tetapi"
+          type: "keyword"
+        - arabic: "وَكَأَنَّ"
+          meaning: "seakan-akan"
+          type: "keyword"
+        - arabic: "وَلَيْتَ"
+          meaning: "alangkah baiknya sekiranya"
+          type: "keyword"
+        - arabic: "وَلَعَلَّ"
+          meaning: "dan mudah-mudahan"
+          type: "keyword"
     sharh:
       title: "Syarah"
       arabic: |
@@ -300,31 +335,20 @@ proseSections:
   - id: "kana-conjugated-forms"
     matn:
       id: "awamil-05"
-      arabic: "وَمَا تَصَرَّفَ مِنْهَا نَحْوُ: كَانَ، وَيَكُونُ، وَكُنْ، وَأَصْبَحَ، وَيُصْبِحُ، وَأَصْبِحْ."
-      translation: "Bentuk-bentuk lain yang diterbitkan daripada fi‘il tersebut juga mempunyai amalan yang sama, seperti kāna, yakūnu dan kun; serta aṣbaḥa, yuṣbiḥu dan aṣbiḥ."
+      arabic: "تَقُولُ: إِنَّ زَيْدًا قَائِمٌ، وَلَيْتَ عَمْرًا شَاخِصٌ، وَمَا أَشْبَهَ ذَلِكَ."
+      translation: "Contohnya: “Sesungguhnya Zaid berdiri”, “Alangkah baiknya sekiranya ‘Amr berangkat” dan yang seumpamanya."
       words:
-        - arabic: "وَمَا تَصَرَّفَ"
-          meaning: "dan bentuk-bentuk lain yang diterbitkan daripada akar fi‘il tersebut"
-        - arabic: "مِنْهَا"
-          meaning: "daripada kāna dan sebahagian saudara-saudaranya"
-        - arabic: "نَحْوُ"
-          meaning: "contohnya atau seperti bentuk yang berikut"
-        - arabic: "كَانَ"
-          meaning: "fi‘il māḍī: telah berada atau dahulu dalam sesuatu keadaan"
+        - arabic: "تَقُولُ"
+          meaning: "engkau berkata"
           type: "keyword"
-        - arabic: "وَيَكُونُ"
-          meaning: "fi‘il muḍāri‘: sedang atau akan berada dalam sesuatu keadaan"
+        - arabic: "إِنَّ زَيْدًا قَائِمٌ"
+          meaning: "sesungguhnya Zaid berdiri"
           type: "keyword"
-        - arabic: "وَكُنْ"
-          meaning: "fi‘il amar: jadilah atau beradalah dalam sesuatu keadaan"
+        - arabic: "وَلَيْتَ عَمْرًا شَاخِصٌ"
+          meaning: "dan alangkah baiknya sekiranya ‘Amr berangkat"
           type: "keyword"
-        - arabic: "وَأَصْبَحَ"
-          meaning: "telah memasuki waktu pagi atau telah menjadi"
-        - arabic: "وَيُصْبِحُ"
-          meaning: "sedang atau akan memasuki waktu pagi atau menjadi"
-          type: "keyword"
-        - arabic: "وَأَصْبِحْ"
-          meaning: "jadilah atau masuklah ke waktu pagi dalam sesuatu keadaan"
+        - arabic: "وَمَا أَشْبَهَ ذَلِكَ"
+          meaning: "serta yang seumpamanya"
           type: "keyword"
     sharh:
       title: "Syarah"
@@ -370,25 +394,38 @@ proseSections:
   - id: "inna-and-sisters-rule"
     matn:
       id: "awamil-06"
-      arabic: "وَأَمَّا إِنَّ وَأَخَوَاتُهَا فَإِنَّهَا تَنْصِبُ الِاسْمَ، وَتَرْفَعُ الْخَبَرَ."
-      translation: "Adapun إن وأخواتها, semuanya menasabkan isim dan merafa‘kan khabar."
+      arabic: "وَمَعْنَى إِنَّ وَأَنَّ لِلتَّوْكِيدِ، وَلَكِنَّ لِلِاسْتِدْرَاكِ، وَكَأَنَّ لِلتَّشْبِيهِ، وَلَيْتَ لِلتَّمَنِّي، وَلَعَلَّ لِلتَّرَجِّي وَالتَّوَقُّعِ."
+      translation: "إِنَّ dan أَنَّ membawa makna penegasan, لَكِنَّ membawa makna istidrak, كَأَنَّ membawa makna perumpamaan, لَيْتَ membawa makna angan-angan, manakala لَعَلَّ membawa makna harapan dan kemungkinan."
       words:
-        - arabic: "وَأَمَّا"
-          meaning: "dan adapun; memulakan penerangan kelompok kedua"
-        - arabic: "إِنَّ"
-          meaning: "huruf penegasan dan naṣab yang memasuki jumlah ismiyyah"
+        - arabic: "وَمَعْنَى إِنَّ وَأَنَّ"
+          meaning: "dan makna إِنَّ serta أَنَّ"
           type: "keyword"
-        - arabic: "وَأَخَوَاتُهَا"
-          meaning: "dan huruf-huruf lain yang beramal seperti inna"
+        - arabic: "لِلتَّوْكِيدِ"
+          meaning: "adalah untuk penegasan"
           type: "keyword"
-        - arabic: "فَإِنَّهَا"
-          meaning: "maka sesungguhnya semua huruf dalam kelompok ini"
+        - arabic: "وَلَكِنَّ"
+          meaning: "dan لَكِنَّ"
           type: "keyword"
-        - arabic: "تَنْصِبُ الِاسْمَ"
-          meaning: "menjadikan mubtada’ asal sebagai isimnya dalam keadaan mansub"
+        - arabic: "لِلِاسْتِدْرَاكِ"
+          meaning: "untuk istidrak"
           type: "keyword"
-        - arabic: "وَتَرْفَعُ الْخَبَرَ"
-          meaning: "menjadikan khabar asal sebagai khabarnya dalam keadaan marfū‘"
+        - arabic: "وَكَأَنَّ"
+          meaning: "dan كَأَنَّ"
+          type: "keyword"
+        - arabic: "لِلتَّشْبِيهِ"
+          meaning: "untuk perumpamaan"
+          type: "keyword"
+        - arabic: "وَلَيْتَ"
+          meaning: "dan لَيْتَ"
+          type: "keyword"
+        - arabic: "لِلتَّمَنِّي"
+          meaning: "untuk angan-angan"
+          type: "keyword"
+        - arabic: "وَلَعَلَّ"
+          meaning: "dan لَعَلَّ"
+          type: "keyword"
+        - arabic: "لِلتَّرَجِّي وَالتَّوَقُّعِ"
+          meaning: "untuk harapan dan kemungkinan"
           type: "keyword"
     sharh:
       title: "Syarah"
@@ -425,28 +462,56 @@ proseSections:
   - id: "inna-sisters-list"
     matn:
       id: "awamil-07"
-      arabic: "وَهِيَ: إِنَّ، وَأَنَّ، وَلَكِنَّ، وَكَأَنَّ، وَلَيْتَ، وَلَعَلَّ."
-      translation: "Saudara-saudara inna ialah: inna, anna, lakinna, ka’anna, layta dan la‘alla."
+      arabic: "وَأَمَّا ظَنَنْتُ وَأَخَوَاتُهَا؛ فَإِنَّهَا تَنْصِبُ الْمُبْتَدَأَ وَالْخَبَرَ عَلَى أَنَّهُمَا مَفْعُولَانِ لَهَا، وَهِيَ: ظَنَنْتُ، وَحَسِبْتُ، وَخِلْتُ، وَزَعَمْتُ، وَرَأَيْتُ، وَعَلِمْتُ، وَوَجَدْتُ، وَاتَّخَذْتُ، وَجَعَلْتُ، وَسَمِعْتُ."
+      translation: "ظن وأخواتها menasabkan mubtada’ dan khabar dengan menjadikan kedua-duanya sebagai dua maf‘ul baginya. Anggotanya ialah ظَنَنْتُ, حَسِبْتُ, خِلْتُ, زَعَمْتُ, رَأَيْتُ, عَلِمْتُ, وَجَدْتُ, اتَّخَذْتُ, جَعَلْتُ dan سَمِعْتُ."
       words:
+        - arabic: "وَأَمَّا ظَنَنْتُ وَأَخَوَاتُهَا"
+          meaning: "adapun ظن وأخواتها"
+          type: "keyword"
+        - arabic: "فَإِنَّهَا تَنْصِبُ الْمُبْتَدَأَ"
+          meaning: "maka ia menasabkan mubtada’"
+          type: "keyword"
+        - arabic: "وَالْخَبَرَ"
+          meaning: "dan khabar"
+          type: "keyword"
+        - arabic: "عَلَى أَنَّهُمَا"
+          meaning: "dengan menjadikan kedua-duanya"
+          type: "keyword"
+        - arabic: "مَفْعُولَانِ لَهَا"
+          meaning: "sebagai dua maf‘ul baginya"
+          type: "keyword"
         - arabic: "وَهِيَ"
-          meaning: "dan huruf-huruf yang termasuk dalam kelompok ini ialah"
-        - arabic: "إِنَّ"
-          meaning: "sesungguhnya; digunakan untuk menegaskan hubungan dalam ayat"
+          meaning: "iaitu"
           type: "keyword"
-        - arabic: "وَأَنَّ"
-          meaning: "bahawa sesungguhnya; membentuk rangkaian yang boleh ditakwilkan sebagai masdar"
+        - arabic: "ظَنَنْتُ"
+          meaning: "aku menyangka"
           type: "keyword"
-        - arabic: "وَلَكِنَّ"
-          meaning: "akan tetapi; membetulkan atau melengkapkan sangkaan daripada ayat sebelumnya"
+        - arabic: "وَحَسِبْتُ"
+          meaning: "aku mengira"
           type: "keyword"
-        - arabic: "وَكَأَنَّ"
-          meaning: "seolah-olah; digunakan untuk menunjukkan penyerupaan"
+        - arabic: "وَخِلْتُ"
+          meaning: "aku menyangka"
           type: "keyword"
-        - arabic: "وَلَيْتَ"
-          meaning: "alangkah baiknya sekiranya; menunjukkan harapan yang sukar atau mustahil"
+        - arabic: "وَزَعَمْتُ"
+          meaning: "aku mendakwa"
           type: "keyword"
-        - arabic: "وَلَعَلَّ"
-          meaning: "mudah-mudahan atau barangkali; menunjukkan harapan atau jangkaan"
+        - arabic: "وَرَأَيْتُ"
+          meaning: "aku berpandangan"
+          type: "keyword"
+        - arabic: "وَعَلِمْتُ"
+          meaning: "aku mengetahui"
+          type: "keyword"
+        - arabic: "وَوَجَدْتُ"
+          meaning: "aku mendapati"
+          type: "keyword"
+        - arabic: "وَاتَّخَذْتُ"
+          meaning: "aku menjadikan"
+          type: "keyword"
+        - arabic: "وَجَعَلْتُ"
+          meaning: "aku menjadikan"
+          type: "keyword"
+        - arabic: "وَسَمِعْتُ"
+          meaning: "dan aku mendengar"
           type: "keyword"
     sharh:
       title: "Syarah"
@@ -478,60 +543,20 @@ proseSections:
   - id: "inna-examples"
     matn:
       id: "awamil-08"
-      arabic: "تَقُولُ: إِنَّ زَيْدًا قَائِمٌ، وَبَلَغَنِي أَنَّ زَيْدًا مُنْطَلِقٌ، وَلَكِنَّ عَمْرًا جَالِسٌ، وَكَأَنَّ زَيْدًا أَسَدٌ، وَلَيْتَ عَمْرًا شَاخِصٌ، وَلَعَلَّ الْحَبِيبَ قَادِمٌ."
-      translation: "Kamu berkata: “Sesungguhnya Zaid sedang berdiri,” “Telah sampai kepadaku bahawa Zaid sedang berangkat,” “Akan tetapi Amr sedang duduk,” “Seolah-olah Zaid ialah seekor singa,” “Alangkah baiknya sekiranya Amr sedang berangkat,” dan “Mudah-mudahan orang yang dikasihi akan datang.”"
+      arabic: "تَقُولُ: ظَنَنْتُ زَيْدًا مُنْطَلِقًا، وَخِلْتُ عَمْرًا شَاخِصًا، وَمَا أَشْبَهَ ذَلِكَ."
+      translation: "Contohnya: “Aku menyangka Zaid sedang berangkat”, “Aku mengira ‘Amr sedang pergi” dan yang seumpamanya."
       words:
-        - arabic: "إِنَّ"
-          meaning: "huruf penegasan dan naṣab yang menasabkan isim"
+        - arabic: "تَقُولُ"
+          meaning: "engkau berkata"
           type: "keyword"
-        - arabic: "زَيْدًا"
-          meaning: "isim inna yang mansub dengan fathah"
+        - arabic: "ظَنَنْتُ زَيْدًا مُنْطَلِقًا"
+          meaning: "aku menyangka Zaid sedang berangkat"
           type: "keyword"
-        - arabic: "قَائِمٌ"
-          meaning: "khabar inna yang marfū‘ dengan dammah"
+        - arabic: "وَخِلْتُ عَمْرًا شَاخِصًا"
+          meaning: "dan aku mengira ‘Amr sedang pergi"
           type: "keyword"
-        - arabic: "وَبَلَغَنِي"
-          meaning: "dan telah sampai berita kepadaku"
-        - arabic: "أَنَّ"
-          meaning: "bahawa sesungguhnya; huruf penegasan dan naṣab"
-          type: "keyword"
-        - arabic: "زَيْدًا"
-          meaning: "isim anna yang mansub"
-          type: "keyword"
-        - arabic: "مُنْطَلِقٌ"
-          meaning: "sedang berangkat; khabar anna yang marfū‘"
-          type: "keyword"
-        - arabic: "وَلَكِنَّ"
-          meaning: "dan akan tetapi; huruf istidrāk dan naṣab"
-        - arabic: "عَمْرًا"
-          meaning: "isim lakinna yang mansub"
-          type: "keyword"
-        - arabic: "جَالِسٌ"
-          meaning: "sedang duduk; khabar lakinna yang marfū‘"
-          type: "keyword"
-        - arabic: "وَكَأَنَّ"
-          meaning: "dan seolah-olah; huruf penyerupaan dan naṣab"
-        - arabic: "زَيْدًا"
-          meaning: "isim ka’anna yang mansub"
-          type: "keyword"
-        - arabic: "أَسَدٌ"
-          meaning: "singa; khabar ka’anna yang marfū‘"
-          type: "keyword"
-        - arabic: "وَلَيْتَ"
-          meaning: "dan alangkah baiknya sekiranya; huruf tamannī dan naṣab"
-        - arabic: "عَمْرًا"
-          meaning: "isim layta yang mansub"
-          type: "keyword"
-        - arabic: "شَاخِصٌ"
-          meaning: "sedang berangkat; khabar layta yang marfū‘"
-          type: "keyword"
-        - arabic: "وَلَعَلَّ"
-          meaning: "dan mudah-mudahan atau barangkali; huruf tarajjī dan naṣab"
-        - arabic: "الْحَبِيبَ"
-          meaning: "orang yang dikasihi; isim la‘alla yang mansub"
-          type: "keyword"
-        - arabic: "قَادِمٌ"
-          meaning: "akan datang; khabar la‘alla yang marfū‘"
+        - arabic: "وَمَا أَشْبَهَ ذَلِكَ"
+          meaning: "serta yang seumpamanya"
           type: "keyword"
     sharh:
       title: "Syarah"
@@ -573,450 +598,6 @@ proseSections:
         «بَلَغَنِي انْطِلَاقُ زَيْدٍ»
         
         “Berita tentang keberangkatan Zaid telah sampai kepadaku.”
-
-  - id: "inna-meanings"
-    matn:
-      id: "awamil-09"
-      arabic: "وَمَعْنَى إِنَّ وَأَنَّ لِلتَّوْكِيدِ، وَلَكِنَّ لِلِاسْتِدْرَاكِ، وَكَأَنَّ لِلتَّشْبِيهِ، وَلَيْتَ لِلتَّمَنِّي، وَلَعَلَّ لِلتَّرَجِّي وَالتَّوَقُّعِ."
-      translation: "Makna inna dan anna ialah penegasan; lakinna untuk istidrāk; ka’anna untuk penyerupaan; layta untuk angan-angan; dan la‘alla untuk harapan serta jangkaan."
-      words:
-        - arabic: "وَمَعْنَى"
-          meaning: "dan fungsi makna bagi setiap huruf tersebut"
-        - arabic: "إِنَّ وَأَنَّ"
-          meaning: "dua huruf nāsikh yang sama-sama memberikan makna penegasan"
-          type: "keyword"
-        - arabic: "لِلتَّوْكِيدِ"
-          meaning: "untuk menguatkan sesuatu kenyataan dan menghilangkan keraguan"
-          type: "keyword"
-        - arabic: "وَلَكِنَّ"
-          meaning: "dan lakinna; digunakan selepas kenyataan sebelumnya"
-        - arabic: "لِلِاسْتِدْرَاكِ"
-          meaning: "untuk membetulkan atau menolak sangkaan yang mungkin timbul"
-          type: "keyword"
-        - arabic: "وَكَأَنَّ"
-          meaning: "dan ka’anna; digunakan untuk membandingkan dua perkara"
-        - arabic: "لِلتَّشْبِيهِ"
-          meaning: "untuk menunjukkan bahawa sesuatu menyerupai sesuatu yang lain"
-          type: "keyword"
-        - arabic: "وَلَيْتَ"
-          meaning: "dan layta; huruf yang menunjukkan angan-angan"
-        - arabic: "لِلتَّمَنِّي"
-          meaning: "untuk menginginkan perkara yang sukar atau tidak diharapkan berlaku"
-          type: "keyword"
-        - arabic: "وَلَعَلَّ"
-          meaning: "dan la‘alla; huruf yang menunjukkan harapan atau jangkaan"
-        - arabic: "لِلتَّرَجِّي"
-          meaning: "untuk mengharapkan perkara yang disukai dan mungkin berlaku"
-          type: "keyword"
-        - arabic: "وَالتَّوَقُّعِ"
-          meaning: "dan menjangkakan berlakunya sesuatu perkara, termasuk perkara yang dikhuatiri"
-          type: "keyword"
-    sharh:
-      title: "Syarah"
-      arabic: |
-        التَّوْكِيدُ هُوَ تَقْوِيَةُ النِّسْبَةِ وَإِزَالَةُ الشَّكِّ عَنْهَا.
-        
-        وَالِاسْتِدْرَاكُ هُوَ تَعْقِيبُ الْكَلَامِ بِمَا يَرْفَعُ وَهْمًا نَشَأَ مِنَ الْكَلَامِ السَّابِقِ.
-        
-        وَالتَّشْبِيهُ هُوَ مُشَارَكَةُ أَمْرٍ لِأَمْرٍ فِي مَعْنًى.
-        
-        وَالتَّمَنِّي طَلَبُ أَمْرٍ مَحْبُوبٍ لَا يُرْجَى حُصُولُهُ، أَوْ يَشُقُّ حُصُولُهُ.
-        
-        وَالتَّرَجِّي طَلَبُ أَمْرٍ مَحْبُوبٍ يُمْكِنُ حُصُولُهُ.
-        
-        وَالتَّوَقُّعُ انْتِظَارُ أَمْرٍ قَدْ يَكُونُ مَحْبُوبًا أَوْ مَكْرُوهًا.
-      malay: |
-        **Tawkīd** bermaksud menguatkan sesuatu kenyataan.
-        
-        **Istidrāk** bermaksud membetulkan sangkaan yang mungkin timbul daripada ayat sebelumnya.
-        
-        Contoh:
-        
-        “Kaum itu berdiri, tetapi Amr sedang duduk.”
-        
-        Perkataan “tetapi” membetulkan kemungkinan sangkaan bahawa Amr juga berdiri.
-        
-        **Tashbīh** bermaksud menyamakan satu perkara dengan perkara lain pada sifat tertentu.
-        
-        **Tamannī** ialah menginginkan sesuatu yang sangat sukar atau tidak mungkin dicapai.
-        
-        **Tarajjī** ialah mengharapkan sesuatu yang disukai dan masih mungkin berlaku.
-        
-        **Tawaqqu‘** ialah menjangkakan sesuatu akan berlaku, sama ada perkara yang diharapkan atau yang dikhuatiri.
-
-  - id: "zanna-and-sisters-rule"
-    matn:
-      id: "awamil-10"
-      arabic: "وَأَمَّا ظَنَنْتُ وَأَخَوَاتُهَا فَإِنَّهَا تَنْصِبُ الْمُبْتَدَأَ وَالْخَبَرَ عَلَى أَنَّهُمَا مَفْعُولَانِ لَهَا."
-      translation: "Adapun ظن وأخواتها, semuanya menasabkan mubtada’ dan khabar dengan menjadikan kedua-duanya sebagai dua maf‘ul bagi fi‘il tersebut."
-      words:
-        - arabic: "وَأَمَّا"
-          meaning: "dan adapun; memulakan penerangan kelompok ketiga"
-        - arabic: "ظَنَنْتُ"
-          meaning: "aku menyangka; fi‘il yang menunjukkan sangkaan atau pengetahuan"
-          type: "keyword"
-        - arabic: "وَأَخَوَاتُهَا"
-          meaning: "dan fi‘il-fi‘il lain yang menasabkan dua bahagian ayat"
-          type: "keyword"
-        - arabic: "فَإِنَّهَا"
-          meaning: "maka sesungguhnya semua fi‘il dalam kelompok ini"
-          type: "keyword"
-        - arabic: "تَنْصِبُ الْمُبْتَدَأَ"
-          meaning: "menjadikan mubtada’ asal sebagai maf‘ul pertama yang mansub"
-          type: "keyword"
-        - arabic: "وَالْخَبَرَ"
-          meaning: "dan menjadikan khabar asal sebagai maf‘ul kedua yang mansub"
-          type: "keyword"
-        - arabic: "عَلَى أَنَّهُمَا"
-          meaning: "dengan hukum bahawa kedua-dua bahagian tersebut"
-          type: "keyword"
-        - arabic: "مَفْعُولَانِ"
-          meaning: "dua isim mansub yang menjadi objek pertama dan objek kedua"
-          type: "keyword"
-        - arabic: "لَهَا"
-          meaning: "bagi fi‘il ẓanantu atau salah satu saudara-saudaranya"
-          type: "keyword"
-    sharh:
-      title: "Syarah"
-      arabic: |
-        تَدْخُلُ «ظَنَنْتُ» وَأَخَوَاتُهَا عَلَى الْمُبْتَدَإِ وَالْخَبَرِ، فَتَنْصِبُهُمَا مَعًا.
-        
-        وَيُسَمَّى الْمُبْتَدَأُ بَعْدَ دُخُولِهَا الْمَفْعُولَ الْأَوَّلَ، وَيُسَمَّى الْخَبَرُ الْمَفْعُولَ الثَّانِيَ.
-        
-        فَالْأَصْلُ:
-        
-        «زَيْدٌ قَائِمٌ».
-        
-        فَإِذَا قُلْنَا:
-        
-        «ظَنَنْتُ زَيْدًا قَائِمًا»
-        
-        كَانَ «زَيْدًا» مَفْعُولًا بِهِ أَوَّلَ، وَ«قَائِمًا» مَفْعُولًا بِهِ ثَانِيًا.
-      malay: |
-        ظن وأخواتها memasuki jumlah ismiyyah dan menasabkan kedua-dua bahagiannya.
-        
-        Ayat asal:
-        
-        «زَيْدٌ قَائِمٌ»
-        
-        Selepas masuk ẓanantu:
-        
-        «ظَنَنْتُ زَيْدًا قَائِمًا»
-        
-        - Mubtada’ asal, «زَيْدٌ», berubah menjadi maf‘ul pertama: «زَيْدًا».
-        - Khabar asal, «قَائِمٌ», berubah menjadi maf‘ul kedua: «قَائِمًا».
-        
-        Kedua-duanya mansub kerana menjadi dua maf‘ul bagi fi‘il ẓanantu.
-
-  - id: "zanna-sisters-list"
-    matn:
-      id: "awamil-11"
-      arabic: "وَهِيَ: ظَنَنْتُ، وَحَسِبْتُ، وَخِلْتُ، وَزَعَمْتُ، وَرَأَيْتُ، وَعَلِمْتُ، وَوَجَدْتُ، وَاتَّخَذْتُ، وَجَعَلْتُ، وَسَمِعْتُ."
-      translation: "Saudara-saudara ẓanantu ialah: aku menyangka, aku mengira, aku menyangka, aku mendakwa, aku mengetahui atau melihat dengan hati, aku mengetahui, aku mendapati, aku menjadikan, aku menjadikan dan aku mendengar."
-      words:
-        - arabic: "وَهِيَ"
-          meaning: "dan fi‘il-fi‘il yang termasuk dalam kelompok ini ialah"
-        - arabic: "ظَنَنْتُ"
-          meaning: "aku menyangka sesuatu berdasarkan kemungkinan yang lebih kuat"
-          type: "keyword"
-        - arabic: "وَحَسِبْتُ"
-          meaning: "dan aku mengira atau menyangka"
-          type: "keyword"
-        - arabic: "وَخِلْتُ"
-          meaning: "dan aku menyangka atau membayangkan"
-          type: "keyword"
-        - arabic: "وَزَعَمْتُ"
-          meaning: "dan aku mendakwa atau menyatakan berdasarkan sangkaan"
-          type: "keyword"
-        - arabic: "وَرَأَيْتُ"
-          meaning: "dan aku mengetahui atau berpendapat; bukan semata-mata melihat dengan mata"
-          type: "keyword"
-        - arabic: "وَعَلِمْتُ"
-          meaning: "dan aku mengetahui dengan pengetahuan yang yakin"
-          type: "keyword"
-        - arabic: "وَوَجَدْتُ"
-          meaning: "dan aku mendapati atau mengetahui sesuatu dalam keadaan tertentu"
-          type: "keyword"
-        - arabic: "وَاتَّخَذْتُ"
-          meaning: "dan aku mengambil atau menjadikan sesuatu sebagai sesuatu yang lain"
-          type: "keyword"
-        - arabic: "وَجَعَلْتُ"
-          meaning: "dan aku menjadikan atau mengubah sesuatu kepada keadaan tertentu"
-          type: "keyword"
-        - arabic: "وَسَمِعْتُ"
-          meaning: "dan aku mendengar sesuatu pihak mengucapkan atau melakukan sesuatu"
-          type: "keyword"
-    sharh:
-      title: "Syarah"
-      arabic: |
-        هَذِهِ الْأَفْعَالُ مِنْهَا مَا يَدُلُّ عَلَى الرُّجْحَانِ، كَـ«ظَنَنْتُ» وَ«حَسِبْتُ» وَ«خِلْتُ» وَ«زَعَمْتُ».
-        
-        وَمِنْهَا مَا يَدُلُّ عَلَى الْيَقِينِ، كَـ«عَلِمْتُ» وَ«رَأَيْتُ» الْقَلْبِيَّةِ وَ«وَجَدْتُ».
-        
-        وَمِنْهَا مَا يَدُلُّ عَلَى التَّصْيِيرِ، كَـ«اتَّخَذْتُ» وَ«جَعَلْتُ».
-        
-        وَتَدْخُلُ هَذِهِ الْأَفْعَالُ عَلَى جُمْلَةٍ كَانَ أَصْلُهَا مُبْتَدَأً وَخَبَرًا، فَتَجْعَلُهُمَا مَفْعُولَيْنِ مَنْصُوبَيْنِ.
-      malay: |
-        Fi‘il-fi‘il ini boleh dihimpunkan mengikut makna.
-        
-        **Fi‘il sangkaan:**
-        
-        - ظَنَنْتُ
-        - حَسِبْتُ
-        - خِلْتُ
-        - زَعَمْتُ
-        
-        **Fi‘il pengetahuan atau keyakinan:**
-        
-        - رَأَيْتُ dalam makna mengetahui atau berpendapat
-        - عَلِمْتُ
-        - وَجَدْتُ
-        
-        **Fi‘il perubahan atau penjadikan:**
-        
-        - اتَّخَذْتُ
-        - جَعَلْتُ
-        
-        Semua fi‘il ini memasuki susunan yang pada asalnya terdiri daripada mubtada’ dan khabar, lalu menjadikannya dua maf‘ul yang mansub.
-
-  - id: "zanna-examples"
-    matn:
-      id: "awamil-12"
-      arabic: "تَقُولُ: ظَنَنْتُ زَيْدًا مُنْطَلِقًا، وَخِلْتُ الْهِلَالَ لَائِحًا، وَمَا أَشْبَهَ ذَلِكَ."
-      translation: "Kamu berkata: “Aku menyangka Zaid sedang berangkat,” “Aku menyangka anak bulan sedang kelihatan,” dan contoh-contoh lain yang menyerupainya."
-      words:
-        - arabic: "تَقُولُ"
-          meaning: "kamu berkata; memperkenalkan contoh amalan fi‘il hati"
-        - arabic: "ظَنَنْتُ"
-          meaning: "aku menyangka; fi‘il dan tā’ ialah fā‘il"
-          type: "keyword"
-        - arabic: "زَيْدًا"
-          meaning: "maf‘ul pertama yang pada asalnya merupakan mubtada’"
-          type: "keyword"
-        - arabic: "مُنْطَلِقًا"
-          meaning: "maf‘ul kedua yang pada asalnya merupakan khabar"
-          type: "keyword"
-        - arabic: "وَخِلْتُ"
-          meaning: "dan aku menyangka atau membayangkan"
-        - arabic: "الْهِلَالَ"
-          meaning: "anak bulan; maf‘ul pertama yang mansub"
-          type: "keyword"
-        - arabic: "لَائِحًا"
-          meaning: "sedang kelihatan; maf‘ul kedua yang mansub"
-          type: "keyword"
-        - arabic: "وَمَا أَشْبَهَ ذَلِكَ"
-          meaning: "dan semua susunan lain yang mengikuti kaedah dua maf‘ul"
-    sharh:
-      title: "Syarah"
-      arabic: |
-        فِي «ظَنَنْتُ زَيْدًا مُنْطَلِقًا»:
-        
-        «ظَنَنْتُ» فِعْلٌ مَاضٍ، وَالتَّاءُ ضَمِيرٌ فِي مَحَلِّ رَفْعٍ فَاعِلٌ.
-        
-        وَ«زَيْدًا» مَفْعُولٌ بِهِ أَوَّلُ مَنْصُوبٌ.
-        
-        وَ«مُنْطَلِقًا» مَفْعُولٌ بِهِ ثَانٍ مَنْصُوبٌ.
-        
-        وَأَصْلُ الْجُمْلَةِ:
-        
-        «زَيْدٌ مُنْطَلِقٌ».
-        
-        وَفِي «خِلْتُ الْهِلَالَ لَائِحًا»:
-        
-        «الْهِلَالَ» مَفْعُولٌ بِهِ أَوَّلُ، وَ«لَائِحًا» مَفْعُولٌ بِهِ ثَانٍ.
-        
-        وَأَصْلُهُمَا:
-        
-        «الْهِلَالُ لَائِحٌ».
-      malay: |
-        I‘rab «ظَنَنْتُ زَيْدًا مُنْطَلِقًا»:
-        
-        - «ظَنَنْتُ» ialah fi‘il māḍī dan tā’ ialah fā‘il.
-        - «زَيْدًا» ialah maf‘ul pertama.
-        - «مُنْطَلِقًا» ialah maf‘ul kedua.
-        
-        Ayat asalnya ialah:
-        
-        «زَيْدٌ مُنْطَلِقٌ»
-        
-        I‘rab «خِلْتُ الْهِلَالَ لَائِحًا»:
-        
-        - «الْهِلَالَ» ialah maf‘ul pertama.
-        - «لَائِحًا» ialah maf‘ul kedua.
-        
-        Ayat asalnya ialah:
-        
-        «الْهِلَالُ لَائِحٌ»
-        
-        Cara mudah mengenal dua maf‘ul ini ialah dengan mengeluarkan fi‘il sangkaan. Dua perkataan yang tinggal biasanya dapat membentuk jumlah ismiyyah yang lengkap.
-
-  - id: "zanna-additional-examples"
-    matn:
-      id: "awamil-13"
-      arabic: "وَمَا أَشْبَهَ ذَلِكَ يُقَاسُ عَلَيْهِ."
-      translation: "Semua contoh lain yang menyerupai susunan tersebut diukur berdasarkan kaedah yang sama."
-      words:
-        - arabic: "وَمَا"
-          meaning: "dan mana-mana susunan lain yang"
-          type: "keyword"
-        - arabic: "أَشْبَهَ"
-          meaning: "menyerupai dari sudut struktur dan amalan nahu"
-          type: "keyword"
-        - arabic: "ذَلِكَ"
-          meaning: "contoh dua maf‘ul yang telah diterangkan"
-          type: "keyword"
-        - arabic: "يُقَاسُ"
-          meaning: "ditentukan hukumnya melalui perbandingan dengan kaedah asal"
-          type: "keyword"
-        - arabic: "عَلَيْهِ"
-          meaning: "berdasarkan contoh dan prinsip nahu yang sama"
-          type: "keyword"
-    sharh:
-      title: "Contoh tambahan"
-      arabic: |
-        مِنْ أَمْثِلَةِ ذَلِكَ:
-        
-        «حَسِبْتُ الْحَبِيبَ قَادِمًا».
-        
-        فَـ«الْحَبِيبَ» مَفْعُولٌ أَوَّلُ، وَ«قَادِمًا» مَفْعُولٌ ثَانٍ.
-        
-        وَ«عَلِمْتُ الْعِلْمَ نَافِعًا».
-        
-        فَـ«الْعِلْمَ» مَفْعُولٌ أَوَّلُ، وَ«نَافِعًا» مَفْعُولٌ ثَانٍ.
-        
-        وَ«اتَّخَذْتُ بَكْرًا صَدِيقًا».
-        
-        فَـ«بَكْرًا» مَفْعُولٌ أَوَّلُ، وَ«صَدِيقًا» مَفْعُولٌ ثَانٍ.
-        
-        وَ«جَعَلْتُ الطِّينَ إِبْرِيقًا».
-        
-        فَـ«الطِّينَ» مَفْعُولٌ أَوَّلُ، وَ«إِبْرِيقًا» مَفْعُولٌ ثَانٍ.
-      malay: |
-        Contoh tambahan:
-        
-        «حَسِبْتُ الْحَبِيبَ قَادِمًا»
-        
-        “Aku mengira orang yang dikasihi akan datang.”
-        
-        - «الْحَبِيبَ» ialah maf‘ul pertama.
-        - «قَادِمًا» ialah maf‘ul kedua.
-        
-        «عَلِمْتُ الْعِلْمَ نَافِعًا»
-        
-        “Aku mengetahui bahawa ilmu itu bermanfaat.”
-        
-        - «الْعِلْمَ» ialah maf‘ul pertama.
-        - «نَافِعًا» ialah maf‘ul kedua.
-        
-        «اتَّخَذْتُ بَكْرًا صَدِيقًا»
-        
-        “Aku menjadikan Bakr sebagai sahabat.”
-        
-        - «بَكْرًا» ialah maf‘ul pertama.
-        - «صَدِيقًا» ialah maf‘ul kedua.
-        
-        «جَعَلْتُ الطِّينَ إِبْرِيقًا»
-        
-        “Aku menjadikan tanah liat itu sebuah kendi.”
-        
-        - «الطِّينَ» ialah maf‘ul pertama.
-        - «إِبْرِيقًا» ialah maf‘ul kedua.
-
-  - id: "awamil-comparison"
-    matn:
-      id: "awamil-14"
-      arabic: "كَانَ تَرْفَعُ الْأَوَّلَ وَتَنْصِبُ الثَّانِيَ، وَإِنَّ تَنْصِبُ الْأَوَّلَ وَتَرْفَعُ الثَّانِيَ، وَظَنَنْتُ تَنْصِبُهُمَا."
-      translation: "Ringkasnya, kāna merafa‘kan bahagian pertama dan menasabkan bahagian kedua; inna menasabkan bahagian pertama dan merafa‘kan bahagian kedua; manakala ẓanantu menasabkan kedua-duanya."
-      words:
-        - arabic: "كَانَ"
-          meaning: "kelompok fi‘il nāqiṣ yang memasuki mubtada’ dan khabar"
-          type: "keyword"
-        - arabic: "تَرْفَعُ الْأَوَّلَ"
-          meaning: "mengekalkan bahagian pertama sebagai isimnya yang marfū‘"
-          type: "keyword"
-        - arabic: "وَتَنْصِبُ الثَّانِيَ"
-          meaning: "menjadikan bahagian kedua sebagai khabarnya yang mansub"
-          type: "keyword"
-        - arabic: "وَإِنَّ"
-          meaning: "kelompok huruf nāsikh yang memasuki jumlah ismiyyah"
-          type: "keyword"
-        - arabic: "تَنْصِبُ الْأَوَّلَ"
-          meaning: "menjadikan bahagian pertama sebagai isimnya yang mansub"
-          type: "keyword"
-        - arabic: "وَتَرْفَعُ الثَّانِيَ"
-          meaning: "menjadikan bahagian kedua sebagai khabarnya yang marfū‘"
-          type: "keyword"
-        - arabic: "وَظَنَنْتُ"
-          meaning: "kelompok fi‘il hati yang memerlukan dua maf‘ul"
-          type: "keyword"
-        - arabic: "تَنْصِبُهُمَا"
-          meaning: "menasabkan kedua-dua bahagian sebagai maf‘ul pertama dan kedua"
-          type: "keyword"
-    sharh:
-      title: "Ringkasan"
-      arabic: |
-        خُلَاصَةُ الْبَابِ تُعْرَفُ بِالْمُقَارَنَةِ بَيْنَ الْأَحْوَالِ الْأَرْبَعَةِ:
-        
-        الْأَصْلُ:
-        
-        «زَيْدٌ قَائِمٌ».
-        
-        مَعَ «كَانَ»:
-        
-        «كَانَ زَيْدٌ قَائِمًا».
-        
-        مَعَ «إِنَّ»:
-        
-        «إِنَّ زَيْدًا قَائِمٌ».
-        
-        مَعَ «ظَنَنْتُ»:
-        
-        «ظَنَنْتُ زَيْدًا قَائِمًا».
-        
-        فَفِي الْجُمْلَةِ الْأُولَى كِلَاهُمَا مَرْفُوعٌ.
-        
-        وَفِي الثَّانِيَةِ الْأَوَّلُ مَرْفُوعٌ وَالثَّانِي مَنْصُوبٌ.
-        
-        وَفِي الثَّالِثَةِ الْأَوَّلُ مَنْصُوبٌ وَالثَّانِي مَرْفُوعٌ.
-        
-        وَفِي الرَّابِعَةِ كِلَاهُمَا مَنْصُوبٌ.
-      malay: |
-        Perbandingan paling mudah:
-        
-        **Ayat asal**
-        
-        «زَيْدٌ قَائِمٌ»
-        
-        - Pertama: marfū‘.
-        - Kedua: marfū‘.
-        
-        **Selepas kāna**
-        
-        «كَانَ زَيْدٌ قَائِمًا»
-        
-        - Pertama: marfū‘.
-        - Kedua: mansub.
-        
-        **Selepas inna**
-        
-        «إِنَّ زَيْدًا قَائِمٌ»
-        
-        - Pertama: mansub.
-        - Kedua: marfū‘.
-        
-        **Selepas ẓanantu**
-        
-        «ظَنَنْتُ زَيْدًا قَائِمًا»
-        
-        - Pertama: mansub.
-        - Kedua: mansub.
-        
-        Formula hafalan:
-        
-        - **كان:** رفع + نصب
-        - **إن:** نصب + رفع
-        - **ظن:** نصب + نصب
-
 ---
 
 ## Sumber projek

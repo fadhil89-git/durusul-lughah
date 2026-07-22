@@ -16,36 +16,37 @@ sourceEdition:
   matn: "الْمُقَدِّمَةُ الْآجُرُّومِيَّةُ — تحقيق الشيخ د. عبد المحسن القاسم"
   sharh: "شَرْحُ مُخْتَصَرٍ جِدًّا عَلَى مَتْنِ الْآجُرُّومِيَّةِ — أَحْمَدُ زَيْنِي دَحْلَان"
 
+audio:
+  src: "/audio/al-ajrumiyyah/0403AlAajurrumiyyah_AbdullahRowzy.mp3"
+  chapterStart: 798
+  matnStart: 798
+  chapterEnd: 844
+
 proseSections:
   - id: "maful-bih-definition"
     matn:
       id: "maful-bih-01"
-      arabic: "وَهُوَ الِاسْمُ الْمَنْصُوبُ الَّذِي يَقَعُ بِهِ الْفِعْلُ."
-      translation: "Maf‘ul bih ialah isim mansub yang dikenai sesuatu perbuatan."
+      arabic: "وَهُوَ الِاسْمُ الْمَنْصُوبُ الَّذِي يَقَعُ عَلَيْهِ الْفِعْلُ، نَحْوُ قَوْلِكَ: ضَرَبْتُ زَيْدًا، وَرَكِبْتُ الْفَرَسَ."
+      translation: "Maf‘ul bih ialah isim mansub yang dikenai perbuatan, seperti: “Aku memukul Zaid” dan “Aku menunggang kuda”."
       words:
         - arabic: "وَهُوَ"
-          meaning: "dan maf‘ul bih itu"
+          meaning: "dan maf‘ul bih"
           type: "keyword"
-        - arabic: "الِاسْمُ"
-          meaning: "suatu isim"
+        - arabic: "الِاسْمُ الْمَنْصُوبُ"
+          meaning: "ialah isim yang mansub"
           type: "keyword"
-        - arabic: "الْمَنْصُوبُ"
-          meaning: "yang berada dalam keadaan naṣab"
+        - arabic: "الَّذِي يَقَعُ عَلَيْهِ الْفِعْلُ"
+          meaning: "yang dikenai perbuatan"
           type: "keyword"
-        - arabic: "الَّذِي"
-          meaning: "yang"
+        - arabic: "نَحْوُ قَوْلِكَ"
+          meaning: "seperti ucapanmu"
           type: "keyword"
-        - arabic: "يَقَعُ"
-          meaning: "dikenai atau berlaku padanya"
+        - arabic: "ضَرَبْتُ زَيْدًا"
+          meaning: "aku memukul Zaid"
           type: "keyword"
-        - arabic: "بِهِ"
-          meaning: "padanya"
+        - arabic: "وَرَكِبْتُ الْفَرَسَ"
+          meaning: "dan aku menunggang kuda"
           type: "keyword"
-        - arabic: "الْفِعْلُ"
-          meaning: "perbuatan yang dilakukan oleh fā‘il"
-          type: "keyword"
-        - arabic: "الْمَفْعُولُ بِهِ"
-          meaning: "isim yang dikenai perbuatan fā‘il"
     sharh:
       title: "Syarah"
       arabic: |
@@ -77,21 +78,20 @@ proseSections:
   - id: "maful-bih-examples"
     matn:
       id: "maful-bih-02"
-      arabic: "نَحْوُ: ضَرَبْتُ زَيْدًا، وَرَكِبْتُ الْفَرَسَ."
-      translation: "Seperti: “Aku memukul Zaid,” dan “Aku menunggang kuda.”"
+      arabic: "وَهُوَ قِسْمَانِ: ظَاهِرٌ، وَمُضْمَرٌ."
+      translation: "Maf‘ul bih terbahagi kepada dua: zahir dan dhamir."
       words:
-        - arabic: "نَحْوُ"
-          meaning: "seperti contoh berikut"
-        - arabic: "ضَرَبْتُ"
-          meaning: "aku telah memukul; tā’ ialah fā‘il"
+        - arabic: "وَهُوَ"
+          meaning: "dan ia"
           type: "keyword"
-        - arabic: "زَيْدًا"
-          meaning: "maf‘ul bih mansub dengan fatḥah"
+        - arabic: "قِسْمَانِ"
+          meaning: "terbahagi kepada dua"
           type: "keyword"
-        - arabic: "وَرَكِبْتُ"
-          meaning: "dan aku telah menunggang"
-        - arabic: "الْفَرَسَ"
-          meaning: "kuda; maf‘ul bih mansub dengan fatḥah"
+        - arabic: "ظَاهِرٌ"
+          meaning: "zahir"
+          type: "keyword"
+        - arabic: "وَمُضْمَرٌ"
+          meaning: "dan dhamir"
           type: "keyword"
     sharh:
       title: "Syarah"
@@ -129,26 +129,14 @@ proseSections:
   - id: "maful-bih-types"
     matn:
       id: "maful-bih-03"
-      arabic: "وَهُوَ عَلَى قِسْمَيْنِ: ظَاهِرٌ وَمُضْمَرٌ، فَالظَّاهِرُ مَا تَقَدَّمَ ذِكْرُهُ."
-      translation: "Maf‘ul bih terbahagi kepada dua: zahir dan mudmar. Maf‘ul bih zahir ialah seperti contoh yang telah disebut."
+      arabic: "فَالظَّاهِرُ مَا تَقَدَّمَ ذِكْرُهُ."
+      translation: "Maf‘ul bih zahir ialah seperti contoh-contoh yang telah disebutkan."
       words:
-        - arabic: "وَهُوَ"
-          meaning: "dan maf‘ul bih itu"
-          type: "keyword"
-        - arabic: "عَلَى قِسْمَيْنِ"
-          meaning: "terbahagi kepada dua bahagian"
-          type: "keyword"
-        - arabic: "ظَاهِرٌ"
-          meaning: "isim zahir yang disebut dengan jelas"
-          type: "keyword"
-        - arabic: "وَمُضْمَرٌ"
-          meaning: "damir yang menggantikan isim zahir"
-          type: "keyword"
         - arabic: "فَالظَّاهِرُ"
           meaning: "maka maf‘ul bih zahir"
           type: "keyword"
         - arabic: "مَا تَقَدَّمَ ذِكْرُهُ"
-          meaning: "ialah contoh yang telah disebut sebelumnya"
+          meaning: "ialah seperti yang telah disebutkan"
           type: "keyword"
     sharh:
       title: "Maf‘ul bih zahir dan mudmar"
@@ -189,20 +177,20 @@ proseSections:
   - id: "maful-bih-pronoun-types"
     matn:
       id: "maful-bih-04"
-      arabic: "وَالْمُضْمَرُ قِسْمَانِ: مُتَّصِلٌ وَمُنْفَصِلٌ."
-      translation: "Maf‘ul bih mudmar pula terbahagi kepada dua: muttasil dan munfasil."
+      arabic: "وَالْمُضْمَرُ قِسْمَانِ: مُتَّصِلٌ، وَمُنْفَصِلٌ."
+      translation: "Maf‘ul bih berupa dhamir terbahagi kepada dua: dhamir bersambung dan dhamir terpisah."
       words:
         - arabic: "وَالْمُضْمَرُ"
-          meaning: "dan maf‘ul bih yang berupa damir"
+          meaning: "dan maf‘ul bih berupa dhamir"
           type: "keyword"
         - arabic: "قِسْمَانِ"
-          meaning: "terbahagi kepada dua jenis"
+          meaning: "terbahagi kepada dua"
           type: "keyword"
         - arabic: "مُتَّصِلٌ"
-          meaning: "damir yang bersambung dengan kalimah sebelumnya"
+          meaning: "dhamir bersambung"
           type: "keyword"
         - arabic: "وَمُنْفَصِلٌ"
-          meaning: "damir yang berdiri secara berasingan"
+          meaning: "dan dhamir terpisah"
           type: "keyword"
     sharh:
       title: "Damir muttasil dan munfasil"
@@ -249,49 +237,52 @@ proseSections:
     matn:
       id: "maful-bih-05"
       arabic: "فَالْمُتَّصِلُ اثْنَا عَشَرَ، نَحْوُ قَوْلِكَ: ضَرَبَنِي، وَضَرَبَنَا، وَضَرَبَكَ، وَضَرَبَكِ، وَضَرَبَكُمَا، وَضَرَبَكُمْ، وَضَرَبَكُنَّ، وَضَرَبَهُ، وَضَرَبَهَا، وَضَرَبَهُمَا، وَضَرَبَهُمْ، وَضَرَبَهُنَّ."
-      translation: "Damir muttasil berjumlah dua belas, seperti: dia memukulku, kami, kamu lelaki, kamu perempuan, kamu berdua, kamu semua lelaki, kamu semua perempuan, dia lelaki, dia perempuan, mereka berdua, mereka lelaki dan mereka perempuan."
+      translation: "Dhamir bersambung ada dua belas, seperti bentuk-bentuk yang bermaksud: dia memukulku, dia memukul kami, dia memukulmu lelaki, dia memukulmu perempuan, dia memukul kamu berdua, dia memukul kamu lelaki sekalian, dia memukul kamu perempuan sekalian, dia memukulnya lelaki, dia memukulnya perempuan, dia memukul mereka berdua, dia memukul mereka lelaki sekalian dan dia memukul mereka perempuan sekalian."
       words:
         - arabic: "فَالْمُتَّصِلُ"
-          meaning: "maka damir naṣab yang bersambung"
+          meaning: "maka dhamir bersambung"
           type: "keyword"
         - arabic: "اثْنَا عَشَرَ"
-          meaning: "berjumlah dua belas bentuk"
+          meaning: "ada dua belas"
+          type: "keyword"
+        - arabic: "نَحْوُ قَوْلِكَ"
+          meaning: "seperti ucapanmu"
           type: "keyword"
         - arabic: "ضَرَبَنِي"
           meaning: "dia memukulku"
           type: "keyword"
         - arabic: "وَضَرَبَنَا"
-          meaning: "dan dia memukul kami"
+          meaning: "dia memukul kami"
           type: "keyword"
         - arabic: "وَضَرَبَكَ"
-          meaning: "dan dia memukul kamu lelaki"
+          meaning: "dia memukulmu, lelaki"
           type: "keyword"
         - arabic: "وَضَرَبَكِ"
-          meaning: "dan dia memukul kamu perempuan"
+          meaning: "dia memukulmu, perempuan"
           type: "keyword"
         - arabic: "وَضَرَبَكُمَا"
-          meaning: "dan dia memukul kamu berdua"
+          meaning: "dia memukul kamu berdua"
           type: "keyword"
         - arabic: "وَضَرَبَكُمْ"
-          meaning: "dan dia memukul kamu semua lelaki"
+          meaning: "dia memukul kamu lelaki sekalian"
           type: "keyword"
         - arabic: "وَضَرَبَكُنَّ"
-          meaning: "dan dia memukul kamu semua perempuan"
+          meaning: "dia memukul kamu perempuan sekalian"
           type: "keyword"
         - arabic: "وَضَرَبَهُ"
-          meaning: "dan dia memukulnya, seorang lelaki"
+          meaning: "dia memukulnya, lelaki"
           type: "keyword"
         - arabic: "وَضَرَبَهَا"
-          meaning: "dan dia memukulnya, seorang perempuan"
+          meaning: "dia memukulnya, perempuan"
           type: "keyword"
         - arabic: "وَضَرَبَهُمَا"
-          meaning: "dan dia memukul mereka berdua"
+          meaning: "dia memukul mereka berdua"
           type: "keyword"
         - arabic: "وَضَرَبَهُمْ"
-          meaning: "dan dia memukul mereka lelaki"
+          meaning: "dia memukul mereka lelaki sekalian"
           type: "keyword"
         - arabic: "وَضَرَبَهُنَّ"
-          meaning: "dan dia memukul mereka perempuan"
+          meaning: "dia memukul mereka perempuan sekalian"
           type: "keyword"
     sharh:
       title: "Dua belas damir naṣab muttasil"
@@ -335,50 +326,53 @@ proseSections:
   - id: "detached-object-pronouns"
     matn:
       id: "maful-bih-06"
-      arabic: "وَالْمُنْفَصِلُ اثْنَا عَشَرَ، نَحْوُ قَوْلِكَ: إِيَّايَ، وَإِيَّانَا، وَإِيَّاكَ، وَإِيَّاكِ، وَإِيَّاكُمَا، وَإِيَّاكُمْ، وَإِيَّاكُنَّ، وَإِيَّاهُ، وَإِيَّاهَا، وَإِيَّاهُمَا، وَإِيَّاهُمْ، وَإِيَّاهُنَّ."
-      translation: "Damir munfasil berjumlah dua belas, iaitu إياي, إيانا, إياك, إياكِ, إياكما, إياكم, إياكنّ, إياه, إياها, إياهما, إياهم dan إياهنّ."
+      arabic: "وَالْمُنْفَصِلُ اثْنَا عَشَرَ، وَهِيَ: إِيَّايَ، وَإِيَّانَا، وَإِيَّاكَ، وَإِيَّاكِ، وَإِيَّاكُمَا، وَإِيَّاكُمْ، وَإِيَّاكُنَّ، وَإِيَّاهُ، وَإِيَّاهَا، وَإِيَّاهُمَا، وَإِيَّاهُمْ، وَإِيَّاهُنَّ."
+      translation: "Dhamir terpisah ada dua belas: إِيَّايَ, إِيَّانَا, إِيَّاكَ, إِيَّاكِ, إِيَّاكُمَا, إِيَّاكُمْ, إِيَّاكُنَّ, إِيَّاهُ, إِيَّاهَا, إِيَّاهُمَا, إِيَّاهُمْ dan إِيَّاهُنَّ."
       words:
         - arabic: "وَالْمُنْفَصِلُ"
-          meaning: "dan damir naṣab yang berdiri berasingan"
+          meaning: "dan dhamir terpisah"
           type: "keyword"
         - arabic: "اثْنَا عَشَرَ"
-          meaning: "berjumlah dua belas bentuk"
+          meaning: "ada dua belas"
+          type: "keyword"
+        - arabic: "وَهِيَ"
+          meaning: "iaitu"
           type: "keyword"
         - arabic: "إِيَّايَ"
-          meaning: "aku"
+          meaning: "aku sebagai maf‘ul"
           type: "keyword"
         - arabic: "وَإِيَّانَا"
-          meaning: "dan kami"
+          meaning: "kami sebagai maf‘ul"
           type: "keyword"
         - arabic: "وَإِيَّاكَ"
-          meaning: "dan kamu lelaki"
+          meaning: "engkau lelaki sebagai maf‘ul"
           type: "keyword"
         - arabic: "وَإِيَّاكِ"
-          meaning: "dan kamu perempuan"
+          meaning: "engkau perempuan sebagai maf‘ul"
           type: "keyword"
         - arabic: "وَإِيَّاكُمَا"
-          meaning: "dan kamu berdua"
+          meaning: "kamu berdua sebagai maf‘ul"
           type: "keyword"
         - arabic: "وَإِيَّاكُمْ"
-          meaning: "dan kamu semua lelaki"
+          meaning: "kamu lelaki sekalian sebagai maf‘ul"
           type: "keyword"
         - arabic: "وَإِيَّاكُنَّ"
-          meaning: "dan kamu semua perempuan"
+          meaning: "kamu perempuan sekalian sebagai maf‘ul"
           type: "keyword"
         - arabic: "وَإِيَّاهُ"
-          meaning: "dan dia lelaki"
+          meaning: "dia lelaki sebagai maf‘ul"
           type: "keyword"
         - arabic: "وَإِيَّاهَا"
-          meaning: "dan dia perempuan"
+          meaning: "dia perempuan sebagai maf‘ul"
           type: "keyword"
         - arabic: "وَإِيَّاهُمَا"
-          meaning: "dan mereka berdua"
+          meaning: "mereka berdua sebagai maf‘ul"
           type: "keyword"
         - arabic: "وَإِيَّاهُمْ"
-          meaning: "dan mereka lelaki"
+          meaning: "mereka lelaki sekalian sebagai maf‘ul"
           type: "keyword"
         - arabic: "وَإِيَّاهُنَّ"
-          meaning: "dan mereka perempuan"
+          meaning: "mereka perempuan sekalian sebagai maf‘ul"
           type: "keyword"
     sharh:
       title: "Dua belas damir naṣab munfasil"
@@ -416,116 +410,6 @@ proseSections:
         12. إِيَّاهُنَّ — mereka perempuan
         
         Setiap satunya dii‘rabkan sebagai damir naṣab munfasil yang mabni dan berada pada محل نصب sebagai maf‘ul bih.
-
-  - id: "detached-pronoun-example"
-    matn:
-      id: "maful-bih-07"
-      arabic: "نَحْوُ: إِيَّاكَ نَعْبُدُ، وَمَا أَكْرَمْتُ إِلَّا إِيَّايَ."
-      translation: "Seperti: “Hanya kepada-Mu kami beribadah,” dan “Aku tidak memuliakan sesiapa kecuali diriku.”"
-      words:
-        - arabic: "إِيَّاكَ"
-          meaning: "hanya kepada-Mu; damir naṣab munfasil sebagai maf‘ul bih"
-          type: "keyword"
-        - arabic: "نَعْبُدُ"
-          meaning: "kami beribadah"
-          type: "keyword"
-        - arabic: "وَمَا"
-          meaning: "dan tidak"
-        - arabic: "أَكْرَمْتُ"
-          meaning: "aku telah memuliakan"
-          type: "keyword"
-        - arabic: "إِلَّا"
-          meaning: "kecuali; alat pembatasan"
-          type: "keyword"
-        - arabic: "إِيَّايَ"
-          meaning: "diriku; damir naṣab munfasil sebagai maf‘ul bih"
-          type: "keyword"
-    sharh:
-      title: "Penggunaan damir munfasil"
-      arabic: |
-        فِي قَوْلِهِ تَعَالَى:
-        
-        ﴿إِيَّاكَ نَعْبُدُ﴾
-        
-        «إِيَّا» ضَمِيرُ نَصْبٍ مُنْفَصِلٌ مَبْنِيٌّ عَلَى السُّكُونِ فِي مَحَلِّ نَصْبٍ مَفْعُولٌ بِهِ مُقَدَّمٌ.
-        
-        وَالْكَافُ حَرْفٌ دَالٌّ عَلَى الْمُخَاطَبِ.
-        
-        وَ«نَعْبُدُ» فِعْلٌ مُضَارِعٌ، وَفَاعِلُهُ ضَمِيرٌ مُسْتَتِرٌ وُجُوبًا تَقْدِيرُهُ «نَحْنُ».
-        
-        وَتَقْدِيمُ الْمَفْعُولِ يُفِيدُ الْحَصْرَ، أَيْ: لَا نَعْبُدُ إِلَّا إِيَّاكَ.
-        
-        وَفِي قَوْلِكَ:
-        
-        «مَا أَكْرَمْتُ إِلَّا إِيَّايَ»
-        
-        وَقَعَ الضَّمِيرُ الْمُنْفَصِلُ بَعْدَ «إِلَّا»، وَهَذَا مِمَّا لَا يَصِحُّ فِيهِ اسْتِعْمَالُ الضَّمِيرِ الْمُتَّصِلِ.
-      malay: |
-        Dalam ayat:
-        
-        ﴿إِيَّاكَ نَعْبُدُ﴾
-        
-        «إِيَّاكَ» ialah maf‘ul bih yang didahulukan. Pendahuluannya membawa makna pembatasan:
-        
-        “Hanya kepada-Mu kami beribadah.”
-        
-        Dalam contoh:
-        
-        «مَا أَكْرَمْتُ إِلَّا إِيَّايَ»
-        
-        damir munfasil digunakan kerana maf‘ul bih berada selepas «إِلَّا». Damir muttasil tidak digunakan pada kedudukan ini.
-
-  - id: "maful-bih-summary"
-    matn:
-      id: "maful-bih-08"
-      arabic: "اَلْمَفْعُولُ بِهِ ظَاهِرٌ أَوْ مُضْمَرٌ، وَالْمُضْمَرُ مُتَّصِلٌ أَوْ مُنْفَصِلٌ."
-      translation: "Maf‘ul bih boleh berupa isim zahir atau damir. Damir pula boleh berupa muttasil atau munfasil."
-      words:
-        - arabic: "اَلْمَفْعُولُ بِهِ"
-          meaning: "isim mansub yang dikenai perbuatan"
-          type: "keyword"
-        - arabic: "ظَاهِرٌ"
-          meaning: "berupa isim yang disebut dengan jelas"
-          type: "keyword"
-        - arabic: "أَوْ مُضْمَرٌ"
-          meaning: "atau berupa damir"
-          type: "keyword"
-        - arabic: "وَالْمُضْمَرُ"
-          meaning: "dan damir tersebut"
-          type: "keyword"
-        - arabic: "مُتَّصِلٌ"
-          meaning: "boleh bersambung dengan kalimah sebelumnya"
-          type: "keyword"
-        - arabic: "أَوْ مُنْفَصِلٌ"
-          meaning: "atau berdiri secara berasingan"
-          type: "keyword"
-    sharh:
-      title: "Ringkasan"
-      arabic: |
-        خُلَاصَةُ الْبَابِ:
-        
-        أَوَّلًا: الْمَفْعُولُ بِهِ اسْمٌ مَنْصُوبٌ يَقَعُ عَلَيْهِ فِعْلُ الْفَاعِلِ.
-        
-        ثَانِيًا: يَكُونُ الْمَفْعُولُ بِهِ عَاقِلًا أَوْ غَيْرَ عَاقِلٍ.
-        
-        ثَالِثًا: الْمَفْعُولُ بِهِ قِسْمَانِ: ظَاهِرٌ وَمُضْمَرٌ.
-        
-        رَابِعًا: الْمُضْمَرُ قِسْمَانِ: مُتَّصِلٌ وَمُنْفَصِلٌ.
-        
-        خَامِسًا: ضَمَائِرُ النَّصْبِ الْمُتَّصِلَةُ اثْنَا عَشَرَ، وَضَمَائِرُ النَّصْبِ الْمُنْفَصِلَةُ اثْنَا عَشَرَ.
-        
-        سَادِسًا: الضَّمِيرُ الْمُتَّصِلُ لَا يُبْتَدَأُ بِهِ، وَلَا يَقَعُ بَعْدَ «إِلَّا» فِي الِاخْتِيَارِ، بِخِلَافِ الضَّمِيرِ الْمُنْفَصِلِ.
-      malay: |
-        Inti utama bab ini:
-        
-        - Maf‘ul bih ialah isim mansub yang dikenai perbuatan fā‘il.
-        - Maf‘ul bih boleh berupa sesuatu yang berakal atau tidak berakal.
-        - Maf‘ul bih terbahagi kepada zahir dan mudmar.
-        - Maf‘ul bih mudmar terbahagi kepada muttasil dan munfasil.
-        - Damir naṣab muttasil berjumlah dua belas.
-        - Damir naṣab munfasil juga berjumlah dua belas.
-        - Damir muttasil tidak boleh dimulakan secara berasingan dan tidak digunakan selepas «إِلَّا» dalam pertuturan biasa.
-
 ---
 
 ## Sumber projek

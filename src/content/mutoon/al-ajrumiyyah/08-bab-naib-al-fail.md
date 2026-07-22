@@ -16,36 +16,30 @@ sourceEdition:
   matn: "الْمُقَدِّمَةُ الْآجُرُّومِيَّةُ — تحقيق الشيخ د. عبد المحسن القاسم"
   sharh: "شَرْحُ مُخْتَصَرٍ جِدًّا عَلَى مَتْنِ الْآجُرُّومِيَّةِ — أَحْمَدُ زَيْنِي دَحْلَان"
 
+audio:
+  src: "/audio/al-ajrumiyyah/0403AlAajurrumiyyah_AbdullahRowzy.mp3"
+  chapterStart: 444
+  matnStart: 444
+  chapterEnd: 485
+
 proseSections:
   - id: "definition-naib-al-fail"
     matn:
       id: "naib-al-fail-01"
-      arabic: "هُوَ الِاسْمُ الْمَرْفُوعُ الَّذِي لَمْ يُذْكَرْ مَعَهُ فَاعِلُهُ."
-      translation: "Nā’ib al-fā‘il ialah isim marfū‘ yang hadir dalam ayat apabila pelaku asal bagi fi‘il tersebut tidak disebut."
+      arabic: "وَهُوَ الِاسْمُ الْمَرْفُوعُ الَّذِي لَمْ يُذْكَرْ مَعَهُ فَاعِلُهُ."
+      translation: "Maf‘ul yang tidak disebut fa‘ilnya ialah isim marfu‘ yang fa‘il bagi perbuatan tersebut tidak disebut bersamanya."
       words:
-        - arabic: "هُوَ"
-          meaning: "ialah; digunakan untuk memulakan definisi nā’ib al-fā‘il"
+        - arabic: "وَهُوَ"
+          meaning: "dan ia"
           type: "keyword"
-        - arabic: "الِاسْمُ"
-          meaning: "kalimah daripada jenis isim atau kata ganti yang mengambil hukum isim"
+        - arabic: "الِاسْمُ الْمَرْفُوعُ"
+          meaning: "ialah isim yang marfu‘"
           type: "keyword"
-        - arabic: "الْمَرْفُوعُ"
-          meaning: "yang menerima hukum rafa‘ dengan dammah, alif, wāw atau tanda yang sesuai"
-          type: "keyword"
-        - arabic: "الَّذِي"
-          meaning: "yang; merujuk kepada isim marfū‘ yang sedang diterangkan"
-          type: "keyword"
-        - arabic: "لَمْ يُذْكَرْ"
-          meaning: "tidak disebut atau tidak dinyatakan dalam susunan ayat"
-          type: "keyword"
-        - arabic: "مَعَهُ"
-          meaning: "bersama isim tersebut dalam ayat"
+        - arabic: "الَّذِي لَمْ يُذْكَرْ مَعَهُ"
+          meaning: "yang tidak disebut bersamanya"
           type: "keyword"
         - arabic: "فَاعِلُهُ"
-          meaning: "pelaku asal bagi perbuatan; pihak yang melakukan fi‘il itu"
-          type: "keyword"
-        - arabic: "الِاسْمُ الْمَرْفُوعُ الَّذِي لَمْ يُذْكَرْ مَعَهُ فَاعِلُهُ"
-          meaning: "isim marfū‘ yang menggantikan tempat fā‘il setelah pelaku asal tidak disebut"
+          meaning: "fa‘ilnya"
           type: "keyword"
     sharh:
       title: "Syarah"
@@ -95,32 +89,24 @@ proseSections:
   - id: "passive-past-verb"
     matn:
       id: "naib-al-fail-02"
-      arabic: "فَإِنْ كَانَ الْفِعْلُ مَاضِيًا ضُمَّ أَوَّلُهُ، وَكُسِرَ مَا قَبْلَ آخِرِهِ."
-      translation: "Apabila fi‘il itu ialah fi‘il māḍī, huruf pertamanya dibariskan dammah dan huruf sebelum huruf terakhirnya dibariskan kasrah."
+      arabic: "فَإِنْ كَانَ الْفِعْلُ مَاضِيًا؛ ضُمَّ أَوَّلُهُ، وَكُسِرَ مَا قَبْلَ آخِرِهِ."
+      translation: "Apabila fi‘il itu fi‘il madhi, huruf pertamanya dibariskan dhammah dan huruf sebelum akhirnya dibariskan kasrah."
       words:
-        - arabic: "فَإِنْ"
-          meaning: "maka sekiranya atau apabila keadaan berikut berlaku"
-        - arabic: "كَانَ"
-          meaning: "adalah; digunakan untuk menerangkan keadaan atau jenis fi‘il"
-        - arabic: "الْفِعْلُ"
-          meaning: "kata kerja yang hendak ditukar daripada bentuk aktif kepada bentuk pasif"
+        - arabic: "فَإِنْ كَانَ الْفِعْلُ"
+          meaning: "maka jika fi‘il itu"
+          type: "keyword"
         - arabic: "مَاضِيًا"
-          meaning: "fi‘il yang menunjukkan perbuatan telah berlaku pada masa lalu"
+          meaning: "fi‘il madhi"
           type: "keyword"
-        - arabic: "ضُمَّ"
-          meaning: "dibubuh baris dammah"
-          type: "keyword"
-        - arabic: "أَوَّلُهُ"
-          meaning: "huruf pertama pada fi‘il tersebut"
+        - arabic: "ضُمَّ أَوَّلُهُ"
+          meaning: "huruf pertamanya dibariskan dhammah"
           type: "keyword"
         - arabic: "وَكُسِرَ"
-          meaning: "dan dibubuh baris kasrah"
+          meaning: "dan dibariskan kasrah"
           type: "keyword"
         - arabic: "مَا قَبْلَ آخِرِهِ"
-          meaning: "huruf yang terletak sebelum huruf terakhir fi‘il"
+          meaning: "huruf sebelum akhirnya"
           type: "keyword"
-        - arabic: "ضُمَّ أَوَّلُهُ وَكُسِرَ مَا قَبْلَ آخِرِهِ"
-          meaning: "kaedah membina fi‘il māḍī pasif: awalnya dammah dan huruf sebelum akhir kasrah"
     sharh:
       title: "Syarah"
       arabic: |
@@ -157,30 +143,24 @@ proseSections:
   - id: "passive-present-verb"
     matn:
       id: "naib-al-fail-03"
-      arabic: "وَإِنْ كَانَ مُضَارِعًا ضُمَّ أَوَّلُهُ، وَفُتِحَ مَا قَبْلَ آخِرِهِ."
-      translation: "Apabila fi‘il itu ialah fi‘il muḍāri‘, huruf pertamanya dibariskan dammah dan huruf sebelum huruf terakhirnya dibariskan fathah."
+      arabic: "وَإِنْ كَانَ مُضَارِعًا؛ ضُمَّ أَوَّلُهُ، وَفُتِحَ مَا قَبْلَ آخِرِهِ."
+      translation: "Apabila fi‘il itu fi‘il mudari‘, huruf pertamanya dibariskan dhammah dan huruf sebelum akhirnya dibariskan fathah."
       words:
-        - arabic: "وَإِنْ"
-          meaning: "dan sekiranya atau apabila keadaan yang berikut berlaku"
-        - arabic: "كَانَ"
-          meaning: "adalah; menerangkan jenis fi‘il yang sedang dibincangkan"
+        - arabic: "وَإِنْ كَانَ"
+          meaning: "dan jika ia"
+          type: "keyword"
         - arabic: "مُضَارِعًا"
-          meaning: "fi‘il yang menunjukkan perbuatan sedang atau akan berlaku"
+          meaning: "fi‘il mudari‘"
           type: "keyword"
-        - arabic: "ضُمَّ"
-          meaning: "dibubuh baris dammah"
-          type: "keyword"
-        - arabic: "أَوَّلُهُ"
-          meaning: "huruf pertama fi‘il muḍāri‘ tersebut"
+        - arabic: "ضُمَّ أَوَّلُهُ"
+          meaning: "huruf pertamanya dibariskan dhammah"
           type: "keyword"
         - arabic: "وَفُتِحَ"
-          meaning: "dan dibubuh baris fathah"
+          meaning: "dan dibariskan fathah"
           type: "keyword"
         - arabic: "مَا قَبْلَ آخِرِهِ"
-          meaning: "huruf yang berada tepat sebelum huruf terakhir fi‘il"
+          meaning: "huruf sebelum akhirnya"
           type: "keyword"
-        - arabic: "ضُمَّ أَوَّلُهُ وَفُتِحَ مَا قَبْلَ آخِرِهِ"
-          meaning: "kaedah fi‘il muḍāri‘ pasif: awalnya dammah dan huruf sebelum akhir fathah"
     sharh:
       title: "Syarah"
       arabic: |
@@ -216,17 +196,19 @@ proseSections:
     matn:
       id: "naib-al-fail-04"
       arabic: "وَهُوَ عَلَى قِسْمَيْنِ: ظَاهِرٌ، وَمُضْمَرٌ."
-      translation: "Nā’ib al-fā‘il terbahagi kepada dua: isim yang disebut secara jelas dan kata ganti."
+      translation: "Na’ib al-fa‘il terbahagi kepada dua: zahir dan dhamir."
       words:
         - arabic: "وَهُوَ"
-          meaning: "dan nā’ib al-fā‘il itu"
+          meaning: "dan ia"
+          type: "keyword"
         - arabic: "عَلَى قِسْمَيْنِ"
-          meaning: "terbahagi kepada dua bentuk utama"
+          meaning: "terbahagi kepada dua"
+          type: "keyword"
         - arabic: "ظَاهِرٌ"
-          meaning: "isim yang disebut secara nyata dan dapat dilihat lafaznya dalam ayat"
+          meaning: "zahir"
           type: "keyword"
         - arabic: "وَمُضْمَرٌ"
-          meaning: "kata ganti yang bersambung atau tersembunyi dan mengambil tempat nā’ib al-fā‘il"
+          meaning: "dan dhamir"
           type: "keyword"
     sharh:
       title: "Syarah"
@@ -261,32 +243,25 @@ proseSections:
     matn:
       id: "naib-al-fail-05"
       arabic: "فَالظَّاهِرُ نَحْوُ قَوْلِكَ: ضُرِبَ زَيْدٌ، وَيُضْرَبُ زَيْدٌ، وَأُكْرِمَ عَمْرٌو، وَيُكْرَمُ عَمْرٌو."
-      translation: "Contoh nā’ib al-fā‘il yang disebut secara jelas ialah: “Zaid telah dipukul,” “Zaid sedang atau akan dipukul,” “Amr telah dimuliakan,” dan “Amr sedang atau akan dimuliakan.”"
+      translation: "Contoh yang zahir ialah: “Zaid telah dipukul”, “Zaid sedang dipukul”, “‘Amr telah dimuliakan” dan “‘Amr sedang dimuliakan”."
       words:
         - arabic: "فَالظَّاهِرُ"
-          meaning: "adapun nā’ib al-fā‘il yang berupa isim yang disebut secara jelas"
+          meaning: "maka yang zahir"
+          type: "keyword"
         - arabic: "نَحْوُ قَوْلِكَ"
-          meaning: "contohnya ucapanmu atau susunan seperti yang berikut"
-        - arabic: "ضُرِبَ"
-          meaning: "telah dipukul; fi‘il māḍī pasif dengan awal dammah dan sebelum akhir kasrah"
+          meaning: "seperti ucapanmu"
           type: "keyword"
-        - arabic: "زَيْدٌ"
-          meaning: "Zaid; nā’ib al-fā‘il marfū‘ dengan dammah"
+        - arabic: "ضُرِبَ زَيْدٌ"
+          meaning: "Zaid telah dipukul"
           type: "keyword"
-        - arabic: "وَيُضْرَبُ"
-          meaning: "dan sedang atau akan dipukul; fi‘il muḍāri‘ pasif"
-        - arabic: "زَيْدٌ"
-          meaning: "Zaid; pihak yang menerima perbuatan dan menjadi nā’ib al-fā‘il"
+        - arabic: "وَيُضْرَبُ زَيْدٌ"
+          meaning: "Zaid sedang dipukul"
           type: "keyword"
-        - arabic: "وَأُكْرِمَ"
-          meaning: "dan telah dimuliakan; fi‘il māḍī pasif daripada أَكْرَمَ"
-        - arabic: "عَمْرٌو"
-          meaning: "Amr; nā’ib al-fā‘il marfū‘ dengan dammah"
+        - arabic: "وَأُكْرِمَ عَمْرٌو"
+          meaning: "‘Amr telah dimuliakan"
           type: "keyword"
-        - arabic: "وَيُكْرَمُ"
-          meaning: "dan sedang atau akan dimuliakan; fi‘il muḍāri‘ pasif"
-        - arabic: "عَمْرٌو"
-          meaning: "Amr; nā’ib al-fā‘il bagi fi‘il يُكْرَمُ"
+        - arabic: "وَيُكْرَمُ عَمْرٌو"
+          meaning: "dan ‘Amr sedang dimuliakan"
           type: "keyword"
     sharh:
       title: "Syarah"
@@ -327,18 +302,53 @@ proseSections:
   - id: "attached-pronoun-passive-first-person"
     matn:
       id: "naib-al-fail-06"
-      arabic: "وَالْمُضْمَرُ نَحْوُ قَوْلِكَ: ضُرِبْتُ، وَضُرِبْنَا."
-      translation: "Contoh nā’ib al-fā‘il berupa kata ganti ialah: “Aku telah dipukul” dan “Kami telah dipukul.”"
+      arabic: "وَالْمُضْمَرُ اثْنَا عَشَرَ، نَحْوُ قَوْلِكَ: ضُرِبْتُ، وَضُرِبْنَا، وَضُرِبْتَ، وَضُرِبْتِ، وَضُرِبْتُمَا، وَضُرِبْتُمْ، وَضُرِبْتُنَّ، وَضُرِبَ، وَضُرِبَتْ، وَضُرِبَا، وَضُرِبُوا، وَضُرِبْنَ."
+      translation: "Na’ib al-fa‘il berupa dhamir ada dua belas, seperti bentuk-bentuk yang bermaksud: aku telah dipukul, kami telah dipukul, engkau lelaki telah dipukul, engkau perempuan telah dipukul, kamu berdua telah dipukul, kamu lelaki sekalian telah dipukul, kamu perempuan sekalian telah dipukul, dia lelaki telah dipukul, dia perempuan telah dipukul, mereka berdua telah dipukul, mereka lelaki sekalian telah dipukul dan mereka perempuan sekalian telah dipukul."
       words:
         - arabic: "وَالْمُضْمَرُ"
-          meaning: "adapun nā’ib al-fā‘il yang hadir sebagai kata ganti"
+          meaning: "dan yang berupa dhamir"
+          type: "keyword"
+        - arabic: "اثْنَا عَشَرَ"
+          meaning: "ada dua belas"
+          type: "keyword"
         - arabic: "نَحْوُ قَوْلِكَ"
-          meaning: "contohnya ucapanmu atau bentuk seperti yang berikut"
+          meaning: "seperti ucapanmu"
+          type: "keyword"
         - arabic: "ضُرِبْتُ"
-          meaning: "aku telah dipukul; tā’ berbaris dammah ialah nā’ib al-fā‘il yang bermaksud aku"
+          meaning: "aku telah dipukul"
           type: "keyword"
         - arabic: "وَضُرِبْنَا"
-          meaning: "dan kami telah dipukul; نَا ialah kata ganti yang menjadi nā’ib al-fā‘il"
+          meaning: "kami telah dipukul"
+          type: "keyword"
+        - arabic: "وَضُرِبْتَ"
+          meaning: "engkau lelaki telah dipukul"
+          type: "keyword"
+        - arabic: "وَضُرِبْتِ"
+          meaning: "engkau perempuan telah dipukul"
+          type: "keyword"
+        - arabic: "وَضُرِبْتُمَا"
+          meaning: "kamu berdua telah dipukul"
+          type: "keyword"
+        - arabic: "وَضُرِبْتُمْ"
+          meaning: "kamu lelaki sekalian telah dipukul"
+          type: "keyword"
+        - arabic: "وَضُرِبْتُنَّ"
+          meaning: "kamu perempuan sekalian telah dipukul"
+          type: "keyword"
+        - arabic: "وَضُرِبَ"
+          meaning: "dia lelaki telah dipukul"
+          type: "keyword"
+        - arabic: "وَضُرِبَتْ"
+          meaning: "dia perempuan telah dipukul"
+          type: "keyword"
+        - arabic: "وَضُرِبَا"
+          meaning: "mereka berdua telah dipukul"
+          type: "keyword"
+        - arabic: "وَضُرِبُوا"
+          meaning: "mereka lelaki sekalian telah dipukul"
+          type: "keyword"
+        - arabic: "وَضُرِبْنَ"
+          meaning: "mereka perempuan sekalian telah dipukul"
           type: "keyword"
     sharh:
       title: "Syarah"
@@ -360,181 +370,6 @@ proseSections:
         **ضمير مبني في محل رفع نائب فاعل**
         
         “Kata ganti yang mabnī pada kedudukan rafa‘ sebagai nā’ib al-fā‘il.”
-
-  - id: "attached-pronoun-passive-second-person"
-    matn:
-      id: "naib-al-fail-07"
-      arabic: "وَضُرِبْتَ، وَضُرِبْتِ، وَضُرِبْتُمَا، وَضُرِبْتُمْ، وَضُرِبْتُنَّ."
-      translation: "Dan: “Engkau lelaki telah dipukul,” “Engkau perempuan telah dipukul,” “Kamu berdua telah dipukul,” “Kamu lelaki sekalian telah dipukul,” serta “Kamu perempuan sekalian telah dipukul.”"
-      words:
-        - arabic: "وَضُرِبْتَ"
-          meaning: "dan engkau lelaki telah dipukul; tā’ berbaris fathah menjadi nā’ib al-fā‘il"
-          type: "keyword"
-        - arabic: "وَضُرِبْتِ"
-          meaning: "dan engkau perempuan telah dipukul; tā’ berbaris kasrah menjadi nā’ib al-fā‘il"
-          type: "keyword"
-        - arabic: "وَضُرِبْتُمَا"
-          meaning: "dan kamu berdua telah dipukul; tā’ menjadi nā’ib al-fā‘il dan مَا menunjukkan dua orang"
-          type: "keyword"
-        - arabic: "وَضُرِبْتُمْ"
-          meaning: "dan kamu lelaki sekalian telah dipukul; tā’ menjadi nā’ib al-fā‘il dan mīm menunjukkan jamak"
-          type: "keyword"
-        - arabic: "وَضُرِبْتُنَّ"
-          meaning: "dan kamu perempuan sekalian telah dipukul; tā’ menjadi nā’ib al-fā‘il dan nūn menunjukkan kumpulan perempuan"
-          type: "keyword"
-    sharh:
-      title: "Syarah"
-      arabic: |
-        فِي «ضُرِبْتَ» التَّاءُ ضَمِيرُ الْمُخَاطَبِ الْمُذَكَّرِ مَبْنِيٌّ عَلَى الْفَتْحِ فِي مَحَلِّ رَفْعٍ نَائِبُ فَاعِلٍ.
-        
-        وَفِي «ضُرِبْتِ» التَّاءُ ضَمِيرُ الْمُخَاطَبَةِ الْمُؤَنَّثَةِ مَبْنِيٌّ عَلَى الْكَسْرِ فِي مَحَلِّ رَفْعٍ نَائِبُ فَاعِلٍ.
-        
-        وَفِي «ضُرِبْتُمَا» وَ«ضُرِبْتُمْ» وَ«ضُرِبْتُنَّ» التَّاءُ هِيَ نَائِبُ الْفَاعِلِ، وَمَا اتَّصَلَ بِهَا دَالٌّ عَلَى التَّثْنِيَةِ أَوِ الْجَمْعِ وَالتَّذْكِيرِ أَوِ التَّأْنِيثِ.
-      malay: |
-        Dalam semua bentuk ini, tā’ ialah kata ganti utama yang menjadi nā’ib al-fā‘il.
-        
-        - «ضُرِبْتَ» — engkau lelaki telah dipukul.
-        - «ضُرِبْتِ» — engkau perempuan telah dipukul.
-        - «ضُرِبْتُمَا» — kamu berdua telah dipukul.
-        - «ضُرِبْتُمْ» — kamu lelaki sekalian telah dipukul.
-        - «ضُرِبْتُنَّ» — kamu perempuan sekalian telah dipukul.
-        
-        Huruf selepas tā’ membantu menunjukkan bilangan dan jantina, tetapi tā’ itulah yang berada pada kedudukan rafa‘ sebagai nā’ib al-fā‘il.
-
-  - id: "hidden-passive-pronouns"
-    matn:
-      id: "naib-al-fail-08"
-      arabic: "وَضُرِبَ، وَضُرِبَتْ."
-      translation: "Dan: “Dia lelaki telah dipukul” serta “Dia perempuan telah dipukul.”"
-      words:
-        - arabic: "وَضُرِبَ"
-          meaning: "dan dia lelaki telah dipukul; nā’ib al-fā‘ilnya kata ganti tersembunyi yang dianggarkan هُوَ"
-          type: "keyword"
-        - arabic: "وَضُرِبَتْ"
-          meaning: "dan dia perempuan telah dipukul; nā’ib al-fā‘ilnya tersembunyi yang dianggarkan هِيَ"
-          type: "keyword"
-    sharh:
-      title: "Syarah"
-      arabic: |
-        فِي «ضُرِبَ» نَائِبُ الْفَاعِلِ ضَمِيرٌ مُسْتَتِرٌ جَوَازًا تَقْدِيرُهُ «هُوَ».
-        
-        وَفِي «ضُرِبَتْ» التَّاءُ تَاءُ التَّأْنِيثِ السَّاكِنَةُ لَا مَحَلَّ لَهَا مِنَ الْإِعْرَابِ، وَنَائِبُ الْفَاعِلِ ضَمِيرٌ مُسْتَتِرٌ جَوَازًا تَقْدِيرُهُ «هِيَ».
-        
-        فَتَاءُ التَّأْنِيثِ لَيْسَتْ نَائِبَ فَاعِلٍ، وَإِنَّمَا هِيَ عَلَامَةٌ عَلَى تَأْنِيثِ الضَّمِيرِ الْمُسْتَتِرِ.
-      malay: |
-        Dalam «ضُرِبَ», nā’ib al-fā‘il tidak kelihatan dalam tulisan. Ia ialah kata ganti tersembunyi yang dianggarkan sebagai «هُوَ» — “dia lelaki”.
-        
-        Dalam «ضُرِبَتْ», tā’ bukan nā’ib al-fā‘il. Tā’ itu hanyalah tanda feminin.
-        
-        Nā’ib al-fā‘il sebenar ialah kata ganti tersembunyi yang dianggarkan sebagai «هِيَ» — “dia perempuan”.
-
-  - id: "dual-and-plural-passive-pronouns"
-    matn:
-      id: "naib-al-fail-09"
-      arabic: "وَضُرِبَا، وَضُرِبُوا، وَضُرِبْنَ."
-      translation: "Dan: “Mereka berdua telah dipukul,” “Mereka lelaki sekalian telah dipukul,” serta “Mereka perempuan sekalian telah dipukul.”"
-      words:
-        - arabic: "وَضُرِبَا"
-          meaning: "dan mereka berdua telah dipukul; alif ialah kata ganti yang menjadi nā’ib al-fā‘il"
-          type: "keyword"
-        - arabic: "وَضُرِبُوا"
-          meaning: "dan mereka lelaki sekalian telah dipukul; wāw jamā‘ah menjadi nā’ib al-fā‘il"
-          type: "keyword"
-        - arabic: "وَضُرِبْنَ"
-          meaning: "dan mereka perempuan sekalian telah dipukul; nūn niswah menjadi nā’ib al-fā‘il"
-          type: "keyword"
-    sharh:
-      title: "Syarah"
-      arabic: |
-        فِي «ضُرِبَا» أَلِفُ الِاثْنَيْنِ ضَمِيرٌ مُتَّصِلٌ مَبْنِيٌّ عَلَى السُّكُونِ فِي مَحَلِّ رَفْعٍ نَائِبُ فَاعِلٍ.
-        
-        وَفِي «ضُرِبُوا» وَاوُ الْجَمَاعَةِ ضَمِيرٌ مُتَّصِلٌ مَبْنِيٌّ عَلَى السُّكُونِ فِي مَحَلِّ رَفْعٍ نَائِبُ فَاعِلٍ.
-        
-        وَفِي «ضُرِبْنَ» نُونُ النِّسْوَةِ ضَمِيرٌ مُتَّصِلٌ مَبْنِيٌّ عَلَى الْفَتْحِ فِي مَحَلِّ رَفْعٍ نَائِبُ فَاعِلٍ.
-      malay: |
-        Dalam «ضُرِبَا», alif menunjukkan dua orang dan menjadi nā’ib al-fā‘il.
-        
-        Dalam «ضُرِبُوا», wāw jamā‘ah menunjukkan kumpulan lelaki dan menjadi nā’ib al-fā‘il.
-        
-        Dalam «ضُرِبْنَ», nūn niswah menunjukkan kumpulan perempuan dan menjadi nā’ib al-fā‘il.
-        
-        Ketiga-tiga kata ganti ini bersifat mabnī, tetapi berada pada kedudukan rafa‘ sebagai nā’ib al-fā‘il.
-
-  - id: "active-passive-comparison"
-    matn:
-      id: "naib-al-fail-10"
-      arabic: "يُحْذَفُ الْفَاعِلُ، وَيُقَامُ الْمَفْعُولُ بِهِ مَقَامَهُ، فَيُرْفَعُ."
-      translation: "Ringkasnya, pelaku asal dibuang daripada ayat, kemudian maf‘ul bih mengambil tempatnya lalu dihukumkan marfū‘."
-      words:
-        - arabic: "يُحْذَفُ"
-          meaning: "dibuang dan tidak disebut dalam ayat"
-          type: "keyword"
-        - arabic: "الْفَاعِلُ"
-          meaning: "pelaku asal yang melakukan perbuatan"
-          type: "keyword"
-        - arabic: "وَيُقَامُ"
-          meaning: "dan ditempatkan atau dijadikan sebagai pengganti"
-          type: "keyword"
-        - arabic: "الْمَفْعُولُ بِهِ"
-          meaning: "isim yang pada asalnya menerima kesan perbuatan dan berada dalam keadaan mansub"
-          type: "keyword"
-        - arabic: "مَقَامَهُ"
-          meaning: "pada kedudukan fā‘il yang telah dibuang"
-          type: "keyword"
-        - arabic: "فَيُرْفَعُ"
-          meaning: "lalu berubah kepada hukum rafa‘ sebagai nā’ib al-fā‘il"
-          type: "keyword"
-    sharh:
-      title: "Ringkasan"
-      arabic: |
-        خُلَاصَةُ الْبَابِ:
-        
-        أَوَّلًا: يُحْذَفُ الْفَاعِلُ لِغَرَضٍ مِنَ الْأَغْرَاضِ.
-        
-        ثَانِيًا: يُغَيَّرُ بِنَاءُ الْفِعْلِ إِلَى صِيغَةِ مَا لَمْ يُسَمَّ فَاعِلُهُ.
-        
-        ثَالِثًا: يُقَامُ الْمَفْعُولُ بِهِ مَقَامَ الْفَاعِلِ.
-        
-        رَابِعًا: يَتَحَوَّلُ الْمَفْعُولُ بِهِ مِنَ النَّصْبِ إِلَى الرَّفْعِ.
-        
-        فَنَقُولُ فِي الْمَعْلُومِ:
-        
-        «كَتَبَ الطَّالِبُ الدَّرْسَ»
-        
-        وَفِي الْمَجْهُولِ:
-        
-        «كُتِبَ الدَّرْسُ».
-        
-        فَـ«الدَّرْسَ» فِي الْجُمْلَةِ الْأُولَى مَفْعُولٌ بِهِ مَنْصُوبٌ، وَ«الدَّرْسُ» فِي الْجُمْلَةِ الثَّانِيَةِ نَائِبُ فَاعِلٍ مَرْفُوعٌ.
-      malay: |
-        Langkah mengenal ayat pasif:
-        
-        **Pertama:** pelaku asal tidak disebut.
-        
-        **Kedua:** bentuk fi‘il berubah kepada bentuk pasif.
-        
-        **Ketiga:** maf‘ul bih mengambil tempat fā‘il.
-        
-        **Keempat:** maf‘ul bih berubah daripada mansub kepada marfū‘.
-        
-        Contoh aktif:
-        
-        «كَتَبَ الطَّالِبُ الدَّرْسَ»
-        
-        “Pelajar itu menulis pelajaran tersebut.”
-        
-        - «الطَّالِبُ» ialah fā‘il.
-        - «الدَّرْسَ» ialah maf‘ul bih.
-        
-        Contoh pasif:
-        
-        «كُتِبَ الدَّرْسُ»
-        
-        “Pelajaran itu telah ditulis.”
-        
-        - Pelaku tidak disebut.
-        - «الدَّرْسُ» berubah menjadi nā’ib al-fā‘il yang marfū‘.
-
 ---
 
 ## Sumber projek

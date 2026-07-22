@@ -1,5 +1,8 @@
 ---
 import "../../styles/global.css";
+import AjrumiyyahAudioPlayer from "../../components/AjrumiyyahAudioPlayer.astro";
+
+const ajrumiyyahAudioSrc = "/audio/al-ajrumiyyah/0403AlAajurrumiyyah_AbdullahRowzy.mp3";
 ---
 <!doctype html>
 <html lang="ms" dir="ltr">
@@ -37,13 +40,31 @@ import "../../styles/global.css";
           <span class="arabic mt-2 block text-3xl font-semibold text-accent" dir="rtl">تُحْفَةُ الْأَطْفَالِ</span>
           <span class="mt-3 block text-sm leading-relaxed text-muted">Matan asas tajwid oleh Sulaiman al-Jamzuri.</span>
         </a>
-        <a href="/mutoon/al-ajrumiyyah/bab-al-kalam" class="group rounded-2xl border border-line bg-panel p-5 shadow-sm transition hover:border-accent hover:bg-accent-soft">
+        <div class="group rounded-2xl border border-line bg-panel p-5 shadow-sm transition hover:border-accent hover:bg-accent-soft">
+          <a href="/mutoon/al-ajrumiyyah/bab-al-kalam" class="block">
           <span class="text-sm font-semibold uppercase tracking-[0.08em] text-muted">2. Nahu</span>
           <span class="mt-3 block text-2xl font-semibold text-ink group-hover:text-accent">Al-Ajrumiyyah</span>
           <span class="arabic mt-2 block text-3xl font-semibold text-accent" dir="rtl">الْمُقَدِّمَةُ الْآجُرُّومِيَّةُ</span>
           <span class="mt-3 block text-sm leading-relaxed text-muted">Matan asas nahu dengan syarah Arab dan Melayu.</span>
-        </a>
+          </a>
+          <div class="ajrumiyyah-index-audio">
+            <button
+              type="button"
+              class="ajrumiyyah-audio-chip ajrumiyyah-audio-chip-primary"
+              data-audio-play
+              data-audio-mode="book"
+              data-audio-src={ajrumiyyahAudioSrc}
+              data-audio-start="31"
+              data-audio-label="Audio matan penuh Al-Ajrumiyyah"
+              aria-label="Main audio matan penuh Al-Ajrumiyyah"
+            >
+              <span aria-hidden="true">▶</span>
+              <span>Audio Penuh</span>
+            </button>
+          </div>
+        </div>
       </section>
     </main>
+    <AjrumiyyahAudioPlayer />
   </body>
 </html>

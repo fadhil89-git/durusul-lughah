@@ -1,0 +1,381 @@
+---
+const audioSrc = "/audio/al-ajrumiyyah/0403AlAajurrumiyyah_AbdullahRowzy.mp3";
+---
+
+<section class="ajrumiyyah-audio-player" data-ajrumiyyah-audio-player aria-label="Pemain audio Al-Ajrumiyyah">
+  <audio data-ajrumiyyah-audio preload="metadata"></audio>
+  <div class="ajrumiyyah-audio-main">
+    <button type="button" class="ajrumiyyah-audio-play" data-audio-toggle aria-label="Mainkan audio">▶</button>
+    <div class="ajrumiyyah-audio-meta">
+      <p class="ajrumiyyah-audio-label" data-audio-label>Audio Al-Ajrumiyyah</p>
+      <div class="ajrumiyyah-audio-progress-row">
+        <span data-audio-current>0:00</span>
+        <input type="range" min="0" max="100" value="0" step="0.1" data-audio-progress aria-label="Kemajuan audio" />
+        <span data-audio-duration>0:00</span>
+      </div>
+    </div>
+  </div>
+  <div class="ajrumiyyah-audio-controls" aria-label="Kawalan audio">
+    <button type="button" data-audio-skip="-10" aria-label="Undur 10 saat">−10s</button>
+    <button type="button" data-audio-skip="10" aria-label="Maju 10 saat">+10s</button>
+    <button type="button" class="ajrumiyyah-repeat-control" data-repeat-cycle aria-label="Ulang sekali">
+      <span aria-hidden="true">↻</span>
+      <span data-repeat-label>1</span>
+    </button>
+    <label>
+      <span>Kelajuan</span>
+      <select data-audio-rate aria-label="Kelajuan audio">
+        <option value="0.75">0.75x</option>
+        <option value="1" selected>1x</option>
+        <option value="1.25">1.25x</option>
+        <option value="1.5">1.5x</option>
+      </select>
+    </label>
+  </div>
+</section>
+
+<script define:vars={{ audioSrc }}>
+  (() => {
+    const END_TOLERANCE = 0.12;
+    const STORAGE_KEY = "tuwailib:ajrumiyyah:audio";
+    const player = document.querySelector("[data-ajrumiyyah-audio-player]");
+    const audio = player?.querySelector("[data-ajrumiyyah-audio]");
+    const toggle = player?.querySelector("[data-audio-toggle]");
+    const label = player?.querySelector("[data-audio-label]");
+    const currentLabel = player?.querySelector("[data-audio-current]");
+    const durationLabel = player?.querySelector("[data-audio-duration]");
+    const progress = player?.querySelector("[data-audio-progress]");
+    const rate = player?.querySelector("[data-audio-rate]");
+    const repeatCycle = player?.querySelector("[data-repeat-cycle]");
+    const repeatLabel = player?.querySelector("[data-repeat-label]");
+
+    if (!player || !(audio instanceof HTMLAudioElement)) return;
+
+    const fallbackState = {
+      src: audioSrc,
+      currentTime: 0,
+      isPlaying: false,
+      segmentStart: null,
+      segmentEnd: null,
+      playbackMode: "book",
+      currentLabel: "Audio Al-Ajrumiyyah",
+      currentMatnId: null,
+      currentChapterSlug: null,
+      rate: 1,
+      repeatCount: 1,
+      repeatIteration: 1,
+    };
+
+    function readState() {
+      try {
+        return { ...fallbackState, ...JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}") };
+      } catch {
+        return { ...fallbackState };
+      }
+    }
+
+    let state = readState();
+
+    function writeState(patch = {}) {
+      state = { ...state, ...patch };
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      updateUi();
+    }
+
+    function formatTime(seconds) {
+      if (!Number.isFinite(seconds) || seconds < 0) return "0:00";
+      const total = Math.floor(seconds);
+      const minutes = Math.floor(total / 60);
+      const rest = String(total % 60).padStart(2, "0");
+      return `${minutes}:${rest}`;
+    }
+
+    function segmentDuration() {
+      if (Number.isFinite(state.segmentEnd) && Number.isFinite(state.segmentStart)) {
+        return Math.max(0, state.segmentEnd - state.segmentStart);
+      }
+      return audio.duration || 0;
+    }
+
+    function segmentCurrent() {
+      if (Number.isFinite(state.segmentStart)) {
+        return Math.max(0, audio.currentTime - state.segmentStart);
+      }
+      return audio.currentTime || 0;
+    }
+
+    function updateActiveButtons() {
+      document.querySelectorAll("[data-audio-play]").forEach((button) => {
+        const mode = button.getAttribute("data-audio-mode");
+        const matnId = button.getAttribute("data-matn-id");
+        const slug = button.getAttribute("data-chapter-slug");
+        const isActive =
+          state.isPlaying &&
+          mode === state.playbackMode &&
+          (!matnId || matnId === state.currentMatnId) &&
+          (!slug || slug === state.currentChapterSlug);
+        button.classList.toggle("is-playing", isActive);
+        button.setAttribute("aria-pressed", String(isActive));
+      });
+    }
+
+    function currentChapterButton() {
+      return document.querySelector('[data-audio-play][data-audio-mode="chapter"]');
+    }
+
+    function currentPageSlug() {
+      return currentChapterButton()?.getAttribute("data-chapter-slug") || null;
+    }
+
+    function isCurrentPageAudio() {
+      if (state.playbackMode === "book") return true;
+      const slug = currentPageSlug();
+      return Boolean(slug && state.currentChapterSlug === slug);
+    }
+
+    function playCurrentChapter() {
+      const button = currentChapterButton();
+      if (!(button instanceof HTMLButtonElement)) return false;
+      button.click();
+      return true;
+    }
+
+    function hasChosenBookAudio() {
+      return state.playbackMode === "book" && (
+        Number(state.currentTime || 0) > 0 ||
+        state.currentLabel !== fallbackState.currentLabel
+      );
+    }
+
+    function updateUi() {
+      if (label) label.textContent = state.currentLabel || "Audio Al-Ajrumiyyah";
+      if (toggle) {
+        toggle.textContent = state.isPlaying ? "❚❚" : "▶";
+        toggle.setAttribute("aria-label", state.isPlaying ? "Jeda audio" : "Mainkan audio");
+      }
+      if (rate instanceof HTMLSelectElement) rate.value = String(state.rate || 1);
+      const repeatText = state.repeatCount === "Infinity" ? "∞" : String(state.repeatCount || 1);
+      if (repeatLabel) repeatLabel.textContent = repeatText;
+      if (repeatCycle) {
+        repeatCycle.classList.toggle("is-active", repeatText !== "1");
+        repeatCycle.setAttribute("aria-label", repeatText === "1" ? "Ulang sekali" : `Ulang ${repeatText} kali`);
+        repeatCycle.setAttribute("aria-pressed", String(repeatText !== "1"));
+      }
+      if (currentLabel) currentLabel.textContent = formatTime(segmentCurrent());
+      if (durationLabel) durationLabel.textContent = formatTime(segmentDuration());
+      if (progress instanceof HTMLInputElement) {
+        const total = segmentDuration();
+        progress.value = total > 0 ? String((segmentCurrent() / total) * 100) : "0";
+      }
+      updateActiveButtons();
+    }
+
+    function loadStateIntoAudio() {
+      if (audio.src !== new URL(state.src || audioSrc, window.location.href).href) {
+        audio.src = state.src || audioSrc;
+      }
+      audio.playbackRate = Number(state.rate || 1);
+      if (Number.isFinite(state.currentTime)) audio.currentTime = state.currentTime;
+      updateUi();
+    }
+
+    async function startPlayback(nextState) {
+      const srcChanged = audio.src !== new URL(nextState.src || audioSrc, window.location.href).href;
+      const hasSegmentEnd = Number.isFinite(nextState.end);
+      const isSegment = nextState.playbackMode !== "book";
+      const segmentStart = isSegment ? Math.max(0, Number(nextState.start)) : nextState.start;
+      const segmentEnd = hasSegmentEnd ? Number(nextState.end) : null;
+      writeState({
+        ...nextState,
+        src: nextState.src || audioSrc,
+        currentTime: segmentStart,
+        segmentStart: segmentStart ?? null,
+        segmentEnd,
+        repeatIteration: 1,
+        isPlaying: true,
+      });
+      if (srcChanged) audio.src = state.src;
+      audio.playbackRate = Number(state.rate || 1);
+      audio.currentTime = state.currentTime || 0;
+      try {
+        await audio.play();
+        writeState({ isPlaying: true });
+      } catch {
+        writeState({ isPlaying: false });
+      }
+    }
+
+    window.playBook = (options = {}) => startPlayback({
+      src: options.src || audioSrc,
+      start: Number(options.start ?? 0),
+      end: null,
+      playbackMode: "book",
+      currentLabel: options.label || "Al-Ajrumiyyah penuh",
+      currentMatnId: null,
+      currentChapterSlug: null,
+    });
+
+    window.playChapter = (options) => startPlayback({
+      src: options.src,
+      start: Number(options.start),
+      end: Number(options.end),
+      playbackMode: "chapter",
+      currentLabel: options.label,
+      currentMatnId: null,
+      currentChapterSlug: options.slug,
+    });
+
+    window.playMatn = (options) => startPlayback({
+      src: options.src,
+      start: Number(options.start),
+      end: Number(options.end),
+      playbackMode: "matn",
+      currentLabel: options.label,
+      currentMatnId: options.matnId,
+      currentChapterSlug: options.slug,
+    });
+
+    window.pauseAudio = () => {
+      audio.pause();
+      writeState({ isPlaying: false, currentTime: audio.currentTime });
+    };
+
+    window.resumeAudio = async () => {
+      loadStateIntoAudio();
+      try {
+        await audio.play();
+        writeState({ isPlaying: true });
+      } catch {
+        writeState({ isPlaying: false });
+      }
+    };
+
+    window.seekTo = (seconds) => {
+      audio.currentTime = Number(seconds);
+      writeState({ currentTime: audio.currentTime });
+    };
+
+    toggle?.addEventListener("click", () => {
+      if (audio.paused) {
+        if (hasChosenBookAudio() || isCurrentPageAudio()) {
+          window.resumeAudio();
+        } else if (!playCurrentChapter()) {
+          window.resumeAudio();
+        }
+      } else {
+        window.pauseAudio();
+      }
+    });
+
+    player.querySelectorAll("[data-audio-skip]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const offset = Number(button.getAttribute("data-audio-skip") || 0);
+        const min = Number.isFinite(state.segmentStart) ? state.segmentStart : 0;
+        const max = Number.isFinite(state.segmentEnd) ? state.segmentEnd : audio.duration || Infinity;
+        audio.currentTime = Math.min(max, Math.max(min, audio.currentTime + offset));
+        writeState({ currentTime: audio.currentTime });
+      });
+    });
+
+    rate?.addEventListener("change", () => {
+      const nextRate = Number(rate.value || 1);
+      audio.playbackRate = nextRate;
+      writeState({ rate: nextRate });
+    });
+
+    progress?.addEventListener("input", () => {
+      const total = segmentDuration();
+      const start = Number.isFinite(state.segmentStart) ? state.segmentStart : 0;
+      audio.currentTime = start + (Number(progress.value || 0) / 100) * total;
+      writeState({ currentTime: audio.currentTime });
+    });
+
+    repeatCycle?.addEventListener("click", () => {
+      const repeatOptions = [1, 5, 10, 20, "Infinity"];
+      const currentIndex = repeatOptions.findIndex((option) => String(option) === String(state.repeatCount || 1));
+      const nextRepeat = repeatOptions[(currentIndex + 1) % repeatOptions.length];
+      writeState({
+        repeatCount: nextRepeat,
+        repeatIteration: 1,
+      });
+    });
+
+    function shouldRepeatAgain() {
+      if (state.repeatCount === "Infinity") return true;
+      return Number(state.repeatIteration || 1) < Number(state.repeatCount || 1);
+    }
+
+    function restartRepeat() {
+      const restartAt = Number.isFinite(state.segmentStart) ? state.segmentStart : 0;
+      audio.currentTime = restartAt;
+      audio.play();
+      writeState({
+        isPlaying: true,
+        currentTime: restartAt,
+        repeatIteration: Number(state.repeatIteration || 1) + 1,
+      });
+    }
+
+    audio.addEventListener("timeupdate", () => {
+      if (Number.isFinite(state.segmentEnd) && audio.currentTime >= state.segmentEnd - END_TOLERANCE) {
+        if (shouldRepeatAgain()) {
+          restartRepeat();
+          return;
+        }
+        audio.pause();
+        audio.currentTime = state.segmentEnd;
+        writeState({ isPlaying: false, currentTime: audio.currentTime, repeatIteration: 1 });
+        return;
+      }
+      writeState({ currentTime: audio.currentTime, isPlaying: !audio.paused });
+    });
+
+    audio.addEventListener("pause", () => writeState({ isPlaying: false, currentTime: audio.currentTime }));
+    audio.addEventListener("play", () => writeState({ isPlaying: true }));
+    audio.addEventListener("ended", () => {
+      if (shouldRepeatAgain()) {
+        restartRepeat();
+      } else {
+        writeState({ isPlaying: false, currentTime: audio.currentTime, repeatIteration: 1 });
+      }
+    });
+    audio.addEventListener("loadedmetadata", updateUi);
+
+    document.querySelectorAll("[data-audio-play]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const mode = button.getAttribute("data-audio-mode");
+        const start = Number(button.getAttribute("data-audio-start"));
+        const endValue = button.getAttribute("data-audio-end");
+        const end = endValue ? Number(endValue) : null;
+        const options = {
+          src: button.getAttribute("data-audio-src") || audioSrc,
+          start,
+          end,
+          label: button.getAttribute("data-audio-label") || "Audio Al-Ajrumiyyah",
+          slug: button.getAttribute("data-chapter-slug"),
+          matnId: button.getAttribute("data-matn-id"),
+        };
+        if (mode === "book") window.playBook(options);
+        if (mode === "chapter") window.playChapter(options);
+        if (mode === "matn") window.playMatn(options);
+      });
+    });
+
+    if (state.playbackMode !== "book" && !isCurrentPageAudio()) {
+      writeState({
+        isPlaying: false,
+        currentTime: 0,
+        segmentStart: null,
+        segmentEnd: null,
+        playbackMode: "chapter",
+        currentLabel: "Audio Al-Ajrumiyyah",
+        currentMatnId: null,
+        currentChapterSlug: null,
+        repeatIteration: 1,
+      });
+    }
+
+    loadStateIntoAudio();
+    if (state.isPlaying && isCurrentPageAudio()) window.resumeAudio();
+  })();
+</script>

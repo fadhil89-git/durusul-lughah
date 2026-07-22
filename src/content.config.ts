@@ -65,6 +65,12 @@ const mutoonCollection = defineCollection({
       matn: z.string(),
       sharh: z.string().optional(),
     }).optional(),
+    audio: z.object({
+      src: z.string(),
+      chapterStart: z.number(),
+      matnStart: z.number(),
+      chapterEnd: z.number(),
+    }).optional(),
     verses: z.array(verseSchema).optional(),
     proseSections: z.array(proseSectionSchema).optional(),
   }),

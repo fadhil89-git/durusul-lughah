@@ -16,44 +16,34 @@ sourceEdition:
   matn: "الْمُقَدِّمَةُ الْآجُرُّومِيَّةُ — تحقيق الشيخ د. عبد المحسن القاسم"
   sharh: "شَرْحُ مُخْتَصَرٍ جِدًّا عَلَى مَتْنِ الْآجُرُّومِيَّةِ — أَحْمَدُ زَيْنِي دَحْلَان"
 
+audio:
+  src: "/audio/al-ajrumiyyah/0403AlAajurrumiyyah_AbdullahRowzy.mp3"
+  chapterStart: 743
+  matnStart: 743
+  chapterEnd: 771
+
 proseSections:
   - id: "badal-rule"
     matn:
       id: "badal-01"
-      arabic: "إِذَا أُبْدِلَ اسْمٌ مِنِ اسْمٍ، أَوْ فِعْلٌ مِنْ فِعْلٍ، تَبِعَهُ فِي جَمِيعِ إِعْرَابِهِ."
-      translation: "Apabila suatu isim dijadikan badal daripada isim yang lain, atau suatu fi‘il dijadikan badal daripada fi‘il yang lain, maka badal itu mengikutinya dalam seluruh keadaan i‘rab."
+      arabic: "إِذَا أُبْدِلَ اسْمٌ مِنِ اسْمٍ، أَوْ فِعْلٌ مِنْ فِعْلٍ؛ تَبِعَهُ فِي جَمِيعِ إِعْرَابِهِ."
+      translation: "Apabila satu isim dijadikan badal bagi isim yang lain, atau satu fi‘il dijadikan badal bagi fi‘il yang lain, badal itu mengikut perkataan sebelumnya dalam seluruh keadaan i‘rabnya."
       words:
-        - arabic: "إِذَا"
-          meaning: "apabila"
+        - arabic: "إِذَا أُبْدِلَ"
+          meaning: "apabila dijadikan badal"
           type: "keyword"
-        - arabic: "أُبْدِلَ"
-          meaning: "dijadikan badal atau pengganti"
+        - arabic: "اسْمٌ مِنِ اسْمٍ"
+          meaning: "satu isim daripada isim yang lain"
           type: "keyword"
-        - arabic: "اسْمٌ"
-          meaning: "suatu isim"
-          type: "keyword"
-        - arabic: "مِنِ اسْمٍ"
-          meaning: "daripada isim yang menjadi mubdal minhu"
-          type: "keyword"
-        - arabic: "أَوْ"
-          meaning: "atau"
-          type: "keyword"
-        - arabic: "فِعْلٌ"
-          meaning: "suatu fi‘il"
-          type: "keyword"
-        - arabic: "مِنْ فِعْلٍ"
-          meaning: "daripada fi‘il yang menjadi mubdal minhu"
+        - arabic: "أَوْ فِعْلٌ مِنْ فِعْلٍ"
+          meaning: "atau satu fi‘il daripada fi‘il yang lain"
           type: "keyword"
         - arabic: "تَبِعَهُ"
-          meaning: "badal mengikut mubdal minhu"
+          meaning: "maka badal mengikutinya"
           type: "keyword"
         - arabic: "فِي جَمِيعِ إِعْرَابِهِ"
           meaning: "dalam seluruh keadaan i‘rabnya"
           type: "keyword"
-        - arabic: "الْبَدَلُ"
-          meaning: "tābi‘ yang menjadi perkara sebenar yang dimaksudkan"
-        - arabic: "الْمُبْدَلُ مِنْهُ"
-          meaning: "lafaz terdahulu yang diikuti oleh badal"
     sharh:
       title: "Syarah"
       arabic: |
@@ -95,25 +85,25 @@ proseSections:
     matn:
       id: "badal-02"
       arabic: "وَهُوَ أَرْبَعَةُ أَقْسَامٍ: بَدَلُ الشَّيْءِ مِنَ الشَّيْءِ، وَبَدَلُ الْبَعْضِ مِنَ الْكُلِّ، وَبَدَلُ الِاشْتِمَالِ، وَبَدَلُ الْغَلَطِ."
-      translation: "Badal terbahagi kepada empat bahagian: badal sesuatu daripada sesuatu, badal sebahagian daripada keseluruhan, badal ishtimāl dan badal tersalah."
+      translation: "Badal terbahagi kepada empat: badal sesuatu daripada sesuatu yang sama, badal sebahagian daripada keseluruhan, badal isytimal dan badal kesilapan."
       words:
         - arabic: "وَهُوَ"
-          meaning: "dan badal itu"
+          meaning: "dan badal"
           type: "keyword"
         - arabic: "أَرْبَعَةُ أَقْسَامٍ"
-          meaning: "terbahagi kepada empat bahagian"
+          meaning: "terbahagi kepada empat"
           type: "keyword"
         - arabic: "بَدَلُ الشَّيْءِ مِنَ الشَّيْءِ"
-          meaning: "badal yang sama sepenuhnya dengan mubdal minhu"
+          meaning: "badal sesuatu daripada sesuatu yang sama"
           type: "keyword"
         - arabic: "وَبَدَلُ الْبَعْضِ مِنَ الْكُلِّ"
-          meaning: "badal yang merupakan sebahagian daripada mubdal minhu"
+          meaning: "badal sebahagian daripada keseluruhan"
           type: "keyword"
         - arabic: "وَبَدَلُ الِاشْتِمَالِ"
-          meaning: "badal berupa sifat atau perkara yang terkandung pada mubdal minhu"
+          meaning: "badal isytimal"
           type: "keyword"
         - arabic: "وَبَدَلُ الْغَلَطِ"
-          meaning: "badal yang membetulkan lafaz yang disebut secara tersalah"
+          meaning: "dan badal kesilapan"
           type: "keyword"
     sharh:
       title: "Syarah"
@@ -149,25 +139,36 @@ proseSections:
   - id: "badal-kull-min-kull"
     matn:
       id: "badal-03"
-      arabic: "نَحْوُ قَوْلِكَ: قَامَ زَيْدٌ أَخُوكَ."
-      translation: "Seperti perkataanmu: “Zaid, iaitu saudaramu, telah berdiri.”"
+      arabic: "تَقُولُ: قَامَ زَيْدٌ أَخُوكَ، وَأَكَلْتُ الرَّغِيفَ ثُلُثَهُ، وَنَفَعَنِي زَيْدٌ عِلْمُهُ، وَرَأَيْتُ زَيْدًا الْفَرَسَ؛ أَرَدْتَ أَنْ تَقُولَ: الْفَرَسَ، فَغَلِطْتَ، فَأَبْدَلْتَ زَيْدًا مِنْهُ."
+      translation: "Contohnya: “Zaid, iaitu saudara lelakimu, telah berdiri”; “Aku memakan roti itu, iaitu sepertiganya”; “Zaid memberi manfaat kepadaku, iaitu ilmunya”; dan “Aku melihat Zaid—kuda itu.” Dalam contoh terakhir, engkau sebenarnya mahu mengatakan “kuda itu”, tetapi tersilap menyebut “Zaid”, lalu lafaz yang betul dijadikan badal selepasnya."
       words:
-        - arabic: "نَحْوُ قَوْلِكَ"
-          meaning: "seperti perkataanmu"
-        - arabic: "قَامَ"
-          meaning: "telah berdiri; fi‘il māḍī"
+        - arabic: "تَقُولُ"
+          meaning: "engkau berkata"
           type: "keyword"
-        - arabic: "زَيْدٌ"
-          meaning: "fā‘il marfū‘ dan menjadi mubdal minhu"
+        - arabic: "قَامَ زَيْدٌ أَخُوكَ"
+          meaning: "Zaid, iaitu saudara lelakimu, telah berdiri"
           type: "keyword"
-        - arabic: "أَخُوكَ"
-          meaning: "badal marfū‘ yang sama orangnya dengan Zaid"
+        - arabic: "وَأَكَلْتُ الرَّغِيفَ ثُلُثَهُ"
+          meaning: "aku memakan roti itu, iaitu sepertiganya"
           type: "keyword"
-        - arabic: "أَخُو"
-          meaning: "badal marfū‘ dengan wāw kerana termasuk al-asmā’ al-khamsah"
+        - arabic: "وَنَفَعَنِي زَيْدٌ عِلْمُهُ"
+          meaning: "Zaid memberi manfaat kepadaku, iaitu ilmunya"
           type: "keyword"
-        - arabic: "الْكَافُ"
-          meaning: "ḍamīr sebagai muḍāf ilayh"
+        - arabic: "وَرَأَيْتُ زَيْدًا الْفَرَسَ"
+          meaning: "dan aku melihat Zaid, (tersilap sebut Zaid, sepatutnya) kuda itu"
+          type: "keyword"
+        - arabic: "أَرَدْتَ أَنْ تَقُولَ"
+          meaning: "engkau sebenarnya mahu mengatakan"
+          type: "keyword"
+        - arabic: "الْفَرَسَ"
+          meaning: "kuda itu"
+          type: "keyword"
+        - arabic: "فَغَلِطْتَ"
+          meaning: "tetapi engkau tersilap"
+          type: "keyword"
+        - arabic: "فَأَبْدَلْتَ زَيْدًا مِنْهُ"
+          meaning: "lalu engkau menggantikan lafaz Zaid daripadanya"
+          type: "keyword"
     sharh:
       title: "Badal al-shay’ min al-shay’"
       arabic: |
@@ -193,292 +194,6 @@ proseSections:
         - Kāf ialah muḍāf ilayh.
         
         Ini dinamakan badal al-shay’ min al-shay’ kerana Zaid dan saudaramu ialah individu yang sama.
-
-  - id: "badal-bad-min-kull"
-    matn:
-      id: "badal-04"
-      arabic: "وَأَكَلْتُ الرَّغِيفَ ثُلُثَهُ."
-      translation: "Dan: “Aku telah memakan satu pertiga daripada roti itu.”"
-      words:
-        - arabic: "وَأَكَلْتُ"
-          meaning: "dan aku telah makan"
-        - arabic: "الرَّغِيفَ"
-          meaning: "roti itu; maf‘ul bih mansub dan mubdal minhu"
-          type: "keyword"
-        - arabic: "ثُلُثَهُ"
-          meaning: "satu pertiganya; badal sebahagian daripada keseluruhan"
-          type: "keyword"
-        - arabic: "ثُلُثَ"
-          meaning: "badal mansub dengan fatḥah"
-          type: "keyword"
-        - arabic: "الْهَاءُ"
-          meaning: "ḍamīr yang kembali kepada mubdal minhu"
-    sharh:
-      title: "Badal al-ba‘ḍ min al-kull"
-      arabic: |
-        فِي قَوْلِكَ:
-        
-        «أَكَلْتُ الرَّغِيفَ ثُلُثَهُ»
-        
-        «أَكَلْتُ» فِعْلٌ وَفَاعِلٌ.
-        
-        وَ«الرَّغِيفَ» مَفْعُولٌ بِهِ مَنْصُوبٌ، وَهُوَ الْمُبْدَلُ مِنْهُ.
-        
-        وَ«ثُلُثَ» بَدَلُ بَعْضٍ مِنْ كُلٍّ مَنْصُوبٌ بِالْفَتْحَةِ الظَّاهِرَةِ، وَهُوَ مُضَافٌ.
-        
-        وَالْهَاءُ ضَمِيرٌ مُتَّصِلٌ فِي مَحَلِّ جَرٍّ مُضَافٍ إِلَيْهِ، وَيَعُودُ عَلَى «الرَّغِيفِ».
-        
-        وَسُمِّيَ بَدَلَ بَعْضٍ مِنْ كُلٍّ؛ لِأَنَّ الثُّلُثَ جُزْءٌ حَقِيقِيٌّ مِنَ الرَّغِيفِ.
-      malay: |
-        I‘rab ayat:
-        
-        - «أَكَلْتُ» ialah fi‘il dan fā‘il.
-        - «الرَّغِيفَ» ialah maf‘ul bih mansub dan menjadi mubdal minhu.
-        - «ثُلُثَ» ialah badal al-ba‘ḍ min al-kull yang mansub.
-        - Hā’ ialah muḍāf ilayh dan kembali kepada roti.
-        
-        Satu pertiga ialah bahagian sebenar daripada keseluruhan roti. Oleh itu, ia dinamakan badal al-ba‘ḍ min al-kull.
-
-  - id: "badal-ishtimal"
-    matn:
-      id: "badal-05"
-      arabic: "وَنَفَعَنِي زَيْدٌ عِلْمُهُ."
-      translation: "Dan: “Ilmu Zaid telah memberi manfaat kepadaku.”"
-      words:
-        - arabic: "وَنَفَعَنِي"
-          meaning: "dan telah memberi manfaat kepadaku"
-        - arabic: "زَيْدٌ"
-          meaning: "fā‘il marfū‘ dan menjadi mubdal minhu"
-          type: "keyword"
-        - arabic: "عِلْمُهُ"
-          meaning: "ilmunya; badal ishtimāl marfū‘"
-          type: "keyword"
-        - arabic: "عِلْمُ"
-          meaning: "sifat yang berkaitan dengan Zaid, bukan anggota tubuhnya"
-          type: "keyword"
-        - arabic: "الْهَاءُ"
-          meaning: "ḍamīr yang kembali kepada Zaid"
-    sharh:
-      title: "Badal al-ishtimāl"
-      arabic: |
-        فِي قَوْلِكَ:
-        
-        «نَفَعَنِي زَيْدٌ عِلْمُهُ»
-        
-        «نَفَعَ» فِعْلٌ مَاضٍ.
-        
-        وَالنُّونُ لِلْوِقَايَةِ.
-        
-        وَالْيَاءُ ضَمِيرٌ مُتَّصِلٌ فِي مَحَلِّ نَصْبٍ مَفْعُولٌ بِهِ.
-        
-        وَ«زَيْدٌ» فَاعِلٌ مَرْفُوعٌ، وَهُوَ الْمُبْدَلُ مِنْهُ.
-        
-        وَ«عِلْمُ» بَدَلُ اشْتِمَالٍ مِنْ «زَيْدٍ» مَرْفُوعٌ بِالضَّمَّةِ، وَهُوَ مُضَافٌ.
-        
-        وَالْهَاءُ مُضَافٌ إِلَيْهِ، وَتَعُودُ عَلَى «زَيْدٍ».
-        
-        وَالْعِلْمُ لَيْسَ جُزْءًا حِسِّيًّا مِنْ جِسْمِ زَيْدٍ، وَلَكِنَّهُ مَعْنًى مِنَ الْمَعَانِي الْمُتَّصِلَةِ بِهِ؛ فَلِذَلِكَ كَانَ بَدَلَ اشْتِمَالٍ.
-      malay: |
-        I‘rab ayat:
-        
-        - «نَفَعَ» ialah fi‘il māḍī.
-        - Nūn ialah nūn al-wiqāyah.
-        - Yā’ ialah maf‘ul bih.
-        - «زَيْدٌ» ialah fā‘il marfū‘ dan menjadi mubdal minhu.
-        - «عِلْمُ» ialah badal ishtimāl marfū‘.
-        - Hā’ kembali kepada Zaid.
-        
-        Ilmu bukan bahagian fizikal daripada tubuh Zaid. Namun, ilmu ialah suatu sifat yang berkaitan dan terkandung pada dirinya. Oleh itu, ia dinamakan badal al-ishtimāl.
-
-  - id: "badal-ghalat"
-    matn:
-      id: "badal-06"
-      arabic: "وَرَأَيْتُ زَيْدًا الْفَرَسَ، أَرَدْتَ أَنْ تَقُولَ: الْفَرَسَ، فَغَلِطْتَ فَأَبْدَلْتَ زَيْدًا مِنْهُ."
-      translation: "Dan: “Aku melihat Zaid—kuda itu.” Kamu sebenarnya mahu mengatakan “kuda itu”, tetapi kamu tersalah, lalu menggantikan lafaz yang tersalah itu."
-      words:
-        - arabic: "وَرَأَيْتُ"
-          meaning: "dan aku telah melihat"
-        - arabic: "زَيْدًا"
-          meaning: "lafaz yang disebut secara tersalah"
-          type: "keyword"
-        - arabic: "الْفَرَسَ"
-          meaning: "kuda itu; badal ghalaṭ dan lafaz yang sebenarnya dimaksudkan"
-          type: "keyword"
-        - arabic: "أَرَدْتَ"
-          meaning: "kamu sebenarnya bermaksud"
-          type: "keyword"
-        - arabic: "أَنْ تَقُولَ"
-          meaning: "untuk mengatakan"
-          type: "keyword"
-        - arabic: "فَغَلِطْتَ"
-          meaning: "lalu kamu tersalah menyebut"
-          type: "keyword"
-        - arabic: "فَأَبْدَلْتَ"
-          meaning: "lalu kamu menggantikan lafaz yang salah"
-          type: "keyword"
-        - arabic: "زَيْدًا مِنْهُ"
-          meaning: "lafaz Zaid daripada kedudukan lafaz yang dimaksudkan"
-          type: "keyword"
-    sharh:
-      title: "Badal al-ghalaṭ"
-      arabic: |
-        فِي قَوْلِكَ:
-        
-        «رَأَيْتُ زَيْدًا الْفَرَسَ»
-        
-        «رَأَيْتُ» فِعْلٌ وَفَاعِلٌ.
-        
-        وَ«زَيْدًا» مَفْعُولٌ بِهِ مَنْصُوبٌ، وَهُوَ اللَّفْظُ الَّذِي جَرَى عَلَى لِسَانِ الْمُتَكَلِّمِ غَلَطًا.
-        
-        وَ«الْفَرَسَ» بَدَلُ غَلَطٍ مَنْصُوبٌ، وَهُوَ الْمُرَادُ فِي الْحَقِيقَةِ.
-        
-        فَالْمُتَكَلِّمُ أَرَادَ أَنْ يَقُولَ: «رَأَيْتُ الْفَرَسَ»، فَسَبَقَ لِسَانُهُ إِلَى ذِكْرِ «زَيْدٍ»، ثُمَّ أَصْلَحَ غَلَطَهُ بِذِكْرِ «الْفَرَسِ».
-        
-        وَالْمُرَادُ بِقَوْلِ الْمُصَنِّفِ: «فَأَبْدَلْتَ زَيْدًا مِنْهُ» الْإِبْدَالُ بِالْمَعْنَى اللُّغَوِيِّ، أَيْ عَوَّضْتَ اللَّفْظَ الْخَطَأَ بِاللَّفْظِ الصَّحِيحِ.
-      malay: |
-        Penutur sebenarnya mahu mengatakan:
-        
-        «رَأَيْتُ الْفَرَسَ»
-        
-        “Aku telah melihat kuda itu.”
-        
-        Namun, lidahnya terlebih dahulu menyebut «زَيْدًا». Dia kemudian membetulkan kesalahan itu dengan menyebut «الْفَرَسَ».
-        
-        I‘rabnya:
-        
-        - «زَيْدًا» ialah maf‘ul bih mansub yang disebut secara tersalah.
-        - «الْفَرَسَ» ialah badal ghalaṭ mansub dan merupakan perkara yang sebenarnya dimaksudkan.
-        
-        Ungkapan «فَأَبْدَلْتَ زَيْدًا مِنْهُ» menggunakan makna bahasa bagi ibdāl, iaitu menggantikan lafaz yang tersalah dengan lafaz yang betul.
-
-  - id: "badal-fiil"
-    matn:
-      id: "badal-07"
-      arabic: "وَيُبْدَلُ الْفِعْلُ مِنَ الْفِعْلِ، نَحْوُ: إِنْ تُصَلِّ تَسْجُدْ لِلَّهِ يَرْحَمْكَ."
-      translation: "Fi‘il juga boleh dijadikan badal daripada fi‘il, seperti: “Sekiranya kamu bersolat—kamu bersujud kepada Allah—Dia akan merahmatimu.”"
-      words:
-        - arabic: "وَيُبْدَلُ"
-          meaning: "dan boleh dijadikan badal"
-        - arabic: "الْفِعْلُ"
-          meaning: "suatu fi‘il"
-        - arabic: "مِنَ الْفِعْلِ"
-          meaning: "daripada fi‘il yang lain"
-        - arabic: "إِنْ"
-          meaning: "huruf syarat yang menjazamkan dua fi‘il"
-          type: "keyword"
-        - arabic: "تُصَلِّ"
-          meaning: "kamu bersolat; fi‘il syarat majzūm"
-          type: "keyword"
-        - arabic: "تَسْجُدْ"
-          meaning: "kamu bersujud; badal fi‘il dan majzūm"
-          type: "keyword"
-        - arabic: "لِلَّهِ"
-          meaning: "kepada Allah"
-          type: "keyword"
-        - arabic: "يَرْحَمْكَ"
-          meaning: "Dia merahmatimu; jawāb al-sharṭ majzūm"
-          type: "keyword"
-    sharh:
-      title: "Badal antara fi‘il"
-      arabic: |
-        لَا يَخْتَصُّ الْبَدَلُ بِالْأَسْمَاءِ، بَلْ يَقَعُ بَيْنَ الْأَفْعَالِ أَيْضًا.
-        
-        فِي قَوْلِكَ:
-        
-        «إِنْ تُصَلِّ تَسْجُدْ لِلَّهِ يَرْحَمْكَ»
-        
-        «إِنْ» حَرْفُ شَرْطٍ جَازِمٌ.
-        
-        وَ«تُصَلِّ» فِعْلُ الشَّرْطِ مَجْزُومٌ بِحَذْفِ حَرْفِ الْعِلَّةِ.
-        
-        وَ«تَسْجُدْ» بَدَلٌ مِنْ «تُصَلِّ» مَجْزُومٌ بِالسُّكُونِ؛ لِأَنَّ الْبَدَلَ يَتْبَعُ الْمُبْدَلَ مِنْهُ فِي إِعْرَابِهِ.
-        
-        وَ«يَرْحَمْكَ» جَوَابُ الشَّرْطِ مَجْزُومٌ بِالسُّكُونِ.
-        
-        وَالْمَعْنَى أَنَّ السُّجُودَ بَيَانٌ وَتَفْسِيرٌ لِلصَّلَاةِ الْمَذْكُورَةِ قَبْلَهُ.
-      malay: |
-        Badal tidak terhad kepada isim. Ia juga boleh berlaku antara dua fi‘il.
-        
-        Dalam contoh:
-        
-        «إِنْ تُصَلِّ تَسْجُدْ لِلَّهِ يَرْحَمْكَ»
-        
-        - «إِنْ» ialah huruf syarat jazim.
-        - «تُصَلِّ» ialah fi‘il syarat majzūm dengan membuang huruf ‘illah.
-        - «تَسْجُدْ» ialah badal daripada «تُصَلِّ» dan turut dijazamkan.
-        - «يَرْحَمْكَ» ialah jawāb al-sharṭ yang majzūm.
-        
-        Fi‘il «تَسْجُدْ» menerangkan dan memperincikan perbuatan solat yang disebut sebelumnya.
-
-  - id: "badal-summary"
-    matn:
-      id: "badal-08"
-      arabic: "اَلْبَدَلُ تَابِعٌ مَقْصُودٌ بِالْحُكْمِ، وَيَتْبَعُ الْمُبْدَلَ مِنْهُ فِي جَمِيعِ إِعْرَابِهِ."
-      translation: "Badal ialah tābi‘ yang menjadi perkara sebenar yang dimaksudkan oleh hukum dan mengikuti mubdal minhu dalam seluruh keadaan i‘rab."
-      words:
-        - arabic: "اَلْبَدَلُ"
-          meaning: "tābi‘ yang menjadi perkara sebenar yang dimaksudkan"
-          type: "keyword"
-        - arabic: "تَابِعٌ"
-          meaning: "lafaz yang mengikuti hukum i‘rab sebelumnya"
-          type: "keyword"
-        - arabic: "مَقْصُودٌ بِالْحُكْمِ"
-          meaning: "perkara sebenar yang dikenakan hukum"
-          type: "keyword"
-        - arabic: "وَيَتْبَعُ"
-          meaning: "dan mengikuti"
-          type: "keyword"
-        - arabic: "الْمُبْدَلَ مِنْهُ"
-          meaning: "lafaz terdahulu yang menjadi ikutan badal"
-          type: "keyword"
-        - arabic: "فِي جَمِيعِ إِعْرَابِهِ"
-          meaning: "dalam rafa‘, naṣab, jar atau jazm"
-          type: "keyword"
-    sharh:
-      title: "Ringkasan"
-      arabic: |
-        خُلَاصَةُ الْبَابِ:
-        
-        أَوَّلًا: الْبَدَلُ تَابِعٌ مَقْصُودٌ بِالْحُكْمِ بِلَا وَاسِطَةٍ.
-        
-        ثَانِيًا: يَتْبَعُ الْبَدَلُ الْمُبْدَلَ مِنْهُ فِي جَمِيعِ إِعْرَابِهِ.
-        
-        ثَالِثًا: يَقَعُ الْبَدَلُ بَيْنَ الْأَسْمَاءِ وَبَيْنَ الْأَفْعَالِ.
-        
-        رَابِعًا: أَقْسَامُ الْبَدَلِ أَرْبَعَةٌ:
-        
-        ١. بَدَلُ الشَّيْءِ مِنَ الشَّيْءِ.
-        ٢. بَدَلُ الْبَعْضِ مِنَ الْكُلِّ.
-        ٣. بَدَلُ الِاشْتِمَالِ.
-        ٤. بَدَلُ الْغَلَطِ.
-        
-        خَامِسًا: فِي بَدَلِ الْبَعْضِ وَبَدَلِ الِاشْتِمَالِ يَكُونُ فِي الْبَدَلِ ضَمِيرٌ يَعُودُ عَلَى الْمُبْدَلِ مِنْهُ.
-      malay: |
-        Inti utama bab ini:
-        
-        **Badal** ialah tābi‘ yang menjadi perkara sebenar yang dimaksudkan oleh hukum.
-        
-        Badal mengikuti mubdal minhu dalam seluruh keadaan i‘rab:
-        
-        - rafa‘;
-        - naṣab;
-        - jar;
-        - jazm.
-        
-        Empat jenis badal ialah:
-        
-        1. Badal al-shay’ min al-shay’.
-        2. Badal al-ba‘ḍ min al-kull.
-        3. Badal al-ishtimāl.
-        4. Badal al-ghalaṭ.
-        
-        Contoh:
-        
-        - «قَامَ زَيْدٌ أَخُوكَ» — badal al-shay’ min al-shay’.
-        - «أَكَلْتُ الرَّغِيفَ ثُلُثَهُ» — badal al-ba‘ḍ min al-kull.
-        - «نَفَعَنِي زَيْدٌ عِلْمُهُ» — badal al-ishtimāl.
-        - «رَأَيْتُ زَيْدًا الْفَرَسَ» — badal al-ghalaṭ.
-
 ---
 
 ## Sumber projek

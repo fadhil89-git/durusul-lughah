@@ -16,74 +16,60 @@ sourceEdition:
   matn: "الْمُقَدِّمَةُ الْآجُرُّومِيَّةُ — تحقيق الشيخ د. عبد المحسن القاسم"
   sharh: "شَرْحُ مُخْتَصَرٍ جِدًّا عَلَى مَتْنِ الْآجُرُّومِيَّةِ — أَحْمَدُ زَيْنِي دَحْلَان"
 
+audio:
+  src: "/audio/al-ajrumiyyah/0403AlAajurrumiyyah_AbdullahRowzy.mp3"
+  chapterStart: 363
+  matnStart: 363
+  chapterEnd: 385
+
 proseSections:
   - id: "marfuat-introduction"
     matn:
       id: "marfuat-01"
-      arabic: "اَلْمَرْفُوعَاتُ مِنَ الْأَسْمَاءِ سَبْعَةٌ: الْفَاعِلُ، وَالْمَفْعُولُ الَّذِي لَمْ يُسَمَّ فَاعِلُهُ، وَالْمُبْتَدَأُ وَخَبَرُهُ، وَاسْمُ كَانَ وَأَخَوَاتِهَا، وَخَبَرُ إِنَّ وَأَخَوَاتِهَا، وَالتَّابِعُ لِلْمَرْفُوعِ، وَهُوَ أَرْبَعَةُ أَشْيَاءَ: النَّعْتُ، وَالْعَطْفُ، وَالتَّوْكِيدُ، وَالْبَدَلُ."
-      translation: "Isim-isim yang berada dalam keadaan marfū‘ terdiri daripada tujuh kelompok: fā‘il, maf‘ul yang tidak disebut pelakunya atau nā’ib al-fā‘il, mubtada’ dan khabarnya, isim bagi كان وأخواتها, khabar bagi إن وأخواتها, serta perkataan pengikut kepada isim yang marfū‘. Perkataan pengikut itu terdiri daripada empat jenis: na‘at, ‘aṭaf, tawkīd dan badal."
+      arabic: "الْمَرْفُوعَاتُ سَبْعَةٌ، وَهِيَ: الْفَاعِلُ، وَالْمَفْعُولُ الَّذِي لَمْ يُسَمَّ فَاعِلُهُ، وَالْمُبْتَدَأُ وَخَبَرُهُ، وَاسْمُ كَانَ وَأَخَوَاتِهَا، وَخَبَرُ إِنَّ وَأَخَوَاتِهَا، وَالتَّابِعُ لِلْمَرْفُوعِ، وَهُوَ أَرْبَعَةُ أَشْيَاءَ: النَّعْتُ، وَالْعَطْفُ، وَالتَّوْكِيدُ، وَالْبَدَلُ."
+      translation: "Isim-isim yang marfu‘ ada tujuh: fa‘il, maf‘ul yang tidak disebut fa‘ilnya, mubtada’ dan khabarnya, isim كان وأخواتها, khabar إن وأخواتها, serta perkataan yang mengikuti isim marfu‘. Pengikut kepada isim marfu‘ ada empat: na‘t, ‘ataf, tawkid dan badal."
       words:
-        - arabic: "اَلْمَرْفُوعَاتُ"
-          meaning: "kalimah-kalimah yang berada dalam keadaan marfū‘ atau menerima tanda rafa‘"
-          type: "keyword"
-        - arabic: "مِنَ الْأَسْمَاءِ"
-          meaning: "daripada kalangan isim; bukan daripada kalangan fi‘il atau huruf"
+        - arabic: "الْمَرْفُوعَاتُ"
+          meaning: "isim-isim yang marfu‘"
           type: "keyword"
         - arabic: "سَبْعَةٌ"
-          meaning: "tujuh kelompok utama yang akan diterangkan satu demi satu"
+          meaning: "ada tujuh"
+          type: "keyword"
+        - arabic: "وَهِيَ"
+          meaning: "iaitu"
           type: "keyword"
         - arabic: "الْفَاعِلُ"
-          meaning: "isim marfū‘ yang menunjukkan pihak yang melakukan atau menghasilkan sesuatu perbuatan"
+          meaning: "fa‘il"
           type: "keyword"
-        - arabic: "وَالْمَفْعُولُ"
-          meaning: "dan isim yang pada asalnya menerima perbuatan"
-        - arabic: "الَّذِي"
-          meaning: "yang; merujuk kepada maf‘ul yang disebut selepasnya"
+        - arabic: "وَالْمَفْعُولُ الَّذِي لَمْ يُسَمَّ فَاعِلُهُ"
+          meaning: "maf‘ul yang tidak disebut fa‘ilnya"
           type: "keyword"
-        - arabic: "لَمْ يُسَمَّ"
-          meaning: "tidak disebut atau tidak dinyatakan namanya dalam susunan ayat"
+        - arabic: "وَالْمُبْتَدَأُ وَخَبَرُهُ"
+          meaning: "mubtada’ dan khabarnya"
           type: "keyword"
-        - arabic: "فَاعِلُهُ"
-          meaning: "pelaku bagi perbuatan tersebut; pihak yang melakukan pekerjaan"
+        - arabic: "وَاسْمُ كَانَ وَأَخَوَاتِهَا"
+          meaning: "isim كان وأخواتها"
           type: "keyword"
-        - arabic: "الْمَفْعُولُ الَّذِي لَمْ يُسَمَّ فَاعِلُهُ"
-          meaning: "maf‘ul yang pelakunya tidak disebut, lalu mengambil tempat fā‘il dan menjadi marfū‘; kini biasa disebut nā’ib al-fā‘il"
+        - arabic: "وَخَبَرُ إِنَّ وَأَخَوَاتِهَا"
+          meaning: "khabar إن وأخواتها"
           type: "keyword"
-        - arabic: "وَالْمُبْتَدَأُ"
-          meaning: "dan isim marfū‘ yang biasanya diletakkan pada awal jumlah ismiyyah sebagai perkara yang hendak diterangkan"
-        - arabic: "وَخَبَرُهُ"
-          meaning: "dan keterangan yang menyempurnakan makna mubtada’ serta memberitahu sesuatu mengenainya"
+        - arabic: "وَالتَّابِعُ لِلْمَرْفُوعِ"
+          meaning: "dan perkataan yang mengikuti isim marfu‘"
           type: "keyword"
-        - arabic: "وَاسْمُ كَانَ"
-          meaning: "dan isim selepas kāna yang kekal dalam keadaan marfū‘"
-        - arabic: "وَأَخَوَاتِهَا"
-          meaning: "dan kata kerja lain yang beramal seperti kāna, iaitu merafa‘kan isim dan menasabkan khabar"
+        - arabic: "وَهُوَ أَرْبَعَةُ أَشْيَاءَ"
+          meaning: "dan ia terdiri daripada empat perkara"
           type: "keyword"
-        - arabic: "وَخَبَرُ إِنَّ"
-          meaning: "dan khabar selepas inna yang berada dalam keadaan marfū‘"
-        - arabic: "وَأَخَوَاتِهَا"
-          meaning: "dan huruf-huruf lain yang beramal seperti inna, iaitu menasabkan isim dan merafa‘kan khabar"
-          type: "keyword"
-        - arabic: "وَالتَّابِعُ"
-          meaning: "dan perkataan pengikut yang mengikuti perkataan sebelumnya pada hukum i‘rab"
-        - arabic: "لِلْمَرْفُوعِ"
-          meaning: "kepada perkataan yang marfū‘; pengikut itu turut menjadi marfū‘"
-          type: "keyword"
-        - arabic: "وَهُوَ"
-          meaning: "dan pengikut kepada marfū‘ itu"
-        - arabic: "أَرْبَعَةُ أَشْيَاءَ"
-          meaning: "terbahagi kepada empat jenis atau empat bentuk"
         - arabic: "النَّعْتُ"
-          meaning: "sifat yang menerangkan isim sebelumnya dan mengikutinya pada i‘rab"
+          meaning: "na‘t"
           type: "keyword"
         - arabic: "وَالْعَطْفُ"
-          meaning: "perkataan yang dihubungkan kepada perkataan sebelumnya menggunakan huruf ‘aṭaf"
+          meaning: "‘ataf"
           type: "keyword"
         - arabic: "وَالتَّوْكِيدُ"
-          meaning: "perkataan yang menguatkan atau menghilangkan keraguan terhadap maksud perkataan sebelumnya"
+          meaning: "tawkid"
           type: "keyword"
         - arabic: "وَالْبَدَلُ"
-          meaning: "perkataan pengganti yang menjadi maksud sebenar hukum dalam ayat"
+          meaning: "dan badal"
           type: "keyword"
     sharh:
       title: "Syarah"
@@ -166,70 +152,6 @@ proseSections:
         4. **Badal**, iaitu perkataan pengganti yang menjadi maksud utama dalam hukum ayat.
         
         Bab ini hanya memberikan gambaran keseluruhan. Setiap kelompok akan diterangkan secara lebih terperinci dalam bab-bab selepas ini.
-
-  - id: "marfuat-summary"
-    matn:
-      id: "marfuat-summary-01"
-      arabic: "الْفَاعِلُ، وَنَائِبُ الْفَاعِلِ، وَالْمُبْتَدَأُ، وَالْخَبَرُ، وَاسْمُ كَانَ، وَخَبَرُ إِنَّ، وَالتَّوَابِعُ لِلْمَرْفُوعِ."
-      translation: "Ringkasnya, kelompok isim marfū‘ ialah fā‘il, nā’ib al-fā‘il, mubtada’, khabar, isim kāna, khabar inna dan perkataan-perkataan yang mengikuti isim marfū‘."
-      words:
-        - arabic: "الْفَاعِلُ"
-          meaning: "pelaku atau pihak yang disandarkan kepadanya sesuatu perbuatan"
-          type: "keyword"
-        - arabic: "وَنَائِبُ الْفَاعِلِ"
-          meaning: "isim yang menggantikan kedudukan fā‘il apabila pelaku asal tidak disebut"
-          type: "keyword"
-        - arabic: "وَالْمُبْتَدَأُ"
-          meaning: "isim pada permulaan jumlah ismiyyah yang hendak diberikan keterangan"
-          type: "keyword"
-        - arabic: "وَالْخَبَرُ"
-          meaning: "bahagian yang memberikan maklumat dan menyempurnakan maksud mubtada’"
-          type: "keyword"
-        - arabic: "وَاسْمُ كَانَ"
-          meaning: "isim yang dirafa‘kan oleh kāna atau salah satu saudara kāna"
-          type: "keyword"
-        - arabic: "وَخَبَرُ إِنَّ"
-          meaning: "khabar yang dirafa‘kan oleh inna atau salah satu saudara inna"
-          type: "keyword"
-        - arabic: "وَالتَّوَابِعُ"
-          meaning: "perkataan-perkataan yang mengikuti perkataan sebelumnya dalam hukum i‘rab"
-        - arabic: "لِلْمَرْفُوعِ"
-          meaning: "mengikuti isim yang marfū‘, lalu turut menerima hukum rafa‘"
-          type: "keyword"
-    sharh:
-      title: "Ringkasan"
-      arabic: |
-        يُمْكِنُ جَمْعُ الْمَرْفُوعَاتِ فِي ثَلَاثَةِ أَبْوَابٍ كُلِّيَّةٍ:
-        
-        أَوَّلًا: الْمَرْفُوعُ بِالْفِعْلِ، وَهُوَ الْفَاعِلُ وَنَائِبُ الْفَاعِلِ.
-        
-        ثَانِيًا: الْمَرْفُوعُ بِالِابْتِدَاءِ أَوْ بِالنَّوَاسِخِ، وَهُوَ الْمُبْتَدَأُ وَالْخَبَرُ وَاسْمُ كَانَ وَخَبَرُ إِنَّ.
-        
-        ثَالِثًا: الْمَرْفُوعُ بِالتَّبَعِيَّةِ، وَهُوَ النَّعْتُ وَالْعَطْفُ وَالتَّوْكِيدُ وَالْبَدَلُ إِذَا تَبِعَتْ مَرْفُوعًا.
-      malay: |
-        Untuk memudahkan hafalan, isim-isim marfū‘ boleh dihimpunkan kepada tiga kumpulan besar.
-        
-        **Pertama: isim yang dirafa‘kan kerana hubungannya dengan fi‘il.**
-        
-        - Fā‘il
-        - Nā’ib al-fā‘il
-        
-        **Kedua: isim yang dirafa‘kan dalam jumlah ismiyyah atau selepas nāsikh.**
-        
-        - Mubtada’
-        - Khabar
-        - Isim kāna
-        - Khabar inna
-        
-        **Ketiga: isim yang dirafa‘kan kerana mengikuti perkataan sebelumnya.**
-        
-        - Na‘at
-        - ‘Aṭaf
-        - Tawkīd
-        - Badal
-        
-        Pembahagian ini bukan teks tambahan daripada matan, tetapi ringkasan pembelajaran untuk memudahkan pelajar melihat hubungan antara semua jenis marfū‘āt.
-
 ---
 
 ## Sumber projek

@@ -16,24 +16,24 @@ sourceEdition:
   matn: "الْمُقَدِّمَةُ الْآجُرُّومِيَّةُ — تحقيق الشيخ د. عبد المحسن القاسم"
   sharh: "شَرْحُ مُخْتَصَرٍ جِدًّا عَلَى مَتْنِ الْآجُرُّومِيَّةِ — أَحْمَدُ زَيْنِي دَحْلَان"
 
+audio:
+  src: "/audio/al-ajrumiyyah/0403AlAajurrumiyyah_AbdullahRowzy.mp3"
+  chapterStart: 1086
+  matnStart: 1088
+  chapterEnd: 1109
+
 proseSections:
   - id: "maful-maah-definition"
     matn:
       id: "maful-maah-01"
-      arabic: "اَلْمَفْعُولُ مَعَهُ هُوَ الِاسْمُ الْمَنْصُوبُ الَّذِي يُذْكَرُ لِبَيَانِ مَنْ فُعِلَ مَعَهُ الْفِعْلُ."
-      translation: "Maf‘ul ma‘ah ialah isim mansub yang disebut untuk menerangkan sesuatu yang bersamanya perbuatan itu berlaku."
+      arabic: "وَهُوَ الِاسْمُ الْمَنْصُوبُ الَّذِي يُذْكَرُ لِبَيَانِ مَنْ فُعِلَ مَعَهُ الْفِعْلُ، نَحْوُ قَوْلِكَ: جَاءَ الْأَمِيرُ وَالْجَيْشَ، وَاسْتَوَى الْمَاءُ وَالْخَشَبَةَ."
+      translation: "Maf‘ul ma‘ah ialah isim mansub yang disebut untuk menerangkan sesuatu yang berlaku bersama-sama dengan perbuatan tersebut, seperti: “Amir datang bersama tentera” dan “Air itu naik sama paras dengan kayu”."
       words:
-        - arabic: "اَلْمَفْعُولُ مَعَهُ"
-          meaning: "isim yang menerangkan sesuatu yang menyertai berlakunya perbuatan"
+        - arabic: "وَهُوَ"
+          meaning: "dan maf‘ul ma‘ah"
           type: "keyword"
-        - arabic: "هُوَ"
-          meaning: "ialah"
-          type: "keyword"
-        - arabic: "الِاسْمُ"
-          meaning: "isim"
-          type: "keyword"
-        - arabic: "الْمَنْصُوبُ"
-          meaning: "yang mansub"
+        - arabic: "الِاسْمُ الْمَنْصُوبُ"
+          meaning: "ialah isim yang mansub"
           type: "keyword"
         - arabic: "الَّذِي يُذْكَرُ"
           meaning: "yang disebut"
@@ -42,7 +42,16 @@ proseSections:
           meaning: "untuk menerangkan"
           type: "keyword"
         - arabic: "مَنْ فُعِلَ مَعَهُ الْفِعْلُ"
-          meaning: "sesuatu yang bersamanya perbuatan itu berlaku"
+          meaning: "sesuatu yang berlaku bersama-sama dengan perbuatan"
+          type: "keyword"
+        - arabic: "نَحْوُ قَوْلِكَ"
+          meaning: "seperti ucapanmu"
+          type: "keyword"
+        - arabic: "جَاءَ الْأَمِيرُ وَالْجَيْشَ"
+          meaning: "amir datang bersama tentera"
+          type: "keyword"
+        - arabic: "وَاسْتَوَى الْمَاءُ وَالْخَشَبَةَ"
+          meaning: "dan air itu naik sama paras dengan kayu"
           type: "keyword"
     sharh:
       title: "Pengertian maf‘ul ma‘ah"
@@ -80,17 +89,20 @@ proseSections:
   - id: "waw-maiyyah"
     matn:
       id: "maful-maah-02"
-      arabic: "وَيَقَعُ بَعْدَ وَاوٍ بِمَعْنَى مَعَ."
-      translation: "Ia hadir selepas waw yang membawa makna «مَعَ», iaitu “bersama”."
+      arabic: "وَأَمَّا خَبَرُ كَانَ وَأَخَوَاتِهَا، وَاسْمُ إِنَّ وَأَخَوَاتِهَا؛ فَقَدْ تَقَدَّمَ ذِكْرُهُمَا فِي الْمَرْفُوعَاتِ."
+      translation: "Adapun khabar كان وأخواتها dan isim إن وأخواتها, kedua-duanya telah diterangkan sebelumnya dalam perbahasan isim-isim marfu‘."
       words:
-        - arabic: "وَيَقَعُ"
-          meaning: "dan ia hadir"
+        - arabic: "وَأَمَّا خَبَرُ كَانَ وَأَخَوَاتِهَا"
+          meaning: "adapun khabar كان وأخواتها"
           type: "keyword"
-        - arabic: "بَعْدَ وَاوٍ"
-          meaning: "selepas huruf waw"
+        - arabic: "وَاسْمُ إِنَّ وَأَخَوَاتِهَا"
+          meaning: "dan isim إن وأخواتها"
           type: "keyword"
-        - arabic: "بِمَعْنَى مَعَ"
-          meaning: "yang membawa makna “bersama”"
+        - arabic: "فَقَدْ تَقَدَّمَ ذِكْرُهُمَا"
+          meaning: "maka kedua-duanya telah diterangkan"
+          type: "keyword"
+        - arabic: "فِي الْمَرْفُوعَاتِ"
+          meaning: "dalam perbahasan isim-isim marfu‘"
           type: "keyword"
     sharh:
       title: "Waw ma‘iyyah"
@@ -128,17 +140,17 @@ proseSections:
   - id: "amir-army-example"
     matn:
       id: "maful-maah-03"
-      arabic: "نَحْوُ: جَاءَ الْأَمِيرُ وَالْجَيْشَ."
-      translation: "Seperti: “Pemerintah datang bersama tentera.”"
+      arabic: "وَكَذَلِكَ التَّوَابِعُ؛ فَقَدْ تَقَدَّمَتْ هُنَاكَ."
+      translation: "Demikian juga perbahasan tentang tawabi‘; ia telah diterangkan pada bahagian tersebut."
       words:
-        - arabic: "جَاءَ"
-          meaning: "telah datang"
+        - arabic: "وَكَذَلِكَ التَّوَابِعُ"
+          meaning: "dan demikian juga tawabi‘"
           type: "keyword"
-        - arabic: "الْأَمِيرُ"
-          meaning: "pemerintah; fa‘il yang marfu‘"
+        - arabic: "فَقَدْ تَقَدَّمَتْ"
+          meaning: "telah diterangkan sebelumnya"
           type: "keyword"
-        - arabic: "وَالْجَيْشَ"
-          meaning: "bersama tentera; maf‘ul ma‘ah yang mansub selepas waw ma‘iyyah"
+        - arabic: "هُنَاكَ"
+          meaning: "pada bahagian tersebut"
           type: "keyword"
     sharh:
       title: "I‘rab contoh pertama"
@@ -168,263 +180,6 @@ proseSections:
         - Amil yang menasabkannya ialah fi‘il «جَاءَ».
         
         Maksud ayat ialah pemerintah datang bersama tentera.
-
-  - id: "water-wood-example"
-    matn:
-      id: "maful-maah-04"
-      arabic: "وَنَحْوُ: اسْتَوَى الْمَاءُ وَالْخَشَبَةَ."
-      translation: "Dan seperti: “Air naik sehingga sejajar dengan kayu pengukur.”"
-      words:
-        - arabic: "وَنَحْوُ"
-          meaning: "dan seperti"
-        - arabic: "اسْتَوَى"
-          meaning: "telah naik atau menjadi sejajar"
-          type: "keyword"
-        - arabic: "الْمَاءُ"
-          meaning: "air; fa‘il yang marfu‘"
-          type: "keyword"
-        - arabic: "وَالْخَشَبَةَ"
-          meaning: "sehingga sejajar dengan kayu; maf‘ul ma‘ah yang mansub"
-          type: "keyword"
-    sharh:
-      title: "I‘rab contoh kedua"
-      arabic: |
-        إِعْرَابُ قَوْلِكَ:
-        
-        «اسْتَوَى الْمَاءُ وَالْخَشَبَةَ»:
-        
-        «اسْتَوَى» فِعْلٌ مَاضٍ.
-        
-        وَ«الْمَاءُ» فَاعِلٌ مَرْفُوعٌ بِالضَّمَّةِ الظَّاهِرَةِ.
-        
-        وَالْوَاوُ وَاوُ الْمَعِيَّةِ.
-        
-        وَ«الْخَشَبَةَ» مَفْعُولٌ مَعَهُ مَنْصُوبٌ بِالْفَتْحَةِ الظَّاهِرَةِ.
-        
-        وَالْمَعْنَى أَنَّ الْمَاءَ ارْتَفَعَ حَتَّى حَاذَى الْخَشَبَةَ.
-        
-        وَالْخَشَبَةُ آلَةٌ يُعْرَفُ بِهَا مِقْدَارُ ارْتِفَاعِ الْمَاءِ.
-      malay: |
-        I‘rab ayat:
-        
-        «اسْتَوَى الْمَاءُ وَالْخَشَبَةَ»
-        
-        - «اسْتَوَى» ialah fi‘il madi.
-        - «الْمَاءُ» ialah fa‘il yang marfu‘.
-        - Waw ialah waw ma‘iyyah.
-        - «الْخَشَبَةَ» ialah maf‘ul ma‘ah yang mansub.
-        
-        Maksudnya ialah air naik sehingga sejajar dengan kayu yang digunakan untuk mengukur paras air.
-
-  - id: "maiyyah-versus-ataf"
-    matn:
-      id: "maful-maah-05"
-      arabic: "فَالْوَاوُ فِي هَذَا الْبَابِ لِلْمَعِيَّةِ لَا لِمُجَرَّدِ الْعَطْفِ."
-      translation: "Maka waw dalam bab ini menunjukkan makna kebersamaan, bukan semata-mata sebagai huruf ‘ataf."
-      words:
-        - arabic: "فَالْوَاوُ"
-          meaning: "maka huruf waw"
-          type: "keyword"
-        - arabic: "فِي هَذَا الْبَابِ"
-          meaning: "dalam bab ini"
-          type: "keyword"
-        - arabic: "لِلْمَعِيَّةِ"
-          meaning: "membawa makna kebersamaan"
-          type: "keyword"
-        - arabic: "لَا لِمُجَرَّدِ الْعَطْفِ"
-          meaning: "bukan semata-mata untuk menghubungkan dua unsur sebagai ‘ataf"
-          type: "keyword"
-    sharh:
-      title: "Perbezaan waw ma‘iyyah dan waw ‘ataf"
-      arabic: |
-        الْوَاوُ قَدْ تَكُونُ لِلْعَطْفِ، وَقَدْ تَكُونُ لِلْمَعِيَّةِ.
-        
-        فَإِذَا كَانَ مَا بَعْدَ الْوَاوِ مُشَارِكًا لِمَا قَبْلَهَا فِي الْحُكْمِ، كَانَتِ الْوَاوُ وَاوَ عَطْفٍ.
-        
-        نَحْوُ:
-        
-        «جَاءَ زَيْدٌ وَعَمْرٌو».
-        
-        فَكُلٌّ مِنْ زَيْدٍ وَعَمْرٍو وَقَعَ مِنْهُ الْمَجِيءُ.
-        
-        وَإِذَا كَانَ الْمُرَادُ الْمُصَاحَبَةَ، كَانَتِ الْوَاوُ وَاوَ الْمَعِيَّةِ.
-        
-        نَحْوُ:
-        
-        «سَارَ زَيْدٌ وَالنَّهْرَ».
-        
-        فَالنَّهْرُ لَا يَسِيرُ، وَلَكِنَّ زَيْدًا سَارَ بِمُحَاذَاتِهِ.
-      malay: |
-        Waw boleh menjadi waw ‘ataf dan boleh menjadi waw ma‘iyyah.
-        
-        Dalam:
-        
-        «جَاءَ زَيْدٌ وَعَمْرٌو»
-        
-        kedua-dua Zaid dan ‘Amr melakukan perbuatan datang. Maka waw itu ialah waw ‘ataf, dan «عَمْرٌو» marfu‘ sebagai ma‘tuf.
-        
-        Dalam:
-        
-        «سَارَ زَيْدٌ وَالنَّهْرَ»
-        
-        sungai tidak melakukan perbuatan berjalan. Maksudnya ialah Zaid berjalan bersama atau menyusuri sungai. Maka waw itu ialah waw ma‘iyyah dan «النَّهْرَ» ialah maf‘ul ma‘ah yang mansub.
-
-  - id: "maful-maah-amil"
-    matn:
-      id: "maful-maah-06"
-      arabic: "وَنَاصِبُ الْمَفْعُولِ مَعَهُ الْفِعْلُ أَوْ مَا يَشْبَهُهُ قَبْلَهُ."
-      translation: "Amil yang menasabkan maf‘ul ma‘ah ialah fi‘il atau lafaz yang menyerupai fi‘il yang terletak sebelumnya."
-      words:
-        - arabic: "وَنَاصِبُ"
-          meaning: "dan amil yang menasabkan"
-          type: "keyword"
-        - arabic: "الْمَفْعُولِ مَعَهُ"
-          meaning: "maf‘ul ma‘ah"
-          type: "keyword"
-        - arabic: "الْفِعْلُ"
-          meaning: "ialah fi‘il"
-          type: "keyword"
-        - arabic: "أَوْ مَا يَشْبَهُهُ"
-          meaning: "atau lafaz yang menyerupai fi‘il"
-          type: "keyword"
-        - arabic: "قَبْلَهُ"
-          meaning: "yang terletak sebelumnya"
-          type: "keyword"
-    sharh:
-      title: "Amil maf‘ul ma‘ah"
-      arabic: |
-        الْعَامِلُ فِي الْمَفْعُولِ مَعَهُ هُوَ الْفِعْلُ الَّذِي قَبْلَ وَاوِ الْمَعِيَّةِ، أَوْ مَا فِي مَعْنَى الْفِعْلِ.
-        
-        فَفِي قَوْلِكَ:
-        
-        «جَاءَ الْأَمِيرُ وَالْجَيْشَ»
-        
-        نَصَبَ الْفِعْلُ «جَاءَ» لَفْظَ «الْجَيْشَ».
-        
-        وَفِي قَوْلِكَ:
-        
-        «اسْتَوَى الْمَاءُ وَالْخَشَبَةَ»
-        
-        نَصَبَ الْفِعْلُ «اسْتَوَى» لَفْظَ «الْخَشَبَةَ».
-      malay: |
-        Amil yang menasabkan maf‘ul ma‘ah ialah fi‘il yang hadir sebelum waw ma‘iyyah, atau lafaz yang membawa makna fi‘il.
-        
-        Dalam:
-        
-        «جَاءَ الْأَمِيرُ وَالْجَيْشَ»
-        
-        fi‘il «جَاءَ» menasabkan «الْجَيْشَ».
-        
-        Dalam:
-        
-        «اسْتَوَى الْمَاءُ وَالْخَشَبَةَ»
-        
-        fi‘il «اسْتَوَى» menasabkan «الْخَشَبَةَ».
-
-  - id: "related-mansubat"
-    matn:
-      id: "maful-maah-07"
-      arabic: "وَأَمَّا خَبَرُ كَانَ وَأَخَوَاتِهَا، وَاسْمُ إِنَّ وَأَخَوَاتِهَا، وَالتَّوَابِعُ، فَقَدْ تَقَدَّمَ ذِكْرُهَا."
-      translation: "Adapun khabar كان وأخواتها, isim إن وأخواتها dan tawabi‘, semuanya telah diterangkan sebelum ini."
-      words:
-        - arabic: "وَأَمَّا"
-          meaning: "adapun"
-          type: "keyword"
-        - arabic: "خَبَرُ كَانَ وَأَخَوَاتِهَا"
-          meaning: "khabar كان وأخواتها"
-          type: "keyword"
-        - arabic: "وَاسْمُ إِنَّ وَأَخَوَاتِهَا"
-          meaning: "dan isim إن وأخواتها"
-          type: "keyword"
-        - arabic: "وَالتَّوَابِعُ"
-          meaning: "dan tawabi‘ seperti na‘t, ‘ataf, taukid dan badal"
-          type: "keyword"
-        - arabic: "فَقَدْ تَقَدَّمَ ذِكْرُهَا"
-          meaning: "maka semuanya telah diterangkan sebelum ini"
-          type: "keyword"
-    sharh:
-      title: "Mansubat yang telah dibincangkan"
-      arabic: |
-        ذَكَرَ الْمُؤَلِّفُ أَنَّ بَعْضَ الْمَنْصُوبَاتِ قَدْ سَبَقَ شَرْحُهَا فِي أَبْوَابٍ مُتَقَدِّمَةٍ.
-        
-        فَمِنْهَا خَبَرُ «كَانَ وَأَخَوَاتِهَا»، نَحْوُ:
-        
-        «كَانَ زَيْدٌ قَائِمًا».
-        
-        وَمِنْهَا اسْمُ «إِنَّ وَأَخَوَاتِهَا»، نَحْوُ:
-        
-        «إِنَّ زَيْدًا قَائِمٌ».
-        
-        وَمِنْهَا التَّوَابِعُ إِذَا تَبِعَتِ اسْمًا مَنْصُوبًا، كَالنَّعْتِ، وَالْعَطْفِ، وَالتَّوْكِيدِ، وَالْبَدَلِ.
-      malay: |
-        Beberapa jenis isim mansub telah diterangkan dalam bab terdahulu, antaranya:
-        
-        - khabar كان وأخواتها, seperti «كَانَ زَيْدٌ قَائِمًا»;
-        - isim إن وأخواتها, seperti «إِنَّ زَيْدًا قَائِمٌ»;
-        - tawabi‘ yang mengikuti isim mansub, iaitu na‘t, ‘ataf, taukid dan badal.
-        
-        Oleh sebab hukum-hukum tersebut telah dibincangkan, ia tidak diulang secara panjang dalam bab ini.
-
-  - id: "maful-maah-summary"
-    matn:
-      id: "maful-maah-08"
-      arabic: "فَالْمَفْعُولُ مَعَهُ اسْمٌ مَنْصُوبٌ يَقَعُ بَعْدَ وَاوِ الْمَعِيَّةِ لِلدَّلَالَةِ عَلَى الْمُصَاحَبَةِ."
-      translation: "Maka maf‘ul ma‘ah ialah isim mansub yang hadir selepas waw ma‘iyyah untuk menunjukkan makna kebersamaan."
-      words:
-        - arabic: "فَالْمَفْعُولُ مَعَهُ"
-          meaning: "maka maf‘ul ma‘ah"
-          type: "keyword"
-        - arabic: "اسْمٌ مَنْصُوبٌ"
-          meaning: "ialah isim yang mansub"
-          type: "keyword"
-        - arabic: "يَقَعُ"
-          meaning: "yang hadir"
-          type: "keyword"
-        - arabic: "بَعْدَ وَاوِ الْمَعِيَّةِ"
-          meaning: "selepas waw ma‘iyyah"
-          type: "keyword"
-        - arabic: "لِلدَّلَالَةِ"
-          meaning: "untuk menunjukkan"
-          type: "keyword"
-        - arabic: "عَلَى الْمُصَاحَبَةِ"
-          meaning: "makna kebersamaan atau penyertaan"
-          type: "keyword"
-    sharh:
-      title: "Ringkasan"
-      arabic: |
-        خُلَاصَةُ الْبَابِ:
-        
-        أَوَّلًا: الْمَفْعُولُ مَعَهُ اسْمٌ مَنْصُوبٌ.
-        
-        ثَانِيًا: يُذْكَرُ لِبَيَانِ مَنْ وَقَعَ الْفِعْلُ بِمُصَاحَبَتِهِ.
-        
-        ثَالِثًا: يَقَعُ بَعْدَ وَاوٍ بِمَعْنَى «مَعَ».
-        
-        رَابِعًا: تُسَمَّى هَذِهِ الْوَاوُ وَاوَ الْمَعِيَّةِ.
-        
-        خَامِسًا: نَاصِبُهُ الْفِعْلُ أَوْ مَا فِي مَعْنَاهُ قَبْلَهُ.
-        
-        سَادِسًا: مِنْ أَمْثِلَتِهِ:
-        
-        «جَاءَ الْأَمِيرُ وَالْجَيْشَ».
-        
-        وَ«اسْتَوَى الْمَاءُ وَالْخَشَبَةَ».
-      malay: |
-        Inti utama bab ini:
-        
-        - Maf‘ul ma‘ah ialah isim mansub.
-        - Ia menerangkan sesuatu yang menyertai berlakunya perbuatan.
-        - Ia hadir selepas waw yang bermakna «مَعَ».
-        - Waw tersebut dinamakan waw ma‘iyyah.
-        - Amil yang menasabkannya ialah fi‘il atau lafaz yang membawa makna fi‘il sebelumnya.
-        - Waw ma‘iyyah menunjukkan kebersamaan, manakala waw ‘ataf menunjukkan perkongsian dalam hukum.
-        
-        Contoh utama:
-        
-        - «جَاءَ الْأَمِيرُ وَالْجَيْشَ»
-        - «اسْتَوَى الْمَاءُ وَالْخَشَبَةَ»
-        - «سَارَ زَيْدٌ وَالنَّهْرَ»
-
 ---
 
 ## Sumber projek
