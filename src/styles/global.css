@@ -1556,20 +1556,20 @@ html:not([lang="ar"]) [data-i18n].arabic {
   bottom: 0;
   box-shadow: 0 -0.75rem 2rem rgb(15 23 42 / 0.08);
   display: grid;
-  gap: 0.5rem;
+  gap: 0.8rem;
   left: 50%;
-  max-width: 42rem;
-  padding: 0.6rem;
+  max-width: 112rem;
+  padding: 1rem;
   position: fixed;
   transform: translateX(-50%);
-  width: min(calc(100% - 1rem), 42rem);
+  width: min(calc(100% - 4rem), 112rem);
   z-index: 60;
 }
 
 .ajrumiyyah-audio-main {
   align-items: center;
   display: grid;
-  gap: 0.6rem;
+  gap: 1rem;
   grid-template-columns: auto minmax(0, 1fr);
 }
 
@@ -1579,11 +1579,11 @@ html:not([lang="ar"]) [data-i18n].arabic {
   border-radius: 999px;
   color: white;
   display: inline-flex;
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 900;
-  height: 2.35rem;
+  height: 3.15rem;
   justify-content: center;
-  width: 2.35rem;
+  width: 3.15rem;
 }
 
 .ajrumiyyah-audio-meta {
@@ -1592,7 +1592,7 @@ html:not([lang="ar"]) [data-i18n].arabic {
 
 .ajrumiyyah-audio-label {
   color: theme("colors.ink");
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 850;
   line-height: 1.35;
   margin: 0 0 0.25rem;
@@ -1605,10 +1605,10 @@ html:not([lang="ar"]) [data-i18n].arabic {
   align-items: center;
   color: theme("colors.muted");
   display: grid;
-  font-size: 0.72rem;
+  font-size: 0.9rem;
   font-weight: 750;
-  gap: 0.45rem;
-  grid-template-columns: 2.6rem minmax(0, 1fr) 2.6rem;
+  gap: 0.75rem;
+  grid-template-columns: 3.2rem minmax(0, 1fr) 3.2rem;
 }
 
 .ajrumiyyah-audio-progress-row input {
@@ -1620,7 +1620,7 @@ html:not([lang="ar"]) [data-i18n].arabic {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem;
+  gap: 0.75rem;
   justify-content: space-between;
 }
 
@@ -1630,10 +1630,10 @@ html:not([lang="ar"]) [data-i18n].arabic {
   border: 1px solid theme("colors.line");
   border-radius: 999px;
   color: theme("colors.accent");
-  font-size: 0.76rem;
+  font-size: 0.9rem;
   font-weight: 800;
-  min-height: 1.85rem;
-  padding: 0.3rem 0.55rem;
+  min-height: 2.45rem;
+  padding: 0.45rem 0.9rem;
 }
 
 .ajrumiyyah-repeat-control {
@@ -1643,19 +1643,19 @@ html:not([lang="ar"]) [data-i18n].arabic {
   border-radius: 999px;
   color: theme("colors.accent");
   display: inline-flex;
-  font-size: 0.78rem;
+  font-size: 0.9rem;
   font-weight: 900;
-  gap: 0.35rem;
-  min-height: 1.85rem;
-  padding: 0.3rem 0.6rem;
+  gap: 0.45rem;
+  min-height: 2.45rem;
+  padding: 0.45rem 0.9rem;
 }
 
 .ajrumiyyah-repeat-control > span {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .ajrumiyyah-repeat-control > span:last-child {
-  font-size: 0.78rem;
+  font-size: 0.9rem;
   min-width: 1.15rem;
   text-align: center;
 }
@@ -1671,13 +1671,13 @@ html:not([lang="ar"]) [data-i18n].arabic {
   align-items: center;
   color: theme("colors.muted");
   display: inline-flex;
-  font-size: 0.76rem;
+  font-size: 0.9rem;
   font-weight: 800;
   gap: 0.35rem;
 }
 
 body:has(.ajrumiyyah-audio-player) {
-  padding-bottom: 7.5rem;
+  padding-bottom: 10rem;
 }
 
 @media (max-width: 640px) {
@@ -1697,6 +1697,7 @@ body:has(.ajrumiyyah-audio-player) {
     border-radius: 0.9rem 0.9rem 0 0;
     gap: 0.55rem;
     padding: 0.65rem;
+    width: calc(100% - 1rem);
   }
 
   .ajrumiyyah-audio-controls {
