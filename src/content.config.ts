@@ -40,6 +40,7 @@ const proseSectionSchema = z.object({
     title: z.string().optional(),
     arabic: z.string(),
     malay: z.string(),
+    english: z.string().optional(),
   }),
 });
 

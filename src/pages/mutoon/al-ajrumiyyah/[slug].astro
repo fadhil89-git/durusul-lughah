@@ -236,6 +236,10 @@ function renderArabic(text: string, words: ProseWord[] = []) {
                     <div class="ajrumiyyah-sharh-head">
                       <div class="ajrumiyyah-lang-tabs" role="tablist" aria-label="Bahasa syarah">
                         <button type="button" class="is-active" data-sharh-lang="ar">🇸🇦 العربية</button>
+                        <button type="button" data-sharh-lang="ms">🇲🇾 Melayu</button>
+                        {section.sharh.english && (
+                          <button type="button" data-sharh-lang="en">English</button>
+                        )}
                       </div>
                       <div class="ajrumiyyah-sharh-size" aria-label="Kawalan saiz syarah">
                         <button type="button" data-sharh-size="smaller" aria-label="Kecilkan teks syarah">−</button>
@@ -248,6 +252,18 @@ function renderArabic(text: string, words: ProseWord[] = []) {
                         <p set:html={renderInlineMarkdown(paragraph)} />
                       ))}
                     </div>
+                    <div class="ajrumiyyah-sharh-panel hidden" data-sharh-panel="ms">
+                      {section.sharh.malay.split("\n\n").map((paragraph) => (
+                        <p set:html={renderInlineMarkdown(paragraph)} />
+                      ))}
+                    </div>
+                    {section.sharh.english && (
+                      <div class="ajrumiyyah-sharh-panel hidden" data-sharh-panel="en">
+                        {section.sharh.english.split("\n\n").map((paragraph) => (
+                          <p set:html={renderInlineMarkdown(paragraph)} />
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>

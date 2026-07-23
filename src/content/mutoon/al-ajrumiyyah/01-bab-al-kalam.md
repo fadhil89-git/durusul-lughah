@@ -48,35 +48,45 @@ proseSections:
           meaning: "menurut ketetapan bahasa"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        يَعْنِي أَنَّ الْكَلَامَ عِنْدَ النَّحْوِيِّينَ هُوَ اللَّفْظُ إِلَى آخِرِهِ.
+        الْكَلَامُ عِنْدَ النُّحَاةِ لَا يَتَحَقَّقُ إِلَّا بِأَرْبَعَةِ أُمُورٍ:
+        
+        **اللَّفْظُ:** صَوْتٌ مُشْتَمِلٌ عَلَى بَعْضِ الْحُرُوفِ الْهِجَائِيَّةِ، فَلَا تَدْخُلُ فِيهِ الْإِشَارَةُ وَالْكِتَابَةُ.
+        
+        **الْمُرَكَّبُ:** مَا تَأَلَّفَ مِنْ كَلِمَتَيْنِ فَأَكْثَرَ، نَحْوُ: «قَامَ زَيْدٌ». فَالْكَلِمَةُ الْوَاحِدَةُ لَا تُسَمَّى كَلَامًا.
+        
+        **الْمُفِيدُ:** مَا أَفَادَ مَعْنًى تَامًّا يَحْسُنُ السُّكُوتُ عَلَيْهِ، فَلَا يَنْتَظِرُ السَّامِعُ تَتِمَّةً لَهُ. فَنَحْوُ «غُلَامُ زَيْدٍ» وَ«إِنْ قَامَ زَيْدٌ» لَا يُسَمَّى كَلَامًا؛ لِعَدَمِ تَمَامِ الْمَعْنَى.
+        
+        **بِالْوَضْعِ:** أَيْ بِالْقَصْدِ إِلَى التَّكَلُّمِ، وَقِيلَ: عَلَى وَفْقِ الْوَضْعِ الْعَرَبِيِّ.
+        
+        فَنَحْوُ «قَامَ زَيْدٌ» كَلَامٌ؛ لِأَنَّهُ لَفْظٌ مُرَكَّبٌ مُفِيدٌ بِالْوَضْعِ.
 
-        فَاللَّفْظُ: هُوَ الصَّوْتُ الْمُشْتَمِلُ عَلَى بَعْضِ الْحُرُوفِ الْهِجَائِيَّةِ، كَزَيْدٍ؛ فَإِنَّهُ صَوْتٌ اشْتَمَلَ عَلَى الزَّايِ وَالْيَاءِ وَالدَّالِ. فَإِنْ لَمْ يَشْتَمِلْ عَلَى بَعْضِ الْحُرُوفِ، كَصَوْتِ الطَّبْلِ، فَلَا يُسَمَّى لَفْظًا. فَخَرَجَ بِاللَّفْظِ مَا كَانَ مُفِيدًا وَلَمْ يَكُنْ لَفْظًا، كَالْإِشَارَةِ وَالْكِتَابَةِ وَالْعَقْدِ وَالنُّصُبِ، فَلَا تُسَمَّى كَلَامًا عِنْدَ النُّحَاةِ.
-
-        وَالْمُرَكَّبُ: مَا تَرَكَّبَ مِنْ كَلِمَتَيْنِ فَأَكْثَرَ، كَـ«قَامَ زَيْدٌ» وَ«زَيْدٌ قَائِمٌ». فَالْمِثَالُ الْأَوَّلُ فِعْلٌ وَفَاعِلٌ، وَكُلُّ فَاعِلٍ مَرْفُوعٌ. وَالْمِثَالُ الثَّانِي مُبْتَدَأٌ وَخَبَرٌ، وَكُلُّ مُبْتَدَأٍ مَرْفُوعٌ بِالِابْتِدَاءِ، وَكُلُّ خَبَرٍ مَرْفُوعٌ بِالْمُبْتَدَإِ. وَخَرَجَ بِالْمُرَكَّبِ الْمُفْرَدُ، كَـ«زَيْدٍ»، فَلَا يُقَالُ لَهُ كَلَامٌ عِنْدَ النُّحَاةِ.
-
-        وَالْمُفِيدُ: مَا أَفَادَ فَائِدَةً يَحْسُنُ السُّكُوتُ عَلَيْهَا مِنَ الْمُتَكَلِّمِ وَالسَّامِعِ، كَـ«قَامَ زَيْدٌ» وَ«زَيْدٌ قَائِمٌ». فَإِنَّ كُلًّا مِنْهُمَا أَفَادَ فَائِدَةً يَحْسُنُ السُّكُوتُ عَلَيْهَا، وَهِيَ الْإِخْبَارُ بِقِيَامِ زَيْدٍ.
-
-        وَخَرَجَ بِالْمُفِيدِ الْمُرَكَّبُ غَيْرُ الْمُفِيدِ، نَحْوُ «غُلَامُ زَيْدٍ» مِنْ غَيْرِ إِسْنَادِ شَيْءٍ إِلَيْهِ، وَنَحْوُ «إِنْ قَامَ زَيْدٌ»، فَإِنَّ تَمَامَ الْفَائِدَةِ فِيهِ يَتَوَقَّفُ عَلَى ذِكْرِ جَوَابِ الشَّرْطِ، فَلَا يُسَمَّى كُلٌّ مِنَ الْمِثَالَيْنِ كَلَامًا عِنْدَ النُّحَاةِ.
-
-        وَقَوْلُهُ «بِالْوَضْعِ» فَسَّرَهُ بَعْضُهُمْ بِالْقَصْدِ، فَخَرَجَ غَيْرُ الْمَقْصُودِ كَكَلَامِ النَّائِمِ وَالسَّاهِي. وَفَسَّرَهُ بَعْضُهُمْ بِالْوَضْعِ الْعَرَبِيِّ، فَخَرَجَ كَلَامُ غَيْرِ الْعَرَبِ.
-
-        وَمِثَالُ مَا اجْتَمَعَتْ فِيهِ الْقُيُودُ الْأَرْبَعَةُ: «قَامَ زَيْدٌ» وَ«زَيْدٌ قَائِمٌ»؛ فَكُلٌّ مِنَ الْمِثَالَيْنِ لَفْظٌ مُرَكَّبٌ مُفِيدٌ بِالْوَضْعِ، فَهُوَ كَلَامٌ.
       malay: |
-        Maksudnya, kalam menurut ahli nahu ialah lafaz yang memenuhi empat syarat.
+        Kalam menurut ahli nahu hanya terhasil apabila mempunyai empat perkara:
+        
+        **Lafaz:** Bunyi yang mengandungi sebahagian huruf hijaiyyah. Oleh itu, isyarat dan tulisan tidak termasuk dalam lafaz menurut istilah ini.
+        
+        **Murakkab:** Susunan yang terdiri daripada dua kalimah atau lebih, seperti «قَامَ زَيْدٌ». Satu kalimah sahaja tidak dinamakan kalam.
+        
+        **Mufid:** Susunan yang memberikan makna sempurna sehingga pendengar tidak menunggu sambungannya. Oleh itu, «غُلَامُ زَيْدٍ» dan «إِنْ قَامَ زَيْدٌ» tidak dinamakan kalam kerana maknanya belum lengkap.
+        
+        **Bil-waḍ‘:** Diucapkan dengan sengaja. Sebahagian ulama pula menafsirkannya sebagai ucapan yang mengikuti ketetapan bahasa Arab.
+        
+        Oleh itu, «قَامَ زَيْدٌ» ialah kalam kerana ia merupakan lafaz yang tersusun, memberikan makna sempurna dan digunakan menurut ketetapan bahasa.
 
-        **Lafaz** ialah bunyi yang mengandungi sebahagian huruf hijaiyyah, seperti perkataan «زَيْدٌ». Bunyi yang tidak mengandungi huruf hijaiyyah, seperti bunyi gendang, tidak dinamakan lafaz. Isyarat dan tulisan pula tidak dinamakan kalam menurut istilah ahli nahu walaupun kedua-duanya boleh menyampaikan makna.
-
-        **Murakkab** ialah susunan dua kalimah atau lebih, seperti «قَامَ زَيْدٌ» dan «زَيْدٌ قَائِمٌ». Contoh pertama terdiri daripada fi‘il dan fā‘il. Contoh kedua pula terdiri daripada mubtada’ dan khabar. Satu kalimah sahaja, seperti «زَيْدٌ», belum dinamakan kalam.
-
-        **Mufid** ialah susunan yang memberikan makna sempurna sehingga penutur dan pendengar boleh berhenti padanya tanpa menunggu sambungan. Apabila seseorang mendengar «قَامَ زَيْدٌ», dia telah memahami bahawa Zaid telah berdiri.
-
-        Susunan seperti «غُلَامُ زَيْدٍ» belum memberikan makna yang sempurna kerana belum dinyatakan sesuatu tentang hamba atau anak lelaki Zaid itu. Begitu juga «إِنْ قَامَ زَيْدٌ» masih memerlukan jawapan bagi syarat tersebut.
-
-        **Bil-waḍ‘** ditafsirkan oleh sebahagian ulama sebagai ucapan yang disengajakan. Berdasarkan tafsiran ini, ucapan orang tidur atau orang yang terlupa tidak termasuk dalam definisi kalam. Sebahagian ulama lain menafsirkannya sebagai ucapan yang mengikuti ketetapan bahasa Arab.
-
-        Oleh itu, contoh seperti «قَامَ زَيْدٌ» dan «زَيْدٌ قَائِمٌ» dinamakan kalam kerana kedua-duanya ialah lafaz, tersusun, memberikan makna sempurna dan digunakan menurut ketetapan bahasa.
+      english: |
+        Speech according to Arabic grammarians is only established when four conditions are present:
+        
+        **Utterance:** A sound containing some letters of the alphabet. Gestures and writing are therefore not included in this technical definition.
+        
+        **Composite:** It consists of two or more words, such as «قَامَ زَيْدٌ». A single word is not considered complete speech.
+        
+        **Meaningful:** It conveys a complete meaning, so the listener does not wait for further words. Expressions such as «غُلَامُ زَيْدٍ» and «إِنْ قَامَ زَيْدٌ» are not complete speech because their meanings remain incomplete.
+        
+        **According to convention:** It is intentionally spoken. Some scholars explain it as speech formed according to Arabic linguistic convention.
+        
+        Thus, «قَامَ زَيْدٌ» is considered speech because it is an utterance that is composite, meaningful and formed according to convention.
 
   - id: "parts-of-speech"
     matn:
@@ -103,27 +113,39 @@ proseSections:
           meaning: "yang datang untuk membawa sesuatu makna"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        يَعْنِي أَنَّ أَجْزَاءَ الْكَلَامِ الَّتِي يَتَأَلَّفُ مِنْهَا ثَلَاثَةُ أَقْسَامٍ.
+        أَجْزَاءُ الْكَلَامِ ثَلَاثَةٌ:
+        
+        **الِاسْمُ:** كَلِمَةٌ تَدُلُّ عَلَى مَعْنًى فِي نَفْسِهَا، وَلَا تَقْتَرِنُ بِزَمَنٍ، نَحْوُ: «زَيْدٌ» وَ«أَنَا» وَ«هَذَا».
+        
+        **الْفِعْلُ:** كَلِمَةٌ تَدُلُّ عَلَى مَعْنًى فِي نَفْسِهَا مُقْتَرِنٍ بِزَمَنٍ. فَالْمَاضِي نَحْوُ «قَامَ»، وَالْمُضَارِعُ نَحْوُ «يَقُومُ»، وَالْأَمْرُ نَحْوُ «قُمْ».
+        
+        **الْحَرْفُ:** كَلِمَةٌ تَدُلُّ عَلَى مَعْنًى فِي غَيْرِهَا، نَحْوُ: «إِلَى» وَ«هَلْ» وَ«لَمْ».
+        
+        وَالْمُرَادُ بِالْحَرْفِ هُنَا حَرْفُ الْمَعْنَى، لَا الْحَرْفُ الَّذِي يَكُونُ جُزْءًا مِنْ بِنْيَةِ الْكَلِمَةِ.
 
-        الْأَوَّلُ: الِاسْمُ، وَهُوَ كَلِمَةٌ دَلَّتْ عَلَى مَعْنًى فِي نَفْسِهَا، وَلَمْ تَقْتَرِنْ بِزَمَنٍ وَضْعًا، كَـ«زَيْدٍ» وَ«أَنَا» وَ«هَذَا».
-
-        الثَّانِي: الْفِعْلُ، وَهُوَ كَلِمَةٌ دَلَّتْ عَلَى مَعْنًى فِي نَفْسِهَا، وَاقْتَرَنَتْ بِزَمَنٍ وَضْعًا. فَإِنْ دَلَّتْ تِلْكَ الْكَلِمَةُ عَلَى زَمَنٍ مَاضٍ فَهِيَ الْفِعْلُ الْمَاضِي، نَحْوُ «قَامَ». وَإِنْ دَلَّتْ عَلَى زَمَنٍ يَحْتَمِلُ الْحَالَ وَالِاسْتِقْبَالَ فَهِيَ الْفِعْلُ الْمُضَارِعُ، نَحْوُ «يَقُومُ». وَإِنْ دَلَّتْ عَلَى طَلَبِ شَيْءٍ فِي الْمُسْتَقْبَلِ فَهِيَ فِعْلُ الْأَمْرِ، نَحْوُ «قُمْ».
-
-        الثَّالِثُ: الْحَرْفُ، وَهُوَ كَلِمَةٌ دَلَّتْ عَلَى مَعْنًى فِي غَيْرِهَا، نَحْوُ «إِلَى» وَ«هَلْ» وَ«لَمْ».
-
-        وَقَوْلُهُ «جَاءَ لِمَعْنًى» يَعْنِي أَنَّ الْحَرْفَ لَا يَكُونُ لَهُ دَخْلٌ فِي تَرْكِيبِ الْكَلَامِ إِلَّا إِذَا كَانَ لَهُ مَعْنًى. فَإِنْ لَمْ يَكُنْ لَهُ مَعْنًى لَمْ يَدْخُلْ فِي تَرْكِيبِ الْكَلَامِ، كَحُرُوفِ الْمَبَانِي.
       malay: |
-        Kalimah Arab terbahagi kepada tiga bahagian.
+        Kalimah yang membentuk sesuatu kalam terbahagi kepada tiga:
+        
+        **Isim:** Kalimah yang menunjukkan makna pada dirinya sendiri dan tidak terikat dengan masa, seperti «زَيْدٌ», «أَنَا» dan «هَذَا».
+        
+        **Fi‘il:** Kalimah yang menunjukkan makna pada dirinya sendiri serta terikat dengan masa. Fi‘il māḍī seperti «قَامَ», fi‘il muḍāri‘ seperti «يَقُومُ», dan fi‘il amr seperti «قُمْ».
+        
+        **Harf:** Kalimah yang maknanya menjadi jelas apabila digunakan bersama kalimah lain, seperti «إِلَى», «هَلْ» dan «لَمْ».
+        
+        Harf yang dimaksudkan di sini ialah harf yang membawa makna, bukan huruf yang menjadi sebahagian daripada binaan sesuatu kalimah.
 
-        **Isim** ialah kalimah yang menunjukkan suatu makna pada dirinya sendiri tanpa terikat dengan masa, seperti «زَيْدٌ», «أَنَا» dan «هَذَا».
-
-        **Fi‘il** ialah kalimah yang menunjukkan suatu makna pada dirinya sendiri serta terikat dengan masa. Jika ia menunjukkan masa lalu, ia dinamakan fi‘il māḍī, seperti «قَامَ». Jika ia menunjukkan masa sekarang atau akan datang, ia dinamakan fi‘il muḍāri‘, seperti «يَقُومُ». Jika ia menunjukkan tuntutan supaya sesuatu dilakukan pada masa akan datang, ia dinamakan fi‘il amr, seperti «قُمْ».
-
-        **Huruf** ialah kalimah yang maknanya hanya jelas apabila digunakan bersama kalimah lain, seperti «إِلَى», «هَلْ» dan «لَمْ».
-
-        Frasa «جَاءَ لِمَعْنًى» menjelaskan bahawa yang dimaksudkan ialah huruf makna. Contohnya, «هَلْ» membawa makna pertanyaan dan «لَمْ» membawa makna penafian. Huruf-huruf yang menjadi binaan ejaan sesuatu perkataan tidak termasuk dalam pembahagian ini.
+      english: |
+        The words from which speech is formed are divided into three categories:
+        
+        **Noun:** A word that conveys a meaning in itself without being connected to tense, such as «زَيْدٌ», «أَنَا» and «هَذَا».
+        
+        **Verb:** A word that conveys a meaning in itself together with tense. A past verb is exemplified by «قَامَ», a present verb by «يَقُومُ», and an imperative by «قُمْ».
+        
+        **Particle:** A word whose meaning becomes clear through its connection with another word, such as «إِلَى», «هَلْ» and «لَمْ».
+        
+        The particle intended here is a meaning-bearing particle, not a letter that merely forms part of a word.
 
   - id: "signs-of-ism"
     matn:
@@ -195,25 +217,51 @@ proseSections:
           meaning: "dan ta"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        يَعْنِي أَنَّ الِاسْمَ يَتَمَيَّزُ عَنِ الْفِعْلِ وَالْحَرْفِ بِالْخَفْضِ، نَحْوُ «مَرَرْتُ بِزَيْدٍ» وَ«غُلَامُ زَيْدٍ».
+        يُعْرَفُ الِاسْمُ بِقَبُولِ وَاحِدَةٍ مِنَ الْعَلَامَاتِ الْآتِيَةِ:
+        
+        **الْخَفْضُ:** نَحْوُ «مَرَرْتُ بِزَيْدٍ» وَ«غُلَامُ زَيْدٍ».
+        
+        **التَّنْوِينُ:** نَحْوُ «زَيْدٌ» وَ«رَجُلٌ». وَالتَّنْوِينُ نُونٌ سَاكِنَةٌ تَلْحَقُ آخِرَ الِاسْمِ لَفْظًا لَا خَطًّا.
+        
+        **دُخُولُ أَلْ:** نَحْوُ «الرَّجُلُ» وَ«الْغُلَامُ».
+        
+        **دُخُولُ حَرْفِ الْخَفْضِ:** وَمِنْ حُرُوفِهِ «مِنْ»، وَ«إِلَى»، وَ«عَنْ»، وَ«عَلَى»، وَ«فِي»، وَ«رُبَّ»، وَالْبَاءُ، وَالْكَافُ، وَاللَّامُ.
+        
+        وَحُرُوفُ الْقَسَمِ هِيَ الْوَاوُ وَالْبَاءُ وَالتَّاءُ، نَحْوُ: «وَاللَّهِ»، وَ«بِاللَّهِ»، وَ«تَاللَّهِ».
+        
+        وَلَا يُشْتَرَطُ اجْتِمَاعُ هَذِهِ الْعَلَامَاتِ كُلِّهَا فِي اسْمٍ وَاحِدٍ، بَلْ يَكْفِي قَبُولُهُ إِحْدَاهَا.
 
-        وَيُعْرَفُ بِالتَّنْوِينِ، نَحْوُ «زَيْدٌ» وَ«رَجُلٌ». وَالتَّنْوِينُ نُونٌ سَاكِنَةٌ تَلْحَقُ آخِرَ الِاسْمِ لَفْظًا لَا خَطًّا.
-
-        وَيُعْرَفُ بِدُخُولِ الْأَلِفِ وَاللَّامِ، نَحْوُ «الرَّجُلُ» وَ«الْغُلَامُ». وَيُعْرَفُ بِدُخُولِ حُرُوفِ الْخَفْضِ عَلَيْهِ، نَحْوُ «مَرَرْتُ بِزَيْدٍ».
-
-        وَمِنْ حُرُوفِ الْخَفْضِ: «مِنْ»، وَ«إِلَى»، وَ«عَنْ»، وَ«عَلَى»، وَ«فِي»، وَ«رُبَّ»، وَالْبَاءُ، وَالْكَافُ، وَاللَّامُ. وَحُرُوفُ الْقَسَمِ هِيَ الْوَاوُ وَالْبَاءُ وَالتَّاءُ، نَحْوُ «وَاللَّهِ» وَ«بِاللَّهِ» وَ«تَاللَّهِ».
       malay: |
-        Isim boleh dikenal melalui beberapa tanda.
+        Isim dikenal melalui penerimaannya terhadap salah satu tanda berikut:
+        
+        **Khafad atau jar:** Seperti «مَرَرْتُ بِزَيْدٍ» dan «غُلَامُ زَيْدٍ».
+        
+        **Tanwin:** Seperti «زَيْدٌ» dan «رَجُلٌ». Tanwin ialah bunyi nūn yang sukun pada akhir isim ketika disebut, tetapi tidak ditulis sebagai huruf nūn.
+        
+        **Kemasukan ال:** Seperti «الرَّجُلُ» dan «الْغُلَامُ».
+        
+        **Kemasukan huruf khafad:** Antaranya «مِنْ», «إِلَى», «عَنْ», «عَلَى», «فِي», «رُبَّ», bā’, kāf dan lām.
+        
+        Huruf sumpah pula ialah wāw, bā’ dan tā’, seperti «وَاللَّهِ», «بِاللَّهِ» dan «تَاللَّهِ».
+        
+        Semua tanda ini tidak semestinya berhimpun pada satu isim. Memadai sesuatu kalimah menerima salah satu daripadanya.
 
-        Pertama, isim menerima **khafad atau jar**, seperti «بِزَيْدٍ». Jar boleh berlaku kerana kemasukan huruf jar atau kerana sesuatu isim menjadi muḍāf ilayh.
-
-        Kedua, isim menerima **tanwin**, seperti «زَيْدٌ» dan «رَجُلٌ». Tanwin ialah bunyi nun yang sukun pada akhir isim ketika disebut tetapi tidak ditulis sebagai huruf nun.
-
-        Ketiga, isim boleh dimasuki **الـ**, seperti «الرَّجُلُ» dan «الْغُلَامُ».
-
-        Keempat, isim boleh didahului oleh huruf khafad. Antara huruf khafad yang disebut dalam matan ialah «مِنْ», «إِلَى», «عَنْ», «عَلَى», «فِي», «رُبَّ», bā’, kāf dan lām. Huruf sumpah pula ialah wāw, bā’ dan tā’, seperti «وَاللَّهِ», «بِاللَّهِ» dan «تَاللَّهِ».
+      english: |
+        A noun is recognised by its acceptance of one of the following signs:
+        
+        **The genitive case:** As in «مَرَرْتُ بِزَيْدٍ» and «غُلَامُ زَيْدٍ».
+        
+        **Tanwīn:** As in «زَيْدٌ» and «رَجُلٌ». Tanwīn is a silent n sound attached to the end of a noun in pronunciation but not written as the letter nūn.
+        
+        **The definite article ال:** As in «الرَّجُلُ» and «الْغُلَامُ».
+        
+        **A preposition:** These include «مِنْ», «إِلَى», «عَنْ», «عَلَى», «فِي», «رُبَّ», bā’, kāf and lām.
+        
+        The particles of oath are wāw, bā’ and tā’, as in «وَاللَّهِ», «بِاللَّهِ» and «تَاللَّهِ».
+        
+        These signs do not all need to occur in a single noun. Its acceptance of any one of them is sufficient.
 
   - id: "signs-of-fil"
     matn:
@@ -240,23 +288,33 @@ proseSections:
           meaning: "dan ta ta’nith yang sukun"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        يَعْنِي أَنَّ الْفِعْلَ يَتَمَيَّزُ عَنِ الِاسْمِ وَالْحَرْفِ بِدُخُولِ «قَدْ» عَلَيْهِ.
+        يُعْرَفُ الْفِعْلُ بِقَبُولِ وَاحِدَةٍ مِنَ الْعَلَامَاتِ الْآتِيَةِ:
+        
+        **قَدْ:** تَدْخُلُ عَلَى الْفِعْلِ الْمَاضِي، نَحْوُ «قَدْ قَامَ زَيْدٌ»، وَعَلَى الْفِعْلِ الْمُضَارِعِ، نَحْوُ «قَدْ يَقُومُ زَيْدٌ».
+        
+        **السِّينُ وَسَوْفَ:** تَخْتَصَّانِ بِالْفِعْلِ الْمُضَارِعِ، نَحْوُ «سَيَقُومُ زَيْدٌ» وَ«سَوْفَ يَقُومُ زَيْدٌ».
+        
+        **تَاءُ التَّأْنِيثِ السَّاكِنَةُ:** تَخْتَصُّ بِالْفِعْلِ الْمَاضِي، نَحْوُ «قَامَتْ هِنْدٌ».
 
-        وَتَدْخُلُ «قَدْ» عَلَى الْمَاضِي، نَحْوُ «قَدْ قَامَ زَيْدٌ»، وَعَلَى الْمُضَارِعِ، نَحْوُ «قَدْ يَقُومُ زَيْدٌ».
-
-        وَالسِّينُ وَ«سَوْفَ» يَخْتَصَّانِ بِالْفِعْلِ الْمُضَارِعِ، نَحْوُ «سَيَقُومُ زَيْدٌ» وَ«سَوْفَ يَقُومُ زَيْدٌ».
-
-        وَتَاءُ التَّأْنِيثِ السَّاكِنَةُ تَخْتَصُّ بِالْفِعْلِ الْمَاضِي، نَحْوُ «قَامَتْ هِنْدٌ».
       malay: |
-        Fi‘il boleh dikenal melalui empat tanda yang disebut dalam matan.
+        Fi‘il dikenal melalui penerimaannya terhadap salah satu tanda berikut:
+        
+        **قَدْ:** Boleh masuk pada fi‘il māḍī, seperti «قَدْ قَامَ زَيْدٌ», dan pada fi‘il muḍāri‘, seperti «قَدْ يَقُومُ زَيْدٌ».
+        
+        **Sīn dan سَوْفَ:** Kedua-duanya khusus masuk pada fi‘il muḍāri‘, seperti «سَيَقُومُ زَيْدٌ» dan «سَوْفَ يَقُومُ زَيْدٌ».
+        
+        **Tā’ ta’nīth sākinah:** Khusus bersambung dengan fi‘il māḍī, seperti «قَامَتْ هِنْدٌ».
 
-        **قَدْ** boleh masuk pada fi‘il māḍī, seperti «قَدْ قَامَ زَيْدٌ», dan boleh masuk pada fi‘il muḍāri‘, seperti «قَدْ يَقُومُ زَيْدٌ».
-
-        Huruf **سـ** dan perkataan **سَوْفَ** khusus masuk pada fi‘il muḍāri‘ serta menunjukkan masa akan datang, seperti «سَيَقُومُ زَيْدٌ» dan «سَوْفَ يَقُومُ زَيْدٌ».
-
-        **Tā’ ta’nīth sākinah** pula khusus bersambung dengan fi‘il māḍī, seperti «قَامَتْ هِنْدٌ».
+      english: |
+        A verb is recognised by its acceptance of one of the following signs:
+        
+        **قَدْ:** It may precede a past verb, as in «قَدْ قَامَ زَيْدٌ», or a present verb, as in «قَدْ يَقُومُ زَيْدٌ».
+        
+        **Sīn and سَوْفَ:** Both are specific to the present verb, as in «سَيَقُومُ زَيْدٌ» and «سَوْفَ يَقُومُ زَيْدٌ».
+        
+        **The silent feminine tā’:** It is specific to the past verb, as in «قَامَتْ هِنْدٌ».
 
   - id: "sign-of-harf"
     matn:
@@ -283,24 +341,21 @@ proseSections:
           meaning: "tanda fi‘il"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        يَعْنِي أَنَّ الْحَرْفَ يَتَمَيَّزُ عَنِ الِاسْمِ وَالْفِعْلِ بِأَنْ لَا يَقْبَلَ شَيْئًا مِنْ عَلَامَاتِ الِاسْمِ، وَلَا شَيْئًا مِنْ عَلَامَاتِ الْفِعْلِ، كَـ«هَلْ» وَ«فِي» وَ«لَمْ».
+        يُعْرَفُ الْحَرْفُ بِأَنَّهُ لَا يَقْبَلُ شَيْئًا مِنْ عَلَامَاتِ الِاسْمِ، وَلَا شَيْئًا مِنْ عَلَامَاتِ الْفِعْلِ، نَحْوُ: «هَلْ»، وَ«فِي»، وَ«لَمْ».
+        
+        فَعَلَامَتُهُ عَدَمِيَّةٌ؛ أَيْ إِنَّهُ يُعْرَفُ بِعَدَمِ قَبُولِ عَلَامَاتِ الِاسْمِ وَالْفِعْلِ.
 
-        فَعَلَامَتُهُ عَدَمُ قَبُولِ الْعَلَامَاتِ الَّتِي لِلِاسْمِ وَالْفِعْلِ.
-
-        قَالَ الْعَلَّامَةُ الْحَرِيرِيُّ فِي مُلْحَةِ الْإِعْرَابِ:
-
-        وَالْحَرْفُ مَا لَيْسَ لَهُ عَلَامَهْ
-        فَقِسْ عَلَى قَوْلِي تَكُنْ عَلَّامَهْ
-
-        أَيْ: مَا لَيْسَ لَهُ عَلَامَةٌ مَوْجُودَةٌ، بَلْ عَلَامَتُهُ عَدَمِيَّةٌ.
       malay: |
-        Huruf dikenal secara tidak langsung: ia tidak menerima mana-mana tanda isim dan tidak menerima mana-mana tanda fi‘il. Contohnya ialah «هَلْ», «فِي» dan «لَمْ».
+        Harf dikenal dengan keadaannya yang tidak menerima sebarang tanda isim dan tidak menerima sebarang tanda fi‘il, seperti «هَلْ», «فِي» dan «لَمْ».
+        
+        Oleh itu, tanda harf ialah tanda yang bersifat negatif, iaitu ketiadaan tanda isim dan fi‘il padanya.
 
-        Tanda huruf bukanlah suatu tanda yang masuk padanya. Sebaliknya, tandanya ialah ketiadaan tanda isim dan fi‘il.
-
-        Perkara ini boleh dibandingkan dengan huruf ج، خ dan ح. Huruf ج dikenal dengan titik di bawahnya, huruf خ dikenal dengan titik di atasnya, manakala huruf ح dikenal kerana tidak mempunyai titik di atas atau di bawah.
+      english: |
+        A particle is recognised by the fact that it accepts none of the signs of a noun and none of the signs of a verb, such as «هَلْ», «فِي» and «لَمْ».
+        
+        Its sign is therefore negative: it is identified by the absence of both noun-signs and verb-signs.
 ---
 
 ## Sumber projek

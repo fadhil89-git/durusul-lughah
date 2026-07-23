@@ -867,6 +867,12 @@ html:not([lang="ar"]) [data-i18n].arabic {
   color: white;
 }
 
+.ajrumiyyah-lang-tabs button[data-sharh-lang="en"].is-active {
+  background: #111827;
+  border-color: #111827;
+  color: white;
+}
+
 .ajrumiyyah-sharh-size {
   align-items: center;
   background: theme("colors.panel");
