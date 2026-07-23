@@ -22,15 +22,9 @@ const audioSrc = "/audio/al-ajrumiyyah/0403AlAajurrumiyyah_AbdullahRowzy.mp3";
       <span aria-hidden="true">↻</span>
       <span data-repeat-label>1</span>
     </button>
-    <label>
-      <span>Kelajuan</span>
-      <select data-audio-rate aria-label="Kelajuan audio">
-        <option value="0.75">0.75x</option>
-        <option value="1" selected>1x</option>
-        <option value="1.25">1.25x</option>
-        <option value="1.5">1.5x</option>
-      </select>
-    </label>
+    <button type="button" class="ajrumiyyah-rate-control" data-rate-cycle aria-label="Kelajuan audio 1 kali">
+      <span data-rate-label>1x</span>
+    </button>
   </div>
 </section>
 
@@ -45,7 +39,8 @@ const audioSrc = "/audio/al-ajrumiyyah/0403AlAajurrumiyyah_AbdullahRowzy.mp3";
     const currentLabel = player?.querySelector("[data-audio-current]");
     const durationLabel = player?.querySelector("[data-audio-duration]");
     const progress = player?.querySelector("[data-audio-progress]");
-    const rate = player?.querySelector("[data-audio-rate]");
+    const rateCycle = player?.querySelector("[data-rate-cycle]");
+    const rateLabel = player?.querySelector("[data-rate-label]");
     const repeatCycle = player?.querySelector("[data-repeat-cycle]");
     const repeatLabel = player?.querySelector("[data-repeat-label]");
 
@@ -153,7 +148,9 @@ const audioSrc = "/audio/al-ajrumiyyah/0403AlAajurrumiyyah_AbdullahRowzy.mp3";
         toggle.textContent = state.isPlaying ? "❚❚" : "▶";
         toggle.setAttribute("aria-label", state.isPlaying ? "Jeda audio" : "Mainkan audio");
       }
-      if (rate instanceof HTMLSelectElement) rate.value = String(state.rate || 1);
+      const rateText = `${Number(state.rate || 1).toString()}x`;
+      if (rateLabel) rateLabel.textContent = rateText;
+      if (rateCycle) rateCycle.setAttribute("aria-label", `Kelajuan audio ${rateText}`);
       const repeatText = state.repeatCount === "Infinity" ? "∞" : String(state.repeatCount || 1);
       if (repeatLabel) repeatLabel.textContent = repeatText;
       if (repeatCycle) {
@@ -277,8 +274,10 @@ const audioSrc = "/audio/al-ajrumiyyah/0403AlAajurrumiyyah_AbdullahRowzy.mp3";
       });
     });
 
-    rate?.addEventListener("change", () => {
-      const nextRate = Number(rate.value || 1);
+    rateCycle?.addEventListener("click", () => {
+      const rateOptions = [0.75, 0.9, 1, 1.25, 1.5];
+      const currentIndex = rateOptions.findIndex((option) => String(option) === String(state.rate || 1));
+      const nextRate = rateOptions[(currentIndex + 1) % rateOptions.length];
       audio.playbackRate = nextRate;
       writeState({ rate: nextRate });
     });

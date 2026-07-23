@@ -57,42 +57,39 @@ proseSections:
           meaning: "dan aku bertemu ‘Abdullah ketika dia sedang menunggang"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        الْحَالُ اسْمٌ مَنْصُوبٌ يُفَسِّرُ هَيْئَةَ صَاحِبِهِ عِنْدَ حُصُولِ مَعْنَى عَامِلِهِ.
-        
-        وَالْهَيْئَةُ هِيَ الصِّفَةُ الَّتِي يَكُونُ عَلَيْهَا صَاحِبُ الْحَالِ وَقْتَ وُقُوعِ الْفِعْلِ.
-        
-        فَإِذَا قُلْتَ:
-        
-        «جَاءَ زَيْدٌ»
-        
-        عُلِمَ مَجِيءُ زَيْدٍ، وَلَكِنْ لَمْ تُعْرَفْ هَيْئَتُهُ عِنْدَ الْمَجِيءِ.
-        
-        فَإِذَا قُلْتَ:
-        
-        «جَاءَ زَيْدٌ رَاكِبًا»
-        
-        بَيَّنَتْ كَلِمَةُ «رَاكِبًا» هَيْئَةَ زَيْدٍ عِنْدَ مَجِيئِهِ.
-        
-        وَالْحَالُ وَصْفٌ فِي الْمَعْنَى لِصَاحِبِهَا، وَقَيْدٌ لِعَامِلِهَا.
+        الْحَالُ اسْمٌ مَنْصُوبٌ يُبَيِّنُ هَيْئَةَ صَاحِبِهِ عِنْدَ وُقُوعِ الْفِعْلِ.
+    
+        فَإِذَا قِيلَ: «جَاءَ زَيْدٌ»، عُلِمَ الْمَجِيءُ، وَلَمْ تُعْلَمْ هَيْئَةُ زَيْدٍ عِنْدَهُ.
+    
+        فَإِذَا قِيلَ: «جَاءَ زَيْدٌ رَاكِبًا»، بَيَّنَتْ كَلِمَةُ «رَاكِبًا» هَيْئَةَ زَيْدٍ وَقْتَ الْمَجِيءِ.
+    
+        وَيُسَمَّى الِاسْمُ الَّذِي تُبَيِّنُ الْحَالُ هَيْئَتَهُ **صَاحِبَ الْحَالِ**.
+    
+        وَقَدْ يَكُونُ صَاحِبُ الْحَالِ فَاعِلًا، أَوْ مَفْعُولًا بِهِ، أَوْ غَيْرَهُمَا بِحَسَبِ السِّيَاقِ.
+    
       malay: |
-        Hal menerangkan keadaan sahib al-hal ketika berlakunya perbuatan.
-        
-        Apabila dikatakan:
-        
-        «جَاءَ زَيْدٌ»
-        
-        kita mengetahui bahawa Zaid telah datang, tetapi keadaannya ketika datang masih belum diketahui.
-        
-        Apabila ditambah:
-        
-        «جَاءَ زَيْدٌ رَاكِبًا»
-        
-        lafaz «رَاكِبًا» menerangkan bahawa Zaid datang dalam keadaan menunggang.
-        
-        Oleh itu, hal merupakan sifat dari sudut makna bagi sahib al-hal dan menghadkan keadaan perbuatan yang berlaku.
-
+        Ḥāl ialah isim manṣūb yang menerangkan keadaan ṣāḥib al-ḥāl ketika perbuatan berlaku.
+    
+        Apabila dikatakan «جَاءَ زَيْدٌ», kita mengetahui bahawa Zaid datang, tetapi keadaannya ketika datang belum diketahui.
+    
+        Apabila dikatakan «جَاءَ زَيْدٌ رَاكِبًا», perkataan «رَاكِبًا» menerangkan bahawa Zaid datang dalam keadaan menunggang.
+    
+        Isim yang diterangkan keadaannya oleh ḥāl dinamakan **ṣāḥib al-ḥāl**.
+    
+        Ṣāḥib al-ḥāl boleh berupa fā‘il, maf‘ul bih atau unsur lain mengikut konteks ayat.
+    
+      english: |
+        A circumstantial qualifier is a noun in nasb describing the state of its possessor when the action occurs.
+    
+        When one says «جَاءَ زَيْدٌ», it is known that Zayd came, but his state while coming remains unspecified.
+    
+        When one says «جَاءَ زَيْدٌ رَاكِبًا», the word «رَاكِبًا» explains that Zayd came while riding.
+    
+        The noun whose state is described is called the **possessor of the circumstance**.
+    
+        The possessor may be the subject, the direct object or another element, depending on the sentence.
   - id: "hal-from-subject"
     matn:
       id: "hal-02"
@@ -106,32 +103,39 @@ proseSections:
           meaning: "melainkan dalam bentuk nakirah"
           type: "keyword"
     sharh:
-      title: "Hal daripada fā‘il"
+      title: "Ringkasan Syarah"
       arabic: |
-        فِي قَوْلِكَ:
-        
-        «جَاءَ زَيْدٌ رَاكِبًا»
-        
-        «جَاءَ» فِعْلٌ مَاضٍ.
-        
-        وَ«زَيْدٌ» فَاعِلٌ مَرْفُوعٌ بِالضَّمَّةِ الظَّاهِرَةِ، وَهُوَ صَاحِبُ الْحَالِ.
-        
-        وَ«رَاكِبًا» حَالٌ مِنْ «زَيْدٍ» مَنْصُوبَةٌ بِالْفَتْحَةِ الظَّاهِرَةِ.
-        
-        وَنَاصِبُ الْحَالِ هُوَ الْفِعْلُ «جَاءَ».
-        
-        وَالْمَعْنَى أَنَّ مَجِيءَ زَيْدٍ وَقَعَ حَالَ كَوْنِهِ رَاكِبًا.
+        الْأَصْلُ فِي الْحَالِ أَنْ تَكُونَ نَكِرَةً؛ لِأَنَّهَا وَصْفٌ يُبَيِّنُ هَيْئَةً عَارِضَةً.
+    
+        فَفِي «جَاءَ زَيْدٌ رَاكِبًا»:
+    
+        «زَيْدٌ» فَاعِلٌ مَرْفُوعٌ، وَهُوَ صَاحِبُ الْحَالِ.
+    
+        وَ«رَاكِبًا» حَالٌ نَكِرَةٌ مَنْصُوبَةٌ بِالْفَتْحَةِ، وَنَاصِبُهَا الْفِعْلُ «جَاءَ».
+    
+        فَلَا يُجْعَلُ اللَّفْظُ الْمَعْرِفَةُ حَالًا عَلَى الْأَصْلِ، بَلْ يُؤَوَّلُ بِنَكِرَةٍ إِنْ وَرَدَ فِي صُورَةِ الْمَعْرِفَةِ.
+    
       malay: |
-        I‘rab ayat:
-        
-        - «جَاءَ» ialah fi‘il māḍī.
-        - «زَيْدٌ» ialah fā‘il marfū‘ dan sahib al-hal.
-        - «رَاكِبًا» ialah hal mansub dengan fatḥah.
-        
-        ‘Amil yang menasabkan hal ialah fi‘il «جَاءَ».
-        
-        Hal dalam contoh ini menerangkan keadaan fā‘il, iaitu Zaid datang ketika sedang menunggang.
-
+        Hukum asal ḥāl ialah berbentuk nakirah kerana ia menerangkan keadaan sementara.
+    
+        Dalam «جَاءَ زَيْدٌ رَاكِبًا»:
+    
+        «زَيْدٌ» ialah fā‘il marfū‘ dan ṣāḥib al-ḥāl.
+    
+        «رَاكِبًا» ialah ḥāl nakirah yang manṣūb dengan fathah. ‘Āmil yang menasabkannya ialah fi‘il «جَاءَ».
+    
+        Lafaz ma‘rifah tidak dijadikan ḥāl pada hukum asal. Sekiranya lafaznya kelihatan ma‘rifah, ia ditakwilkan dengan makna nakirah.
+    
+      english: |
+        The basic rule is that a circumstantial qualifier is indefinite because it describes a temporary state.
+    
+        In «جَاءَ زَيْدٌ رَاكِبًا»:
+    
+        «زَيْدٌ» is the subject in raf‘ and the possessor of the circumstance.
+    
+        «رَاكِبًا» is an indefinite circumstantial qualifier in nasb with fatḥah, governed by the verb «جَاءَ».
+    
+        A definite expression is not normally used as a circumstance. When one appears in definite form, it is interpreted with an indefinite meaning.
   - id: "hal-from-object"
     matn:
       id: "hal-03"
@@ -145,30 +149,39 @@ proseSections:
           meaning: "melainkan selepas sempurnanya ayat"
           type: "keyword"
     sharh:
-      title: "Hal daripada maf‘ul bih"
+      title: "Ringkasan Syarah"
       arabic: |
-        فِي قَوْلِكَ:
-        
-        «رَكِبْتُ الْفَرَسَ مُسْرَجًا»
-        
-        «رَكِبْتُ» فِعْلٌ مَاضٍ وَفَاعِلٌ.
-        
-        وَ«الْفَرَسَ» مَفْعُولٌ بِهِ مَنْصُوبٌ، وَهُوَ صَاحِبُ الْحَالِ.
-        
-        وَ«مُسْرَجًا» حَالٌ مِنَ «الْفَرَسِ» مَنْصُوبَةٌ بِالْفَتْحَةِ.
-        
-        وَنَاصِبُ الْحَالِ هُوَ الْفِعْلُ «رَكِبْتُ».
-        
-        وَالْمَعْنَى أَنَّ الْفَرَسَ كَانَ مُسْرَجًا وَقْتَ رُكُوبِ الْمُتَكَلِّمِ لَهُ.
+        لَا تَأْتِي الْحَالُ فِي الْأَصْلِ إِلَّا بَعْدَ تَمَامِ الْكَلَامِ؛ لِأَنَّهَا فَضْلَةٌ تُبَيِّنُ هَيْئَةً بَعْدَ اكْتِمَالِ أَصْلِ الْمَعْنَى.
+    
+        فَفِي «رَكِبْتُ الْفَرَسَ مُسْرَجًا»:
+    
+        «رَكِبْتُ» فِعْلٌ وَفَاعِلٌ، وَ«الْفَرَسَ» مَفْعُولٌ بِهِ، وَقَدْ تَمَّ بِهِ أَصْلُ الْكَلَامِ.
+    
+        ثُمَّ جَاءَتْ «مُسْرَجًا» حَالًا مَنْصُوبَةً تُبَيِّنُ هَيْئَةَ الْفَرَسِ وَقْتَ الرُّكُوبِ.
+    
+        فَصَاحِبُ الْحَالِ فِي هَذَا الْمِثَالِ هُوَ «الْفَرَسَ».
+    
       malay: |
-        I‘rab ayat:
-        
-        - «رَكِبْتُ» ialah fi‘il dan fā‘il.
-        - «الْفَرَسَ» ialah maf‘ul bih mansub dan sahib al-hal.
-        - «مُسْرَجًا» ialah hal mansub.
-        
-        Dalam contoh ini, hal menerangkan keadaan maf‘ul bih. Kuda itu berada dalam keadaan telah dipasangkan pelana ketika ditunggang.
-
+        Pada hukum asal, ḥāl datang selepas sempurnanya struktur asas ayat kerana ia merupakan unsur tambahan yang menerangkan keadaan.
+    
+        Dalam «رَكِبْتُ الْفَرَسَ مُسْرَجًا»:
+    
+        «رَكِبْتُ» terdiri daripada fi‘il dan fā‘il, manakala «الْفَرَسَ» ialah maf‘ul bih. Dengan itu, makna asas ayat telah sempurna.
+    
+        Selepas itu datang «مُسْرَجًا» sebagai ḥāl manṣūb yang menerangkan keadaan kuda ketika ditunggang.
+    
+        Ṣāḥib al-ḥāl dalam contoh ini ialah «الْفَرَسَ».
+    
+      english: |
+        As a basic rule, the circumstantial qualifier comes after the essential structure of the sentence is complete because it is an additional element describing a state.
+    
+        In «رَكِبْتُ الْفَرَسَ مُسْرَجًا»:
+    
+        «رَكِبْتُ» consists of a verb and subject, while «الْفَرَسَ» is the direct object. The basic sentence is therefore complete.
+    
+        «مُسْرَجًا» then comes as a circumstantial qualifier in nasb, describing the horse as saddled at the time of riding.
+    
+        The possessor of the circumstance in this example is «الْفَرَسَ».
   - id: "ambiguous-hal-owner"
     matn:
       id: "hal-04"
@@ -182,38 +195,39 @@ proseSections:
           meaning: "melainkan dalam bentuk ma‘rifah"
           type: "keyword"
     sharh:
-      title: "Sahib al-hal yang berkemungkinan dua"
+      title: "Ringkasan Syarah"
       arabic: |
-        فِي قَوْلِكَ:
-        
-        «لَقِيتُ عَبْدَ اللَّهِ رَاكِبًا»
-        
-        «لَقِيتُ» فِعْلٌ وَفَاعِلٌ.
-        
-        وَ«عَبْدَ» مَفْعُولٌ بِهِ مَنْصُوبٌ، وَهُوَ مُضَافٌ.
-        
-        وَلَفْظُ الْجَلَالَةِ مُضَافٌ إِلَيْهِ مَخْفُوضٌ.
-        
-        وَ«رَاكِبًا» حَالٌ مَنْصُوبَةٌ.
-        
-        وَيَحْتَمِلُ صَاحِبُ الْحَالِ وَجْهَيْنِ:
-        
-        أَحَدُهُمَا: أَنْ تَكُونَ الْحَالُ مِنَ التَّاءِ، فَيَكُونُ الْمُتَكَلِّمُ هُوَ الرَّاكِبَ.
-        
-        وَالثَّانِي: أَنْ تَكُونَ الْحَالُ مِنْ «عَبْدِ اللَّهِ»، فَيَكُونُ عَبْدُ اللَّهِ هُوَ الرَّاكِبَ.
-        
-        وَيُعَيِّنُ الْمُرَادَ السِّيَاقُ وَالْقَرِينَةُ.
+        الْأَصْلُ فِي صَاحِبِ الْحَالِ أَنْ يَكُونَ مَعْرِفَةً؛ لِأَنَّ الْحَالَ تُبَيِّنُ هَيْئَةَ شَيْءٍ مَعْلُومٍ.
+    
+        فَفِي «لَقِيتُ عَبْدَ اللَّهِ رَاكِبًا»، يَكُونُ «عَبْدَ اللَّهِ» مَعْرِفَةً بِالْإِضَافَةِ.
+    
+        وَيَحْتَمِلُ لَفْظُ «رَاكِبًا» أَنْ يَكُونَ حَالًا مِنَ التَّاءِ فِي «لَقِيتُ»، فَيَكُونُ الْمُتَكَلِّمُ هُوَ الرَّاكِبَ.
+    
+        وَيَحْتَمِلُ أَنْ يَكُونَ حَالًا مِنْ «عَبْدِ اللَّهِ»، فَيَكُونُ عَبْدُ اللَّهِ هُوَ الرَّاكِبَ.
+    
+        وَالسِّيَاقُ وَالْقَرِينَةُ هُمَا اللَّذَانِ يُعَيِّنَانِ الْمُرَادَ.
+    
       malay: |
-        Dalam ayat:
-        
-        «لَقِيتُ عَبْدَ اللَّهِ رَاكِبًا»
-        
-        lafaz «رَاكِبًا» boleh membawa dua kemungkinan:
-        
-        1. Hal daripada tā’ dalam «لَقِيتُ». Maksudnya, aku bertemu Abdullah ketika aku sedang menunggang.
-        2. Hal daripada «عَبْدَ اللَّهِ». Maksudnya, aku bertemu Abdullah ketika dia sedang menunggang.
-        
-        Konteks dan petunjuk dalam percakapan menentukan siapa yang sebenarnya menunggang.
+        Hukum asal ṣāḥib al-ḥāl ialah berbentuk ma‘rifah kerana ḥāl menerangkan keadaan sesuatu yang telah diketahui.
+    
+        Dalam «لَقِيتُ عَبْدَ اللَّهِ رَاكِبًا», lafaz «عَبْدَ اللَّهِ» ialah ma‘rifah melalui iḍāfah.
+    
+        Lafaz «رَاكِبًا» mungkin menjadi ḥāl daripada tā’ dalam «لَقِيتُ». Dalam keadaan ini, penutur ialah orang yang menunggang.
+    
+        Ia juga mungkin menjadi ḥāl daripada «عَبْدِ اللَّهِ». Dalam keadaan ini, Abdullah ialah orang yang menunggang.
+    
+        Konteks dan petunjuk ayat menentukan maksud yang dikehendaki.
+    
+      english: |
+        The basic rule is that the possessor of a circumstance is definite because the circumstance describes the state of an already identified entity.
+    
+        In «لَقِيتُ عَبْدَ اللَّهِ رَاكِبًا», «عَبْدَ اللَّهِ» is definite through annexation.
+    
+        «رَاكِبًا» may describe the tā’ in «لَقِيتُ», meaning that the speaker was riding.
+    
+        It may instead describe «عَبْدَ اللَّهِ», meaning that Abdullah was riding.
+    
+        The intended interpretation is determined by context and accompanying indications.
 ---
 
 ## Sumber projek

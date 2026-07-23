@@ -54,37 +54,39 @@ proseSections:
           meaning: "tidak ada seorang lelaki pun di dalam rumah"
           type: "keyword"
     sharh:
-      title: "Pengenalan لَا النافية للجنس"
+      title: "Ringkasan Syarah"
       arabic: |
-        «لَا» الْمَذْكُورَةُ فِي هَذَا الْبَابِ هِيَ «لَا» النَّافِيَةُ لِلْجِنْسِ.
-        
-        وَمَعْنَى نَفْيِ الْجِنْسِ أَنَّهَا تَنْفِي الْخَبَرَ عَنْ جَمِيعِ أَفْرَادِ جِنْسِ اسْمِهَا.
-        
-        فَإِذَا قُلْتَ:
-        
-        «لَا رَجُلَ فِي الدَّارِ»
-        
-        فَالْمَعْنَى أَنَّهُ لَا يُوجَدُ فِي الدَّارِ أَيُّ فَرْدٍ مِنْ جِنْسِ الرِّجَالِ.
-        
-        وَهِيَ تَعْمَلُ عَمَلَ «إِنَّ»، فَتَنْصِبُ الِاسْمَ وَتَرْفَعُ الْخَبَرَ.
-        
-        وَلَكِنَّهَا تَخْتَصُّ بِالنَّكِرَاتِ، فَلَا تَعْمَلُ فِي الْمَعْرِفَةِ.
+        «لَا» الْمَذْكُورَةُ فِي هَذَا الْبَابِ هِيَ **لَا النَّافِيَةُ لِلْجِنْسِ**، وَهِيَ تَنْفِي الْحُكْمَ عَنْ جَمِيعِ أَفْرَادِ جِنْسِ اسْمِهَا.
+    
+        وَهِيَ تَعْمَلُ عَمَلَ «إِنَّ»، فَتَنْصِبُ الِاسْمَ وَتَرْفَعُ الْخَبَرَ، وَلَا تَعْمَلُ إِلَّا فِي النَّكِرَاتِ.
+    
+        وَمِنْ شُرُوطِ عَمَلِهَا أَنْ تُبَاشِرَ اسْمَهَا، وَأَلَّا تَتَكَرَّرَ عَلَى الْوَجْهِ الْمَذْكُورِ.
+    
+        فَفِي «لَا رَجُلَ فِي الدَّارِ»، يَكُونُ «رَجُلَ» اسْمَ «لَا» مَبْنِيًّا عَلَى الْفَتْحِ فِي مَحَلِّ نَصْبٍ، وَ«فِي الدَّارِ» خَبَرَهَا.
+    
+        وَالْمَعْنَى نَفْيُ وُجُودِ أَيِّ فَرْدٍ مِنْ جِنْسِ الرِّجَالِ فِي الدَّارِ.
+    
       malay: |
-        «لَا» dalam bab ini ialah «لَا» yang menafikan seluruh jenis.
-        
-        Apabila disebut:
-        
-        «لَا رَجُلَ فِي الدَّارِ»
-        
-        maksudnya bukan sekadar seorang lelaki tertentu tiada di dalam rumah. Maksudnya ialah tidak ada seorang pun daripada seluruh jenis lelaki di dalam rumah itu.
-        
-        «لَا» ini berfungsi seperti «إِنَّ»:
-        
-        - menasabkan isim;
-        - merafa‘kan khabar.
-        
-        Namun, «لَا» ini hanya beramal pada isim nakirah dan tidak beramal pada isim makrifah.
-
+        «لَا» dalam bab ini ialah **lā al-nāfiyah li al-jins**, iaitu lā yang menafikan hukum daripada semua individu dalam sesuatu jenis.
+    
+        Ia beramal seperti «إِنَّ»: menasabkan isim dan merafa‘kan khabar. Ia hanya beramal pada isim nakirah.
+    
+        Antara syarat amalannya ialah isimnya hadir terus selepasnya dan «لَا» tidak diulang dalam bentuk yang diterangkan.
+    
+        Dalam «لَا رَجُلَ فِي الدَّارِ», «رَجُلَ» ialah isim «لَا» yang dibina atas fathah pada kedudukan naṣab, manakala «فِي الدَّارِ» ialah khabarnya.
+    
+        Maksud ayat itu ialah tidak ada seorang pun daripada jenis lelaki di dalam rumah.
+    
+      english: |
+        The «لَا» discussed in this chapter is the **categorically negating lā**, which negates the predicate from every member of the class denoted by its noun.
+    
+        It operates like «إِنَّ», placing its noun in nasb and its predicate in raf‘. It operates only upon indefinite nouns.
+    
+        Among its conditions are that its noun directly follows it and that «لَا» is not repeated in the specified construction.
+    
+        In «لَا رَجُلَ فِي الدَّارِ», «رَجُلَ» is the noun of «لَا», built upon fatḥah in the grammatical position of nasb, while «فِي الدَّارِ» is its predicate.
+    
+        The sentence means that no member of the class of men is present in the house.
   - id: "la-mufrad"
     matn:
       id: "la-02"
@@ -110,32 +112,39 @@ proseSections:
           meaning: "dan tidak juga seorang perempuan"
           type: "keyword"
     sharh:
-      title: "Isim لَا yang mufrad"
+      title: "Ringkasan Syarah"
       arabic: |
-        فِي قَوْلِكَ:
-        
-        «لَا رَجُلَ فِي الدَّارِ»
-        
-        «لَا» نَافِيَةٌ لِلْجِنْسِ تَعْمَلُ عَمَلَ «إِنَّ».
-        
-        وَ«رَجُلَ» اسْمُهَا مَبْنِيٌّ عَلَى الْفَتْحِ فِي مَحَلِّ نَصْبٍ.
-        
-        وَ«فِي الدَّارِ» جَارٌّ وَمَجْرُورٌ مُتَعَلِّقَانِ بِخَبَرٍ مَحْذُوفٍ، تَقْدِيرُهُ: مَوْجُودٌ أَوْ كَائِنٌ.
-        
-        وَالْمُرَادُ بِالْمُفْرَدِ فِي هَذَا الْبَابِ مَا لَيْسَ مُضَافًا وَلَا شَبِيهًا بِالْمُضَافِ.
-        
-        فَلَيْسَ الْمُرَادُ بِهِ مَا يُقَابِلُ الْمُثَنَّى وَالْجَمْعَ.
+        إِذَا فُصِلَ بَيْنَ «لَا» وَاسْمِهَا، بَطَلَ عَمَلُهَا، وَوَجَبَ رَفْعُ الِاسْمِ وَتَكْرَارُ «لَا».
+    
+        نَحْوُ «لَا فِي الدَّارِ رَجُلٌ، وَلَا امْرَأَةٌ».
+    
+        فَـ«فِي الدَّارِ» فَصَلَ بَيْنَ «لَا» وَ«رَجُلٌ»، فَلَمْ تَعْمَلْ «لَا»، وَارْتَفَعَ «رَجُلٌ» عَلَى الِابْتِدَاءِ.
+    
+        وَ«لَا» الثَّانِيَةُ وَاجِبَةٌ لِتَكْرَارِ النَّفْيِ فِي الْمَعْطُوفِ.
+    
+        أَمَّا فِي «لَا رَجُلَ فِي الدَّارِ»، فَاسْمُ «لَا» مُفْرَدٌ، وَالْمُرَادُ بِالْمُفْرَدِ هُنَا مَا لَيْسَ مُضَافًا وَلَا شَبِيهًا بِالْمُضَافِ.
+    
       malay: |
-        Dalam:
-        
-        «لَا رَجُلَ فِي الدَّارِ»
-        
-        - «لَا» ialah لَا النافية للجنس yang beramal seperti «إِنَّ».
-        - «رَجُلَ» ialah isim لَا, dibina atas fathah pada mahal nasab.
-        - «فِي الدَّارِ» ialah jar dan majrur yang berkait dengan khabar yang dibuang, dengan anggaran «مَوْجُودٌ» atau «كَائِنٌ».
-        
-        Perkataan **mufrad** dalam bab ini bermaksud isim yang bukan mudaf dan bukan syibh mudaf. Ia tidak semestinya bermaksud satu, berlawanan dengan muthanna dan jamak.
-
+        Apabila terdapat pemisah antara «لَا» dan isimnya, amalan «لَا» terbatal. Isim selepasnya wajib dirafa‘kan dan «لَا» perlu diulang.
+    
+        Contohnya ialah «لَا فِي الدَّارِ رَجُلٌ، وَلَا امْرَأَةٌ».
+    
+        «فِي الدَّارِ» memisahkan antara «لَا» dan «رَجُلٌ». Oleh itu, «لَا» tidak beramal dan «رَجُلٌ» menjadi marfū‘ sebagai mubtada’.
+    
+        «لَا» yang kedua diulang untuk meneruskan penafian pada perkataan yang di‘aṭafkan.
+    
+        Istilah mufrad dalam bab ini bermaksud isim yang bukan muḍāf dan bukan syibh muḍāf.
+    
+      english: |
+        When an expression separates «لَا» from its noun, its grammatical operation is cancelled. The noun must then be in raf‘ and «لَا» must be repeated.
+    
+        An example is «لَا فِي الدَّارِ رَجُلٌ، وَلَا امْرَأَةٌ».
+    
+        «فِي الدَّارِ» separates «لَا» from «رَجُلٌ», so «لَا» does not govern it and «رَجُلٌ» is in raf‘ as a mubtada’.
+    
+        The second «لَا» is repeated to extend the negation to the conjoined noun.
+    
+        In this chapter, a single noun means one that is neither annexed nor similar to an annexed expression.
   - id: "la-mudaf"
     matn:
       id: "la-03"
@@ -152,39 +161,39 @@ proseSections:
           meaning: "atau membatalkan amalannya"
           type: "keyword"
     sharh:
-      title: "Isim لَا yang mudaf"
+      title: "Ringkasan Syarah"
       arabic: |
-        إِذَا كَانَ اسْمُ «لَا» مُضَافًا، كَانَ مُعْرَبًا مَنْصُوبًا، وَلَمْ يَكُنْ مَبْنِيًّا.
-        
-        نَحْوُ:
-        
-        «لَا غُلَامَ سَفَرٍ حَاضِرٌ».
-        
-        فَـ«لَا» نَافِيَةٌ لِلْجِنْسِ.
-        
-        وَ«غُلَامَ» اسْمُهَا مَنْصُوبٌ بِالْفَتْحَةِ الظَّاهِرَةِ، وَهُوَ مُضَافٌ.
-        
-        وَ«سَفَرٍ» مُضَافٌ إِلَيْهِ مَجْرُورٌ.
-        
-        وَ«حَاضِرٌ» خَبَرُ «لَا» مَرْفُوعٌ.
-        
-        فَالْفَرْقُ بَيْنَ الْمُفْرَدِ وَالْمُضَافِ أَنَّ الْمُفْرَدَ يُبْنَى، وَالْمُضَافَ يُعْرَبُ مَنْصُوبًا.
+        إِذَا تَكَرَّرَتْ «لَا»، جَازَ إِعْمَالُهَا وَجَازَ إِلْغَاؤُهَا.
+    
+        فَإِنْ أُعْمِلَتْ، نُصِبَ الِاسْمُ بَعْدَهَا، نَحْوُ «لَا رَجُلَ فِي الدَّارِ، وَلَا امْرَأَةَ».
+    
+        وَإِنْ أُلْغِيَتْ، رُفِعَ الِاسْمُ بَعْدَهَا، نَحْوُ «لَا رَجُلٌ فِي الدَّارِ، وَلَا امْرَأَةٌ».
+    
+        وَإِذَا كَانَ اسْمُ «لَا» مُضَافًا، كَانَ مُعْرَبًا مَنْصُوبًا، نَحْوُ «لَا غُلَامَ سَفَرٍ حَاضِرٌ».
+    
+        فَـ«غُلَامَ» اسْمُ «لَا» مَنْصُوبٌ وَهُوَ مُضَافٌ، وَ«سَفَرٍ» مُضَافٌ إِلَيْهِ مَجْرُورٌ.
+    
       malay: |
-        Apabila isim «لَا» berbentuk mudaf, isim itu tidak dibina. Sebaliknya, ia menjadi isim mu‘rab yang mansub.
-        
-        Dalam:
-        
-        «لَا غُلَامَ سَفَرٍ حَاضِرٌ»
-        
-        - «غُلَامَ» ialah isim لَا yang mansub dan mudaf.
-        - «سَفَرٍ» ialah mudaf ilayh yang majrur.
-        - «حَاضِرٌ» ialah khabar لَا yang marfu‘.
-        
-        Perbezaannya:
-        
-        - isim mufrad dibina pada mahal nasab;
-        - isim mudaf dii‘rabkan sebagai mansub.
-
+        Apabila «لَا» diulang, harus menjadikannya beramal atau membatalkan amalannya.
+    
+        Apabila kedua-duanya beramal, isim selepasnya dibaca manṣūb, seperti «لَا رَجُلَ فِي الدَّارِ، وَلَا امْرَأَةَ».
+    
+        Apabila amalannya dibatalkan, isim selepasnya dibaca marfū‘, seperti «لَا رَجُلٌ فِي الدَّارِ، وَلَا امْرَأَةٌ».
+    
+        Apabila isim «لَا» berbentuk muḍāf, ia menjadi isim mu‘rab yang manṣūb, seperti «لَا غُلَامَ سَفَرٍ حَاضِرٌ».
+    
+        «غُلَامَ» ialah isim «لَا» yang manṣūb dan muḍāf, manakala «سَفَرٍ» ialah muḍāf ilayh majrūr.
+    
+      english: |
+        When «لَا» is repeated, it may either retain its grammatical operation or have that operation cancelled.
+    
+        When it operates, the following noun is in nasb, as in «لَا رَجُلَ فِي الدَّارِ، وَلَا امْرَأَةَ».
+    
+        When its operation is cancelled, the following noun is in raf‘, as in «لَا رَجُلٌ فِي الدَّارِ، وَلَا امْرَأَةٌ».
+    
+        When the noun of «لَا» is annexed, it is an inflected noun in nasb, as in «لَا غُلَامَ سَفَرٍ حَاضِرٌ».
+    
+        «غُلَامَ» is the noun of «لَا» in nasb and is annexed to «سَفَرٍ», which is in jarr.
   - id: "la-shibh-mudaf"
     matn:
       id: "la-04"
@@ -204,37 +213,45 @@ proseSections:
           meaning: "dan tidak juga seorang perempuan"
           type: "keyword"
     sharh:
-      title: "Isim لَا yang syibh mudaf"
+      title: "Ringkasan Syarah"
       arabic: |
-        الشَّبِيهُ بِالْمُضَافِ هُوَ الِاسْمُ الَّذِي اتَّصَلَ بِهِ شَيْءٌ مِنْ تَمَامِ مَعْنَاهُ.
-        
-        نَحْوُ:
-        
-        «لَا طَالِعًا جَبَلًا مَوْجُودٌ».
-        
-        فَـ«طَالِعًا» اسْمُ «لَا» مَنْصُوبٌ بِالْفَتْحَةِ الظَّاهِرَةِ.
-        
-        وَهُوَ اسْمُ فَاعِلٍ يَعْمَلُ عَمَلَ فِعْلِهِ.
-        
-        وَ«جَبَلًا» مَفْعُولٌ بِهِ لِـ«طَالِعًا»، وَهُوَ الَّذِي أَتَمَّ مَعْنَاهُ.
-        
-        وَ«مَوْجُودٌ» خَبَرُ «لَا» مَرْفُوعٌ.
-        
-        وَمِنَ الشَّبِيهِ بِالْمُضَافِ مَا اتَّصَلَ بِهِ مَرْفُوعٌ، أَوْ مَنْصُوبٌ، أَوْ جَارٌّ وَمَجْرُورٌ.
+        إِذَا تَكَرَّرَتْ «لَا»، جَازَ إِعْمَالُهَا فِي الِاسْمَيْنِ، فَيُقَالُ:
+    
+        «لَا رَجُلَ فِي الدَّارِ، وَلَا امْرَأَةَ».
+    
+        فَـ«رَجُلَ» اسْمُ «لَا» الْأُولَى مَبْنِيٌّ عَلَى الْفَتْحِ فِي مَحَلِّ نَصْبٍ.
+    
+        وَ«امْرَأَةَ» اسْمُ «لَا» الثَّانِيَةِ مَبْنِيٌّ عَلَى الْفَتْحِ فِي مَحَلِّ نَصْبٍ.
+    
+        وَالشَّبِيهُ بِالْمُضَافِ هُوَ الِاسْمُ الَّذِي اتَّصَلَ بِهِ شَيْءٌ يُتَمِّمُ مَعْنَاهُ، نَحْوُ «لَا طَالِعًا جَبَلًا مَوْجُودٌ».
+    
+        فَـ«طَالِعًا» اسْمُ «لَا» مَنْصُوبٌ، وَ«جَبَلًا» مَفْعُولٌ بِهِ يُتَمِّمُ مَعْنَاهُ.
+    
       malay: |
-        Syibh mudaf ialah lafaz yang disambungkan dengan sesuatu yang diperlukan untuk menyempurnakan maknanya.
-        
-        Dalam:
-        
-        «لَا طَالِعًا جَبَلًا مَوْجُودٌ»
-        
-        - «طَالِعًا» ialah isim لَا yang mansub.
-        - Ia merupakan isim fa‘il yang beramal seperti fi‘ilnya.
-        - «جَبَلًا» ialah maf‘ul bih bagi «طَالِعًا» dan menyempurnakan maknanya.
-        - «مَوْجُودٌ» ialah khabar لَا yang marfu‘.
-        
-        Sesuatu lafaz boleh menjadi syibh mudaf apabila disambungkan dengan lafaz marfu‘, mansub atau jar dan majrur yang menyempurnakan maknanya.
-
+        Apabila «لَا» diulang, kedua-duanya boleh dikekalkan beramal, seperti:
+    
+        «لَا رَجُلَ فِي الدَّارِ، وَلَا امْرَأَةَ».
+    
+        «رَجُلَ» ialah isim «لَا» pertama yang dibina atas fathah pada kedudukan naṣab.
+    
+        «امْرَأَةَ» ialah isim «لَا» kedua yang juga dibina atas fathah pada kedudukan naṣab.
+    
+        Syibh muḍāf ialah isim yang disambungkan dengan pelengkap yang menyempurnakan maknanya, seperti «لَا طَالِعًا جَبَلًا مَوْجُودٌ».
+    
+        «طَالِعًا» ialah isim «لَا» manṣūb dan «جَبَلًا» ialah maf‘ul bih yang menyempurnakan maknanya.
+    
+      english: |
+        When «لَا» is repeated, both instances may retain their grammatical operation, as in:
+    
+        «لَا رَجُلَ فِي الدَّارِ، وَلَا امْرَأَةَ».
+    
+        «رَجُلَ» is the noun of the first «لَا», built upon fatḥah in the grammatical position of nasb.
+    
+        «امْرَأَةَ» is the noun of the second «لَا», also built upon fatḥah in the grammatical position of nasb.
+    
+        An expression similar to an annexed noun is one connected to a complement needed to complete its meaning, as in «لَا طَالِعًا جَبَلًا مَوْجُودٌ».
+    
+        «طَالِعًا» is the noun of «لَا» in nasb, while «جَبَلًا» is its direct object completing its meaning.
   - id: "la-shibh-mudaf-examples"
     matn:
       id: "la-05"
@@ -254,41 +271,45 @@ proseSections:
           meaning: "dan tidak juga seorang perempuan, dengan bacaan rafa‘"
           type: "keyword"
     sharh:
-      title: "Pelengkap bagi syibh mudaf"
+      title: "Ringkasan Syarah"
       arabic: |
-        قَدْ يَتَعَلَّقُ بِالشَّبِيهِ بِالْمُضَافِ مَرْفُوعٌ، نَحْوُ:
-        
-        «لَا قَبِيحًا فِعْلُهُ مَمْدُوحٌ».
-        
-        فَـ«قَبِيحًا» اسْمُ «لَا» مَنْصُوبٌ.
-        
-        وَ«فِعْلُهُ» فَاعِلٌ مَرْفُوعٌ بِـ«قَبِيحًا»، وَهُوَ الَّذِي أَتَمَّ مَعْنَاهُ.
-        
-        وَقَدْ يَتَعَلَّقُ بِهِ جَارٌّ وَمَجْرُورٌ، نَحْوُ:
-        
-        «لَا خَيْرًا مِنْ زَيْدٍ عِنْدَنَا».
-        
-        فَـ«خَيْرًا» اسْمُ «لَا» مَنْصُوبٌ.
-        
-        وَ«مِنْ زَيْدٍ» جَارٌّ وَمَجْرُورٌ مُتَعَلِّقَانِ بِـ«خَيْرًا».
-        
-        وَ«عِنْدَنَا» خَبَرُ «لَا».
+        إِذَا تَكَرَّرَتْ «لَا»، جَازَ إِلْغَاؤُهَا وَرَفْعُ الِاسْمِ بَعْدَهَا، فَيُقَالُ:
+    
+        «لَا رَجُلٌ فِي الدَّارِ، وَلَا امْرَأَةٌ».
+    
+        فَـ«لَا» فِي الْمَوْضِعَيْنِ غَيْرُ عَامِلَةٍ، وَ«رَجُلٌ» مُبْتَدَأٌ مَرْفُوعٌ، وَ«امْرَأَةٌ» مَعْطُوفٌ عَلَيْهِ مَرْفُوعٌ.
+    
+        وَقَدْ يَكُونُ مُتَمِّمُ الشَّبِيهِ بِالْمُضَافِ مَرْفُوعًا، نَحْوُ «لَا قَبِيحًا فِعْلُهُ مَمْدُوحٌ».
+    
+        وَقَدْ يَكُونُ جَارًّا وَمَجْرُورًا، نَحْوُ «لَا خَيْرًا مِنْ زَيْدٍ عِنْدَنَا».
+    
+        فَالْعِبْرَةُ فِي الشَّبِيهِ بِالْمُضَافِ بِاتِّصَالِ اسْمِ «لَا» بِشَيْءٍ لَا يَتِمُّ مَعْنَاهُ إِلَّا بِهِ.
+    
       malay: |
-        Pelengkap syibh mudaf tidak semestinya maf‘ul bih.
-        
-        Dalam:
-        
-        «لَا قَبِيحًا فِعْلُهُ مَمْدُوحٌ»
-        
-        «فِعْلُهُ» ialah lafaz marfu‘ yang menyempurnakan makna «قَبِيحًا».
-        
-        Dalam:
-        
-        «لَا خَيْرًا مِنْ زَيْدٍ عِنْدَنَا»
-        
-        «مِنْ زَيْدٍ» ialah jar dan majrur yang menyempurnakan makna «خَيْرًا».
-        
-        Oleh sebab makna isim لَا belum sempurna tanpa lafaz yang bersambung dengannya, kedua-duanya dinamakan syibh mudaf.
+        Apabila «لَا» diulang, amalannya boleh dibatalkan dan isim selepasnya dibaca marfū‘, seperti:
+    
+        «لَا رَجُلٌ فِي الدَّارِ، وَلَا امْرَأَةٌ».
+    
+        Kedua-dua «لَا» tidak beramal. «رَجُلٌ» ialah mubtada’ marfū‘, manakala «امْرَأَةٌ» ialah ma‘ṭūf marfū‘.
+    
+        Pelengkap syibh muḍāf boleh berupa lafaz marfū‘, seperti «لَا قَبِيحًا فِعْلُهُ مَمْدُوحٌ».
+    
+        Ia juga boleh berupa jār dan majrūr, seperti «لَا خَيْرًا مِنْ زَيْدٍ عِنْدَنَا».
+    
+        Penentuan syibh muḍāf bergantung pada adanya sesuatu yang bersambung dengan isim «لَا» dan diperlukan untuk menyempurnakan maknanya.
+    
+      english: |
+        When «لَا» is repeated, its operation may be cancelled and the following nouns placed in raf‘, as in:
+    
+        «لَا رَجُلٌ فِي الدَّارِ، وَلَا امْرَأَةٌ».
+    
+        Neither instance of «لَا» governs. «رَجُلٌ» is a mubtada’ in raf‘, while «امْرَأَةٌ» is conjoined to it and also in raf‘.
+    
+        The complement of an expression similar to an annexed noun may be in raf‘, as in «لَا قَبِيحًا فِعْلُهُ مَمْدُوحٌ».
+    
+        It may also be a prepositional phrase, as in «لَا خَيْرًا مِنْ زَيْدٍ عِنْدَنَا».
+    
+        What makes the expression similar to an annexed noun is that the noun of «لَا» is connected to something necessary to complete its meaning.
 ---
 
 ## Sumber projek

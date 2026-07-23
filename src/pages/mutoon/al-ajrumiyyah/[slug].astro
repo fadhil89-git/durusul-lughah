@@ -209,62 +209,54 @@ function renderArabic(text: string, words: ProseWord[] = []) {
 
               <div class="ajrumiyyah-action-row" data-ajrumiyyah-panels>
                 <div class="ajrumiyyah-button-row">
-                  <button
-                    type="button"
-                    class="ajrumiyyah-translation-summary"
-                    data-panel-toggle="translation"
-                    aria-expanded="false"
-                  >
-                    Terjemahan
-                  </button>
-                  <button
-                    type="button"
-                    class="ajrumiyyah-sharh-summary"
-                    data-panel-toggle="sharh"
-                    aria-expanded="false"
-                  >
-                    Syarah
-                  </button>
-                </div>
-
-                <div class="ajrumiyyah-translation-panel ajrumiyyah-panel hidden" data-panel="translation">
-                  <p>{section.matn.translation}</p>
-                </div>
-
-                <div class="ajrumiyyah-sharh-box ajrumiyyah-panel hidden" data-panel="sharh" data-sharh>
-                  <div class="ajrumiyyah-sharh-content">
-                    <div class="ajrumiyyah-sharh-head">
-                      <div class="ajrumiyyah-lang-tabs" role="tablist" aria-label="Bahasa syarah">
-                        <button type="button" class="is-active" data-sharh-lang="ar">🇸🇦 العربية</button>
-                        <button type="button" data-sharh-lang="ms">🇲🇾 Melayu</button>
+                  <details class="ajrumiyyah-native-panel" data-native-panel="translation">
+                    <summary class="ajrumiyyah-translation-summary">
+                      Terjemahan
+                    </summary>
+                    <div class="ajrumiyyah-translation-panel ajrumiyyah-panel" data-panel="translation">
+                      <p>{section.matn.translation}</p>
+                    </div>
+                  </details>
+                  <details class="ajrumiyyah-native-panel" data-native-panel="sharh">
+                    <summary class="ajrumiyyah-sharh-summary">
+                      Syarah
+                    </summary>
+                    <div class="ajrumiyyah-sharh-box ajrumiyyah-panel" data-panel="sharh" data-sharh>
+                      <div class="ajrumiyyah-sharh-content">
+                        <div class="ajrumiyyah-sharh-head">
+                          <div class="ajrumiyyah-lang-tabs" role="tablist" aria-label="Bahasa syarah">
+                            <button type="button" class="is-active" data-sharh-lang="ar" aria-label="Syarah Arab">🇸🇦</button>
+                            <button type="button" data-sharh-lang="ms" aria-label="Syarah Melayu">🇲🇾</button>
+                            {section.sharh.english && (
+                              <button type="button" data-sharh-lang="en" aria-label="English sharh">🇬🇧</button>
+                            )}
+                          </div>
+                          <div class="ajrumiyyah-sharh-size" aria-label="Kawalan saiz syarah">
+                            <button type="button" data-sharh-size="smaller" aria-label="Kecilkan teks syarah">−</button>
+                            <span>Syarah</span>
+                            <button type="button" data-sharh-size="larger" aria-label="Besarkan teks syarah">+</button>
+                          </div>
+                        </div>
+                        <div class="arabic ajrumiyyah-sharh-panel" dir="rtl" data-sharh-panel="ar">
+                          {section.sharh.arabic.split("\n\n").map((paragraph) => (
+                            <p set:html={renderInlineMarkdown(paragraph)} />
+                          ))}
+                        </div>
+                        <div class="ajrumiyyah-sharh-panel hidden" data-sharh-panel="ms">
+                          {section.sharh.malay.split("\n\n").map((paragraph) => (
+                            <p set:html={renderInlineMarkdown(paragraph)} />
+                          ))}
+                        </div>
                         {section.sharh.english && (
-                          <button type="button" data-sharh-lang="en">English</button>
+                          <div class="ajrumiyyah-sharh-panel hidden" data-sharh-panel="en">
+                            {section.sharh.english.split("\n\n").map((paragraph) => (
+                              <p set:html={renderInlineMarkdown(paragraph)} />
+                            ))}
+                          </div>
                         )}
                       </div>
-                      <div class="ajrumiyyah-sharh-size" aria-label="Kawalan saiz syarah">
-                        <button type="button" data-sharh-size="smaller" aria-label="Kecilkan teks syarah">−</button>
-                        <span>Syarah</span>
-                        <button type="button" data-sharh-size="larger" aria-label="Besarkan teks syarah">+</button>
-                      </div>
                     </div>
-                    <div class="arabic ajrumiyyah-sharh-panel" dir="rtl" data-sharh-panel="ar">
-                      {section.sharh.arabic.split("\n\n").map((paragraph) => (
-                        <p set:html={renderInlineMarkdown(paragraph)} />
-                      ))}
-                    </div>
-                    <div class="ajrumiyyah-sharh-panel hidden" data-sharh-panel="ms">
-                      {section.sharh.malay.split("\n\n").map((paragraph) => (
-                        <p set:html={renderInlineMarkdown(paragraph)} />
-                      ))}
-                    </div>
-                    {section.sharh.english && (
-                      <div class="ajrumiyyah-sharh-panel hidden" data-sharh-panel="en">
-                        {section.sharh.english.split("\n\n").map((paragraph) => (
-                          <p set:html={renderInlineMarkdown(paragraph)} />
-                        ))}
-                      </div>
-                    )}
-                  </div>
+                  </details>
                 </div>
               </div>
             </div>
@@ -279,7 +271,7 @@ function renderArabic(text: string, words: ProseWord[] = []) {
             {entry.data.sourceEdition && (
               <ul>
                 <li><strong>Matan:</strong> {entry.data.sourceEdition.matn}</li>
-                {entry.data.sourceEdition.sharh && <li><strong>Syarah:</strong> {entry.data.sourceEdition.sharh}</li>}
+                {entry.data.sourceEdition.sharh && <li><strong>Syarah:</strong> Ringkasan syarah dijana AI, bukan teks asal Mukhtasar Jiddan.</li>}
               </ul>
             )}
             <article class="lesson-prose mt-4">
@@ -381,37 +373,73 @@ function renderArabic(text: string, words: ProseWord[] = []) {
         });
       });
 
-      document.querySelectorAll("[data-sharh]").forEach((box) => {
-        box.querySelectorAll("[data-sharh-lang]").forEach((button) => {
-          button.addEventListener("click", () => {
-            const lang = button.dataset.sharhLang;
-            box.querySelectorAll("[data-sharh-lang]").forEach((tab) => tab.classList.toggle("is-active", tab === button));
-            box.querySelectorAll("[data-sharh-panel]").forEach((panel) => {
-              panel.classList.toggle("hidden", panel.dataset.sharhPanel !== lang);
-            });
+      function closeAjrumiyyahPanels(exceptGroup = null) {
+        document.querySelectorAll("[data-ajrumiyyah-panels]").forEach((group) => {
+          if (exceptGroup && group === exceptGroup) return;
+          group.querySelectorAll("[data-native-panel]").forEach((panel) => {
+            if (panel instanceof HTMLDetailsElement) panel.open = false;
+          });
+          group.querySelectorAll("[data-panel]").forEach((panel) => {
+            if (!panel.closest("[data-native-panel]")) panel.classList.add("hidden");
+          });
+          group.querySelectorAll("[data-panel-toggle]").forEach((button) => {
+            button.classList.remove("is-active");
+            button.setAttribute("aria-expanded", "false");
           });
         });
-      });
+      }
 
-      document.querySelectorAll("[data-panel-toggle]").forEach((button) => {
-        button.addEventListener("click", () => {
-          const group = button.closest("[data-ajrumiyyah-panels]");
-          const panelName = button.dataset.panelToggle;
+      document.addEventListener("click", (event) => {
+        const target = event.target;
+        if (!(target instanceof Element)) return;
+
+        const panelToggle = target.closest("[data-panel-toggle]");
+        if (panelToggle instanceof HTMLElement) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+          const group = panelToggle.closest("[data-ajrumiyyah-panels]");
+          const panelName = panelToggle.dataset.panelToggle;
           const panel = group?.querySelector(`[data-panel="${panelName}"]`);
           if (!panel) return;
 
           const shouldOpen = panel.classList.contains("hidden");
+          closeAjrumiyyahPanels(group);
+          group?.querySelectorAll("[data-panel]").forEach((item) => {
+            if (item !== panel) item.classList.add("hidden");
+          });
+          group?.querySelectorAll("[data-panel-toggle]").forEach((button) => {
+            if (button !== panelToggle) {
+              button.classList.remove("is-active");
+              button.setAttribute("aria-expanded", "false");
+            }
+          });
           panel.classList.toggle("hidden", !shouldOpen);
-          button.classList.toggle("is-active", shouldOpen);
-          button.setAttribute("aria-expanded", String(shouldOpen));
-        });
-      });
+          panelToggle.classList.toggle("is-active", shouldOpen);
+          panelToggle.setAttribute("aria-expanded", String(shouldOpen));
+          return;
+        }
 
-      document.querySelectorAll("[data-sharh-size]").forEach((button) => {
-        button.addEventListener("click", () => {
+        const langToggle = target.closest("[data-sharh-lang]");
+        if (langToggle instanceof HTMLElement) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+          const box = langToggle.closest("[data-sharh]");
+          const lang = langToggle.dataset.sharhLang;
+          box?.querySelectorAll("[data-sharh-lang]").forEach((tab) => tab.classList.toggle("is-active", tab === langToggle));
+          box?.querySelectorAll("[data-sharh-panel]").forEach((panel) => {
+            if (panel instanceof HTMLElement) panel.classList.toggle("hidden", panel.dataset.sharhPanel !== lang);
+          });
+          return;
+        }
+
+        const sizeToggle = target.closest("[data-sharh-size]");
+        if (sizeToggle instanceof HTMLElement) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
           const current = Number(localStorage.getItem(sharhSizeKey) || "1");
-          setSharhScale(current + (button.dataset.sharhSize === "larger" ? 0.08 : -0.08));
-        });
+          setSharhScale(current + (sizeToggle.dataset.sharhSize === "larger" ? 0.08 : -0.08));
+          return;
+        }
       });
 
       document.querySelectorAll("[data-matn-size]").forEach((button) => {
@@ -423,14 +451,17 @@ function renderArabic(text: string, words: ProseWord[] = []) {
 
       document.addEventListener("click", (event) => {
         const target = event.target;
+        if (target instanceof Element && target.closest(".matan-word")) return;
+        hidePopover();
         if (
           target instanceof Element &&
-          target.closest(".matan-word")
+          !target.closest(".ajrumiyyah-panel") &&
+          !target.closest(".ajrumiyyah-native-panel") &&
+          !target.closest("[data-panel-toggle]")
         ) {
-          return;
+          closeAjrumiyyahPanels();
         }
-        hidePopover();
-      }, true);
+      });
     </script>
   </body>
 </html>

@@ -45,37 +45,33 @@ proseSections:
           meaning: "dan perkataan yang mengikuti isim majrur"
           type: "keyword"
     sharh:
-      title: "Tiga jenis isim majrur"
+      title: "Ringkasan Syarah"
       arabic: |
-        عَبَّرَ الْمُؤَلِّفُ بِلَفْظِ «الْمَخْفُوضَاتِ»، وَالْخَفْضُ وَالْجَرُّ بِمَعْنًى وَاحِدٍ فِي هَذَا الْبَابِ.
-        
-        وَالْأَشْهَرُ فِي الِاسْتِعْمَالِ أَنْ يُقَالَ:
-        
-        «الْمَجْرُورَاتُ».
-        
-        وَهِيَ ثَلَاثَةُ أَنْوَاعٍ:
-        
-        الْأَوَّلُ: مَجْرُورٌ بِحَرْفِ الْجَرِّ.
-        
-        الثَّانِي: مَجْرُورٌ بِالْمُضَافِ، وَهُوَ الْمُضَافُ إِلَيْهِ.
-        
-        الثَّالِثُ: تَابِعٌ لِاسْمٍ مَجْرُورٍ، كَالنَّعْتِ، وَالْعَطْفِ، وَالتَّوْكِيدِ، وَالْبَدَلِ.
+        الْخَفْضُ وَالْجَرُّ بِمَعْنًى وَاحِدٍ فِي هَذَا الْبَابِ، وَالْمَشْهُورُ فِي الِاسْتِعْمَالِ لَفْظُ «الْجَرِّ».
+    
+        وَالْأَسْمَاءُ الْمَجْرُورَةُ ثَلَاثَةُ أَقْسَامٍ:
+    
+        - مَجْرُورٌ بِحَرْفِ الْجَرِّ، نَحْوُ «مَرَرْتُ بِزَيْدٍ».
+        - وَمَجْرُورٌ بِالْإِضَافَةِ، وَهُوَ الْمُضَافُ إِلَيْهِ، نَحْوُ «غُلَامُ زَيْدٍ».
+        - وَتَابِعٌ لِاسْمٍ مَجْرُورٍ، كَالنَّعْتِ، وَالْعَطْفِ، وَالتَّوْكِيدِ، وَالْبَدَلِ.
+    
       malay: |
-        Matan menggunakan istilah «الْمَخْفُوضَاتُ». Dalam bab ini, istilah **jar** dan **jar** merujuk kepada hukum yang sama.
-        
-        Untuk pembelajaran dalam bahasa Melayu, istilah yang diutamakan ialah:
-        
-        - jar;
-        - huruf jar;
-        - isim majrur;
-        - tanda jar.
-        
-        Isim majrur terbahagi kepada tiga:
-        
-        1. Majrur dengan huruf jar.
-        2. Majrur kerana menjadi mudaf ilayh.
-        3. Tabi‘ kepada isim majrur, seperti na‘t, ‘ataf, taukid dan badal.
-
+        Istilah khafḍ dan jar membawa maksud yang sama dalam bab ini. Istilah yang lebih biasa digunakan ialah jar.
+    
+        Isim majrūr terbahagi kepada tiga:
+    
+        - Majrūr dengan huruf jar, seperti «مَرَرْتُ بِزَيْدٍ».
+        - Majrūr kerana iḍāfah, iaitu muḍāf ilayh, seperti «غُلَامُ زَيْدٍ».
+        - Tābi‘ kepada isim majrūr, seperti na‘at, ‘aṭaf, tawkid dan badal.
+    
+      english: |
+        The terms khafḍ and jarr have the same meaning in this chapter, though jarr is more commonly used.
+    
+        Nouns in jarr are divided into three categories:
+    
+        - A noun governed by a preposition, as in «مَرَرْتُ بِزَيْدٍ».
+        - A noun governed through annexation, namely the annexed complement, as in «غُلَامُ زَيْدٍ».
+        - A dependent following a noun in jarr, such as an adjective, conjunction, emphasis or substitute.
   - id: "majrur-by-harf"
     matn:
       id: "majrurat-02"
@@ -140,28 +136,39 @@ proseSections:
           meaning: "dan مُنْذُ"
           type: "keyword"
     sharh:
-      title: "Majrur dengan huruf jar"
+      title: "Ringkasan Syarah"
       arabic: |
-        فِي قَوْلِكَ:
-        
-        «مَرَرْتُ بِزَيْدٍ»
-        
-        الْبَاءُ حَرْفُ جَرٍّ.
-        
-        وَ«زَيْدٍ» اسْمٌ مَجْرُورٌ بِالْبَاءِ، وَعَلَامَةُ جَرِّهِ الْكَسْرَةُ الظَّاهِرَةُ.
-        
-        فَحَرْفُ الْجَرِّ هُوَ الْعَامِلُ الَّذِي أَحْدَثَ الْجَرَّ فِي الِاسْمِ بَعْدَهُ.
+        الْمَجْرُورُ بِالْحَرْفِ هُوَ الِاسْمُ الَّذِي يَدْخُلُ عَلَيْهِ حَرْفٌ مِنْ حُرُوفِ الْجَرِّ، فَيَعْمَلُ فِيهِ الْجَرَّ.
+    
+        وَمِنْ حُرُوفِ الْجَرِّ: «مِنْ، وَإِلَى، وَعَنْ، وَعَلَى، وَفِي، وَرُبَّ، وَالْبَاءُ، وَالْكَافُ، وَاللَّامُ».
+    
+        وَمِنْهَا حُرُوفُ الْقَسَمِ: الْوَاوُ، وَالْبَاءُ، وَالتَّاءُ.
+    
+        وَمِنْهَا وَاوُ «رُبَّ»، وَ«مُذْ»، وَ«مُنْذُ» فِي اسْتِعْمَالِهِمَا حَرْفَيْ جَرٍّ.
+    
+        فَفِي «مَرَرْتُ بِزَيْدٍ»، الْبَاءُ حَرْفُ جَرٍّ، وَ«زَيْدٍ» اسْمٌ مَجْرُورٌ بِهِ، وَعَلَامَةُ جَرِّهِ الْكَسْرَةُ.
+    
       malay: |
-        Dalam:
-        
-        «مَرَرْتُ بِزَيْدٍ»
-        
-        - Ba’ ialah huruf jar.
-        - «زَيْدٍ» ialah isim majrur dengan ba’.
-        - Tanda jarnya ialah kasrah yang zahir.
-        
-        Huruf jar merupakan amil yang menyebabkan isim selepasnya menjadi majrur.
-
+        Isim yang majrūr dengan huruf ialah isim yang dimasuki huruf jar, lalu huruf itu menyebabkan isim selepasnya menjadi majrūr.
+    
+        Antara huruf jar ialah «مِنْ، إِلَى، عَنْ، عَلَى، فِي، رُبَّ», bā’, kāf dan lām.
+    
+        Huruf sumpah pula ialah wāw, bā’ dan tā’.
+    
+        Termasuk juga wāw yang membawa makna «رُبَّ», serta «مُذْ» dan «مُنْذُ» ketika digunakan sebagai huruf jar.
+    
+        Dalam «مَرَرْتُ بِزَيْدٍ», bā’ ialah huruf jar dan «زَيْدٍ» ialah isim majrūr dengan kasrah.
+    
+      english: |
+        A noun governed by a preposition is one preceded by a preposition that places it in jarr.
+    
+        Prepositions include «مِنْ، إِلَى، عَنْ، عَلَى، فِي، رُبَّ», bā’, kāf and lām.
+    
+        The particles of oath include wāw, bā’ and tā’.
+    
+        Also included are the wāw carrying the meaning of «رُبَّ», and «مُذْ» and «مُنْذُ» when used as prepositions.
+    
+        In «مَرَرْتُ بِزَيْدٍ», bā’ is a preposition and «زَيْدٍ» is a noun in jarr with kasrah.
   - id: "majrur-by-idafah"
     matn:
       id: "majrurat-03"
@@ -178,32 +185,33 @@ proseSections:
           meaning: "hamba milik Zaid"
           type: "keyword"
     sharh:
-      title: "Majrur kerana idafah"
+      title: "Ringkasan Syarah"
       arabic: |
-        فِي قَوْلِكَ:
-        
-        «جَاءَ غُلَامُ زَيْدٍ»
-        
-        «جَاءَ» فِعْلٌ مَاضٍ.
-        
-        وَ«غُلَامُ» فَاعِلٌ مَرْفُوعٌ، وَهُوَ مُضَافٌ.
-        
-        وَ«زَيْدٍ» مُضَافٌ إِلَيْهِ مَجْرُورٌ.
-        
-        وَالْأَدَقُّ أَنْ يُقَالَ: إِنَّ الْمُضَافَ هُوَ الْعَامِلُ فِي جَرِّ الْمُضَافِ إِلَيْهِ.
-        
-        فَـ«زَيْدٍ» مَجْرُورٌ بِالْمُضَافِ، وَهُوَ «غُلَامُ».
+        الْمَجْرُورُ بِالْإِضَافَةِ هُوَ الِاسْمُ الثَّانِي مِنَ الْمُتَضَايِفَيْنِ، وَيُسَمَّى الْمُضَافَ إِلَيْهِ.
+    
+        فَفِي «غُلَامُ زَيْدٍ»، يَكُونُ «غُلَامُ» مُضَافًا، وَ«زَيْدٍ» مُضَافًا إِلَيْهِ مَجْرُورًا.
+    
+        وَفِي «جَاءَ غُلَامُ زَيْدٍ»، يَكُونُ «غُلَامُ» فَاعِلًا مَرْفُوعًا وَهُوَ مُضَافٌ، وَ«زَيْدٍ» مُضَافًا إِلَيْهِ مَجْرُورًا.
+    
+        وَالْمُضَافُ هُوَ الْعَامِلُ فِي جَرِّ الْمُضَافِ إِلَيْهِ.
+    
       malay: |
-        Dalam:
-        
-        «جَاءَ غُلَامُ زَيْدٍ»
-        
-        - «جَاءَ» ialah fi‘il madi.
-        - «غُلَامُ» ialah fa‘il yang marfu‘ dan menjadi mudaf.
-        - «زَيْدٍ» ialah mudaf ilayh yang majrur.
-        
-        Penjelasan yang lebih tepat ialah mudaf menjadi amil yang menyebabkan mudaf ilayh majrur. Oleh itu, «زَيْدٍ» majrur dengan mudaf «غُلَامُ».
-
+        Isim yang majrūr melalui iḍāfah ialah isim kedua dalam susunan iḍāfah dan dinamakan muḍāf ilayh.
+    
+        Dalam «غُلَامُ زَيْدٍ», «غُلَامُ» ialah muḍāf dan «زَيْدٍ» ialah muḍāf ilayh majrūr.
+    
+        Dalam «جَاءَ غُلَامُ زَيْدٍ», «غُلَامُ» ialah fā‘il marfū‘ yang menjadi muḍāf, manakala «زَيْدٍ» ialah muḍāf ilayh majrūr.
+    
+        Muḍāf ialah ‘āmil yang menyebabkan muḍāf ilayh menjadi majrūr.
+    
+      english: |
+        A noun governed through annexation is the second term of an annexation and is called the annexed complement.
+    
+        In «غُلَامُ زَيْدٍ», «غُلَامُ» is the first term of annexation and «زَيْدٍ» is its complement in jarr.
+    
+        In «جَاءَ غُلَامُ زَيْدٍ», «غُلَامُ» is the subject in raf‘ and the first term of annexation, while «زَيْدٍ» is the annexed complement in jarr.
+    
+        The first term of annexation is the governor that places the second term in jarr.
   - id: "tabi-to-majrur"
     matn:
       id: "majrurat-04"
@@ -223,49 +231,33 @@ proseSections:
           meaning: "dan yang dianggarkan dengan makna مِنْ"
           type: "keyword"
     sharh:
-      title: "Tabi‘ kepada isim majrur"
+      title: "Ringkasan Syarah"
       arabic: |
-        التَّابِعُ يَتْبَعُ مَتْبُوعَهُ فِي الْإِعْرَابِ.
-        
-        فَإِذَا كَانَ الْمَتْبُوعُ مَجْرُورًا، كَانَ التَّابِعُ مَجْرُورًا.
-        
-        فَفِي:
-        
-        «مَرَرْتُ بِزَيْدٍ الْعَالِمِ»
-        
-        «الْعَالِمِ» نَعْتٌ مَجْرُورٌ.
-        
-        وَفِي:
-        
-        «مَرَرْتُ بِزَيْدٍ وَعَمْرٍو»
-        
-        «عَمْرٍو» مَعْطُوفٌ مَجْرُورٌ.
-        
-        وَفِي:
-        
-        «مَرَرْتُ بِزَيْدٍ نَفْسِهِ»
-        
-        «نَفْسِهِ» تَوْكِيدٌ مَجْرُورٌ.
-        
-        وَفِي:
-        
-        «مَرَرْتُ بِزَيْدٍ أَخِيكَ»
-        
-        «أَخِيكَ» بَدَلٌ مَجْرُورٌ بِالْيَاءِ؛ لِأَنَّهُ مِنَ الْأَسْمَاءِ الْخَمْسَةِ.
-        
-        وَالصَّحِيحُ أَنَّ التَّابِعَ يُجَرُّ بِالْعَامِلِ الَّذِي جَرَّ الْمَتْبُوعَ، لَا بِمُجَرَّدِ التَّبَعِيَّةِ.
+        الْإِضَافَةُ الْمَذْكُورَةُ هُنَا قِسْمَانِ:
+    
+        **إِضَافَةٌ تُقَدَّرُ بِاللَّامِ:** وَتَكُونُ غَالِبًا لِلْمِلْكِ أَوِ الِاخْتِصَاصِ، نَحْوُ «غُلَامُ زَيْدٍ»، أَيْ: غُلَامٌ لِزَيْدٍ.
+    
+        **وَإِضَافَةٌ تُقَدَّرُ بِـ«مِنْ»:** وَتَكُونُ عِنْدَ بَيَانِ جِنْسِ الْمُضَافِ أَوْ مَادَّتِهِ، نَحْوُ «خَاتَمُ حَدِيدٍ»، أَيْ: خَاتَمٌ مِنْ حَدِيدٍ.
+    
+        وَفِي كِلَا الْقِسْمَيْنِ يَكُونُ الِاسْمُ الثَّانِي مُضَافًا إِلَيْهِ مَجْرُورًا.
+    
       malay: |
-        Tabi‘ mengikuti isim sebelumnya pada hukum i‘rab.
-        
-        Apabila isim yang diikutinya majrur, tabi‘ itu juga menjadi majrur:
-        
-        - «الْعَالِمِ» ialah na‘t yang majrur.
-        - «عَمْرٍو» ialah ma‘tuf yang majrur.
-        - «نَفْسِهِ» ialah taukid yang majrur.
-        - «أَخِيكَ» ialah badal yang majrur dengan ya’ kerana termasuk dalam al-asma’ al-khamsah.
-        
-        Penjelasan yang lebih tepat ialah tabi‘ menjadi majrur dengan amil yang sama yang menjarkan isim sebelumnya, bukan kerana tabi‘ itu sendiri merupakan amil jar.
-
+        Iḍāfah yang disebut di sini terbahagi kepada dua:
+    
+        **Iḍāfah yang dianggarkan dengan lām:** Biasanya menunjukkan pemilikan atau hubungan khusus, seperti «غُلَامُ زَيْدٍ», iaitu seorang hamba milik Zaid.
+    
+        **Iḍāfah yang dianggarkan dengan «مِنْ»:** Digunakan untuk menerangkan jenis atau bahan sesuatu, seperti «خَاتَمُ حَدِيدٍ», iaitu cincin daripada besi.
+    
+        Dalam kedua-dua bentuk, isim kedua menjadi muḍāf ilayh yang majrūr.
+    
+      english: |
+        The annexation discussed here has two forms:
+    
+        **Annexation understood with lām:** It generally indicates ownership or association, as in «غُلَامُ زَيْدٍ», meaning a servant belonging to Zayd.
+    
+        **Annexation understood with «مِنْ»:** It identifies the type or material of something, as in «خَاتَمُ حَدِيدٍ», meaning a ring made of iron.
+    
+        In both forms, the second noun is an annexed complement in jarr.
   - id: "huruf-jar-list"
     matn:
       id: "majrurat-05"
@@ -282,42 +274,33 @@ proseSections:
           meaning: "hamba milik Zaid"
           type: "keyword"
     sharh:
-      title: "Huruf-huruf jar"
+      title: "Ringkasan Syarah"
       arabic: |
-        مِنْ حُرُوفِ الْجَرِّ:
-        
-        «مِنْ»، نَحْوُ: «سِرْتُ مِنَ الْبَصْرَةِ».
-        
-        وَ«إِلَى»، نَحْوُ: «سِرْتُ إِلَى الْكُوفَةِ».
-        
-        وَ«عَنْ»، نَحْوُ: «رَمَيْتُ السَّهْمَ عَنِ الْقَوْسِ».
-        
-        وَ«عَلَى»، نَحْوُ: «رَكِبْتُ عَلَى الْفَرَسِ».
-        
-        وَ«فِي»، نَحْوُ: «الْمَاءُ فِي الْكُوزِ».
-        
-        وَ«رُبَّ»، نَحْوُ: «رُبَّ رَجُلٍ كَرِيمٍ لَقِيتُهُ».
-        
-        وَالْبَاءُ، نَحْوُ: «مَرَرْتُ بِزَيْدٍ».
-        
-        وَالْكَافُ، نَحْوُ: «زَيْدٌ كَالْبَدْرِ».
-        
-        وَاللَّامُ، نَحْوُ: «الْمَالُ لِزَيْدٍ».
+        الْإِضَافَةُ الْمُقَدَّرَةُ بِاللَّامِ تَدُلُّ عَلَى الْمِلْكِ أَوِ الِاخْتِصَاصِ.
+    
+        فَفِي «غُلَامُ زَيْدٍ»، يَكُونُ التَّقْدِيرُ: «غُلَامٌ لِزَيْدٍ».
+    
+        فَـ«غُلَامُ» مُضَافٌ، وَ«زَيْدٍ» مُضَافٌ إِلَيْهِ مَجْرُورٌ.
+    
+        وَحُذِفَتِ اللَّامُ لَفْظًا، وَلَكِنَّ مَعْنَاهَا مَلْحُوظٌ فِي الْإِضَافَةِ.
+    
       malay: |
-        Antara huruf jar yang disebut ialah:
-        
-        - «مِنْ»: dari;
-        - «إِلَى»: hingga atau menuju;
-        - «عَنْ»: dari atau jauh daripada;
-        - «عَلَى»: di atas;
-        - «فِي»: di dalam;
-        - «رُبَّ»: berapa banyak atau terkadang, mengikut konteks;
-        - ba’;
-        - kaf yang membawa makna perbandingan;
-        - lam yang antaranya membawa makna pemilikan.
-        
-        Setiap isim yang hadir selepas huruf-huruf ini menjadi majrur.
-
+        Iḍāfah yang dianggarkan dengan lām menunjukkan pemilikan atau hubungan khusus.
+    
+        Dalam «غُلَامُ زَيْدٍ», anggaran maknanya ialah «غُلَامٌ لِزَيْدٍ».
+    
+        «غُلَامُ» ialah muḍāf dan «زَيْدٍ» ialah muḍāf ilayh majrūr.
+    
+        Lām tidak disebut pada lafaz, tetapi maknanya difahami melalui susunan iḍāfah.
+    
+      english: |
+        Annexation understood with lām indicates ownership or association.
+    
+        In «غُلَامُ زَيْدٍ», the underlying meaning is «غُلَامٌ لِزَيْدٍ».
+    
+        «غُلَامُ» is the first term of annexation and «زَيْدٍ» is its complement in jarr.
+    
+        The lām is omitted in wording, but its meaning is understood from the annexation.
   - id: "min-ila"
     matn:
       id: "majrurat-06"
@@ -340,29 +323,39 @@ proseSections:
           meaning: "dan cincin daripada besi"
           type: "keyword"
     sharh:
-      title: "Huruf jar مِنْ dan إِلَى"
+      title: "Ringkasan Syarah"
       arabic: |
-        فِي قَوْلِكَ:
-        
-        «سِرْتُ مِنَ الْبَصْرَةِ إِلَى الْكُوفَةِ»
-        
-        «مِنْ» حَرْفُ جَرٍّ يَدُلُّ هُنَا عَلَى ابْتِدَاءِ الْغَايَةِ.
-        
-        وَ«الْبَصْرَةِ» اسْمٌ مَجْرُورٌ بِـ«مِنْ».
-        
-        وَ«إِلَى» حَرْفُ جَرٍّ يَدُلُّ عَلَى انْتِهَاءِ الْغَايَةِ.
-        
-        وَ«الْكُوفَةِ» اسْمٌ مَجْرُورٌ بِـ«إِلَى».
+        الْإِضَافَةُ الْمُقَدَّرَةُ بِـ«مِنْ» تَدُلُّ عَلَى أَنَّ الْمُضَافَ مِنْ جِنْسِ الْمُضَافِ إِلَيْهِ أَوْ مَصْنُوعٌ مِنْهُ.
+    
+        فَفِي «ثَوْبُ خَزٍّ»، يَكُونُ التَّقْدِيرُ: ثَوْبٌ مِنْ خَزٍّ.
+    
+        وَفِي «بَابُ سَاجٍ»: بَابٌ مِنْ سَاجٍ.
+    
+        وَفِي «خَاتَمُ حَدِيدٍ»: خَاتَمٌ مِنْ حَدِيدٍ.
+    
+        فَـ«خَزٍّ»، وَ«سَاجٍ»، وَ«حَدِيدٍ» كُلُّهَا مُضَافٌ إِلَيْهِ مَجْرُورٌ.
+    
       malay: |
-        Dalam:
-        
-        «سِرْتُ مِنَ الْبَصْرَةِ إِلَى الْكُوفَةِ»
-        
-        - «مِنْ» menunjukkan tempat permulaan perjalanan.
-        - «الْبَصْرَةِ» ialah isim majrur dengan «مِنْ».
-        - «إِلَى» menunjukkan tempat berakhirnya perjalanan.
-        - «الْكُوفَةِ» ialah isim majrur dengan «إِلَى».
-
+        Iḍāfah yang dianggarkan dengan «مِنْ» menunjukkan bahawa muḍāf terdiri daripada jenis atau bahan muḍāf ilayh.
+    
+        «ثَوْبُ خَزٍّ» bermaksud pakaian daripada kain khazz.
+    
+        «بَابُ سَاجٍ» bermaksud pintu daripada kayu saj.
+    
+        «خَاتَمُ حَدِيدٍ» bermaksud cincin daripada besi.
+    
+        «خَزٍّ», «سَاجٍ» dan «حَدِيدٍ» semuanya ialah muḍāf ilayh majrūr.
+    
+      english: |
+        Annexation understood with «مِنْ» indicates that the first noun belongs to the type or is made from the material named by the second noun.
+    
+        «ثَوْبُ خَزٍّ» means a garment made of khazz fabric.
+    
+        «بَابُ سَاجٍ» means a door made of teakwood.
+    
+        «خَاتَمُ حَدِيدٍ» means a ring made of iron.
+    
+        «خَزٍّ», «سَاجٍ» and «حَدِيدٍ» are all annexed complements in jarr.
   - id: "an-ala-fi"
     matn:
       id: "majrurat-07"
@@ -373,34 +366,21 @@ proseSections:
           meaning: "dan Allah lebih mengetahui"
           type: "keyword"
     sharh:
-      title: "Huruf jar عَنْ، عَلَى dan فِي"
+      title: "Ringkasan Syarah"
       arabic: |
-        فِي:
-        
-        «رَمَيْتُ السَّهْمَ عَنِ الْقَوْسِ»
-        
-        «عَنْ» حَرْفُ جَرٍّ، وَ«الْقَوْسِ» اسْمٌ مَجْرُورٌ بِهِ.
-        
-        وَفِي:
-        
-        «رَكِبْتُ عَلَى الْفَرَسِ»
-        
-        «عَلَى» حَرْفُ جَرٍّ، وَ«الْفَرَسِ» اسْمٌ مَجْرُورٌ بِهِ.
-        
-        وَفِي:
-        
-        «الْمَاءُ فِي الْكُوزِ»
-        
-        «فِي» حَرْفُ جَرٍّ، وَ«الْكُوزِ» اسْمٌ مَجْرُورٌ بِهِ.
+        خَتَمَ الْمُصَنِّفُ الْكِتَابَ بِقَوْلِهِ: «وَاللَّهُ أَعْلَمُ»؛ تَفْوِيضًا لِلْعِلْمِ الْكَامِلِ إِلَى اللَّهِ تَعَالَى، وَاعْتِرَافًا بِأَنَّ عِلْمَ الْعَبْدِ مَحْدُودٌ.
+    
+        فَاللَّهُ سُبْحَانَهُ هُوَ الْعَالِمُ الَّذِي لَا يَخْفَى عَلَيْهِ شَيْءٌ، وَهُوَ أَعْلَمُ بِالصَّوَابِ.
+    
       malay: |
-        Dalam ketiga-tiga contoh:
-        
-        - «الْقَوْسِ» majrur dengan «عَنْ».
-        - «الْفَرَسِ» majrur dengan «عَلَى».
-        - «الْكُوزِ» majrur dengan «فِي».
-        
-        Huruf jar masuk pada isim dan menyebabkan isim tersebut menjadi majrur.
-
+        Pengarang menutup kitab dengan ungkapan «وَاللَّهُ أَعْلَمُ» sebagai penyerahan ilmu yang sempurna kepada Allah dan pengakuan bahawa pengetahuan manusia terbatas.
+    
+        Allah Maha Mengetahui dan tiada sesuatu pun tersembunyi daripada-Nya. Dialah yang paling mengetahui perkara yang benar.
+    
+      english: |
+        The author concludes with «وَاللَّهُ أَعْلَمُ», entrusting complete knowledge to Allah and acknowledging the limits of human understanding.
+    
+        Allah is the All-Knowing, from whom nothing is hidden, and He knows best what is correct.
   - id: "rub-ba-kaf-lam"
     matn:
       id: "majrurat-08"
@@ -414,40 +394,21 @@ proseSections:
           meaning: "dengan segala puji bagi Allah"
           type: "keyword"
     sharh:
-      title: "رُبَّ, ba’, kaf dan lam"
+      title: "Ringkasan Syarah"
       arabic: |
-        فِي:
-        
-        «رُبَّ رَجُلٍ كَرِيمٍ لَقِيتُهُ»
-        
-        «رُبَّ» حَرْفُ جَرٍّ، وَ«رَجُلٍ» اسْمٌ مَجْرُورٌ بِهِ، وَ«كَرِيمٍ» نَعْتٌ مَجْرُورٌ.
-        
-        وَفِي:
-        
-        «مَرَرْتُ بِزَيْدٍ»
-        
-        الْبَاءُ حَرْفُ جَرٍّ.
-        
-        وَفِي:
-        
-        «زَيْدٌ كَالْبَدْرِ»
-        
-        الْكَافُ حَرْفُ جَرٍّ لِلتَّشْبِيهِ.
-        
-        وَفِي:
-        
-        «الْمَالُ لِزَيْدٍ»
-        
-        اللَّامُ حَرْفُ جَرٍّ، وَهِيَ لِلْمِلْكِ فِي هَذَا الْمِثَالِ.
+        قَوْلُهُ: «تَمَّ بِحَمْدِ اللَّهِ» إِعْلَانٌ بِانْتِهَاءِ الْمَتْنِ، مَعَ حَمْدِ اللَّهِ تَعَالَى عَلَى تَيْسِيرِ إِتْمَامِهِ.
+    
+        فَكُلُّ نِعْمَةٍ وَتَوْفِيقٍ مِنَ اللَّهِ، وَلَهُ الْحَمْدُ فِي الْبَدْءِ وَالْخِتَامِ.
+    
       malay: |
-        Dalam contoh-contoh ini:
-        
-        - «رُبَّ» menjarkan «رَجُلٍ».
-        - Ba’ menjarkan «زَيْدٍ».
-        - Kaf menjarkan «الْبَدْرِ» dan menunjukkan perbandingan.
-        - Lam menjarkan «زَيْدٍ» dan menunjukkan pemilikan dalam contoh tersebut.
-        
-        Makna khusus sesuatu huruf jar boleh berubah mengikut konteks ayat.
+        Ungkapan «تَمَّ بِحَمْدِ اللَّهِ» menandakan bahawa matan telah selesai, disertai pujian kepada Allah yang memudahkan penyempurnaannya.
+    
+        Segala nikmat dan taufik datang daripada Allah. Bagi-Nya segala pujian pada permulaan dan pengakhiran.
+    
+      english: |
+        The phrase «تَمَّ بِحَمْدِ اللَّهِ» announces the completion of the text while praising Allah for enabling it to be finished.
+    
+        Every blessing and success comes from Allah, and all praise belongs to Him at the beginning and the end.
 ---
 
 ## Sumber projek

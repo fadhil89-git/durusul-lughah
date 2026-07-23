@@ -13,8 +13,20 @@ console.log(`[kamus] ${report.entryCount} entri dimuat — ${report.perBuku.map(
     <title>Kamus Buku Bahasa Arab Madinah | Tuwailib</title>
   </head>
   <body class="min-h-screen bg-paper">
-    <DictionaryApp client:only="react" entries={entries} chapters={chapters} entryCount={report.entryCount}>
-      <div slot="fallback" class="mx-auto w-full max-w-3xl px-4 py-10 text-sm text-muted">Memuat Kamus Buku Bahasa Arab Madinah...</div>
-    </DictionaryApp>
+    <script is:inline>
+      // Normalize legacy kamus chapter URLs before the React island hydrates.
+      (() => {
+        const params = new URLSearchParams(window.location.search);
+        const rawBab = params.get("bab") || "";
+        if (params.has("buku") || !rawBab.includes("|")) return;
+        const match = rawBab.match(/Buku\s*(\d+)\|(\d+)/i);
+        if (!match) return;
+        params.delete("bab");
+        params.set("buku", match[1]);
+        params.set("bab", match[2]);
+        window.history.replaceState(null, "", `?${params.toString()}`);
+      })();
+    </script>
+    <DictionaryApp client:load entries={entries} chapters={chapters} entryCount={report.entryCount} />
   </body>
 </html>

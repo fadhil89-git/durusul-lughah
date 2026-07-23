@@ -54,34 +54,39 @@ proseSections:
           meaning: "suatu pukulan"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        يُسَمَّى الْمَصْدَرُ أَيْضًا الْمَفْعُولَ الْمُطْلَقَ.
-        
-        وَهُوَ اسْمٌ يَدُلُّ عَلَى الْحَدَثِ مُجَرَّدًا عَنِ الزَّمَانِ.
-        
-        وَقَوْلُ الْمُصَنِّفِ:
-        
-        «يَجِيءُ ثَالِثًا فِي تَصْرِيفِ الْفِعْلِ»
-        
-        مَعْنَاهُ أَنَّهُ يُذْكَرُ بَعْدَ الْمَاضِي وَالْمُضَارِعِ فِي التَّصْرِيفِ، نَحْوُ:
-        
+        يُسَمَّى الْمَصْدَرُ الْمَنْصُوبُ أَيْضًا **الْمَفْعُولَ الْمُطْلَقَ**.
+    
+        وَالْمَصْدَرُ اسْمٌ يَدُلُّ عَلَى نَفْسِ الْحَدَثِ مِنْ غَيْرِ دَلَالَةٍ عَلَى زَمَانٍ.
+    
+        وَمَعْنَى قَوْلِ الْمُصَنِّفِ: **«يَجِيءُ ثَالِثًا فِي تَصْرِيفِ الْفِعْلِ»** أَنَّهُ يُذْكَرُ بَعْدَ الْمَاضِي وَالْمُضَارِعِ، نَحْوُ:
+    
         «ضَرَبَ، يَضْرِبُ، ضَرْبًا».
-        
-        فَـ«ضَرَبَ» فِعْلٌ مَاضٍ، وَ«يَضْرِبُ» فِعْلٌ مُضَارِعٌ، وَ«ضَرْبًا» مَصْدَرٌ.
+    
+        فَـ«ضَرَبَ» فِعْلٌ مَاضٍ، وَ«يَضْرِبُ» فِعْلٌ مُضَارِعٌ، وَ«ضَرْبًا» مَصْدَرٌ يَدُلُّ عَلَى حَدَثِ الضَّرْبِ مُجَرَّدًا عَنِ الزَّمَانِ.
+    
       malay: |
-        Masdar juga dinamakan maf‘ul mutlaq.
-        
-        Masdar ialah isim yang menunjukkan makna sesuatu perbuatan tanpa menunjukkan masa tertentu.
-        
-        Ungkapan “hadir sebagai bentuk ketiga dalam tasrif fi‘il” bermaksud masdar disebut selepas fi‘il māḍī dan fi‘il muḍāri‘:
-        
-        «ضَرَبَ، يَضْرِبُ، ضَرْبًا»
-        
-        - «ضَرَبَ» ialah fi‘il māḍī.
-        - «يَضْرِبُ» ialah fi‘il muḍāri‘.
-        - «ضَرْبًا» ialah masdar.
-
+        Maṣdar yang manṣūb juga dinamakan **maf‘ul muṭlaq**.
+    
+        Maṣdar ialah isim yang menunjukkan perbuatan atau kejadian itu sendiri tanpa menunjukkan masa.
+    
+        Ungkapan **“datang sebagai bentuk ketiga dalam tasrif fi‘il”** bermaksud maṣdar disebut selepas fi‘il māḍī dan muḍāri‘, seperti:
+    
+        «ضَرَبَ، يَضْرِبُ، ضَرْبًا».
+    
+        «ضَرَبَ» ialah fi‘il māḍī, «يَضْرِبُ» ialah fi‘il muḍāri‘, manakala «ضَرْبًا» ialah maṣdar yang menunjukkan perbuatan memukul tanpa menentukan masa.
+    
+      english: |
+        A verbal noun occurring in nasb is also called the **absolute object**.
+    
+        A verbal noun denotes the action or occurrence itself without indicating a particular time.
+    
+        The phrase **“it comes third in the conjugation of the verb”** means that it is listed after the past and present forms, as in:
+    
+        «ضَرَبَ، يَضْرِبُ، ضَرْبًا».
+    
+        «ضَرَبَ» is a past verb, «يَضْرِبُ» is a present verb, and «ضَرْبًا» is a verbal noun denoting the act of striking without reference to time.
   - id: "masdar-example"
     matn:
       id: "masdar-02"
@@ -101,28 +106,33 @@ proseSections:
           meaning: "dan maknawi"
           type: "keyword"
     sharh:
-      title: "Masdar dalam tasrif"
+      title: "Ringkasan Syarah"
       arabic: |
-        التَّصْرِيفُ هُوَ تَغْيِيرُ الْكَلِمَةِ مِنْ صِيغَةٍ إِلَى صِيغَةٍ أُخْرَى.
-        
-        فَفِي قَوْلِكَ:
-        
-        «ضَرَبَ يَضْرِبُ ضَرْبًا»
-        
-        انْتَقَلَ اللَّفْظُ مِنْ صِيغَةِ الْمَاضِي إِلَى صِيغَةِ الْمُضَارِعِ، ثُمَّ إِلَى الْمَصْدَرِ.
-        
-        وَالْمَصْدَرُ يَدُلُّ عَلَى نَفْسِ الْحَدَثِ، وَهُوَ هُنَا حَدَثُ الضَّرْبِ، مِنْ غَيْرِ دَلَالَةٍ عَلَى زَمَانٍ مَاضٍ أَوْ حَالٍ أَوِ اسْتِقْبَالٍ.
+        الْمَصْدَرُ الْمَنْصُوبُ بَعْدَ الْفِعْلِ قِسْمَانِ: لَفْظِيٌّ وَمَعْنَوِيٌّ.
+    
+        **فَاللَّفْظِيُّ:** مَا وَافَقَ فِعْلَهُ فِي اللَّفْظِ وَالْمَعْنَى، نَحْوُ «قَتَلْتُهُ قَتْلًا».
+    
+        **وَالْمَعْنَوِيُّ:** مَا وَافَقَ فِعْلَهُ فِي الْمَعْنَى دُونَ اللَّفْظِ، نَحْوُ «جَلَسْتُ قُعُودًا» وَ«قُمْتُ وُقُوفًا».
+    
+        فَكُلٌّ مِنْهُمَا مَصْدَرٌ مَنْصُوبٌ، وَالْفَرْقُ بَيْنَهُمَا فِي مُوَافَقَةِ لَفْظِ الْفِعْلِ أَوْ عَدَمِهَا.
+    
       malay: |
-        Tasrif ialah mengubah sesuatu kalimah daripada satu bentuk kepada bentuk yang lain.
-        
-        Dalam:
-        
-        «ضَرَبَ يَضْرِبُ ضَرْبًا»
-        
-        lafaz berubah daripada fi‘il māḍī kepada fi‘il muḍāri‘, kemudian kepada masdar.
-        
-        Masdar «ضَرْبًا» hanya menunjukkan perbuatan memukul tanpa menentukan sama ada ia berlaku pada masa lalu, sekarang atau akan datang.
-
+        Maṣdar yang manṣūb selepas fi‘il terbahagi kepada dua: lafẓī dan ma‘nawī.
+    
+        **Maṣdar lafẓī:** Maṣdar yang sama dengan fi‘ilnya pada lafaz dan makna, seperti «قَتَلْتُهُ قَتْلًا».
+    
+        **Maṣdar ma‘nawī:** Maṣdar yang sama dengan fi‘ilnya pada makna sahaja, bukan pada lafaz, seperti «جَلَسْتُ قُعُودًا» dan «قُمْتُ وُقُوفًا».
+    
+        Kedua-duanya ialah maṣdar manṣūb. Perbezaannya ialah sama ada lafaz maṣdar berasal daripada lafaz fi‘il yang sama atau tidak.
+    
+      english: |
+        A verbal noun occurring in nasb after a verb is divided into two types: verbal and semantic.
+    
+        **The verbal type:** It agrees with its verb in both wording and meaning, as in «قَتَلْتُهُ قَتْلًا».
+    
+        **The semantic type:** It agrees with its verb in meaning but not in wording, as in «جَلَسْتُ قُعُودًا» and «قُمْتُ وُقُوفًا».
+    
+        Both are verbal nouns in nasb. The distinction is whether the verbal noun shares the same lexical root or wording as its verb.
   - id: "masdar-maful-mutlaq"
     matn:
       id: "masdar-03"
@@ -148,32 +158,33 @@ proseSections:
           meaning: "dengan suatu pembunuhan"
           type: "keyword"
     sharh:
-      title: "I‘rab contoh"
+      title: "Ringkasan Syarah"
       arabic: |
-        فِي قَوْلِكَ:
-        
-        «ضَرَبَ زَيْدٌ ضَرْبًا»
-        
-        «ضَرَبَ» فِعْلٌ مَاضٍ.
-        
-        وَ«زَيْدٌ» فَاعِلٌ مَرْفُوعٌ بِالضَّمَّةِ الظَّاهِرَةِ.
-        
-        وَ«ضَرْبًا» مَفْعُولٌ مُطْلَقٌ مَنْصُوبٌ بِالْفَتْحَةِ الظَّاهِرَةِ، وَنَاصِبُهُ الْفِعْلُ «ضَرَبَ».
-        
-        وَيَجُوزُ أَنْ يُقَالَ فِي إِعْرَابِهِ:
-        
-        «مَصْدَرٌ مَنْصُوبٌ بِضَرَبَ».
+        إِذَا وَافَقَ الْمَصْدَرُ فِعْلَهُ فِي اللَّفْظِ وَالْمَعْنَى، سُمِّيَ مَصْدَرًا لَفْظِيًّا.
+    
+        فَفِي «قَتَلْتُهُ قَتْلًا»:
+    
+        «قَتَلْتُ» فِعْلٌ وَفَاعِلٌ، وَالْهَاءُ مَفْعُولٌ بِهِ، وَ«قَتْلًا» مَفْعُولٌ مُطْلَقٌ مَنْصُوبٌ بِالْفَتْحَةِ.
+    
+        وَسُمِّيَ لَفْظِيًّا؛ لِأَنَّ «قَتْلًا» مُشْتَقٌّ مِنْ لَفْظِ «قَتَلَ»، وَهُوَ مُوَافِقٌ لَهُ فِي الْمَعْنَى أَيْضًا.
+    
       malay: |
-        I‘rab ayat:
-        
-        - «ضَرَبَ» ialah fi‘il māḍī.
-        - «زَيْدٌ» ialah fā‘il marfū‘ dengan ḍammah.
-        - «ضَرْبًا» ialah maf‘ul mutlaq mansub dengan fatḥah.
-        
-        ‘Amil yang menasabkan «ضَرْبًا» ialah fi‘il «ضَرَبَ».
-        
-        Ia juga boleh dii‘rabkan sebagai “masdar mansub oleh fi‘il ضَرَبَ”.
-
+        Apabila maṣdar sama dengan fi‘ilnya pada lafaz dan makna, ia dinamakan maṣdar lafẓī.
+    
+        Dalam «قَتَلْتُهُ قَتْلًا»:
+    
+        «قَتَلْتُ» terdiri daripada fi‘il dan fā‘il, hā’ ialah maf‘ul bih, manakala «قَتْلًا» ialah maf‘ul muṭlaq manṣūb dengan fathah.
+    
+        Ia dinamakan lafẓī kerana «قَتْلًا» berasal daripada lafaz «قَتَلَ» dan membawa makna perbuatan yang sama.
+    
+      english: |
+        When the verbal noun agrees with its verb in both wording and meaning, it is called a verbal-form absolute object.
+    
+        In «قَتَلْتُهُ قَتْلًا»:
+    
+        «قَتَلْتُ» consists of a verb and its subject, the hā’ is the direct object, and «قَتْلًا» is an absolute object in nasb with fatḥah.
+    
+        It is called verbal because «قَتْلًا» is derived from the same wording as «قَتَلَ» and carries the same basic meaning.
   - id: "masdar-types"
     matn:
       id: "masdar-04"
@@ -202,23 +213,33 @@ proseSections:
           meaning: "dan aku berdiri dengan suatu berdiri"
           type: "keyword"
     sharh:
-      title: "Pembahagian masdar"
+      title: "Ringkasan Syarah"
       arabic: |
-        الْمَصْدَرُ الْمَنْصُوبُ بَعْدَ الْفِعْلِ قِسْمَانِ:
-        
-        أَوَّلًا: مَصْدَرٌ لَفْظِيٌّ، وَهُوَ الَّذِي يُوَافِقُ فِعْلَهُ فِي اللَّفْظِ وَالْمَعْنَى.
-        
-        ثَانِيًا: مَصْدَرٌ مَعْنَوِيٌّ، وَهُوَ الَّذِي يُوَافِقُ فِعْلَهُ فِي الْمَعْنَى دُونَ اللَّفْظِ.
+        إِذَا وَافَقَ الْمَصْدَرُ مَعْنَى فِعْلِهِ دُونَ لَفْظِهِ، سُمِّيَ مَصْدَرًا مَعْنَوِيًّا.
+    
+        فَفِي «جَلَسْتُ قُعُودًا»، يَكُونُ «قُعُودًا» مَصْدَرًا مَنْصُوبًا مُوَافِقًا لِـ«جَلَسْتُ» فِي الْمَعْنَى، وَلَكِنَّهُ لَيْسَ مِنْ لَفْظِهِ.
+    
+        وَفِي «قُمْتُ وُقُوفًا»، يَكُونُ «وُقُوفًا» مَصْدَرًا مَنْصُوبًا مُوَافِقًا لِـ«قُمْتُ» فِي الْمَعْنَى دُونَ اللَّفْظِ.
+    
+        وَنَاصِبُ الْمَصْدَرِ فِي كُلِّ مِثَالٍ هُوَ الْفِعْلُ الَّذِي قَبْلَهُ.
+    
       malay: |
-        Masdar yang mansub selepas fi‘il terbahagi kepada:
-        
-        **1. Masdar lafzi**
-        
-        Masdar yang sama lafaz dan makna dengan fi‘ilnya.
-        
-        **2. Masdar maknawi**
-        
-        Masdar yang sama makna dengan fi‘ilnya tetapi tidak berasal daripada lafaz yang sama.
+        Apabila maṣdar sama dengan fi‘ilnya pada makna tetapi tidak pada lafaz, ia dinamakan maṣdar ma‘nawī.
+    
+        Dalam «جَلَسْتُ قُعُودًا», «قُعُودًا» ialah maṣdar manṣūb yang sama makna dengan «جَلَسْتُ», tetapi bukan daripada lafaz yang sama.
+    
+        Dalam «قُمْتُ وُقُوفًا», «وُقُوفًا» ialah maṣdar manṣūb yang sama makna dengan «قُمْتُ», tetapi lafaz kedua-duanya berbeza.
+    
+        ‘Āmil yang menasabkan maṣdar dalam setiap contoh ialah fi‘il yang mendahuluinya.
+    
+      english: |
+        When the verbal noun agrees with its verb in meaning but not in wording, it is called a semantic absolute object.
+    
+        In «جَلَسْتُ قُعُودًا», «قُعُودًا» is a verbal noun in nasb agreeing with «جَلَسْتُ» in meaning, though it is not from the same wording.
+    
+        In «قُمْتُ وُقُوفًا», «وُقُوفًا» is a verbal noun in nasb agreeing with «قُمْتُ» in meaning but not wording.
+    
+        In each example, the preceding verb is the governing element placing the verbal noun in nasb.
 ---
 
 ## Sumber projek

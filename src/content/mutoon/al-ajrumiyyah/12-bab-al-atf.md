@@ -72,38 +72,39 @@ proseSections:
           meaning: "pada sebahagian tempat"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        الْمُرَادُ بِالْعَطْفِ هُنَا عَطْفُ النَّسَقِ.
-        
-        وَهُوَ تَابِعٌ يَتَوَسَّطُ بَيْنَهُ وَبَيْنَ مَتْبُوعِهِ حَرْفٌ مِنْ حُرُوفِ الْعَطْفِ.
-        
-        فَفِي قَوْلِنَا:
-        
-        «جَاءَ زَيْدٌ وَعَمْرٌو»
-        
+        الْمُرَادُ بِالْعَطْفِ هُنَا **عَطْفُ النَّسَقِ**، وَهُوَ تَابِعٌ يَتَوَسَّطُ بَيْنَهُ وَبَيْنَ مَتْبُوعِهِ حَرْفٌ مِنْ حُرُوفِ الْعَطْفِ.
+    
+        فَفِي «جَاءَ زَيْدٌ وَعَمْرٌو»:
+    
         «زَيْدٌ» مَعْطُوفٌ عَلَيْهِ، وَالْوَاوُ حَرْفُ عَطْفٍ، وَ«عَمْرٌو» مَعْطُوفٌ.
-        
+    
+        وَحُرُوفُ الْعَطْفِ عَشَرَةٌ: «الْوَاوُ، وَالْفَاءُ، وَثُمَّ، وَأَوْ، وَأَمْ، وَإِمَّا، وَبَلْ، وَلَا، وَلَكِنْ، وَحَتَّى» فِي بَعْضِ الْمَوَاضِعِ.
+    
         وَيَتْبَعُ الْمَعْطُوفُ الْمَعْطُوفَ عَلَيْهِ فِي الْإِعْرَابِ.
+    
       malay: |
-        ‘Aṭaf yang dimaksudkan dalam bab ini ialah **‘aṭaf al-nasaq**.
-        
-        Ia terdiri daripada:
-        
-        - ma‘ṭūf ‘alayh;
-        - huruf ‘aṭaf;
-        - ma‘ṭūf.
-        
-        Contoh:
-        
-        «جَاءَ زَيْدٌ وَعَمْرٌو»
-        
-        - «زَيْدٌ» ialah ma‘ṭūf ‘alayh.
-        - Wāw ialah huruf ‘aṭaf.
-        - «عَمْرٌو» ialah ma‘ṭūf.
-        
-        Ma‘ṭūf mengikuti ma‘ṭūf ‘alayh dalam hukum i‘rab.
-
+        ‘Aṭaf yang dimaksudkan di sini ialah **‘aṭaf al-nasaq**, iaitu tābi‘ yang dihubungkan dengan perkataan sebelumnya melalui salah satu huruf ‘aṭaf.
+    
+        Dalam «جَاءَ زَيْدٌ وَعَمْرٌو»:
+    
+        «زَيْدٌ» ialah ma‘ṭūf ‘alayh, wāw ialah huruf ‘aṭaf dan «عَمْرٌو» ialah ma‘ṭūf.
+    
+        Huruf ‘aṭaf ada sepuluh: «الْوَاوُ، الْفَاءُ، ثُمَّ، أَوْ، أَمْ، إِمَّا، بَلْ، لَا، لَكِنْ» dan «حَتَّى» pada keadaan tertentu.
+    
+        Ma‘ṭūf mengikuti ma‘ṭūf ‘alayh pada hukum i‘rab.
+    
+      english: |
+        The conjunction intended here is **coordinating conjunction**, in which a dependent is linked to the preceding word by one of the conjunction particles.
+    
+        In «جَاءَ زَيْدٌ وَعَمْرٌو»:
+    
+        «زَيْدٌ» is the word being followed, wāw is the conjunction particle and «عَمْرٌو» is the conjoined word.
+    
+        There are ten conjunction particles: «الْوَاوُ، الْفَاءُ، ثُمَّ، أَوْ، أَمْ، إِمَّا، بَلْ، لَا، لَكِنْ» and «حَتَّى» in certain usages.
+    
+        The conjoined word follows the word before it in grammatical state.
   - id: "letters-of-atf"
     matn:
       id: "atf-02"
@@ -138,41 +139,54 @@ proseSections:
           meaning: "engkau menjazmkannya"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        حُرُوفُ الْعَطْفِ الْمَذْكُورَةُ فِي الْمَتْنِ عَشَرَةٌ.
-        
-        وَهِيَ تَشْتَرِكُ فِي جَعْلِ مَا بَعْدَهَا تَابِعًا لِمَا قَبْلَهَا فِي الْإِعْرَابِ، وَلَكِنَّهَا تَخْتَلِفُ فِي الْمَعْنَى.
-        
-        فَالْوَاوُ لِمُطْلَقِ الْجَمْعِ.
-        
-        وَالْفَاءُ لِلتَّرْتِيبِ وَالتَّعْقِيبِ.
-        
-        وَ«ثُمَّ» لِلتَّرْتِيبِ مَعَ التَّرَاخِي.
-        
-        وَ«أَوْ» وَ«أَمْ» وَ«إِمَّا» تَأْتِي لِمَعَانٍ مِنْهَا التَّخْيِيرُ وَالتَّقْسِيمُ.
-        
-        وَ«بَلْ» لِلْإِضْرَابِ.
-        
-        وَ«لَا» لِنَفْيِ الْحُكْمِ عَمَّا بَعْدَهَا.
-        
-        وَ«لَكِنْ» لِلِاسْتِدْرَاكِ.
-        
-        وَ«حَتَّى» تَكُونُ عَاطِفَةً بِشُرُوطٍ.
+        يَتْبَعُ الْمَعْطُوفُ الْمَعْطُوفَ عَلَيْهِ فِي الْإِعْرَابِ.
+    
+        فَإِنْ عُطِفَ عَلَى مَرْفُوعٍ كَانَ مَرْفُوعًا، وَإِنْ عُطِفَ عَلَى مَنْصُوبٍ كَانَ مَنْصُوبًا، وَإِنْ عُطِفَ عَلَى مَجْرُورٍ كَانَ مَجْرُورًا، وَإِنْ عُطِفَ فِعْلٌ عَلَى مَجْزُومٍ كَانَ مَجْزُومًا.
+    
+        وَتَخْتَلِفُ حُرُوفُ الْعَطْفِ فِي مَعَانِيهَا:
+    
+        - الْوَاوُ لِمُطْلَقِ الْجَمْعِ.
+        - الْفَاءُ لِلتَّرْتِيبِ وَالتَّعْقِيبِ.
+        - «ثُمَّ» لِلتَّرْتِيبِ مَعَ التَّرَاخِي.
+        - «أَوْ» وَ«أَمْ» وَ«إِمَّا» تَأْتِي لِلتَّخْيِيرِ أَوِ التَّقْسِيمِ وَغَيْرِهِمَا.
+        - «بَلْ» لِلْإِضْرَابِ.
+        - «لَا» لِنَفْيِ الْحُكْمِ عَمَّا بَعْدَهَا.
+        - «لَكِنْ» لِلِاسْتِدْرَاكِ.
+        - «حَتَّى» تَكُونُ عَاطِفَةً بِشُرُوطٍ.
+    
       malay: |
-        Kesemua huruf ini menjadikan kalimah selepasnya mengikuti i‘rab kalimah sebelumnya.
-        
-        Namun setiap huruf membawa makna yang berlainan.
-        
-        - الْوَاوُ menghimpunkan dua perkara.
-        - الْفَاءُ menunjukkan susunan yang segera.
-        - ثُمَّ menunjukkan susunan dengan jarak.
-        - أَوْ, أَمْ dan إِمَّا digunakan antaranya untuk pilihan atau pembahagian.
-        - بَلْ memindahkan hukum kepada kalimah selepasnya.
-        - لَا menafikan hukum daripada kalimah selepasnya.
-        - لَكِنْ digunakan untuk istidrāk.
-        - حَتَّى menjadi huruf ‘aṭaf hanya pada keadaan tertentu.
-
+        Ma‘ṭūf mengikuti ma‘ṭūf ‘alayh pada hukum i‘rab.
+    
+        Apabila di‘aṭafkan kepada perkataan marfū‘, ma‘ṭūf turut marfū‘. Apabila di‘aṭafkan kepada perkataan manṣūb, ia turut manṣūb. Apabila di‘aṭafkan kepada perkataan majrūr, ia turut majrūr. Fi‘il yang di‘aṭafkan kepada fi‘il majzūm turut menjadi majzūm.
+    
+        Huruf-huruf ‘aṭaf berbeza dari segi makna:
+    
+        - Wāw menunjukkan perkongsian hukum secara umum.
+        - Fā’ menunjukkan susunan yang segera.
+        - «ثُمَّ» menunjukkan susunan dengan jarak masa.
+        - «أَوْ», «أَمْ» dan «إِمَّا» digunakan antaranya untuk pilihan atau pembahagian.
+        - «بَلْ» memindahkan hukum kepada perkataan selepasnya.
+        - «لَا» menafikan hukum daripada perkataan selepasnya.
+        - «لَكِنْ» menunjukkan istidrāk.
+        - «حَتَّى» menjadi huruf ‘aṭaf dengan syarat tertentu.
+    
+      english: |
+        The conjoined word follows the preceding word in grammatical state.
+    
+        When it is conjoined to a word in raf‘, it is also in raf‘. When conjoined to a word in nasb, it is in nasb. When conjoined to a word in jarr, it is in jarr. A verb conjoined to a jussive verb is likewise jussive.
+    
+        The conjunction particles differ in meaning:
+    
+        - Wāw indicates general combination.
+        - Fā’ indicates sequence with immediacy.
+        - «ثُمَّ» indicates sequence with a delay.
+        - «أَوْ», «أَمْ» and «إِمَّا» may indicate choice or division.
+        - «بَلْ» shifts the ruling to what follows.
+        - «لَا» negates the ruling from what follows.
+        - «لَكِنْ» indicates correction.
+        - «حَتَّى» functions as a conjunction under certain conditions.
   - id: "waw-example"
     matn:
       id: "atf-03"
@@ -198,28 +212,45 @@ proseSections:
           meaning: "dan tidak duduk"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        فِي «جَاءَ زَيْدٌ وَعَمْرٌو»:
-        
-        «جَاءَ» فِعْلٌ مَاضٍ.
-        
-        وَ«زَيْدٌ» فَاعِلٌ مَرْفُوعٌ بِالضَّمَّةِ الظَّاهِرَةِ، وَهُوَ الْمَعْطُوفُ عَلَيْهِ.
-        
-        وَالْوَاوُ حَرْفُ عَطْفٍ.
-        
-        وَ«عَمْرٌو» مَعْطُوفٌ عَلَى «زَيْدٍ» مَرْفُوعٌ بِالضَّمَّةِ الظَّاهِرَةِ.
-        
-        وَالْوَاوُ لَا تَدُلُّ بِنَفْسِهَا عَلَى أَنَّ أَحَدَهُمَا جَاءَ قَبْلَ الْآخَرِ.
+        فِي «قَامَ زَيْدٌ وَعَمْرٌو»:
+    
+        «زَيْدٌ» فَاعِلٌ مَرْفُوعٌ وَهُوَ الْمَعْطُوفُ عَلَيْهِ، وَالْوَاوُ حَرْفُ عَطْفٍ، وَ«عَمْرٌو» مَعْطُوفٌ مَرْفُوعٌ.
+    
+        وَفِي «رَأَيْتُ زَيْدًا وَعَمْرًا»، يَكُونُ «عَمْرًا» مَعْطُوفًا مَنْصُوبًا عَلَى «زَيْدًا».
+    
+        وَفِي «مَرَرْتُ بِزَيْدٍ وَعَمْرٍو»، يَكُونُ «عَمْرٍو» مَعْطُوفًا مَجْرُورًا عَلَى «زَيْدٍ».
+    
+        وَفِي «زَيْدٌ لَمْ يَقُمْ وَلَمْ يَقْعُدْ»، يَكُونُ «يَقْعُدْ» فِعْلًا مُضَارِعًا مَجْزُومًا مَعْطُوفًا عَلَى «يَقُمْ».
+    
+        وَالْوَاوُ تَدُلُّ عَلَى الِاشْتِرَاكِ فِي الْحُكْمِ، وَلَا تَدُلُّ بِنَفْسِهَا عَلَى التَّرْتِيبِ.
+    
       malay: |
-        I‘rab ayat:
-        
-        - «جَاءَ» ialah fi‘il māḍī.
-        - «زَيْدٌ» ialah fā‘il marfū‘ dan ma‘ṭūf ‘alayh.
-        - Wāw ialah huruf ‘aṭaf.
-        - «عَمْرٌو» ialah ma‘ṭūf marfū‘.
-        
-        Wāw hanya menunjukkan bahawa kedua-duanya berkongsi hukum datang. Ia tidak semestinya menunjukkan siapa yang datang dahulu.
+        Dalam «قَامَ زَيْدٌ وَعَمْرٌو»:
+    
+        «زَيْدٌ» ialah fā‘il marfū‘ dan ma‘ṭūf ‘alayh. Wāw ialah huruf ‘aṭaf, manakala «عَمْرٌو» ialah ma‘ṭūf marfū‘.
+    
+        Dalam «رَأَيْتُ زَيْدًا وَعَمْرًا», «عَمْرًا» ialah ma‘ṭūf manṣūb yang mengikuti «زَيْدًا».
+    
+        Dalam «مَرَرْتُ بِزَيْدٍ وَعَمْرٍو», «عَمْرٍو» ialah ma‘ṭūf majrūr yang mengikuti «زَيْدٍ».
+    
+        Dalam «زَيْدٌ لَمْ يَقُمْ وَلَمْ يَقْعُدْ», fi‘il «يَقْعُدْ» majzūm kerana di‘aṭafkan kepada «يَقُمْ».
+    
+        Wāw menunjukkan perkongsian pada hukum, tetapi tidak menunjukkan susunan siapa yang berlaku dahulu.
+    
+      english: |
+        In «قَامَ زَيْدٌ وَعَمْرٌو»:
+    
+        «زَيْدٌ» is the subject in raf‘ and the word being followed. Wāw is the conjunction particle, while «عَمْرٌو» is the conjoined word in raf‘.
+    
+        In «رَأَيْتُ زَيْدًا وَعَمْرًا», «عَمْرًا» is conjoined to «زَيْدًا» and is therefore in nasb.
+    
+        In «مَرَرْتُ بِزَيْدٍ وَعَمْرٍو», «عَمْرٍو» is conjoined to «زَيْدٍ» and is therefore in jarr.
+    
+        In «زَيْدٌ لَمْ يَقُمْ وَلَمْ يَقْعُدْ», the verb «يَقْعُدْ» is jussive because it is conjoined to «يَقُمْ».
+    
+        Wāw indicates participation in the ruling but does not by itself indicate sequence.
 ---
 
 ## Sumber projek

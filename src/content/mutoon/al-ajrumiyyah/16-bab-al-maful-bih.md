@@ -48,33 +48,39 @@ proseSections:
           meaning: "dan aku menunggang kuda"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        الْمَفْعُولُ بِهِ فِي اصْطِلَاحِ النُّحَاةِ هُوَ الِاسْمُ الَّذِي يَقَعُ عَلَيْهِ فِعْلُ الْفَاعِلِ.
-        
+        الْمَفْعُولُ بِهِ هُوَ الِاسْمُ الْمَنْصُوبُ الَّذِي يَقَعُ عَلَيْهِ فِعْلُ الْفَاعِلِ.
+    
         وَالْمُرَادُ بِوُقُوعِ الْفِعْلِ عَلَيْهِ أَنَّ أَثَرَ الْفِعْلِ يَتَعَلَّقُ بِهِ.
-        
-        وَقَدْ يَكُونُ الْفِعْلُ حِسِّيًّا، نَحْوُ:
-        
-        «ضَرَبْتُ زَيْدًا».
-        
-        فَالضَّرْبُ فِعْلٌ حِسِّيٌّ وَقَعَ عَلَى زَيْدٍ.
-        
-        وَقَدْ يَكُونُ الْفِعْلُ مَعْنَوِيًّا، نَحْوُ:
-        
-        «تَعَلَّمْتُ الْمَسْأَلَةَ».
-        
-        فَالتَّعَلُّمُ فِعْلٌ مَعْنَوِيٌّ تَعَلَّقَ بِالْمَسْأَلَةِ.
+    
+        وَقَدْ يَكُونُ الْفِعْلُ حِسِّيًّا، نَحْوُ «ضَرَبْتُ زَيْدًا»، فَالضَّرْبُ وَقَعَ عَلَى زَيْدٍ.
+    
+        وَقَدْ يَكُونُ مَعْنَوِيًّا، نَحْوُ «تَعَلَّمْتُ الْمَسْأَلَةَ»، فَالتَّعَلُّمُ تَعَلَّقَ بِالْمَسْأَلَةِ.
+    
+        وَفِي «رَكِبْتُ الْفَرَسَ»، يَكُونُ «الْفَرَسَ» مَفْعُولًا بِهِ مَنْصُوبًا.
+    
       malay: |
-        Maf‘ul bih ialah isim yang dikenai perbuatan yang dilakukan oleh fā‘il.
-        
-        Perbuatan tersebut tidak semestinya perbuatan fizikal. Ia boleh berupa:
-        
-        - Perbuatan hissi: «ضَرَبْتُ زَيْدًا» — “Aku memukul Zaid.”
-        - Perbuatan maknawi: «تَعَلَّمْتُ الْمَسْأَلَةَ» — “Aku mempelajari masalah itu.”
-        
-        Dalam contoh pertama, pukulan dikenakan kepada Zaid. Dalam contoh kedua, perbuatan mempelajari berkaitan dengan masalah tersebut.
-
+        Maf‘ul bih ialah isim manṣūb yang dikenai perbuatan fā‘il.
+    
+        Maksud perbuatan berlaku ke atasnya ialah kesan perbuatan tersebut berkaitan dengannya.
+    
+        Perbuatan itu boleh berbentuk fizikal, seperti «ضَرَبْتُ زَيْدًا». Pukulan dikenakan kepada Zaid.
+    
+        Ia juga boleh berbentuk maknawi, seperti «تَعَلَّمْتُ الْمَسْأَلَةَ». Perbuatan mempelajari berkaitan dengan masalah tersebut.
+    
+        Dalam «رَكِبْتُ الْفَرَسَ», perkataan «الْفَرَسَ» ialah maf‘ul bih manṣūb.
+    
+      english: |
+        The direct object is a noun in nasb upon which the action of the subject falls.
+    
+        The action falling upon it means that the effect or relation of the action is connected to it.
+    
+        The action may be physical, as in «ضَرَبْتُ زَيْدًا», where the striking affects Zayd.
+    
+        It may also be conceptual, as in «تَعَلَّمْتُ الْمَسْأَلَةَ», where learning relates to the issue.
+    
+        In «رَكِبْتُ الْفَرَسَ», «الْفَرَسَ» is the direct object in nasb.
   - id: "maful-bih-examples"
     matn:
       id: "maful-bih-02"
@@ -94,38 +100,39 @@ proseSections:
           meaning: "dan dhamir"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        فِي قَوْلِكَ:
-        
-        «ضَرَبْتُ زَيْدًا»
-        
-        «ضَرَبْتُ» فِعْلٌ مَاضٍ وَفَاعِلٌ.
-        
-        وَ«زَيْدًا» مَفْعُولٌ بِهِ مَنْصُوبٌ بِالْفَتْحَةِ الظَّاهِرَةِ.
-        
-        وَفِي قَوْلِكَ:
-        
-        «رَكِبْتُ الْفَرَسَ»
-        
-        «رَكِبْتُ» فِعْلٌ مَاضٍ وَفَاعِلٌ.
-        
-        وَ«الْفَرَسَ» مَفْعُولٌ بِهِ مَنْصُوبٌ بِالْفَتْحَةِ الظَّاهِرَةِ.
-        
-        وَمَثَّلَ الْمُصَنِّفُ بِالْعَاقِلِ وَغَيْرِ الْعَاقِلِ؛ لِيَدُلَّ عَلَى أَنَّ الْمَفْعُولَ بِهِ قَدْ يَكُونُ عَاقِلًا كَزَيْدٍ، وَقَدْ يَكُونُ غَيْرَ عَاقِلٍ كَالْفَرَسِ.
+        يَنْقَسِمُ الْمَفْعُولُ بِهِ إِلَى قِسْمَيْنِ: ظَاهِرٍ وَمُضْمَرٍ.
+    
+        فَفِي «ضَرَبْتُ زَيْدًا»، يَكُونُ «زَيْدًا» مَفْعُولًا بِهِ ظَاهِرًا مَنْصُوبًا بِالْفَتْحَةِ.
+    
+        وَفِي «رَكِبْتُ الْفَرَسَ»، يَكُونُ «الْفَرَسَ» مَفْعُولًا بِهِ ظَاهِرًا مَنْصُوبًا.
+    
+        وَقَدْ يَكُونُ الْمَفْعُولُ بِهِ عَاقِلًا كَـ«زَيْدٍ»، أَوْ غَيْرَ عَاقِلٍ كَـ«الْفَرَسِ».
+    
+        وَالْمُضْمَرُ هُوَ الضَّمِيرُ الَّذِي يَقَعُ فِي مَحَلِّ نَصْبٍ مَفْعُولًا بِهِ.
+    
       malay: |
-        I‘rab contoh pertama:
-        
-        - «ضَرَبْتُ» ialah fi‘il māḍī dan tā’ ialah fā‘il.
-        - «زَيْدًا» ialah maf‘ul bih mansub dengan fatḥah.
-        
-        I‘rab contoh kedua:
-        
-        - «رَكِبْتُ» ialah fi‘il māḍī dan tā’ ialah fā‘il.
-        - «الْفَرَسَ» ialah maf‘ul bih mansub dengan fatḥah.
-        
-        Pengarang memberikan contoh manusia dan haiwan untuk menunjukkan bahawa maf‘ul bih boleh terdiri daripada sesuatu yang berakal ataupun yang tidak berakal.
-
+        Maf‘ul bih terbahagi kepada dua: ẓāhir dan muḍmar.
+    
+        Dalam «ضَرَبْتُ زَيْدًا», «زَيْدًا» ialah maf‘ul bih ẓāhir yang manṣūb dengan fathah.
+    
+        Dalam «رَكِبْتُ الْفَرَسَ», «الْفَرَسَ» ialah maf‘ul bih ẓāhir yang manṣūb.
+    
+        Maf‘ul bih boleh terdiri daripada sesuatu yang berakal seperti Zaid, atau yang tidak berakal seperti kuda.
+    
+        Maf‘ul bih muḍmar pula ialah dhamir yang berada pada kedudukan naṣab sebagai maf‘ul bih.
+    
+      english: |
+        The direct object is divided into two categories: explicit and pronominal.
+    
+        In «ضَرَبْتُ زَيْدًا», «زَيْدًا» is an explicit direct object in nasb with fatḥah.
+    
+        In «رَكِبْتُ الْفَرَسَ», «الْفَرَسَ» is an explicit direct object in nasb.
+    
+        A direct object may be rational, such as Zayd, or non-rational, such as a horse.
+    
+        A pronominal direct object is a pronoun occupying the grammatical position of nasb as the direct object.
   - id: "maful-bih-types"
     matn:
       id: "maful-bih-03"
@@ -139,41 +146,42 @@ proseSections:
           meaning: "ialah seperti yang telah disebutkan"
           type: "keyword"
     sharh:
-      title: "Maf‘ul bih zahir dan mudmar"
+      title: "Ringkasan Syarah"
       arabic: |
-        الْمَفْعُولُ بِهِ قِسْمَانِ:
-        
-        أَوَّلًا: ظَاهِرٌ، وَهُوَ مَا دَلَّ عَلَى مَعْنَاهُ بِلَفْظِهِ مِنْ غَيْرِ احْتِيَاجٍ إِلَى مَرْجِعٍ، نَحْوُ:
-        
-        «زَيْدًا» فِي «ضَرَبْتُ زَيْدًا».
-        
-        وَ«الْفَرَسَ» فِي «رَكِبْتُ الْفَرَسَ».
-        
-        ثَانِيًا: مُضْمَرٌ، وَهُوَ الضَّمِيرُ الَّذِي يَحُلُّ مَحَلَّ الِاسْمِ الظَّاهِرِ، نَحْوُ الْيَاءِ فِي:
-        
-        «ضَرَبَنِي».
-        
-        فَالْيَاءُ ضَمِيرٌ فِي مَحَلِّ نَصْبٍ مَفْعُولٌ بِهِ.
+        الْمَفْعُولُ بِهِ الظَّاهِرُ هُوَ الِاسْمُ الَّذِي يُذْكَرُ لَفْظُهُ صَرَاحَةً فِي الْكَلَامِ.
+    
+        وَمِنْ أَمْثِلَتِهِ:
+    
+        - «زَيْدًا» فِي «ضَرَبْتُ زَيْدًا».
+        - «الْفَرَسَ» فِي «رَكِبْتُ الْفَرَسَ».
+    
+        أَمَّا الْمَفْعُولُ بِهِ الْمُضْمَرُ، فَهُوَ الضَّمِيرُ الَّذِي يَحُلُّ مَحَلَّ الِاسْمِ الظَّاهِرِ، نَحْوُ الْيَاءِ فِي «ضَرَبَنِي».
+    
+        فَالْيَاءُ ضَمِيرٌ مُتَّصِلٌ مَبْنِيٌّ فِي مَحَلِّ نَصْبٍ مَفْعُولٌ بِهِ.
+    
       malay: |
-        Maf‘ul bih terbahagi kepada:
-        
-        **1. Maf‘ul bih zahir**
-        
-        Isimnya disebut dengan jelas, seperti:
-        
-        - «زَيْدًا» dalam «ضَرَبْتُ زَيْدًا»
-        - «الْفَرَسَ» dalam «رَكِبْتُ الْفَرَسَ»
-        
-        **2. Maf‘ul bih mudmar**
-        
-        Maf‘ul bih berupa damir, seperti yā’ dalam:
-        
-        «ضَرَبَنِي»
-        
-        “Dia telah memukulku.”
-        
-        Yā’ ialah damir yang berada pada محل نصب sebagai maf‘ul bih.
-
+        Maf‘ul bih ẓāhir ialah isim yang lafaznya disebut secara jelas dalam ayat.
+    
+        Antara contohnya:
+    
+        - «زَيْدًا» dalam «ضَرَبْتُ زَيْدًا».
+        - «الْفَرَسَ» dalam «رَكِبْتُ الْفَرَسَ».
+    
+        Maf‘ul bih muḍmar pula ialah dhamir yang menggantikan isim ẓāhir, seperti yā’ dalam «ضَرَبَنِي».
+    
+        Yā’ tersebut ialah dhamir bersambung yang mabnī dan berada pada kedudukan naṣab sebagai maf‘ul bih.
+    
+      english: |
+        An explicit direct object is a noun whose wording is stated clearly in the sentence.
+    
+        Examples include:
+    
+        - «زَيْدًا» in «ضَرَبْتُ زَيْدًا».
+        - «الْفَرَسَ» in «رَكِبْتُ الْفَرَسَ».
+    
+        A pronominal direct object is a pronoun taking the place of an explicit noun, such as the yā’ in «ضَرَبَنِي».
+    
+        That yā’ is an attached built pronoun occupying the grammatical position of nasb as the direct object.
   - id: "maful-bih-pronoun-types"
     matn:
       id: "maful-bih-04"
@@ -193,46 +201,39 @@ proseSections:
           meaning: "dan dhamir terpisah"
           type: "keyword"
     sharh:
-      title: "Damir muttasil dan munfasil"
+      title: "Ringkasan Syarah"
       arabic: |
-        الضَّمِيرُ الْمُتَّصِلُ هُوَ الَّذِي لَا يُبْتَدَأُ بِهِ، وَلَا يَسْتَقِلُّ عَمَّا قَبْلَهُ، نَحْوُ الْكَافِ فِي:
-        
-        «رَأَيْتُكَ».
-        
-        فَلَا يُمْكِنُ الِابْتِدَاءُ بِالْكَافِ وَحْدَهَا.
-        
-        وَلَا يَقَعُ الضَّمِيرُ الْمُتَّصِلُ بَعْدَ «إِلَّا» فِي الِاخْتِيَارِ، فَلَا يُقَالُ:
-        
-        «مَا رَأَيْتُ إِلَّاكَ».
-        
-        بَلْ يُقَالُ:
-        
-        «مَا رَأَيْتُ إِلَّا إِيَّاكَ».
-        
-        وَالضَّمِيرُ الْمُنْفَصِلُ هُوَ الَّذِي يَسْتَقِلُّ فِي النُّطْقِ، وَيَصِحُّ الِابْتِدَاءُ بِهِ، نَحْوُ قَوْلِهِ تَعَالَى:
-        
-        ﴿إِيَّاكَ نَعْبُدُ﴾.
+        الْمَفْعُولُ بِهِ الْمُضْمَرُ قِسْمَانِ: مُتَّصِلٌ وَمُنْفَصِلٌ.
+    
+        **فَالْمُتَّصِلُ:** مَا لَا يُبْتَدَأُ بِهِ، وَلَا يَسْتَقِلُّ عَمَّا قَبْلَهُ، نَحْوُ الْكَافِ فِي «رَأَيْتُكَ».
+    
+        وَلَا يُؤْتَى بِالضَّمِيرِ الْمُتَّصِلِ بَعْدَ «إِلَّا» فِي الِاخْتِيَارِ، فَلَا يُقَالُ «مَا رَأَيْتُ إِلَّاكَ»، بَلْ يُقَالُ «مَا رَأَيْتُ إِلَّا إِيَّاكَ».
+    
+        **وَالْمُنْفَصِلُ:** مَا يَسْتَقِلُّ فِي النُّطْقِ، وَيَصِحُّ الِابْتِدَاءُ بِهِ، نَحْوُ قَوْلِهِ تَعَالَى: ﴿إِيَّاكَ نَعْبُدُ﴾.
+    
+        وَكِلَا النَّوْعَيْنِ يَكُونُ مَبْنِيًّا فِي مَحَلِّ نَصْبٍ مَفْعُولًا بِهِ.
+    
       malay: |
-        Damir muttasil mesti bersambung dengan kalimah sebelumnya dan tidak boleh dimulakan secara bersendirian.
-        
-        Contohnya kāf dalam:
-        
-        «رَأَيْتُكَ»
-        
-        “Aku melihatmu.”
-        
-        Damir muttasil juga tidak digunakan selepas «إِلَّا» dalam pertuturan biasa. Oleh itu, dikatakan:
-        
-        «مَا رَأَيْتُ إِلَّا إِيَّاكَ»
-        
-        “Aku tidak melihat sesiapa kecuali kamu.”
-        
-        Damir munfasil pula berdiri secara berasingan dan boleh diletakkan pada permulaan ayat, seperti:
-        
-        ﴿إِيَّاكَ نَعْبُدُ﴾
-        
-        “Hanya kepada-Mu kami beribadah.”
-
+        Maf‘ul bih berupa dhamir terbahagi kepada dua: muttasil dan munfasil.
+    
+        **Dhamir muttasil:** Tidak boleh dimulakan secara bersendirian dan mesti bersambung dengan perkataan sebelumnya, seperti kāf dalam «رَأَيْتُكَ».
+    
+        Dhamir muttasil tidak digunakan selepas «إِلَّا» dalam bentuk biasa. Oleh itu, tidak dikatakan «مَا رَأَيْتُ إِلَّاكَ», tetapi dikatakan «مَا رَأَيْتُ إِلَّا إِيَّاكَ».
+    
+        **Dhamir munfasil:** Boleh berdiri sendiri dalam sebutan dan boleh didahulukan, seperti firman Allah: ﴿إِيَّاكَ نَعْبُدُ﴾.
+    
+        Kedua-dua jenis dhamir tersebut mabnī dan berada pada kedudukan naṣab sebagai maf‘ul bih.
+    
+      english: |
+        A pronominal direct object is divided into two forms: attached and detached.
+    
+        **The attached pronoun:** It cannot begin an utterance independently and must be joined to a preceding word, such as the kāf in «رَأَيْتُكَ».
+    
+        An attached pronoun is not normally used after «إِلَّا». Thus one does not say «مَا رَأَيْتُ إِلَّاكَ», but rather «مَا رَأَيْتُ إِلَّا إِيَّاكَ».
+    
+        **The detached pronoun:** It can stand independently in pronunciation and may be placed first, as in the verse ﴿إِيَّاكَ نَعْبُدُ﴾.
+    
+        Both forms are built and occupy the grammatical position of nasb as the direct object.
   - id: "attached-object-pronouns"
     matn:
       id: "maful-bih-05"
@@ -285,44 +286,90 @@ proseSections:
           meaning: "dia memukul mereka perempuan sekalian"
           type: "keyword"
     sharh:
-      title: "Dua belas damir naṣab muttasil"
+      title: "Ringkasan Syarah"
       arabic: |
         ضَمَائِرُ النَّصْبِ الْمُتَّصِلَةُ اثْنَا عَشَرَ:
-        
-        ١. يَاءُ الْمُتَكَلِّمِ: «ضَرَبَنِي».
-        ٢. «نَا» لِلْمُتَكَلِّمِ مَعَ غَيْرِهِ: «ضَرَبَنَا».
-        ٣. كَافُ الْمُخَاطَبِ: «ضَرَبَكَ».
-        ٤. كَافُ الْمُخَاطَبَةِ: «ضَرَبَكِ».
-        ٥. كَافُ الْمُثَنَّى الْمُخَاطَبِ: «ضَرَبَكُمَا».
-        ٦. كَافُ جَمْعِ الذُّكُورِ الْمُخَاطَبِينَ: «ضَرَبَكُمْ».
-        ٧. كَافُ جَمْعِ الْإِنَاثِ الْمُخَاطَبَاتِ: «ضَرَبَكُنَّ».
-        ٨. هَاءُ الْمُفْرَدِ الْغَائِبِ: «ضَرَبَهُ».
-        ٩. هَاءُ الْمُفْرَدَةِ الْغَائِبَةِ: «ضَرَبَهَا».
-        ١٠. هَاءُ الْمُثَنَّى الْغَائِبِ: «ضَرَبَهُمَا».
-        ١١. هَاءُ جَمْعِ الذُّكُورِ الْغَائِبِينَ: «ضَرَبَهُمْ».
-        ١٢. هَاءُ جَمْعِ الْإِنَاثِ الْغَائِبَاتِ: «ضَرَبَهُنَّ».
-        
+    
+        **لِلْمُتَكَلِّمِ:**
+    
+        - يَاءُ الْمُتَكَلِّمِ فِي «ضَرَبَنِي».
+        - وَ«نَا» فِي «ضَرَبَنَا».
+    
+        **لِلْمُخَاطَبِ:**
+    
+        - الْكَافُ فِي «ضَرَبَكَ».
+        - وَ«ضَرَبَكِ».
+        - وَ«ضَرَبَكُمَا».
+        - وَ«ضَرَبَكُمْ».
+        - وَ«ضَرَبَكُنَّ».
+    
+        **لِلْغَائِبِ:**
+    
+        - الْهَاءُ فِي «ضَرَبَهُ».
+        - وَ«ضَرَبَهَا».
+        - وَ«ضَرَبَهُمَا».
+        - وَ«ضَرَبَهُمْ».
+        - وَ«ضَرَبَهُنَّ».
+    
         وَكُلُّ وَاحِدٍ مِنْ هَذِهِ الضَّمَائِرِ مَبْنِيٌّ فِي مَحَلِّ نَصْبٍ مَفْعُولٌ بِهِ.
+    
+        وَفِي «ضَرَبَنِي»، النُّونُ لِلْوِقَايَةِ، وَالْيَاءُ هِيَ الْمَفْعُولُ بِهِ.
+    
       malay: |
-        Damir naṣab muttasil berjumlah dua belas:
-        
-        1. ـنِي — aku
-        2. ـنَا — kami
-        3. ـكَ — kamu lelaki
-        4. ـكِ — kamu perempuan
-        5. ـكُمَا — kamu berdua
-        6. ـكُمْ — kamu semua lelaki
-        7. ـكُنَّ — kamu semua perempuan
-        8. ـهُ — dia lelaki
-        9. ـهَا — dia perempuan
-        10. ـهُمَا — mereka berdua
-        11. ـهُمْ — mereka lelaki
-        12. ـهُنَّ — mereka perempuan
-        
-        Semua damir tersebut mabni dan berada pada محل نصب sebagai maf‘ul bih.
-        
+        Dhamir naṣab muttasil ada dua belas:
+    
+        **Bagi penutur:**
+    
+        - Yā’ dalam «ضَرَبَنِي».
+        - «نَا» dalam «ضَرَبَنَا».
+    
+        **Bagi orang yang diajak bercakap:**
+    
+        - Kāf dalam «ضَرَبَكَ».
+        - «ضَرَبَكِ».
+        - «ضَرَبَكُمَا».
+        - «ضَرَبَكُمْ».
+        - «ضَرَبَكُنَّ».
+    
+        **Bagi pihak ketiga:**
+    
+        - Hā’ dalam «ضَرَبَهُ».
+        - «ضَرَبَهَا».
+        - «ضَرَبَهُمَا».
+        - «ضَرَبَهُمْ».
+        - «ضَرَبَهُنَّ».
+    
+        Semua dhamir tersebut mabnī dan berada pada kedudukan naṣab sebagai maf‘ul bih.
+    
         Dalam «ضَرَبَنِي», nūn ialah nūn al-wiqāyah, manakala yā’ ialah maf‘ul bih.
-
+    
+      english: |
+        There are twelve attached accusative pronouns:
+    
+        **For the speaker:**
+    
+        - The first-person yā’ in «ضَرَبَنِي».
+        - «نَا» in «ضَرَبَنَا».
+    
+        **For the addressee:**
+    
+        - The kāf in «ضَرَبَكَ».
+        - «ضَرَبَكِ».
+        - «ضَرَبَكُمَا».
+        - «ضَرَبَكُمْ».
+        - «ضَرَبَكُنَّ».
+    
+        **For the third person:**
+    
+        - The hā’ in «ضَرَبَهُ».
+        - «ضَرَبَهَا».
+        - «ضَرَبَهُمَا».
+        - «ضَرَبَهُمْ».
+        - «ضَرَبَهُنَّ».
+    
+        Each of these pronouns is built and occupies the grammatical position of nasb as the direct object.
+    
+        In «ضَرَبَنِي», the nūn is the protective nūn, while the yā’ is the direct object.
   - id: "detached-object-pronouns"
     matn:
       id: "maful-bih-06"
@@ -375,41 +422,90 @@ proseSections:
           meaning: "mereka perempuan sekalian sebagai maf‘ul"
           type: "keyword"
     sharh:
-      title: "Dua belas damir naṣab munfasil"
+      title: "Ringkasan Syarah"
       arabic: |
         ضَمَائِرُ النَّصْبِ الْمُنْفَصِلَةُ اثْنَا عَشَرَ:
-        
-        ١. «إِيَّايَ» لِلْمُتَكَلِّمِ.
-        ٢. «إِيَّانَا» لِلْمُتَكَلِّمِ مَعَ غَيْرِهِ.
-        ٣. «إِيَّاكَ» لِلْمُخَاطَبِ.
-        ٤. «إِيَّاكِ» لِلْمُخَاطَبَةِ.
-        ٥. «إِيَّاكُمَا» لِلْمُثَنَّى الْمُخَاطَبِ.
-        ٦. «إِيَّاكُمْ» لِجَمْعِ الذُّكُورِ الْمُخَاطَبِينَ.
-        ٧. «إِيَّاكُنَّ» لِجَمْعِ الْإِنَاثِ الْمُخَاطَبَاتِ.
-        ٨. «إِيَّاهُ» لِلْمُفْرَدِ الْغَائِبِ.
-        ٩. «إِيَّاهَا» لِلْمُفْرَدَةِ الْغَائِبَةِ.
-        ١٠. «إِيَّاهُمَا» لِلْمُثَنَّى الْغَائِبِ.
-        ١١. «إِيَّاهُمْ» لِجَمْعِ الذُّكُورِ الْغَائِبِينَ.
-        ١٢. «إِيَّاهُنَّ» لِجَمْعِ الْإِنَاثِ الْغَائِبَاتِ.
-        
-        وَيُعْرَبُ كُلُّ وَاحِدٍ مِنْهَا: ضَمِيرُ نَصْبٍ مُنْفَصِلٌ مَبْنِيٌّ فِي مَحَلِّ نَصْبٍ مَفْعُولٌ بِهِ.
+    
+        **لِلْمُتَكَلِّمِ:**
+    
+        - «إِيَّايَ».
+        - «إِيَّانَا».
+    
+        **لِلْمُخَاطَبِ:**
+    
+        - «إِيَّاكَ».
+        - «إِيَّاكِ».
+        - «إِيَّاكُمَا».
+        - «إِيَّاكُمْ».
+        - «إِيَّاكُنَّ».
+    
+        **لِلْغَائِبِ:**
+    
+        - «إِيَّاهُ».
+        - «إِيَّاهَا».
+        - «إِيَّاهُمَا».
+        - «إِيَّاهُمْ».
+        - «إِيَّاهُنَّ».
+    
+        وَكُلُّ وَاحِدٍ مِنْهَا ضَمِيرُ نَصْبٍ مُنْفَصِلٌ مَبْنِيٌّ فِي مَحَلِّ نَصْبٍ مَفْعُولٌ بِهِ.
+    
+        وَيُؤْتَى بِالضَّمِيرِ الْمُنْفَصِلِ عِنْدَ تَقْدِيمِ الْمَفْعُولِ، أَوْ بَعْدَ «إِلَّا»، أَوْ لِلتَّوْكِيدِ، نَحْوُ ﴿إِيَّاكَ نَعْبُدُ﴾.
+    
       malay: |
-        Damir naṣab munfasil juga berjumlah dua belas:
-        
-        1. إِيَّايَ — aku
-        2. إِيَّانَا — kami
-        3. إِيَّاكَ — kamu lelaki
-        4. إِيَّاكِ — kamu perempuan
-        5. إِيَّاكُمَا — kamu berdua
-        6. إِيَّاكُمْ — kamu semua lelaki
-        7. إِيَّاكُنَّ — kamu semua perempuan
-        8. إِيَّاهُ — dia lelaki
-        9. إِيَّاهَا — dia perempuan
-        10. إِيَّاهُمَا — mereka berdua
-        11. إِيَّاهُمْ — mereka lelaki
-        12. إِيَّاهُنَّ — mereka perempuan
-        
-        Setiap satunya dii‘rabkan sebagai damir naṣab munfasil yang mabni dan berada pada محل نصب sebagai maf‘ul bih.
+        Dhamir naṣab munfasil juga ada dua belas:
+    
+        **Bagi penutur:**
+    
+        - «إِيَّايَ».
+        - «إِيَّانَا».
+    
+        **Bagi orang yang diajak bercakap:**
+    
+        - «إِيَّاكَ».
+        - «إِيَّاكِ».
+        - «إِيَّاكُمَا».
+        - «إِيَّاكُمْ».
+        - «إِيَّاكُنَّ».
+    
+        **Bagi pihak ketiga:**
+    
+        - «إِيَّاهُ».
+        - «إِيَّاهَا».
+        - «إِيَّاهُمَا».
+        - «إِيَّاهُمْ».
+        - «إِيَّاهُنَّ».
+    
+        Setiap satunya ialah dhamir naṣab munfasil yang mabnī dan berada pada kedudukan naṣab sebagai maf‘ul bih.
+    
+        Dhamir munfasil digunakan apabila maf‘ul didahulukan, selepas «إِلَّا» atau untuk penegasan, seperti ﴿إِيَّاكَ نَعْبُدُ﴾.
+    
+      english: |
+        There are also twelve detached accusative pronouns:
+    
+        **For the speaker:**
+    
+        - «إِيَّايَ».
+        - «إِيَّانَا».
+    
+        **For the addressee:**
+    
+        - «إِيَّاكَ».
+        - «إِيَّاكِ».
+        - «إِيَّاكُمَا».
+        - «إِيَّاكُمْ».
+        - «إِيَّاكُنَّ».
+    
+        **For the third person:**
+    
+        - «إِيَّاهُ».
+        - «إِيَّاهَا».
+        - «إِيَّاهُمَا».
+        - «إِيَّاهُمْ».
+        - «إِيَّاهُنَّ».
+    
+        Each is a detached built accusative pronoun occupying the grammatical position of nasb as the direct object.
+    
+        The detached form is used when the object is placed first, after «إِلَّا», or for emphasis, as in ﴿إِيَّاكَ نَعْبُدُ﴾.
 ---
 
 ## Sumber projek

@@ -96,19 +96,78 @@ proseSections:
           meaning: "dan badal"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
         الْمَنْصُوبُ هُوَ الِاسْمُ الَّذِي دَخَلَ عَلَيْهِ عَامِلٌ يَطْلُبُ النَّصْبَ.
-        
-        وَعَلَامَةُ النَّصْبِ الْأَصْلِيَّةُ هِيَ الْفَتْحَةُ، وَقَدْ تَنُوبُ عَنْهَا عَلَامَاتٌ أُخْرَى، كَالْيَاءِ وَالْكَسْرَةِ وَحَذْفِ النُّونِ، عَلَى مَا تَقَدَّمَ فِي بَابِ مَعْرِفَةِ عَلَامَاتِ الْإِعْرَابِ.
-        
-        وَقَسَّمَ الْمُصَنِّفُ مَنْصُوبَاتِ الْأَسْمَاءِ إِلَى خَمْسَةَ عَشَرَ نَوْعًا، وَجَعَلَ التَّابِعَ لِلْمَنْصُوبِ نَوْعًا وَاحِدًا، وَإِنْ كَانَ يَشْمَلُ أَرْبَعَةَ أَشْيَاءَ.
+    
+        وَعَلَامَةُ النَّصْبِ الْأَصْلِيَّةُ الْفَتْحَةُ، وَقَدْ تَنُوبُ عَنْهَا الْيَاءُ، وَالْكَسْرَةُ، وَحَذْفُ النُّونِ.
+    
+        وَمَنْصُوبَاتُ الْأَسْمَاءِ خَمْسَةَ عَشَرَ نَوْعًا:
+    
+        - الْمَفْعُولُ بِهِ.
+        - وَالْمَصْدَرُ.
+        - وَظَرْفُ الزَّمَانِ.
+        - وَظَرْفُ الْمَكَانِ.
+        - وَالْحَالُ.
+        - وَالتَّمْيِيزُ.
+        - وَالْمُسْتَثْنَى.
+        - وَاسْمُ «لَا».
+        - وَالْمُنَادَى.
+        - وَالْمَفْعُولُ مِنْ أَجْلِهِ.
+        - وَالْمَفْعُولُ مَعَهُ.
+        - وَخَبَرُ «كَانَ» وَأَخَوَاتِهَا.
+        - وَاسْمُ «إِنَّ» وَأَخَوَاتِهَا.
+        - وَالتَّابِعُ لِلْمَنْصُوبِ.
+    
+        وَالتَّابِعُ لِلْمَنْصُوبِ يَشْمَلُ النَّعْتَ، وَالْعَطْفَ، وَالتَّوْكِيدَ، وَالْبَدَلَ.
+    
       malay: |
-        Isim mansub ialah isim yang dimasuki oleh ‘āmil yang menuntut hukum naṣab.
-        
-        Tanda asal naṣab ialah fatḥah. Dalam keadaan tertentu, fatḥah digantikan oleh tanda lain seperti yā’, kasrah atau pembuangan nūn, sebagaimana yang telah dipelajari dalam Bab Mengenal Tanda-Tanda I‘rab.
-        
-        Pengarang mengira tābi‘ kepada isim mansub sebagai satu kategori, walaupun kategori tersebut merangkumi na‘at, ‘aṭaf, tawkid dan badal.
+        Isim manṣūb ialah isim yang dimasuki oleh ‘āmil yang menuntut hukum naṣab.
+    
+        Tanda asal naṣab ialah fathah. Dalam keadaan tertentu, fathah digantikan oleh yā’, kasrah atau pembuangan nūn.
+    
+        Isim-isim manṣūb terdiri daripada lima belas kategori:
+    
+        - Maf‘ul bih.
+        - Maṣdar.
+        - Ẓarf zaman.
+        - Ẓarf tempat.
+        - Ḥāl.
+        - Tamyīz.
+        - Mustathnā.
+        - Isim «لَا».
+        - Munādā.
+        - Maf‘ul min ajlih.
+        - Maf‘ul ma‘ah.
+        - Khabar kāna dan saudara-saudaranya.
+        - Isim inna dan saudara-saudaranya.
+        - Tābi‘ kepada isim manṣūb.
+    
+        Tābi‘ kepada isim manṣūb merangkumi na‘at, ‘aṭaf, tawkid dan badal.
+    
+      english: |
+        A noun in nasb is a noun governed by an element requiring the accusative state.
+    
+        The original sign of nasb is fatḥah. In certain forms, it is replaced by yā’, kasrah or the deletion of nūn.
+    
+        The nouns occurring in nasb comprise fifteen categories:
+    
+        - The direct object.
+        - The verbal noun.
+        - The adverb of time.
+        - The adverb of place.
+        - The circumstantial qualifier.
+        - The specification.
+        - The exception.
+        - The noun of «لَا».
+        - The vocative noun.
+        - The object of reason.
+        - The accompanying object.
+        - The predicate of kāna and its sisters.
+        - The noun of inna and its sisters.
+        - A dependent following a noun in nasb.
+    
+        The dependents following a noun in nasb include the adjective, conjunction, emphasis and substitute.
 ---
 
 ## Sumber projek

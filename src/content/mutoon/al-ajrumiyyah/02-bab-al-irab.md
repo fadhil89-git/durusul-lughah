@@ -55,33 +55,39 @@ proseSections:
           meaning: "atau secara anggaran"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        يَعْنِي أَنَّ الْإِعْرَابَ عِنْدَ النُّحَاةِ هُوَ تَغَيُّرُ أَحْوَالِ أَوَاخِرِ الْكَلِمِ بِسَبَبِ اخْتِلَافِ الْعَوَامِلِ الدَّاخِلَةِ عَلَيْهَا.
-
-        نَحْوُ: «جَاءَ زَيْدٌ»، وَ«رَأَيْتُ زَيْدًا»، وَ«مَرَرْتُ بِزَيْدٍ». فَآخِرُ «زَيْدٍ» تَغَيَّرَ مِنَ الرَّفْعِ إِلَى النَّصْبِ ثُمَّ إِلَى الْخَفْضِ بِسَبَبِ تَغَيُّرِ الْعَامِلِ.
-
-        فَفِي الْمِثَالِ الْأَوَّلِ رُفِعَ «زَيْدٌ» لِأَنَّهُ فَاعِلٌ. وَفِي الْمِثَالِ الثَّانِي نُصِبَ لِأَنَّهُ مَفْعُولٌ بِهِ. وَفِي الْمِثَالِ الثَّالِثِ خُفِضَ لِدُخُولِ حَرْفِ الْجَرِّ عَلَيْهِ.
-
-        وَقَوْلُهُ «لَفْظًا» يَعْنِي أَنَّ عَلَامَةَ الْإِعْرَابِ تَظْهَرُ عَلَى آخِرِ الْكَلِمَةِ، كَالضَّمَّةِ فِي «زَيْدٌ»، وَالْفَتْحَةِ فِي «زَيْدًا»، وَالْكَسْرَةِ فِي «زَيْدٍ».
-
-        وَقَوْلُهُ «أَوْ تَقْدِيرًا» يَعْنِي أَنَّ الْعَلَامَةَ لَا تَظْهَرُ عَلَى آخِرِ الْكَلِمَةِ، وَلَكِنَّهَا تُقَدَّرُ عَلَيْهِ، نَحْوُ: «جَاءَ الْفَتَى»، وَ«رَأَيْتُ الْفَتَى»، وَ«مَرَرْتُ بِالْفَتَى».
-
+        الْإِعْرَابُ هُوَ تَغَيُّرُ أَحْوَالِ أَوَاخِرِ الْكَلِمِ بِسَبَبِ اخْتِلَافِ الْعَوَامِلِ الدَّاخِلَةِ عَلَيْهَا.
+    
+        فَنَقُولُ: «جَاءَ زَيْدٌ»، وَ«رَأَيْتُ زَيْدًا»، وَ«مَرَرْتُ بِزَيْدٍ». تَغَيَّرَ آخِرُ «زَيْدٍ» مِنَ الرَّفْعِ إِلَى النَّصْبِ ثُمَّ إِلَى الْخَفْضِ؛ لِاخْتِلَافِ الْعَامِلِ.
+    
+        وَالْعَامِلُ هُوَ مَا يَدْخُلُ عَلَى الْكَلِمَةِ فَيُؤَثِّرُ فِي آخِرِهَا بِالرَّفْعِ، أَوِ النَّصْبِ، أَوِ الْخَفْضِ، أَوِ الْجَزْمِ.
+    
+        وَيَكُونُ الْإِعْرَابُ **لَفْظِيًّا** إِذَا ظَهَرَتِ الْعَلَامَةُ عَلَى آخِرِ الْكَلِمَةِ، نَحْوُ الضَّمَّةِ فِي «زَيْدٌ»، وَالْفَتْحَةِ فِي «زَيْدًا»، وَالْكَسْرَةِ فِي «زَيْدٍ».
+    
+        وَيَكُونُ **تَقْدِيرِيًّا** إِذَا لَمْ تَظْهَرِ الْعَلَامَةُ، وَلَكِنَّهَا تُقَدَّرُ عَلَى آخِرِ الْكَلِمَةِ، نَحْوُ «الْفَتَى» فِي قَوْلِنَا: «جَاءَ الْفَتَى»، وَ«رَأَيْتُ الْفَتَى»، وَ«مَرَرْتُ بِالْفَتَى».
+    
       malay: |
-        I‘rab menurut ahli nahu ialah perubahan keadaan pada akhir sesuatu kalimah disebabkan perubahan ‘āmil yang masuk padanya.
-
-        Contohnya:
-
-        - «جَاءَ زَيْدٌ» — Zaid menjadi marfū‘ kerana berfungsi sebagai fā‘il.
-        - «رَأَيْتُ زَيْدًا» — Zaid menjadi manṣūb kerana berfungsi sebagai maf‘ūl bih.
-        - «مَرَرْتُ بِزَيْدٍ» — Zaid menjadi majrūr kerana didahului huruf jar.
-
-        Perkataan «زَيْد» tidak berubah dari sudut makna asalnya, tetapi baris pada akhirnya berubah kerana ‘āmil yang berbeza.
-
-        **Secara lafaz** bermaksud tanda i‘rab dapat dilihat atau didengar dengan jelas pada akhir kalimah, seperti ḍammah pada «زَيْدٌ», fatḥah pada «زَيْدًا» dan kasrah pada «زَيْدٍ».
-
-        **Secara anggaran** pula bermaksud tanda i‘rab tidak dapat dizahirkan pada akhir kalimah tetapi tetap dihukumkan wujud. Contohnya ialah «الْفَتَى» dalam «جَاءَ الْفَتَى», «رَأَيْتُ الْفَتَى» dan «مَرَرْتُ بِالْفَتَى». Bentuk akhirnya kelihatan sama, tetapi kedudukan i‘rabnya berbeza.
-
+        I‘rab ialah perubahan keadaan pada akhir sesuatu kalimah disebabkan perbezaan amil yang masuk padanya.
+    
+        Contohnya ialah «جَاءَ زَيْدٌ», «رَأَيْتُ زَيْدًا» dan «مَرَرْتُ بِزَيْدٍ». Akhir perkataan «زَيْد» berubah daripada rafa‘ kepada nasab, kemudian kepada jar kerana amil yang berbeza.
+    
+        Amil ialah unsur yang masuk pada sesuatu kalimah lalu memberikan kesan pada akhirnya dalam bentuk rafa‘, nasab, jar atau jazm.
+    
+        I‘rab berlaku **secara lafaz** apabila tandanya kelihatan pada akhir kalimah, seperti dammah pada «زَيْدٌ», fathah pada «زَيْدًا» dan kasrah pada «زَيْدٍ».
+    
+        I‘rab berlaku **secara anggaran** apabila tandanya tidak kelihatan, tetapi tetap dianggarkan pada akhir kalimah. Contohnya ialah «الْفَتَى» dalam «جَاءَ الْفَتَى», «رَأَيْتُ الْفَتَى» dan «مَرَرْتُ بِالْفَتَى».
+    
+      english: |
+        I‘rāb is the change in the grammatical state of the ending of a word due to the different governing elements that enter upon it.
+    
+        Examples include «جَاءَ زَيْدٌ», «رَأَيْتُ زَيْدًا» and «مَرَرْتُ بِزَيْدٍ». The ending of «زَيْد» changes from raf‘ to nasb and then to jarr because the governing element changes.
+    
+        A governing element is something that enters upon a word and affects its ending through raf‘, nasb, jarr or jazm.
+    
+        I‘rāb is **expressed** when its sign appears on the ending of the word, such as the ḍammah in «زَيْدٌ», the fatḥah in «زَيْدًا» and the kasrah in «زَيْدٍ».
+    
+        I‘rāb is **estimated** when its sign does not appear but is understood to be present on the ending of the word. An example is «الْفَتَى» in «جَاءَ الْفَتَى», «رَأَيْتُ الْفَتَى» and «مَرَرْتُ بِالْفَتَى».
   - id: "categories-of-irab"
     matn:
       id: "irab-02"
@@ -107,28 +113,45 @@ proseSections:
           meaning: "dan jazm"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        أَقْسَامُ الْإِعْرَابِ أَرْبَعَةٌ: الرَّفْعُ، وَالنَّصْبُ، وَالْخَفْضُ، وَالْجَزْمُ.
-
-        فَالرَّفْعُ وَالنَّصْبُ يَدْخُلَانِ عَلَى الْأَسْمَاءِ وَالْأَفْعَالِ الْمُضَارِعَةِ.
-
-        وَالْخَفْضُ يَخْتَصُّ بِالْأَسْمَاءِ، فَلَا يَدْخُلُ عَلَى الْأَفْعَالِ.
-
-        وَالْجَزْمُ يَخْتَصُّ بِالْأَفْعَالِ الْمُضَارِعَةِ، فَلَا يَدْخُلُ عَلَى الْأَسْمَاءِ.
-
+        أَقْسَامُ الْإِعْرَابِ أَرْبَعَةٌ:
+    
+        **الرَّفْعُ:** نَحْوُ «يَضْرِبُ زَيْدٌ».
+    
+        **النَّصْبُ:** نَحْوُ «لَنْ أَضْرِبَ عَمْرًا».
+    
+        **الْخَفْضُ:** نَحْوُ «مَرَرْتُ بِزَيْدٍ».
+    
+        **الْجَزْمُ:** نَحْوُ «لَمْ أَضْرِبْ زَيْدًا».
+    
+        فَالرَّفْعُ وَالنَّصْبُ يَشْتَرِكُ فِيهِمَا الِاسْمُ وَالْفِعْلُ الْمُضَارِعُ، وَيَخْتَصُّ الِاسْمُ بِالْخَفْضِ، وَيَخْتَصُّ الْفِعْلُ الْمُضَارِعُ بِالْجَزْمِ.
+    
       malay: |
         I‘rab terbahagi kepada empat keadaan:
-
-        1. **Rafa‘**, iaitu keadaan marfū‘.
-        2. **Nasab**, iaitu keadaan manṣūb.
-        3. **Khafad atau jar**, iaitu keadaan majrūr.
-        4. **Jazam**, iaitu keadaan majzūm.
-
-        Rafa‘ dan nasab boleh berlaku pada isim dan fi‘il muḍāri‘.
-
-        Jar hanya berlaku pada isim dan tidak berlaku pada fi‘il. Jazam pula hanya berlaku pada fi‘il muḍāri‘ dan tidak berlaku pada isim.
-
+    
+        **Rafa‘:** Seperti «يَضْرِبُ زَيْدٌ».
+    
+        **Nasab:** Seperti «لَنْ أَضْرِبَ عَمْرًا».
+    
+        **Jar atau khafad:** Seperti «مَرَرْتُ بِزَيْدٍ».
+    
+        **Jazm:** Seperti «لَمْ أَضْرِبْ زَيْدًا».
+    
+        Isim dan fi‘il muḍāri‘ sama-sama menerima rafa‘ dan nasab. Jar khusus bagi isim, manakala jazm khusus bagi fi‘il muḍāri‘.
+    
+      english: |
+        I‘rāb is divided into four states:
+    
+        **Raf‘:** As in «يَضْرِبُ زَيْدٌ».
+    
+        **Nasb:** As in «لَنْ أَضْرِبَ عَمْرًا».
+    
+        **Jarr or khafḍ:** As in «مَرَرْتُ بِزَيْدٍ».
+    
+        **Jazm:** As in «لَمْ أَضْرِبْ زَيْدًا».
+    
+        Nouns and present verbs both accept raf‘ and nasb. Jarr is specific to nouns, while jazm is specific to present verbs.
   - id: "irab-of-nouns"
     matn:
       id: "irab-03"
@@ -154,27 +177,39 @@ proseSections:
           meaning: "dan tidak ada jazm padanya"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        لِلْأَسْمَاءِ مِنْ أَقْسَامِ الْإِعْرَابِ ثَلَاثَةٌ: الرَّفْعُ، وَالنَّصْبُ، وَالْخَفْضُ.
-
-        فَمِثَالُ الرَّفْعِ: «جَاءَ زَيْدٌ»، فَـ«زَيْدٌ» فَاعِلٌ مَرْفُوعٌ.
-
-        وَمِثَالُ النَّصْبِ: «رَأَيْتُ زَيْدًا»، فَـ«زَيْدًا» مَفْعُولٌ بِهِ مَنْصُوبٌ.
-
-        وَمِثَالُ الْخَفْضِ: «مَرَرْتُ بِزَيْدٍ»، فَـ«زَيْدٍ» اسْمٌ مَجْرُورٌ بِالْبَاءِ.
-
+        يَدْخُلُ عَلَى الْأَسْمَاءِ ثَلَاثَةُ أَقْسَامٍ مِنَ الْإِعْرَابِ:
+    
+        **الرَّفْعُ:** نَحْوُ «جَاءَ زَيْدٌ»، فَـ«زَيْدٌ» فَاعِلٌ مَرْفُوعٌ.
+    
+        **النَّصْبُ:** نَحْوُ «رَأَيْتُ زَيْدًا»، فَـ«زَيْدًا» مَفْعُولٌ بِهِ مَنْصُوبٌ.
+    
+        **الْخَفْضُ:** نَحْوُ «مَرَرْتُ بِزَيْدٍ»، فَـ«زَيْدٍ» اسْمٌ مَجْرُورٌ بِالْبَاءِ.
+    
         وَلَا يَدْخُلُ الْجَزْمُ عَلَى الْأَسْمَاءِ؛ لِأَنَّهُ مِنْ خَصَائِصِ الْفِعْلِ الْمُضَارِعِ.
-
+    
       malay: |
-        Tiga keadaan i‘rab boleh berlaku pada isim:
-
-        - **Rafa‘**, seperti «جَاءَ زَيْدٌ». Perkataan «زَيْدٌ» ialah fā‘il yang marfū‘.
-        - **Nasab**, seperti «رَأَيْتُ زَيْدًا». Perkataan «زَيْدًا» ialah maf‘ūl bih yang manṣūb.
-        - **Jar**, seperti «مَرَرْتُ بِزَيْدٍ». Perkataan «زَيْدٍ» ialah isim majrūr kerana didahului huruf jar bā’.
-
-        Isim tidak menerima jazam kerana jazam merupakan hukum yang khusus bagi fi‘il muḍāri‘.
-
+        Isim menerima tiga keadaan i‘rab:
+    
+        **Rafa‘:** Seperti «جَاءَ زَيْدٌ». Perkataan «زَيْدٌ» ialah fā‘il yang marfū‘.
+    
+        **Nasab:** Seperti «رَأَيْتُ زَيْدًا». Perkataan «زَيْدًا» ialah maf‘ūl bih yang manṣūb.
+    
+        **Jar:** Seperti «مَرَرْتُ بِزَيْدٍ». Perkataan «زَيْدٍ» ialah isim majrūr dengan huruf bā’.
+    
+        Isim tidak menerima jazm kerana jazm merupakan hukum yang khusus bagi fi‘il muḍāri‘.
+    
+      english: |
+        Nouns accept three states of i‘rāb:
+    
+        **Raf‘:** As in «جَاءَ زَيْدٌ». The word «زَيْدٌ» is a subject in the nominative state.
+    
+        **Nasb:** As in «رَأَيْتُ زَيْدًا». The word «زَيْدًا» is a direct object in the accusative state.
+    
+        **Jarr:** As in «مَرَرْتُ بِزَيْدٍ». The word «زَيْدٍ» is a noun in the genitive state because of the preposition bā’.
+    
+        Nouns do not accept jazm because jazm is specific to present verbs.
   - id: "irab-of-verbs"
     matn:
       id: "irab-04"
@@ -200,30 +235,45 @@ proseSections:
           meaning: "dan tidak ada jar padanya"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
         الْمُرَادُ بِالْأَفْعَالِ هُنَا الْفِعْلُ الْمُضَارِعُ الْمُعْرَبُ؛ لِأَنَّ الْفِعْلَ الْمَاضِيَ وَفِعْلَ الْأَمْرِ مَبْنِيَّانِ.
-
-        وَلِلْفِعْلِ الْمُضَارِعِ مِنْ أَقْسَامِ الْإِعْرَابِ ثَلَاثَةٌ: الرَّفْعُ، وَالنَّصْبُ، وَالْجَزْمُ.
-
-        فَمِثَالُ الرَّفْعِ: «يَقُومُ زَيْدٌ»، فَـ«يَقُومُ» فِعْلٌ مُضَارِعٌ مَرْفُوعٌ لِتَجَرُّدِهِ مِنَ النَّاصِبِ وَالْجَازِمِ.
-
-        وَمِثَالُ النَّصْبِ: «لَنْ يَقُومَ زَيْدٌ»، فَـ«يَقُومَ» فِعْلٌ مُضَارِعٌ مَنْصُوبٌ بِـ«لَنْ».
-
-        وَمِثَالُ الْجَزْمِ: «لَمْ يَقُمْ زَيْدٌ»، فَـ«يَقُمْ» فِعْلٌ مُضَارِعٌ مَجْزُومٌ بِـ«لَمْ».
-
+    
+        وَيَدْخُلُ عَلَى الْفِعْلِ الْمُضَارِعِ ثَلَاثَةُ أَقْسَامٍ مِنَ الْإِعْرَابِ:
+    
+        **الرَّفْعُ:** نَحْوُ «يَقُومُ زَيْدٌ»، فَـ«يَقُومُ» فِعْلٌ مُضَارِعٌ مَرْفُوعٌ؛ لِتَجَرُّدِهِ مِنَ النَّاصِبِ وَالْجَازِمِ.
+    
+        **النَّصْبُ:** نَحْوُ «لَنْ يَقُومَ زَيْدٌ»، فَـ«يَقُومَ» فِعْلٌ مُضَارِعٌ مَنْصُوبٌ بِـ«لَنْ».
+    
+        **الْجَزْمُ:** نَحْوُ «لَمْ يَقُمْ زَيْدٌ»، فَـ«يَقُمْ» فِعْلٌ مُضَارِعٌ مَجْزُومٌ بِـ«لَمْ».
+    
         وَلَا يَدْخُلُ الْخَفْضُ عَلَى الْأَفْعَالِ؛ لِأَنَّهُ مِنْ خَصَائِصِ الْأَسْمَاءِ.
-
+    
       malay: |
-        Fi‘il yang dimaksudkan dalam bahagian ini ialah **fi‘il muḍāri‘ yang mu‘rab**. Fi‘il māḍī dan fi‘il amr tidak termasuk kerana kedua-duanya mabni.
-
+        Fi‘il yang dimaksudkan di sini ialah fi‘il muḍāri‘ yang mu‘rab. Fi‘il māḍī dan fi‘il amr tidak termasuk kerana kedua-duanya mabni.
+    
         Fi‘il muḍāri‘ menerima tiga keadaan i‘rab:
-
-        - **Rafa‘**, seperti «يَقُومُ زَيْدٌ». Fi‘il «يَقُومُ» marfū‘ kerana tidak dimasuki nāṣib atau jāzim.
-        - **Nasab**, seperti «لَنْ يَقُومَ زَيْدٌ». Fi‘il «يَقُومَ» manṣūb kerana dimasuki «لَنْ».
-        - **Jazam**, seperti «لَمْ يَقُمْ زَيْدٌ». Fi‘il «يَقُمْ» majzūm kerana dimasuki «لَمْ».
-
+    
+        **Rafa‘:** Seperti «يَقُومُ زَيْدٌ». Fi‘il «يَقُومُ» marfū‘ kerana tidak dimasuki nāṣib atau jāzim.
+    
+        **Nasab:** Seperti «لَنْ يَقُومَ زَيْدٌ». Fi‘il «يَقُومَ» manṣūb kerana dimasuki «لَنْ».
+    
+        **Jazm:** Seperti «لَمْ يَقُمْ زَيْدٌ». Fi‘il «يَقُمْ» majzūm kerana dimasuki «لَمْ».
+    
         Fi‘il tidak menerima jar kerana jar merupakan hukum yang khusus bagi isim.
+    
+      english: |
+        The verb intended here is the inflected present verb. Past verbs and imperative verbs are excluded because both are indeclinable.
+    
+        A present verb accepts three states of i‘rāb:
+    
+        **Raf‘:** As in «يَقُومُ زَيْدٌ». The verb «يَقُومُ» is in the nominative state because no particle of nasb or jazm precedes it.
+    
+        **Nasb:** As in «لَنْ يَقُومَ زَيْدٌ». The verb «يَقُومَ» is in the accusative state because it is preceded by «لَنْ».
+    
+        **Jazm:** As in «لَمْ يَقُمْ زَيْدٌ». The verb «يَقُمْ» is in the jussive state because it is preceded by «لَمْ».
+    
+        Verbs do not accept jarr because jarr is specific to nouns.
 ---
 
 ## Sumber projek

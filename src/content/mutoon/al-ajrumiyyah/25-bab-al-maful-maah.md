@@ -54,38 +54,39 @@ proseSections:
           meaning: "dan air itu naik sama paras dengan kayu"
           type: "keyword"
     sharh:
-      title: "Pengertian maf‘ul ma‘ah"
+      title: "Ringkasan Syarah"
       arabic: |
-        الْمَفْعُولُ مَعَهُ اسْمٌ مَنْصُوبٌ يُذْكَرُ لِبَيَانِ الذَّاتِ الَّتِي وَقَعَ الْفِعْلُ بِمُصَاحَبَتِهَا.
-        
-        وَيَأْتِي بَعْدَ وَاوٍ تَدُلُّ عَلَى الْمَعِيَّةِ، أَيْ تَكُونُ بِمَعْنَى «مَعَ».
-        
-        نَحْوُ:
-        
-        «جَاءَ الْأَمِيرُ وَالْجَيْشَ».
-        
-        أَيْ:
-        
-        «جَاءَ الْأَمِيرُ مَعَ الْجَيْشِ».
-        
-        فَـ«الْجَيْشَ» لَمْ يُذْكَرْ عَلَى أَنَّهُ مَعْطُوفٌ فَقَطْ، بَلْ لِبَيَانِ مَنْ صَاحَبَ الْأَمِيرَ فِي الْمَجِيءِ.
+        الْمَفْعُولُ مَعَهُ اسْمٌ مَنْصُوبٌ يُذْكَرُ بَعْدَ وَاوٍ بِمَعْنَى «مَعَ»؛ لِبَيَانِ مَا وَقَعَ الْفِعْلُ بِمُصَاحَبَتِهِ.
+    
+        وَتُسَمَّى هَذِهِ الْوَاوُ **وَاوَ الْمَعِيَّةِ**.
+    
+        فَفِي «جَاءَ الْأَمِيرُ وَالْجَيْشَ»، يَكُونُ التَّقْدِيرُ: «جَاءَ الْأَمِيرُ مَعَ الْجَيْشِ».
+    
+        فَـ«الْأَمِيرُ» فَاعِلٌ مَرْفُوعٌ، وَالْوَاوُ وَاوُ الْمَعِيَّةِ، وَ«الْجَيْشَ» مَفْعُولٌ مَعَهُ مَنْصُوبٌ.
+    
+        وَفِي «اسْتَوَى الْمَاءُ وَالْخَشَبَةَ»، يَكُونُ «الْخَشَبَةَ» مَفْعُولًا مَعَهُ مَنْصُوبًا، أَيْ: اسْتَوَى الْمَاءُ مَعَ الْخَشَبَةِ.
+    
       malay: |
-        Maf‘ul ma‘ah ialah isim mansub yang menerangkan sesuatu yang menyertai perbuatan.
-        
-        Ia terletak selepas waw yang bermakna «مَعَ», iaitu “bersama”.
-        
-        Contohnya:
-        
-        «جَاءَ الْأَمِيرُ وَالْجَيْشَ»
-        
-        Maksudnya:
-        
-        «جَاءَ الْأَمِيرُ مَعَ الْجَيْشِ»
-        
-        “Pemerintah datang bersama tentera.”
-        
-        Oleh itu, «الْجَيْشَ» menerangkan sesuatu yang menyertai pemerintah ketika perbuatan datang berlaku.
-
+        Maf‘ul ma‘ah ialah isim manṣūb yang hadir selepas wāw bermakna «مَعَ» untuk menerangkan sesuatu yang menyertai perbuatan.
+    
+        Wāw tersebut dinamakan **wāw ma‘iyyah**.
+    
+        Dalam «جَاءَ الْأَمِيرُ وَالْجَيْشَ», anggaran maknanya ialah «جَاءَ الْأَمِيرُ مَعَ الْجَيْشِ».
+    
+        «الْأَمِيرُ» ialah fā‘il marfū‘, wāw ialah wāw ma‘iyyah dan «الْجَيْشَ» ialah maf‘ul ma‘ah manṣūb.
+    
+        Dalam «اسْتَوَى الْمَاءُ وَالْخَشَبَةَ», «الْخَشَبَةَ» ialah maf‘ul ma‘ah manṣūb, iaitu air berada sama paras dengan kayu.
+    
+      english: |
+        The accompanying object is a noun in nasb occurring after a wāw meaning «مَعَ», “with,” to identify what accompanies the action.
+    
+        This wāw is called the **wāw of accompaniment**.
+    
+        In «جَاءَ الْأَمِيرُ وَالْجَيْشَ», the intended meaning is «جَاءَ الْأَمِيرُ مَعَ الْجَيْشِ».
+    
+        «الْأَمِيرُ» is the subject in raf‘, the wāw indicates accompaniment, and «الْجَيْشَ» is the accompanying object in nasb.
+    
+        In «اسْتَوَى الْمَاءُ وَالْخَشَبَةَ», «الْخَشَبَةَ» is the accompanying object in nasb, meaning that the water became level with the piece of wood.
   - id: "waw-maiyyah"
     matn:
       id: "maful-maah-02"
@@ -105,38 +106,33 @@ proseSections:
           meaning: "dalam perbahasan isim-isim marfu‘"
           type: "keyword"
     sharh:
-      title: "Waw ma‘iyyah"
+      title: "Ringkasan Syarah"
       arabic: |
-        الْوَاوُ الَّتِي تَقَعُ قَبْلَ الْمَفْعُولِ مَعَهُ تُسَمَّى وَاوَ الْمَعِيَّةِ.
-        
-        وَمَعْنَاهَا «مَعَ».
-        
-        فَإِذَا صَحَّ أَنْ تَضَعَ «مَعَ» مَكَانَ الْوَاوِ، وَاسْتَقَامَ الْمَعْنَى، دَلَّ ذَلِكَ عَلَى الْمُصَاحَبَةِ.
-        
-        نَحْوُ:
-        
-        «سَارَ زَيْدٌ وَالنَّهْرَ».
-        
-        أَيْ:
-        
-        «سَارَ زَيْدٌ مَعَ النَّهْرِ».
-        
-        فَالْمَعْنَى أَنَّ سَيْرَ زَيْدٍ كَانَ بِمُحَاذَاةِ النَّهْرِ.
+        خَبَرُ «كَانَ» وَأَخَوَاتِهَا مِنَ الْمَنْصُوبَاتِ، وَقَدْ سَبَقَ بَيَانُهُ فِي بَابِ الْعَوَامِلِ الدَّاخِلَةِ عَلَى الْمُبْتَدَإِ وَالْخَبَرِ.
+    
+        فَفِي «كَانَ زَيْدٌ قَائِمًا»، يَكُونُ «زَيْدٌ» اسْمَ «كَانَ» مَرْفُوعًا، وَ«قَائِمًا» خَبَرَهَا مَنْصُوبًا.
+    
+        وَاسْمُ «إِنَّ» وَأَخَوَاتِهَا مِنَ الْمَنْصُوبَاتِ أَيْضًا.
+    
+        فَفِي «إِنَّ زَيْدًا قَائِمٌ»، يَكُونُ «زَيْدًا» اسْمَ «إِنَّ» مَنْصُوبًا، وَ«قَائِمٌ» خَبَرَهَا مَرْفُوعًا.
+    
       malay: |
-        Waw yang terletak sebelum maf‘ul ma‘ah dinamakan **waw ma‘iyyah**.
-        
-        Maknanya ialah «مَعَ», iaitu “bersama”.
-        
-        Salah satu cara mengenalinya adalah dengan menggantikan waw dengan “bersama”. Apabila makna ayat masih sesuai, waw itu membawa makna ma‘iyyah.
-        
-        Contoh:
-        
-        «سَارَ زَيْدٌ وَالنَّهْرَ»
-        
-        Maksudnya:
-        
-        “Zaid berjalan bersama atau menyusuri sungai.”
-
+        Khabar «كَانَ» dan saudara-saudaranya termasuk dalam isim-isim manṣūb dan telah diterangkan dalam bab ‘āmil yang memasuki mubtada’ dan khabar.
+    
+        Dalam «كَانَ زَيْدٌ قَائِمًا», «زَيْدٌ» ialah isim kāna yang marfū‘, manakala «قَائِمًا» ialah khabarnya yang manṣūb.
+    
+        Isim «إِنَّ» dan saudara-saudaranya juga termasuk dalam isim-isim manṣūb.
+    
+        Dalam «إِنَّ زَيْدًا قَائِمٌ», «زَيْدًا» ialah isim inna yang manṣūb, manakala «قَائِمٌ» ialah khabarnya yang marfū‘.
+    
+      english: |
+        The predicate of «كَانَ» and its sisters belongs to the nouns occurring in nasb and was previously explained in the chapter on governors entering upon the mubtada’ and predicate.
+    
+        In «كَانَ زَيْدٌ قَائِمًا», «زَيْدٌ» is the noun of kāna in raf‘, while «قَائِمًا» is its predicate in nasb.
+    
+        The noun of «إِنَّ» and its sisters also belongs to the nouns occurring in nasb.
+    
+        In «إِنَّ زَيْدًا قَائِمٌ», «زَيْدًا» is the noun of inna in nasb, while «قَائِمٌ» is its predicate in raf‘.
   - id: "amir-army-example"
     matn:
       id: "maful-maah-03"
@@ -153,33 +149,51 @@ proseSections:
           meaning: "pada bahagian tersebut"
           type: "keyword"
     sharh:
-      title: "I‘rab contoh pertama"
+      title: "Ringkasan Syarah"
       arabic: |
-        إِعْرَابُ قَوْلِكَ:
-        
-        «جَاءَ الْأَمِيرُ وَالْجَيْشَ»:
-        
-        «جَاءَ» فِعْلٌ مَاضٍ.
-        
-        وَ«الْأَمِيرُ» فَاعِلٌ مَرْفُوعٌ بِالضَّمَّةِ الظَّاهِرَةِ.
-        
-        وَالْوَاوُ وَاوُ الْمَعِيَّةِ بِمَعْنَى «مَعَ».
-        
-        وَ«الْجَيْشَ» مَفْعُولٌ مَعَهُ مَنْصُوبٌ بِالْفَتْحَةِ الظَّاهِرَةِ.
-        
-        وَنَاصِبُهُ الْفِعْلُ الْمَذْكُورُ قَبْلَهُ، وَهُوَ «جَاءَ».
+        التَّوَابِعُ الْأَرْبَعَةُ هِيَ: النَّعْتُ، وَالْعَطْفُ، وَالتَّوْكِيدُ، وَالْبَدَلُ.
+    
+        وَهِيَ تَتْبَعُ مَتْبُوعَهَا فِي الْإِعْرَابِ؛ فَإِذَا كَانَ الْمَتْبُوعُ مَنْصُوبًا، كَانَ التَّابِعُ مَنْصُوبًا.
+    
+        فَيُقَالُ فِي النَّعْتِ: «رَأَيْتُ زَيْدًا الْعَاقِلَ».
+    
+        وَفِي الْعَطْفِ: «رَأَيْتُ زَيْدًا وَعَمْرًا».
+    
+        وَفِي التَّوْكِيدِ: «رَأَيْتُ زَيْدًا نَفْسَهُ».
+    
+        وَفِي الْبَدَلِ: «رَأَيْتُ زَيْدًا أَخَاكَ».
+    
+        وَقَدْ سَبَقَ شَرْحُ كُلِّ وَاحِدٍ مِنْهَا فِي بَابِهِ.
+    
       malay: |
-        I‘rab ayat:
-        
-        «جَاءَ الْأَمِيرُ وَالْجَيْشَ»
-        
-        - «جَاءَ» ialah fi‘il madi.
-        - «الْأَمِيرُ» ialah fa‘il yang marfu‘.
-        - Waw ialah waw ma‘iyyah yang bermakna “bersama”.
-        - «الْجَيْشَ» ialah maf‘ul ma‘ah yang mansub dengan fathah.
-        - Amil yang menasabkannya ialah fi‘il «جَاءَ».
-        
-        Maksud ayat ialah pemerintah datang bersama tentera.
+        Empat jenis tawābi‘ ialah na‘at, ‘aṭaf, tawkid dan badal.
+    
+        Kesemuanya mengikuti perkataan sebelumnya pada hukum i‘rab. Apabila perkataan yang diikuti manṣūb, tābi‘ juga menjadi manṣūb.
+    
+        Contoh na‘at: «رَأَيْتُ زَيْدًا الْعَاقِلَ».
+    
+        Contoh ‘aṭaf: «رَأَيْتُ زَيْدًا وَعَمْرًا».
+    
+        Contoh tawkid: «رَأَيْتُ زَيْدًا نَفْسَهُ».
+    
+        Contoh badal: «رَأَيْتُ زَيْدًا أَخَاكَ».
+    
+        Setiap jenis tersebut telah diterangkan dalam babnya masing-masing.
+    
+      english: |
+        The four grammatical dependents are the adjective, conjunction, emphasis and substitute.
+    
+        Each follows the word before it in grammatical state. When the word being followed is in nasb, the dependent is likewise in nasb.
+    
+        An adjective: «رَأَيْتُ زَيْدًا الْعَاقِلَ».
+    
+        A conjunction: «رَأَيْتُ زَيْدًا وَعَمْرًا».
+    
+        An emphasis: «رَأَيْتُ زَيْدًا نَفْسَهُ».
+    
+        A substitute: «رَأَيْتُ زَيْدًا أَخَاكَ».
+    
+        Each of these has already been explained in its respective chapter.
 ---
 
 ## Sumber projek

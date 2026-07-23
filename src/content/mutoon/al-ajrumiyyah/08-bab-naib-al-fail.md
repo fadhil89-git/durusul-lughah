@@ -42,50 +42,39 @@ proseSections:
           meaning: "fa‘ilnya"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        يُسَمَّى هَذَا الْبَابُ أَيْضًا «بَابَ نَائِبِ الْفَاعِلِ».
-        
-        وَنَائِبُ الْفَاعِلِ هُوَ الِاسْمُ الَّذِي كَانَ فِي الْأَصْلِ مَفْعُولًا بِهِ، ثُمَّ حُذِفَ الْفَاعِلُ، وَأُقِيمَ الْمَفْعُولُ بِهِ مَقَامَهُ، فَأُعْطِيَ حُكْمَ الرَّفْعِ.
-        
-        نَحْوُ قَوْلِنَا:
-        
-        «خَلَقَ اللَّهُ الْإِنْسَانَ»
-        
-        فَـ«اللَّهُ» فَاعِلٌ مَرْفُوعٌ، وَ«الْإِنْسَانَ» مَفْعُولٌ بِهِ مَنْصُوبٌ.
-        
-        فَإِذَا حُذِفَ الْفَاعِلُ قُلْنَا:
-        
-        «خُلِقَ الْإِنْسَانُ»
-        
-        فَصَارَ «الْإِنْسَانُ» نَائِبَ فَاعِلٍ مَرْفُوعًا بَعْدَ أَنْ كَانَ مَفْعُولًا بِهِ مَنْصُوبًا.
-        
-        وَيَجِبُ أَنْ يَتَغَيَّرَ بِنَاءُ الْفِعْلِ عِنْدَ حَذْفِ الْفَاعِلِ؛ لِيَعْلَمَ السَّامِعُ أَنَّ الْفِعْلَ مَبْنِيٌّ لِمَا لَمْ يُسَمَّ فَاعِلُهُ.
+        يُسَمَّى هَذَا الْبَابُ أَيْضًا **بَابَ نَائِبِ الْفَاعِلِ**.
+    
+        وَنَائِبُ الْفَاعِلِ هُوَ الِاسْمُ الْمَرْفُوعُ الَّذِي يُقَامُ مَقَامَ الْفَاعِلِ بَعْدَ حَذْفِهِ.
+    
+        نَحْوُ «خَلَقَ اللَّهُ الْإِنْسَانَ»، فَـ«اللَّهُ» فَاعِلٌ مَرْفُوعٌ، وَ«الْإِنْسَانَ» مَفْعُولٌ بِهِ مَنْصُوبٌ.
+    
+        فَإِذَا حُذِفَ الْفَاعِلُ قِيلَ: «خُلِقَ الْإِنْسَانُ»، فَيَصِيرُ «الْإِنْسَانُ» نَائِبَ فَاعِلٍ مَرْفُوعًا بَعْدَ أَنْ كَانَ مَفْعُولًا بِهِ مَنْصُوبًا.
+    
+        وَيَتَغَيَّرُ بِنَاءُ الْفِعْلِ عِنْدَ حَذْفِ الْفَاعِلِ؛ لِيَدُلَّ عَلَى أَنَّ فَاعِلَهُ لَمْ يُذْكَرْ.
+    
       malay: |
-        Bab ini juga dikenali sebagai **Bab Nā’ib al-Fā‘il**.
-        
-        Nā’ib al-fā‘il pada asalnya biasanya ialah maf‘ul bih. Apabila pelaku asal tidak disebut, maf‘ul bih itu mengambil tempat fā‘il lalu berubah daripada mansub kepada marfū‘.
-        
-        Contoh ayat aktif:
-        
-        «خَلَقَ اللَّهُ الْإِنْسَانَ»
-        
-        “Allah menciptakan manusia.”
-        
-        - «اللَّهُ» ialah fā‘il.
-        - «الْإِنْسَانَ» ialah maf‘ul bih.
-        
-        Apabila pelaku tidak disebut:
-        
-        «خُلِقَ الْإِنْسَانُ»
-        
-        “Manusia telah diciptakan.”
-        
-        - «الْإِنْسَانُ» kini menjadi nā’ib al-fā‘il.
-        - Hukumnya berubah daripada mansub kepada marfū‘.
-        
-        Bentuk fi‘il juga perlu diubah supaya pendengar mengetahui bahawa ayat tersebut ialah ayat pasif.
-
+        Bab ini turut dinamakan **Bab Nā’ib al-Fā‘il**.
+    
+        Nā’ib al-fā‘il ialah isim marfū‘ yang mengambil tempat fā‘il setelah fā‘il dibuang.
+    
+        Dalam «خَلَقَ اللَّهُ الْإِنْسَانَ», perkataan «اللَّهُ» ialah fā‘il marfū‘, manakala «الْإِنْسَانَ» ialah maf‘ul bih manṣūb.
+    
+        Apabila fā‘il dibuang, dikatakan «خُلِقَ الْإِنْسَانُ». Perkataan «الْإِنْسَانُ» menjadi nā’ib al-fā‘il yang marfū‘ setelah sebelumnya menjadi maf‘ul bih yang manṣūb.
+    
+        Bentuk fi‘il juga berubah apabila fā‘il dibuang supaya menunjukkan bahawa pelaku perbuatan itu tidak disebut.
+    
+      english: |
+        This chapter is also called **the Chapter of the Deputy Subject**.
+    
+        The deputy subject is a noun in raf‘ that takes the place of the subject after the subject has been omitted.
+    
+        In «خَلَقَ اللَّهُ الْإِنْسَانَ», «اللَّهُ» is the subject in raf‘, while «الْإِنْسَانَ» is the direct object in nasb.
+    
+        When the subject is omitted, one says «خُلِقَ الْإِنْسَانُ». The word «الْإِنْسَانُ» becomes the deputy subject in raf‘ after previously being the direct object in nasb.
+    
+        The form of the verb also changes when the subject is omitted, indicating that the performer of the action has not been mentioned.
   - id: "passive-past-verb"
     matn:
       id: "naib-al-fail-02"
@@ -108,38 +97,45 @@ proseSections:
           meaning: "huruf sebelum akhirnya"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        إِذَا أُرِيدَ بِنَاءُ الْفِعْلِ الْمَاضِي لِمَا لَمْ يُسَمَّ فَاعِلُهُ، ضُمَّ أَوَّلُهُ، وَكُسِرَ الْحَرْفُ الَّذِي قَبْلَ آخِرِهِ.
-        
-        نَحْوُ:
-        
-        «ضَرَبَ» فِي الْمَعْلُومِ، فَإِذَا بُنِيَ لِمَا لَمْ يُسَمَّ فَاعِلُهُ قِيلَ: «ضُرِبَ».
-        
-        وَ«أَكْرَمَ» فِي الْمَعْلُومِ، فَإِذَا بُنِيَ لِلْمَجْهُولِ قِيلَ: «أُكْرِمَ».
-        
-        وَ«خَلَقَ» فِي الْمَعْلُومِ، فَإِذَا بُنِيَ لِلْمَجْهُولِ قِيلَ: «خُلِقَ».
-        
-        فَفِي «ضُرِبَ زَيْدٌ» ضُمَّتِ الضَّادُ، وَكُسِرَتِ الرَّاءُ الَّتِي قَبْلَ آخِرِ الْفِعْلِ.
+        إِذَا بُنِيَ الْفِعْلُ الْمَاضِي لِمَا لَمْ يُسَمَّ فَاعِلُهُ، ضُمَّ أَوَّلُهُ، وَكُسِرَ مَا قَبْلَ آخِرِهِ.
+    
+        فَيُقَالُ:
+    
+        - «ضَرَبَ» فِي الْمَعْلُومِ، وَ«ضُرِبَ» فِي مَا لَمْ يُسَمَّ فَاعِلُهُ.
+        - «أَكْرَمَ» فِي الْمَعْلُومِ، وَ«أُكْرِمَ» فِي مَا لَمْ يُسَمَّ فَاعِلُهُ.
+        - «خَلَقَ» فِي الْمَعْلُومِ، وَ«خُلِقَ» فِي مَا لَمْ يُسَمَّ فَاعِلُهُ.
+    
+        فَفِي «ضُرِبَ»، ضُمَّتِ الضَّادُ، وَكُسِرَتِ الرَّاءُ الَّتِي قَبْلَ آخِرِ الْفِعْلِ.
+    
       malay: |
-        Untuk membentuk fi‘il māḍī pasif:
-        
-        1. Huruf pertama dibariskan dammah.
-        2. Huruf sebelum huruf terakhir dibariskan kasrah.
-        
+        Apabila fi‘il māḍī dibina bagi ayat yang tidak disebut fā‘ilnya:
+    
+        - Huruf pertama dibariskan dammah.
+        - Huruf sebelum huruf terakhir dibariskan kasrah.
+    
         Contohnya:
-        
-        - «ضَرَبَ» menjadi «ضُرِبَ»
-        - «أَكْرَمَ» menjadi «أُكْرِمَ»
-        - «خَلَقَ» menjadi «خُلِقَ»
-        
-        Dalam «ضُرِبَ»:
-        
-        - Huruf ض dibariskan dammah.
-        - Huruf ر yang berada sebelum huruf terakhir dibariskan kasrah.
-        
-        Perubahan ini menandakan bahawa pelaku asal tidak disebut.
-
+    
+        - «ضَرَبَ» menjadi «ضُرِبَ».
+        - «أَكْرَمَ» menjadi «أُكْرِمَ».
+        - «خَلَقَ» menjadi «خُلِقَ».
+    
+        Dalam «ضُرِبَ», huruf ض dibariskan dammah, manakala huruf ر yang berada sebelum huruf terakhir dibariskan kasrah.
+    
+      english: |
+        When a past verb is formed without its subject being mentioned:
+    
+        - Its first letter is given a ḍammah.
+        - The letter before its final letter is given a kasrah.
+    
+        For example:
+    
+        - «ضَرَبَ» becomes «ضُرِبَ».
+        - «أَكْرَمَ» becomes «أُكْرِمَ».
+        - «خَلَقَ» becomes «خُلِقَ».
+    
+        In «ضُرِبَ», the letter ḍād is given a ḍammah, while the rā’ before the final letter is given a kasrah.
   - id: "passive-present-verb"
     matn:
       id: "naib-al-fail-03"
@@ -162,36 +158,45 @@ proseSections:
           meaning: "huruf sebelum akhirnya"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        إِذَا أُرِيدَ بِنَاءُ الْفِعْلِ الْمُضَارِعِ لِمَا لَمْ يُسَمَّ فَاعِلُهُ، ضُمَّ أَوَّلُهُ، وَفُتِحَ الْحَرْفُ الَّذِي قَبْلَ آخِرِهِ.
-        
-        نَحْوُ:
-        
-        «يَضْرِبُ» فِي الْمَعْلُومِ، فَإِذَا بُنِيَ لِلْمَجْهُولِ قِيلَ: «يُضْرَبُ».
-        
-        وَ«يُكْرِمُ» فِي الْمَعْلُومِ، فَإِذَا بُنِيَ لِلْمَجْهُولِ قِيلَ: «يُكْرَمُ».
-        
-        وَ«يَكْتُبُ» فِي الْمَعْلُومِ، فَإِذَا بُنِيَ لِلْمَجْهُولِ قِيلَ: «يُكْتَبُ».
-        
-        فَفِي «يُضْرَبُ زَيْدٌ» ضُمَّ أَوَّلُ الْفِعْلِ، وَفُتِحَتِ الرَّاءُ الَّتِي قَبْلَ آخِرِهِ.
+        إِذَا بُنِيَ الْفِعْلُ الْمُضَارِعُ لِمَا لَمْ يُسَمَّ فَاعِلُهُ، ضُمَّ أَوَّلُهُ، وَفُتِحَ مَا قَبْلَ آخِرِهِ.
+    
+        فَيُقَالُ:
+    
+        - «يَضْرِبُ» فِي الْمَعْلُومِ، وَ«يُضْرَبُ» فِي مَا لَمْ يُسَمَّ فَاعِلُهُ.
+        - «يُكْرِمُ» فِي الْمَعْلُومِ، وَ«يُكْرَمُ» فِي مَا لَمْ يُسَمَّ فَاعِلُهُ.
+        - «يَكْتُبُ» فِي الْمَعْلُومِ، وَ«يُكْتَبُ» فِي مَا لَمْ يُسَمَّ فَاعِلُهُ.
+    
+        فَفِي «يُضْرَبُ»، ضُمَّ أَوَّلُ الْفِعْلِ، وَفُتِحَتِ الرَّاءُ الَّتِي قَبْلَ آخِرِهِ.
+    
       malay: |
-        Untuk membentuk fi‘il muḍāri‘ pasif:
-        
-        1. Huruf pertama dibariskan dammah.
-        2. Huruf sebelum huruf terakhir dibariskan fathah.
-        
+        Apabila fi‘il muḍāri‘ dibina bagi ayat yang tidak disebut fā‘ilnya:
+    
+        - Huruf pertama dibariskan dammah.
+        - Huruf sebelum huruf terakhir dibariskan fathah.
+    
         Contohnya:
-        
-        - «يَضْرِبُ» menjadi «يُضْرَبُ»
-        - «يُكْرِمُ» menjadi «يُكْرَمُ»
-        - «يَكْتُبُ» menjadi «يُكْتَبُ»
-        
-        Perlu dibezakan:
-        
-        - Fi‘il māḍī pasif: huruf sebelum akhir berbaris **kasrah**.
-        - Fi‘il muḍāri‘ pasif: huruf sebelum akhir berbaris **fathah**.
-
+    
+        - «يَضْرِبُ» menjadi «يُضْرَبُ».
+        - «يُكْرِمُ» menjadi «يُكْرَمُ».
+        - «يَكْتُبُ» menjadi «يُكْتَبُ».
+    
+        Dalam «يُضْرَبُ», huruf pertama dibariskan dammah, manakala huruf ر yang berada sebelum huruf terakhir dibariskan fathah.
+    
+      english: |
+        When a present verb is formed without its subject being mentioned:
+    
+        - Its first letter is given a ḍammah.
+        - The letter before its final letter is given a fatḥah.
+    
+        For example:
+    
+        - «يَضْرِبُ» becomes «يُضْرَبُ».
+        - «يُكْرِمُ» becomes «يُكْرَمُ».
+        - «يَكْتُبُ» becomes «يُكْتَبُ».
+    
+        In «يُضْرَبُ», the first letter is given a ḍammah, while the rā’ before the final letter is given a fatḥah.
   - id: "categories-naib-al-fail"
     matn:
       id: "naib-al-fail-04"
@@ -211,34 +216,33 @@ proseSections:
           meaning: "dan dhamir"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        يَنْقَسِمُ نَائِبُ الْفَاعِلِ إِلَى ظَاهِرٍ وَمُضْمَرٍ، كَمَا انْقَسَمَ الْفَاعِلُ إِلَى ذَلِكَ.
-        
-        فَالظَّاهِرُ هُوَ الِاسْمُ الَّذِي يُذْكَرُ لَفْظُهُ فِي الْجُمْلَةِ، نَحْوُ «زَيْدٌ» فِي «ضُرِبَ زَيْدٌ».
-        
-        وَالْمُضْمَرُ هُوَ الضَّمِيرُ الَّذِي يَقُومُ مَقَامَ الْفَاعِلِ، نَحْوُ التَّاءِ فِي «ضُرِبْتُ»، وَالْوَاوِ فِي «ضُرِبُوا».
-        
-        وَكُلٌّ مِنَ الظَّاهِرِ وَالْمُضْمَرِ يَكُونُ مَرْفُوعًا أَوْ فِي مَحَلِّ رَفْعٍ عَلَى النِّيَابَةِ عَنِ الْفَاعِلِ.
+        يَنْقَسِمُ نَائِبُ الْفَاعِلِ إِلَى قِسْمَيْنِ: ظَاهِرٍ وَمُضْمَرٍ.
+    
+        **فَالظَّاهِرُ:** الِاسْمُ الَّذِي يُذْكَرُ لَفْظُهُ فِي الْجُمْلَةِ، نَحْوُ «زَيْدٌ» فِي «ضُرِبَ زَيْدٌ».
+    
+        **وَالْمُضْمَرُ:** الضَّمِيرُ الَّذِي يَقُومُ مَقَامَ الْفَاعِلِ، نَحْوُ التَّاءِ فِي «ضُرِبْتُ»، وَالْوَاوِ فِي «ضُرِبُوا».
+    
+        فَنَائِبُ الْفَاعِلِ الظَّاهِرُ مَرْفُوعٌ، وَالضَّمِيرُ الْمَبْنِيُّ يَكُونُ فِي مَحَلِّ رَفْعٍ نَائِبَ فَاعِلٍ.
+    
       malay: |
-        Nā’ib al-fā‘il, seperti fā‘il, boleh hadir dalam dua bentuk.
-        
-        **Nā’ib al-fā‘il ẓāhir** ialah isim yang disebut secara jelas:
-        
-        «ضُرِبَ زَيْدٌ»
-        
-        «زَيْدٌ» ialah nā’ib al-fā‘il ẓāhir.
-        
-        **Nā’ib al-fā‘il muḍmar** ialah kata ganti yang mengambil tempat pelaku:
-        
-        «ضُرِبْتُ»
-        
-        “Aku telah dipukul.”
-        
-        Tā’ dalam «ضُرِبْتُ» ialah nā’ib al-fā‘il.
-        
-        Isim ẓāhir menerima tanda rafa‘ yang jelas atau dianggarkan. Kata ganti pula bersifat mabnī, tetapi berada pada kedudukan rafa‘ sebagai nā’ib al-fā‘il.
-
+        Nā’ib al-fā‘il terbahagi kepada dua: ẓāhir dan muḍmar.
+    
+        **Nā’ib al-fā‘il ẓāhir:** Isim yang lafaznya disebut secara jelas dalam ayat, seperti «زَيْدٌ» dalam «ضُرِبَ زَيْدٌ».
+    
+        **Nā’ib al-fā‘il muḍmar:** Dhamir yang mengambil tempat fā‘il, seperti tā’ dalam «ضُرِبْتُ» dan wāw dalam «ضُرِبُوا».
+    
+        Nā’ib al-fā‘il yang ẓāhir dihukumkan marfū‘. Dhamir yang mabnī pula berada pada kedudukan rafa‘ sebagai nā’ib al-fā‘il.
+    
+      english: |
+        The deputy subject is divided into two categories: explicit and pronominal.
+    
+        **The explicit deputy subject:** A noun whose wording is stated clearly in the sentence, such as «زَيْدٌ» in «ضُرِبَ زَيْدٌ».
+    
+        **The pronominal deputy subject:** A pronoun that takes the place of the subject, such as the tā’ in «ضُرِبْتُ» and the wāw in «ضُرِبُوا».
+    
+        An explicit deputy subject is in raf‘. A built pronoun occupies the grammatical position of raf‘ as the deputy subject.
   - id: "zahir-passive-examples"
     matn:
       id: "naib-al-fail-05"
@@ -264,41 +268,39 @@ proseSections:
           meaning: "dan ‘Amr sedang dimuliakan"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        فِي «ضُرِبَ زَيْدٌ»:
-        
-        «ضُرِبَ» فِعْلٌ مَاضٍ مَبْنِيٌّ لِمَا لَمْ يُسَمَّ فَاعِلُهُ، وَ«زَيْدٌ» نَائِبُ فَاعِلٍ مَرْفُوعٌ بِالضَّمَّةِ الظَّاهِرَةِ.
-        
-        وَفِي «يُضْرَبُ زَيْدٌ»:
-        
-        «يُضْرَبُ» فِعْلٌ مُضَارِعٌ مَبْنِيٌّ لِمَا لَمْ يُسَمَّ فَاعِلُهُ، وَ«زَيْدٌ» نَائِبُ فَاعِلٍ مَرْفُوعٌ.
-        
-        وَفِي «أُكْرِمَ عَمْرٌو»:
-        
-        «أُكْرِمَ» فِعْلٌ مَاضٍ مَبْنِيٌّ لِلْمَجْهُولِ، وَ«عَمْرٌو» نَائِبُ فَاعِلٍ مَرْفُوعٌ.
-        
-        وَفِي «يُكْرَمُ عَمْرٌو»:
-        
-        «يُكْرَمُ» فِعْلٌ مُضَارِعٌ مَبْنِيٌّ لِلْمَجْهُولِ، وَ«عَمْرٌو» نَائِبُ فَاعِلٍ مَرْفُوعٌ.
+        مِنْ أَمْثِلَةِ نَائِبِ الْفَاعِلِ الظَّاهِرِ:
+    
+        **«ضُرِبَ زَيْدٌ»:** «ضُرِبَ» فِعْلٌ مَاضٍ مَبْنِيٌّ لِمَا لَمْ يُسَمَّ فَاعِلُهُ، وَ«زَيْدٌ» نَائِبُ فَاعِلٍ مَرْفُوعٌ بِالضَّمَّةِ الظَّاهِرَةِ.
+    
+        **«يُضْرَبُ زَيْدٌ»:** «يُضْرَبُ» فِعْلٌ مُضَارِعٌ مَبْنِيٌّ لِمَا لَمْ يُسَمَّ فَاعِلُهُ، وَ«زَيْدٌ» نَائِبُ فَاعِلٍ مَرْفُوعٌ.
+    
+        **«أُكْرِمَ عَمْرٌو»:** «أُكْرِمَ» فِعْلٌ مَاضٍ مَبْنِيٌّ لِمَا لَمْ يُسَمَّ فَاعِلُهُ، وَ«عَمْرٌو» نَائِبُ فَاعِلٍ مَرْفُوعٌ.
+    
+        **«يُكْرَمُ عَمْرٌو»:** «يُكْرَمُ» فِعْلٌ مُضَارِعٌ مَبْنِيٌّ لِمَا لَمْ يُسَمَّ فَاعِلُهُ، وَ«عَمْرٌو» نَائِبُ فَاعِلٍ مَرْفُوعٌ.
+    
       malay: |
-        Dalam «ضُرِبَ زَيْدٌ»:
-        
-        - «ضُرِبَ» ialah fi‘il māḍī pasif.
-        - «زَيْدٌ» ialah nā’ib al-fā‘il marfū‘.
-        
-        Dalam «يُضْرَبُ زَيْدٌ»:
-        
-        - «يُضْرَبُ» ialah fi‘il muḍāri‘ pasif.
-        - «زَيْدٌ» ialah nā’ib al-fā‘il.
-        
-        Begitu juga dalam:
-        
-        - «أُكْرِمَ عَمْرٌو»
-        - «يُكْرَمُ عَمْرٌو»
-        
-        Perkataan «عَمْرٌو» ialah pihak yang menerima perbuatan memuliakan. Pelaku yang memuliakannya tidak disebut, maka «عَمْرٌو» mengambil tempat fā‘il dan menjadi marfū‘.
-
+        Antara contoh nā’ib al-fā‘il yang ẓāhir ialah:
+    
+        **«ضُرِبَ زَيْدٌ»:** «ضُرِبَ» ialah fi‘il māḍī yang dibina tanpa menyebut fā‘ilnya. «زَيْدٌ» ialah nā’ib al-fā‘il marfū‘ dengan dammah yang jelas.
+    
+        **«يُضْرَبُ زَيْدٌ»:** «يُضْرَبُ» ialah fi‘il muḍāri‘ yang dibina tanpa menyebut fā‘ilnya. «زَيْدٌ» ialah nā’ib al-fā‘il marfū‘.
+    
+        **«أُكْرِمَ عَمْرٌو»:** «أُكْرِمَ» ialah fi‘il māḍī yang dibina tanpa menyebut fā‘ilnya. «عَمْرٌو» ialah nā’ib al-fā‘il marfū‘.
+    
+        **«يُكْرَمُ عَمْرٌو»:** «يُكْرَمُ» ialah fi‘il muḍāri‘ yang dibina tanpa menyebut fā‘ilnya. «عَمْرٌو» ialah nā’ib al-fā‘il marfū‘.
+    
+      english: |
+        Examples of an explicit deputy subject include:
+    
+        **«ضُرِبَ زَيْدٌ»:** «ضُرِبَ» is a past verb formed without its subject being mentioned. «زَيْدٌ» is the deputy subject in raf‘ with a visible ḍammah.
+    
+        **«يُضْرَبُ زَيْدٌ»:** «يُضْرَبُ» is a present verb formed without its subject being mentioned. «زَيْدٌ» is the deputy subject in raf‘.
+    
+        **«أُكْرِمَ عَمْرٌو»:** «أُكْرِمَ» is a past verb formed without its subject being mentioned. «عَمْرٌو» is the deputy subject in raf‘.
+    
+        **«يُكْرَمُ عَمْرٌو»:** «يُكْرَمُ» is a present verb formed without its subject being mentioned. «عَمْرٌو» is the deputy subject in raf‘.
   - id: "attached-pronoun-passive-first-person"
     matn:
       id: "naib-al-fail-06"
@@ -351,25 +353,51 @@ proseSections:
           meaning: "mereka perempuan sekalian telah dipukul"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        فِي «ضُرِبْتُ»:
-        
-        «ضُرِبَ» فِعْلٌ مَاضٍ مَبْنِيٌّ لِمَا لَمْ يُسَمَّ فَاعِلُهُ، وَالتَّاءُ ضَمِيرُ الْمُتَكَلِّمِ مَبْنِيٌّ عَلَى الضَّمِّ فِي مَحَلِّ رَفْعٍ نَائِبُ فَاعِلٍ.
-        
-        وَفِي «ضُرِبْنَا»:
-        
-        «ضُرِبَ» فِعْلٌ مَاضٍ مَبْنِيٌّ لِلْمَجْهُولِ، وَ«نَا» ضَمِيرٌ مُتَّصِلٌ مَبْنِيٌّ عَلَى السُّكُونِ فِي مَحَلِّ رَفْعٍ نَائِبُ فَاعِلٍ.
+        نَائِبُ الْفَاعِلِ الْمُضْمَرُ اثْنَا عَشَرَ ضَمِيرًا، وَهِيَ:
+    
+        **لِلْمُتَكَلِّمِ:** التَّاءُ فِي «ضُرِبْتُ»، وَ«نَا» فِي «ضُرِبْنَا».
+    
+        **لِلْمُخَاطَبِ:** التَّاءُ فِي «ضُرِبْتَ»، وَ«ضُرِبْتِ»، وَ«ضُرِبْتُمَا»، وَ«ضُرِبْتُمْ»، وَ«ضُرِبْتُنَّ».
+    
+        **لِلْغَائِبِ:** الضَّمِيرُ الْمُسْتَتِرُ فِي «ضُرِبَ» تَقْدِيرُهُ «هُوَ»، وَالضَّمِيرُ الْمُسْتَتِرُ فِي «ضُرِبَتْ» تَقْدِيرُهُ «هِيَ»، وَأَلِفُ الِاثْنَيْنِ فِي «ضُرِبَا»، وَوَاوُ الْجَمَاعَةِ فِي «ضُرِبُوا»، وَنُونُ النِّسْوَةِ فِي «ضُرِبْنَ».
+    
+        فَفِي «ضُرِبْتُ»، التَّاءُ ضَمِيرٌ مُتَّصِلٌ مَبْنِيٌّ عَلَى الضَّمِّ فِي مَحَلِّ رَفْعٍ نَائِبُ فَاعِلٍ.
+    
+        وَفِي «ضُرِبْنَا»، «نَا» ضَمِيرٌ مُتَّصِلٌ مَبْنِيٌّ عَلَى السُّكُونِ فِي مَحَلِّ رَفْعٍ نَائِبُ فَاعِلٍ.
+    
+        وَكَذَلِكَ بَقِيَّةُ الضَّمَائِرِ الْمَذْكُورَةِ تَكُونُ فِي مَحَلِّ رَفْعٍ نَائِبَ فَاعِلٍ.
+    
       malay: |
-        Dalam «ضُرِبْتُ», tā’ bermaksud “aku”. Ia bukan pelaku yang memukul, tetapi pihak yang menerima pukulan. Oleh itu, tā’ menjadi nā’ib al-fā‘il.
-        
-        Dalam «ضُرِبْنَا», «نَا» bermaksud “kami”. Kata ganti itu juga menjadi nā’ib al-fā‘il.
-        
-        Kata ganti tersebut bersifat mabnī, maka kita tidak mengatakan ia mempunyai dammah i‘rab. Sebaliknya, kita mengatakan:
-        
-        **ضمير مبني في محل رفع نائب فاعل**
-        
-        “Kata ganti yang mabnī pada kedudukan rafa‘ sebagai nā’ib al-fā‘il.”
+        Nā’ib al-fā‘il berupa dhamir ada dua belas:
+    
+        **Bagi penutur:** Tā’ dalam «ضُرِبْتُ» dan «نَا» dalam «ضُرِبْنَا».
+    
+        **Bagi orang yang diajak bercakap:** Tā’ dalam «ضُرِبْتَ», «ضُرِبْتِ», «ضُرِبْتُمَا», «ضُرِبْتُمْ» dan «ضُرِبْتُنَّ».
+    
+        **Bagi pihak ketiga:** Dhamir tersembunyi yang dianggarkan sebagai «هُوَ» dalam «ضُرِبَ», dhamir tersembunyi yang dianggarkan sebagai «هِيَ» dalam «ضُرِبَتْ», alif dua orang dalam «ضُرِبَا», wāw jamā‘ah dalam «ضُرِبُوا» dan nūn niswah dalam «ضُرِبْنَ».
+    
+        Dalam «ضُرِبْتُ», tā’ ialah dhamir bersambung yang mabnī atas dammah dan berada pada kedudukan rafa‘ sebagai nā’ib al-fā‘il.
+    
+        Dalam «ضُرِبْنَا», «نَا» ialah dhamir bersambung yang mabnī atas sukun dan berada pada kedudukan rafa‘ sebagai nā’ib al-fā‘il.
+    
+        Begitu juga semua dhamir lain yang disebut berada pada kedudukan rafa‘ sebagai nā’ib al-fā‘il.
+    
+      english: |
+        There are twelve pronominal deputy subjects:
+    
+        **For the speaker:** The tā’ in «ضُرِبْتُ» and «نَا» in «ضُرِبْنَا».
+    
+        **For the addressee:** The tā’ in «ضُرِبْتَ», «ضُرِبْتِ», «ضُرِبْتُمَا», «ضُرِبْتُمْ» and «ضُرِبْتُنَّ».
+    
+        **For the third person:** The concealed pronoun estimated as «هُوَ» in «ضُرِبَ», the concealed pronoun estimated as «هِيَ» in «ضُرِبَتْ», the dual alif in «ضُرِبَا», the plural wāw in «ضُرِبُوا» and the feminine plural nūn in «ضُرِبْنَ».
+    
+        In «ضُرِبْتُ», the tā’ is an attached pronoun built upon ḍammah and occupying the grammatical position of raf‘ as the deputy subject.
+    
+        In «ضُرِبْنَا», «نَا» is an attached pronoun built upon sukūn and occupying the grammatical position of raf‘ as the deputy subject.
+    
+        The remaining pronouns mentioned likewise occupy the grammatical position of raf‘ as deputy subjects.
 ---
 
 ## Sumber projek

@@ -63,34 +63,33 @@ proseSections:
           meaning: "dan kecuali"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
         الِاسْتِثْنَاءُ هُوَ إِخْرَاجُ مَا بَعْدَ أَدَاةِ الِاسْتِثْنَاءِ مِنْ حُكْمِ مَا قَبْلَهَا.
-        
-        فَفِي قَوْلِكَ:
-        
-        «قَامَ الْقَوْمُ إِلَّا زَيْدًا»
-        
-        ثَبَتَ الْقِيَامُ لِلْقَوْمِ، ثُمَّ أُخْرِجَ زَيْدٌ مِنْ حُكْمِ الْقِيَامِ بِوَاسِطَةِ «إِلَّا».
-        
-        فَـ«الْقَوْمُ» يُسَمَّى الْمُسْتَثْنَى مِنْهُ.
-        
-        وَ«إِلَّا» أَدَاةُ اسْتِثْنَاءٍ.
-        
-        وَ«زَيْدًا» يُسَمَّى الْمُسْتَثْنَى.
+    
+        فَفِي «قَامَ الْقَوْمُ إِلَّا زَيْدًا»، ثَبَتَ الْقِيَامُ لِلْقَوْمِ، ثُمَّ أُخْرِجَ زَيْدٌ مِنْ هَذَا الْحُكْمِ.
+    
+        فَـ«الْقَوْمُ» مُسْتَثْنًى مِنْهُ، وَ«إِلَّا» أَدَاةُ اسْتِثْنَاءٍ، وَ«زَيْدًا» مُسْتَثْنًى.
+    
+        وَأَدَوَاتُ الِاسْتِثْنَاءِ ثَمَانِيَةٌ: «إِلَّا، وَغَيْرُ، وَسِوًى، وَسُوًى، وَسَوَاءٌ، وَخَلَا، وَعَدَا، وَحَاشَا».
+    
       malay: |
-        Istithna’ mengeluarkan lafaz selepas alat istithna’ daripada hukum lafaz sebelumnya.
-        
-        Dalam:
-        
-        «قَامَ الْقَوْمُ إِلَّا زَيْدًا»
-        
-        hukum berdiri dikenakan kepada kaum tersebut, kemudian Zaid dikeluarkan daripada hukum itu.
-        
-        - «الْقَوْمُ» ialah mustathna minhu.
-        - «إِلَّا» ialah alat istithna’.
-        - «زَيْدًا» ialah mustathna.
-
+        Istithnā’ ialah mengeluarkan lafaz selepas alat istithnā’ daripada hukum lafaz sebelumnya.
+    
+        Dalam «قَامَ الْقَوْمُ إِلَّا زَيْدًا», hukum berdiri dikenakan kepada kaum itu, kemudian Zaid dikeluarkan daripada hukum tersebut.
+    
+        «الْقَوْمُ» ialah mustathnā minhu, «إِلَّا» ialah alat istithnā’ dan «زَيْدًا» ialah mustathnā.
+    
+        Alat istithnā’ ada lapan: «إِلَّا، غَيْرُ، سِوًى، سُوًى، سَوَاءٌ، خَلَا، عَدَا» dan «حَاشَا».
+    
+      english: |
+        Exception removes what follows the exception particle from the ruling applied to what precedes it.
+    
+        In «قَامَ الْقَوْمُ إِلَّا زَيْدًا», standing is affirmed for the group and Zayd is then excluded from that ruling.
+    
+        «الْقَوْمُ» is the set from which the exception is made, «إِلَّا» is the exception particle, and «زَيْدًا» is the excepted noun.
+    
+        There are eight exception expressions: «إِلَّا، غَيْرُ، سِوًى، سُوًى، سَوَاءٌ، خَلَا، عَدَا» and «حَاشَا».
   - id: "istithna-tools"
     matn:
       id: "istithna-02"
@@ -122,26 +121,39 @@ proseSections:
           meaning: "dan orang ramai telah keluar kecuali ‘Amr"
           type: "keyword"
     sharh:
-      title: "Lapan alat istithna’"
+      title: "Ringkasan Syarah"
       arabic: |
-        أَدَوَاتُ الِاسْتِثْنَاءِ الْمَذْكُورَةُ ثَمَانِيَةٌ.
-        
-        فَـ«إِلَّا» حَرْفُ اسْتِثْنَاءٍ.
-        
-        وَ«غَيْرُ» وَ«سِوَى» بِأَلْفَاظِهَا أَسْمَاءٌ، وَمَا بَعْدَهَا مَجْرُورٌ بِالْإِضَافَةِ.
-        
-        وَ«خَلَا» وَ«عَدَا» وَ«حَاشَا» يَجُوزُ أَنْ تَكُونَ أَفْعَالًا، وَيَجُوزُ أَنْ تَكُونَ حُرُوفَ جَرٍّ.
-        
-        وَلِكُلِّ أَدَاةٍ حُكْمٌ فِي إِعْرَابِ الْمُسْتَثْنَى.
+        إِذَا كَانَ الْكَلَامُ تَامًّا مُوجَبًا، وَجَبَ نَصْبُ الْمُسْتَثْنَى بَعْدَ «إِلَّا».
+    
+        وَالْكَلَامُ التَّامُّ هُوَ الَّذِي ذُكِرَ فِيهِ الْمُسْتَثْنَى مِنْهُ، وَالْمُوجَبُ هُوَ الَّذِي لَمْ يَتَقَدَّمْهُ نَفْيٌ وَلَا نَهْيٌ وَلَا اسْتِفْهَامٌ.
+    
+        فَفِي «قَامَ الْقَوْمُ إِلَّا زَيْدًا»، يَكُونُ «زَيْدًا» مُسْتَثْنًى مَنْصُوبًا؛ لِأَنَّ الْكَلَامَ تَامٌّ مُوجَبٌ.
+    
+        وَكَذَلِكَ «خَرَجَ النَّاسُ إِلَّا عَمْرًا»، فَـ«عَمْرًا» مُسْتَثْنًى مَنْصُوبٌ.
+    
+        وَ«إِلَّا» حَرْفٌ، وَ«غَيْرُ» وَأَلْفَاظُ «سِوَى» أَسْمَاءٌ، وَ«خَلَا» وَ«عَدَا» وَ«حَاشَا» قَدْ تَكُونُ أَفْعَالًا أَوْ حُرُوفَ جَرٍّ.
+    
       malay: |
-        Alat-alat ini tidak semuanya daripada jenis kalimah yang sama.
-        
-        - «إِلَّا» ialah huruf.
-        - «غَيْرُ» dan bentuk-bentuk «سِوَى» ialah isim.
-        - «خَلَا»، «عَدَا» dan «حَاشَا» boleh dianggap sebagai fi‘il atau huruf jar.
-        
-        Perbezaan ini memberi kesan kepada i‘rab lafaz selepasnya.
-
+        Apabila ayat istithnā’ sempurna dan berbentuk positif, mustathnā selepas «إِلَّا» wajib dinasabkan.
+    
+        Ayat sempurna ialah ayat yang menyebut mustathnā minhu. Ayat positif pula ialah ayat yang tidak didahului oleh nafi, nahi atau pertanyaan.
+    
+        Dalam «قَامَ الْقَوْمُ إِلَّا زَيْدًا», «زَيْدًا» ialah mustathnā manṣūb kerana ayat itu sempurna dan positif.
+    
+        Begitu juga dalam «خَرَجَ النَّاسُ إِلَّا عَمْرًا», «عَمْرًا» ialah mustathnā manṣūb.
+    
+        «إِلَّا» ialah huruf. «غَيْرُ» dan bentuk-bentuk «سِوَى» ialah isim. «خَلَا», «عَدَا» dan «حَاشَا» pula boleh menjadi fi‘il atau huruf jar.
+    
+      english: |
+        When an exception sentence is complete and affirmative, the noun after «إِلَّا» must be in nasb.
+    
+        A complete sentence mentions the set from which the exception is made. An affirmative sentence is not preceded by negation, prohibition or a question.
+    
+        In «قَامَ الْقَوْمُ إِلَّا زَيْدًا», «زَيْدًا» is an excepted noun in nasb because the sentence is complete and affirmative.
+    
+        Likewise, in «خَرَجَ النَّاسُ إِلَّا عَمْرًا», «عَمْرًا» is in nasb as the exception.
+    
+        «إِلَّا» is a particle. «غَيْرُ» and the forms of «سِوَى» are nouns. «خَلَا», «عَدَا» and «حَاشَا» may function as verbs or prepositions.
   - id: "illa-complete-affirmative"
     matn:
       id: "istithna-03"
@@ -173,40 +185,33 @@ proseSections:
           meaning: "atau kecuali Zaid, dengan bacaan nasab"
           type: "keyword"
     sharh:
-      title: "Kalam tam mujib"
+      title: "Ringkasan Syarah"
       arabic: |
-        الْكَلَامُ التَّامُّ هُوَ الَّذِي ذُكِرَ فِيهِ الْمُسْتَثْنَى مِنْهُ.
-        
-        وَالْكَلَامُ الْمُوجَبُ هُوَ الَّذِي لَمْ يَتَقَدَّمْهُ نَفْيٌ، وَلَا نَهْيٌ، وَلَا اسْتِفْهَامٌ.
-        
-        فَفِي قَوْلِكَ:
-        
-        «قَامَ الْقَوْمُ إِلَّا زَيْدًا»
-        
-        «قَامَ» فِعْلٌ مَاضٍ.
-        
-        وَ«الْقَوْمُ» فَاعِلٌ مَرْفُوعٌ، وَهُوَ الْمُسْتَثْنَى مِنْهُ.
-        
-        وَ«إِلَّا» أَدَاةُ اسْتِثْنَاءٍ.
-        
-        وَ«زَيْدًا» مُسْتَثْنًى مَنْصُوبٌ.
-        
-        وَيَجِبُ نَصْبُهُ؛ لِأَنَّ الْكَلَامَ تَامٌّ مُوجَبٌ.
+        إِذَا كَانَ الْكَلَامُ تَامًّا مَنْفِيًّا، جَازَ فِي الْمُسْتَثْنَى بَعْدَ «إِلَّا» وَجْهَانِ:
+    
+        **الْبَدَلُ:** وَهُوَ الْمُخْتَارُ، نَحْوُ «مَا قَامَ الْقَوْمُ إِلَّا زَيْدٌ»، فَـ«زَيْدٌ» بَدَلٌ مَرْفُوعٌ مِنَ «الْقَوْمُ».
+    
+        **وَالنَّصْبُ عَلَى الِاسْتِثْنَاءِ:** نَحْوُ «مَا قَامَ الْقَوْمُ إِلَّا زَيْدًا».
+    
+        وَيَجْرِي هَذَا الْحُكْمُ فِي النَّهْيِ وَالِاسْتِفْهَامِ؛ لِأَنَّهُمَا فِي هَذَا الْبَابِ شَبِيهَانِ بِالنَّفْيِ.
+    
       malay: |
-        Kalam tam ialah kalam yang menyebut mustathna minhu.
-        
-        Kalam mujib ialah kalam yang tidak didahului oleh:
-        
-        - nafi,
-        - nahi,
-        - istifham.
-        
-        Dalam:
-        
-        «قَامَ الْقَوْمُ إِلَّا زَيْدًا»
-        
-        «زَيْدًا» wajib menjadi mustathna mansub kerana kalam itu tam mujib.
-
+        Apabila ayat itu sempurna tetapi berbentuk nafi, mustathnā selepas «إِلَّا» mempunyai dua wajah:
+    
+        **Badal:** Inilah wajah yang dipilih, seperti «مَا قَامَ الْقَوْمُ إِلَّا زَيْدٌ». «زَيْدٌ» menjadi badal marfū‘ daripada «الْقَوْمُ».
+    
+        **Naṣab atas istithnā’:** Seperti «مَا قَامَ الْقَوْمُ إِلَّا زَيْدًا».
+    
+        Hukum yang sama berlaku dalam ayat nahi dan istifham kerana kedua-duanya menyerupai nafi dalam bab ini.
+    
+      english: |
+        When the sentence is complete but negative, the noun after «إِلَّا» may be treated in two ways:
+    
+        **As a substitute:** This is the preferred analysis, as in «مَا قَامَ الْقَوْمُ إِلَّا زَيْدٌ», where «زَيْدٌ» is a substitute in raf‘ for «الْقَوْمُ».
+    
+        **In nasb as an exception:** As in «مَا قَامَ الْقَوْمُ إِلَّا زَيْدًا».
+    
+        The same ruling applies after prohibition and questioning because they resemble negation in this chapter.
   - id: "connected-disconnected"
     matn:
       id: "istithna-04"
@@ -235,40 +240,39 @@ proseSections:
           meaning: "dan aku tidak melalui sesiapa kecuali Zaid"
           type: "keyword"
     sharh:
-      title: "Istithna’ muttasil dan munqati‘"
+      title: "Ringkasan Syarah"
       arabic: |
-        الِاسْتِثْنَاءُ الْمُتَّصِلُ هُوَ مَا كَانَ فِيهِ الْمُسْتَثْنَى بَعْضًا مِنَ الْمُسْتَثْنَى مِنْهُ.
-        
-        نَحْوُ:
-        
-        «قَامَ الْقَوْمُ إِلَّا زَيْدًا».
-        
-        فَزَيْدٌ مِنْ جِنْسِ الْقَوْمِ.
-        
-        وَالِاسْتِثْنَاءُ الْمُنْقَطِعُ هُوَ مَا لَمْ يَكُنْ فِيهِ الْمُسْتَثْنَى بَعْضًا مِنَ الْمُسْتَثْنَى مِنْهُ.
-        
-        نَحْوُ:
-        
-        «قَامَ الْقَوْمُ إِلَّا حِمَارًا».
-        
-        فَالْحِمَارُ لَيْسَ مِنْ جِنْسِ الْقَوْمِ.
+        إِذَا كَانَ الْكَلَامُ نَاقِصًا مَنْفِيًّا، أُعْرِبَ مَا بَعْدَ «إِلَّا» بِحَسَبِ الْعَامِلِ الَّذِي قَبْلَهَا، وَهَذَا هُوَ الِاسْتِثْنَاءُ الْمُفَرَّغُ.
+    
+        فَفِي «مَا قَامَ إِلَّا زَيْدٌ»، يَكُونُ «زَيْدٌ» فَاعِلًا مَرْفُوعًا.
+    
+        وَفِي «مَا ضَرَبْتُ إِلَّا زَيْدًا»، يَكُونُ «زَيْدًا» مَفْعُولًا بِهِ مَنْصُوبًا.
+    
+        وَفِي «مَا مَرَرْتُ إِلَّا بِزَيْدٍ»، يَكُونُ «زَيْدٍ» اسْمًا مَجْرُورًا بِالْبَاءِ.
+    
+        وَالِاسْتِثْنَاءُ الْمُتَّصِلُ مَا كَانَ الْمُسْتَثْنَى فِيهِ مِنْ جِنْسِ الْمُسْتَثْنَى مِنْهُ، وَالْمُنْقَطِعُ مَا لَمْ يَكُنْ مِنْ جِنْسِهِ.
+    
       malay: |
-        Istithna’ muttasil berlaku apabila mustathna merupakan sebahagian daripada jenis mustathna minhu.
-        
-        Contoh:
-        
-        «قَامَ الْقَوْمُ إِلَّا زَيْدًا»
-        
-        Zaid termasuk daripada jenis kaum tersebut.
-        
-        Istithna’ munqati‘ berlaku apabila mustathna bukan daripada jenis mustathna minhu.
-        
-        Contoh:
-        
-        «قَامَ الْقَوْمُ إِلَّا حِمَارًا»
-        
-        Keldai bukan daripada jenis manusia yang disebut sebagai kaum.
-
+        Apabila ayat istithnā’ tidak sempurna dan berbentuk nafi, perkataan selepas «إِلَّا» dii‘rabkan menurut ‘āmil sebelumnya. Bentuk ini dinamakan istithnā’ mufarragh.
+    
+        Dalam «مَا قَامَ إِلَّا زَيْدٌ», «زَيْدٌ» ialah fā‘il marfū‘.
+    
+        Dalam «مَا ضَرَبْتُ إِلَّا زَيْدًا», «زَيْدًا» ialah maf‘ul bih manṣūb.
+    
+        Dalam «مَا مَرَرْتُ إِلَّا بِزَيْدٍ», «زَيْدٍ» ialah isim majrūr dengan bā’.
+    
+        Istithnā’ muttaṣil berlaku apabila mustathnā termasuk dalam jenis mustathnā minhu. Istithnā’ munqaṭi‘ pula berlaku apabila kedua-duanya berlainan jenis.
+    
+      english: |
+        When an exception sentence is incomplete and negative, the expression after «إِلَّا» is parsed according to the governor before it. This is called a discharged exception.
+    
+        In «مَا قَامَ إِلَّا زَيْدٌ», «زَيْدٌ» is the subject in raf‘.
+    
+        In «مَا ضَرَبْتُ إِلَّا زَيْدًا», «زَيْدًا» is the direct object in nasb.
+    
+        In «مَا مَرَرْتُ إِلَّا بِزَيْدٍ», «زَيْدٍ» is in jarr because of the preposition bā’.
+    
+        A connected exception has an excepted noun belonging to the same class as the original set. A disconnected exception has an excepted noun from a different class.
   - id: "complete-negative"
     matn:
       id: "istithna-05"
@@ -297,51 +301,38 @@ proseSections:
           meaning: "tanpa pilihan lain"
           type: "keyword"
     sharh:
-      title: "Kalam tam manfi"
+      title: "Ringkasan Syarah"
       arabic: |
-        إِذَا كَانَ الْكَلَامُ تَامًّا مَنْفِيًّا، وَكَانَ الِاسْتِثْنَاءُ مُتَّصِلًا، جَازَ فِي الْمُسْتَثْنَى وَجْهَانِ:
-        
-        الْوَجْهُ الْأَوَّلُ: الْإِتْبَاعُ عَلَى الْبَدَلِيَّةِ، وَهُوَ الْمُخْتَارُ.
-        
-        فَتَقُولُ:
-        
-        «مَا قَامَ الْقَوْمُ إِلَّا زَيْدٌ».
-        
-        فَـ«زَيْدٌ» بَدَلٌ مِنَ «الْقَوْمُ» مَرْفُوعٌ مِثْلَهُ.
-        
-        وَالْوَجْهُ الثَّانِي: النَّصْبُ عَلَى الِاسْتِثْنَاءِ.
-        
-        فَتَقُولُ:
-        
-        «مَا قَامَ الْقَوْمُ إِلَّا زَيْدًا».
-        
-        وَمِثْلُ النَّفْيِ النَّهْيُ وَالِاسْتِفْهَامُ.
+        «غَيْرُ» وَ«سِوَى» بِأَلْفَاظِهَا أَسْمَاءٌ تُضَافُ إِلَى الْمُسْتَثْنَى، فَيَكُونُ مَا بَعْدَهَا مَجْرُورًا بِالْإِضَافَةِ دَائِمًا.
+    
+        فَيُقَالُ: «قَامَ الْقَوْمُ غَيْرَ زَيْدٍ»، فَـ«غَيْرَ» مُسْتَثْنًى مَنْصُوبٌ، وَ«زَيْدٍ» مُضَافٌ إِلَيْهِ مَجْرُورٌ.
+    
+        وَإِعْرَابُ «غَيْرِ» وَ«سِوَى» يَكُونُ بِحَسَبِ حُكْمِ الْمُسْتَثْنَى بِـ«إِلَّا»، أَمَّا الِاسْمُ بَعْدَهُمَا فَلَا يَكُونُ إِلَّا مَجْرُورًا.
+    
       malay: |
-        Dalam kalam tam manfi yang istithna’nya muttasil, terdapat dua wajah:
-        
-        1. **Badal**, dan inilah wajah yang dipilih:
-        
-           «مَا قَامَ الْقَوْمُ إِلَّا زَيْدٌ»
-        
-           «زَيْدٌ» menjadi badal marfū‘ daripada «الْقَوْمُ».
-        
-        2. **Naṣab atas istithna’**:
-        
-           «مَا قَامَ الْقَوْمُ إِلَّا زَيْدًا»
-        
-        Hukum yang sama berlaku selepas nahi dan istifham.
-
+        «غَيْرُ» dan bentuk-bentuk «سِوَى» ialah isim yang diiḍāfahkan kepada mustathnā. Oleh itu, lafaz selepasnya sentiasa menjadi muḍāf ilayh yang majrūr.
+    
+        Dalam «قَامَ الْقَوْمُ غَيْرَ زَيْدٍ», «غَيْرَ» ialah mustathnā manṣūb dan «زَيْدٍ» ialah muḍāf ilayh majrūr.
+    
+        I‘rab «غَيْرُ» dan «سِوَى» mengikuti hukum mustathnā selepas «إِلَّا», tetapi isim selepas kedua-duanya sentiasa majrūr.
+    
+      english: |
+        «غَيْرُ» and the forms of «سِوَى» are nouns annexed to the excepted expression. The noun following them is therefore always in jarr as the second term of annexation.
+    
+        In «قَامَ الْقَوْمُ غَيْرَ زَيْدٍ», «غَيْرَ» is the excepted noun in nasb and «زَيْدٍ» is in jarr as its annexed complement.
+    
+        The grammatical state of «غَيْرُ» and «سِوَى» follows the rules governing the noun after «إِلَّا», while the noun after them is always in jarr.
   - id: "negative-command-question"
     matn:
       id: "istithna-06"
       arabic: "وَالْمُسْتَثْنَى بِخَلَا، وَعَدَا، وَحَاشَا؛ يَجُوزُ نَصْبُهُ وَجَرُّهُ، نَحْوُ قَوْلِكَ: قَامَ الْقَوْمُ خَلَا زَيْدًا وَزَيْدٍ، وَعَدَا عَمْرًا وَعَمْرٍو، وَحَاشَا بَكْرًا وَبَكْرٍ."
-      translation: "Mustathna selepas خَلَا, عَدَا dan حَاشَا boleh dinasabkan atau dijarkan. Contohnya: “Kaum itu telah berdiri kecuali Zaid”, “‘Amr” atau “Bakr”, dengan isim selepas alat tersebut dibaca sama ada mansub atau majrur."
+      translation: "Mustathna selepas خَلَا, عَدَا dan حَاشَا (tiga-tiga kalimah ni bermaksud 'kecuali') boleh dinasabkan atau dijarkan. Contohnya: “Kaum itu telah berdiri kecuali Zaid”, “‘Amr” atau “Bakr”, dengan isim selepas alat tersebut dibaca sama ada mansub atau majrur."
       words:
         - arabic: "وَالْمُسْتَثْنَى"
           meaning: "dan mustathna"
           type: "keyword"
         - arabic: "بِخَلَا وَعَدَا وَحَاشَا"
-          meaning: "selepas خَلَا, عَدَا dan حَاشَا"
+          meaning: "selepas خَلَا, عَدَا dan حَاشَا (bermaksud 'kecuali')"
           type: "keyword"
         - arabic: "يَجُوزُ نَصْبُهُ"
           meaning: "harus dinasabkan"
@@ -365,49 +356,33 @@ proseSections:
           meaning: "dan kecuali Bakr, dengan bacaan nasab atau jar"
           type: "keyword"
     sharh:
-      title: "Nahi dan istifham"
+      title: "Ringkasan Syarah"
       arabic: |
-        شِبْهُ النَّفْيِ يَأْخُذُ حُكْمَ النَّفْيِ فِي هَذَا الْبَابِ.
-        
-        فَمِنْ شِبْهِ النَّفْيِ النَّهْيُ، نَحْوُ:
-        
-        «لَا يَقُمْ أَحَدٌ إِلَّا زَيْدٌ».
-        
-        بِالرَّفْعِ عَلَى الْبَدَلِيَّةِ.
-        
-        وَيَجُوزُ:
-        
-        «إِلَّا زَيْدًا».
-        
-        بِالنَّصْبِ عَلَى الِاسْتِثْنَاءِ.
-        
-        وَمِنْهُ الِاسْتِفْهَامُ، نَحْوُ:
-        
-        «هَلْ قَامَ الْقَوْمُ إِلَّا زَيْدٌ؟»
-        
-        أَوْ:
-        
-        «إِلَّا زَيْدًا؟»
+        يَجُوزُ فِي الِاسْمِ بَعْدَ «خَلَا» وَ«عَدَا» وَ«حَاشَا» النَّصْبُ وَالْجَرُّ.
+    
+        فَإِنْ جُعِلَتْ هَذِهِ الْأَلْفَاظُ أَفْعَالًا، كَانَ مَا بَعْدَهَا مَفْعُولًا بِهِ مَنْصُوبًا، نَحْوُ «قَامَ الْقَوْمُ خَلَا زَيْدًا».
+    
+        وَإِنْ جُعِلَتْ حُرُوفَ جَرٍّ، كَانَ مَا بَعْدَهَا اسْمًا مَجْرُورًا، نَحْوُ «قَامَ الْقَوْمُ خَلَا زَيْدٍ».
+    
+        وَكَذَلِكَ يُقَالُ: «عَدَا عَمْرًا وَعَمْرٍو»، وَ«حَاشَا بَكْرًا وَبَكْرٍ».
+    
       malay: |
-        Nahi dan istifham mengambil hukum yang sama seperti nafi dalam bab ini.
-        
-        Selepas nahi:
-        
-        «لَا يَقُمْ أَحَدٌ إِلَّا زَيْدٌ»
-        
-        harus raf‘ sebagai badal, atau:
-        
-        «إِلَّا زَيْدًا»
-        
-        dengan naṣab atas istithna’.
-        
-        Begitu juga selepas istifham:
-        
-        «هَلْ قَامَ الْقَوْمُ إِلَّا زَيْدٌ؟»
-        
-        atau:
-        
-        «إِلَّا زَيْدًا؟»
+        Isim selepas «خَلَا», «عَدَا» dan «حَاشَا» boleh dibaca manṣūb atau majrūr.
+    
+        Apabila lafaz-lafaz tersebut dianggap sebagai fi‘il, isim selepasnya menjadi maf‘ul bih manṣūb, seperti «قَامَ الْقَوْمُ خَلَا زَيْدًا».
+    
+        Apabila dianggap sebagai huruf jar, isim selepasnya menjadi majrūr, seperti «قَامَ الْقَوْمُ خَلَا زَيْدٍ».
+    
+        Begitu juga boleh disebut «عَدَا عَمْرًا وَعَمْرٍو» serta «حَاشَا بَكْرًا وَبَكْرٍ».
+    
+      english: |
+        The noun after «خَلَا», «عَدَا» and «حَاشَا» may be either in nasb or jarr.
+    
+        When these expressions are treated as verbs, the following noun is their direct object in nasb, as in «قَامَ الْقَوْمُ خَلَا زَيْدًا».
+    
+        When they are treated as prepositions, the following noun is in jarr, as in «قَامَ الْقَوْمُ خَلَا زَيْدٍ».
+    
+        The same applies in «عَدَا عَمْرًا وَعَمْرٍو» and «حَاشَا بَكْرًا وَبَكْرٍ».
 ---
 
 ## Sumber projek

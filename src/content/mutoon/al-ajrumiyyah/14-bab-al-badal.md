@@ -45,42 +45,48 @@ proseSections:
           meaning: "dalam seluruh keadaan i‘rabnya"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
         الْبَدَلُ هُوَ التَّابِعُ الْمَقْصُودُ بِالْحُكْمِ بِلَا وَاسِطَةٍ بَيْنَهُ وَبَيْنَ مَتْبُوعِهِ.
-        
-        فَفِي قَوْلِكَ:
-        
-        «جَاءَ زَيْدٌ أَخُوكَ»
-        
-        يَكُونُ «أَخُوكَ» هُوَ الْمَقْصُودَ بِحُكْمِ الْمَجِيءِ، وَأَمَّا «زَيْدٌ» فَإِنَّمَا ذُكِرَ تَوْطِئَةً وَتَمْهِيدًا لَهُ.
-        
-        وَلَوْ حَذَفْتَ الْمُبْدَلَ مِنْهُ فَقُلْتَ: «جَاءَ أَخُوكَ»، لَكَانَ الْكَلَامُ مُسْتَقِلًّا صَحِيحًا.
-        
-        وَيَتْبَعُ الْبَدَلُ الْمُبْدَلَ مِنْهُ فِي جَمِيعِ إِعْرَابِهِ:
-        
-        - فِي الرَّفْعِ، نَحْوُ: «جَاءَ زَيْدٌ أَخُوكَ».
-        - وَفِي النَّصْبِ، نَحْوُ: «رَأَيْتُ زَيْدًا أَخَاكَ».
-        - وَفِي الْخَفْضِ، نَحْوُ: «مَرَرْتُ بِزَيْدٍ أَخِيكَ».
+    
+        فَفِي «جَاءَ زَيْدٌ أَخُوكَ»، يَكُونُ «أَخُوكَ» هُوَ الْمَقْصُودَ بِحُكْمِ الْمَجِيءِ، وَذُكِرَ «زَيْدٌ» تَمْهِيدًا لَهُ.
+    
+        وَلَوْ حُذِفَ الْمُبْدَلُ مِنْهُ فَقِيلَ: «جَاءَ أَخُوكَ»، لَكَانَ الْكَلَامُ صَحِيحًا.
+    
+        وَيَتْبَعُ الْبَدَلُ الْمُبْدَلَ مِنْهُ فِي الْإِعْرَابِ:
+    
+        - فِي الرَّفْعِ: «جَاءَ زَيْدٌ أَخُوكَ».
+        - وَفِي النَّصْبِ: «رَأَيْتُ زَيْدًا أَخَاكَ».
+        - وَفِي الْخَفْضِ: «مَرَرْتُ بِزَيْدٍ أَخِيكَ».
         - وَفِي الْجَزْمِ إِذَا كَانَ الْبَدَلُ فِعْلًا.
+    
       malay: |
-        Badal ialah tābi‘ yang menjadi perkara sebenar yang dikenakan hukum.
-        
-        Dalam ayat:
-        
-        «جَاءَ زَيْدٌ أَخُوكَ»
-        
-        lafaz «أَخُوكَ» ialah perkara yang sebenarnya dimaksudkan dengan hukum “datang”. Lafaz «زَيْدٌ» pula disebut sebagai pendahuluan untuk menerangkan siapa yang dimaksudkan.
-        
-        Badal boleh menggantikan mubdal minhu tanpa merosakkan struktur ayat. Apabila «زَيْدٌ» dibuang, ayat «جَاءَ أَخُوكَ» masih sempurna.
-        
-        Badal mengikuti mubdal minhu pada:
-        
-        - rafa‘;
-        - naṣab;
-        - jar;
-        - jazm, apabila badalnya berupa fi‘il.
-
+        Badal ialah tābi‘ yang menjadi perkara sebenar yang dimaksudkan dengan sesuatu hukum tanpa perantaraan antara badal dan perkataan yang diikutinya.
+    
+        Dalam «جَاءَ زَيْدٌ أَخُوكَ», lafaz «أَخُوكَ» ialah pihak yang sebenarnya dimaksudkan telah datang. Lafaz «زَيْدٌ» disebut sebagai pendahuluan untuk menerangkannya.
+    
+        Sekiranya mubdal minhu dibuang lalu disebut «جَاءَ أَخُوكَ», ayat itu masih sempurna.
+    
+        Badal mengikuti mubdal minhu dalam i‘rab:
+    
+        - Rafa‘: «جَاءَ زَيْدٌ أَخُوكَ».
+        - Naṣab: «رَأَيْتُ زَيْدًا أَخَاكَ».
+        - Jar: «مَرَرْتُ بِزَيْدٍ أَخِيكَ».
+        - Jazm, apabila badal itu berupa fi‘il.
+    
+      english: |
+        A substitute is a dependent that is itself directly intended by the ruling applied in the sentence.
+    
+        In «جَاءَ زَيْدٌ أَخُوكَ», «أَخُوكَ» is the person actually intended by the ruling of coming, while «زَيْدٌ» is mentioned as an introduction identifying him.
+    
+        Were the word being replaced omitted, leaving «جَاءَ أَخُوكَ», the sentence would remain complete.
+    
+        The substitute follows the word it replaces in grammatical state:
+    
+        - Raf‘: «جَاءَ زَيْدٌ أَخُوكَ».
+        - Nasb: «رَأَيْتُ زَيْدًا أَخَاكَ».
+        - Jarr: «مَرَرْتُ بِزَيْدٍ أَخِيكَ».
+        - Jussive state when the substitute is a verb.
   - id: "badal-types"
     matn:
       id: "badal-02"
@@ -106,36 +112,39 @@ proseSections:
           meaning: "dan badal kesilapan"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
         أَقْسَامُ الْبَدَلِ أَرْبَعَةٌ:
-        
-        أَوَّلًا: بَدَلُ الشَّيْءِ مِنَ الشَّيْءِ، وَيُسَمَّى أَيْضًا بَدَلَ الْكُلِّ مِنَ الْكُلِّ أَوِ الْبَدَلَ الْمُطَابِقَ. وَيَكُونُ الْبَدَلُ فِيهِ هُوَ الْمُبْدَلَ مِنْهُ بِعَيْنِهِ.
-        
-        ثَانِيًا: بَدَلُ الْبَعْضِ مِنَ الْكُلِّ. وَيَكُونُ الْبَدَلُ فِيهِ جُزْءًا حَقِيقِيًّا مِنَ الْمُبْدَلِ مِنْهُ.
-        
-        ثَالِثًا: بَدَلُ الِاشْتِمَالِ. وَيَكُونُ الْبَدَلُ فِيهِ أَمْرًا يَتَّصِلُ بِالْمُبْدَلِ مِنْهُ، وَلَيْسَ جُزْءًا حَقِيقِيًّا مِنْ ذَاتِهِ.
-        
-        رَابِعًا: بَدَلُ الْغَلَطِ. وَهُوَ أَنْ يَذْكُرَ الْمُتَكَلِّمُ لَفْظًا عَلَى سَبِيلِ الْغَلَطِ، ثُمَّ يَذْكُرَ اللَّفْظَ الَّذِي أَرَادَهُ.
+    
+        **بَدَلُ الشَّيْءِ مِنَ الشَّيْءِ:** وَيُسَمَّى بَدَلَ الْكُلِّ مِنَ الْكُلِّ أَوِ الْبَدَلَ الْمُطَابِقَ، وَيَكُونُ الْبَدَلُ فِيهِ عَيْنَ الْمُبْدَلِ مِنْهُ.
+    
+        **بَدَلُ الْبَعْضِ مِنَ الْكُلِّ:** وَيَكُونُ الْبَدَلُ جُزْءًا حَقِيقِيًّا مِنَ الْمُبْدَلِ مِنْهُ.
+    
+        **بَدَلُ الِاشْتِمَالِ:** وَيَكُونُ الْبَدَلُ أَمْرًا مُتَّصِلًا بِالْمُبْدَلِ مِنْهُ، وَلَيْسَ جُزْءًا مِنْ ذَاتِهِ.
+    
+        **بَدَلُ الْغَلَطِ:** وَهُوَ أَنْ يَذْكُرَ الْمُتَكَلِّمُ لَفْظًا غَلَطًا، ثُمَّ يَذْكُرَ اللَّفْظَ الَّذِي أَرَادَهُ.
+    
       malay: |
-        Empat jenis badal ialah:
-        
-        **1. Badal al-shay’ min al-shay’**
-        
-        Badal dan mubdal minhu merujuk kepada perkara yang sama. Ia turut dinamakan badal al-kull min al-kull atau badal muṭābiq.
-        
-        **2. Badal al-ba‘ḍ min al-kull**
-        
-        Badal merupakan satu bahagian sebenar daripada mubdal minhu.
-        
-        **3. Badal al-ishtimāl**
-        
-        Badal bukan bahagian fizikal daripada mubdal minhu, tetapi merupakan sifat atau perkara yang berkaitan dengannya.
-        
-        **4. Badal al-ghalaṭ**
-        
-        Penutur terlebih dahulu menyebut lafaz yang salah, kemudian membetulkannya dengan lafaz yang sebenarnya dimaksudkan.
-
+        Badal terbahagi kepada empat:
+    
+        **Badal sesuatu daripada sesuatu:** Badal dan mubdal minhu merujuk kepada perkara yang sama. Ia juga dinamakan badal al-kull min al-kull atau badal muṭābiq.
+    
+        **Badal sebahagian daripada keseluruhan:** Badal ialah bahagian sebenar daripada mubdal minhu.
+    
+        **Badal ishtimāl:** Badal ialah perkara yang berkaitan dengan mubdal minhu, tetapi bukan bahagian fizikal daripadanya.
+    
+        **Badal kesilapan:** Penutur terlebih dahulu menyebut perkataan yang salah, kemudian menyebut perkataan yang sebenarnya dimaksudkan.
+    
+      english: |
+        There are four kinds of substitute:
+    
+        **Substitution of the thing for the same thing:** The substitute and the word it replaces refer to the same entity. This is also called complete or matching substitution.
+    
+        **Substitution of a part for the whole:** The substitute is an actual part of the word it replaces.
+    
+        **Substitution of inclusion:** The substitute is something associated with the word it replaces but is not a physical part of it.
+    
+        **Substitution correcting a mistake:** The speaker first mentions a word mistakenly and then states the word that was actually intended.
   - id: "badal-kull-min-kull"
     matn:
       id: "badal-03"
@@ -170,30 +179,39 @@ proseSections:
           meaning: "lalu engkau menggantikan lafaz Zaid daripadanya"
           type: "keyword"
     sharh:
-      title: "Badal al-shay’ min al-shay’"
+      title: "Ringkasan Syarah"
       arabic: |
-        فِي قَوْلِكَ:
-        
-        «قَامَ زَيْدٌ أَخُوكَ»
-        
-        «قَامَ» فِعْلٌ مَاضٍ.
-        
-        وَ«زَيْدٌ» فَاعِلٌ مَرْفُوعٌ بِالضَّمَّةِ الظَّاهِرَةِ، وَهُوَ الْمُبْدَلُ مِنْهُ.
-        
-        وَ«أَخُو» بَدَلٌ مِنْ «زَيْدٍ» مَرْفُوعٌ بِالْوَاوِ؛ لِأَنَّهُ مِنَ الْأَسْمَاءِ الْخَمْسَةِ، وَهُوَ مُضَافٌ.
-        
-        وَالْكَافُ ضَمِيرٌ مُتَّصِلٌ فِي مَحَلِّ جَرٍّ مُضَافٍ إِلَيْهِ.
-        
-        وَهَذَا بَدَلُ الشَّيْءِ مِنَ الشَّيْءِ؛ لِأَنَّ «زَيْدًا» وَ«أَخَاكَ» شَخْصٌ وَاحِدٌ.
+        فِي «قَامَ زَيْدٌ أَخُوكَ»، يَكُونُ «أَخُوكَ» بَدَلَ الشَّيْءِ مِنَ الشَّيْءِ؛ لِأَنَّ «زَيْدًا» وَ«أَخَاكَ» شَخْصٌ وَاحِدٌ.
+    
+        وَ«أَخُو» بَدَلٌ مَرْفُوعٌ بِالْوَاوِ؛ لِأَنَّهُ مِنَ الْأَسْمَاءِ الْخَمْسَةِ.
+    
+        وَفِي «أَكَلْتُ الرَّغِيفَ ثُلُثَهُ»، يَكُونُ «ثُلُثَهُ» بَدَلَ بَعْضٍ مِنْ كُلٍّ؛ لِأَنَّ الثُّلُثَ جُزْءٌ مِنَ الرَّغِيفِ.
+    
+        وَفِي «نَفَعَنِي زَيْدٌ عِلْمُهُ»، يَكُونُ «عِلْمُهُ» بَدَلَ اشْتِمَالٍ؛ لِأَنَّ الْعِلْمَ مُتَّصِلٌ بِزَيْدٍ، وَلَيْسَ جُزْءًا مِنْ ذَاتِهِ.
+    
+        وَفِي «رَأَيْتُ زَيْدًا الْفَرَسَ»، يَكُونُ «الْفَرَسَ» بَدَلَ غَلَطٍ؛ لِأَنَّ الْمُتَكَلِّمَ أَرَادَ أَنْ يَقُولَ «الْفَرَسَ»، فَسَبَقَ لِسَانُهُ إِلَى «زَيْدًا».
+    
       malay: |
-        I‘rab ayat:
-        
-        - «قَامَ» ialah fi‘il māḍī.
-        - «زَيْدٌ» ialah fā‘il marfū‘ dan menjadi mubdal minhu.
-        - «أَخُو» ialah badal marfū‘ dengan wāw kerana termasuk al-asmā’ al-khamsah.
-        - Kāf ialah muḍāf ilayh.
-        
-        Ini dinamakan badal al-shay’ min al-shay’ kerana Zaid dan saudaramu ialah individu yang sama.
+        Dalam «قَامَ زَيْدٌ أَخُوكَ», lafaz «أَخُوكَ» ialah badal sesuatu daripada sesuatu kerana Zaid dan saudaramu ialah orang yang sama.
+    
+        «أَخُو» ialah badal marfū‘ dengan wāw kerana termasuk dalam al-asmā’ al-khamsah.
+    
+        Dalam «أَكَلْتُ الرَّغِيفَ ثُلُثَهُ», lafaz «ثُلُثَهُ» ialah badal sebahagian daripada keseluruhan kerana sepertiga ialah sebahagian daripada roti.
+    
+        Dalam «نَفَعَنِي زَيْدٌ عِلْمُهُ», lafaz «عِلْمُهُ» ialah badal ishtimāl kerana ilmu berkaitan dengan Zaid tetapi bukan bahagian fizikal tubuhnya.
+    
+        Dalam «رَأَيْتُ زَيْدًا الْفَرَسَ», lafaz «الْفَرَسَ» ialah badal kesilapan. Penutur sebenarnya mahu menyebut kuda, tetapi terlebih dahulu tersilap menyebut Zaid.
+    
+      english: |
+        In «قَامَ زَيْدٌ أَخُوكَ», «أَخُوكَ» is a matching substitute because Zayd and your brother are the same person.
+    
+        «أَخُو» is a substitute in raf‘ with wāw because it is one of the five nouns.
+    
+        In «أَكَلْتُ الرَّغِيفَ ثُلُثَهُ», «ثُلُثَهُ» is substitution of a part for the whole because one third is a part of the loaf.
+    
+        In «نَفَعَنِي زَيْدٌ عِلْمُهُ», «عِلْمُهُ» is substitution of inclusion because knowledge is associated with Zayd but is not a physical part of him.
+    
+        In «رَأَيْتُ زَيْدًا الْفَرَسَ», «الْفَرَسَ» corrects a mistaken word. The speaker intended to mention the horse but accidentally said Zayd first.
 ---
 
 ## Sumber projek

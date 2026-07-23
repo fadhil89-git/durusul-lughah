@@ -85,36 +85,33 @@ proseSections:
           meaning: "dan yang seumpamanya"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        ظَرْفُ الزَّمَانِ هُوَ الِاسْمُ الَّذِي يَدُلُّ عَلَى الزَّمَانِ الَّذِي يَقَعُ فِيهِ الْحَدَثُ.
-        
-        وَيَكُونُ مَنْصُوبًا عَلَى الظَّرْفِيَّةِ، وَيُقَدَّرُ قَبْلَهُ حَرْفُ الْجَرِّ «فِي».
-        
-        فَفِي قَوْلِكَ:
-        
-        «صُمْتُ يَوْمَ الْخَمِيسِ»
-        
-        يَكُونُ التَّقْدِيرُ:
-        
-        «صُمْتُ فِي يَوْمِ الْخَمِيسِ».
-        
-        فَـ«يَوْمَ» اسْمُ زَمَانٍ مَنْصُوبٌ عَلَى الظَّرْفِيَّةِ الزَّمَانِيَّةِ، وَنَاصِبُهُ الْفِعْلُ «صُمْتُ».
+        ظَرْفُ الزَّمَانِ هُوَ اسْمُ الزَّمَانِ الْمَنْصُوبُ الَّذِي يَدُلُّ عَلَى الْوَقْتِ الَّذِي يَقَعُ فِيهِ الْحَدَثُ.
+    
+        وَيُقَدَّرُ قَبْلَهُ حَرْفُ الْجَرِّ «فِي»، فَفِي «صُمْتُ يَوْمَ الْخَمِيسِ» يَكُونُ التَّقْدِيرُ: «صُمْتُ فِي يَوْمِ الْخَمِيسِ».
+    
+        فَـ«يَوْمَ» ظَرْفُ زَمَانٍ مَنْصُوبٌ، وَنَاصِبُهُ الْفِعْلُ «صُمْتُ».
+    
+        وَمِنْ أَلْفَاظِ ظَرْفِ الزَّمَانِ: «الْيَوْمَ، وَاللَّيْلَةَ، وَغُدْوَةً، وَبُكْرَةً، وَسَحَرًا، وَغَدًا، وَعَتَمَةً، وَصَبَاحًا، وَمَسَاءً، وَأَبَدًا، وَأَمَدًا، وَحِينًا».
+    
       malay: |
-        Zaraf zaman menerangkan masa sesuatu perbuatan berlaku.
-        
-        Ia menjadi mansub atas الظرفية الزمانية, dan perkataan «في» ditakdirkan sebelumnya.
-        
-        Contoh:
-        
-        «صُمْتُ يَوْمَ الْخَمِيسِ»
-        
-        Takdir ayatnya ialah:
-        
-        «صُمْتُ فِي يَوْمِ الْخَمِيسِ»
-        
-        Lafaz «يَوْمَ» ialah zaraf zaman mansub, manakala ‘amil yang menasabkannya ialah fi‘il «صُمْتُ».
-
+        Ẓarf zaman ialah isim masa yang manṣūb dan menerangkan waktu sesuatu perbuatan berlaku.
+    
+        Huruf jar «فِي» dianggarkan sebelumnya. Dalam «صُمْتُ يَوْمَ الْخَمِيسِ», anggaran ayatnya ialah «صُمْتُ فِي يَوْمِ الْخَمِيسِ».
+    
+        «يَوْمَ» ialah ẓarf zaman manṣūb, manakala ‘āmil yang menasabkannya ialah fi‘il «صُمْتُ».
+    
+        Antara lafaz ẓarf zaman ialah «الْيَوْمَ، اللَّيْلَةَ، غُدْوَةً، بُكْرَةً، سَحَرًا، غَدًا، عَتَمَةً، صَبَاحًا، مَسَاءً، أَبَدًا، أَمَدًا» dan «حِينًا».
+    
+      english: |
+        An adverb of time is a time noun in nasb indicating when an action takes place.
+    
+        The preposition «فِي» is understood before it. In «صُمْتُ يَوْمَ الْخَمِيسِ», the underlying meaning is «صُمْتُ فِي يَوْمِ الْخَمِيسِ».
+    
+        «يَوْمَ» is an adverb of time in nasb, governed by the verb «صُمْتُ».
+    
+        Expressions used as adverbs of time include «الْيَوْمَ، اللَّيْلَةَ، غُدْوَةً، بُكْرَةً، سَحَرًا، غَدًا، عَتَمَةً، صَبَاحًا، مَسَاءً، أَبَدًا، أَمَدًا» and «حِينًا».
   - id: "zarf-zaman-examples"
     matn:
       id: "zarf-02"
@@ -179,36 +176,33 @@ proseSections:
           meaning: "dan yang seumpamanya"
           type: "keyword"
     sharh:
-      title: "Contoh-contoh zaraf zaman"
+      title: "Ringkasan Syarah"
       arabic: |
-        مِنْ أَمْثِلَةِ ظَرْفِ الزَّمَانِ:
-        
-        «صُمْتُ الْيَوْمَ».
-        
-        فَـ«الْيَوْمَ» ظَرْفُ زَمَانٍ مَنْصُوبٌ بِـ«صُمْتُ».
-        
-        وَ«اعْتَكَفْتُ اللَّيْلَةَ».
-        
-        فَـ«اللَّيْلَةَ» ظَرْفُ زَمَانٍ مَنْصُوبٌ.
-        
-        وَ«أَزُورُكَ غُدْوَةً»، وَ«أَزُورُكَ بُكْرَةً».
-        
-        وَ«أَجِيئُكَ سَحَرًا»، وَ«أَجِيئُكَ غَدًا»، وَ«أَجِيئُكَ عَتَمَةً»، وَ«أَجِيئُكَ صَبَاحًا»، وَ«أَجِيئُكَ مَسَاءً».
-        
-        فَكُلُّ وَاحِدٍ مِنْ هَذِهِ الْأَسْمَاءِ مَنْصُوبٌ عَلَى الظَّرْفِيَّةِ الزَّمَانِيَّةِ بِالْفِعْلِ الَّذِي قَبْلَهُ.
+        ظَرْفُ الْمَكَانِ هُوَ اسْمُ الْمَكَانِ الْمَنْصُوبُ الَّذِي يَدُلُّ عَلَى الْمَوْضِعِ الَّذِي يَقَعُ فِيهِ الْحَدَثُ.
+    
+        وَيُقَدَّرُ قَبْلَهُ حَرْفُ الْجَرِّ «فِي»، نَحْوُ «جَلَسْتُ أَمَامَ الْبَيْتِ»، أَيْ: «جَلَسْتُ فِي الْمَكَانِ الَّذِي أَمَامَ الْبَيْتِ».
+    
+        فَـ«أَمَامَ» ظَرْفُ مَكَانٍ مَنْصُوبٌ، وَهُوَ مُضَافٌ، وَ«الْبَيْتِ» مُضَافٌ إِلَيْهِ مَجْرُورٌ.
+    
+        وَمِنْ أَلْفَاظِهِ: «أَمَامَ، وَخَلْفَ، وَقُدَّامَ، وَوَرَاءَ، وَفَوْقَ، وَتَحْتَ، وَعِنْدَ، وَمَعَ، وَإِزَاءَ، وَحِذَاءَ، وَتِلْقَاءَ، وَهُنَا، وَثَمَّ».
+    
       malay: |
-        Antara contoh zaraf zaman:
-        
-        - «صُمْتُ الْيَوْمَ» — Aku berpuasa hari ini.
-        - «اعْتَكَفْتُ اللَّيْلَةَ» — Aku beriktikaf malam ini.
-        - «أَزُورُكَ غُدْوَةً» — Aku menziarahimu pada waktu pagi.
-        - «أَزُورُكَ بُكْرَةً» — Aku menziarahimu pada awal pagi.
-        - «أَجِيئُكَ سَحَرًا» — Aku datang kepadamu pada waktu sahur.
-        - «أَجِيئُكَ غَدًا» — Aku datang kepadamu esok.
-        - «أَجِيئُكَ صَبَاحًا» — Aku datang kepadamu pada waktu pagi.
-        - «أَجِيئُكَ مَسَاءً» — Aku datang kepadamu pada waktu petang.
-        
-        Setiap isim masa tersebut mansub atas الظرفية الزمانية oleh fi‘il sebelumnya.
+        Ẓarf tempat ialah isim tempat yang manṣūb dan menerangkan lokasi sesuatu perbuatan berlaku.
+    
+        Huruf jar «فِي» dianggarkan sebelumnya, seperti «جَلَسْتُ أَمَامَ الْبَيْتِ», iaitu aku duduk di tempat yang berada di hadapan rumah.
+    
+        «أَمَامَ» ialah ẓarf tempat manṣūb dan muḍāf. «الْبَيْتِ» ialah muḍāf ilayh majrūr.
+    
+        Antara lafaznya ialah «أَمَامَ، خَلْفَ، قُدَّامَ، وَرَاءَ، فَوْقَ، تَحْتَ، عِنْدَ، مَعَ، إِزَاءَ، حِذَاءَ، تِلْقَاءَ، هُنَا» dan «ثَمَّ».
+    
+      english: |
+        An adverb of place is a place noun in nasb indicating where an action takes place.
+    
+        The preposition «فِي» is understood before it, as in «جَلَسْتُ أَمَامَ الْبَيْتِ», meaning that one sat in the place in front of the house.
+    
+        «أَمَامَ» is an adverb of place in nasb and is annexed to «الْبَيْتِ», which is in jarr.
+    
+        Expressions used as adverbs of place include «أَمَامَ، خَلْفَ، قُدَّامَ، وَرَاءَ، فَوْقَ، تَحْتَ، عِنْدَ، مَعَ، إِزَاءَ، حِذَاءَ، تِلْقَاءَ، هُنَا» and «ثَمَّ».
 ---
 
 ## Sumber projek

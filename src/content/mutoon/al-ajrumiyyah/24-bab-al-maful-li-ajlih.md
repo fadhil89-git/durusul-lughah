@@ -60,47 +60,33 @@ proseSections:
           meaning: "kerana mengharapkan kebaikanmu"
           type: "keyword"
     sharh:
-      title: "Pengertian maf‘ul min ajlih"
+      title: "Ringkasan Syarah"
       arabic: |
-        الْمَفْعُولُ مِنْ أَجْلِهِ اسْمٌ مَنْصُوبٌ يُبَيِّنُ الْعِلَّةَ الَّتِي وَقَعَ الْفِعْلُ بِسَبَبِهَا.
-        
-        فَهُوَ يُجِيبُ عَنِ السُّؤَالِ:
-        
-        «لِمَ وَقَعَ الْفِعْلُ؟»
-        
-        فَإِذَا قُلْتَ:
-        
-        «قَامَ زَيْدٌ إِجْلَالًا لِعَمْرٍو»
-        
-        كَانَ السُّؤَالُ:
-        
-        «لِمَ قَامَ زَيْدٌ؟»
-        
-        وَالْجَوَابُ:
-        
-        «إِجْلَالًا لِعَمْرٍو».
-        
-        فَـ«إِجْلَالًا» هُوَ السَّبَبُ الَّذِي وَقَعَ الْقِيَامُ مِنْ أَجْلِهِ.
+        الْمَفْعُولُ مِنْ أَجْلِهِ اسْمٌ مَنْصُوبٌ يُذْكَرُ لِبَيَانِ الْعِلَّةِ أَوِ السَّبَبِ الَّذِي وَقَعَ الْفِعْلُ مِنْ أَجْلِهِ.
+    
+        وَيُعْرَفُ بِالْجَوَابِ عَنِ السُّؤَالِ: «لِمَ وَقَعَ الْفِعْلُ؟».
+    
+        فَفِي «قَامَ زَيْدٌ إِجْلَالًا لِعَمْرٍو»، يَكُونُ «إِجْلَالًا» مَفْعُولًا مِنْ أَجْلِهِ مَنْصُوبًا؛ لِأَنَّهُ يُبَيِّنُ سَبَبَ قِيَامِ زَيْدٍ.
+    
+        وَفِي «قَصَدْتُكَ ابْتِغَاءَ مَعْرُوفِكَ»، يَكُونُ «ابْتِغَاءَ» مَفْعُولًا مِنْ أَجْلِهِ مَنْصُوبًا؛ لِأَنَّهُ يُبَيِّنُ سَبَبَ الْقَصْدِ.
+    
       malay: |
-        Maf‘ul min ajlih ialah isim mansub yang menerangkan sebab atau tujuan sesuatu perbuatan berlaku.
-        
-        Cara mudah mengenalinya ialah dengan bertanya:
-        
-        **“Mengapakah perbuatan itu dilakukan?”**
-        
-        Dalam:
-        
-        «قَامَ زَيْدٌ إِجْلَالًا لِعَمْرٍو»
-        
-        soalannya ialah:
-        
-        “Kenapa Zaid berdiri?”
-        
-        Jawapannya:
-        
-        “Kerana menghormati ‘Amr.”
-        
-        Oleh itu, «إِجْلَالًا» ialah maf‘ul min ajlih.
+        Maf‘ul min ajlih ialah isim manṣūb yang menerangkan sebab atau tujuan sesuatu perbuatan dilakukan.
+    
+        Cara mudah mengenalinya ialah dengan bertanya: “Mengapakah perbuatan itu berlaku?”
+    
+        Dalam «قَامَ زَيْدٌ إِجْلَالًا لِعَمْرٍو», «إِجْلَالًا» ialah maf‘ul min ajlih manṣūb kerana menerangkan sebab Zaid berdiri.
+    
+        Dalam «قَصَدْتُكَ ابْتِغَاءَ مَعْرُوفِكَ», «ابْتِغَاءَ» ialah maf‘ul min ajlih manṣūb kerana menerangkan sebab penutur menuju kepada orang tersebut.
+    
+      english: |
+        The object of reason is a noun in nasb mentioned to explain the cause or purpose for which an action occurs.
+    
+        It can be identified by asking, “Why did the action occur?”
+    
+        In «قَامَ زَيْدٌ إِجْلَالًا لِعَمْرٍو», «إِجْلَالًا» is an object of reason in nasb because it explains why Zayd stood.
+    
+        In «قَصَدْتُكَ ابْتِغَاءَ مَعْرُوفِكَ», «ابْتِغَاءَ» is an object of reason in nasb because it explains the purpose of approaching the addressee.
 ---
 
 ## Sumber projek

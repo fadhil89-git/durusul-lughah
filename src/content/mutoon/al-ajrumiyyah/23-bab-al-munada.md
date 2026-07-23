@@ -51,31 +51,45 @@ proseSections:
           meaning: "dan perkataan yang menyerupai mudaf"
           type: "keyword"
     sharh:
-      title: "Pengertian munada"
+      title: "Ringkasan Syarah"
       arabic: |
-        الْمُنَادَى اسْمٌ يَقَعُ بَعْدَ حَرْفٍ مِنْ حُرُوفِ النِّدَاءِ، وَيُطْلَبُ بِهِ إِقْبَالُ الْمُنَادَى عَلَى الْمُتَكَلِّمِ.
-        
-        نَحْوُ:
-        
-        «يَا زَيْدُ».
-        
-        فَـ«يَا» حَرْفُ نِدَاءٍ.
-        
-        وَ«زَيْدُ» مُنَادًى.
-        
-        وَلَيْسَ الْمَقْصُودُ بِالْإِقْبَالِ دَائِمًا الْإِقْبَالَ بِالْجَسَدِ، بَلْ قَدْ يَكُونُ الْمُرَادُ الِانْتِبَاهَ وَالْإِصْغَاءَ.
+        الْمُنَادَى اسْمٌ يُذْكَرُ بَعْدَ أَدَاةٍ مِنْ أَدَوَاتِ النِّدَاءِ؛ لِطَلَبِ إِقْبَالِهِ أَوِ انْتِبَاهِهِ.
+    
+        وَهُوَ خَمْسَةُ أَنْوَاعٍ:
+    
+        - الْمُفْرَدُ الْعَلَمُ، نَحْوُ «يَا زَيْدُ».
+        - وَالنَّكِرَةُ الْمَقْصُودَةُ، نَحْوُ «يَا رَجُلُ» لِرَجُلٍ مُعَيَّنٍ.
+        - وَالنَّكِرَةُ غَيْرُ الْمَقْصُودَةِ، نَحْوُ «يَا رَجُلًا خُذْ بِيَدِي» مِنْ غَيْرِ تَعْيِينٍ.
+        - وَالْمُضَافُ، نَحْوُ «يَا عَبْدَ اللَّهِ».
+        - وَالشَّبِيهُ بِالْمُضَافِ، نَحْوُ «يَا طَالِعًا جَبَلًا».
+    
+        وَالْمُرَادُ بِالْمُفْرَدِ هُنَا مَا لَيْسَ مُضَافًا وَلَا شَبِيهًا بِالْمُضَافِ.
+    
       malay: |
-        Munada ialah isim yang terletak selepas salah satu huruf nida’ dan digunakan untuk meminta orang yang dipanggil supaya memberi perhatian kepada penutur.
-        
-        Contoh:
-        
-        «يَا زَيْدُ»
-        
-        - «يَا» ialah huruf nida’.
-        - «زَيْدُ» ialah munada.
-        
-        Memberi perhatian tidak semestinya bermaksud datang secara fizikal. Ia juga boleh bermaksud mendengar atau menumpukan perhatian.
-
+        Munādā ialah isim yang disebut selepas salah satu alat nidā’ untuk meminta orang yang dipanggil memberi perhatian.
+    
+        Munādā terbahagi kepada lima:
+    
+        - Mufrad ‘alam, seperti «يَا زَيْدُ».
+        - Nakirah maqṣūdah, seperti «يَا رَجُلُ» apabila seorang lelaki tertentu dimaksudkan.
+        - Nakirah ghayr maqṣūdah, seperti «يَا رَجُلًا خُذْ بِيَدِي» tanpa menentukan lelaki tertentu.
+        - Muḍāf, seperti «يَا عَبْدَ اللَّهِ».
+        - Syibh muḍāf, seperti «يَا طَالِعًا جَبَلًا».
+    
+        Istilah mufrad di sini bermaksud bukan muḍāf dan bukan syibh muḍāf.
+    
+      english: |
+        A vocative noun is a noun mentioned after a vocative particle to call for someone's attention.
+    
+        It has five types:
+    
+        - A single proper noun, as in «يَا زَيْدُ».
+        - An intended indefinite noun, as in «يَا رَجُلُ» when a particular man is addressed.
+        - An unintended indefinite noun, as in «يَا رَجُلًا خُذْ بِيَدِي» without addressing a particular man.
+        - An annexed noun, as in «يَا عَبْدَ اللَّهِ».
+        - A noun resembling an annexed expression, as in «يَا طَالِعًا جَبَلًا».
+    
+        Here, “single” means neither annexed nor resembling an annexed expression.
   - id: "munada-types"
     matn:
       id: "munada-02"
@@ -104,37 +118,38 @@ proseSections:
           meaning: "dan wahai lelaki itu"
           type: "keyword"
     sharh:
-      title: "Lima jenis munada"
+      title: "Ringkasan Syarah"
       arabic: |
-        يَنْقَسِمُ الْمُنَادَى إِلَى خَمْسَةِ أَقْسَامٍ:
-        
-        الْأَوَّلُ: الْمُفْرَدُ الْعَلَمُ، نَحْوُ: «يَا زَيْدُ».
-        
-        وَالْمُرَادُ بِالْمُفْرَدِ هُنَا مَا لَيْسَ مُضَافًا وَلَا شَبِيهًا بِالْمُضَافِ.
-        
-        الثَّانِي: النَّكِرَةُ الْمَقْصُودَةُ، نَحْوُ أَنْ تُقْبِلَ عَلَى رَجُلٍ مُعَيَّنٍ فَتَقُولَ: «يَا رَجُلُ».
-        
-        الثَّالِثُ: النَّكِرَةُ غَيْرُ الْمَقْصُودَةِ، نَحْوُ: «يَا رَجُلًا خُذْ بِيَدِي»، وَأَنْتَ لَا تَقْصِدُ رَجُلًا مُعَيَّنًا.
-        
-        الرَّابِعُ: الْمُضَافُ، نَحْوُ: «يَا غُلَامَ زَيْدٍ».
-        
-        الْخَامِسُ: الشَّبِيهُ بِالْمُضَافِ، نَحْوُ: «يَا طَالِعًا جَبَلًا».
+        الْمُفْرَدُ الْعَلَمُ وَالنَّكِرَةُ الْمَقْصُودَةُ يُبْنَيَانِ عَلَى مَا يُرْفَعَانِ بِهِ فِي مَحَلِّ نَصْبٍ.
+    
+        فَفِي «يَا زَيْدُ»، يَكُونُ «زَيْدُ» مُنَادًى مُفْرَدًا عَلَمًا مَبْنِيًّا عَلَى الضَّمِّ فِي مَحَلِّ نَصْبٍ، مِنْ غَيْرِ تَنْوِينٍ.
+    
+        وَفِي «يَا رَجُلُ»، يَكُونُ «رَجُلُ» نَكِرَةً مَقْصُودَةً مَبْنِيَّةً عَلَى الضَّمِّ فِي مَحَلِّ نَصْبٍ؛ لِأَنَّ الْمُتَكَلِّمَ يَقْصِدُ رَجُلًا مُعَيَّنًا.
+    
+        فَالضَّمَّةُ فِي اللَّفْظِ عَلَامَةُ الْبِنَاءِ، وَلَيْسَتْ دَلِيلًا عَلَى أَنَّ الْمُنَادَى فِي مَحَلِّ رَفْعٍ.
+    
       malay: |
-        Munada terbahagi kepada lima:
-        
-        1. **Mufrad ‘alam**, seperti «يَا زَيْدُ».
-        2. **Nakirah maqsudah**, seperti memanggil seorang lelaki tertentu dengan «يَا رَجُلُ».
-        3. **Nakirah ghayr maqsudah**, seperti «يَا رَجُلًا خُذْ بِيَدِي» apabila tidak menentukan lelaki tertentu.
-        4. **Mudaf**, seperti «يَا غُلَامَ زَيْدٍ».
-        5. **Syibh mudaf**, seperti «يَا طَالِعًا جَبَلًا».
-        
-        Mufrad dalam bab ini bermaksud bukan mudaf dan bukan syibh mudaf, bukan semata-mata satu berbanding muthanna atau jamak.
-
+        Mufrad ‘alam dan nakirah maqṣūdah dibina atas tanda yang digunakan untuk merafa‘kannya, tetapi kedua-duanya berada pada kedudukan naṣab.
+    
+        Dalam «يَا زَيْدُ», «زَيْدُ» ialah munādā mufrad ‘alam yang dibina atas dammah pada kedudukan naṣab tanpa tanwin.
+    
+        Dalam «يَا رَجُلُ», «رَجُلُ» ialah nakirah maqṣūdah yang dibina atas dammah pada kedudukan naṣab kerana penutur memanggil seorang lelaki tertentu.
+    
+        Dammah pada lafaz ialah tanda binaan, bukan tanda bahawa munādā itu berada pada kedudukan rafa‘.
+    
+      english: |
+        A single proper noun and an intended indefinite noun are built upon the sign by which they would normally be placed in raf‘, while occupying the grammatical position of nasb.
+    
+        In «يَا زَيْدُ», «زَيْدُ» is a single proper vocative noun built upon ḍammah in the position of nasb and without tanwīn.
+    
+        In «يَا رَجُلُ», «رَجُلُ» is an intended indefinite vocative noun built upon ḍammah in the position of nasb because a particular man is being addressed.
+    
+        The visible ḍammah is a sign of construction, not an indication that the vocative noun occupies the position of raf‘.
   - id: "mufrad-alam"
     matn:
       id: "munada-03"
       arabic: "وَالثَّلَاثَةُ الْبَاقِيَةُ مَنْصُوبَةٌ لَا غَيْرُ، نَحْوُ: يَا رَجُلًا، وَيَا عَبْدَ اللَّهِ، وَيَا طَالِعًا جَبَلًا."
-      translation: "Tiga jenis yang selebihnya wajib mansub, seperti: “Wahai seorang lelaki”, “Wahai hamba Allah” dan “Wahai orang yang sedang mendaki gunung”."
+      translation: "Tiga jenis yang selebihnya wajib mansub, seperti: “Wahai seorang lelaki”, “Wahai Abdullah dan “Wahai orang yang sedang mendaki gunung”."
       words:
         - arabic: "وَالثَّلَاثَةُ الْبَاقِيَةُ"
           meaning: "dan tiga jenis yang selebihnya"
@@ -152,36 +167,39 @@ proseSections:
           meaning: "wahai seorang lelaki"
           type: "keyword"
         - arabic: "وَيَا عَبْدَ اللَّهِ"
-          meaning: "wahai hamba Allah"
+          meaning: "wahai Abdullah"
           type: "keyword"
         - arabic: "وَيَا طَالِعًا جَبَلًا"
           meaning: "dan wahai orang yang sedang mendaki gunung"
           type: "keyword"
     sharh:
-      title: "Mufrad ‘alam"
+      title: "Ringkasan Syarah"
       arabic: |
-        فِي قَوْلِكَ:
-        
-        «يَا زَيْدُ»
-        
-        «يَا» حَرْفُ نِدَاءٍ.
-        
-        وَ«زَيْدُ» مُنَادًى مُفْرَدٌ عَلَمٌ، مَبْنِيٌّ عَلَى الضَّمِّ فِي مَحَلِّ نَصْبٍ.
-        
-        فَهُوَ مَبْنِيٌّ مِنْ جِهَةِ اللَّفْظِ، وَلَكِنَّهُ فِي مَحَلِّ نَصْبٍ مِنْ جِهَةِ الْمَحَلِّ.
-        
-        وَلَا يَدْخُلُهُ التَّنْوِينُ.
+        الْأَنْوَاعُ الثَّلَاثَةُ الْبَاقِيَةُ مِنَ الْمُنَادَى مُعْرَبَةٌ مَنْصُوبَةٌ، وَهِيَ: النَّكِرَةُ غَيْرُ الْمَقْصُودَةِ، وَالْمُضَافُ، وَالشَّبِيهُ بِالْمُضَافِ.
+    
+        فَفِي «يَا رَجُلًا»، يَكُونُ «رَجُلًا» مُنَادًى نَكِرَةً غَيْرَ مَقْصُودَةٍ مَنْصُوبًا بِالْفَتْحَةِ.
+    
+        وَفِي «يَا عَبْدَ اللَّهِ»، يَكُونُ «عَبْدَ» مُنَادًى مُضَافًا مَنْصُوبًا، وَلَفْظُ الْجَلَالَةِ مُضَافًا إِلَيْهِ مَجْرُورًا.
+    
+        وَفِي «يَا طَالِعًا جَبَلًا»، يَكُونُ «طَالِعًا» مُنَادًى شَبِيهًا بِالْمُضَافِ مَنْصُوبًا، وَ«جَبَلًا» مَفْعُولًا بِهِ يُتَمِّمُ مَعْنَاهُ.
+    
       malay: |
-        Dalam:
-        
-        «يَا زَيْدُ»
-        
-        - «يَا» ialah huruf nida’.
-        - «زَيْدُ» ialah munada mufrad ‘alam.
-        - Ia dibina atas dhammah pada mahal nasab.
-        - Ia tidak menerima tanwin.
-        
-        Dhammah pada lafaz tidak bermaksud ia berada pada mahal raf‘. Kedudukannya tetap pada mahal nasab sebagai munada.
+        Tiga jenis munādā yang berbaki ialah isim mu‘rab yang manṣūb: nakirah ghayr maqṣūdah, muḍāf dan syibh muḍāf.
+    
+        Dalam «يَا رَجُلًا», «رَجُلًا» ialah munādā nakirah ghayr maqṣūdah yang manṣūb dengan fathah.
+    
+        Dalam «يَا عَبْدَ اللَّهِ», «عَبْدَ» ialah munādā muḍāf yang manṣūb, manakala lafaz jalālah ialah muḍāf ilayh majrūr.
+    
+        Dalam «يَا طَالِعًا جَبَلًا», «طَالِعًا» ialah munādā syibh muḍāf yang manṣūb, manakala «جَبَلًا» ialah maf‘ul bih yang menyempurnakan maknanya.
+    
+      english: |
+        The remaining three types of vocative noun are inflected and placed in nasb: the unintended indefinite noun, the annexed noun and the noun resembling an annexed expression.
+    
+        In «يَا رَجُلًا», «رَجُلًا» is an unintended indefinite vocative noun in nasb with fatḥah.
+    
+        In «يَا عَبْدَ اللَّهِ», «عَبْدَ» is an annexed vocative noun in nasb, while the divine name is its annexed complement in jarr.
+    
+        In «يَا طَالِعًا جَبَلًا», «طَالِعًا» is a vocative noun resembling an annexed expression and is in nasb, while «جَبَلًا» is its direct object completing its meaning.
 ---
 
 ## Sumber projek

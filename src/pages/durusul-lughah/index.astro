@@ -35,28 +35,78 @@ import { lessonBooks } from "../../data/lessons.ts";
         <LessonSearch client:load />
 
         {lessonBooks.map((book) => (
-          <section class="rounded-2xl border border-line bg-panel p-5 shadow-sm">
-            <div class="mb-4 flex flex-wrap items-end justify-between gap-3">
-              <div>
-                <p class="text-sm font-semibold uppercase tracking-[0.08em] text-muted">{book.book}</p>
-                <h2 class="mt-1 text-2xl font-semibold text-ink">{book.title}</h2>
-              </div>
-              <span class="text-sm text-muted">{book.chapters.length} bab</span>
-            </div>
-            <div class="flex flex-wrap gap-2">
+          <details class="durusul-book-accordion" open>
+            <summary>
+              <span>
+                <span class="durusul-book-kicker">{book.book}</span>
+                <span class="durusul-book-title">{book.title}</span>
+              </span>
+              <span class="durusul-book-count">{book.chapters.length} bab</span>
+            </summary>
+            <div class="durusul-chapter-grid">
               {book.chapters.map((chapter) => (
-                <a
-                  href={`/durusul-lughah/buku-${chapter.bookNumber}/bab-${chapter.chapter}`}
-                  class="rounded-full border border-line bg-paper px-3 py-2 text-sm font-semibold text-ink transition hover:border-accent hover:bg-accent-soft hover:text-accent"
-                >
-                  Bab {chapter.chapter}
-                </a>
+                <div class="durusul-chapter-item" data-lesson-item data-read-key={`durusul:${chapter.bookNumber}:${chapter.chapter}`}>
+                  <button
+                    type="button"
+                    class="durusul-read-check"
+                    data-read-toggle
+                    aria-label={`Tanda sudah baca ${chapter.book} Bab ${chapter.chapter}`}
+                    aria-pressed="false"
+                  >
+                    ✓
+                  </button>
+                  <a href={`/durusul-lughah/buku-${chapter.bookNumber}/bab-${chapter.chapter}`} class="durusul-chapter-link">
+                    <span class="durusul-chapter-number">Bab {chapter.chapter}</span>
+                    <span class="durusul-chapter-title">
+                      <span class="arabic" dir="rtl">{chapter.titleArabic}</span>
+                      {chapter.titleMalay && <span>{chapter.titleMalay}</span>}
+                    </span>
+                  </a>
+                </div>
               ))}
             </div>
-          </section>
+          </details>
         ))}
 
       </div>
     </main>
+    <script>
+      const readStorageKey = "tuwailib:durusul-read";
+
+      function readProgress() {
+        try {
+          return new Set(JSON.parse(localStorage.getItem(readStorageKey) || "[]"));
+        } catch {
+          return new Set();
+        }
+      }
+
+      function writeProgress(progress) {
+        localStorage.setItem(readStorageKey, JSON.stringify(Array.from(progress)));
+      }
+
+      const progress = readProgress();
+
+      function applyReadState(item) {
+        const key = item.dataset.readKey;
+        const isRead = key ? progress.has(key) : false;
+        item.classList.toggle("is-read", isRead);
+        item.querySelector("[data-read-toggle]")?.setAttribute("aria-pressed", String(isRead));
+      }
+
+      document.querySelectorAll("[data-lesson-item]").forEach((item) => {
+        applyReadState(item);
+        item.querySelector("[data-read-toggle]")?.addEventListener("click", (event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          const key = item.dataset.readKey;
+          if (!key) return;
+          if (progress.has(key)) progress.delete(key);
+          else progress.add(key);
+          writeProgress(progress);
+          applyReadState(item);
+        });
+      });
+    </script>
   </body>
 </html>

@@ -29,6 +29,7 @@ const chapterJumpItems = lessonChapters.map((item) => ({
   title: item.titleArabic || item.titleMalay,
   url: localizedPath(item.bookNumber, item.chapter),
 }));
+const dictionaryChapterUrl = `/kamus?buku=${lesson.bookNumber}&bab=${lesson.chapter}`;
 ---
 <!doctype html>
 <html lang="ar" dir="rtl">
@@ -65,10 +66,27 @@ const chapterJumpItems = lessonChapters.map((item) => ({
       </nav>
 
       <article class="rounded-2xl border border-line bg-panel p-5 shadow-sm sm:p-8">
-        <div class="mb-6 flex flex-wrap items-center gap-2" dir="ltr">
-          <a href={`/durusul-lughah/buku-${lesson.bookNumber}/bab-${lesson.chapter}`} class="rounded-full border border-line bg-paper px-3 py-1.5 text-sm font-semibold text-accent hover:bg-accent-soft">BM</a>
-          <span class="rounded-full border border-line bg-paper px-3 py-1.5 text-sm font-semibold text-muted">English</span>
-          <span class="rounded-full border border-accent bg-accent px-3 py-1.5 text-sm font-semibold text-white">العربية</span>
+        <div class="mb-6 flex flex-wrap items-center justify-between gap-3" dir="ltr">
+          <div class="flex flex-wrap items-center gap-2">
+            <a href={`/durusul-lughah/buku-${lesson.bookNumber}/bab-${lesson.chapter}`} class="rounded-full border border-line bg-paper px-3 py-1.5 text-sm font-semibold text-accent hover:bg-accent-soft">BM</a>
+            <span class="rounded-full border border-line bg-paper px-3 py-1.5 text-sm font-semibold text-muted">English</span>
+            <span class="rounded-full border border-accent bg-accent px-3 py-1.5 text-sm font-semibold text-white">العربية</span>
+          </div>
+          <div class="flex flex-wrap items-center gap-3">
+            <a href={dictionaryChapterUrl} class="rounded-full border border-line bg-paper px-3 py-1.5 text-sm font-semibold text-accent hover:bg-accent-soft">
+              Kamus Bab {lesson.chapter}, Buku {lesson.bookNumber}
+            </a>
+            <button
+              type="button"
+              class="durusul-article-read"
+              data-article-read-toggle
+              data-read-key={`durusul:${lesson.bookNumber}:${lesson.chapter}`}
+              aria-pressed="false"
+            >
+              <span aria-hidden="true">✓</span>
+              <span>أُنجزت القراءة</span>
+            </button>
+          </div>
         </div>
         <p class="text-sm font-semibold uppercase tracking-[0.08em] text-muted">كتاب {lesson.bookNumber} · باب {lesson.chapter}</p>
         <h1 class="arabic mt-3 text-4xl font-semibold leading-tight text-accent sm:text-5xl" dir="rtl">{lesson.title}</h1>
@@ -93,5 +111,39 @@ const chapterJumpItems = lessonChapters.map((item) => ({
       </article>
     </main>
     <a href="#top" class="back-to-top" aria-label="الرجوع إلى الأعلى">↑</a>
+    <script>
+      const readStorageKey = "tuwailib:durusul-read";
+      const readButton = document.querySelector("[data-article-read-toggle]");
+
+      function readProgress() {
+        try {
+          return new Set(JSON.parse(localStorage.getItem(readStorageKey) || "[]"));
+        } catch {
+          return new Set();
+        }
+      }
+
+      function writeProgress(progress) {
+        localStorage.setItem(readStorageKey, JSON.stringify(Array.from(progress)));
+      }
+
+      function applyReadState(progress) {
+        const key = readButton?.getAttribute("data-read-key");
+        const isRead = key ? progress.has(key) : false;
+        readButton?.classList.toggle("is-read", isRead);
+        readButton?.setAttribute("aria-pressed", String(isRead));
+      }
+
+      const progress = readProgress();
+      applyReadState(progress);
+      readButton?.addEventListener("click", () => {
+        const key = readButton.getAttribute("data-read-key");
+        if (!key) return;
+        if (progress.has(key)) progress.delete(key);
+        else progress.add(key);
+        writeProgress(progress);
+        applyReadState(progress);
+      });
+    </script>
   </body>
 </html>

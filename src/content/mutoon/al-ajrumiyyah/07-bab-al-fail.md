@@ -42,51 +42,39 @@ proseSections:
           meaning: "fi‘ilnya"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        الْفَاعِلُ فِي اصْطِلَاحِ النُّحَاةِ هُوَ الِاسْمُ الْمَرْفُوعُ الَّذِي أُسْنِدَ إِلَيْهِ فِعْلٌ مَبْنِيٌّ لِلْمَعْلُومِ أَوْ مَا فِي مَعْنَى الْفِعْلِ.
-        
-        فَقَوْلُهُ: «الِاسْمُ» يُخْرِجُ الْفِعْلَ وَالْحَرْفَ؛ فَلَا يَكُونُ وَاحِدٌ مِنْهُمَا فَاعِلًا.
-        
-        وَقَوْلُهُ: «الْمَرْفُوعُ» يُبَيِّنُ أَنَّ حُكْمَ الْفَاعِلِ الرَّفْعُ دَائِمًا.
-        
-        وَقَوْلُهُ: «الْمَذْكُورُ قَبْلَهُ فِعْلُهُ» يُبَيِّنُ أَنَّ الْفِعْلَ يَتَقَدَّمُ عَلَى الْفَاعِلِ فِي الْأُسْلُوبِ الَّذِي يَذْكُرُهُ الْمُصَنِّفُ، نَحْوُ «قَامَ زَيْدٌ».
-        
-        فَـ«قَامَ» فِعْلٌ مَاضٍ، وَ«زَيْدٌ» فَاعِلٌ مَرْفُوعٌ، وَعَلَامَةُ رَفْعِهِ الضَّمَّةُ الظَّاهِرَةُ.
-        
-        وَالْمُرَادُ بِالْفَاعِلِ فِي النَّحْوِ مَنْ أُسْنِدَ إِلَيْهِ الْفِعْلُ، سَوَاءٌ أَكَانَ قَدْ فَعَلَ الْعَمَلَ بِاخْتِيَارِهِ، نَحْوُ «كَتَبَ زَيْدٌ»، أَمْ حَدَثَ لَهُ الْفِعْلُ مِنْ غَيْرِ اخْتِيَارٍ، نَحْوُ «مَاتَ زَيْدٌ» وَ«مَرِضَ عَمْرٌو».
+        الْفَاعِلُ هُوَ الِاسْمُ الْمَرْفُوعُ الَّذِي أُسْنِدَ إِلَيْهِ فِعْلٌ مَبْنِيٌّ لِلْمَعْلُومِ أَوْ مَا فِي مَعْنَاهُ.
+    
+        فَقَوْلُهُ: **«الِاسْمُ»** يُخْرِجُ الْفِعْلَ وَالْحَرْفَ، وَقَوْلُهُ: **«الْمَرْفُوعُ»** يُبَيِّنُ أَنَّ حُكْمَ الْفَاعِلِ الرَّفْعُ.
+    
+        وَقَوْلُهُ: **«الْمَذْكُورُ قَبْلَهُ فِعْلُهُ»** يَعْنِي أَنَّ الْفِعْلَ يَتَقَدَّمُ عَلَى الْفَاعِلِ، نَحْوُ «قَامَ زَيْدٌ».
+    
+        فَـ«قَامَ» فِعْلٌ مَاضٍ، وَ«زَيْدٌ» فَاعِلٌ مَرْفُوعٌ بِالضَّمَّةِ الظَّاهِرَةِ.
+    
+        وَالْمُرَادُ بِالْفَاعِلِ مَنْ أُسْنِدَ إِلَيْهِ الْفِعْلُ، سَوَاءٌ أَفَعَلَهُ بِاخْتِيَارِهِ، نَحْوُ «كَتَبَ زَيْدٌ»، أَمْ حَدَثَ لَهُ مِنْ غَيْرِ اخْتِيَارٍ، نَحْوُ «مَاتَ زَيْدٌ».
+    
       malay: |
-        Dalam istilah nahu, fā‘il ialah isim marfū‘ yang disandarkan kepadanya sesuatu fi‘il aktif.
-        
-        Dalam ayat:
-        
-        «قَامَ زَيْدٌ»
-        
-        perkataan «قَامَ» ialah fi‘il, manakala «زَيْدٌ» ialah fā‘il. Zaid ialah pihak yang disandarkan kepadanya perbuatan berdiri.
-        
-        Beberapa unsur penting dalam definisi ini:
-        
-        **Fā‘il mestilah isim.**  
-        Fi‘il dan huruf tidak boleh menjadi fā‘il.
-        
-        **Fā‘il sentiasa marfū‘.**  
-        Tanda rafa‘nya tidak semestinya dammah. Ia juga boleh dirafa‘kan dengan alif atau wāw bergantung pada bentuk isim.
-        
-        **Fi‘il disebut sebelum fā‘il.**  
-        Dalam susunan yang diterangkan oleh matan, fi‘il datang dahulu, kemudian fā‘il:
-        
-        «كَتَبَ الطَّالِبُ»
-        
-        “Pelajar itu telah menulis.”
-        
-        Fā‘il dalam nahu tidak semestinya bermaksud orang yang sengaja melakukan sesuatu. Ia juga merangkumi pihak yang mengalami sesuatu keadaan:
-        
-        «مَاتَ زَيْدٌ»
-        
-        “Zaid telah meninggal dunia.”
-        
-        Zaid tetap disebut fā‘il dari sudut nahu kerana perbuatan atau kejadian itu disandarkan kepadanya.
-
+        Fā‘il ialah isim marfū‘ yang disandarkan kepadanya fi‘il aktif atau sesuatu yang membawa makna fi‘il.
+    
+        Perkataan **“isim”** mengeluarkan fi‘il dan huruf daripada definisi fā‘il. Perkataan **“marfū‘”** pula menunjukkan bahawa hukum fā‘il ialah rafa‘.
+    
+        Ungkapan **“fi‘ilnya disebut sebelumnya”** bermaksud fi‘il datang sebelum fā‘il, seperti «قَامَ زَيْدٌ».
+    
+        «قَامَ» ialah fi‘il māḍī, manakala «زَيْدٌ» ialah fā‘il marfū‘ dengan dammah yang jelas.
+    
+        Fā‘il dalam nahu ialah pihak yang disandarkan kepadanya sesuatu perbuatan atau kejadian. Ia merangkumi pihak yang melakukan perbuatan dengan kehendaknya, seperti «كَتَبَ زَيْدٌ», dan pihak yang mengalami sesuatu tanpa kehendaknya, seperti «مَاتَ زَيْدٌ».
+    
+      english: |
+        The subject is a noun in raf‘ to which an active verb, or something carrying the meaning of a verb, is attributed.
+    
+        The word **“noun”** excludes verbs and particles, while the word **“in raf‘”** shows that the grammatical ruling of the subject is raf‘.
+    
+        The phrase **“whose verb is mentioned before it”** means that the verb precedes the subject, as in «قَامَ زَيْدٌ».
+    
+        «قَامَ» is a past verb, while «زَيْدٌ» is a subject in raf‘ with a visible ḍammah.
+    
+        In grammar, the subject is whatever the action or occurrence is attributed to. This includes one who performs an action voluntarily, as in «كَتَبَ زَيْدٌ», and one to whom something occurs involuntarily, as in «مَاتَ زَيْدٌ».
   - id: "categories-of-fail"
     matn:
       id: "fail-02"
@@ -106,35 +94,33 @@ proseSections:
           meaning: "dan dhamir"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        يَنْقَسِمُ الْفَاعِلُ إِلَى ظَاهِرٍ وَمُضْمَرٍ.
-        
-        فَالظَّاهِرُ هُوَ الِاسْمُ الَّذِي دَلَّ لَفْظُهُ عَلَى مُسَمَّاهُ مِنْ غَيْرِ دَلَالَةٍ عَلَى تَكَلُّمٍ أَوْ خِطَابٍ أَوْ غَيْبَةٍ، نَحْوُ «زَيْدٌ» وَ«رَجُلٌ» وَ«الطَّالِبَانِ».
-        
-        وَالْمُضْمَرُ هُوَ مَا دَلَّ عَلَى مُتَكَلِّمٍ أَوْ مُخَاطَبٍ أَوْ غَائِبٍ، نَحْوُ التَّاءِ فِي «ضَرَبْتُ»، وَالْوَاوِ فِي «ضَرَبُوا»، وَالضَّمِيرِ الْمُسْتَتِرِ فِي «ضَرَبَ».
-        
-        وَكُلٌّ مِنَ الظَّاهِرِ وَالْمُضْمَرِ يَكُونُ فِي مَحَلِّ رَفْعٍ عَلَى الْفَاعِلِيَّةِ.
+        يَنْقَسِمُ الْفَاعِلُ إِلَى قِسْمَيْنِ: ظَاهِرٍ وَمُضْمَرٍ.
+    
+        **فَالظَّاهِرُ:** مَا دَلَّ لَفْظُهُ عَلَى مُسَمَّاهُ مِنْ غَيْرِ دَلَالَةٍ عَلَى تَكَلُّمٍ أَوْ خِطَابٍ أَوْ غَيْبَةٍ، نَحْوُ «زَيْدٌ» وَ«رَجُلٌ» وَ«الطَّالِبَانِ».
+    
+        **وَالْمُضْمَرُ:** مَا دَلَّ عَلَى مُتَكَلِّمٍ أَوْ مُخَاطَبٍ أَوْ غَائِبٍ، نَحْوُ التَّاءِ فِي «ضَرَبْتُ»، وَالْوَاوِ فِي «ضَرَبُوا»، وَالضَّمِيرِ الْمُسْتَتِرِ فِي «ضَرَبَ».
+    
+        وَكُلٌّ مِنَ الظَّاهِرِ وَالْمُضْمَرِ يَكُونُ مَرْفُوعًا عَلَى الْفَاعِلِيَّةِ، أَوْ فِي مَحَلِّ رَفْعٍ إِذَا كَانَ مَبْنِيًّا.
+    
       malay: |
-        Fā‘il terbahagi kepada dua bentuk.
-        
-        **Fā‘il ẓāhir** ialah isim yang disebut secara jelas dalam ayat, seperti:
-        
-        - زَيْدٌ
-        - الطَّالِبُ
-        - الرَّجُلَانِ
-        - الْمُسْلِمُونَ
-        
-        **Fā‘il muḍmar** ialah kata ganti nama yang menunjukkan:
-        
-        - orang yang bercakap,
-        - orang yang diajak bercakap,
-        - atau orang yang tidak hadir.
-        
-        Contohnya, huruf tā’ dalam «ضَرَبْتُ» ialah kata ganti yang bermaksud “aku”. Wāw dalam «ضَرَبُوا» pula menunjukkan “mereka”.
-        
-        Ada juga fā‘il yang tidak kelihatan dalam tulisan tetapi difahami daripada bentuk fi‘il. Ini dinamakan **ḍamīr mustatir**, iaitu kata ganti yang tersembunyi.
-
+        Fā‘il terbahagi kepada dua: ẓāhir dan muḍmar.
+    
+        **Fā‘il ẓāhir:** Isim yang lafaznya menunjukkan sesuatu yang dinamakan tanpa menunjukkan penutur, orang yang diajak bercakap atau pihak ketiga, seperti «زَيْدٌ», «رَجُلٌ» dan «الطَّالِبَانِ».
+    
+        **Fā‘il muḍmar:** Dhamir yang menunjukkan penutur, orang yang diajak bercakap atau pihak ketiga, seperti tā’ dalam «ضَرَبْتُ», wāw dalam «ضَرَبُوا» dan dhamir tersembunyi dalam «ضَرَبَ».
+    
+        Fā‘il ẓāhir dihukumkan marfū‘. Fā‘il berupa dhamir yang mabnī pula berada pada kedudukan rafa‘ sebagai fā‘il.
+    
+      english: |
+        The subject is divided into two categories: explicit and pronominal.
+    
+        **The explicit subject:** A noun whose wording identifies its referent without indicating a speaker, an addressee or a third person, such as «زَيْدٌ», «رَجُلٌ» and «الطَّالِبَانِ».
+    
+        **The pronominal subject:** A pronoun indicating a speaker, an addressee or a third person, such as the tā’ in «ضَرَبْتُ», the wāw in «ضَرَبُوا» and the concealed pronoun in «ضَرَبَ».
+    
+        An explicit subject is in raf‘. A built pronoun functioning as the subject occupies the grammatical position of raf‘.
   - id: "zahir-singular-examples"
     matn:
       id: "fail-03"
@@ -208,32 +194,51 @@ proseSections:
           meaning: "hambaku sedang berdiri"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        قَوْلُهُ: «قَامَ زَيْدٌ» مِثَالٌ لِلْفَاعِلِ الظَّاهِرِ مَعَ الْفِعْلِ الْمَاضِي.
-        
-        فَـ«قَامَ» فِعْلٌ مَاضٍ مَبْنِيٌّ عَلَى الْفَتْحِ، وَ«زَيْدٌ» فَاعِلٌ مَرْفُوعٌ، وَعَلَامَةُ رَفْعِهِ الضَّمَّةُ الظَّاهِرَةُ عَلَى آخِرِهِ.
-        
-        وَقَوْلُهُ: «يَقُومُ زَيْدٌ» مِثَالٌ لِلْفَاعِلِ الظَّاهِرِ مَعَ الْفِعْلِ الْمُضَارِعِ.
-        
-        فَـ«يَقُومُ» فِعْلٌ مُضَارِعٌ مَرْفُوعٌ لِتَجَرُّدِهِ مِنَ النَّاصِبِ وَالْجَازِمِ، وَعَلَامَةُ رَفْعِهِ الضَّمَّةُ الظَّاهِرَةُ. وَ«زَيْدٌ» فَاعِلٌ مَرْفُوعٌ بِالضَّمَّةِ الظَّاهِرَةِ.
+        ذَكَرَ الْمُصَنِّفُ أَمْثِلَةَ الْفَاعِلِ الظَّاهِرِ مَعَ الْفِعْلِ الْمَاضِي وَالْمُضَارِعِ، وَهِيَ تَشْمَلُ الْمُفْرَدَ، وَالْمُثَنَّى، وَالْجَمْعَ، وَالْمُذَكَّرَ، وَالْمُؤَنَّثَ.
+    
+        فَفِي «قَامَ زَيْدٌ» وَ«يَقُومُ زَيْدٌ»، يَكُونُ «زَيْدٌ» فَاعِلًا مَرْفُوعًا بِالضَّمَّةِ الظَّاهِرَةِ.
+    
+        وَفِي «قَامَ الزَّيْدَانِ» وَ«يَقُومُ الزَّيْدَانِ»، يَكُونُ «الزَّيْدَانِ» فَاعِلًا مَرْفُوعًا بِالْأَلِفِ؛ لِأَنَّهُ مُثَنًّى.
+    
+        وَفِي «قَامَ الزَّيْدُونَ» وَ«يَقُومُ الزَّيْدُونَ»، يَكُونُ «الزَّيْدُونَ» فَاعِلًا مَرْفُوعًا بِالْوَاوِ؛ لِأَنَّهُ جَمْعُ مُذَكَّرٍ سَالِمٌ.
+    
+        وَفِي «قَامَ أَخُوكَ» يَكُونُ «أَخُوكَ» فَاعِلًا مَرْفُوعًا بِالْوَاوِ؛ لِأَنَّهُ مِنَ الْأَسْمَاءِ الْخَمْسَةِ.
+    
+        وَفِي «قَامَ غُلَامِي» يَكُونُ «غُلَامِي» فَاعِلًا مَرْفُوعًا بِضَمَّةٍ مُقَدَّرَةٍ عَلَى مَا قَبْلَ يَاءِ الْمُتَكَلِّمِ.
+    
+        وَإِذَا تَقَدَّمَ الْفِعْلُ عَلَى الْفَاعِلِ الظَّاهِرِ، أُفْرِدَ الْفِعْلُ، فَيُقَالُ «قَامَ الزَّيْدَانِ» وَ«قَامَ الزَّيْدُونَ».
+    
       malay: |
-        Ayat «قَامَ زَيْدٌ» menunjukkan fā‘il ẓāhir bersama fi‘il māḍī.
-        
-        I‘rabnya:
-        
-        - «قَامَ» ialah fi‘il māḍī yang mabnī atas fathah.
-        - «زَيْدٌ» ialah fā‘il marfū‘ dengan dammah yang jelas.
-        
-        Ayat «يَقُومُ زَيْدٌ» pula menunjukkan fā‘il ẓāhir bersama fi‘il muḍāri‘.
-        
-        I‘rabnya:
-        
-        - «يَقُومُ» ialah fi‘il muḍāri‘ marfū‘ kerana tidak didahului nāṣib atau jāzim.
-        - «زَيْدٌ» ialah fā‘il marfū‘ dengan dammah yang jelas.
-        
-        Perubahan masa pada fi‘il tidak mengubah hukum fā‘il. Sama ada fi‘il itu māḍī atau muḍāri‘, fā‘il tetap marfū‘.
-
+        Pengarang menyebut contoh fā‘il ẓāhir bersama fi‘il māḍī dan muḍāri‘. Contoh-contoh itu merangkumi mufrad, muthannā, jamak, lelaki dan perempuan.
+    
+        Dalam «قَامَ زَيْدٌ» dan «يَقُومُ زَيْدٌ», perkataan «زَيْدٌ» ialah fā‘il marfū‘ dengan dammah yang jelas.
+    
+        Dalam «قَامَ الزَّيْدَانِ» dan «يَقُومُ الزَّيْدَانِ», perkataan «الزَّيْدَانِ» ialah fā‘il marfū‘ dengan alif kerana berbentuk muthannā.
+    
+        Dalam «قَامَ الزَّيْدُونَ» dan «يَقُومُ الزَّيْدُونَ», perkataan «الزَّيْدُونَ» ialah fā‘il marfū‘ dengan wāw kerana berbentuk jamak mudhakkar sālim.
+    
+        Dalam «قَامَ أَخُوكَ», perkataan «أَخُوكَ» ialah fā‘il marfū‘ dengan wāw kerana termasuk dalam al-asmā’ al-khamsah.
+    
+        Dalam «قَامَ غُلَامِي», perkataan «غُلَامِي» ialah fā‘il marfū‘ dengan dammah yang dianggarkan pada huruf sebelum yā’ mutakallim.
+    
+        Apabila fi‘il datang sebelum fā‘il ẓāhir, fi‘il dikekalkan dalam bentuk mufrad. Oleh itu disebut «قَامَ الزَّيْدَانِ» dan «قَامَ الزَّيْدُونَ».
+    
+      english: |
+        The author gives examples of explicit subjects with past and present verbs. These examples include singulars, duals, plurals, masculine nouns and feminine nouns.
+    
+        In «قَامَ زَيْدٌ» and «يَقُومُ زَيْدٌ», «زَيْدٌ» is a subject in raf‘ with a visible ḍammah.
+    
+        In «قَامَ الزَّيْدَانِ» and «يَقُومُ الزَّيْدَانِ», «الزَّيْدَانِ» is a subject in raf‘ with alif because it is dual.
+    
+        In «قَامَ الزَّيْدُونَ» and «يَقُومُ الزَّيْدُونَ», «الزَّيْدُونَ» is a subject in raf‘ with wāw because it is a sound masculine plural.
+    
+        In «قَامَ أَخُوكَ», «أَخُوكَ» is a subject in raf‘ with wāw because it is one of the five nouns.
+    
+        In «قَامَ غُلَامِي», «غُلَامِي» is a subject in raf‘ with an estimated ḍammah on the letter preceding the first-person yā’.
+    
+        When the verb precedes an explicit subject, the verb remains singular. Thus one says «قَامَ الزَّيْدَانِ» and «قَامَ الزَّيْدُونَ».
   - id: "zahir-dual-examples"
     matn:
       id: "fail-04"
@@ -286,32 +291,39 @@ proseSections:
           meaning: "mereka perempuan sekalian telah memukul"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        «قَامَ الزَّيْدَانِ»: قَامَ فِعْلٌ مَاضٍ، وَالزَّيْدَانِ فَاعِلٌ مَرْفُوعٌ بِالْأَلِفِ نِيَابَةً عَنِ الضَّمَّةِ؛ لِأَنَّهُ مُثَنًّى.
-        
-        وَ«يَقُومُ الزَّيْدَانِ»: يَقُومُ فِعْلٌ مُضَارِعٌ مَرْفُوعٌ، وَالزَّيْدَانِ فَاعِلٌ مَرْفُوعٌ بِالْأَلِفِ.
-        
-        وَإِذَا تَقَدَّمَ الْفِعْلُ عَلَى الْفَاعِلِ الظَّاهِرِ، أُفْرِدَ الْفِعْلُ فِي اللُّغَةِ الْفُصْحَى، فَيُقَالُ: «قَامَ الزَّيْدَانِ»، وَلَا يُقَالُ فِي هَذَا الْأُسْلُوبِ: «قَامَا الزَّيْدَانِ».
+        الْفَاعِلُ الْمُضْمَرُ اثْنَا عَشَرَ ضَمِيرًا، وَهِيَ:
+    
+        **لِلْمُتَكَلِّمِ:** التَّاءُ فِي «ضَرَبْتُ»، وَ«نَا» فِي «ضَرَبْنَا».
+    
+        **لِلْمُخَاطَبِ:** التَّاءُ فِي «ضَرَبْتَ»، وَ«ضَرَبْتِ»، وَ«ضَرَبْتُمَا»، وَ«ضَرَبْتُمْ»، وَ«ضَرَبْتُنَّ».
+    
+        **لِلْغَائِبِ:** الضَّمِيرُ الْمُسْتَتِرُ فِي «ضَرَبَ» تَقْدِيرُهُ «هُوَ»، وَالضَّمِيرُ الْمُسْتَتِرُ فِي «ضَرَبَتْ» تَقْدِيرُهُ «هِيَ»، وَأَلِفُ الِاثْنَيْنِ فِي «ضَرَبَا»، وَوَاوُ الْجَمَاعَةِ فِي «ضَرَبُوا»، وَنُونُ النِّسْوَةِ فِي «ضَرَبْنَ».
+    
+        فَالضَّمَائِرُ الْمُتَّصِلَةُ الْمَذْكُورَةُ كُلُّهَا مَبْنِيَّةٌ فِي مَحَلِّ رَفْعٍ فَاعِلٍ، وَكَذَلِكَ الضَّمِيرُ الْمُسْتَتِرُ فِي «ضَرَبَ» وَ«ضَرَبَتْ».
+    
       malay: |
-        Dalam kedua-dua contoh, «الزَّيْدَانِ» ialah fā‘il berbentuk muthannā.
-        
-        Tanda rafa‘ muthannā ialah **alif**, bukan dammah:
-        
-        - «قَامَ الزَّيْدَانِ»
-        - «يَقُومُ الزَّيْدَانِ»
-        
-        Satu perkara penting: apabila fi‘il datang sebelum fā‘il yang disebut secara jelas, fi‘il biasanya kekal dalam bentuk mufrad.
-        
-        Oleh itu, susunan yang digunakan ialah:
-        
-        «قَامَ الزَّيْدَانِ»
-        
-        bukan:
-        
-        «قَامَا الزَّيْدَانِ»
-        
-        Dalam bentuk pertama, alif pada «الزَّيْدَانِ» ialah tanda rafa‘ bagi muthannā.
+        Fā‘il berupa dhamir ada dua belas:
+    
+        **Bagi penutur:** Tā’ dalam «ضَرَبْتُ» dan «نَا» dalam «ضَرَبْنَا».
+    
+        **Bagi orang yang diajak bercakap:** Tā’ dalam «ضَرَبْتَ», «ضَرَبْتِ», «ضَرَبْتُمَا», «ضَرَبْتُمْ» dan «ضَرَبْتُنَّ».
+    
+        **Bagi pihak ketiga:** Dhamir tersembunyi yang dianggarkan sebagai «هُوَ» dalam «ضَرَبَ», dhamir tersembunyi yang dianggarkan sebagai «هِيَ» dalam «ضَرَبَتْ», alif dua orang dalam «ضَرَبَا», wāw jamā‘ah dalam «ضَرَبُوا» dan nūn niswah dalam «ضَرَبْنَ».
+    
+        Semua dhamir yang bersambung itu mabnī dan berada pada kedudukan rafa‘ sebagai fā‘il. Begitu juga dhamir tersembunyi dalam «ضَرَبَ» dan «ضَرَبَتْ».
+    
+      english: |
+        There are twelve pronominal subjects:
+    
+        **For the speaker:** The tā’ in «ضَرَبْتُ» and «نَا» in «ضَرَبْنَا».
+    
+        **For the addressee:** The tā’ in «ضَرَبْتَ», «ضَرَبْتِ», «ضَرَبْتُمَا», «ضَرَبْتُمْ» and «ضَرَبْتُنَّ».
+    
+        **For the third person:** The concealed pronoun estimated as «هُوَ» in «ضَرَبَ», the concealed pronoun estimated as «هِيَ» in «ضَرَبَتْ», the dual alif in «ضَرَبَا», the plural wāw in «ضَرَبُوا» and the feminine plural nūn in «ضَرَبْنَ».
+    
+        All these attached pronouns are built and occupy the grammatical position of raf‘ as the subject. The same applies to the concealed pronouns in «ضَرَبَ» and «ضَرَبَتْ».
 ---
 
 ## Sumber projek

@@ -48,28 +48,33 @@ proseSections:
           meaning: "dii‘rabkan dengan huruf"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        هَذَا الْفَصْلُ ذَكَرَ فِيهِ الْمُصَنِّفُ جَمِيعَ مَا تَقَدَّمَ فِي الْبَابِ السَّابِقِ عَلَى سَبِيلِ الْإِجْمَالِ، بَعْدَ أَنْ ذَكَرَهُ مُفَصَّلًا؛ تَمْرِينًا لِلْمُبْتَدِئِ وَتَثْبِيتًا لِمَا سَبَقَ.
-        
-        وَالْمُعْرَبُ هُوَ الَّذِي يَتَغَيَّرُ آخِرُهُ بِسَبَبِ اخْتِلَافِ الْعَوَامِلِ الدَّاخِلَةِ عَلَيْهِ.
-        
+        الْمُعْرَبُ هُوَ الْكَلِمَةُ الَّتِي يَتَغَيَّرُ آخِرُهَا بِسَبَبِ اخْتِلَافِ الْعَوَامِلِ الدَّاخِلَةِ عَلَيْهَا.
+    
         وَالْمُعْرَبَاتُ قِسْمَانِ:
-        
-        الْقِسْمُ الْأَوَّلُ: مَا يُعْرَبُ بِالْحَرَكَاتِ، وَهِيَ الضَّمَّةُ وَالْفَتْحَةُ وَالْكَسْرَةُ وَالسُّكُونُ.
-        
-        وَالْقِسْمُ الثَّانِي: مَا يُعْرَبُ بِالْحُرُوفِ، كَالْوَاوِ وَالْأَلِفِ وَالْيَاءِ وَالنُّونِ وَحَذْفِهَا.
+    
+        **مَا يُعْرَبُ بِالْحَرَكَاتِ:** وَهِيَ الضَّمَّةُ، وَالْفَتْحَةُ، وَالْكَسْرَةُ، وَالسُّكُونُ.
+    
+        **مَا يُعْرَبُ بِالْحُرُوفِ:** كَالْوَاوِ، وَالْأَلِفِ، وَالْيَاءِ، وَثُبُوتِ النُّونِ، وَحَذْفِهَا.
+    
       malay: |
-        Fasal ini menghimpunkan secara ringkas perkara yang telah diterangkan secara terperinci dalam bab sebelumnya. Cara ini membantu pelajar mengulang dan mengukuhkan pembahagian tanda-tanda i‘rab.
-        
-        Mu‘rab ialah kalimah yang keadaan akhirnya berubah kerana perubahan amil yang masuk padanya.
-        
+        Mu‘rab ialah kalimah yang keadaan akhirnya berubah disebabkan perbezaan amil yang masuk padanya.
+    
         Kalimah mu‘rab terbahagi kepada dua:
-        
-        **Pertama:** kalimah yang dii‘rabkan dengan baris, iaitu dammah, fathah, kasrah dan sukun.
-        
-        **Kedua:** kalimah yang dii‘rabkan dengan huruf, seperti wāw, alif, yā’, kekalnya nūn atau pembuangan nūn.
-
+    
+        **Yang dii‘rabkan dengan harakat:** Iaitu dammah, fathah, kasrah dan sukun.
+    
+        **Yang dii‘rabkan dengan huruf:** Seperti wāw, alif, yā’, kekalnya nūn dan pembuangan nūn.
+    
+      english: |
+        An inflected word is one whose ending changes because of the different governing elements that enter upon it.
+    
+        Inflected words are divided into two categories:
+    
+        **Those inflected with vowel signs:** Namely ḍammah, fatḥah, kasrah and sukūn.
+    
+        **Those inflected with letters:** Such as wāw, alif, yā’, retention of the nūn and deletion of the nūn.
   - id: "murab-bil-harakat"
     matn:
       id: "murabat-02"
@@ -98,32 +103,45 @@ proseSections:
           meaning: "yang tidak bersambung dengan sesuatu pada akhirnya"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
         الَّذِي يُعْرَبُ بِالْحَرَكَاتِ أَرْبَعَةُ أَنْوَاعٍ:
-        
-        الْأَوَّلُ: الِاسْمُ الْمُفْرَدُ، نَحْوُ «زَيْدٌ» وَ«زَيْدًا» وَ«زَيْدٍ».
-        
-        الثَّانِي: جَمْعُ التَّكْسِيرِ، نَحْوُ «الرِّجَالُ» وَ«الرِّجَالَ» وَ«الرِّجَالِ».
-        
-        الثَّالِثُ: جَمْعُ الْمُؤَنَّثِ السَّالِمُ، نَحْوُ «الْمُسْلِمَاتُ» وَ«الْمُسْلِمَاتِ».
-        
-        الرَّابِعُ: الْفِعْلُ الْمُضَارِعُ الَّذِي لَمْ يَتَّصِلْ بِآخِرِهِ شَيْءٌ، نَحْوُ «يَضْرِبُ» وَ«لَنْ يَضْرِبَ» وَ«لَمْ يَضْرِبْ».
-        
-        وَالْمُرَادُ بِالْحَرَكَاتِ هُنَا الضَّمَّةُ وَالْفَتْحَةُ وَالْكَسْرَةُ، وَيُلْحَقُ بِهَا السُّكُونُ فِي بَابِ الْجَزْمِ.
+    
+        **الِاسْمُ الْمُفْرَدُ:** نَحْوُ «زَيْدٌ، وَزَيْدًا، وَزَيْدٍ».
+    
+        **جَمْعُ التَّكْسِيرِ:** نَحْوُ «الرِّجَالُ، وَالرِّجَالَ، وَالرِّجَالِ».
+    
+        **جَمْعُ الْمُؤَنَّثِ السَّالِمُ:** نَحْوُ «الْمُسْلِمَاتُ» وَ«الْمُسْلِمَاتِ».
+    
+        **الْفِعْلُ الْمُضَارِعُ الَّذِي لَمْ يَتَّصِلْ بِآخِرِهِ شَيْءٌ:** نَحْوُ «يَضْرِبُ، وَلَنْ يَضْرِبَ، وَلَمْ يَضْرِبْ».
+    
+        وَيُلْحَقُ السُّكُونُ بِالْحَرَكَاتِ فِي بَابِ الْجَزْمِ.
+    
       malay: |
-        Empat jenis kalimah dii‘rabkan dengan baris:
-        
-        **Isim mufrad**, seperti «زَيْدٌ», «زَيْدًا» dan «زَيْدٍ».
-        
-        **Jamak taksir**, seperti «الرِّجَالُ», «الرِّجَالَ» dan «الرِّجَالِ».
-        
-        **Jamak mu’annath sālim**, seperti «الْمُسْلِمَاتُ» dan «الْمُسْلِمَاتِ».
-        
-        **Fi‘il muḍāri‘ yang tidak bersambung sesuatu pada akhirnya**, seperti «يَضْرِبُ», «لَنْ يَضْرِبَ» dan «لَمْ يَضْرِبْ».
-        
-        Baris yang dimaksudkan ialah dammah, fathah dan kasrah. Sukun turut dimasukkan dalam pembahagian ini sebagai tanda jazam.
-
+        Empat jenis kalimah dii‘rabkan dengan harakat:
+    
+        **Isim mufrad:** Seperti «زَيْدٌ، زَيْدًا، زَيْدٍ».
+    
+        **Jamak taksir:** Seperti «الرِّجَالُ، الرِّجَالَ، الرِّجَالِ».
+    
+        **Jamak mu’annath sālim:** Seperti «الْمُسْلِمَاتُ» dan «الْمُسْلِمَاتِ».
+    
+        **Fi‘il muḍāri‘ yang tidak bersambung dengan sesuatu pada akhirnya:** Seperti «يَضْرِبُ، لَنْ يَضْرِبَ، لَمْ يَضْرِبْ».
+    
+        Sukun turut dimasukkan bersama harakat dalam bab jazm.
+    
+      english: |
+        Four types of words are inflected with vowel signs:
+    
+        **A singular noun:** Such as «زَيْدٌ، زَيْدًا، زَيْدٍ».
+    
+        **A broken plural:** Such as «الرِّجَالُ، الرِّجَالَ، الرِّجَالِ».
+    
+        **A sound feminine plural:** Such as «الْمُسْلِمَاتُ» and «الْمُسْلِمَاتِ».
+    
+        **A present verb with nothing attached to its ending:** Such as «يَضْرِبُ، لَنْ يَضْرِبَ، لَمْ يَضْرِبْ».
+    
+        Sukūn is included with the vowel signs in the chapter of jazm.
   - id: "harakat-rules"
     matn:
       id: "murabat-03"
@@ -146,29 +164,45 @@ proseSections:
           meaning: "dan dijazmkan dengan sukun"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        قَوْلُهُ: «وَكُلُّهَا» لَيْسَ عَلَى عُمُومِهِ؛ لِأَنَّ الْأَسْمَاءَ لَا تُجْزَمُ، وَالْأَفْعَالَ لَا تُخْفَضُ.
-        
-        وَالْمَعْنَى أَنَّ مَا يَقْبَلُ الرَّفْعَ مِنْ هَذِهِ الْأَنْوَاعِ فَأَصْلُ رَفْعِهِ الضَّمَّةُ، وَمَا يَقْبَلُ النَّصْبَ فَأَصْلُ نَصْبِهِ الْفَتْحَةُ، وَمَا يَقْبَلُ الْخَفْضَ فَأَصْلُ خَفْضِهِ الْكَسْرَةُ، وَمَا يَقْبَلُ الْجَزْمَ فَأَصْلُ جَزْمِهِ السُّكُونُ.
-        
-        فَالِاسْمُ الْمُفْرَدُ وَجَمْعُ التَّكْسِيرِ يُرْفَعَانِ بِالضَّمَّةِ، وَيُنْصَبَانِ بِالْفَتْحَةِ، وَيُخْفَضَانِ بِالْكَسْرَةِ.
-        
-        وَالْفِعْلُ الْمُضَارِعُ يُرْفَعُ بِالضَّمَّةِ، وَيُنْصَبُ بِالْفَتْحَةِ، وَيُجْزَمُ بِالسُّكُونِ.
+        الْمُرَادُ أَنَّ الْعَلَامَاتِ الْأَصْلِيَّةَ لِهَذِهِ الْأَنْوَاعِ هِيَ:
+    
+        **الضَّمَّةُ لِلرَّفْعِ.**
+    
+        **الْفَتْحَةُ لِلنَّصْبِ.**
+    
+        **الْكَسْرَةُ لِلْخَفْضِ.**
+    
+        **السُّكُونُ لِلْجَزْمِ.**
+    
+        وَلَيْسَ الْمُرَادُ أَنَّ كُلَّ نَوْعٍ يَقْبَلُ الْأَحْوَالَ الْأَرْبَعَةَ؛ فَالْأَسْمَاءُ لَا تُجْزَمُ، وَالْأَفْعَالُ لَا تُخْفَضُ.
+    
       malay: |
-        Ungkapan “kesemuanya” perlu difahami berdasarkan jenis kalimah masing-masing.
-        
-        Isim tidak menerima jazam, manakala fi‘il tidak menerima jar.
-        
-        Maksud matan ialah:
-        
-        - Bentuk asal rafa‘ ialah dammah.
-        - Bentuk asal nasab ialah fathah.
-        - Bentuk asal jar ialah kasrah.
-        - Bentuk asal jazam ialah sukun.
-        
-        Isim mufrad dan jamak taksir menerima rafa‘, nasab dan jar. Fi‘il muḍāri‘ pula menerima rafa‘, nasab dan jazam.
-
+        Maksud matan ialah tanda-tanda asal bagi kelompok ini ialah:
+    
+        **Dammah bagi rafa‘.**
+    
+        **Fathah bagi nasab.**
+    
+        **Kasrah bagi jar.**
+    
+        **Sukun bagi jazm.**
+    
+        Ini tidak bermaksud setiap jenis kalimah menerima keempat-empat keadaan. Isim tidak menerima jazm, manakala fi‘il tidak menerima jar.
+    
+      english: |
+        The intended meaning is that the original signs for these categories are:
+    
+        **Ḍammah for raf‘.**
+    
+        **Fatḥah for nasb.**
+    
+        **Kasrah for jarr.**
+    
+        **Sukūn for jazm.**
+    
+        This does not mean that every category accepts all four states. Nouns do not accept jazm, while verbs do not accept jarr.
   - id: "exceptions-harakat"
     matn:
       id: "murabat-04"
@@ -200,30 +234,33 @@ proseSections:
           meaning: "dijazmkan dengan menggugurkan huruf akhirnya"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        خَرَجَ عَنِ الْأُصُولِ الْمَذْكُورَةِ ثَلَاثَةُ أَشْيَاءَ:
-        
-        الْأَوَّلُ: جَمْعُ الْمُؤَنَّثِ السَّالِمُ؛ فَإِنَّهُ يُنْصَبُ بِالْكَسْرَةِ نِيَابَةً عَنِ الْفَتْحَةِ، نَحْوُ «رَأَيْتُ الْمُسْلِمَاتِ».
-        
-        الثَّانِي: الِاسْمُ الَّذِي لَا يَنْصَرِفُ؛ فَإِنَّهُ يُخْفَضُ بِالْفَتْحَةِ نِيَابَةً عَنِ الْكَسْرَةِ، نَحْوُ «مَرَرْتُ بِأَحْمَدَ».
-        
-        الثَّالِثُ: الْفِعْلُ الْمُضَارِعُ الْمُعْتَلُّ الْآخِرِ؛ فَإِنَّهُ يُجْزَمُ بِحَذْفِ حَرْفِ الْعِلَّةِ، نَحْوُ «لَمْ يَخْشَ»، وَ«لَمْ يَدْعُ»، وَ«لَمْ يَرْمِ».
-        
-        فَالْأَلِفُ مَحْذُوفَةٌ مِنْ «يَخْشَى»، وَالْوَاوُ مَحْذُوفَةٌ مِنْ «يَدْعُو»، وَالْيَاءُ مَحْذُوفَةٌ مِنْ «يَرْمِي».
+        يُسْتَثْنَى مِنَ الْعَلَامَاتِ الْأَصْلِيَّةِ ثَلَاثَةُ أَشْيَاءَ:
+    
+        **جَمْعُ الْمُؤَنَّثِ السَّالِمُ:** يُنْصَبُ بِالْكَسْرَةِ نِيَابَةً عَنِ الْفَتْحَةِ، نَحْوُ «رَأَيْتُ الْمُسْلِمَاتِ».
+    
+        **الِاسْمُ الَّذِي لَا يَنْصَرِفُ:** يُخْفَضُ بِالْفَتْحَةِ نِيَابَةً عَنِ الْكَسْرَةِ، نَحْوُ «مَرَرْتُ بِأَحْمَدَ».
+    
+        **الْفِعْلُ الْمُضَارِعُ الْمُعْتَلُّ الْآخِرِ:** يُجْزَمُ بِحَذْفِ حَرْفِ الْعِلَّةِ، نَحْوُ «لَمْ يَخْشَ»، وَ«لَمْ يَدْعُ»، وَ«لَمْ يَرْمِ».
+    
       malay: |
-        Terdapat tiga pengecualian daripada tanda-tanda asal.
-        
-        **Pertama:** jamak mu’annath sālim dinasabkan dengan kasrah sebagai ganti fathah, seperti «رَأَيْتُ الْمُسْلِمَاتِ».
-        
-        **Kedua:** isim yang tidak menerima tanwin dijarkan dengan fathah sebagai ganti kasrah, seperti «مَرَرْتُ بِأَحْمَدَ».
-        
-        **Ketiga:** fi‘il muḍāri‘ yang berakhir dengan huruf ‘illah dijazamkan dengan membuang huruf tersebut:
-        
-        - يَخْشَى menjadi لَمْ يَخْشَ
-        - يَدْعُو menjadi لَمْ يَدْعُ
-        - يَرْمِي menjadi لَمْ يَرْمِ
-
+        Terdapat tiga pengecualian daripada tanda-tanda asal:
+    
+        **Jamak mu’annath sālim:** Dinasabkan dengan kasrah sebagai ganti fathah, seperti «رَأَيْتُ الْمُسْلِمَاتِ».
+    
+        **Isim yang tidak menerima ṣarf:** Dijarkan dengan fathah sebagai ganti kasrah, seperti «مَرَرْتُ بِأَحْمَدَ».
+    
+        **Fi‘il muḍāri‘ yang mu‘tal akhir:** Dijazamkan dengan membuang huruf ‘illah, seperti «لَمْ يَخْشَ», «لَمْ يَدْعُ» dan «لَمْ يَرْمِ».
+    
+      english: |
+        Three cases are exceptions to the original signs:
+    
+        **A sound feminine plural:** It is put into nasb with kasrah replacing the fatḥah, as in «رَأَيْتُ الْمُسْلِمَاتِ».
+    
+        **A diptote noun:** It is put into jarr with fatḥah replacing the kasrah, as in «مَرَرْتُ بِأَحْمَدَ».
+    
+        **A present verb ending in a weak letter:** It is put into jazm by deleting the weak letter, as in «لَمْ يَخْشَ», «لَمْ يَدْعُ» and «لَمْ يَرْمِ».
   - id: "murab-bil-huruf"
     matn:
       id: "murabat-05"
@@ -267,34 +304,39 @@ proseSections:
           meaning: "engkau perempuan sedang melakukan"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
         الَّذِي يُعْرَبُ بِالْحُرُوفِ أَرْبَعَةُ أَنْوَاعٍ:
-        
-        الْأَوَّلُ: الْمُثَنَّى، نَحْوُ «الزَّيْدَانِ» وَ«الزَّيْدَيْنِ».
-        
-        الثَّانِي: جَمْعُ الْمُذَكَّرِ السَّالِمُ، نَحْوُ «الزَّيْدُونَ» وَ«الزَّيْدِينَ».
-        
-        الثَّالِثُ: الْأَسْمَاءُ الْخَمْسَةُ، وَهِيَ «أَبُوكَ، وَأَخُوكَ، وَحَمُوكَ، وَفُوكَ، وَذُو مَالٍ».
-        
-        الرَّابِعُ: الْأَفْعَالُ الْخَمْسَةُ، وَهِيَ «يَفْعَلَانِ، وَتَفْعَلَانِ، وَيَفْعَلُونَ، وَتَفْعَلُونَ، وَتَفْعَلِينَ».
+    
+        **الْمُثَنَّى:** نَحْوُ «الزَّيْدَانِ» وَ«الزَّيْدَيْنِ».
+    
+        **جَمْعُ الْمُذَكَّرِ السَّالِمُ:** نَحْوُ «الزَّيْدُونَ» وَ«الزَّيْدِينَ».
+    
+        **الْأَسْمَاءُ الْخَمْسَةُ:** وَهِيَ «أَبُوكَ، وَأَخُوكَ، وَحَمُوكَ، وَفُوكَ، وَذُو مَالٍ».
+    
+        **الْأَفْعَالُ الْخَمْسَةُ:** وَهِيَ «يَفْعَلَانِ، وَتَفْعَلَانِ، وَيَفْعَلُونَ، وَتَفْعَلُونَ، وَتَفْعَلِينَ».
+    
       malay: |
-        Empat jenis kalimah dii‘rabkan menggunakan huruf:
-        
-        **Muthannā**, seperti «الزَّيْدَانِ» dan «الزَّيْدَيْنِ».
-        
-        **Jamak mudhakkar sālim**, seperti «الزَّيْدُونَ» dan «الزَّيْدِينَ».
-        
-        **Isim-isim yang lima**, seperti «أَبُوكَ», «أَخُوكَ» dan «ذُو مَالٍ».
-        
-        **Af‘āl al-khamsah**, iaitu:
-        
-        - يَفْعَلَانِ
-        - تَفْعَلَانِ
-        - يَفْعَلُونَ
-        - تَفْعَلُونَ
-        - تَفْعَلِينَ
-
+        Empat jenis kalimah dii‘rabkan dengan huruf:
+    
+        **Muthannā:** Seperti «الزَّيْدَانِ» dan «الزَّيْدَيْنِ».
+    
+        **Jamak mudhakkar sālim:** Seperti «الزَّيْدُونَ» dan «الزَّيْدِينَ».
+    
+        **Isim-isim yang lima:** Iaitu «أَبُوكَ، أَخُوكَ، حَمُوكَ، فُوكَ، ذُو مَالٍ».
+    
+        **Af‘āl al-khamsah:** Iaitu «يَفْعَلَانِ، تَفْعَلَانِ، يَفْعَلُونَ، تَفْعَلُونَ، تَفْعَلِينَ».
+    
+      english: |
+        Four types of words are inflected with letters:
+    
+        **The dual:** Such as «الزَّيْدَانِ» and «الزَّيْدَيْنِ».
+    
+        **The sound masculine plural:** Such as «الزَّيْدُونَ» and «الزَّيْدِينَ».
+    
+        **The five nouns:** Namely «أَبُوكَ، أَخُوكَ، حَمُوكَ، فُوكَ، ذُو مَالٍ».
+    
+        **The five verbs:** Namely «يَفْعَلَانِ، تَفْعَلَانِ، يَفْعَلُونَ، تَفْعَلُونَ، تَفْعَلِينَ».
   - id: "tathniyah-irab"
     matn:
       id: "murabat-06"
@@ -314,20 +356,37 @@ proseSections:
           meaning: "dan dijarkan dengan ya"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        يُرْفَعُ الْمُثَنَّى بِالْأَلِفِ، نَحْوُ «جَاءَ الزَّيْدَانِ». فَـ«الزَّيْدَانِ» فَاعِلٌ مَرْفُوعٌ، وَعَلَامَةُ رَفْعِهِ الْأَلِفُ نِيَابَةً عَنِ الضَّمَّةِ.
-        
-        وَيُنْصَبُ بِالْيَاءِ، نَحْوُ «رَأَيْتُ الزَّيْدَيْنِ». فَـ«الزَّيْدَيْنِ» مَفْعُولٌ بِهِ مَنْصُوبٌ، وَعَلَامَةُ نَصْبِهِ الْيَاءُ نِيَابَةً عَنِ الْفَتْحَةِ.
-        
-        وَيُخْفَضُ بِالْيَاءِ، نَحْوُ «مَرَرْتُ بِالزَّيْدَيْنِ». فَـ«الزَّيْدَيْنِ» اسْمٌ مَجْرُورٌ بِالْبَاءِ، وَعَلَامَةُ جَرِّهِ الْيَاءُ نِيَابَةً عَنِ الْكَسْرَةِ.
+        يُرْفَعُ الْمُثَنَّى بِالْأَلِفِ، نَحْوُ «جَاءَ الزَّيْدَانِ».
+    
+        وَيُنْصَبُ بِالْيَاءِ، نَحْوُ «رَأَيْتُ الزَّيْدَيْنِ».
+    
+        وَيُخْفَضُ بِالْيَاءِ، نَحْوُ «مَرَرْتُ بِالزَّيْدَيْنِ».
+    
+        فَالْأَلِفُ نَائِبَةٌ عَنِ الضَّمَّةِ، وَالْيَاءُ فِي النَّصْبِ نَائِبَةٌ عَنِ الْفَتْحَةِ، وَفِي الْخَفْضِ نَائِبَةٌ عَنِ الْكَسْرَةِ.
+    
       malay: |
-        Muthannā mempunyai tanda berikut:
-        
-        - Rafa‘ dengan alif: «جَاءَ الزَّيْدَانِ».
-        - Nasab dengan yā’: «رَأَيْتُ الزَّيْدَيْنِ».
-        - jar dengan yā’: «مَرَرْتُ بِالزَّيْدَيْنِ».
-
+        Muthannā:
+    
+        **Dirafa‘kan dengan alif:** Seperti «جَاءَ الزَّيْدَانِ».
+    
+        **Dinasabkan dengan yā’:** Seperti «رَأَيْتُ الزَّيْدَيْنِ».
+    
+        **Dijarkan dengan yā’:** Seperti «مَرَرْتُ بِالزَّيْدَيْنِ».
+    
+        Alif menggantikan dammah, manakala yā’ menggantikan fathah ketika nasab dan kasrah ketika jar.
+    
+      english: |
+        The dual:
+    
+        **Is put into raf‘ with alif:** As in «جَاءَ الزَّيْدَانِ».
+    
+        **Is put into nasb with yā’:** As in «رَأَيْتُ الزَّيْدَيْنِ».
+    
+        **Is put into jarr with yā’:** As in «مَرَرْتُ بِالزَّيْدَيْنِ».
+    
+        Alif replaces the ḍammah, while yā’ replaces the fatḥah in nasb and the kasrah in jarr.
   - id: "jam-mudhakkar-irab"
     matn:
       id: "murabat-07"
@@ -347,22 +406,37 @@ proseSections:
           meaning: "dan dijarkan dengan ya"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
         يُرْفَعُ جَمْعُ الْمُذَكَّرِ السَّالِمُ بِالْوَاوِ، نَحْوُ «جَاءَ الزَّيْدُونَ».
-        
+    
         وَيُنْصَبُ بِالْيَاءِ، نَحْوُ «رَأَيْتُ الزَّيْدِينَ».
-        
+    
         وَيُخْفَضُ بِالْيَاءِ، نَحْوُ «مَرَرْتُ بِالزَّيْدِينَ».
-        
+    
         فَالْوَاوُ نَائِبَةٌ عَنِ الضَّمَّةِ، وَالْيَاءُ فِي النَّصْبِ نَائِبَةٌ عَنِ الْفَتْحَةِ، وَفِي الْخَفْضِ نَائِبَةٌ عَنِ الْكَسْرَةِ.
+    
       malay: |
         Jamak mudhakkar sālim:
-        
-        - Dirafa‘kan dengan wāw: «جَاءَ الزَّيْدُونَ».
-        - Dinasabkan dengan yā’: «رَأَيْتُ الزَّيْدِينَ».
-        - Dijarkan dengan yā’: «مَرَرْتُ بِالزَّيْدِينَ».
-
+    
+        **Dirafa‘kan dengan wāw:** Seperti «جَاءَ الزَّيْدُونَ».
+    
+        **Dinasabkan dengan yā’:** Seperti «رَأَيْتُ الزَّيْدِينَ».
+    
+        **Dijarkan dengan yā’:** Seperti «مَرَرْتُ بِالزَّيْدِينَ».
+    
+        Wāw menggantikan dammah, manakala yā’ menggantikan fathah ketika nasab dan kasrah ketika jar.
+    
+      english: |
+        The sound masculine plural:
+    
+        **Is put into raf‘ with wāw:** As in «جَاءَ الزَّيْدُونَ».
+    
+        **Is put into nasb with yā’:** As in «رَأَيْتُ الزَّيْدِينَ».
+    
+        **Is put into jarr with yā’:** As in «مَرَرْتُ بِالزَّيْدِينَ».
+    
+        Wāw replaces the ḍammah, while yā’ replaces the fatḥah in nasb and the kasrah in jarr.
   - id: "asma-khamsah-irab"
     matn:
       id: "murabat-08"
@@ -382,22 +456,37 @@ proseSections:
           meaning: "dan dijarkan dengan ya"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
         تُرْفَعُ الْأَسْمَاءُ الْخَمْسَةُ بِالْوَاوِ، نَحْوُ «جَاءَ أَبُوكَ».
-        
+    
         وَتُنْصَبُ بِالْأَلِفِ، نَحْوُ «رَأَيْتُ أَبَاكَ».
-        
+    
         وَتُخْفَضُ بِالْيَاءِ، نَحْوُ «مَرَرْتُ بِأَبِيكَ».
-        
+    
         فَالْوَاوُ نَائِبَةٌ عَنِ الضَّمَّةِ، وَالْأَلِفُ نَائِبَةٌ عَنِ الْفَتْحَةِ، وَالْيَاءُ نَائِبَةٌ عَنِ الْكَسْرَةِ.
+    
       malay: |
         Isim-isim yang lima:
-        
-        - Dirafa‘kan dengan wāw: «جَاءَ أَبُوكَ».
-        - Dinasabkan dengan alif: «رَأَيْتُ أَبَاكَ».
-        - Dijarkan dengan yā’: «مَرَرْتُ بِأَبِيكَ».
-
+    
+        **Dirafa‘kan dengan wāw:** Seperti «جَاءَ أَبُوكَ».
+    
+        **Dinasabkan dengan alif:** Seperti «رَأَيْتُ أَبَاكَ».
+    
+        **Dijarkan dengan yā’:** Seperti «مَرَرْتُ بِأَبِيكَ».
+    
+        Wāw menggantikan dammah, alif menggantikan fathah dan yā’ menggantikan kasrah.
+    
+      english: |
+        The five nouns:
+    
+        **Are put into raf‘ with wāw:** As in «جَاءَ أَبُوكَ».
+    
+        **Are put into nasb with alif:** As in «رَأَيْتُ أَبَاكَ».
+    
+        **Are put into jarr with yā’:** As in «مَرَرْتُ بِأَبِيكَ».
+    
+        Wāw replaces the ḍammah, alif replaces the fatḥah and yā’ replaces the kasrah.
   - id: "afal-khamsah-irab"
     matn:
       id: "murabat-09"
@@ -417,35 +506,37 @@ proseSections:
           meaning: "dan dijazmkan dengan menggugurkan nun tersebut"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        تُرْفَعُ الْأَفْعَالُ الْخَمْسَةُ بِثُبُوتِ النُّونِ، نَحْوُ «الزَّيْدَانِ يَضْرِبَانِ»، وَ«الزَّيْدُونَ يَضْرِبُونَ»، وَ«أَنْتِ تَضْرِبِينَ».
-        
+        تُرْفَعُ الْأَفْعَالُ الْخَمْسَةُ بِثُبُوتِ النُّونِ، نَحْوُ «يَضْرِبَانِ»، وَ«يَضْرِبُونَ»، وَ«تَضْرِبِينَ».
+    
         وَتُنْصَبُ بِحَذْفِ النُّونِ، نَحْوُ «لَنْ يَضْرِبَا»، وَ«لَنْ يَضْرِبُوا»، وَ«لَنْ تَضْرِبِي».
-        
+    
         وَتُجْزَمُ بِحَذْفِ النُّونِ، نَحْوُ «لَمْ يَضْرِبَا»، وَ«لَمْ يَضْرِبُوا»، وَ«لَمْ تَضْرِبِي».
-        
+    
         فَثُبُوتُ النُّونِ نَائِبٌ عَنِ الضَّمَّةِ، وَحَذْفُهَا فِي النَّصْبِ نَائِبٌ عَنِ الْفَتْحَةِ، وَفِي الْجَزْمِ نَائِبٌ عَنِ السُّكُونِ.
+    
       malay: |
         Af‘āl al-khamsah:
-        
-        **Dirafa‘kan dengan kekalnya nūn:**
-        
-        - يَضْرِبَانِ
-        - يَضْرِبُونَ
-        - تَضْرِبِينَ
-        
-        **Dinasabkan dengan pembuangan nūn:**
-        
-        - لَنْ يَضْرِبَا
-        - لَنْ يَضْرِبُوا
-        - لَنْ تَضْرِبِي
-        
-        **Dijazamkan dengan pembuangan nūn:**
-        
-        - لَمْ يَضْرِبَا
-        - لَمْ يَضْرِبُوا
-        - لَمْ تَضْرِبِي
+    
+        **Dirafa‘kan dengan kekalnya nūn:** Seperti «يَضْرِبَانِ», «يَضْرِبُونَ» dan «تَضْرِبِينَ».
+    
+        **Dinasabkan dengan pembuangan nūn:** Seperti «لَنْ يَضْرِبَا», «لَنْ يَضْرِبُوا» dan «لَنْ تَضْرِبِي».
+    
+        **Dijazamkan dengan pembuangan nūn:** Seperti «لَمْ يَضْرِبَا», «لَمْ يَضْرِبُوا» dan «لَمْ تَضْرِبِي».
+    
+        Kekalnya nūn menggantikan dammah. Pembuangannya menggantikan fathah ketika nasab dan sukun ketika jazm.
+    
+      english: |
+        The five verbs:
+    
+        **Are put into raf‘ by retaining the nūn:** As in «يَضْرِبَانِ», «يَضْرِبُونَ» and «تَضْرِبِينَ».
+    
+        **Are put into nasb by deleting the nūn:** As in «لَنْ يَضْرِبَا», «لَنْ يَضْرِبُوا» and «لَنْ تَضْرِبِي».
+    
+        **Are put into jazm by deleting the nūn:** As in «لَمْ يَضْرِبَا», «لَمْ يَضْرِبُوا» and «لَمْ تَضْرِبِي».
+    
+        Retention of the nūn replaces the ḍammah. Its deletion replaces the fatḥah in nasb and the sukūn in jazm.
 ---
 
 ## Sumber projek

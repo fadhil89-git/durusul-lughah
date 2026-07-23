@@ -72,86 +72,72 @@ proseSections:
           meaning: "dan badal"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        لَمَّا فَرَغَ الْمُصَنِّفُ مِنَ الْكَلَامِ عَلَى الْأَفْعَالِ، شَرَعَ فِي ذِكْرِ مَرْفُوعَاتِ الْأَسْمَاءِ.
-        
-        وَالْمَرْفُوعَاتُ مِنَ الْأَسْمَاءِ سَبْعَةٌ:
-        
-        الْأَوَّلُ: الْفَاعِلُ، وَهُوَ الِاسْمُ الْمَرْفُوعُ الَّذِي ذُكِرَ قَبْلَهُ فِعْلُهُ، نَحْوُ «قَامَ زَيْدٌ».
-        
-        الثَّانِي: الْمَفْعُولُ الَّذِي لَمْ يُسَمَّ فَاعِلُهُ، وَيُسَمَّى نَائِبَ الْفَاعِلِ، نَحْوُ «ضُرِبَ زَيْدٌ».
-        
-        الثَّالِثُ وَالرَّابِعُ: الْمُبْتَدَأُ وَخَبَرُهُ، نَحْوُ «زَيْدٌ قَائِمٌ». فَـ«زَيْدٌ» مُبْتَدَأٌ مَرْفُوعٌ، وَ«قَائِمٌ» خَبَرٌ مَرْفُوعٌ.
-        
-        الْخَامِسُ: اسْمُ كَانَ وَأَخَوَاتِهَا، نَحْوُ «كَانَ زَيْدٌ قَائِمًا». فَـ«زَيْدٌ» اسْمُ كَانَ مَرْفُوعٌ.
-        
-        السَّادِسُ: خَبَرُ إِنَّ وَأَخَوَاتِهَا، نَحْوُ «إِنَّ زَيْدًا قَائِمٌ». فَـ«قَائِمٌ» خَبَرُ إِنَّ مَرْفُوعٌ.
-        
-        السَّابِعُ: التَّابِعُ لِلْمَرْفُوعِ. فَإِذَا كَانَ الْمَتْبُوعُ مَرْفُوعًا، كَانَ تَابِعُهُ مَرْفُوعًا.
-        
+        مَرْفُوعَاتُ الْأَسْمَاءِ سَبْعَةٌ:
+    
+        **الْفَاعِلُ:** وَهُوَ الِاسْمُ الْمَرْفُوعُ الَّذِي أُسْنِدَ إِلَيْهِ الْفِعْلُ، نَحْوُ «قَامَ زَيْدٌ».
+    
+        **نَائِبُ الْفَاعِلِ:** وَهُوَ الِاسْمُ الْمَرْفُوعُ الَّذِي يَقُومُ مَقَامَ الْفَاعِلِ بَعْدَ حَذْفِهِ، نَحْوُ «ضُرِبَ زَيْدٌ».
+    
+        **الْمُبْتَدَأُ وَخَبَرُهُ:** نَحْوُ «زَيْدٌ قَائِمٌ»، فَكِلَاهُمَا مَرْفُوعٌ.
+    
+        **اسْمُ كَانَ وَأَخَوَاتِهَا:** نَحْوُ «كَانَ زَيْدٌ قَائِمًا»، فَـ«زَيْدٌ» اسْمُ كَانَ مَرْفُوعٌ.
+    
+        **خَبَرُ إِنَّ وَأَخَوَاتِهَا:** نَحْوُ «إِنَّ زَيْدًا قَائِمٌ»، فَـ«قَائِمٌ» خَبَرُ إِنَّ مَرْفُوعٌ.
+    
+        **التَّابِعُ لِلْمَرْفُوعِ:** فَإِذَا كَانَ الْمَتْبُوعُ مَرْفُوعًا كَانَ تَابِعُهُ مَرْفُوعًا.
+    
         وَالتَّوَابِعُ أَرْبَعَةٌ:
-        
-        الْأَوَّلُ: النَّعْتُ، نَحْوُ «جَاءَ زَيْدٌ الْعَالِمُ».
-        
-        الثَّانِي: الْعَطْفُ، نَحْوُ «جَاءَ زَيْدٌ وَعَمْرٌو».
-        
-        الثَّالِثُ: التَّوْكِيدُ، نَحْوُ «جَاءَ زَيْدٌ نَفْسُهُ».
-        
-        الرَّابِعُ: الْبَدَلُ، نَحْوُ «جَاءَ زَيْدٌ أَخُوكَ».
-        
-        وَسَيَأْتِي بَيَانُ كُلِّ وَاحِدٍ مِنْ هَذِهِ الْمَرْفُوعَاتِ فِي بَابٍ مُسْتَقِلٍّ.
+    
+        - **النَّعْتُ:** نَحْوُ «جَاءَ زَيْدٌ الْعَالِمُ».
+        - **الْعَطْفُ:** نَحْوُ «جَاءَ زَيْدٌ وَعَمْرٌو».
+        - **التَّوْكِيدُ:** نَحْوُ «جَاءَ زَيْدٌ نَفْسُهُ».
+        - **الْبَدَلُ:** نَحْوُ «جَاءَ زَيْدٌ أَخُوكَ».
+    
       malay: |
-        Setelah selesai membincangkan fi‘il, pengarang mula menerangkan isim-isim yang menerima hukum rafa‘.
-        
-        Matan menyebut tujuh kelompok utama.
-        
-        **Pertama: fā‘il.**  
-        Fā‘il ialah isim marfū‘ yang disandarkan kepadanya sesuatu perbuatan. Contohnya:
-        
-        «قَامَ زَيْدٌ»
-        
-        Perkataan «زَيْدٌ» ialah fā‘il kerana dialah pihak yang melakukan perbuatan berdiri.
-        
-        **Kedua: maf‘ul yang tidak disebut pelakunya.**  
-        Istilah ini kini lebih biasa dinamakan **nā’ib al-fā‘il**. Ia ialah isim yang mengambil tempat fā‘il setelah pelaku asal tidak disebut. Contohnya:
-        
-        «ضُرِبَ زَيْدٌ»
-        
-        Maksudnya: “Zaid telah dipukul.” Orang yang memukul tidak disebut, lalu «زَيْدٌ» menjadi nā’ib al-fā‘il dan dihukumkan marfū‘.
-        
-        **Ketiga dan keempat: mubtada’ dan khabar.**  
-        Contohnya:
-        
-        «زَيْدٌ قَائِمٌ»
-        
-        «زَيْدٌ» ialah mubtada’, iaitu perkara yang hendak diterangkan. «قَائِمٌ» ialah khabar yang memberitahu keadaan Zaid. Kedua-duanya marfū‘.
-        
-        **Kelima: isim كان وأخواتها.**  
-        Contohnya:
-        
-        «كَانَ زَيْدٌ قَائِمًا»
-        
-        Apabila kāna masuk pada jumlah ismiyyah, mubtada’ berubah nama menjadi isim kāna dan kekal marfū‘. Khabar pula menjadi mansub.
-        
-        **Keenam: khabar إن وأخواتها.**  
-        Contohnya:
-        
-        «إِنَّ زَيْدًا قَائِمٌ»
-        
-        Apabila inna masuk, mubtada’ menjadi isim inna dan mansub. Khabar kekal marfū‘ serta dinamakan khabar inna.
-        
-        **Ketujuh: perkataan yang mengikuti isim marfū‘.**  
-        Sesuatu tābi‘ mengikuti hukum i‘rab perkataan sebelumnya. Apabila perkataan yang diikutinya marfū‘, tābi‘ itu juga menjadi marfū‘.
-        
-        Tābi‘ terbahagi kepada empat:
-        
-        1. **Na‘at**, iaitu sifat yang menerangkan isim sebelumnya.
-        2. **‘Aṭaf**, iaitu perkataan yang dihubungkan dengan huruf ‘aṭaf.
-        3. **Tawkīd**, iaitu perkataan yang menguatkan maksud sebelumnya.
-        4. **Badal**, iaitu perkataan pengganti yang menjadi maksud utama dalam hukum ayat.
-        
-        Bab ini hanya memberikan gambaran keseluruhan. Setiap kelompok akan diterangkan secara lebih terperinci dalam bab-bab selepas ini.
+        Isim-isim yang marfū‘ terbahagi kepada tujuh:
+    
+        **Fā‘il:** Isim marfū‘ yang disandarkan kepadanya sesuatu perbuatan, seperti «قَامَ زَيْدٌ».
+    
+        **Nā’ib al-fā‘il:** Isim marfū‘ yang mengambil tempat fā‘il setelah fā‘il dibuang, seperti «ضُرِبَ زَيْدٌ».
+    
+        **Mubtada’ dan khabarnya:** Seperti «زَيْدٌ قَائِمٌ». Kedua-duanya marfū‘.
+    
+        **Isim kāna dan saudara-saudaranya:** Seperti «كَانَ زَيْدٌ قَائِمًا». Perkataan «زَيْدٌ» ialah isim kāna yang marfū‘.
+    
+        **Khabar inna dan saudara-saudaranya:** Seperti «إِنَّ زَيْدًا قَائِمٌ». Perkataan «قَائِمٌ» ialah khabar inna yang marfū‘.
+    
+        **Perkataan yang mengikuti isim marfū‘:** Apabila perkataan yang diikuti marfū‘, perkataan yang mengikutinya juga marfū‘.
+    
+        Tawābi‘ terbahagi kepada empat:
+    
+        - **Na‘at:** Seperti «جَاءَ زَيْدٌ الْعَالِمُ».
+        - **‘Aṭaf:** Seperti «جَاءَ زَيْدٌ وَعَمْرٌو».
+        - **Tawkīd:** Seperti «جَاءَ زَيْدٌ نَفْسُهُ».
+        - **Badal:** Seperti «جَاءَ زَيْدٌ أَخُوكَ».
+    
+      english: |
+        The nouns that occur in raf‘ are divided into seven categories:
+    
+        **The subject:** A noun in raf‘ to which the action is attributed, as in «قَامَ زَيْدٌ».
+    
+        **The deputy subject:** A noun in raf‘ that takes the place of the subject after the subject is omitted, as in «ضُرِبَ زَيْدٌ».
+    
+        **The mubtada’ and its predicate:** As in «زَيْدٌ قَائِمٌ». Both are in raf‘.
+    
+        **The noun of kāna and its sisters:** As in «كَانَ زَيْدٌ قَائِمًا». The word «زَيْدٌ» is the noun of kāna and is in raf‘.
+    
+        **The predicate of inna and its sisters:** As in «إِنَّ زَيْدًا قَائِمٌ». The word «قَائِمٌ» is the predicate of inna and is in raf‘.
+    
+        **A word following something in raf‘:** When the word being followed is in raf‘, its dependent is also in raf‘.
+    
+        The dependents are four:
+    
+        - **Adjective:** As in «جَاءَ زَيْدٌ الْعَالِمُ».
+        - **Conjunction:** As in «جَاءَ زَيْدٌ وَعَمْرٌو».
+        - **Emphasis:** As in «جَاءَ زَيْدٌ نَفْسُهُ».
+        - **Substitute:** As in «جَاءَ زَيْدٌ أَخُوكَ».
 ---
 
 ## Sumber projek

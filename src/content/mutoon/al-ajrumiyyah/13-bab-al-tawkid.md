@@ -48,46 +48,39 @@ proseSections:
           meaning: "dan keadaan ma‘rifahnya"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
         التَّوْكِيدُ مِنَ التَّوَابِعِ، وَفَائِدَتُهُ تَقْوِيَةُ الْكَلَامِ وَرَفْعُ الِاحْتِمَالِ.
-        
-        فَإِذَا قُلْتَ: «جَاءَ زَيْدٌ»، احْتَمَلَ عِنْدَ بَعْضِ السَّامِعِينَ أَنْ يَكُونَ الْمُرَادُ جَاءَ رَسُولُ زَيْدٍ أَوْ كِتَابُهُ.
-        
-        فَإِذَا قُلْتَ: «جَاءَ زَيْدٌ نَفْسُهُ»، ارْتَفَعَ هَذَا الِاحْتِمَالُ، وَدَلَّ الْكَلَامُ عَلَى أَنَّ زَيْدًا بِذَاتِهِ هُوَ الَّذِي جَاءَ.
-        
-        وَإِذَا قُلْتَ: «جَاءَ الْقَوْمُ»، احْتَمَلَ أَنْ يَكُونَ الْمُرَادُ بَعْضَهُمْ.
-        
-        فَإِذَا قُلْتَ: «جَاءَ الْقَوْمُ كُلُّهُمْ»، دَلَّ ذَلِكَ عَلَى مَجِيءِ جَمِيعِهِمْ.
-        
+    
+        فَإِذَا قِيلَ: «جَاءَ زَيْدٌ»، احْتَمَلَ أَنْ يَكُونَ الْمُرَادُ جَاءَ رَسُولُهُ أَوْ مَا يَقُومُ مَقَامَهُ.
+    
+        فَإِذَا قِيلَ: «جَاءَ زَيْدٌ نَفْسُهُ»، دَلَّ الْكَلَامُ عَلَى أَنَّ زَيْدًا بِذَاتِهِ هُوَ الَّذِي جَاءَ.
+    
+        وَإِذَا قِيلَ: «جَاءَ الْقَوْمُ كُلُّهُمْ»، دَلَّ عَلَى مَجِيءِ جَمِيعِهِمْ مِنْ غَيْرِ اسْتِثْنَاءٍ.
+    
         وَيَتْبَعُ التَّوْكِيدُ الْمُؤَكَّدَ فِي الرَّفْعِ وَالنَّصْبِ وَالْخَفْضِ وَالتَّعْرِيفِ.
+    
       malay: |
-        Tawkid termasuk dalam kelompok **tawābi‘**. Fungsinya ialah menguatkan maksud dan menghilangkan kemungkinan yang mungkin difahami daripada sesuatu ayat.
-        
-        Apabila dikatakan:
-        
-        «جَاءَ زَيْدٌ»
-        
-        “Zaid telah datang,” mungkin timbul kemungkinan bahawa yang datang ialah wakil atau utusan Zaid.
-        
-        Apabila ditambah:
-        
-        «جَاءَ زَيْدٌ نَفْسُهُ»
-        
-        maksudnya menjadi tegas bahawa Zaid sendiri yang datang.
-        
-        Begitu juga apabila dikatakan:
-        
-        «جَاءَ الْقَوْمُ»
-        
-        mungkin yang dimaksudkan hanyalah sebahagian daripada kaum itu.
-        
-        Apabila dikatakan:
-        
-        «جَاءَ الْقَوْمُ كُلُّهُمْ»
-        
-        kemungkinan tersebut hilang dan ayat menunjukkan bahawa seluruh kaum itu datang.
-
+        Tawkid termasuk dalam tawābi‘. Fungsinya ialah menguatkan maksud dan menghilangkan kemungkinan makna lain.
+    
+        Apabila dikatakan «جَاءَ زَيْدٌ», mungkin timbul sangkaan bahawa yang datang ialah wakil atau utusannya.
+    
+        Apabila dikatakan «جَاءَ زَيْدٌ نَفْسُهُ», ayat itu menegaskan bahawa Zaid sendiri yang datang.
+    
+        Apabila dikatakan «جَاءَ الْقَوْمُ كُلُّهُمْ», ayat itu menunjukkan bahawa seluruh kaum tersebut datang tanpa pengecualian.
+    
+        Tawkid mengikuti lafaz yang ditegaskan pada rafa‘, naṣab, jar dan keadaan ma‘rifah.
+    
+      english: |
+        Emphasis is one of the grammatical dependents. Its function is to strengthen the statement and remove possible alternative interpretations.
+    
+        When one says «جَاءَ زَيْدٌ», it may be imagined that his representative or messenger came.
+    
+        When one says «جَاءَ زَيْدٌ نَفْسُهُ», the sentence confirms that Zayd himself came.
+    
+        When one says «جَاءَ الْقَوْمُ كُلُّهُمْ», it indicates that the entire group came without exception.
+    
+        The emphatic word follows the word being emphasized in raf‘, nasb, jarr and definiteness.
   - id: "tawkid-words"
     matn:
       id: "tawkid-02"
@@ -131,43 +124,45 @@ proseSections:
           meaning: "dan seluruhnya"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        لِلتَّوْكِيدِ الْمَعْنَوِيِّ أَلْفَاظٌ مَعْلُومَةٌ.
-        
-        فَـ«النَّفْسُ» وَ«الْعَيْنُ» يُؤْتَى بِهِمَا لِتَوْكِيدِ الذَّاتِ، نَحْوُ:
-        
-        «جَاءَ زَيْدٌ نَفْسُهُ».
-        
-        وَ«جَاءَ زَيْدٌ عَيْنُهُ».
-        
-        وَ«كُلٌّ» يُؤْتَى بِهَا لِلدَّلَالَةِ عَلَى شُمُولِ جَمِيعِ أَجْزَاءِ الْمُؤَكَّدِ أَوْ أَفْرَادِهِ، نَحْوُ:
-        
-        «جَاءَ الْقَوْمُ كُلُّهُمْ».
-        
-        وَ«أَجْمَعُ» يُؤْتَى بِهَا لِتَوْكِيدِ الْجَمْعِ وَالِاسْتِغْرَاقِ، نَحْوُ:
-        
-        «جَاءَ الْقَوْمُ أَجْمَعُونَ».
-        
+        لِلتَّوْكِيدِ الْمَعْنَوِيِّ أَلْفَاظٌ مَعْلُومَةٌ، مِنْهَا:
+    
+        **«النَّفْسُ» وَ«الْعَيْنُ»:** لِتَوْكِيدِ الذَّاتِ، نَحْوُ «جَاءَ زَيْدٌ نَفْسُهُ» وَ«جَاءَ زَيْدٌ عَيْنُهُ».
+    
+        **«كُلٌّ»:** لِلدَّلَالَةِ عَلَى شُمُولِ جَمِيعِ أَجْزَاءِ الْمُؤَكَّدِ أَوْ أَفْرَادِهِ، نَحْوُ «جَاءَ الْقَوْمُ كُلُّهُمْ».
+    
+        **«أَجْمَعُ»:** لِتَوْكِيدِ الْجَمْعِ وَالِاسْتِغْرَاقِ، نَحْوُ «جَاءَ الْقَوْمُ أَجْمَعُونَ».
+    
+        وَمِنْ تَوَابِعِ «أَجْمَعَ»: «أَكْتَعُ، وَأَبْتَعُ، وَأَبْصَعُ».
+    
         وَتُضَافُ «النَّفْسُ» وَ«الْعَيْنُ» وَ«كُلٌّ» إِلَى ضَمِيرٍ يُطَابِقُ الْمُؤَكَّدَ.
+    
       malay: |
-        Tawkid ma‘nawi menggunakan lafaz-lafaz tertentu.
-        
-        **النَّفْسُ** dan **الْعَيْنُ** digunakan untuk menegaskan zat atau individu itu sendiri:
-        
-        - «جَاءَ زَيْدٌ نَفْسُهُ»
-        - «جَاءَ زَيْدٌ عَيْنُهُ»
-        
-        **كُلٌّ** digunakan untuk menegaskan keseluruhan:
-        
-        - «جَاءَ الْقَوْمُ كُلُّهُمْ»
-        
-        **أَجْمَعُ** juga menunjukkan bahawa semua yang disebut termasuk dalam hukum tanpa pengecualian:
-        
-        - «جَاءَ الْقَوْمُ أَجْمَعُونَ»
-        
-        Lafaz النَّفْسُ, الْعَيْنُ dan كُلٌّ biasanya disandarkan kepada ḍamīr yang kembali kepada mu’akkad.
-
+        Tawkid ma‘nawi menggunakan lafaz-lafaz tertentu:
+    
+        **«النَّفْسُ» dan «الْعَيْنُ»:** Digunakan untuk menegaskan individu atau zat itu sendiri, seperti «جَاءَ زَيْدٌ نَفْسُهُ» dan «جَاءَ زَيْدٌ عَيْنُهُ».
+    
+        **«كُلٌّ»:** Digunakan untuk menunjukkan keseluruhan bahagian atau semua individu yang termasuk dalam lafaz tersebut, seperti «جَاءَ الْقَوْمُ كُلُّهُمْ».
+    
+        **«أَجْمَعُ»:** Digunakan untuk menegaskan keseluruhan kumpulan, seperti «جَاءَ الْقَوْمُ أَجْمَعُونَ».
+    
+        Antara lafaz yang mengikuti «أَجْمَعُ» ialah «أَكْتَعُ، أَبْتَعُ» dan «أَبْصَعُ».
+    
+        Lafaz «النَّفْسُ», «الْعَيْنُ» dan «كُلٌّ» diiḍāfahkan kepada dhamir yang sesuai dengan lafaz yang ditegaskan.
+    
+      english: |
+        Semantic emphasis uses particular words, including:
+    
+        **«النَّفْسُ» and «الْعَيْنُ»:** They emphasize the individual himself or the thing itself, as in «جَاءَ زَيْدٌ نَفْسُهُ» and «جَاءَ زَيْدٌ عَيْنُهُ».
+    
+        **«كُلٌّ»:** It indicates the inclusion of all parts or all members of the emphasized expression, as in «جَاءَ الْقَوْمُ كُلُّهُمْ».
+    
+        **«أَجْمَعُ»:** It emphasizes total inclusion of a group, as in «جَاءَ الْقَوْمُ أَجْمَعُونَ».
+    
+        Words that may follow «أَجْمَعُ» include «أَكْتَعُ، أَبْتَعُ» and «أَبْصَعُ».
+    
+        The words «النَّفْسُ», «الْعَيْنُ» and «كُلٌّ» are annexed to a pronoun agreeing with the word being emphasized.
   - id: "followers-of-ajma"
     matn:
       id: "tawkid-03"
@@ -187,40 +182,51 @@ proseSections:
           meaning: "dan aku melalui kaum itu kesemuanya"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        تَوَابِعُ «أَجْمَعَ» ثَلَاثَةُ أَلْفَاظٍ:
-        
-        «أَكْتَعُ»، وَ«أَبْتَعُ»، وَ«أَبْصَعُ».
-        
-        وَسُمِّيَتْ تَوَابِعَ «أَجْمَعَ»؛ لِأَنَّهَا لَا تُذْكَرُ غَالِبًا إِلَّا بَعْدَهَا.
-        
-        فَيُقَالُ:
-        
-        «جَاءَ الْقَوْمُ أَجْمَعُونَ أَكْتَعُونَ أَبْتَعُونَ أَبْصَعُونَ».
-        
-        فَـ«أَجْمَعُونَ» تَوْكِيدٌ لِلْقَوْمِ.
-        
-        وَ«أَكْتَعُونَ» تَوْكِيدٌ ثَانٍ.
-        
-        وَ«أَبْتَعُونَ» تَوْكِيدٌ ثَالِثٌ.
-        
-        وَ«أَبْصَعُونَ» تَوْكِيدٌ رَابِعٌ.
-        
-        وَجِيءَ بِهَذِهِ الْأَلْفَاظِ لِزِيَادَةِ التَّوْكِيدِ وَالْمُبَالَغَةِ فِيهِ.
+        فِي «قَامَ زَيْدٌ نَفْسُهُ»:
+    
+        «زَيْدٌ» فَاعِلٌ مَرْفُوعٌ، وَ«نَفْسُهُ» تَوْكِيدٌ مَعْنَوِيٌّ مَرْفُوعٌ، وَهُوَ مُضَافٌ، وَالْهَاءُ مُضَافٌ إِلَيْهِ تَعُودُ إِلَى «زَيْدٍ».
+    
+        وَفِي «رَأَيْتُ الْقَوْمَ كُلَّهُمْ»:
+    
+        «الْقَوْمَ» مَفْعُولٌ بِهِ مَنْصُوبٌ، وَ«كُلَّهُمْ» تَوْكِيدٌ مَعْنَوِيٌّ مَنْصُوبٌ.
+    
+        وَفِي «مَرَرْتُ بِالْقَوْمِ أَجْمَعِينَ»:
+    
+        «الْقَوْمِ» اسْمٌ مَجْرُورٌ، وَ«أَجْمَعِينَ» تَوْكِيدٌ مَعْنَوِيٌّ مَجْرُورٌ.
+    
+        وَتَوَابِعُ «أَجْمَعَ» هِيَ «أَكْتَعُ، وَأَبْتَعُ، وَأَبْصَعُ»، وَتُذْكَرُ لِزِيَادَةِ التَّوْكِيدِ، نَحْوُ «جَاءَ الْقَوْمُ أَجْمَعُونَ أَكْتَعُونَ أَبْتَعُونَ أَبْصَعُونَ».
+    
       malay: |
-        Tiga lafaz ini dinamakan **tawābi‘ أَجْمَعَ** kerana lazimnya ia didatangkan selepas أَجْمَعَ.
-        
-        Contoh:
-        
-        «جَاءَ الْقَوْمُ أَجْمَعُونَ أَكْتَعُونَ أَبْتَعُونَ أَبْصَعُونَ»
-        
-        - «أَجْمَعُونَ» ialah tawkid pertama.
-        - «أَكْتَعُونَ» ialah tawkid kedua.
-        - «أَبْتَعُونَ» ialah tawkid ketiga.
-        - «أَبْصَعُونَ» ialah tawkid keempat.
-        
-        Lafaz-lafaz tambahan ini digunakan untuk menambahkan kekuatan penegasan.
+        Dalam «قَامَ زَيْدٌ نَفْسُهُ»:
+    
+        «زَيْدٌ» ialah fā‘il marfū‘. «نَفْسُهُ» ialah tawkid ma‘nawi marfū‘. Lafaz itu menjadi muḍāf dan hā’ menjadi muḍāf ilayh yang kembali kepada Zaid.
+    
+        Dalam «رَأَيْتُ الْقَوْمَ كُلَّهُمْ»:
+    
+        «الْقَوْمَ» ialah maf‘ul bih manṣūb, manakala «كُلَّهُمْ» ialah tawkid ma‘nawi manṣūb.
+    
+        Dalam «مَرَرْتُ بِالْقَوْمِ أَجْمَعِينَ»:
+    
+        «الْقَوْمِ» ialah isim majrūr, manakala «أَجْمَعِينَ» ialah tawkid ma‘nawi majrūr.
+    
+        Lafaz yang mengikuti «أَجْمَعَ» ialah «أَكْتَعُ، أَبْتَعُ» dan «أَبْصَعُ». Lafaz-lafaz ini digunakan untuk menambahkan kekuatan penegasan, seperti «جَاءَ الْقَوْمُ أَجْمَعُونَ أَكْتَعُونَ أَبْتَعُونَ أَبْصَعُونَ».
+    
+      english: |
+        In «قَامَ زَيْدٌ نَفْسُهُ»:
+    
+        «زَيْدٌ» is the subject in raf‘. «نَفْسُهُ» is semantic emphasis in raf‘. It is annexed to the pronoun hā’, which refers back to Zayd.
+    
+        In «رَأَيْتُ الْقَوْمَ كُلَّهُمْ»:
+    
+        «الْقَوْمَ» is the direct object in nasb, while «كُلَّهُمْ» is semantic emphasis in nasb.
+    
+        In «مَرَرْتُ بِالْقَوْمِ أَجْمَعِينَ»:
+    
+        «الْقَوْمِ» is a noun in jarr, while «أَجْمَعِينَ» is semantic emphasis in jarr.
+    
+        The words following «أَجْمَعَ» are «أَكْتَعُ، أَبْتَعُ» and «أَبْصَعُ». They are used to increase the strength of emphasis, as in «جَاءَ الْقَوْمُ أَجْمَعُونَ أَكْتَعُونَ أَبْتَعُونَ أَبْصَعُونَ».
 ---
 
 ## Sumber projek

@@ -69,29 +69,33 @@ proseSections:
           meaning: "dan wajahnya lebih elok daripada wajahmu"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        التَّمْيِيزُ اسْمٌ مَنْصُوبٌ يُؤْتَى بِهِ لِإِزَالَةِ إِبْهَامٍ فِي كَلِمَةٍ أَوْ فِي نِسْبَةٍ.
-        
-        فَالْإِبْهَامُ قَدْ يَكُونُ فِي ذَاتٍ مَذْكُورَةٍ قَبْلَ التَّمْيِيزِ، كَالْعَدَدِ وَالْمِقْدَارِ.
-        
-        وَقَدْ يَكُونُ فِي النِّسْبَةِ الْمَفْهُومَةِ مِنَ الْجُمْلَةِ، فَلَا يُعْرَفُ مِنْ أَيِّ جِهَةٍ وَقَعَ الْمَعْنَى حَتَّى يُذْكَرَ التَّمْيِيزُ.
-        
-        وَنَاصِبُ التَّمْيِيزِ قَدْ يَكُونُ فِعْلًا، أَوْ عَدَدًا، أَوْ مِقْدَارًا، أَوْ مَا يُشْبِهُ ذَلِكَ.
+        التَّمْيِيزُ اسْمٌ مَنْصُوبٌ يُذْكَرُ لِإِزَالَةِ إِبْهَامٍ فِي ذَاتٍ أَوْ فِي نِسْبَةٍ.
+    
+        فَإِبْهَامُ الذَّاتِ يَكُونُ فِي لَفْظٍ سَابِقٍ، كَالْعَدَدِ وَالْمِقْدَارِ، نَحْوُ «اشْتَرَيْتُ عِشْرِينَ غُلَامًا»، فَلَفْظُ «غُلَامًا» يُبَيِّنُ الْمَعْدُودَ.
+    
+        وَإِبْهَامُ النِّسْبَةِ يَكُونُ فِي الْمَعْنَى الْمَفْهُومِ مِنَ الْجُمْلَةِ، نَحْوُ «تَصَبَّبَ زَيْدٌ عَرَقًا»، فَلَفْظُ «عَرَقًا» يُبَيِّنُ جِهَةَ التَّصَبُّبِ.
+    
+        وَمِنْ أَمْثِلَتِهِ أَيْضًا: «تَفَقَّأَ بَكْرٌ شَحْمًا»، وَ«طَابَ مُحَمَّدٌ نَفْسًا»، وَ«زَيْدٌ أَكْرَمُ مِنْكَ أَبًا»، وَ«أَجْمَلُ مِنْكَ وَجْهًا».
+    
       malay: |
-        Tamyiz digunakan untuk menghilangkan kesamaran sama ada pada satu kalimah atau pada hubungan makna dalam seluruh ayat.
-        
-        Kesamaran pada kalimah biasanya berlaku selepas:
-        
-        - bilangan,
-        - sukatan,
-        - timbangan,
-        - ukuran.
-        
-        Kesamaran pada nisbah pula berlaku apabila makna ayat telah difahami secara umum, tetapi sudut yang dimaksudkan belum jelas.
-        
-        ‘Amil yang menasabkan tamyiz boleh berupa fi‘il, bilangan, ukuran atau lafaz lain yang membawa makna tersebut.
-
+        Tamyīz ialah isim manṣūb yang disebut untuk menghilangkan kesamaran pada suatu zat atau pada hubungan makna dalam ayat.
+    
+        Kesamaran zat terdapat pada lafaz sebelumnya, seperti bilangan atau ukuran. Dalam «اشْتَرَيْتُ عِشْرِينَ غُلَامًا», lafaz «غُلَامًا» menjelaskan benda yang dibilang.
+    
+        Kesamaran nisbah pula terdapat pada makna keseluruhan ayat. Dalam «تَصَبَّبَ زَيْدٌ عَرَقًا», lafaz «عَرَقًا» menjelaskan bahawa sesuatu yang mengalir daripada Zaid ialah peluh.
+    
+        Contoh lain ialah «تَفَقَّأَ بَكْرٌ شَحْمًا», «طَابَ مُحَمَّدٌ نَفْسًا», «زَيْدٌ أَكْرَمُ مِنْكَ أَبًا» dan «أَجْمَلُ مِنْكَ وَجْهًا».
+    
+      english: |
+        Specification is a noun in nasb mentioned to remove ambiguity concerning an entity or a relationship expressed by a sentence.
+    
+        Ambiguity concerning an entity occurs in a preceding expression such as a number or measurement. In «اشْتَرَيْتُ عِشْرِينَ غُلَامًا», «غُلَامًا» identifies what is being counted.
+    
+        Ambiguity concerning a relationship occurs in the overall meaning of a sentence. In «تَصَبَّبَ زَيْدٌ عَرَقًا», «عَرَقًا» explains that what flowed from Zayd was sweat.
+    
+        Other examples include «تَفَقَّأَ بَكْرٌ شَحْمًا», «طَابَ مُحَمَّدٌ نَفْسًا», «زَيْدٌ أَكْرَمُ مِنْكَ أَبًا» and «أَجْمَلُ مِنْكَ وَجْهًا».
   - id: "tamyiz-nisbah-sweat"
     matn:
       id: "tamyiz-02"
@@ -105,32 +109,33 @@ proseSections:
           meaning: "melainkan dalam bentuk nakirah"
           type: "keyword"
     sharh:
-      title: "Tamyiz yang menjelaskan nisbah"
+      title: "Ringkasan Syarah"
       arabic: |
-        فِي قَوْلِكَ:
-        
-        «تَصَبَّبَ زَيْدٌ عَرَقًا»
-        
-        «تَصَبَّبَ» فِعْلٌ مَاضٍ.
-        
-        وَ«زَيْدٌ» فَاعِلٌ مَرْفُوعٌ بِالضَّمَّةِ.
-        
-        وَ«عَرَقًا» تَمْيِيزٌ مَنْصُوبٌ بِالْفَتْحَةِ، وَنَاصِبُهُ الْفِعْلُ «تَصَبَّبَ».
-        
-        وَقَبْلَ ذِكْرِ «عَرَقًا» كَانَتْ نِسْبَةُ التَّصَبُّبِ إِلَى زَيْدٍ مُحْتَمِلَةً؛ لِأَنَّهُ لَمْ يُعْرَفْ مَا الَّذِي تَصَبَّبَ مِنْهُ.
-        
-        فَلَمَّا ذُكِرَ «عَرَقًا» زَالَ الْإِبْهَامُ، وَعُلِمَ أَنَّ الْمُتَصَبِّبَ هُوَ الْعَرَقُ.
+        الْأَصْلُ فِي التَّمْيِيزِ أَنْ يَكُونَ نَكِرَةً؛ لِأَنَّهُ يُؤْتَى بِهِ لِتَفْسِيرِ الْمُبْهَمِ، لَا لِتَعْيِينِ شَيْءٍ مَعْرُوفٍ.
+    
+        فَفِي «تَصَبَّبَ زَيْدٌ عَرَقًا»:
+    
+        «تَصَبَّبَ» فِعْلٌ مَاضٍ، وَ«زَيْدٌ» فَاعِلٌ مَرْفُوعٌ، وَ«عَرَقًا» تَمْيِيزٌ نَكِرَةٌ مَنْصُوبٌ بِالْفَتْحَةِ.
+    
+        وَقَبْلَ ذِكْرِ التَّمْيِيزِ لَمْ يُعْرَفْ مَا الَّذِي تَصَبَّبَ مِنْ زَيْدٍ، فَلَمَّا ذُكِرَ «عَرَقًا» زَالَ الْإِبْهَامُ.
+    
       malay: |
-        I‘rab ayat:
-        
-        - «تَصَبَّبَ» ialah fi‘il māḍī.
-        - «زَيْدٌ» ialah fā‘il marfū‘.
-        - «عَرَقًا» ialah tamyiz mansub dengan fatḥah.
-        
-        Sebelum lafaz «عَرَقًا» disebut, ayat hanya memberitahu bahawa sesuatu mengalir daripada Zaid, tetapi belum menjelaskan apakah yang mengalir.
-        
-        Lafaz «عَرَقًا» menghilangkan kesamaran itu dan menjelaskan bahawa yang mengalir ialah peluh.
-
+        Hukum asal tamyīz ialah berbentuk nakirah kerana fungsinya adalah menerangkan sesuatu yang masih samar, bukan menentukan sesuatu yang telah diketahui.
+    
+        Dalam «تَصَبَّبَ زَيْدٌ عَرَقًا»:
+    
+        «تَصَبَّبَ» ialah fi‘il māḍī, «زَيْدٌ» ialah fā‘il marfū‘ dan «عَرَقًا» ialah tamyīz nakirah yang manṣūb dengan fathah.
+    
+        Sebelum «عَرَقًا» disebut, belum diketahui apakah yang mengalir daripada Zaid. Setelah lafaz itu disebut, kesamaran tersebut hilang.
+    
+      english: |
+        The basic rule is that a specification is indefinite because it explains something ambiguous rather than identifying something already known.
+    
+        In «تَصَبَّبَ زَيْدٌ عَرَقًا»:
+    
+        «تَصَبَّبَ» is a past verb, «زَيْدٌ» is its subject in raf‘, and «عَرَقًا» is an indefinite specification in nasb with fatḥah.
+    
+        Before «عَرَقًا» was mentioned, it was unclear what flowed from Zayd. The specification removes that ambiguity.
   - id: "tamyiz-nisbah-examples"
     matn:
       id: "tamyiz-03"
@@ -144,35 +149,33 @@ proseSections:
           meaning: "melainkan selepas sempurnanya ayat"
           type: "keyword"
     sharh:
-      title: "Menjelaskan sudut berlakunya perbuatan"
+      title: "Ringkasan Syarah"
       arabic: |
-        فِي قَوْلِكَ:
-        
-        «تَفَقَّأَ بَكْرٌ شَحْمًا»
-        
-        «شَحْمًا» تَمْيِيزٌ مَنْصُوبٌ يُبَيِّنُ أَنَّ التَّفَقُّؤَ كَانَ مِنْ جِهَةِ الشَّحْمِ.
-        
-        وَفِي قَوْلِكَ:
-        
-        «طَابَ مُحَمَّدٌ نَفْسًا»
-        
-        «نَفْسًا» تَمْيِيزٌ مَنْصُوبٌ يُبَيِّنُ أَنَّ الطِّيبَ الْمَنْسُوبَ إِلَى مُحَمَّدٍ كَانَ مِنْ جِهَةِ نَفْسِهِ.
-        
-        وَكُلٌّ مِنْ «شَحْمًا» وَ«نَفْسًا» مُفَسِّرٌ لِمَا انْبَهَمَ مِنَ النِّسْبَةِ، وَنَاصِبُهُ الْفِعْلُ الَّذِي قَبْلَهُ.
+        يَأْتِي التَّمْيِيزُ بَعْدَ تَمَامِ أَصْلِ الْكَلَامِ؛ لِأَنَّهُ فَضْلَةٌ تُزِيلُ إِبْهَامًا بَقِيَ بَعْدَ اكْتِمَالِ الْجُمْلَةِ.
+    
+        فَفِي «تَفَقَّأَ بَكْرٌ شَحْمًا»، تَمَّ أَصْلُ الْكَلَامِ بِالْفِعْلِ وَالْفَاعِلِ، ثُمَّ جَاءَ «شَحْمًا» تَمْيِيزًا مَنْصُوبًا يُبَيِّنُ أَنَّ التَّفَقُّؤَ كَانَ مِنْ جِهَةِ الشَّحْمِ.
+    
+        وَفِي «طَابَ مُحَمَّدٌ نَفْسًا»، يَكُونُ «نَفْسًا» تَمْيِيزًا مَنْصُوبًا يُبَيِّنُ أَنَّ الطِّيبَ كَانَ مِنْ جِهَةِ النَّفْسِ.
+    
+        وَنَاصِبُ التَّمْيِيزِ فِي هَذِهِ الْأَمْثِلَةِ هُوَ الْفِعْلُ الَّذِي قَبْلَهُ.
+    
       malay: |
-        Dalam:
-        
-        «تَفَقَّأَ بَكْرٌ شَحْمًا»
-        
-        lafaz «شَحْمًا» menjelaskan bahawa perkara yang melimpah atau banyak pada Bakr ialah lemak.
-        
-        Dalam:
-        
-        «طَابَ مُحَمَّدٌ نَفْسًا»
-        
-        lafaz «نَفْسًا» menjelaskan bahawa kebaikan Muhammad yang dimaksudkan ialah dari sudut jiwanya.
-        
-        Kedua-duanya ialah tamyiz nisbah yang mansub oleh fi‘il sebelumnya.
+        Tamyīz hadir selepas sempurnanya struktur asas ayat kerana ia merupakan unsur tambahan yang menghilangkan kesamaran yang masih berbaki.
+    
+        Dalam «تَفَقَّأَ بَكْرٌ شَحْمًا», struktur asas ayat telah sempurna dengan fi‘il dan fā‘il. Kemudian «شَحْمًا» hadir sebagai tamyīz manṣūb yang menjelaskan bahawa perkara yang banyak pada Bakr ialah lemak.
+    
+        Dalam «طَابَ مُحَمَّدٌ نَفْسًا», «نَفْسًا» ialah tamyīz manṣūb yang menjelaskan bahawa kebaikan Muhammad adalah dari sudut jiwanya.
+    
+        ‘Āmil yang menasabkan tamyīz dalam contoh-contoh ini ialah fi‘il sebelumnya.
+    
+      english: |
+        A specification comes after the essential sentence is complete because it is an additional element removing an ambiguity that remains.
+    
+        In «تَفَقَّأَ بَكْرٌ شَحْمًا», the basic sentence is complete with its verb and subject. «شَحْمًا» then comes as a specification in nasb, explaining that the abundance associated with Bakr concerns fat.
+    
+        In «طَابَ مُحَمَّدٌ نَفْسًا», «نَفْسًا» is a specification in nasb explaining that Muhammad's goodness concerns his inner self.
+    
+        In these examples, the preceding verb governs the specification in nasb.
 ---
 
 ## Sumber projek

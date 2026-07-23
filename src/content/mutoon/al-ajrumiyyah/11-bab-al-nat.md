@@ -51,41 +51,39 @@ proseSections:
           meaning: "dan keadaan nakirahnya"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        النَّعْتُ مِنَ التَّوَابِعِ، وَهُوَ الِاسْمُ الَّذِي يُذْكَرُ بَعْدَ اسْمٍ قَبْلَهُ لِيُبَيِّنَ صِفَةً مِنْ صِفَاتِهِ.
-        
-        وَيُسَمَّى الِاسْمُ الْأَوَّلُ مَنْعُوتًا، وَيُسَمَّى الِاسْمُ الثَّانِي نَعْتًا.
-        
-        وَالنَّعْتُ يَتْبَعُ الْمَنْعُوتَ فِي الْإِعْرَابِ، فَيَكُونُ مَرْفُوعًا إِذَا كَانَ الْمَنْعُوتُ مَرْفُوعًا، وَمَنْصُوبًا إِذَا كَانَ الْمَنْعُوتُ مَنْصُوبًا، وَمَجْرُورًا إِذَا كَانَ الْمَنْعُوتُ مَجْرُورًا.
-        
-        وَيَتْبَعُهُ أَيْضًا فِي التَّعْرِيفِ وَالتَّنْكِيرِ، فَإِنْ كَانَ الْمَنْعُوتُ مَعْرِفَةً كَانَ النَّعْتُ مَعْرِفَةً، وَإِنْ كَانَ نَكِرَةً كَانَ النَّعْتُ نَكِرَةً.
-        
-        وَالْمُرَادُ هُنَا النَّعْتُ الْحَقِيقِيُّ الَّذِي يَدُلُّ عَلَى صِفَةٍ فِي الْمَنْعُوتِ نَفْسِهِ.
+        النَّعْتُ مِنَ التَّوَابِعِ، وَهُوَ الِاسْمُ الَّذِي يُذْكَرُ بَعْدَ اسْمٍ لِيَدُلَّ عَلَى صِفَةٍ فِيهِ.
+    
+        وَيُسَمَّى الِاسْمُ الْأَوَّلُ **مَنْعُوتًا**، وَيُسَمَّى الثَّانِي **نَعْتًا**.
+    
+        وَيَتْبَعُ النَّعْتُ الْمَنْعُوتَ فِي الرَّفْعِ وَالنَّصْبِ وَالْخَفْضِ، وَفِي التَّعْرِيفِ وَالتَّنْكِيرِ.
+    
+        فَإِنْ كَانَ الْمَنْعُوتُ مَرْفُوعًا كَانَ نَعْتُهُ مَرْفُوعًا، وَإِنْ كَانَ مَنْصُوبًا كَانَ نَعْتُهُ مَنْصُوبًا، وَإِنْ كَانَ مَجْرُورًا كَانَ نَعْتُهُ مَجْرُورًا.
+    
+        وَإِنْ كَانَ الْمَنْعُوتُ مَعْرِفَةً كَانَ نَعْتُهُ مَعْرِفَةً، وَإِنْ كَانَ نَكِرَةً كَانَ نَعْتُهُ نَكِرَةً.
+    
       malay: |
-        Na‘at termasuk dalam kelompok **tawābi‘**, iaitu kalimah-kalimah yang mengikuti kalimah sebelumnya pada hukum i‘rab.
-        
-        Isim yang diterangkan dinamakan **man‘ūt**, manakala perkataan yang menerangkan sifatnya dinamakan **na‘at**.
-        
-        Contohnya:
-        
-        «جَاءَ زَيْدٌ الْعَاقِلُ»
-        
-        “Zaid yang berakal telah datang.”
-        
-        - «زَيْدٌ» ialah man‘ūt.
-        - «الْعَاقِلُ» ialah na‘at.
-        
-        Na‘at mengikuti man‘ūt dalam:
-        
-        - rafa‘;
-        - naṣab;
-        - jar;
-        - ma‘rifah;
-        - nakirah.
-        
-        Oleh sebab «زَيْدٌ» marfū‘ dan ma‘rifah, «الْعَاقِلُ» juga marfū‘ dan ma‘rifah.
-
+        Na‘at termasuk dalam tawābi‘. Ia ialah isim yang disebut selepas isim lain untuk menerangkan salah satu sifatnya.
+    
+        Isim pertama dinamakan **man‘ūt**, manakala isim kedua dinamakan **na‘at**.
+    
+        Na‘at mengikuti man‘ūt pada hukum rafa‘, naṣab dan jar, serta pada keadaan ma‘rifah dan nakirah.
+    
+        Apabila man‘ūt marfū‘, na‘atnya juga marfū‘. Apabila man‘ūt manṣūb, na‘atnya juga manṣūb. Apabila man‘ūt majrūr, na‘atnya juga majrūr.
+    
+        Begitu juga, na‘at mesti mengikuti man‘ūt pada keadaan ma‘rifah atau nakirah.
+    
+      english: |
+        The adjective is one of the grammatical dependents. It is a noun mentioned after another noun to describe one of its qualities.
+    
+        The first noun is called the **described noun**, while the second is called the **adjective**.
+    
+        The adjective follows the described noun in raf‘, nasb and jarr, as well as in definiteness and indefiniteness.
+    
+        When the described noun is in raf‘, its adjective is also in raf‘. When it is in nasb, its adjective is in nasb. When it is in jarr, its adjective is in jarr.
+    
+        The adjective also agrees with the described noun in being definite or indefinite.
   - id: "nat-in-raf"
     matn:
       id: "nat-02"
@@ -105,32 +103,39 @@ proseSections:
           meaning: "dan aku melalui Zaid yang berakal"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        فِي قَوْلِكَ: «قَامَ زَيْدٌ الْعَاقِلُ»:
-        
-        «قَامَ» فِعْلٌ مَاضٍ مَبْنِيٌّ عَلَى الْفَتْحِ.
-        
-        وَ«زَيْدٌ» فَاعِلٌ مَرْفُوعٌ بِالضَّمَّةِ الظَّاهِرَةِ، وَهُوَ الْمَنْعُوتُ.
-        
-        وَ«الْعَاقِلُ» نَعْتٌ لِـ«زَيْدٍ» مَرْفُوعٌ بِالضَّمَّةِ الظَّاهِرَةِ.
-        
-        وَقَدْ تَبِعَ النَّعْتُ مَنْعُوتَهُ فِي الرَّفْعِ وَالتَّعْرِيفِ؛ لِأَنَّ كُلًّا مِنْهُمَا مَرْفُوعٌ مَعْرِفَةٌ.
+        فِي «قَامَ زَيْدٌ الْعَاقِلُ»:
+    
+        «قَامَ» فِعْلٌ مَاضٍ، وَ«زَيْدٌ» فَاعِلٌ مَرْفُوعٌ وَهُوَ الْمَنْعُوتُ، وَ«الْعَاقِلُ» نَعْتٌ مَرْفُوعٌ.
+    
+        وَقَدْ تَبِعَ النَّعْتُ مَنْعُوتَهُ فِي الرَّفْعِ وَالتَّعْرِيفِ؛ فَكِلَاهُمَا مَرْفُوعٌ مَعْرِفَةٌ.
+    
+        وَفِي «رَأَيْتُ زَيْدًا الْعَاقِلَ»، يَكُونُ «زَيْدًا» مَفْعُولًا بِهِ مَنْصُوبًا، وَ«الْعَاقِلَ» نَعْتًا مَنْصُوبًا.
+    
+        وَفِي «مَرَرْتُ بِزَيْدٍ الْعَاقِلِ»، يَكُونُ «زَيْدٍ» مَجْرُورًا بِالْبَاءِ، وَ«الْعَاقِلِ» نَعْتًا مَجْرُورًا.
+    
       malay: |
-        I‘rab ayat:
-        
-        - «قَامَ» ialah fi‘il māḍī.
-        - «زَيْدٌ» ialah fā‘il marfū‘ dan menjadi man‘ūt.
-        - «الْعَاقِلُ» ialah na‘at marfū‘.
-        
-        Na‘at mengikuti man‘ūt dalam dua perkara yang disebut di sini:
-        
-        **Rafa‘:**  
-        Kedua-duanya berakhir dengan dammah.
-        
-        **Ma‘rifah:**  
-        «زَيْدٌ» ialah nama khas, maka ia ma‘rifah. «الْعَاقِلُ» juga ma‘rifah kerana dimasuki alif dan lām.
-
+        Dalam «قَامَ زَيْدٌ الْعَاقِلُ»:
+    
+        «قَامَ» ialah fi‘il māḍī. «زَيْدٌ» ialah fā‘il marfū‘ dan merupakan man‘ūt. «الْعَاقِلُ» ialah na‘at marfū‘.
+    
+        Na‘at itu mengikuti man‘ūtnya pada rafa‘ dan ma‘rifah. Kedua-duanya marfū‘ dan ma‘rifah.
+    
+        Dalam «رَأَيْتُ زَيْدًا الْعَاقِلَ», «زَيْدًا» ialah maf‘ul bih manṣūb dan «الْعَاقِلَ» ialah na‘at manṣūb.
+    
+        Dalam «مَرَرْتُ بِزَيْدٍ الْعَاقِلِ», «زَيْدٍ» majrūr dengan bā’, manakala «الْعَاقِلِ» ialah na‘at majrūr.
+    
+      english: |
+        In «قَامَ زَيْدٌ الْعَاقِلُ»:
+    
+        «قَامَ» is a past verb. «زَيْدٌ» is the subject in raf‘ and the described noun, while «الْعَاقِلُ» is its adjective in raf‘.
+    
+        The adjective follows its described noun in raf‘ and definiteness. Both are definite and in raf‘.
+    
+        In «رَأَيْتُ زَيْدًا الْعَاقِلَ», «زَيْدًا» is the direct object in nasb and «الْعَاقِلَ» is its adjective in nasb.
+    
+        In «مَرَرْتُ بِزَيْدٍ الْعَاقِلِ», «زَيْدٍ» is in jarr because of the preposition bā’, while «الْعَاقِلِ» is its adjective in jarr.
   - id: "nat-in-nasb"
     matn:
       id: "nat-03"
@@ -174,30 +179,51 @@ proseSections:
           meaning: "kepada salah satu daripada empat jenis tersebut"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        فِي «رَأَيْتُ زَيْدًا الْعَاقِلَ»:
-        
-        «رَأَيْتُ» فِعْلٌ وَفَاعِلٌ.
-        
-        وَ«زَيْدًا» مَفْعُولٌ بِهِ مَنْصُوبٌ بِالْفَتْحَةِ الظَّاهِرَةِ، وَهُوَ الْمَنْعُوتُ.
-        
-        وَ«الْعَاقِلَ» نَعْتٌ لِـ«زَيْدٍ» مَنْصُوبٌ بِالْفَتْحَةِ الظَّاهِرَةِ.
-        
-        فَقَدْ تَبِعَ النَّعْتُ مَنْعُوتَهُ فِي النَّصْبِ وَالتَّعْرِيفِ.
+        الْمَعْرِفَةُ خَمْسَةُ أَنْوَاعٍ:
+    
+        **الضَّمِيرُ:** نَحْوُ «أَنَا» وَ«أَنْتَ».
+    
+        **الْعَلَمُ:** نَحْوُ «زَيْدٌ» وَ«مَكَّةُ».
+    
+        **الِاسْمُ الْمُبْهَمُ:** وَيَدْخُلُ فِيهِ اسْمُ الْإِشَارَةِ، نَحْوُ «هَذَا» وَ«هَذِهِ» وَ«هَؤُلَاءِ».
+    
+        **مَا دَخَلَتْ عَلَيْهِ الْأَلِفُ وَاللَّامُ:** نَحْوُ «الرَّجُلُ» وَ«الْغُلَامُ».
+    
+        **مَا أُضِيفَ إِلَى وَاحِدٍ مِنْ هَذِهِ الْأَنْوَاعِ:** نَحْوُ «غُلَامُ زَيْدٍ» وَ«كِتَابُهُ».
+    
+        فَإِذَا كَانَ الْمَنْعُوتُ وَاحِدًا مِنْ هَذِهِ الْمَعَارِفِ، وَجَبَ أَنْ يَكُونَ نَعْتُهُ مَعْرِفَةً.
+    
       malay: |
-        Dalam ayat ini:
-        
-        - «زَيْدًا» ialah maf‘ul bih mansub.
-        - «الْعَاقِلَ» ialah na‘at bagi «زَيْدًا».
-        
-        Oleh sebab man‘ūtnya mansub, na‘at juga mansub.
-        
-        Kedua-duanya juga ma‘rifah:
-        
-        - «زَيْدًا» ma‘rifah kerana nama khas.
-        - «الْعَاقِلَ» ma‘rifah kerana mempunyai alif dan lām.
-
+        Isim ma‘rifah terbahagi kepada lima jenis:
+    
+        **Dhamir:** Seperti «أَنَا» dan «أَنْتَ».
+    
+        **Isim ‘alam:** Seperti «زَيْدٌ» dan «مَكَّةُ».
+    
+        **Isim mubham:** Termasuk isim isyarah seperti «هَذَا», «هَذِهِ» dan «هَؤُلَاءِ».
+    
+        **Isim yang dimasuki alif dan lām:** Seperti «الرَّجُلُ» dan «الْغُلَامُ».
+    
+        **Isim yang diiḍāfahkan kepada salah satu jenis ma‘rifah tersebut:** Seperti «غُلَامُ زَيْدٍ» dan «كِتَابُهُ».
+    
+        Apabila man‘ūt ialah isim ma‘rifah, na‘atnya juga hendaklah berbentuk ma‘rifah.
+    
+      english: |
+        Definite nouns are divided into five types:
+    
+        **Pronouns:** Such as «أَنَا» and «أَنْتَ».
+    
+        **Proper nouns:** Such as «زَيْدٌ» and «مَكَّةُ».
+    
+        **Indeterminate demonstrative expressions:** Including demonstrative pronouns such as «هَذَا», «هَذِهِ» and «هَؤُلَاءِ».
+    
+        **A noun containing alif and lām:** Such as «الرَّجُلُ» and «الْغُلَامُ».
+    
+        **A noun annexed to one of these definite types:** Such as «غُلَامُ زَيْدٍ» and «كِتَابُهُ».
+    
+        When the described noun is definite, its adjective must also be definite.
   - id: "nat-in-khafd"
     matn:
       id: "nat-04"
@@ -220,28 +246,33 @@ proseSections:
           meaning: "satu individu tertentu berbanding yang lain"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        فِي «مَرَرْتُ بِزَيْدٍ الْعَاقِلِ»:
-        
-        «مَرَرْتُ» فِعْلٌ وَفَاعِلٌ.
-        
-        وَالْبَاءُ حَرْفُ جَرٍّ.
-        
-        وَ«زَيْدٍ» اسْمٌ مَجْرُورٌ بِالْبَاءِ، وَعَلَامَةُ جَرِّهِ الْكَسْرَةُ الظَّاهِرَةُ، وَهُوَ الْمَنْعُوتُ.
-        
-        وَ«الْعَاقِلِ» نَعْتٌ لِـ«زَيْدٍ» مَجْرُورٌ بِالْكَسْرَةِ الظَّاهِرَةِ.
-        
-        فَقَدْ تَبِعَهُ فِي الْخَفْضِ وَالتَّعْرِيفِ.
+        النَّكِرَةُ هِيَ كُلُّ اسْمٍ شَائِعٍ فِي جِنْسِهِ، لَا يَخْتَصُّ بِفَرْدٍ مُعَيَّنٍ.
+    
+        فَلَفْظُ «رَجُلٌ» يَصْدُقُ عَلَى كُلِّ فَرْدٍ مِنْ أَفْرَادِ جِنْسِ الرِّجَالِ، وَلَا يَدُلُّ بِنَفْسِهِ عَلَى رَجُلٍ مُعَيَّنٍ.
+    
+        وَكَذَلِكَ «فَرَسٌ» يَصْدُقُ عَلَى كُلِّ فَرَسٍ مِنْ غَيْرِ تَعْيِينٍ.
+    
+        فَإِذَا كَانَ الْمَنْعُوتُ نَكِرَةً، وَجَبَ أَنْ يَكُونَ نَعْتُهُ نَكِرَةً، نَحْوُ «جَاءَ رَجُلٌ عَاقِلٌ».
+    
       malay: |
-        Dalam ayat ini, bā’ menyebabkan «زَيْدٍ» menjadi majrur.
-        
-        Oleh sebab «زَيْدٍ» ialah man‘ūt yang majrur, na‘at selepasnya turut menjadi majrur:
-        
-        «الْعَاقِلِ»
-        
-        Na‘at tidak menerima kesan bā’ secara langsung. Sebaliknya, ia menjadi majrur kerana mengikuti man‘ūtnya.
-
+        Isim nakirah ialah setiap isim yang umum dalam jenisnya dan tidak menunjukkan individu tertentu.
+    
+        Lafaz «رَجُلٌ» boleh digunakan kepada mana-mana individu dalam jenis lelaki dan tidak menentukan seorang lelaki tertentu.
+    
+        Begitu juga «فَرَسٌ» boleh digunakan kepada mana-mana kuda tanpa menentukan kuda tertentu.
+    
+        Apabila man‘ūt berbentuk nakirah, na‘atnya juga hendaklah berbentuk nakirah, seperti «جَاءَ رَجُلٌ عَاقِلٌ».
+    
+      english: |
+        An indefinite noun is any noun that is common to its entire class and does not refer to one particular individual.
+    
+        The word «رَجُلٌ» may refer to any member of the class of men and does not by itself identify a particular man.
+    
+        Likewise, «فَرَسٌ» may refer to any horse without specifying a particular one.
+    
+        When the described noun is indefinite, its adjective must also be indefinite, as in «جَاءَ رَجُلٌ عَاقِلٌ».
   - id: "nat-with-nakirah"
     matn:
       id: "nat-05"
@@ -267,39 +298,51 @@ proseSections:
           meaning: "dan kuda itu"
           type: "keyword"
     sharh:
-      title: "Syarah"
+      title: "Ringkasan Syarah"
       arabic: |
-        إِذَا كَانَ الْمَنْعُوتُ نَكِرَةً وَجَبَ أَنْ يَكُونَ النَّعْتُ نَكِرَةً.
-        
-        فَفِي «جَاءَ رَجُلٌ عَاقِلٌ»:
-        
-        «رَجُلٌ» فَاعِلٌ مَرْفُوعٌ نَكِرَةٌ، وَ«عَاقِلٌ» نَعْتٌ مَرْفُوعٌ نَكِرَةٌ.
-        
-        وَفِي «رَأَيْتُ رَجُلًا عَاقِلًا»:
-        
-        «رَجُلًا» مَفْعُولٌ بِهِ مَنْصُوبٌ نَكِرَةٌ، وَ«عَاقِلًا» نَعْتٌ مَنْصُوبٌ نَكِرَةٌ.
-        
-        وَفِي «مَرَرْتُ بِرَجُلٍ عَاقِلٍ»:
-        
-        «رَجُلٍ» اسْمٌ مَجْرُورٌ نَكِرَةٌ، وَ«عَاقِلٍ» نَعْتٌ مَجْرُورٌ نَكِرَةٌ.
-        
-        فَقَدْ تَبِعَ النَّعْتُ مَنْعُوتَهُ فِي الْإِعْرَابِ وَالتَّنْكِيرِ.
+        مِنْ عَلَامَاتِ النَّكِرَةِ أَنْ يَصْلُحَ دُخُولُ الْأَلِفِ وَاللَّامِ عَلَيْهَا.
+    
+        فَيُقَالُ فِي «رَجُلٌ»: «الرَّجُلُ»، وَفِي «فَرَسٌ»: «الْفَرَسُ».
+    
+        وَإِذَا كَانَ الْمَنْعُوتُ نَكِرَةً، تَبِعَهُ نَعْتُهُ فِي التَّنْكِيرِ وَالْإِعْرَابِ.
+    
+        فَيُقَالُ:
+    
+        - «جَاءَ رَجُلٌ عَاقِلٌ».
+        - «رَأَيْتُ رَجُلًا عَاقِلًا».
+        - «مَرَرْتُ بِرَجُلٍ عَاقِلٍ».
+    
+        فَالنَّعْتُ فِي هَذِهِ الْأَمْثِلَةِ تَبِعَ مَنْعُوتَهُ فِي الرَّفْعِ وَالنَّصْبِ وَالْجَرِّ، وَفِي التَّنْكِيرِ.
+    
       malay: |
-        Apabila man‘ūt ialah nakirah, na‘at juga perlu berbentuk nakirah.
-        
-        Perhatikan bahawa kedua-duanya tidak mempunyai alif dan lām:
-        
-        - «رَجُلٌ عَاقِلٌ»
-        - «رَجُلًا عَاقِلًا»
-        - «رَجُلٍ عَاقِلٍ»
-        
-        Perubahan baris menunjukkan hukum i‘rab:
-        
-        - dammah ketika rafa‘;
-        - fathah ketika naṣab;
-        - kasrah ketika jar.
-        
-        Ketiadaan alif dan lām menunjukkan bahawa kedua-duanya nakirah.
+        Antara cara mudah mengenal isim nakirah ialah isim itu boleh dimasuki alif dan lām.
+    
+        «رَجُلٌ» boleh menjadi «الرَّجُلُ», manakala «فَرَسٌ» boleh menjadi «الْفَرَسُ».
+    
+        Apabila man‘ūt nakirah, na‘at mengikutinya pada keadaan nakirah dan hukum i‘rab.
+    
+        Contohnya:
+    
+        - «جَاءَ رَجُلٌ عَاقِلٌ».
+        - «رَأَيْتُ رَجُلًا عَاقِلًا».
+        - «مَرَرْتُ بِرَجُلٍ عَاقِلٍ».
+    
+        Dalam contoh-contoh tersebut, na‘at mengikuti man‘ūt pada rafa‘, naṣab dan jar, serta pada keadaan nakirah.
+    
+      english: |
+        A practical sign of an indefinite noun is that alif and lām may be added to it.
+    
+        Thus, «رَجُلٌ» may become «الرَّجُلُ», while «فَرَسٌ» may become «الْفَرَسُ».
+    
+        When the described noun is indefinite, its adjective follows it in indefiniteness and grammatical state.
+    
+        Examples include:
+    
+        - «جَاءَ رَجُلٌ عَاقِلٌ».
+        - «رَأَيْتُ رَجُلًا عَاقِلًا».
+        - «مَرَرْتُ بِرَجُلٍ عَاقِلٍ».
+    
+        In these examples, the adjective follows its described noun in raf‘, nasb and jarr, as well as in indefiniteness.
 ---
 
 ## Sumber projek

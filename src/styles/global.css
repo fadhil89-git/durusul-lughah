@@ -104,6 +104,182 @@ html:not([lang="ar"]) [data-i18n].arabic {
   z-index: 1;
 }
 
+.durusul-book-accordion {
+  background: theme("colors.panel");
+  border: 1px solid theme("colors.line");
+  border-radius: 1rem;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.04);
+  overflow: hidden;
+}
+
+.durusul-book-accordion summary {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  list-style: none;
+  padding: 1.1rem 1.25rem;
+}
+
+.durusul-book-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.durusul-book-accordion summary::after {
+  color: theme("colors.accent");
+  content: "−";
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.durusul-book-accordion:not([open]) summary::after {
+  content: "+";
+}
+
+.durusul-book-kicker,
+.durusul-book-count,
+.durusul-chapter-number {
+  color: theme("colors.muted");
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.durusul-book-title {
+  color: theme("colors.ink");
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 850;
+  line-height: 1.25;
+  margin-top: 0.15rem;
+}
+
+.durusul-book-count {
+  letter-spacing: 0;
+  text-transform: none;
+  white-space: nowrap;
+}
+
+.durusul-chapter-grid {
+  border-top: 1px solid theme("colors.line");
+  display: grid;
+  gap: 0;
+}
+
+.durusul-chapter-item {
+  align-items: stretch;
+  border-top: 1px solid color-mix(in srgb, theme("colors.line") 70%, transparent);
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  min-width: 0;
+}
+
+.durusul-chapter-item:first-child {
+  border-top: 0;
+}
+
+.durusul-read-check,
+.durusul-article-read > span:first-child {
+  align-items: center;
+  background: theme("colors.paper");
+  border: 1px solid theme("colors.line");
+  border-radius: 0.45rem;
+  color: transparent;
+  display: inline-flex;
+  font-size: 1rem;
+  font-weight: 900;
+  height: 1.85rem;
+  justify-content: center;
+  width: 1.85rem;
+}
+
+.durusul-read-check {
+  align-self: start;
+  cursor: pointer;
+  margin: 1rem 0 1rem 1rem;
+}
+
+.durusul-chapter-link {
+  display: grid;
+  gap: 0.35rem;
+  min-width: 0;
+  padding: 0.95rem 1rem 1rem 0.75rem;
+}
+
+.durusul-chapter-title {
+  color: theme("colors.ink");
+  display: grid;
+  gap: 0.15rem;
+  font-size: 0.95rem;
+  font-weight: 750;
+  line-height: 1.4;
+}
+
+.durusul-chapter-title .arabic {
+  color: theme("colors.accent");
+  font-size: 1.18rem;
+  line-height: 1.55;
+  text-align: left;
+}
+
+.durusul-chapter-item:hover {
+  background: theme("colors.accent-soft");
+}
+
+.durusul-chapter-item.is-read .durusul-read-check,
+.durusul-article-read.is-read > span:first-child {
+  background: theme("colors.accent");
+  border-color: theme("colors.accent");
+  color: white;
+}
+
+.durusul-chapter-item.is-read .durusul-chapter-title,
+.durusul-chapter-item.is-read .durusul-chapter-title .arabic {
+  color: theme("colors.muted");
+}
+
+.durusul-article-read {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  color: theme("colors.accent");
+  display: inline-flex;
+  font-size: 0.94rem;
+  font-weight: 850;
+  gap: 0.55rem;
+  padding: 0.2rem 0;
+}
+
+.durusul-article-read:hover {
+  color: color-mix(in srgb, theme("colors.accent") 82%, theme("colors.ink"));
+}
+
+.durusul-article-read:hover > span:first-child {
+  border-color: color-mix(in srgb, theme("colors.accent") 42%, theme("colors.line"));
+  box-shadow: 0 0 0 0.18rem theme("colors.accent-soft");
+}
+
+@media (min-width: 768px) {
+  .durusul-chapter-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .durusul-chapter-item {
+    border-right: 1px solid color-mix(in srgb, theme("colors.line") 70%, transparent);
+  }
+
+  .durusul-chapter-item:nth-child(3n) {
+    border-right: 0;
+  }
+
+  .durusul-chapter-item:nth-child(-n + 3) {
+    border-top: 0;
+  }
+}
+
 .lesson-prose {
   color: theme("colors.ink");
   font-size: 1.125rem;
@@ -740,11 +916,34 @@ html:not([lang="ar"]) [data-i18n].arabic {
 }
 
 .ajrumiyyah-button-row {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 0.6rem;
   justify-content: flex-start;
   width: 100%;
+}
+
+.ajrumiyyah-native-panel {
+  width: 100%;
+}
+
+.ajrumiyyah-native-panel summary::-webkit-details-marker {
+  display: none;
+}
+
+.ajrumiyyah-native-panel summary::marker {
+  content: "";
+}
+
+.ajrumiyyah-native-panel[open] .ajrumiyyah-translation-summary {
+  background: theme("colors.accent");
+  border-color: theme("colors.accent");
+  color: white;
+}
+
+.ajrumiyyah-native-panel[open] .ajrumiyyah-sharh-summary {
+  background: #ea580c;
+  border-color: #ea580c;
+  color: white;
 }
 
 .ajrumiyyah-translation-summary,
@@ -846,13 +1045,19 @@ html:not([lang="ar"]) [data-i18n].arabic {
 }
 
 .ajrumiyyah-lang-tabs button {
+  align-items: center;
   background: theme("colors.panel");
   border: 1px solid theme("colors.line");
   border-radius: 999px;
   color: theme("colors.muted");
-  font-size: 0.78rem;
+  display: inline-flex;
+  font-size: 1rem;
   font-weight: 800;
-  padding: 0.32rem 0.62rem;
+  height: 2.05rem;
+  justify-content: center;
+  line-height: 1;
+  padding: 0;
+  width: 2.25rem;
 }
 
 .ajrumiyyah-lang-tabs button[data-sharh-lang="ar"].is-active {
@@ -1562,34 +1767,36 @@ html:not([lang="ar"]) [data-i18n].arabic {
   bottom: 0;
   box-shadow: 0 -0.75rem 2rem rgb(15 23 42 / 0.08);
   display: grid;
-  gap: 0.8rem;
+  gap: 0.55rem;
   left: 50%;
-  max-width: 112rem;
-  padding: 1rem;
+  max-width: 72rem;
+  padding: 0.72rem 0.82rem;
   position: fixed;
   transform: translateX(-50%);
-  width: min(calc(100% - 4rem), 112rem);
+  width: min(calc(100% - 2rem), 72rem);
   z-index: 60;
 }
 
 .ajrumiyyah-audio-main {
   align-items: center;
   display: grid;
-  gap: 1rem;
+  gap: 0.8rem;
   grid-template-columns: auto minmax(0, 1fr);
 }
 
 .ajrumiyyah-audio-play {
   align-items: center;
   background: theme("colors.accent");
+  box-shadow: 0 0.35rem 1rem rgb(15 118 110 / 0.18);
   border-radius: 999px;
   color: white;
   display: inline-flex;
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-weight: 900;
-  height: 3.15rem;
+  height: 3.25rem;
   justify-content: center;
-  width: 3.15rem;
+  margin-block: -0.18rem;
+  width: 3.25rem;
 }
 
 .ajrumiyyah-audio-meta {
@@ -1598,10 +1805,10 @@ html:not([lang="ar"]) [data-i18n].arabic {
 
 .ajrumiyyah-audio-label {
   color: theme("colors.ink");
-  font-size: 1rem;
+  font-size: 0.92rem;
   font-weight: 850;
   line-height: 1.35;
-  margin: 0 0 0.25rem;
+  margin: 0 0 0.18rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1611,10 +1818,10 @@ html:not([lang="ar"]) [data-i18n].arabic {
   align-items: center;
   color: theme("colors.muted");
   display: grid;
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   font-weight: 750;
-  gap: 0.75rem;
-  grid-template-columns: 3.2rem minmax(0, 1fr) 3.2rem;
+  gap: 0.55rem;
+  grid-template-columns: 2.75rem minmax(0, 1fr) 2.75rem;
 }
 
 .ajrumiyyah-audio-progress-row input {
@@ -1626,20 +1833,21 @@ html:not([lang="ar"]) [data-i18n].arabic {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 0.5rem;
   justify-content: space-between;
 }
 
 .ajrumiyyah-audio-controls button,
-.ajrumiyyah-audio-controls select {
+.ajrumiyyah-rate-control {
   background: theme("colors.panel");
   border: 1px solid theme("colors.line");
   border-radius: 999px;
   color: theme("colors.accent");
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   font-weight: 800;
-  min-height: 2.45rem;
-  padding: 0.45rem 0.9rem;
+  min-height: 2.1rem;
+  min-width: 4rem;
+  padding: 0.35rem 0.75rem;
 }
 
 .ajrumiyyah-repeat-control {
@@ -1649,41 +1857,34 @@ html:not([lang="ar"]) [data-i18n].arabic {
   border-radius: 999px;
   color: theme("colors.accent");
   display: inline-flex;
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   font-weight: 900;
-  gap: 0.45rem;
-  min-height: 2.45rem;
-  padding: 0.45rem 0.9rem;
+  gap: 0.38rem;
+  min-height: 2.1rem;
+  min-width: 4rem;
+  padding: 0.35rem 0.75rem;
 }
 
 .ajrumiyyah-repeat-control > span {
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 .ajrumiyyah-repeat-control > span:last-child {
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   min-width: 1.15rem;
   text-align: center;
 }
 
 .ajrumiyyah-audio-controls button.is-active,
-.ajrumiyyah-repeat-control.is-active {
+.ajrumiyyah-repeat-control.is-active,
+.ajrumiyyah-rate-control:active {
   background: theme("colors.accent");
   border-color: theme("colors.accent");
   color: white;
 }
 
-.ajrumiyyah-audio-controls label {
-  align-items: center;
-  color: theme("colors.muted");
-  display: inline-flex;
-  font-size: 0.9rem;
-  font-weight: 800;
-  gap: 0.35rem;
-}
-
 body:has(.ajrumiyyah-audio-player) {
-  padding-bottom: 10rem;
+  padding-bottom: 8.4rem;
 }
 
 @media (max-width: 640px) {
@@ -1701,8 +1902,8 @@ body:has(.ajrumiyyah-audio-player) {
 
   .ajrumiyyah-audio-player {
     border-radius: 0.9rem 0.9rem 0 0;
-    gap: 0.55rem;
-    padding: 0.65rem;
+    gap: 0.45rem;
+    padding: 0.58rem;
     width: calc(100% - 1rem);
   }
 
@@ -1715,6 +1916,6 @@ body:has(.ajrumiyyah-audio-player) {
   }
 
   body:has(.ajrumiyyah-audio-player) {
-    padding-bottom: 10rem;
+    padding-bottom: 9rem;
   }
 }

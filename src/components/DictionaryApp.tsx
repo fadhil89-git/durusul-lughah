@@ -35,6 +35,7 @@ const copy = {
     languageLabel: "English",
     book: "Buku",
     wordsInChapter: "Kalimah dalam bab ini",
+    syarahChapter: "Syarah",
     backToTop: "Atas",
     examples: ["بيت", "rumah", "بيوت", "مسجد"],
   },
@@ -59,6 +60,7 @@ const copy = {
     languageLabel: "Bahasa Melayu",
     book: "Book",
     wordsInChapter: "Words in this chapter",
+    syarahChapter: "Commentary",
     backToTop: "Top",
     examples: ["بيت", "house", "بيوت", "mosque"],
   },
@@ -90,7 +92,9 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const q = params.get("q") ?? "";
-    const bab = params.get("bab") ?? "";
+    const rawBab = params.get("bab") ?? "";
+    const rawBook = params.get("buku") ?? "";
+    const bab = rawBook && rawBab && !rawBab.includes("|") ? `Buku ${rawBook}|${rawBab}` : rawBab;
     const lang = params.get("lang") === "en" ? "en" : "ms";
     setLanguage(lang);
     if (q) { setQuery(q); setDebounced(q); }
@@ -124,11 +128,19 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
   useEffect(() => {
     const params = new URLSearchParams();
     if (debounced.trim()) params.set("q", debounced.trim());
-    if (babKey) params.set("bab", babKey);
+    if (babKey) {
+      const chapter = chapters.find((item) => item.babKey === babKey);
+      const bookNumber = chapter?.buku.match(/\d+/)?.[0];
+      const chapterNumber = babKey.split("|")[1];
+      if (bookNumber && chapterNumber) {
+        params.set("buku", bookNumber);
+        params.set("bab", chapterNumber);
+      } else params.set("bab", babKey);
+    }
     if (language === "en") params.set("lang", "en");
     const qs = params.toString();
     window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
-  }, [debounced, babKey, language]);
+  }, [chapters, debounced, babKey, language]);
 
   const fullResults = useMemo(() => {
     if (!debounced.trim()) return babKey ? entries.filter((e) => e.babKey === babKey) : [];
@@ -243,6 +255,19 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
   const hasQuery = Boolean(debounced.trim());
   const babSelected = Boolean(babKey);
+  const selectedChapterSyarahHref = useMemo(() => {
+    if (!selectedChapter) return "";
+    const bookNumber = selectedChapter.buku.match(/\d+/)?.[0];
+    const chapterNumber = selectedChapter.babKey.split("|")[1];
+    return bookNumber && chapterNumber ? `/durusul-lughah/buku-${bookNumber}/bab-${chapterNumber}` : "";
+  }, [selectedChapter]);
+  const selectedChapterSyarahLabel = useMemo(() => {
+    if (!selectedChapter) return "";
+    const bookNumber = selectedChapter.buku.match(/\d+/)?.[0];
+    const chapterNumber = selectedChapter.babKey.split("|")[1];
+    if (!bookNumber || !chapterNumber) return selectedChapter.label;
+    return language === "ms" ? `Bab ${chapterNumber}, Buku ${bookNumber}` : `Chapter ${chapterNumber}, Book ${bookNumber}`;
+  }, [language, selectedChapter]);
 
   return (
     <div>
@@ -400,9 +425,16 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
 
           {selectedChapter && chapterEntries.length > 0 && (
             <div className="mt-5 rounded-2xl border border-line bg-panel p-4 shadow-sm">
-              <div className="mb-2 flex items-center justify-between gap-3">
-                <div className="text-xs font-semibold uppercase tracking-[0.08em] text-muted">{t.wordsInChapter}</div>
-                <div className="text-xs text-muted">{selectedChapter.label}</div>
+              <div className="mb-2 flex flex-wrap items-center justify-between gap-3">
+                <div>
+                  <div className="text-xs font-semibold uppercase tracking-[0.08em] text-muted">{t.wordsInChapter}</div>
+                  <div className="mt-1 text-xs text-muted">{selectedChapter.label}</div>
+                </div>
+                {selectedChapterSyarahHref && (
+                  <a href={selectedChapterSyarahHref} className="rounded-full border border-line bg-paper px-3 py-1.5 text-xs font-semibold text-accent hover:bg-accent-soft">
+                    {t.syarahChapter} {selectedChapterSyarahLabel}
+                  </a>
+                )}
               </div>
               <div className="scroll-cue rounded-xl bg-paper/70">
                 <div className="suggest-scroll flex max-h-40 flex-wrap gap-2 overflow-auto p-2 pr-3">
