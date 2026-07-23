@@ -129,7 +129,7 @@ function extractToc(markdown: string): LessonTocItem[] {
     .map((match) => {
       const rawTitle = plainInline(match[2]);
       return {
-        id: headingToId(rawTitle),
+        id: headingToId(match[2]),
         title: cleanTopicTitle(rawTitle),
         level: 2 as const,
       };

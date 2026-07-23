@@ -209,54 +209,60 @@ function renderArabic(text: string, words: ProseWord[] = []) {
 
               <div class="ajrumiyyah-action-row" data-ajrumiyyah-panels>
                 <div class="ajrumiyyah-button-row">
-                  <details class="ajrumiyyah-native-panel" data-native-panel="translation">
-                    <summary class="ajrumiyyah-translation-summary">
-                      Terjemahan
-                    </summary>
-                    <div class="ajrumiyyah-translation-panel ajrumiyyah-panel" data-panel="translation">
-                      <p>{section.matn.translation}</p>
-                    </div>
-                  </details>
-                  <details class="ajrumiyyah-native-panel" data-native-panel="sharh">
-                    <summary class="ajrumiyyah-sharh-summary">
-                      Syarah
-                    </summary>
-                    <div class="ajrumiyyah-sharh-box ajrumiyyah-panel" data-panel="sharh" data-sharh>
-                      <div class="ajrumiyyah-sharh-content">
-                        <div class="ajrumiyyah-sharh-head">
-                          <div class="ajrumiyyah-lang-tabs" role="tablist" aria-label="Bahasa syarah">
-                            <button type="button" class="is-active" data-sharh-lang="ar" aria-label="Syarah Arab">🇸🇦</button>
-                            <button type="button" data-sharh-lang="ms" aria-label="Syarah Melayu">🇲🇾</button>
-                            {section.sharh.english && (
-                              <button type="button" data-sharh-lang="en" aria-label="English sharh">🇬🇧</button>
-                            )}
-                          </div>
-                          <div class="ajrumiyyah-sharh-size" aria-label="Kawalan saiz syarah">
-                            <button type="button" data-sharh-size="smaller" aria-label="Kecilkan teks syarah">−</button>
-                            <span>Syarah</span>
-                            <button type="button" data-sharh-size="larger" aria-label="Besarkan teks syarah">+</button>
-                          </div>
+                  <button
+                    type="button"
+                    class="ajrumiyyah-translation-summary"
+                    data-panel-toggle="translation"
+                    aria-expanded="false"
+                  >
+                    Terjemahan
+                  </button>
+                  <button
+                    type="button"
+                    class="ajrumiyyah-sharh-summary"
+                    data-panel-toggle="sharh"
+                    aria-expanded="false"
+                  >
+                    Syarah
+                  </button>
+                  <div class="ajrumiyyah-translation-panel ajrumiyyah-panel hidden" data-panel="translation">
+                    <p>{section.matn.translation}</p>
+                  </div>
+                  <div class="ajrumiyyah-sharh-box ajrumiyyah-panel hidden" data-panel="sharh" data-sharh>
+                    <div class="ajrumiyyah-sharh-content">
+                      <div class="ajrumiyyah-sharh-head">
+                        <div class="ajrumiyyah-lang-tabs" role="tablist" aria-label="Bahasa syarah">
+                          <button type="button" class="is-active" data-sharh-lang="ar" aria-label="Syarah Arab">🇸🇦</button>
+                          <button type="button" data-sharh-lang="ms" aria-label="Syarah Melayu">🇲🇾</button>
+                          {section.sharh.english && (
+                            <button type="button" data-sharh-lang="en" aria-label="English sharh">🇬🇧</button>
+                          )}
                         </div>
-                        <div class="arabic ajrumiyyah-sharh-panel" dir="rtl" data-sharh-panel="ar">
-                          {section.sharh.arabic.split("\n\n").map((paragraph) => (
-                            <p set:html={renderInlineMarkdown(paragraph)} />
-                          ))}
+                        <div class="ajrumiyyah-sharh-size" aria-label="Kawalan saiz syarah">
+                          <button type="button" data-sharh-size="smaller" aria-label="Kecilkan teks syarah">−</button>
+                          <span>Syarah</span>
+                          <button type="button" data-sharh-size="larger" aria-label="Besarkan teks syarah">+</button>
                         </div>
-                        <div class="ajrumiyyah-sharh-panel hidden" data-sharh-panel="ms">
-                          {section.sharh.malay.split("\n\n").map((paragraph) => (
-                            <p set:html={renderInlineMarkdown(paragraph)} />
-                          ))}
-                        </div>
-                        {section.sharh.english && (
-                          <div class="ajrumiyyah-sharh-panel hidden" data-sharh-panel="en">
-                            {section.sharh.english.split("\n\n").map((paragraph) => (
-                              <p set:html={renderInlineMarkdown(paragraph)} />
-                            ))}
-                          </div>
-                        )}
                       </div>
+                      <div class="arabic ajrumiyyah-sharh-panel" dir="rtl" data-sharh-panel="ar">
+                        {section.sharh.arabic.split("\n\n").map((paragraph) => (
+                          <p set:html={renderInlineMarkdown(paragraph)} />
+                        ))}
+                      </div>
+                      <div class="ajrumiyyah-sharh-panel hidden" data-sharh-panel="ms">
+                        {section.sharh.malay.split("\n\n").map((paragraph) => (
+                          <p set:html={renderInlineMarkdown(paragraph)} />
+                        ))}
+                      </div>
+                      {section.sharh.english && (
+                        <div class="ajrumiyyah-sharh-panel hidden" data-sharh-panel="en">
+                          {section.sharh.english.split("\n\n").map((paragraph) => (
+                            <p set:html={renderInlineMarkdown(paragraph)} />
+                          ))}
+                        </div>
+                      )}
                     </div>
-                  </details>
+                  </div>
                 </div>
               </div>
             </div>

@@ -1,12 +1,12 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import type { KeyboardEvent as ReactKeyboardEvent } from "react";
-import Fuse from "fuse.js";
+import { Component, useCallback, useEffect, useMemo, useRef, useState } from "react";
+import type { KeyboardEvent as ReactKeyboardEvent, ReactNode } from "react";
 import type { DictionaryEntry } from "../lib/parseDictionary.ts";
 import { buildSearchIndex, searchDictionary, suggest } from "../lib/searchDictionary.ts";
 import DictionaryCard, { type UiLanguage } from "./DictionaryCard.tsx";
 
 type ChapterOption = { babKey: string; label: string; buku: string; count: number };
 type Props = { entries: DictionaryEntry[]; chapters: ChapterOption[]; entryCount: number };
+type DictionaryPayload = Props;
 
 const INITIAL_LIMIT = 30;
 const PAGE = 30;
@@ -66,8 +66,71 @@ const copy = {
   },
 } as const;
 
-export default function DictionaryApp({ entries, chapters, entryCount }: Props) {
-  const index = useMemo(() => buildSearchIndex(entries, Fuse as never), [entries]);
+type ErrorBoundaryProps = { children: ReactNode };
+type ErrorBoundaryState = { error: Error | null };
+
+class DictionaryErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
+  state: ErrorBoundaryState = { error: null };
+
+  static getDerivedStateFromError(error: Error) {
+    return { error };
+  }
+
+  render() {
+    if (this.state.error) {
+      return (
+        <div className="mx-auto max-w-3xl px-4 py-16">
+          <div className="rounded-2xl border border-line bg-panel p-6 text-center shadow-sm">
+            <p className="text-lg font-semibold text-ink">Kamus tidak dapat dimuat.</p>
+            <p className="mt-2 text-sm text-muted">{this.state.error.message}</p>
+          </div>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
+
+export default function DictionaryApp(props: Props) {
+  return (
+    <DictionaryErrorBoundary>
+      <DictionaryAppInner {...props} />
+    </DictionaryErrorBoundary>
+  );
+}
+
+function DictionaryAppInner(props: Partial<Props>) {
+  const [payload, setPayload] = useState<DictionaryPayload | null>(() => {
+    if (props.entries && props.chapters && typeof props.entryCount === "number") {
+      return { entries: props.entries, chapters: props.chapters, entryCount: props.entryCount };
+    }
+    return null;
+  });
+  const [loadError, setLoadError] = useState("");
+
+  useEffect(() => {
+    if (payload) return;
+    let cancelled = false;
+    fetch("/kamus-data.json")
+      .then((response) => {
+        if (!response.ok) throw new Error(`Data kamus gagal dimuat (${response.status})`);
+        return response.json() as Promise<DictionaryPayload>;
+      })
+      .then((data) => {
+        if (!cancelled) setPayload(data);
+      })
+      .catch((error: unknown) => {
+        if (!cancelled) setLoadError(error instanceof Error ? error.message : "Data kamus gagal dimuat.");
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [payload]);
+
+  const entries = payload?.entries ?? [];
+  const chapters = payload?.chapters ?? [];
+  const entryCount = payload?.entryCount ?? 0;
+  const index = useMemo(() => buildSearchIndex(entries), [entries]);
   const [language, setLanguage] = useState<UiLanguage>("ms");
   const [query, setQuery] = useState("");
   const [debounced, setDebounced] = useState("");
@@ -268,6 +331,14 @@ export default function DictionaryApp({ entries, chapters, entryCount }: Props) 
     if (!bookNumber || !chapterNumber) return selectedChapter.label;
     return language === "ms" ? `Bab ${chapterNumber}, Buku ${bookNumber}` : `Chapter ${chapterNumber}, Book ${bookNumber}`;
   }, [language, selectedChapter]);
+
+  if (!payload) {
+    return (
+      <div className="mx-auto max-w-3xl px-4 py-16 text-center text-muted">
+        {loadError || "Memuat Kamus Buku Bahasa Arab Madinah..."}
+      </div>
+    );
+  }
 
   return (
     <div>

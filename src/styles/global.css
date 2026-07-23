@@ -905,8 +905,10 @@ html:not([lang="ar"]) [data-i18n].arabic {
   direction: rtl;
   display: grid;
   gap: 0.65rem;
-  justify-items: start;
+  justify-items: stretch;
   margin-top: 0.7rem;
+  min-width: 0;
+  width: 100%;
 }
 
 .ajrumiyyah-root {
@@ -916,10 +918,14 @@ html:not([lang="ar"]) [data-i18n].arabic {
 }
 
 .ajrumiyyah-button-row {
+  direction: ltr;
   display: grid;
-  grid-template-columns: max-content max-content;
+  grid-template-columns: minmax(0, 1fr) max-content max-content;
   gap: 0.6rem;
-  justify-content: flex-start;
+  justify-content: stretch;
+  justify-self: stretch;
+  max-width: 100%;
+  min-width: 0;
   width: 100%;
 }
 
@@ -930,6 +936,15 @@ html:not([lang="ar"]) [data-i18n].arabic {
 .ajrumiyyah-native-panel .ajrumiyyah-panel {
   grid-column: 1 / -1;
   grid-row: 2;
+  justify-self: stretch;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.ajrumiyyah-button-row > .ajrumiyyah-panel {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  justify-self: stretch;
 }
 
 .ajrumiyyah-native-panel .ajrumiyyah-translation-summary,
@@ -939,11 +954,26 @@ html:not([lang="ar"]) [data-i18n].arabic {
   justify-self: start;
 }
 
+.ajrumiyyah-button-row > .ajrumiyyah-translation-summary,
+.ajrumiyyah-button-row > .ajrumiyyah-sharh-summary {
+  align-self: start;
+  grid-row: 1;
+  justify-self: start;
+}
+
 .ajrumiyyah-native-panel:first-child .ajrumiyyah-translation-summary {
-  grid-column: 1;
+  grid-column: 3;
+}
+
+.ajrumiyyah-button-row > .ajrumiyyah-translation-summary {
+  grid-column: 3;
 }
 
 .ajrumiyyah-native-panel:nth-child(2) .ajrumiyyah-sharh-summary {
+  grid-column: 2;
+}
+
+.ajrumiyyah-button-row > .ajrumiyyah-sharh-summary {
   grid-column: 2;
 }
 
@@ -1022,8 +1052,11 @@ html:not([lang="ar"]) [data-i18n].arabic {
 }
 
 .ajrumiyyah-panel {
+  box-sizing: border-box;
   border-radius: 1rem;
   margin-top: 0.1rem;
+  max-width: 100%;
+  min-width: 0;
   padding: 0.85rem;
   width: 100%;
 }
@@ -1035,21 +1068,26 @@ html:not([lang="ar"]) [data-i18n].arabic {
   font-size: 1.08rem;
   font-weight: 650;
   line-height: 1.75;
+  overflow-wrap: anywhere;
   text-align: left;
 }
 
 .ajrumiyyah-sharh-box {
   background: theme("colors.accent-soft");
   border: 1px solid color-mix(in srgb, theme("colors.accent") 18%, theme("colors.line"));
+  overflow: hidden;
 }
 
 .ajrumiyyah-translation-panel p {
   margin: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 
 .ajrumiyyah-sharh-content {
   display: grid;
   gap: 0.8rem;
+  min-width: 0;
 }
 
 .ajrumiyyah-sharh-head {
@@ -1134,6 +1172,9 @@ html:not([lang="ar"]) [data-i18n].arabic {
   font-size: calc(1.05rem * var(--ajrumiyyah-sharh-scale, 1));
   line-height: 1.85;
   margin-top: 0.25rem;
+  max-width: 100%;
+  min-width: 0;
+  overflow-wrap: anywhere;
   text-align: left;
 }
 
@@ -1146,6 +1187,11 @@ html:not([lang="ar"]) [data-i18n].arabic {
 
 .ajrumiyyah-sharh-panel p + p {
   margin-top: 0.85rem;
+}
+
+.ajrumiyyah-sharh-panel p {
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 
 .ajrumiyyah-source {
