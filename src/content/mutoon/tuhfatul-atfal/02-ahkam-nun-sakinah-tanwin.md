@@ -4,8 +4,17 @@ titleMalay: "Hukum Nun Sakinah dan Tanwin"
 slug: "ahkam-nun-sakinah-tanwin"
 order: 2
 
+audio:
+  src: "/audio/tuhfatul-atfal/412734.mp3"
+  chapterStart: 41
+  matnStart: 44
+  chapterEnd: 129
+
 verses:
   - number: 6
+    audio:
+      start: 44
+      end: 52
     lines:
       - text: "لِلنُّونِ إِنْ تَسْكُنْ وَلِلتَّنْوِينِ"
         translation: "Bagi nun apabila ia sukun, dan bagi tanwin."
@@ -31,6 +40,9 @@ verses:
             root: "ب ي ن"
 
   - number: 7
+    audio:
+      start: 52
+      end: 60
     lines:
       - text: "فَالْأَوَّلُ الْإِظْهَارُ قَبْلَ أَحْرُفِ"
         translation: "Hukum yang pertama ialah izhar apabila berada sebelum huruf-huruf."
@@ -50,6 +62,9 @@ verses:
             meaning: "Enam"
 
   - number: 8
+    audio:
+      start: 60
+      end: 66
     lines:
       - text: "هَمْزٌ فَهَاءٌ ثُمَّ عَيْنٌ حَاءُ"
         translation: "Hamzah dan ha, kemudian ain dan ha."
@@ -80,6 +95,9 @@ verses:
             type: "letters"
 
   - number: 9
+    audio:
+      start: 66
+      end: 74
     lines:
       - text: "وَالثَّانِي إِدْغَامٌ بِسِتَّةٍ أَتَتْ"
         translation: "Hukum yang kedua ialah idgham, yang datang dengan enam huruf."
@@ -99,6 +117,9 @@ verses:
             type: "letters"
 
   - number: 10
+    audio:
+      start: 74
+      end: 81
     lines:
       - text: "لَكِنَّهَا قِسْمَانِ قِسْمٌ يُدْغَمَا"
         translation: "Namun, idgham terbahagi kepada dua bahagian; satu bahagian diidghamkan."
@@ -121,6 +142,9 @@ verses:
             type: "letters"
 
   - number: 11
+    audio:
+      start: 81
+      end: 89
     lines:
       - text: "إِلَّا إِذَا كَانَا بِكِلْمَةٍ فَلَا"
         translation: "Kecuali apabila kedua-duanya berada dalam satu perkataan, maka jangan."
@@ -144,6 +168,9 @@ verses:
             type: "example"
 
   - number: 12
+    audio:
+      start: 89
+      end: 97
     lines:
       - text: "وَالثَّانِي إِدْغَامٌ بِغَيْرِ غُنَّةْ"
         translation: "Bahagian kedua ialah idgham tanpa dengung."
@@ -165,6 +192,9 @@ verses:
             meaning: "Ulangilah dan mantapkanlah"
 
   - number: 13
+    audio:
+      start: 97
+      end: 105
     lines:
       - text: "وَالثَّالِثُ الْإِقْلَابُ عِنْدَ الْبَاءِ"
         translation: "Hukum yang ketiga ialah iqlab apabila bertemu huruf ba."
@@ -192,6 +222,9 @@ verses:
             type: "keyword"
 
   - number: 14
+    audio:
+      start: 105
+      end: 113
     lines:
       - text: "وَالرَّابِعُ الْإِخْفَاءُ عِنْدَ الْفَاضِلِ"
         translation: "Hukum yang keempat ialah ikhfa ketika bertemu baki huruf."
@@ -212,6 +245,9 @@ verses:
             meaning: "Wajib"
 
   - number: 15
+    audio:
+      start: 113
+      end: 121
     lines:
       - text: "فِي خَمْسَةٍ مِنْ بَعْدِ عَشْرٍ رَمْزُهَا"
         translation: "Huruf ikhfa berjumlah lima belas, dan simbolnya."
@@ -231,6 +267,9 @@ verses:
             root: "ض م ن"
 
   - number: 16
+    audio:
+      start: 121
+      end: 133
     lines:
       - text: "صِفْ ذَا ثَنَا كَمْ جَادَ شَخْصٌ قَدْ سَمَا"
         translation: "Sifatkanlah orang yang memiliki pujian; betapa pemurahnya seseorang yang benar-benar mulia."

@@ -1,13 +1,21 @@
 ---
-const audioSrc = "/audio/al-ajrumiyyah/0403AlAajurrumiyyah_AbdullahRowzy.mp3";
+interface Props {
+  audioSrc?: string;
+  defaultLabel?: string;
+  storageKey?: string;
+}
+
+const audioSrc = Astro.props.audioSrc ?? "/audio/al-ajrumiyyah/0403AlAajurrumiyyah_AbdullahRowzy.mp3";
+const defaultLabel = Astro.props.defaultLabel ?? "Audio Al-Ajrumiyyah";
+const storageKey = Astro.props.storageKey ?? "tuwailib:ajrumiyyah:audio";
 ---
 
-<section class="ajrumiyyah-audio-player" data-ajrumiyyah-audio-player aria-label="Pemain audio Al-Ajrumiyyah">
+<section class="ajrumiyyah-audio-player" data-ajrumiyyah-audio-player aria-label={`Pemain ${defaultLabel}`}>
   <audio data-ajrumiyyah-audio preload="metadata"></audio>
   <div class="ajrumiyyah-audio-main">
     <button type="button" class="ajrumiyyah-audio-play" data-audio-toggle aria-label="Mainkan audio">▶</button>
     <div class="ajrumiyyah-audio-meta">
-      <p class="ajrumiyyah-audio-label" data-audio-label>Audio Al-Ajrumiyyah</p>
+      <p class="ajrumiyyah-audio-label" data-audio-label>{defaultLabel}</p>
       <div class="ajrumiyyah-audio-progress-row">
         <span data-audio-current>0:00</span>
         <input type="range" min="0" max="100" value="0" step="0.1" data-audio-progress aria-label="Kemajuan audio" />
@@ -28,10 +36,10 @@ const audioSrc = "/audio/al-ajrumiyyah/0403AlAajurrumiyyah_AbdullahRowzy.mp3";
   </div>
 </section>
 
-<script define:vars={{ audioSrc }}>
+<script define:vars={{ audioSrc, defaultLabel, storageKey }}>
   (() => {
     const END_TOLERANCE = 0.12;
-    const STORAGE_KEY = "tuwailib:ajrumiyyah:audio";
+    const STORAGE_KEY = storageKey;
     const player = document.querySelector("[data-ajrumiyyah-audio-player]");
     const audio = player?.querySelector("[data-ajrumiyyah-audio]");
     const toggle = player?.querySelector("[data-audio-toggle]");
@@ -53,7 +61,7 @@ const audioSrc = "/audio/al-ajrumiyyah/0403AlAajurrumiyyah_AbdullahRowzy.mp3";
       segmentStart: null,
       segmentEnd: null,
       playbackMode: "book",
-      currentLabel: "Audio Al-Ajrumiyyah",
+      currentLabel: defaultLabel,
       currentMatnId: null,
       currentChapterSlug: null,
       rate: 1,
@@ -143,7 +151,7 @@ const audioSrc = "/audio/al-ajrumiyyah/0403AlAajurrumiyyah_AbdullahRowzy.mp3";
     }
 
     function updateUi() {
-      if (label) label.textContent = state.currentLabel || "Audio Al-Ajrumiyyah";
+      if (label) label.textContent = state.currentLabel || defaultLabel;
       if (toggle) {
         toggle.textContent = state.isPlaying ? "❚❚" : "▶";
         toggle.setAttribute("aria-label", state.isPlaying ? "Jeda audio" : "Mainkan audio");
@@ -207,7 +215,7 @@ const audioSrc = "/audio/al-ajrumiyyah/0403AlAajurrumiyyah_AbdullahRowzy.mp3";
       start: Number(options.start ?? 0),
       end: null,
       playbackMode: "book",
-      currentLabel: options.label || "Al-Ajrumiyyah penuh",
+      currentLabel: options.label || defaultLabel,
       currentMatnId: null,
       currentChapterSlug: null,
     });
@@ -350,7 +358,7 @@ const audioSrc = "/audio/al-ajrumiyyah/0403AlAajurrumiyyah_AbdullahRowzy.mp3";
           src: button.getAttribute("data-audio-src") || audioSrc,
           start,
           end,
-          label: button.getAttribute("data-audio-label") || "Audio Al-Ajrumiyyah",
+          label: button.getAttribute("data-audio-label") || defaultLabel,
           slug: button.getAttribute("data-chapter-slug"),
           matnId: button.getAttribute("data-matn-id"),
         };
@@ -367,7 +375,7 @@ const audioSrc = "/audio/al-ajrumiyyah/0403AlAajurrumiyyah_AbdullahRowzy.mp3";
         segmentStart: null,
         segmentEnd: null,
         playbackMode: "chapter",
-        currentLabel: "Audio Al-Ajrumiyyah",
+        currentLabel: defaultLabel,
         currentMatnId: null,
         currentChapterSlug: null,
         repeatIteration: 1,

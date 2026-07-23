@@ -1,6 +1,7 @@
 ---
 import "../../../styles/global.css";
 import { getCollection, render } from "astro:content";
+import AjrumiyyahAudioPlayer from "../../../components/AjrumiyyahAudioPlayer.astro";
 
 export async function getStaticPaths() {
   const entries = (await getCollection("mutoon"))
@@ -22,6 +23,9 @@ const { entry, previous, next, entries } = Astro.props;
 const { Content } = await render(entry);
 const titleArabic = entry.data.titleArabic ?? entry.data.title ?? "";
 const titleMalay = entry.data.titleMalay ?? entry.data.titleMs ?? "";
+const chapterAudio = entry.data.audio;
+const audioSrc = chapterAudio?.src ?? "/audio/tuhfatul-atfal/412734.mp3";
+const chapterAudioLabel = `${titleMalay} — ${titleArabic}`;
 function escapeHtml(value: string) {
   return value
     .replaceAll("&", "&amp;")
@@ -104,7 +108,7 @@ function renderLine(text: string, words: { word: string; meaning: string; root?:
     </header>
 
     <main class="mx-auto w-full max-w-5xl px-4 py-8">
-      <nav class="matan-top-controls">
+      <nav class="matan-top-controls ajrumiyyah-top-controls">
         <div class="matan-nav-buttons">
           {previous ? (
             <a href={`/mutoon/tuhfatul-atfal/${previous.data.slug}`} class="matan-step-link matan-step-prev">← Sebelum</a>
@@ -136,10 +140,60 @@ function renderLine(text: string, words: { word: string; meaning: string; root?:
         <h1 class="arabic mt-2 text-4xl font-semibold text-accent sm:text-5xl" dir="rtl">{titleArabic}</h1>
       </section>
 
+      {chapterAudio && (
+        <div class="ajrumiyyah-chapter-audio" aria-label="Kawalan audio Tuhfatul Atfal">
+          <button
+            type="button"
+            class="ajrumiyyah-audio-chip ajrumiyyah-audio-chip-primary"
+            data-audio-play
+            data-audio-mode="book"
+            data-audio-src={chapterAudio.src}
+            data-audio-start="0"
+            data-audio-label="Audio matan penuh Tuhfatul Atfal"
+            aria-label="Mainkan audio matan penuh Tuhfatul Atfal"
+          >
+            <span aria-hidden="true">▶</span>
+            <span>Audio Penuh</span>
+          </button>
+          <button
+            type="button"
+            class="ajrumiyyah-audio-chip"
+            data-audio-play
+            data-audio-mode="chapter"
+            data-audio-src={chapterAudio.src}
+            data-audio-start={chapterAudio.chapterStart}
+            data-audio-end={chapterAudio.chapterEnd}
+            data-audio-label={`Audio bab ini: ${chapterAudioLabel}`}
+            data-chapter-slug={entry.data.slug}
+            aria-label={`Mainkan bab ${titleMalay}`}
+          >
+            <span aria-hidden="true">▶</span>
+            <span>Audio Bab</span>
+          </button>
+        </div>
+      )}
+
       <section class="matan-reader">
         {entry.data.verses?.map((verse) => (
           <article class={verse.type === "basmalah" ? "matan-verse matan-basmalah" : "matan-verse"}>
             <div class="matan-verse-meta">
+              {verse.audio && (
+                <button
+                  type="button"
+                  class="matan-verse-audio"
+                  data-audio-play
+                  data-audio-mode="matn"
+                  data-audio-src={audioSrc}
+                  data-audio-start={verse.audio.start}
+                  data-audio-end={verse.audio.end}
+                  data-audio-label={`Bait ${verse.number}: ${titleMalay}`}
+                  data-matn-id={`${entry.data.slug}-${verse.number}`}
+                  data-chapter-slug={entry.data.slug}
+                  aria-label={`Mainkan bait ${verse.number}`}
+                >
+                  <span aria-hidden="true">▶</span>
+                </button>
+              )}
               {verse.type !== "basmalah" && (
                 <button
                   type="button"
@@ -175,7 +229,7 @@ function renderLine(text: string, words: { word: string; meaning: string; root?:
         </article>
       </details>
 
-      <nav class="matan-bottom-nav">
+      <nav class="matan-bottom-nav ajrumiyyah-bottom-nav">
         {previous ? (
           <a href={`/mutoon/tuhfatul-atfal/${previous.data.slug}`} class="matan-step-link matan-step-prev">← Sebelum</a>
         ) : <span></span>}
@@ -186,6 +240,12 @@ function renderLine(text: string, words: { word: string; meaning: string; root?:
     </main>
 
     <div id="mufradat-popover" class="matan-popover hidden" role="status"></div>
+
+    <AjrumiyyahAudioPlayer
+      audioSrc="/audio/tuhfatul-atfal/412734.mp3"
+      defaultLabel="Audio Tuhfatul Atfal"
+      storageKey="tuwailib:tuhfatul-atfal:audio"
+    />
 
     <div class="repeat-counter" aria-label="Kiraan ulangan">
       <button type="button" class="repeat-main" data-repeat-add="1">
@@ -267,7 +327,8 @@ function renderLine(text: string, words: { word: string; meaning: string; root?:
           ? Math.max(window.scrollX + 16, window.scrollX + rect.left + 24)
           : window.scrollX + rect.left;
         popover.style.top = `${window.scrollY + rect.bottom + (options.translation ? 14 : 8)}px`;
-        popover.style.left = `${Math.min(left, window.scrollX + window.innerWidth - 300)}px`;
+        const popoverWidth = options.translation ? Math.min(544, window.innerWidth - 32) : Math.min(288, window.innerWidth - 32);
+        popover.style.left = `${Math.min(left, window.scrollX + window.innerWidth - popoverWidth - 16)}px`;
         popover.dataset.activeKey = key;
         popover.classList.remove("hidden");
         if (options.translation) anchor.setAttribute("aria-expanded", "true");

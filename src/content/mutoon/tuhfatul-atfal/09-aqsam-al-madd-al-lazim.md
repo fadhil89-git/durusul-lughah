@@ -4,8 +4,17 @@ titleMalay: "Bahagian-bahagian Mad Lazim"
 slug: "aqsam-al-madd-al-lazim"
 order: 9
 
+audio:
+  src: "/audio/tuhfatul-atfal/412734.mp3"
+  chapterStart: 404
+  matnStart: 406
+  chapterEnd: 490
+
 verses:
   - number: 48
+    audio:
+      start: 406
+      end: 423
     lines:
       - text: "أَقْسَامُ لَازِمٍ لَدَيْهِمْ أَرْبَعَةْ"
         translation: "Bahagian mad lazim menurut para ulama berjumlah empat."
@@ -29,6 +38,9 @@ verses:
             type: "keyword"
 
   - number: 49
+    audio:
+      start: 423
+      end: 434
     lines:
       - text: "كِلَاهُمَا مُخَفَّفٌ مُثَقَّلُ"
         translation: "Kedua-duanya terbahagi kepada mukhaffaf dan muthaqqal."
@@ -50,6 +62,9 @@ verses:
             root: "ف ص ل"
 
   - number: 50
+    audio:
+      start: 434
+      end: 440
     lines:
       - text: "فَإِنْ بِكِلْمَةٍ سُكُونٌ اجْتَمَعْ"
         translation: "Jika dalam satu perkataan terdapat sukun yang berhimpun."
@@ -74,6 +89,9 @@ verses:
             type: "keyword"
 
   - number: 51
+    audio:
+      start: 440
+      end: 448
     lines:
       - text: "أَوْ فِي ثُلَاثِيِّ الْحُرُوفِ وُجِدَا"
         translation: "Atau jika ia terdapat dalam nama huruf yang terdiri daripada tiga huruf."
@@ -96,6 +114,9 @@ verses:
             type: "keyword"
 
   - number: 52
+    audio:
+      start: 448
+      end: 456
     lines:
       - text: "كِلَاهُمَا مُثَقَّلٌ إِنْ أُدْغِمَا"
         translation: "Kedua-duanya dinamakan muthaqqal apabila berlaku idgham."
@@ -119,6 +140,9 @@ verses:
             type: "rule"
 
   - number: 53
+    audio:
+      start: 456
+      end: 465
     lines:
       - text: "وَاللَّازِمُ الْحَرْفِيُّ أَوَّلَ السُّوَرْ"
         translation: "Mad lazim harfi terdapat pada permulaan surah-surah."
@@ -140,6 +164,9 @@ verses:
             root: "ح ص ر"
 
   - number: 54
+    audio:
+      start: 465
+      end: 474
     lines:
       - text: "يَجْمَعُهَا حُرُوفُ كَمْ عَسَلْ نَقَصْ"
         translation: "Lapan huruf itu dihimpunkan dalam ungkapan كَمْ عَسَلْ نَقَصْ."
@@ -164,6 +191,9 @@ verses:
             meaning: "Lebih khusus atau lebih utama pada konteks ini"
 
   - number: 55
+    audio:
+      start: 474
+      end: 482
     lines:
       - text: "وَمَا سِوَى الْحَرْفِ الثُّلَاثِيِّ لَا أَلِفْ"
         translation: "Huruf pembukaan surah yang bukan terdiri daripada tiga huruf, selain alif."
@@ -185,6 +215,9 @@ verses:
             meaning: "Telah diketahui dan diamalkan"
 
   - number: 56
+    audio:
+      start: 482
+      end: 490
     lines:
       - text: "وَذَاكَ أَيْضًا فِي فَوَاتِحِ السُّوَرْ"
         translation: "Mad tabi‘i itu juga terdapat pada huruf-huruf pembukaan surah."
@@ -201,6 +234,9 @@ verses:
             type: "letters"
 
   - number: 57
+    audio:
+      start: 490
+      end: 490
     lines:
       - text: "وَيَجْمَعُ الْفَوَاتِحَ الْأَرْبَعَ عَشَرْ"
         translation: "Keseluruhan huruf pembukaan surah berjumlah empat belas."

@@ -4,8 +4,17 @@ titleMalay: "Hukum Mim Sakinah"
 slug: "ahkam-mim-sakinah"
 order: 4
 
+audio:
+  src: "/audio/tuhfatul-atfal/412734.mp3"
+  chapterStart: 141
+  matnStart: 143
+  chapterEnd: 191
+
 verses:
   - number: 18
+    audio:
+      start: 143
+      end: 151
     lines:
       - text: "وَالْمِيمُ إِنْ تَسْكُنْ تَجِي قَبْلَ الْهِجَا"
         translation: "Mim apabila bersukun, datang sebelum huruf-huruf hijaiyyah."
@@ -30,6 +39,9 @@ verses:
             meaning: "Orang yang memiliki kefahaman atau akal"
 
   - number: 19
+    audio:
+      start: 151
+      end: 159
     lines:
       - text: "أَحْكَامُهَا ثَلَاثَةٌ لِمَنْ ضَبَطْ"
         translation: "Hukumnya ada tiga bagi sesiapa yang menguasainya."
@@ -57,6 +69,9 @@ verses:
             type: "keyword"
 
   - number: 20
+    audio:
+      start: 159
+      end: 167
     lines:
       - text: "فَالْأَوَّلُ الْإِخْفَاءُ عِنْدَ الْبَاءِ"
         translation: "Hukum pertama ialah ikhfa apabila mim sakinah bertemu huruf ba."
@@ -80,6 +95,9 @@ verses:
             meaning: "Para ahli qiraat atau pembaca al-Quran"
 
   - number: 21
+    audio:
+      start: 167
+      end: 175
     lines:
       - text: "وَالثَّانِي إِدْغَامٌ بِمِثْلِهَا أَتَى"
         translation: "Hukum kedua ialah idgham apabila bertemu huruf yang sama dengannya."
@@ -102,6 +120,9 @@ verses:
             meaning: "Wahai pemuda"
 
   - number: 22
+    audio:
+      start: 175
+      end: 183
     lines:
       - text: "وَالثَّالِثُ الْإِظْهَارُ فِي الْبَقِيَّةْ"
         translation: "Hukum ketiga ialah izhar apabila bertemu baki huruf."
@@ -124,6 +145,9 @@ verses:
             type: "keyword"
 
   - number: 23
+    audio:
+      start: 183
+      end: 194
     lines:
       - text: "وَاحْذَرْ لَدَى وَاوٍ وَفَا أَنْ تَخْتَفِي"
         translation: "Berhati-hatilah ketika mim sakinah bertemu wau dan fa agar bunyinya tidak tersembunyi."

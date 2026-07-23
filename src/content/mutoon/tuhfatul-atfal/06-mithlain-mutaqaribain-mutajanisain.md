@@ -4,8 +4,17 @@ titleMalay: "Mithlain, Mutaqaribain dan Mutajanisain"
 slug: "mithlain-mutaqaribain-mutajanisain"
 order: 6
 
+audio:
+  src: "/audio/tuhfatul-atfal/412734.mp3"
+  chapterStart: 244
+  matnStart: 248
+  chapterEnd: 290
+
 verses:
   - number: 30
+    audio:
+      start: 248
+      end: 256
     lines:
       - text: "إِنْ فِي الصِّفَاتِ وَالْمَخَارِجِ اتَّفَقْ"
         translation: "Jika dua huruf bersamaan pada sifat dan makhraj."
@@ -33,6 +42,9 @@ verses:
             meaning: "Lebih tepat atau lebih layak"
 
   - number: 31
+    audio:
+      start: 256
+      end: 265
     lines:
       - text: "وَإِنْ يَكُونَا مَخْرَجًا تَقَارَبَا"
         translation: "Sekiranya kedua-duanya mempunyai makhraj yang berdekatan."
@@ -57,6 +69,9 @@ verses:
             meaning: "Kedua-duanya dinamakan"
 
   - number: 32
+    audio:
+      start: 265
+      end: 274
     lines:
       - text: "مُتَقَارِبَيْنِ أَوْ يَكُونَا اتَّفَقَا"
         translation: "Sebagai mutaqaribain; ataupun kedua-duanya bersamaan."
@@ -82,6 +97,9 @@ verses:
             root: "ح ق ق"
 
   - number: 33
+    audio:
+      start: 274
+      end: 282
     lines:
       - text: "بِالْمُتَجَانِسَيْنِ ثُمَّ إِنْ سَكَنْ"
         translation: "Maka kedua-duanya dinamakan mutajanisain. Kemudian, jika huruf pertama bersukun."
@@ -107,6 +125,9 @@ verses:
             meaning: "Namakanlah"
 
   - number: 34
+    audio:
+      start: 282
+      end: 292
     lines:
       - text: "أَوْ حُرِّكَ الْحَرْفَانِ فِي كُلٍّ فَقُلْ"
         translation: "Jika kedua-dua huruf berbaris dalam setiap pasangan, maka katakanlah."

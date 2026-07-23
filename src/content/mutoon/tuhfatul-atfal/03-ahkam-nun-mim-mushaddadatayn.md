@@ -4,8 +4,17 @@ titleMalay: "Hukum Nun dan Mim Bersabdu"
 slug: "ahkam-nun-mim-mushaddadatayn"
 order: 3
 
+audio:
+  src: "/audio/tuhfatul-atfal/412734.mp3"
+  chapterStart: 129
+  matnStart: 133
+  chapterEnd: 141
+
 verses:
   - number: 17
+    audio:
+      start: 133
+      end: 143
     lines:
       - text: "وَغُنَّ مِيمًا ثُمَّ نُونًا شُدِّدَا"
         translation: "Dengungkanlah huruf mim, kemudian huruf nun, apabila kedua-duanya bersabdu."

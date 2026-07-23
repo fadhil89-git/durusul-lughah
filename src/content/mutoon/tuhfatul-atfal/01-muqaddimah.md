@@ -4,8 +4,17 @@ titleMalay: "Muqaddimah"
 slug: "muqaddimah"
 order: 1
 
+audio:
+  src: "/audio/tuhfatul-atfal/412734.mp3"
+  chapterStart: 4
+  matnStart: 4
+  chapterEnd: 41
+
 verses:
   - number: 0
+    audio:
+      start: 0
+      end: 4
     type: "basmalah"
     lines:
       - text: "بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ"
@@ -21,6 +30,9 @@ verses:
             meaning: "Yang Maha Penyayang"
 
   - number: 1
+    audio:
+      start: 4
+      end: 12
     lines:
       - text: "يَقُولُ رَاجِي رَحْمَةِ الْغَفُورِ"
         translation: "Berkata seorang yang mengharapkan rahmat Tuhan Yang Maha Pengampun."
@@ -48,6 +60,9 @@ verses:
             meaning: "Al-Jamzuri"
 
   - number: 2
+    audio:
+      start: 12
+      end: 20
     lines:
       - text: "الْحَمْدُ لِلَّهِ مُصَلِّيًا عَلَى"
         translation: "Segala puji bagi Allah, sambil berselawat ke atas."
@@ -74,6 +89,9 @@ verses:
             meaning: "Mengikuti"
 
   - number: 3
+    audio:
+      start: 20
+      end: 27
     lines:
       - text: "وَبَعْدُ هَذَا النَّظْمُ لِلْمُرِيدِ"
         translation: "Adapun selepas itu, nazam ini adalah untuk orang yang ingin mempelajari."
@@ -101,6 +119,9 @@ verses:
             type: "keyword"
 
   - number: 4
+    audio:
+      start: 27
+      end: 34
     lines:
       - text: "سَمَّيْتُهُ بِتُحْفَةِ الْأَطْفَالِ"
         translation: "Aku menamakannya Tuhfatul Atfal."
@@ -125,6 +146,9 @@ verses:
             meaning: "Yang mempunyai kesempurnaan"
 
   - number: 5
+    audio:
+      start: 34
+      end: 44
     lines:
       - text: "أَرْجُو بِهِ أَنْ يَنْفَعَ الطُّلَّابَا"
         translation: "Aku berharap melaluinya agar Allah memberi manfaat kepada para pelajar."

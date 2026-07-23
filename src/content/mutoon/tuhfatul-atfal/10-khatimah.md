@@ -4,8 +4,17 @@ titleMalay: "Penutup"
 slug: "khatimah"
 order: 10
 
+audio:
+  src: "/audio/tuhfatul-atfal/412734.mp3"
+  chapterStart: 490
+  matnStart: 490
+  chapterEnd: 522
+
 verses:
   - number: 58
+    audio:
+      start: 490
+      end: 498
     lines:
       - text: "وَتَمَّ ذَا النَّظْمُ بِحَمْدِ اللَّهِ"
         translation: "Nazam ini telah sempurna dengan segala puji bagi Allah."
@@ -29,6 +38,9 @@ verses:
             root: "ن ه ي"
 
   - number: 59
+    audio:
+      start: 498
+      end: 505
     lines:
       - text: "ثُمَّ الصَّلَاةُ وَالسَّلَامُ أَبَدَا"
         translation: "Kemudian, selawat dan salam selama-lamanya."
@@ -50,6 +62,9 @@ verses:
             meaning: "Nabi Muhammad ﷺ"
 
   - number: 60
+    audio:
+      start: 505
+      end: 514
     lines:
       - text: "وَالْآلِ وَالصَّحْبِ وَكُلِّ تَابِعِ"
         translation: "Dan ke atas keluarga Baginda, para sahabat serta setiap orang yang mengikuti."
@@ -73,6 +88,9 @@ verses:
             root: "س م ع"
 
   - number: 61
+    audio:
+      start: 514
+      end: 522
     lines:
       - text: "أَبْيَاتُهَا نَدٌّ بَدَا لِذِي النُّهَى"
         translation: "Jumlah baitnya ditunjukkan oleh ungkapan نَدٌّ بَدَا bagi orang yang berakal."

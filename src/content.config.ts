@@ -17,6 +17,10 @@ const lineSchema = z.object({
 const verseSchema = z.object({
   number: z.number(),
   type: z.string().optional(),
+  audio: z.object({
+    start: z.number(),
+    end: z.number(),
+  }).optional(),
   lines: z.array(lineSchema),
 });
 

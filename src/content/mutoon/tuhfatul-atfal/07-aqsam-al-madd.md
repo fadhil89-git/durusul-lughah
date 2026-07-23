@@ -4,8 +4,17 @@ titleMalay: "Bahagian-bahagian Mad"
 slug: "aqsam-al-madd"
 order: 7
 
+audio:
+  src: "/audio/tuhfatul-atfal/412734.mp3"
+  chapterStart: 290
+  matnStart: 292
+  chapterEnd: 352
+
 verses:
   - number: 35
+    audio:
+      start: 292
+      end: 301
     lines:
       - text: "وَالْمَدُّ أَصْلِيٌّ وَفَرْعِيٌّ لَهُ"
         translation: "Mad terbahagi kepada mad asli dan mad far‘i."
@@ -31,6 +40,9 @@ verses:
             type: "keyword"
 
   - number: 36
+    audio:
+      start: 301
+      end: 309
     lines:
       - text: "مَا لَا تَوَقُّفَ لَهُ عَلَى سَبَبْ"
         translation: "Mad yang tidak bergantung pada sesuatu sebab."
@@ -55,6 +67,9 @@ verses:
             root: "ج ل ب"
 
   - number: 37
+    audio:
+      start: 309
+      end: 318
     lines:
       - text: "بَلْ أَيُّ حَرْفٍ غَيْرُ هَمْزٍ أَوْ سُكُونْ"
         translation: "Bahkan, apabila selepas huruf mad tidak terdapat hamzah atau sukun."
@@ -77,6 +92,9 @@ verses:
             type: "keyword"
 
   - number: 38
+    audio:
+      start: 318
+      end: 327
     lines:
       - text: "وَالْآخَرُ الْفَرْعِيُّ مَوْقُوفٌ عَلَى"
         translation: "Jenis yang satu lagi ialah mad far‘i, yang bergantung pada."
@@ -103,6 +121,9 @@ verses:
             meaning: "Ditetapkan secara mutlak"
 
   - number: 39
+    audio:
+      start: 327
+      end: 334
     lines:
       - text: "حُرُوفُهُ ثَلَاثَةٌ فَعِيهَا"
         translation: "Huruf mad berjumlah tiga; maka peliharalah dan fahamilah huruf-huruf tersebut."
@@ -126,6 +147,9 @@ verses:
             type: "example"
 
   - number: 40
+    audio:
+      start: 334
+      end: 343
     lines:
       - text: "وَالْكَسْرُ قَبْلَ الْيَا وَقَبْلَ الْوَاوِ ضَمْ"
         translation: "Kasrah mestilah berada sebelum ya, manakala dammah berada sebelum wau."
@@ -160,6 +184,9 @@ verses:
             root: "ل ز م"
 
   - number: 41
+    audio:
+      start: 343
+      end: 354
     lines:
       - text: "وَاللِّينُ مِنْهَا الْيَا وَوَاوٌ سَكَنَا"
         translation: "Huruf lin pula ialah ya dan wau yang bersukun."

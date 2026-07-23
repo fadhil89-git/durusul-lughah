@@ -4,8 +4,17 @@ titleMalay: "Hukum-hukum Mad"
 slug: "ahkam-al-madd"
 order: 8
 
+audio:
+  src: "/audio/tuhfatul-atfal/412734.mp3"
+  chapterStart: 352
+  matnStart: 354
+  chapterEnd: 404
+
 verses:
   - number: 42
+    audio:
+      start: 354
+      end: 363
     lines:
       - text: "لِلْمَدِّ أَحْكَامٌ ثَلَاثَةٌ تَدُومْ"
         translation: "Mad mempunyai tiga hukum yang kekal."
@@ -37,6 +46,9 @@ verses:
             type: "keyword"
 
   - number: 43
+    audio:
+      start: 363
+      end: 371
     lines:
       - text: "فَوَاجِبٌ إِنْ جَاءَ هَمْزٌ بَعْدَ مَدْ"
         translation: "Mad menjadi wajib apabila hamzah datang selepas huruf mad."
@@ -64,6 +76,9 @@ verses:
             meaning: "Dikira atau dinamakan"
 
   - number: 44
+    audio:
+      start: 371
+      end: 379
     lines:
       - text: "وَجَائِزٌ مَدٌّ وَقَصْرٌ إِنْ فُصِلْ"
         translation: "Mad dan qasar adalah harus apabila kedua-duanya terpisah."
@@ -93,6 +108,9 @@ verses:
             type: "keyword"
 
   - number: 45
+    audio:
+      start: 379
+      end: 387
     lines:
       - text: "وَمِثْلُ ذَا إِنْ عَرَضَ السُّكُونُ"
         translation: "Demikian juga apabila sukun mendatang."
@@ -120,6 +138,9 @@ verses:
             type: "example"
 
   - number: 46
+    audio:
+      start: 387
+      end: 395
     lines:
       - text: "أَوْ قُدِّمَ الْهَمْزُ عَلَى الْمَدِّ وَذَا"
         translation: "Atau apabila hamzah berada sebelum huruf mad, dan hukum ini."
@@ -151,6 +172,9 @@ verses:
             meaning: "Maka ambillah dan fahamilah"
 
   - number: 47
+    audio:
+      start: 395
+      end: 406
     lines:
       - text: "وَلَازِمٌ إِنِ السُّكُونُ أُصِّلَا"
         translation: "Mad menjadi lazim apabila sukun itu asli."
